@@ -67,7 +67,7 @@ import_group:
   - id: pato
     module_type: slme
   - id: txpo
-    module_type: slme
+    module_type: custom
   - id: efo
     module_type: slme
     mirror_from: http://www.ebi.ac.uk/efo/efo.owl
