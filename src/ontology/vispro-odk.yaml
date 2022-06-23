@@ -60,7 +60,7 @@ import_group:
   - id: omo
     module_type: slme
   - id: iao
-    module_type: slme
+    module_type: custom
     slme_individuals: exclude
   - id: chmo
     module_type: slme

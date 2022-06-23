@@ -281,12 +281,8 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl $(IMPORTDIR)/omo_terms_combine
 
 ## Module for ontology: iao
 
-$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
-		extract -T $(IMPORTDIR)/iao_terms_combined.txt --force true --individuals exclude --method BOT \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in vispro.Makefile!" && false
 ## Module for ontology: chmo
 
 $(IMPORTDIR)/chmo_import.owl: $(MIRRORDIR)/chmo.owl $(IMPORTDIR)/chmo_terms_combined.txt
