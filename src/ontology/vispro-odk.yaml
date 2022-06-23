@@ -53,7 +53,7 @@ import_group:
   module_type_slme: BOT
   products:
   - id: bfo
-    module_type: slme
+    module_type: mirror
   - id: ro
     module_type: slme
     slme_individuals: exclude
