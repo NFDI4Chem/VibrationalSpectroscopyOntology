@@ -58,7 +58,7 @@ import_group:
     module_type: slme
     slme_individuals: exclude
   - id: omo
-    module_type: slme
+    module_type: mirror
   - id: iao
     module_type: custom
     slme_individuals: exclude
