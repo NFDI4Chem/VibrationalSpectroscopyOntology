@@ -1,1 +1,33 @@
+http://purl.obolibrary.org/obo/OBI_0000846 # is member of organization
+http://purl.obolibrary.org/obo/OBI_0001688 # has organization member
+http://purl.obolibrary.org/obo/OBI_0000272 # protocol
+http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0000654 # device setting
+http://purl.obolibrary.org/obo/OBI_0001616 # specimen identifier
+http://purl.obolibrary.org/obo/OBI_0001622 # investigation title
+http://purl.obolibrary.org/obo/OBI_0000747 # material sample
+http://purl.obolibrary.org/obo/OBI_0000066 # investigation
+http://purl.obolibrary.org/obo/OBI_0000011 # planned process
+http://purl.obolibrary.org/obo/OBI_0000070 # assay
+http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
+http://purl.obolibrary.org/obo/OBI_0400170 # microscope slide
+http://purl.obolibrary.org/obo/OBI_0400169 # microscope
+http://purl.obolibrary.org/obo/OBI_0000312 # is_specified_output_of
+http://purl.obolibrary.org/obo/OBI_0000293 # has_specified_input
+http://purl.obolibrary.org/obo/OBI_0000245 # organization
+http://purl.obolibrary.org/obo/OBI_0000047 # processed material
+http://purl.obolibrary.org/obo/OBI_0000832 # measurement device
+http://purl.obolibrary.org/obo/OBI_0000398 # image creation device
+http://purl.obolibrary.org/obo/OBI_0100051 # specimen
+http://purl.obolibrary.org/obo/OBI_0001898 # comment on investigation
+http://purl.obolibrary.org/obo/OBI_0000295 # 
+is_specified_input_of
+http://purl.obolibrary.org/obo/OBI_0000299 # 
+has_specified_output
+http://purl.obolibrary.org/obo/OBI_0001950 # has performer
+http://purl.obolibrary.org/obo/OBI_0000202 # 'investigation agent role'
+http://purl.obolibrary.org/obo/OBI_0100026 # organism
 
+# external classes needed due to OBI axioms
+http://purl.obolibrary.org/obo/NCBITaxon_9606 # homo sapiens
+http://purl.obolibrary.org/obo/RO_0000087 # has role
