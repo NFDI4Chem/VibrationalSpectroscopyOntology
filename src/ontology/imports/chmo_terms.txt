@@ -1,1 +1,4 @@
-
+http://purl.obolibrary.org/obo/CHMO_0002414 # scattering spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0001814 # Raman microscope
+http://purl.obolibrary.org/obo/CHMO_0001235 # Raman spectrometer
+http://purl.obolibrary.org/obo/CHMO_0000823 # Raman spectrum
