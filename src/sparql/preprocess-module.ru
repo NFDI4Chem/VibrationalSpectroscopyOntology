@@ -1,22 +1,23 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 
-#DELETE {
-#  ?ontology ?ontology_annotation_property ?ontology_annotation_value .
-#}
-
 INSERT { 
-    ?ontology dc:source ?version_iri .
+    ?ontology prov:wasDerivedFrom ?version_iri .
+    ?class rdfs:isDefinedBy ?version_iri .
+    ?property rdfs:isDefinedBy ?version_iri .
+    ?ontology prov:wasDerivedFrom ?ontology .
+    ?class rdfs:isDefinedBy ?ontology .
+    ?property rdfs:isDefinedBy ?ontology .
 }
 
 WHERE {
   ?ontology rdf:type owl:Ontology ;
         owl:versionIRI ?version_iri .
-  #OPTIONAL {
-  #  ?ontology ?ontology_annotation_property ?ontology_annotation_value .
-  #}
+  ?class rdf:type owl:Class.
+  ?property rdf:type owl:ObjectProperty.
+
 
 }
