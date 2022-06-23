@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/vispro/imports/efo_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/vispro/imports/efo_import.owl"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vispro/imports/efo_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vispro/releases/2022-06-23/imports/efo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-23</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/ArrayExpress_label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/ArrayExpress_label"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_URI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EFO_URI"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/branch_class -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/branch_class"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/organizational_class -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/organizational_class"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/source_definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/source_definition"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0301 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0301">
+        <rdfs:label xml:lang="en">hasAncestryStatus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115>A quality is an entity that describes some aspect which is intrinsic to that particular object and is dependent on or more material entities in which it inheres in or is borne by. Example the color of a tomato, the ambient temperature of air, the circumference of a waist, the shape of a nose, the mass of a piece of gold, the weight of a chimpanzee</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001436</efo:EFO_URI>
+        <efo:organizational_class>true</efo:organizational_class>
+        <efo:source_definition>A specifically dependent continuant [snap:SpecificallyDependentContinuant] that is exhibited if it inheres in an entity or entities at all (a categorical property).</efo:source_definition>
+        <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#Quality</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>NCIt:C25283</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:263496004</oboInOwl:hasDbXref>
+        <rdfs:label>quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000001"/>
+        <obo:IAO_0000115>An experimental factor which is a property or characteristic of some other entity.  For example, the mouse has the colour white.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:ArrayExpress_label>sample characteristic</efo:ArrayExpress_label>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001443</efo:EFO_URI>
+        <efo:organizational_class>true</efo:organizational_class>
+        <efo:source_definition>A continuant [snap:Continuant] that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</efo:source_definition>
+        <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>BFO:0000020</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SpecificallyDependentContinuant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>specifically dependent continuant</oboInOwl:hasExactSynonym>
+        <rdfs:label>material property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000001"/>
+        <obo:IAO_0000112>A heart, a human, a fly, a microarray.</obo:IAO_0000112>
+        <obo:IAO_0000115>A material entity is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:ArrayExpress_label>sample factor</efo:ArrayExpress_label>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001434</efo:EFO_URI>
+        <efo:organizational_class>true</efo:organizational_class>
+        <efo:source_definition>An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.</efo:source_definition>
+        <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#MaterialEntity</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>material type</oboInOwl:hasExactSynonym>
+        <rdfs:label>material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
+        <obo:IAO_0000115>Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>ancestral group</oboInOwl:hasExactSynonym>
+        <rdfs:label>ancestry category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0290 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0290">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0301"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0305"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <obo:IAO_0000115>A population with increased genetic homogeneity and reduced genetic variation due to cultural or geographic isolation</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>founder population</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>population isolate</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">genetically isolated population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0304 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0304">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0305"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0306"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>General characterisation of the ancestry of a population or individual</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ancestry status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0304"/>
+        <obo:IAO_0000115>Ancestry that is the result of cultural or geographic isolation. Generally characterised by increased genetic homogeneity and reduced genetic variation</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">genetically isolated ancestry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0306 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0306">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0304"/>
+        <obo:IAO_0000115>Ancestry which is an admixture of more than one defined ancestral population. The degree and type of admixture may vary within a population and the accuracy of classification requires well-defined reference samples</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">admixed ancestry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111 xml:lang="en">population</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID12564891. Environ Sci Technol. 2003 Jan 15;37(2):223-8. Effects of historic PCB exposures on the reproductive success of the Hudson River striped bass population.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>A population is a group of material entities consisting of individuals which share a particular characteristic such as inhabiting a particular region or area or ability to interbreed.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a population is a collection of individuals from the same taxonomic class living, counted or sampled at a particular site or in a particular area</obo:IAO_0000115>
+        <obo:IAO_0000116>1/28/2013, BP, on the call it was raised that we may want to switch to an external ontology for all populatin terms: 
+http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
+        <obo:IAO_0000117>James Malone modified from original OBI definition</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak modified from original OBI definition</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">adapted from Oxford English Dictionnary</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">rem1: collection somehow always involve a selection process</obo:IAO_0000232>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0000664</efo:EFO_URI>
+        <efo:branch_class>true</efo:branch_class>
+        <oboInOwl:hasDbXref>MeSH:D011153</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIFSTD:sao2254405550</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:385436007</oboInOwl:hasDbXref>
+        <rdfs:label>population</rdfs:label>
+        <rdfs:label xml:lang="en">population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000001 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000001">
+        <obo:IAO_0000115>An experimental factor in Array Express which are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This upper level class is really used to give a root class from which applications can rely on and not be tied to upper ontology classses which do change.</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:organizational_class>true</efo:organizational_class>
+        <oboInOwl:created_by>Helen Parkinson</oboInOwl:created_by>
+        <oboInOwl:created_by>James Malone</oboInOwl:created_by>
+        <oboInOwl:created_by>Tomasz Adamusiak</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>MO:10</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ExperimentalFactor</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Concept naming convention is lower case natural naming with spaces, when necessary captials should be used, for example disease factor, HIV, breast carcinoma, Ewing&apos;s sarcoma</rdfs:comment>
+        <rdfs:label>experimental factor</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

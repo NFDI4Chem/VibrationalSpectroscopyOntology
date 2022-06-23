@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/vispro
+
+idspace: VISPRO
+base_url: /obo/vispro
+
+products:
+- vispro.owl: https://raw.githubusercontent.com/NFDI4Chem/VibrationSpectroscopyOntology/main/vispro.owl
+- vispro.obo: https://raw.githubusercontent.com/NFDI4Chem/VibrationSpectroscopyOntology/main/vispro.obo
+
+term_browser: ontobee
+example_terms:
+- VISPRO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/NFDI4Chem/VibrationSpectroscopyOntology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/VISPRO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/NFDI4Chem/VibrationSpectroscopyOntology/main/
