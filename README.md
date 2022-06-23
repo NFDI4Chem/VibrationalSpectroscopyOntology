@@ -4,8 +4,6 @@
 
 Description: _WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (ViSprO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.
 
-More information can be found at http://obofoundry.org/ontology/vispro
-
 ## Versions
 
 ### Stable release versions
