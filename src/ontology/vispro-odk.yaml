@@ -55,20 +55,26 @@ import_group:
   - id: bfo
     module_type: mirror
   - id: ro
+    make_base: true
     module_type: slme
     slme_individuals: exclude
   - id: omo
     module_type: mirror
   - id: iao
-    module_type: custom
-    slme_individuals: exclude
+    make_base: true
+    module_type: slme
+    slme_individuals: include
   - id: chmo
+    make_base: true
     module_type: slme
   - id: pato
+    make_base: true
     module_type: slme
   - id: txpo
-    module_type: custom
+    make_base: true
+    module_type: slme
   - id: efo
+    make_base: true
     module_type: slme
     mirror_from: http://www.ebi.ac.uk/efo/efo.owl
   - id: obi
