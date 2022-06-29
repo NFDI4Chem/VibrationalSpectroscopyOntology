@@ -15,7 +15,7 @@ WHERE {
   ?ontology rdf:type owl:Ontology ;
         owl:versionIRI ?version_iri .
         ?class rdf:type owl:Class .
-  OPTIONAL { ?object_property rdf:type owl:ObjectProperty .
-              ?data_property rdf:type owl:DatatypeProperty .
+        ?object_property rdf:type owl:ObjectProperty .
+  OPTIONAL { ?data_property rdf:type owl:DatatypeProperty .
               }
 }

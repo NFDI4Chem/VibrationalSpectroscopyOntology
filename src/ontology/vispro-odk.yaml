@@ -72,7 +72,8 @@ import_group:
     module_type: slme
     mirror_from: http://www.ebi.ac.uk/efo/efo.owl
   - id: obi
-    module_type: custom
+    make_base: true
+    module_type: slme
   rebuild_if_source_changes: true
   release_imports: false
   slme_individuals: include
