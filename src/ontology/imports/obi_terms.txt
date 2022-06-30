@@ -24,6 +24,7 @@ http://purl.obolibrary.org/obo/OBI_0400169 # microscope
 http://purl.obolibrary.org/obo/OBI_0400170 # microscope slide
 http://purl.obolibrary.org/obo/OBI_0000398 # image creation device
 http://purl.obolibrary.org/obo/OBI_0000245 # organization
+http://purl.obolibrary.org/obo/OBI_0000835 # manufacturer
 
 ################
 ### BFO ICEs ###
@@ -51,6 +52,7 @@ http://purl.obolibrary.org/obo/OBI_0000453 # measure function
 http://purl.obolibrary.org/obo/OBI_0000397 # image acquisition function
 http://purl.obolibrary.org/obo/OBI_0000369 # magnify function
 http://purl.obolibrary.org/obo/OBI_0000399 # solid support function
+http://purl.obolibrary.org/obo/OBI_0000571 # manufacturer role
 
 #########################
 ### Object properties ###
