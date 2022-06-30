@@ -52,3 +52,20 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms_combined.t
 		extract -T $(IMPORTDIR)/ro_terms_combined.txt --copy-ontology-annotations true --force true --individuals exclude --method BOT \
 		query --update ../sparql/preprocess-module_provo_op.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module_2.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+## ONTOLOGY: efo
+# customize the make base mirror recipe by providing the propper base-iri
+.PHONY: mirror-efo
+.PRECIOUS: $(MIRRORDIR)/efo.owl
+mirror-efo: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://www.ebi.ac.uk/efo/efo.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri http://www.ebi.ac.uk/efo/ --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+## Module for ontology: efo
+
+$(IMPORTDIR)/efo_import.owl: $(MIRRORDIR)/efo.owl $(IMPORTDIR)/efo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module_provo.ru \
+		extract -T $(IMPORTDIR)/efo_terms_combined.txt --copy-ontology-annotations true --force true --individuals include --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module_2.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi

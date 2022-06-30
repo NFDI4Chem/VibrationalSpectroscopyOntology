@@ -46,7 +46,7 @@ import_group:
   - txpo
   - pato
   - obi
-  - efo
+  #- efo
   mirror_max_time_download: 200
   mirror_retry_download: 4
   module_type: slme
@@ -73,10 +73,10 @@ import_group:
   - id: txpo
     make_base: true
     module_type: slme
-  - id: efo
-    make_base: true
-    module_type: slme
-    mirror_from: http://www.ebi.ac.uk/efo/efo.owl
+  #- id: efo
+  #  make_base: true
+  #  module_type: slme
+  #  mirror_from: http://www.ebi.ac.uk/efo/efo.owl
   - id: obi
     make_base: true
     module_type: slme

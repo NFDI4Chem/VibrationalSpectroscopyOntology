@@ -24,9 +24,6 @@
   <uri name="http://purl.obolibrary.org/obo/vispro/imports/txpo_import.owl" uri="imports/txpo_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/vispro/imports/txpo_import.obo" uri="imports/txpo_import.obo"/>
   
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/efo_import.owl" uri="imports/efo_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/efo_import.obo" uri="imports/efo_import.obo"/>
-  
   <uri name="http://purl.obolibrary.org/obo/vispro/imports/obi_import.owl" uri="imports/obi_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/vispro/imports/obi_import.obo" uri="imports/obi_import.obo"/>
   

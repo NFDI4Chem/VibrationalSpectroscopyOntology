@@ -1,1 +1,2 @@
-
+http://www.ebi.ac.uk/efo/EFO_0000647 # experiment performer
+http://www.ebi.ac.uk/efo/EFO_0009739 # technician
