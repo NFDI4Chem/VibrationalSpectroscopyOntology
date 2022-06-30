@@ -18,15 +18,11 @@ $(IMPORTDIR)/txpo_import.owl: $(MIRRORDIR)/txpo.owl $(IMPORTDIR)/txpo_terms.txt
 
 ## Module for ontology: iao
 
-#$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt
-#	if [ $(IMP) = true ]; then $(ROBOT) filter -i $< -T $(IMPORTDIR)/iao_terms.txt --select "self ancestors" --signature false --trim true \
-		--output $@.tmp.owl; fi
-#	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module_provo.ru \
-		filter -T $(IMPORTDIR)/iao_terms.txt --select "self annotations ontology" --signature false --trim true \
-		query --update ../sparql/postprocess-module_2.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		merge -i $@.tmp.owl \
-		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module_provo.ru \
+		extract -T $(IMPORTDIR)/iao_terms_combined.txt --copy-ontology-annotations true --force true --individuals include --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module_2.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 ## Module for ontology: obi
 
