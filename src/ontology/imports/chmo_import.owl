@@ -1,15 +1,18 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/vispro/imports/chmo_import.owl#"
      xml:base="http://purl.obolibrary.org/obo/vispro/imports/chmo_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vispro/imports/chmo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vispro/releases/2022-06-23/imports/chmo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-23</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vispro/releases/2022-06-30/imports/chmo_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-30</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -25,9 +28,336 @@
     
 
 
-    <!-- http://purl.org/dc/terms/license -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000800"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The study of the interaction of a sample with radiation or particles for measurement or detection.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000228</oboInOwl:id>
+        <rdfs:label>spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000228"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The study of the interaction of a sample with radiation or particles for measurement or detection.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.S05848</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000793 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000793">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An information content entity that is output by an assay.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>experimental data</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000793</oboInOwl:id>
+        <rdfs:label>assay output</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000793"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An information content entity that is output by an assay.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000800 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000800">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000793"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000228"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A plot of a measured quantity against some experimental parameter.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>spectra</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>spectrum plot</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000800</oboInOwl:id>
+        <rdfs:label>spectrum</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000800"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A plot of a measured quantity against some experimental parameter.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000823 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000823">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000800"/>
+        <obo:IAO_0000115>A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Raman spectra</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000823</oboInOwl:id>
+        <rdfs:label>Raman spectrum</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000823"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1021/jp001661l</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000953 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000953">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115>A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface.</obo:IAO_0000115>
+        <oboInOwl:id>CHMO:0000953</oboInOwl:id>
+        <rdfs:label>microscope</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000953"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002793"/>
+        <obo:IAO_0000115>A piece of apparatus used to measure a spectrum.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-03-25T01:54:09Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>spectrograph</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>spectroscope</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0001234</oboInOwl:id>
+        <rdfs:label>spectrometer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001234"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A piece of apparatus used to measure a spectrum.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001235">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001234"/>
+        <obo:IAO_0000115>A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-03-25T01:55:39Z</oboInOwl:creation_date>
+        <oboInOwl:id>CHMO:0001235</oboInOwl:id>
+        <rdfs:label>Raman spectrometer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001235"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001237">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001814"/>
+        <obo:IAO_0000115>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-03-25T02:05:53Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>Raman confocal microscope</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>confocal Raman microspectrometer</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0001237</oboInOwl:id>
+        <rdfs:label>confocal Raman microscope</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001237"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001814 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001814">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000953"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001235"/>
+        <obo:IAO_0000115>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-05-26T01:03:35Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>CHMO:0001236</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>Raman microspectrometer</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0001814</oboInOwl:id>
+        <rdfs:label>Raman microscope</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001814"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002414 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002414">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000228"/>
+        <obo:IAO_0000115>Any method that measures the amount of light that a substance scatters at certain wavelengths, incident angles, and polarization angles.</obo:IAO_0000115>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-09-17T04:09:34Z</oboInOwl:creation_date>
+        <oboInOwl:id>CHMO:0002414</oboInOwl:id>
+        <rdfs:label>scattering spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002414"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any method that measures the amount of light that a substance scatters at certain wavelengths, incident angles, and polarization angles.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FIX:0000057</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002793 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002793">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115>A piece of apparatus that is used to measure a physical quantity.</obo:IAO_0000115>
+        <oboInOwl:id>CHMO:0002793</oboInOwl:id>
+        <rdfs:label>sensor</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002793"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A piece of apparatus that is used to measure a physical quantity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
 </rdf:RDF>
 
 

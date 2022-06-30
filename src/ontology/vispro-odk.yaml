@@ -46,32 +46,39 @@ import_group:
   - txpo
   - pato
   - obi
-  - efo
+  #- efo
   mirror_max_time_download: 200
   mirror_retry_download: 4
   module_type: slme
   module_type_slme: BOT
   products:
   - id: bfo
-    module_type: slme
+    module_type: mirror
   - id: ro
+    make_base: true
     module_type: slme
     slme_individuals: exclude
   - id: omo
-    module_type: slme
+    module_type: mirror
   - id: iao
+    make_base: true
     module_type: slme
-    slme_individuals: exclude
+    slme_individuals: include
   - id: chmo
+    make_base: true
     module_type: slme
   - id: pato
+    make_base: true
     module_type: slme
   - id: txpo
-    module_type: custom
-  - id: efo
+    make_base: true
     module_type: slme
-    mirror_from: http://www.ebi.ac.uk/efo/efo.owl
+  #- id: efo
+  #  make_base: true
+  #  module_type: slme
+  #  mirror_from: http://www.ebi.ac.uk/efo/efo.owl
   - id: obi
+    make_base: true
     module_type: slme
   rebuild_if_source_changes: true
   release_imports: false
