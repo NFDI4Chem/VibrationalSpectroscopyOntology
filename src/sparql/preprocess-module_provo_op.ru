@@ -8,14 +8,11 @@ INSERT {
     ?ontology prov:wasDerivedFrom ?version_iri .
     ?class dc:source ?version_iri .
     ?object_property dc:source ?version_iri .
-    ?data_property dc:source ?version_iri .
 }
 
 WHERE {
   ?ontology rdf:type owl:Ontology ;
         owl:versionIRI ?version_iri .
-        ?class rdf:type owl:Class .
-        ?object_property rdf:type owl:ObjectProperty .
-  OPTIONAL { ?data_property rdf:type owl:DatatypeProperty .
-              }
+  ?class rdf:type owl:Class .
+  ?object_property rdf:type owl:ObjectProperty .
 }
