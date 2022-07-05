@@ -78,11 +78,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(
 
 # Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000000> (exitation wavelength setting)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000000> "A setting datum that is used to specify the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000000> "exitation wavelength setting"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000000> <http://purl.obolibrary.org/obo/IAO_0000140>)
 
 # Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000001> (exposure time setting)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000001> "A setting datum that is used to specify the duration in which an electromagnetic radiation beam is exposed onto a photosensor.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000001> "exposure time setting"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000001> <http://purl.obolibrary.org/obo/IAO_0000140>)
 
@@ -103,6 +105,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000004> <http://pu
 
 # Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000005> (device temperature setting)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000005> "A setting datum that is used to specify the operating temperature of a device which allows for such a configuration.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000005> "device temperature setting"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000005> <http://purl.obolibrary.org/obo/IAO_0000140>)
 
@@ -118,6 +121,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000007> <http://pu
 
 # Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000008> (CCD sensor binning read mode setting)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000008> "A setting datum that is used to specify the binning read mode of a device with a CCD sensor.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000008> "CCD sensor binning read mode setting"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000008> <http://purl.obolibrary.org/obo/IAO_0000140>)
 
