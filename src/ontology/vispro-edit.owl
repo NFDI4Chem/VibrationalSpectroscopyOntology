@@ -47,6 +47,10 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (<http://purl.obolibrary.org/obo/NCBITaxon_9606>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0100026>)
+
 # Class: <http://purl.obolibrary.org/obo/VISPRO_0000000> (root node)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VISPRO_0000000> "root node"@en)
