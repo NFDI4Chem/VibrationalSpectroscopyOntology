@@ -22,6 +22,15 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Vibration Spectroscopy Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/VISPRO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000008>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -43,6 +52,7 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
+
 ############################
 #   Classes
 ############################
@@ -51,9 +61,66 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0100026>)
 
-# Class: <http://purl.obolibrary.org/obo/VISPRO_0000000> (root node)
+# Class: <http://purl.obolibrary.org/obo/VISPRO_0000000> (vibrational spectrometer configuration specification)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VISPRO_0000000> "root node"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VISPRO_0000000> "A setting datum that specifies the needed settings of a spectrometer used in vibrational spectroscopy."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VISPRO_0000000> "vibrational spectrometer configuration specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> <http://purl.obolibrary.org/obo/IAO_0000140>)
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000000>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000001>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000002>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000003>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000004>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000005>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000006>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000007>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000008>))
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000000> (exitation wavelength setting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000000> "exitation wavelength setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000000> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000001> (exposure time setting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000001> "exposure time setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000001> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000002> (preamplifier gain setting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000002> "preamplifier gain setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000002> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000003> (horizontal shift speed setting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000003> "horizontal shift speed setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000003> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000004> (vertical shift speed setting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000004> "vertical shift speed setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000004> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000005> (device temperature setting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000005> "device temperature setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000005> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000006> (number of scans setting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000006> "number of scans setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000006> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000007> (groove density setting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000007> "groove density setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000007> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000008> (CCD sensor binning read mode setting)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000008> "CCD sensor binning read mode setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/vispro_0000008> <http://purl.obolibrary.org/obo/IAO_0000140>)
 
 
+DisjointClasses(<http://purl.obolibrary.org/obo/VISPRO_0000000> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000000> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000001> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000002> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000003> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000004> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000005> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000006> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000007> <http://purl.obolibrary.org/obo/vispro.owl/vispro_0000008>)
 )
