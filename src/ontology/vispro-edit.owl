@@ -31,6 +31,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -140,6 +141,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008> <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008> "CCD sensor binning read mode setting"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> (groove density)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "A physical quality of a diffraction grating device that represents its number of grooves per length unit (e.g. mm)."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "2022-07-06T07:26:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "groove density"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> <http://purl.obolibrary.org/obo/PATO_0001018>)
 
 
 DisjointClasses(<http://purl.obolibrary.org/obo/VISPRO_0000000> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008>)
