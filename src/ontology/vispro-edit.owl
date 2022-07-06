@@ -146,6 +146,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008> <http://pu
 # Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> (groove density)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "A physical quality of a diffraction grating device that represents its number of grooves per length unit (e.g. mm)."@en)
+AnnotationAssertion(Annotation(rdfs:seeAlso <https://en.wikipedia.org/wiki/Diffraction_grating>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "A physical quality of a diffraction grating device that represents its number of grooves per length unit (e.g. mm)."@en)
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "2022-07-06T07:26:10Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "groove density"@de)
