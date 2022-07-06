@@ -121,6 +121,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005> <http://pu
 
 # Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> (number of scans setting)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> "The setting entered into a Raman microscope which specifies the desired number of measurements this Raman microscope has to perform to produce an usable Raman spectrum."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> "A setting datum that specifies the number of iterations performed in a spectroscopic meassurement from which an aggregated assay output is generated."@en)
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> "number of scans setting"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> <http://purl.obolibrary.org/obo/IAO_0000140>)
