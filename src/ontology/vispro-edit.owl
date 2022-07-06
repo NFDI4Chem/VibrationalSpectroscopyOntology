@@ -86,6 +86,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> "A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material.")
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> "exitation wavelength setting"@de)
+EquivalentClasses(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011>))
 SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> <http://purl.obolibrary.org/obo/IAO_0000140>)
 
 # Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001> (exposure time setting)
@@ -153,6 +154,7 @@ AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPR
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "2022-07-06T07:26:10Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "groove density"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> <http://purl.obolibrary.org/obo/PATO_0001018>)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012>))
 
 # Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> (Raman spectrometer configuration)
 
@@ -161,6 +163,8 @@ AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPR
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> "2022-07-06T07:28:22Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> "Raman spectrometer configuration"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> <http://purl.obolibrary.org/obo/OBI_0000654>)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009>))
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011>))
 
 # Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011> (excitation wavelength)
 
