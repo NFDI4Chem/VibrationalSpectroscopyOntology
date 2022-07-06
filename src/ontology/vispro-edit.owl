@@ -81,11 +81,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(
 SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007>))
 SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008>))
 
-# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> (exitation wavelength setting)
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> (excitation wavelength setting)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> "A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material.")
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> "exitation wavelength setting"@de)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> "excitation wavelength setting"@de)
 EquivalentClasses(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011>))
 SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> <http://purl.obolibrary.org/obo/IAO_0000140>)
 
