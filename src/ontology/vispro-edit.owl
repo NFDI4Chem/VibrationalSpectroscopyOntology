@@ -22,6 +22,19 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Vibration Spectroscopy Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/VISPRO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -43,6 +56,7 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
+
 ############################
 #   Classes
 ############################
@@ -51,9 +65,145 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0100026>)
 
-# Class: <http://purl.obolibrary.org/obo/VISPRO_0000000> (root node)
+# Class: <http://purl.obolibrary.org/obo/VISPRO_0000000> (vibrational spectrometer configuration specification)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VISPRO_0000000> "root node"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VISPRO_0000000> "A setting datum that specifies the needed settings of a spectrometer used in vibrational spectroscopy."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/VISPRO_0000000> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VISPRO_0000000> "vibrational spectrometer configuration specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> <http://purl.obolibrary.org/obo/IAO_0000140>)
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007>))
+SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008>))
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> (excitation wavelength setting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> <http://purl.obolibrary.org/obo/IAO_0000423>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> "A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> "excitation wavelength setting"@de)
+EquivalentClasses(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011>))
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001> (exposure time setting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001> <http://purl.obolibrary.org/obo/IAO_0000423>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001> "A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001> "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001> "exposure time setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002> (preamplifier gain setting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002> <http://purl.obolibrary.org/obo/IAO_0000423>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002> "A setting datum that specifies the preamplifier gain in CCD sensors."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002> "This class should better be defined in a more general device ontology."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002> "preamplifier gain setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003> (horizontal shift speed setting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003> <http://purl.obolibrary.org/obo/IAO_0000423>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003> "A setting datum that specifies the horizontal shift speed in CCD sensors."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003> "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003> "horizontal shift speed setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004> (vertical shift speed setting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004> <http://purl.obolibrary.org/obo/IAO_0000423>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004> "A setting datum that specifies the vertical shift speed in CCD sensors."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004> "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004> "vertical shift speed setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005> (device temperature setting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005> <http://purl.obolibrary.org/obo/IAO_0000423>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005> "A setting datum that specifies the operating temperature of a device.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005> "This class should better be defined in a more general device ontology."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005> "device temperature setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> (number of scans setting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> "The setting entered into a Raman microscope which specifies the desired number of measurements this Raman microscope has to perform to produce an usable Raman spectrum."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> <http://purl.obolibrary.org/obo/IAO_0000423>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> "A setting datum that specifies the number of iterations performed in a spectroscopic meassurement from which an aggregated assay output is generated."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> "This class should better be defined in a more general device ontology."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> "number of scans setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007> (groove density setting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007> <http://purl.obolibrary.org/obo/IAO_0000423>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007> "A setting datum that specifies the number of grooves in a diffraction grating device."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007> "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007> "groove density setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008> (CCD sensor binning read mode setting)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008> <http://purl.obolibrary.org/obo/IAO_0000423>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008> "A setting datum that specifies the binning read mode of a device with a CCD sensor.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008> "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008> "CCD sensor binning read mode setting"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008> <http://purl.obolibrary.org/obo/IAO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> (groove density)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> <http://purl.obolibrary.org/obo/IAO_0000423>)
+AnnotationAssertion(Annotation(rdfs:seeAlso <https://en.wikipedia.org/wiki/Diffraction_grating>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "2022-07-06T07:26:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> "groove density"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> <http://purl.obolibrary.org/obo/PATO_0001018>)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012>))
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> (Raman spectrometer configuration)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> "A device setting that represents the measured qualities which make up the configuration state of a Raman spectrometer at the time of a measurement (e.g. operating temperature, exitation wavelength, groove density, ...)."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> "2022-07-06T07:28:22Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> "Raman spectrometer configuration"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> <http://purl.obolibrary.org/obo/OBI_0000654>)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009>))
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011>))
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011> (excitation wavelength)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011> <http://purl.obolibrary.org/obo/IAO_0000423>)
+AnnotationAssertion(Annotation(rdfs:seeAlso <https://doi.org/10.1351/goldbook>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011> "A physical quality of the light source that is used used to excite a system to a higher energy state."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011> "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011> "2022-07-06T12:52:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011> "excitation wavelength"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011> <http://purl.obolibrary.org/obo/PATO_0001242>)
+
+# Class: <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012> (diffraction grating)
+
+AnnotationAssertion(Annotation(dce:source <https://en.wikipedia.org/wiki/Diffraction_grating>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012> "A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e., different diffraction angles)")
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012> "2022-07-06T10:49:16Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012> "diffraction grating"@de)
+EquivalentClasses(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000968> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CHMO_0001235>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009>)))
+SubClassOf(<http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012> <http://purl.obolibrary.org/obo/OBI_0000968>)
 
 
+DisjointClasses(<http://purl.obolibrary.org/obo/VISPRO_0000000> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007> <http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008>)
 )
