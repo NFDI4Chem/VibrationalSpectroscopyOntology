@@ -66,7 +66,7 @@ import_group:
     slme_individuals: include
   - id: chmo
     make_base: true
-    module_type: slme
+    module_type: custom
   - id: pato
     make_base: true
     module_type: slme

@@ -7,12 +7,13 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vispro/imports/chmo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vispro/releases/2022-06-30/imports/chmo_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-30</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vispro/releases/2022-08-11/imports/chmo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-11</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
     </owl:Ontology>
     
 
@@ -31,6 +32,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
@@ -64,32 +71,15 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
     
 
 
@@ -104,17 +94,48 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHMO_0000228 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000228">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000800"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>The study of the interaction of a sample with radiation or particles for measurement or detection.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
         <oboInOwl:hasExactSynonym>spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0000228</oboInOwl:id>
         <rdfs:label>spectroscopy</rdfs:label>
@@ -128,39 +149,562 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000656 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000656">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002414"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>Raman scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000656</oboInOwl:id>
+        <rdfs:label>Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000656"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FIX:0000058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000657 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000657">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where vibrational optical activity is measured by means of a small difference in the intensity of Raman scattering from chiral molecules of right- and left-circularly polarised incident light.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>Raman optical activity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>chiral Raman</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>chiral Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000657</oboInOwl:id>
+        <rdfs:label>chiral Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000657"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where vibrational optical activity is measured by means of a small difference in the intensity of Raman scattering from chiral molecules of right- and left-circularly polarised incident light.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1016/j.vibspec.2006.04.020</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000658 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000658">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light from three lasers (known as pump, probe and Stokes/anti-Stokes) by a sample is detected. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:id>CHMO:0000658</oboInOwl:id>
+        <rdfs:label>coherent Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000658"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light from three lasers (known as pump, probe and Stokes/anti-Stokes) by a sample is detected. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000659">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000658"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. An anti-Stokes frequency stimulation beam is used and a Stokes frequency beam is observed. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>CSRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>coherent Stokes Raman scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>coherent Stokes Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>coherent Stokes Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000659</oboInOwl:id>
+        <rdfs:label>coherent Stokes Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000659"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. An anti-Stokes frequency stimulation beam is used and a Stokes frequency beam is observed. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000660 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000660">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000659"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. An anti-Stokes frequency stimulation beam is used and a Stokes frequency beam is observed and the difference between the pump and the Stokes beams coincides with the frequency of an electronic transition within the molecule. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:id>CHMO:0000660</oboInOwl:id>
+        <rdfs:label>coherent Stokes resonance Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000660"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. An anti-Stokes frequency stimulation beam is used and a Stokes frequency beam is observed and the difference between the pump and the Stokes beams coincides with the frequency of an electronic transition within the molecule. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000661 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000661">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000658"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. A Stokes frequency stimulation beam is used and an anti-Stokes frequency beam is observed. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>CARS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>coherent anti-Stokes Raman scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>coherent anti-Stokes Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>coherent anti-Stokes Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000661</oboInOwl:id>
+        <rdfs:label>coherent anti-Stokes Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000661"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. A Stokes frequency stimulation beam is used and an anti-Stokes frequency beam is observed. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FIX:0000075</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000662 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000662">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000661"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. A Stokes frequency stimulation beam is used and an anti-Stokes frequency beam is observed and the difference between the pump and the anti-Stokes beams coincides with the frequency of an electronic transition within the molecule. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:id>CHMO:0000662</oboInOwl:id>
+        <rdfs:label>coherent anti-Stokes resonance Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000662"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. A Stokes frequency stimulation beam is used and an anti-Stokes frequency beam is observed and the difference between the pump and the anti-Stokes beams coincides with the frequency of an electronic transition within the molecule. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000663 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000663">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light is detected. An aperture is used to discriminate between Raman signal coming from the focused laser spot and Raman signal coming from the out-of-focus region of the sample.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>CRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>confocal Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000663</oboInOwl:id>
+        <rdfs:label>confocal Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000663"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light is detected. An aperture is used to discriminate between Raman signal coming from the focused laser spot and Raman signal coming from the out-of-focus region of the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0824703693</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000664 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000663"/>
+        <obo:IAO_0000115>The collection of spatially resolved Raman spectra of a sample during optical microscopy. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>confocal Raman microanalysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>confocal Raman microspectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>confocal Raman microspectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>confocal micro Raman</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000664</oboInOwl:id>
+        <rdfs:label>confocal Raman microscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000664"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The collection of spatially resolved Raman spectra of a sample during optical microscopy. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0824703693</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000665 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000665">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of light (produced by a single laser pulse) by a sample is detected and the spectrum is subject to a Fourier transform.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasDbXref>FIX:0000384</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>FT-Raman</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Fourier transform Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000665</oboInOwl:id>
+        <rdfs:label>Fourier transform Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000665"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of light (produced by a single laser pulse) by a sample is detected and the spectrum is subject to a Fourier transform.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000666 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000666">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of light by a (liquid) sample is detected. During scattering, photons from the incident laser (with frequency ω) are scattered by sample into photons of the second harmonic (photons with frequency 2ω).</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>hyper Raman scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hyper Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hyper Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hyper-Raman scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hyper-Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hyper-Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hyper-Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000666</oboInOwl:id>
+        <rdfs:label>hyper Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000666"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of light by a (liquid) sample is detected. During scattering, photons from the incident laser (with frequency ω) are scattered by sample into photons of the second harmonic (photons with frequency 2ω).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the polarisation of light which has been subjected to Raman scattering by a sample is determined.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>polarised Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>polarized Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>polarized Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000667</oboInOwl:id>
+        <rdfs:label>polarised Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000667"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the polarisation of light which has been subjected to Raman scattering by a sample is determined.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000668 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000668">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Raman spectroscopy where the energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition in the sample.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasDbXref>FIX:0000060</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>RR spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>RR spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>resonance Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>resonant Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>resonant Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>RRS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHMO:0000668</oboInOwl:id>
+        <rdfs:label>resonance Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000668"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Raman spectroscopy where the energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition in the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000669 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000668"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample, and the laser is combined with a Kerr gate fluorescence rejection system.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>Kerr-gated Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000669</oboInOwl:id>
+        <rdfs:label>Kerr-gated resonance Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000669"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample, and the laser is combined with a Kerr gate fluorescence rejection system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000670 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000677"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasDbXref>FIX:0000077</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SERRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface enhanced resonance Raman scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface enhanced resonance Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface enhanced resonance Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000670</oboInOwl:id>
+        <rdfs:label>surface-enhanced resonance Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000670"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000671 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000671">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000668"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from an ultraviolet laser, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>UVRR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UVRRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ultra-violet resonance Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000671</oboInOwl:id>
+        <rdfs:label>ultraviolet resonance Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000671"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from an ultraviolet laser, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1039/b702944f</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000672 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000672">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000671"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a deep ultraviolet (&lt;300 nm) laser, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:id>CHMO:0000672</oboInOwl:id>
+        <rdfs:label>deep ultra-violet resonance Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000672"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a deep ultraviolet (&lt;300 nm) laser, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1039/b702944f</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a laser, by a sample is detected. Scattered light is collected from regions laterally offset from the excitation laser spot.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>SORS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SORSS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>spatially offset Raman scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>spatially offset Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>spatially offset Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>spatially offset Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000674</oboInOwl:id>
+        <rdfs:label>spatially-offset Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000674"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a laser, by a sample is detected. Scattered light is collected from regions laterally offset from the excitation laser spot.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000675 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000675">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from two lasers (&apos;pump&apos; and &apos;probe&apos;) by a sample is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>SRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stimulated Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stimulated Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stimulated scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000675</oboInOwl:id>
+        <rdfs:label>stimulated Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000675"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from two lasers (&apos;pump&apos; and &apos;probe&apos;) by a sample is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0-471-96523-5</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000676">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000675"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a femtosecond laser pulse, by a sample is detected. The laser pulse is generated by the mixing of two lasers (&apos;pump&apos; and &apos;probe&apos;).</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>FSRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FSRSS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>emtosecond broadband stimulated Raman scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>femosecond stimulated Raman scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>femosecond stimulated Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>femosecond stimulated Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>femtosecond broadband stimulated Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>femtosecond broadband stimulated Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>femtosecond broadband stimulated Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000676</oboInOwl:id>
+        <rdfs:label>femosecond stimulated Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000676"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a femtosecond laser pulse, by a sample is detected. The laser pulse is generated by the mixing of two lasers (&apos;pump&apos; and &apos;probe&apos;).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1088/1742-6596/28/1/007</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000677 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000677">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>SERS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SERS spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface enhanced Raman scattering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface enhanced Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface enhanced Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface-enhanced Raman scattering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface-enhanced Raman scattering (SERS) spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface-enhanced Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface-enhanced Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000677</oboInOwl:id>
+        <rdfs:label>surface-enhanced Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000677"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000076</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000678 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000678">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser (500–650 nm), by metal surfaces, where scattering is enhanced by the optical near-field of a metal-coated scanning probe microscopy tip, is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>TERS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tip-enhanced Raman scattering spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tip-enhanced Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000678</oboInOwl:id>
+        <rdfs:label>tip-enhanced Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000678"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser (500–650 nm), by metal surfaces, where scattering is enhanced by the optical near-field of a metal-coated scanning probe microscopy tip, is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1002/anie.200460656</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1039/b9nr00156e</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000679 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000679">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000678"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of visible laser light, by metal surfaces, where scattering is enhanced by the optical near field of a scanning tunnelling tip, under ultra-high vacuum is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>UHV-TERS</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000679</oboInOwl:id>
+        <rdfs:label>ultra-high vacuum tip-enhanced Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000679"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of visible laser light, by metal surfaces, where scattering is enhanced by the optical near field of a scanning tunnelling tip, under ultra-high vacuum is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000680 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000680">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from an ultraviolet laser, by a sample is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>UVR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ultra-violet Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ultra-violet Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ultraviolet Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ultraviolet Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000680</oboInOwl:id>
+        <rdfs:label>ultraviolet Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000680"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from an ultraviolet laser, by a sample is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1021/ja044708f</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000770 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000770">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000677"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a single molecule sample adsorbed onto a metal (Au, Ag or Cu) surface is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>SM SERS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SM-SERRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SM-SERS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SM-SERS spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SMSERS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>single molecule surface enhanced Raman scattering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>single molecule surface enhanced Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>single molecule surface-enhanced Raman scattering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>single molecule surface-enhanced Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>single molecule surface-enhanced Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000770</oboInOwl:id>
+        <rdfs:label>single molecule surface-enhanced Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000770"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a single molecule sample adsorbed onto a metal (Au, Ag or Cu) surface is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1021/cr980133r</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHMO_0000793 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000793">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>An information content entity that is output by an assay.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>experimental data</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>CHMO:0000793</oboInOwl:id>
-        <rdfs:label>assay output</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000793"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An information content entity that is output by an assay.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -168,24 +712,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000800">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000793"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000228"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A plot of a measured quantity against some experimental parameter.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>spectra</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>spectrum plot</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>CHMO:0000800</oboInOwl:id>
-        <rdfs:label>spectrum</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000800"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A plot of a measured quantity against some experimental parameter.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -194,6 +721,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000823">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000800"/>
         <obo:IAO_0000115>A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
         <oboInOwl:hasExactSynonym>Raman spectra</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0000823</oboInOwl:id>
         <rdfs:label>Raman spectrum</rdfs:label>
@@ -202,7 +730,72 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000823"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1021/jp001661l</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1021/jp001661l</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000870 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000870">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of near-infrared radiation (radiation in the range 0.8–2 μm) is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>NIR Raman</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>near-infrared Raman</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000870</oboInOwl:id>
+        <rdfs:label>near-infrared Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000870"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of near-infrared radiation (radiation in the range 0.8–2 μm) is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000875 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000875">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000677"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, at a metal (Au, Ag or Cu) electrochemcial interface is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>EC-SERS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>electrochemical SERS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>electrochemical surface enhanced Raman scattering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>electrochemical surface-enhanced Raman scattering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>electrochemical surface-enhanced Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000875</oboInOwl:id>
+        <rdfs:label>electrochemical surface-enhanced Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000875"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, at a metal (Au, Ag or Cu) electrochemcial interface is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/jp809363m</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000885 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000885">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000657"/>
+        <obo:IAO_0000115>Spectroscopy where vibrational optical activity from a sample absorbed onto a metal (Au, Ag or Cu) surface is measured by means of a small difference in the intensity of Raman scattering from chiral molecules of right- and left-circularly polarised incident light.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:hasExactSynonym>SEROA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface enhanced Raman optical activity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface enhanced chiral Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>surface-enhanced Raman optical activity</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000885</oboInOwl:id>
+        <rdfs:label>surface-enhanced chiral Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000885"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where vibrational optical activity from a sample absorbed onto a metal (Au, Ag or Cu) surface is measured by means of a small difference in the intensity of Raman scattering from chiral molecules of right- and left-circularly polarised incident light.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -211,16 +804,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000953">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <obo:IAO_0000115>A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface.</obo:IAO_0000115>
-        <oboInOwl:id>CHMO:0000953</oboInOwl:id>
-        <rdfs:label>microscope</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000953"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
-    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000993 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000993">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
     
 
 
@@ -228,20 +820,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001234">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002793"/>
-        <obo:IAO_0000115>A piece of apparatus used to measure a spectrum.</obo:IAO_0000115>
-        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
-        <oboInOwl:creation_date>2009-03-25T01:54:09Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym>spectrograph</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>spectroscope</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>CHMO:0001234</oboInOwl:id>
-        <rdfs:label>spectrometer</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001234"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A piece of apparatus used to measure a spectrum.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -250,6 +829,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001235">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001234"/>
         <obo:IAO_0000115>A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-03-25T01:55:39Z</oboInOwl:creation_date>
         <oboInOwl:id>CHMO:0001235</oboInOwl:id>
@@ -264,23 +844,48 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHMO_0001237 -->
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001766 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001237">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001814"/>
-        <obo:IAO_0000115>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.</obo:IAO_0000115>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001766">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, usually from a laser, by a sample is detected. The light is collected from the non-illuminated side of the sample.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
-        <oboInOwl:creation_date>2009-03-25T02:05:53Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym>Raman confocal microscope</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>confocal Raman microspectrometer</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>CHMO:0001237</oboInOwl:id>
-        <rdfs:label>confocal Raman microscope</rdfs:label>
+        <oboInOwl:creation_date>2009-05-20T10:12:23Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>TRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>transmission Raman</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>transmission Raman scattering spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>transmission Raman spectrometry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0001766</oboInOwl:id>
+        <rdfs:label>transmission Raman spectroscopy</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001237"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001766"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.</owl:annotatedTarget>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, usually from a laser, by a sample is detected. The light is collected from the non-illuminated side of the sample.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001767 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001767">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, usually from a laser, by a sample (e.g. a biological cell) constrained using optical tweezers is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-05-20T10:18:22Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>OTRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Raman tweezers</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0001767</oboInOwl:id>
+        <rdfs:label>optical tweezers Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001767"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, usually from a laser, by a sample (e.g. a biological cell) constrained using optical tweezers is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1039/b815253e</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -291,6 +896,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000953"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001235"/>
         <obo:IAO_0000115>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-05-26T01:03:35Z</oboInOwl:creation_date>
         <oboInOwl:hasAlternativeId>CHMO:0001236</oboInOwl:hasAlternativeId>
@@ -307,11 +913,202 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001939 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001939">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000675"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light from two lasers (&apos;pump&apos; and &apos;probe&apos;) by a sample is detected. In stimulated Raman gain spectroscopy the probe laser has a lower frequency than the pump laser.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-06-10T09:51:36Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>Raman gain spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SRGS</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0001939</oboInOwl:id>
+        <rdfs:label>stimulated Raman gain spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001939"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light from two lasers (&apos;pump&apos; and &apos;probe&apos;) by a sample is detected. In stimulated Raman gain spectroscopy the probe laser has a lower frequency than the pump laser.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0824705572</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001940 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001940">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000675"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light from two lasers (&apos;pump&apos; and &apos;probe&apos;) by a sample is detected. In stimulated Raman gain spectroscopy the pump laser has a lower frequency than the probe laser.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-06-10T09:55:17Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>IRGS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>IRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Raman loss spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SRLS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inverse Raman gain spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inverse Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0001940</oboInOwl:id>
+        <rdfs:label>stimulated Raman loss spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001940"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light from two lasers (&apos;pump&apos; and &apos;probe&apos;) by a sample is detected. In stimulated Raman gain spectroscopy the pump laser has a lower frequency than the probe laser.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0824705572</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001941 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001941">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000675"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. Two lasers (&apos;pump and &apos;probe&apos;) are mixed and focused on the sample cell. When the frequency difference between the lasers corresponds to a Raman transition, an acoustic signal (a sound wave produced by an increase in pressure) is generated and detected by a sensitive microphone.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-06-10T10:02:35Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>PARS</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0001941</oboInOwl:id>
+        <rdfs:label>photoacoustic Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001941"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. Two lasers (&apos;pump and &apos;probe&apos;) are mixed and focused on the sample cell. When the frequency difference between the lasers corresponds to a Raman transition, an acoustic signal (a sound wave produced by an increase in pressure) is generated and detected by a sensitive microphone.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0824705572</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001942 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001942">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000675"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from two lasers (&apos;pump&apos; and &apos;probe&apos;) by a sample is detected. The molecules in the sample are ionised using an ultraviolet laser in order to improve the signal-to-noise ratio of the spectrum.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-06-10T10:14:20Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>IDSRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ionization-detected stimulated Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0001942</oboInOwl:id>
+        <rdfs:label>ionisation-detected stimulated Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001942"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from two lasers (&apos;pump&apos; and &apos;probe&apos;) by a sample is detected. The molecules in the sample are ionised using an ultraviolet laser in order to improve the signal-to-noise ratio of the spectrum.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0824705572</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001943 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001943">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a two-colour laser, by a sample is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-06-10T10:23:02Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>HORSES</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>higher order Raman spectral excitation studies</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>higher-order Raman spectral excitation spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>higher-order Raman spectral excitation studies</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0001943</oboInOwl:id>
+        <rdfs:label>higher-order Raman spectral excitation spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001943"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a two-colour laser, by a sample is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://doi.org/10.1007/BF00750953</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001986 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001986">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light does not coincide with an electronic transition in the sample.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-06-17T03:24:06Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>non resonance Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non resonant Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non-resonance Raman</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non-resonant Raman</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non-resonant Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0001986</oboInOwl:id>
+        <rdfs:label>non-resonance Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001986"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light does not coincide with an electronic transition in the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FIX:0000026</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <obo:IAO_0000115>A type of Raman spectroscopy where the spectral signal is enhanced by pre-concentration of the sample. Drops of the sample in solution are deposited onto a surface and dry in a &apos;coffee-ring&apos; pattern. Spectra are then obtained from this ring of excess of material, after evaporation has completed.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-07-14T10:12:49Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>DCD Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>DCDR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>DCDR spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>drop coating deposition Raman (DCDR) spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>drop-coating deposition Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>drop-coating-deposition Raman spectroscopy</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0002165</oboInOwl:id>
+        <rdfs:label>drop coating deposition Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002165"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A type of Raman spectroscopy where the spectral signal is enhanced by pre-concentration of the sample. Drops of the sample in solution are deposited onto a surface and dry in a &apos;coffee-ring&apos; pattern. Spectra are then obtained from this ring of excess of material, after evaporation has completed.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1039/b701541k</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000668"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000677"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001986"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected. The energy of the incoming laser is adjusted such that it or the scattered light does not coincide with an electronic transition within the sample.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-09-15T05:14:57Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>FIX:0000078</oboInOwl:hasDbXref>
+        <oboInOwl:id>CHMO:0002373</oboInOwl:id>
+        <rdfs:label>surface-enhanced non-resonance Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002373"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected. The energy of the incoming laser is adjusted such that it or the scattered light does not coincide with an electronic transition within the sample.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHMO_0002414 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002414">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000228"/>
         <obo:IAO_0000115>Any method that measures the amount of light that a substance scatters at certain wavelengths, incident angles, and polarization angles.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-09-17T04:09:34Z</oboInOwl:creation_date>
         <oboInOwl:id>CHMO:0002414</oboInOwl:id>
@@ -326,38 +1123,71 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000656"/>
+        <obo:IAO_0000115>Spectroscopy where the Raman scattering of monochromatic light, from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
+        <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-10-09T11:39:33Z</oboInOwl:creation_date>
+        <oboInOwl:id>CHMO:0002515</oboInOwl:id>
+        <rdfs:label>laser Raman spectroscopy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002515"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FIX:0000375</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHMO_0002793 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002793">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <obo:IAO_0000115>A piece of apparatus that is used to measure a physical quantity.</obo:IAO_0000115>
-        <oboInOwl:id>CHMO:0002793</oboInOwl:id>
-        <rdfs:label>sensor</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002793"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A piece of apparatus that is used to measure a physical quantity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
+    </owl:Class>
 </rdf:RDF>
 
 
