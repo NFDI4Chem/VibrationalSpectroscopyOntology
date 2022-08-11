@@ -10,8 +10,8 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vispro/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vispro/releases/2022-06-30/imports/obi_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-30</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vispro/releases/2022-07-06/imports/obi_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-06</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl"/>
     </owl:Ontology>
     
@@ -1732,8 +1732,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000769">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <rdfs:label>Li-Cor</rdfs:label>
-        <obo:IAO_0000111>Li-Cor</obo:IAO_0000111>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000111>Li-Cor</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000770">
         <obo:IAO_0000111>Bruker Corporation</obo:IAO_0000111>
@@ -1761,8 +1761,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000846">
         <obo:IAO_0000115>Relating a legal person or organization to an organization in the case where the legal person or organization has a role as member of the organization.</obo:IAO_0000115>
-        <obo:IAO_0000117>Person:Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000111>is member of organization</obo:IAO_0000111>
+        <obo:IAO_0000117>Person:Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl"/>
         <obo:IAO_0000116>JZ: Discussed on May 7, 2012 OBI dev call. Bjoern points out that we need to allow for organizations to be members of organizations. And agreed by the other OBI developers. So, human and organization were specified in &apos;Domains&apos;. The textual definition was updated based on it.</obo:IAO_0000116>
@@ -1770,8 +1770,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000232>2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000232>
         <obo:IAO_0000116>2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population</obo:IAO_0000116>
         <rdfs:label>is member of organization</rdfs:label>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000119>Person:Helen Parkinson</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001213">
         <rdfs:label>eBioscience</rdfs:label>
@@ -1790,25 +1790,25 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:label>Cytopeia</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001287">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000119>WEB:http://www.exalpha.com/@2011/04/11</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
-        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000111>Exalpha Biological</obo:IAO_0000111>
+        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <rdfs:label>Exalpha Biological</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001312">
         <obo:IAO_0000119>WEB:http://www.apogeeflow.com/@2011/04/11</obo:IAO_0000119>
         <obo:IAO_0000111>Apogee Flow Systems</obo:IAO_0000111>
-        <rdfs:label>Apogee Flow Systems</rdfs:label>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <rdfs:label>Apogee Flow Systems</rdfs:label>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001320">
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000111>Exbio Antibodies</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
         <rdfs:label>Exbio Antibodies</rdfs:label>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.exbio.cz/@2011/04/11</obo:IAO_0000119>
@@ -1838,8 +1838,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:label>Millipore</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001347">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000111>Antigenix</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <rdfs:label>Antigenix</rdfs:label>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -1854,8 +1854,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000111>Partec</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001372">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000111>Beckman Coulter</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000119>WEB:http://www.beckmancoulter.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Beckman Coulter</rdfs:label>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
@@ -1912,10 +1912,10 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001458">
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000111>CytoBuoy</obo:IAO_0000111>
-        <obo:IAO_0000119>WEB:http://www.cytobuoy.com/@2011/04/11</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <rdfs:label>CytoBuoy</rdfs:label>
+        <obo:IAO_0000119>WEB:http://www.cytobuoy.com/@2011/04/11</obo:IAO_0000119>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001688">
         <obo:IAO_0000115>Relating an organization to a legal person or organization.</obo:IAO_0000115>
@@ -1943,8 +1943,8 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001860">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>NanoString Technologies</rdfs:label>
         <obo:IAO_0000111>NanoString Technologies</obo:IAO_0000111>
+        <rdfs:label>NanoString Technologies</rdfs:label>
         <obo:IAO_0000115>An organization that supplies life science tools for translational research and molecular diagnostics based on a novel digital molecular barcoding technology. The NanoString platform can provide simple, multiplexed digital profiling of single molecules.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0002193">

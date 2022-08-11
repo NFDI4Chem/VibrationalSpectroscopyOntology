@@ -1,0 +1,528 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/vispro/vispro-base.owl#"
+     xml:base="http://purl.obolibrary.org/obo/vispro/vispro-base.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vispro/vispro-base.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vispro/releases/2022-07-06/vispro-base.owl"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <terms:description>_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (ViSprO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title>Vibration Spectroscopy Ontology</terms:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-06</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:label>description</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:label>license</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:label>title</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000080"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0001235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001235"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000140"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:label>person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000654 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000654"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001242"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VISPRO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VISPRO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the needed settings of a spectrometer used in vibrational spectroscopy.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">vibrational spectrometer configuration specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000140"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115>A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="de">excitation wavelength setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115>A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="de">exposure time setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the preamplifier gain in CCD sensors.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="de">preamplifier gain setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the horizontal shift speed in CCD sensors.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="de">horizontal shift speed setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the vertical shift speed in CCD sensors.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="de">vertical shift speed setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115>A setting datum that specifies the operating temperature of a device.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="de">device temperature setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">The setting entered into a Raman microscope which specifies the desired number of measurements this Raman microscope has to perform to produce an usable Raman spectrum.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the number of iterations performed in a spectroscopic meassurement from which an aggregated assay output is generated.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="de">number of scans setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the number of grooves in a diffraction grating device.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="de">groove density setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115>A setting datum that specifies the binning read mode of a device with a CCD sensor.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="de">CCD sensor binning read mode setting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115 xml:lang="en">A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-06T07:26:10Z</dc:date>
+        <rdfs:label xml:lang="de">groove density</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light.</owl:annotatedTarget>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000654"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A device setting that represents the measured qualities which make up the configuration state of a Raman spectrometer at the time of a measurement (e.g. operating temperature, exitation wavelength, groove density, ...).</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-06T07:28:22Z</dc:date>
+        <rdfs:label xml:lang="de">Raman spectrometer configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001242"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115 xml:lang="en">A physical quality of the light source that is used used to excite a system to a higher energy state.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-06T12:52:34Z</dc:date>
+        <rdfs:label xml:lang="de">excitation wavelength</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A physical quality of the light source that is used used to excite a system to a higher energy state.</owl:annotatedTarget>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1351/goldbook"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001235"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115>A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e., different diffraction angles)</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-06T10:49:16Z</dc:date>
+        <rdfs:label xml:lang="de">diffraction grating</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000012"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e., different diffraction angles)</owl:annotatedTarget>
+        <dc:source rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/VISPRO_0000000"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000000"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000001"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000002"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000003"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000004"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000005"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000006"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000007"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/vispro.owl/VISPRO_0000008"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
