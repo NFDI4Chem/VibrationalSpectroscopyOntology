@@ -1,5 +1,12 @@
+http://purl.obolibrary.org/obo/CHMO_0000993 # 'portion of material'
+http://purl.obolibrary.org/obo/CHMO_0000953 # microscope
+http://purl.obolibrary.org/obo/CHMO_0002793 # sensor
+http://purl.obolibrary.org/obo/CHMO_0001234 # spectrometer
+http://purl.obolibrary.org/obo/CHMO_0000793 # 'assay output'
+http://purl.obolibrary.org/obo/CHMO_0000800 # spectrum
+http://purl.obolibrary.org/obo/CHMO_0000228 # spectroscopy
 http://purl.obolibrary.org/obo/CHMO_0002414 # scattering spectroscopy
+http://purl.obolibrary.org/obo/CHMO_0000628 # vibrational spectroscopy
 http://purl.obolibrary.org/obo/CHMO_0001814 # Raman microscope
 http://purl.obolibrary.org/obo/CHMO_0001235 # Raman spectrometer
 http://purl.obolibrary.org/obo/CHMO_0000823 # Raman spectrum
-http://purl.obolibrary.org/obo/CHMO_0001237 # confocal Raman microscope
