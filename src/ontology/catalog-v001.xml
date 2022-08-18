@@ -3,6 +3,8 @@
 <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
 
   
+  <uri name="http://purl.obolibrary.org/obo/vispro/components/vispro_terms.owl" uri="components/vispro_terms.owl"/>
+
   <uri name="http://purl.obolibrary.org/obo/vispro/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/vispro/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
   

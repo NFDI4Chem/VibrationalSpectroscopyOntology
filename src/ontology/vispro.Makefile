@@ -3,6 +3,21 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+##################
+#   components   #
+##################
+
+$(COMPONENTSDIR)/vispro_terms.owl: $(TEMPLATEDIR)/vispro_terms.csv
+	if [ $(COMP) = true ] ; then $(ROBOT) template --ontology-iri $@ \
+		--merge-after --input $(SRC) --add-prefixes config/context.json \
+		--template $< --output $@; fi
+	if [ $(COMP) = true ] ; then $(ROBOT) annotate -i $(COMPONENTSDIR)/vispro_terms.owl \
+		--ontology-iri $(ONTBASE)/$@ \
+		--version-iri $(ONTBASE)/releases/$(VERSION)/$@ --output $@; fi
+
+##################
+# import modules #
+##################
 
 ## Module for ontology: txpo
 
