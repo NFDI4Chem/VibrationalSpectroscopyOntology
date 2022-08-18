@@ -22,7 +22,6 @@ Annotation(dcterms:description "_WIP - NOT READY FOR PRODUCTION_ The Vibration S
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Vibration Spectroscopy Ontology")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/VISPRO_0000012>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -52,14 +51,6 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "person")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0100026>)
-
-# Class: <http://purl.obolibrary.org/obo/VISPRO_0000012> (diffraction grating)
-
-AnnotationAssertion(Annotation(dce:source <https://en.wikipedia.org/wiki/Diffraction_grating>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VISPRO_0000012> "A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e., different diffraction angles)")
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/VISPRO_0000012> <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/VISPRO_0000012> "2022-07-06T10:49:16Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VISPRO_0000012> "diffraction grating"@de)
-SubClassOf(<http://purl.obolibrary.org/obo/VISPRO_0000012> <http://purl.obolibrary.org/obo/OBI_0000968>)
 
 
 )
