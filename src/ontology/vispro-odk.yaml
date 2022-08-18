@@ -100,7 +100,7 @@ release_artefacts:
 release_date: false
 remove_owl_nothing: false
 repo: VibrationSpectroscopyOntology
-robot_java_args: ''
+robot_java_args: '-Xmx16G'
 robot_report:
   custom_profile: false
   custom_sparql_checks:
