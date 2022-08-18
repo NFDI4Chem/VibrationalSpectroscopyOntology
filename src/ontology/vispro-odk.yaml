@@ -2,7 +2,6 @@ allow_equivalents: asserted-only
 catalog_file: catalog-v001.xml
 ci:
 - github_actions
-components: null
 contact: null
 contributors: null
 create_obo_metadata: true
@@ -132,3 +131,11 @@ uribase: http://purl.obolibrary.org/obo
 use_custom_import_module: false
 use_dosdps: false
 use_external_date: false
+components:
+  products:
+    - filename: vispro_terms.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json 
+      templates:
+        - vispro_terms.csv
+
