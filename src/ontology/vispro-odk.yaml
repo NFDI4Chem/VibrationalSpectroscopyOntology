@@ -137,5 +137,5 @@ components:
       use_template: TRUE
       template_options: --add-prefixes config/context.json 
       templates:
-        - vispro_terms.csv
+        - vispro_terms.tsv
 
