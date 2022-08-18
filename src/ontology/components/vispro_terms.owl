@@ -249,7 +249,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VISPRO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000654"/>
-        <obo:IAO_0000112 xml:lang="en">The set of meassured configuration characteristics of a Raman spectrometer, like the operating temperature of a Raman spectrometer..</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The set of meassured configuration characteristics of a Raman spectrometer, like the operating temperature of a Raman spectrometer.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A device setting that represents the measured qualities which make up the configuration state of a Raman spectrometer at the time of a measurement (e.g. operating temperature, exitation wavelength, groove density, ...).</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">Raman spectrometer configuration</rdfs:label>
@@ -279,7 +279,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VISPRO_0000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <obo:IAO_0000115 xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e., different diffraction angles)</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">diffraction grating</rdfs:label>
@@ -287,7 +287,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VISPRO_0000012"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e., different diffraction angles)</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</owl:annotatedTarget>
         <dc:source rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
     </owl:Axiom>
     

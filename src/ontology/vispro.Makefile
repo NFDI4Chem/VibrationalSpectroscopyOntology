@@ -7,7 +7,7 @@
 #   components   #
 ##################
 
-$(COMPONENTSDIR)/vispro_terms.owl: $(TEMPLATEDIR)/vispro_terms.csv
+$(COMPONENTSDIR)/vispro_terms.owl: $(TEMPLATEDIR)/vispro_terms.tsv
 	if [ $(COMP) = true ] ; then $(ROBOT) template --ontology-iri $@ \
 		--merge-after --input $(SRC) --add-prefixes config/context.json \
 		--template $< --output $@; fi
