@@ -1,3 +1,4 @@
+Prefix(:=<http://www.w3.org/2002/07/owl#>)
 Prefix(cc:=<http://creativecommons.org/ns#>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(DOI:=<http://doi.org/>)
