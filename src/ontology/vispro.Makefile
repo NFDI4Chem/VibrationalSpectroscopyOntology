@@ -14,7 +14,8 @@ $(COMPONENTSDIR)/vispro_terms.owl: $(TEMPLATEDIR)/vispro_terms.tsv
 	if [ $(COMP) = true ] ; then $(ROBOT) annotate -i $@ \
 		--ontology-iri $(ONTBASE)/$@ \
 		--version-iri $(ONTBASE)/releases/$(VERSION)/$@ \
-		--annotation rdfs:comment "This component is derived from the 'src/templates/vispro_terms.tsv', which is edited manually by domain experts." --output $@; fi
+		--annotation rdfs:comment "This component is derived from the 'src/templates/vispro_terms.tsv', which is edited manually by domain experts." \
+		convert -f ofn --output $@; fi
 
 ##################
 # import modules #
