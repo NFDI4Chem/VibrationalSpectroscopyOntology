@@ -18,7 +18,7 @@ https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/blob/main/vispro.owl
 
 Editors of this ontology should use the edit version, [src/ontology/vispro-edit.owl](src/ontology/vispro-edit.owl)
 
-Another approach of curating terms (e.g. for non Protégé experienced domain experts) is to edit [src/templates/vispro_terms.tsv](src/templates/vispro_terms.tsv) and then let the repo maintainers run `sh. run.sh make recreate-components`.
+Another approach of curating terms (e.g. for non Protégé experienced domain experts) is to edit [src/templates/vispro_terms.tsv](src/templates/vispro_terms.tsv) and then let the repo maintainers run `sh run.sh make recreate-components`.
 
 ## Contact
 
