@@ -46,7 +46,7 @@ TODAY ?=                    $(shell date +%Y-%m-%d)
 OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
-OTHER_SRC =                 
+OTHER_SRC =                 $(COMPONENTSDIR)/vispro_terms.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 
 FORMATS = $(sort  owl obo owl)
@@ -298,12 +298,8 @@ $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms_combine
 
 ## Module for ontology: chmo
 
-$(IMPORTDIR)/chmo_import.owl: $(MIRRORDIR)/chmo.owl $(IMPORTDIR)/chmo_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
-		extract -T $(IMPORTDIR)/chmo_terms_combined.txt --copy-ontology-annotations true --force true --individuals include --method BOT \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
+$(IMPORTDIR)/chmo_import.owl: $(MIRRORDIR)/chmo.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in vispro.Makefile!" && false
 ## Module for ontology: pato
 
 $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms_combined.txt
@@ -348,6 +344,30 @@ refresh-%:
 .PHONY: no-mirror-refresh-%
 no-mirror-refresh-%:
 	$(MAKE) IMP=true IMP_LARGE=true MIR=false PAT=false $(IMPORTDIR)/$*_import.owl -B
+
+
+# ----------------------------------------
+# Components
+# ----------------------------------------
+# Some ontologies contain external and internal components. A component is included in the ontology in its entirety.
+
+COMP=true # Global parameter to bypass component generation
+
+.PHONY: all_components
+all_components: $(OTHER_SRC)
+
+.PHONY: recreate-components
+recreate-components:
+	$(MAKE) IMP=true MIR=true PAT=true IMP_LARGE=true all_components -B
+
+.PHONY: recreate-%
+recreate-%:
+	$(MAKE) IMP=true IMP_LARGE=true MIR=true PAT=true $(COMPONENTSDIR)/$*.owl -B
+
+$(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
+	touch $@
+.PRECIOUS: $(COMPONENTSDIR)/%
+
 
 # ----------------------------------------
 # Mirroring upstream ontologies
