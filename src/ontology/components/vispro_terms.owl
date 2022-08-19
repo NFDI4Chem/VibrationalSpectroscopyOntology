@@ -9,7 +9,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vispro/components/vispro_terms.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vispro/releases/2022-08-18/components/vispro_terms.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vispro/releases/2022-08-19/components/vispro_terms.owl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This component is derived from the &apos;src/templates/vispro_terms.tsv&apos;, which is edited manually by domain experts.</rdfs:comment>
     </owl:Ontology>
     
 

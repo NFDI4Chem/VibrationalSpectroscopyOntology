@@ -8,12 +8,13 @@
 ##################
 
 $(COMPONENTSDIR)/vispro_terms.owl: $(TEMPLATEDIR)/vispro_terms.tsv
-	if [ $(COMP) = true ] ; then $(ROBOT) template --ontology-iri $@ \
+	if [ $(COMP) = true ] ; then $(ROBOT) template \
 		--merge-after --input $(SRC) --add-prefixes config/context.json \
 		--template $< --output $@; fi
-	if [ $(COMP) = true ] ; then $(ROBOT) annotate -i $(COMPONENTSDIR)/vispro_terms.owl \
+	if [ $(COMP) = true ] ; then $(ROBOT) annotate -i $@ \
 		--ontology-iri $(ONTBASE)/$@ \
-		--version-iri $(ONTBASE)/releases/$(VERSION)/$@ --output $@; fi
+		--version-iri $(ONTBASE)/releases/$(VERSION)/$@ \
+		--annotation rdfs:comment "This component is derived from the 'src/templates/vispro_terms.tsv', which is edited manually by domain experts." --output $@; fi
 
 ##################
 # import modules #
