@@ -1,8 +1,8 @@
 
 ![Build Status](https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/workflows/CI/badge.svg)
-# Vibration Spectroscopy Ontology
+# Vibrational Spectroscopy Ontology
 
-_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (ViSprO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.
+_WIP - NOT READY FOR PRODUCTION_ The Vibrational Spectroscopy Ontology (ViSprO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.
 
 
 ## Versions
