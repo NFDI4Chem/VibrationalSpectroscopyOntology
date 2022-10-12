@@ -14,7 +14,7 @@ The reason for developing this ontology is grounded in the fact that CHMO does n
 
 Following an incremental development approach, we are first going to focus on adding the needed terms for the domain of Raman spectroscopy before coming to infrared spectroscopy. Here you can see the first draft of VISPRO's terminology box that focuses on Raman spectroscopy and which tries to demonstrate the modular embedding of VISPRO within the context of already existing onntology classes and relations. The identified needed new terms, depicted here with a red border, were derived from a Raman spectrometer output. 
 
-![Raman spectroscopy terminology box](https://raw.githubusercontent.com/NFDI4Chem/VibrationalSpectroscopyOntology/main/docs/images/VISPRO_Raman_Tbox.svg)
+![Raman spectroscopy terminology box](images/VISPRO_Raman_Tbox.svg)
 
 What is needed next are iterative reviews of this draft by domain experts to ensure that the competency questions of VISPRO can be answered.
 
@@ -27,6 +27,6 @@ The development of VISPRO is aimed at being as open as possible to allow a broad
 
 What we will need to establish is a team of domain experts that are frequently contributing and of whom some can serve as reviewers of open pull requests to assure a high quality. We envision to have regular calls in which open issues and pull request can be discussed alongside the overall organization of the VISPRO development. 
 
-For a more detailed *how-to* on how to contribute please read [this](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/docs/contributing.md).
+For a more detailed *how-to* on how to contribute please read [this](contributing.md).
 
 
