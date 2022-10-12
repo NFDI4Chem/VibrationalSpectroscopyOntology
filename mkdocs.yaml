@@ -22,7 +22,7 @@ repo_url: https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/
 
 nav:
   - Getting started: index.md
-    - Scope: scope_and_competency_questions.md
+      - Scope: scope_and_competency_questions.md
   - Cite: cite.md
   - How-to guides:
       - Standard ODK workflows:
