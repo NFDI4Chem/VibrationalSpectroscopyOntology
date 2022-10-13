@@ -21,9 +21,10 @@ site_url: https://NFDI4Chem.github.io/VibrationSpectroscopyOntology/
 repo_url: https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/
 
 nav:
-  - Getting started: 
-      - About VISPRO: index.md
-      - Scope: scope_and_competency_questions.md
+  - About VISPRO:
+      - Intro & Scope: index.md
+      - Competency Questions: competency_questions.md
+      - Development Approach: development_approach.md
   - Cite: cite.md
   - How-to guides:
       - Standard ODK workflows:
