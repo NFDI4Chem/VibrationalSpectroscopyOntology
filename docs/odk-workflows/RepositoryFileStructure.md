@@ -12,7 +12,7 @@ Release file are the file that are considered part of the official ontology rele
 ## Imports
 Imports are subsets of external ontologies that contain terms and axioms you would like to re-use in your ontology. These are considered "external", like dependencies in software development, and are not included in your "base" product, which is the [release artefact](https://github.com/INCATools/ontology-development-kit/blob/master/docs/ReleaseArtefacts.md) which contains only those axioms that you personally maintain.
 
-These are the current imports in VISPRO
+These are the current imports in VIBSO
 
 | Import | URL | Type |
 | ------ | --- | ---- |
@@ -32,8 +32,8 @@ Components, in contrast to imports, are considered full members of the ontology.
 2. A part of the ontology is managed in ROBOT templates
 3. The expressivity of the component is higher than the format of the edit file. For example, people still choose to manage their ontology in OBO format (they should not) missing out on a lot of owl features. They may chose to manage logic that is beyond OBO in a specific OWL component.
 
-These are the components in VISPRO
+These are the components in VIBSO
 
 | Filename | URL |
 | -------- | --- |
-| vispro_terms.owl | None |
+| vibso_terms.owl | None |

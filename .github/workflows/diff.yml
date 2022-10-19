@@ -21,7 +21,7 @@ jobs:
           ref: master
           path: master
       - name: Diff classification
-        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --labels True --left master/src/ontology/vispro-edit.owl --left-catalog master/src/ontology/catalog-v001.xml --right src/ontology/vispro-edit.owl --right-catalog src/ontology/catalog-v001.xml -f markdown -o edit-diff.md
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; robot diff --labels True --left master/src/ontology/vibso-edit.owl --left-catalog master/src/ontology/catalog-v001.xml --right src/ontology/vibso-edit.owl --right-catalog src/ontology/catalog-v001.xml -f markdown -o edit-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:
@@ -33,12 +33,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Classify ontology
-        run: cd src/ontology; make IMP=FALSE PAT=FALSE MIR=FALSE vispro.owl
-      - name: Upload PR vispro.owl
+        run: cd src/ontology; make IMP=FALSE PAT=FALSE MIR=FALSE vibso.owl
+      - name: Upload PR vibso.owl
         uses: actions/upload-artifact@v2
         with:
-          name: vispro-pr.owl
-          path: src/ontology/vispro.owl
+          name: vibso-pr.owl
+          path: src/ontology/vibso.owl
           retention-days: 1
   classify_main:
     runs-on: ubuntu-latest
@@ -48,12 +48,12 @@ jobs:
         with:
           ref: master
       - name: Classify ontology
-        run: cd src/ontology; make IMP=FALSE PAT=FALSE MIR=FALSE vispro.owl
-      - name: Upload master vispro.owl
+        run: cd src/ontology; make IMP=FALSE PAT=FALSE MIR=FALSE vibso.owl
+      - name: Upload master vibso.owl
         uses: actions/upload-artifact@v2
         with:
-          name: vispro-master.owl
-          path: src/ontology/vispro.owl
+          name: vibso-master.owl
+          path: src/ontology/vibso.owl
           retention-days: 1
   diff_classification:
     needs:
@@ -66,15 +66,15 @@ jobs:
       - name: Download master classification
         uses: actions/download-artifact@v2
         with:
-          name: vispro-master.owl
-          path: src/ontology/vispro-master.owl
+          name: vibso-master.owl
+          path: src/ontology/vibso-master.owl
       - name: Download PR classification
         uses: actions/download-artifact@v2
         with:
-          name: vispro-pr.owl
-          path: src/ontology/vispro-pr.owl
+          name: vibso-pr.owl
+          path: src/ontology/vibso-pr.owl
       - name: Diff classification
-        run: export ROBOT_JAVA_ARGS=-Xmx6G; cd src/ontology; robot diff --labels True --left vispro-master.owl/vispro.owl --left-catalog catalog-v001.xml --right vispro-pr.owl/vispro.owl --right-catalog catalog-v001.xml -f markdown -o classification-diff.md
+        run: export ROBOT_JAVA_ARGS=-Xmx6G; cd src/ontology; robot diff --labels True --left vibso-master.owl/vibso.owl --left-catalog catalog-v001.xml --right vibso-pr.owl/vibso.owl --right-catalog catalog-v001.xml -f markdown -o classification-diff.md
       - name: Upload diff
         uses: actions/upload-artifact@v2
         with:

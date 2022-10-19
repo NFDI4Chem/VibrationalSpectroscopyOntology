@@ -134,9 +134,9 @@ use_dosdps: false
 use_external_date: false
 components:
   products:
-    - filename: vispro_terms.owl
+    - filename: vibso_terms.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json 
       templates:
-        - vispro_terms.tsv
+        - vibso_terms.tsv
 
