@@ -2,18 +2,23 @@
 ![Build Status](https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/workflows/CI/badge.svg)
 # Vibrational Spectroscopy Ontology
 
-_WIP - NOT READY FOR PRODUCTION_ The Vibrational Spectroscopy Ontology (ViSprO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.
+_Work In Progress - NOT READY FOR PRODUCTION!_ 
 
-**For more documentation please go to: https://nfdi4chem.github.io/VibrationalSpectroscopyOntology/**
+The Vibrational Spectroscopy Ontology (VIBSO) is used to represent information regarding the execution and analysis of vibrational spectroscopy assays. That means it is intended to be used to semantically annotate the research data that is produced in such experiments with regard to the devices and lab protocols being used, the data being produced thereby (e.g the actual spectra) as well as other important metadata. 
+
+**For more thorough documentation of the ontology please go to: https://nfdi4chem.github.io/VibrationalSpectroscopyOntology/**
 
 ## Versions
+
+The OWL & OBO files on the top level of this repo are the official release artifacts of the ontology. To find out more about the standardization approach behind these (e.g. why they are called -base.owl or -full.owl), see [this section](https://oboacademy.github.io/obook/reference/release-artefacts/) in the OBOOK.
 
 ### Stable release versions
 
 The latest version of the ontology can always be found at:
 
-https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/blob/main/vispro.owl
+https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/blob/main/visbo.owl
 
+At the moment this is an exact copy of the [visbo-full.owl](https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/blob/main/visbo-full.owl). 
 
 ### Editors' version
 
