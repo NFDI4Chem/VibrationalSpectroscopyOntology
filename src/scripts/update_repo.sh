@@ -4,7 +4,7 @@ echo "(2) and add missing files, if any."
 
 set -e
 
-OID=vispro
+OID=vibso
 ROOTDIR=../..
 SRCDIR=..
 CONFIG=$OID"-odk.yaml"

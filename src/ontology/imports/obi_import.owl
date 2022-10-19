@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/vispro/imports/obi_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/vispro/imports/obi_import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/vibso/imports/obi_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/vibso/imports/obi_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,9 +9,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vispro/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vispro/releases/2022-08-19/imports/obi_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-19</owl:versionInfo>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/imports/obi_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2022-10-19/imports/obi_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-19</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
     </owl:Ontology>
     
@@ -1698,8 +1698,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:label>Thermo</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000753">
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <rdfs:label>Waters</rdfs:label>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>Waters</obo:IAO_0000111>
     </rdf:Description>
@@ -1779,9 +1779,9 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000232>2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000232>
         <obo:IAO_0000116>2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population</obo:IAO_0000116>
         <rdfs:label>is member of organization</rdfs:label>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000119>Person:Helen Parkinson</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001213">
         <rdfs:label>eBioscience</rdfs:label>
@@ -1821,8 +1821,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001321">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000119>WEB:http://www.bdbiosciences.com/@2011/04/11</obo:IAO_0000119>
-        <obo:IAO_0000111>Becton Dickinson (BD Biosciences)</obo:IAO_0000111>
         <rdfs:label>Becton Dickinson (BD Biosciences)</rdfs:label>
+        <obo:IAO_0000111>Becton Dickinson (BD Biosciences)</obo:IAO_0000111>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001338">
@@ -1889,8 +1889,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000119>WEB:http://bentleyinstruments.com/@2011/04/11</obo:IAO_0000119>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001434">
-        <rdfs:label>Invitrogen</rdfs:label>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
+        <rdfs:label>Invitrogen</rdfs:label>
         <obo:IAO_0000119>WEB:http://www.invitrogen.com/@2011/04/11</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>Invitrogen</obo:IAO_0000111>
@@ -1906,17 +1906,17 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000111>CytoBuoy</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>CytoBuoy</rdfs:label>
         <obo:IAO_0000119>WEB:http://www.cytobuoy.com/@2011/04/11</obo:IAO_0000119>
+        <rdfs:label>CytoBuoy</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001688">
         <obo:IAO_0000115>Relating an organization to a legal person or organization.</obo:IAO_0000115>
-        <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has organization member</rdfs:label>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">has organization member</obo:IAO_0000111>
         <obo:IAO_0000116>See tracker:
 https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_id=177891&amp;atid=886178</obo:IAO_0000116>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001855">
@@ -1959,8 +1959,8 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <rdfs:label>BioGents</rdfs:label>
-        <obo:IAO_0000115>An organization that manufactures mosquito traps and other mosquito control products.</obo:IAO_0000115>
         <obo:IAO_0000111>BioGents</obo:IAO_0000111>
+        <obo:IAO_0000115>An organization that manufactures mosquito traps and other mosquito control products.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB:https://eu.biogents.com/about-biogents/</obo:IAO_0000119>
     </rdf:Description>
 </rdf:RDF>
