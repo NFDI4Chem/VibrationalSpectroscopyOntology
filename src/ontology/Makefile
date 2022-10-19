@@ -16,7 +16,7 @@
 # these can be overwritten on the command line
 
 URIBASE=                    http://purl.obolibrary.org/obo
-ONT=                        vispro
+ONT=                        vibso
 ONTBASE=                    $(URIBASE)/$(ONT)
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
@@ -653,4 +653,4 @@ Tricks:
 endef
 export data
 
-include vispro.Makefile
+include vibso.Makefile
