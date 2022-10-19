@@ -7,14 +7,14 @@
 #   components   #
 ##################
 
-$(COMPONENTSDIR)/vispro_terms.owl: $(TEMPLATEDIR)/vispro_terms.tsv
+$(COMPONENTSDIR)/vibso_terms.owl: $(TEMPLATEDIR)/vibso_terms.tsv
 	if [ $(COMP) = true ] ; then $(ROBOT) template \
 		--merge-after --input $(SRC) --add-prefixes config/context.json \
 		--template $< --output $@; fi
 	if [ $(COMP) = true ] ; then $(ROBOT) annotate -i $@ \
 		--ontology-iri $(ONTBASE)/$@ \
 		--version-iri $(ONTBASE)/releases/$(VERSION)/$@ \
-		--annotation rdfs:comment "This component is derived from the 'src/templates/vispro_terms.tsv', which is edited manually by domain experts." \
+		--annotation rdfs:comment "This component is derived from the 'src/templates/vibso_terms.tsv', which is edited manually by domain experts." \
 		convert -f ofn --output $@; fi
 
 ##################

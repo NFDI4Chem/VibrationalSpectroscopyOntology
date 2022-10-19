@@ -15,15 +15,15 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 Prefix(void:=<http://rdfs.org/ns/void#>)
 Prefix(ORCID:=<http://orcid.org/>)
-Prefix(schema:=<http://schema.org/>)
 Prefix(vibso:=<http://purl.obolibrary.org/obo/VIBSO_>)
+Prefix(schema:=<http://schema.org/>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_terms.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2022-08-19/components/vibso_terms.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2022-10-19/components/vibso_terms.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_terms.tsv', which is edited manually by domain experts."^^xsd:string)
 
 Declaration(Class(obo:IAO_0000140))
