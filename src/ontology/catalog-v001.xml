@@ -3,31 +3,31 @@
 <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
 
   
-  <uri name="http://purl.obolibrary.org/obo/vispro/components/vispro_terms.owl" uri="components/vispro_terms.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/components/vibso_terms.owl" uri="components/vibso_terms.owl"/>
 
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
   
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/ro_import.obo" uri="imports/ro_import.obo"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/ro_import.obo" uri="imports/ro_import.obo"/>
   
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/omo_import.owl" uri="imports/omo_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/omo_import.obo" uri="imports/omo_import.obo"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/omo_import.owl" uri="imports/omo_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/omo_import.obo" uri="imports/omo_import.obo"/>
   
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/iao_import.owl" uri="imports/iao_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/iao_import.obo" uri="imports/iao_import.obo"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/iao_import.owl" uri="imports/iao_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/iao_import.obo" uri="imports/iao_import.obo"/>
   
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/chmo_import.owl" uri="imports/chmo_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/chmo_import.obo" uri="imports/chmo_import.obo"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/chmo_import.owl" uri="imports/chmo_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/chmo_import.obo" uri="imports/chmo_import.obo"/>
   
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/pato_import.owl" uri="imports/pato_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/pato_import.obo" uri="imports/pato_import.obo"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl" uri="imports/pato_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/pato_import.obo" uri="imports/pato_import.obo"/>
   
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/txpo_import.owl" uri="imports/txpo_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/txpo_import.obo" uri="imports/txpo_import.obo"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/txpo_import.owl" uri="imports/txpo_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/txpo_import.obo" uri="imports/txpo_import.obo"/>
   
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/obi_import.owl" uri="imports/obi_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/vispro/imports/obi_import.obo" uri="imports/obi_import.obo"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/vibso/imports/obi_import.obo" uri="imports/obi_import.obo"/>
   
 
 

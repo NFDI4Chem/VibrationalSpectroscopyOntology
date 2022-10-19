@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: vispro/releases/2022-07-06/vispro-base.owl
-ontology: vispro/vispro-base
+data-version: vibso/releases/2022-10-19/vibso-base.owl
+ontology: vibso/vibso-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: http://purl.org/dc/terms/description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (ViSprO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays." xsd:string
+property_value: http://purl.org/dc/terms/description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays." xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: http://purl.org/dc/terms/title "Vibration Spectroscopy Ontology" xsd:string
-property_value: owl:versionInfo "2022-07-06" xsd:string
+property_value: http://purl.org/dc/terms/title "Vibrational Spectroscopy Ontology" xsd:string
+property_value: owl:versionInfo "2022-10-19" xsd:string
 
 [Term]
 id: NCBITaxon:9606
@@ -13,142 +13,115 @@ name: person
 is_a: OBI:0100026
 
 [Term]
-id: VISPRO:0000000
-name: excitation wavelength setting
+id: VIBSO:0000000
 name: vibrational spectrometer configuration specification
 def: "A setting datum that specifies the needed settings of a spectrometer used in vibrational spectroscopy." []
-def: "A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material." []
 is_a: IAO:0000140
-is_a: IAO:0000140
-intersection_of: IAO:0000140
-intersection_of: IAO:0000136 VISPRO:0000011 ! excitation wavelength
-disjoint_from: VISPRO:0000000 ! vibrational spectrometer configuration specification
-relationship: BFO:0000051 VISPRO:0000000 ! vibrational spectrometer configuration specification
-relationship: BFO:0000051 VISPRO:0000001 ! exposure time setting
-relationship: BFO:0000051 VISPRO:0000002 ! preamplifier gain setting
-relationship: BFO:0000051 VISPRO:0000003 ! horizontal shift speed setting
-relationship: BFO:0000051 VISPRO:0000004 ! vertical shift speed setting
-relationship: BFO:0000051 VISPRO:0000005 ! device temperature setting
-relationship: BFO:0000051 VISPRO:0000006 ! number of scans setting
-relationship: BFO:0000051 VISPRO:0000007 ! groove density setting
-relationship: BFO:0000051 VISPRO:0000008 ! CCD sensor binning read mode setting
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
-property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000001
+id: VIBSO:0000001
 name: exposure time setting
 def: "A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor." []
 is_a: IAO:0000140
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000002
+id: VIBSO:0000002
 name: preamplifier gain setting
 def: "A setting datum that specifies the preamplifier gain in CCD sensors." []
 is_a: IAO:0000140
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology." xsd:string
 
 [Term]
-id: VISPRO:0000003
+id: VIBSO:0000003
 name: horizontal shift speed setting
 def: "A setting datum that specifies the horizontal shift speed in CCD sensors." []
 is_a: IAO:0000140
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000004
+id: VIBSO:0000004
 name: vertical shift speed setting
 def: "A setting datum that specifies the vertical shift speed in CCD sensors." []
 is_a: IAO:0000140
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000005
+id: VIBSO:0000005
 name: device temperature setting
 def: "A setting datum that specifies the operating temperature of a device." []
 is_a: IAO:0000140
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology." xsd:string
 
 [Term]
-id: VISPRO:0000006
+id: VIBSO:0000006
 name: number of scans setting
 def: "A setting datum that specifies the number of iterations performed in a spectroscopic meassurement from which an aggregated assay output is generated." []
 is_a: IAO:0000140
+relationship: BFO:0000050 VIBSO:0000000 ! vibrational spectrometer configuration specification
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
 property_value: IAO:0000112 "The setting entered into a Raman microscope which specifies the desired number of measurements this Raman microscope has to perform to produce an usable Raman spectrum." xsd:string
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology." xsd:string
 
 [Term]
-id: VISPRO:0000007
+id: VIBSO:0000007
 name: groove density setting
 def: "A setting datum that specifies the number of grooves in a diffraction grating device." []
 is_a: IAO:0000140
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000008
+id: VIBSO:0000008
 name: CCD sensor binning read mode setting
 def: "A setting datum that specifies the binning read mode of a device with a CCD sensor." []
 is_a: IAO:0000140
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000009
+id: VIBSO:0000009
 name: groove density
-def: "A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light." [] {http://www.w3.org/2000/01/rdf-schema#seeAlso="Diffraction:grating"}
+def: "A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light." [] {http://purl.org/dc/elements/1.1/source="Diffraction:grating"}
 is_a: PATO:0001018
-relationship: RO:0000080 VISPRO:0000012 ! diffraction grating
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/elements/1.1/date 2022-07-06T07:26:10Z xsd:dateTime
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000010
+id: VIBSO:0000010
 name: Raman spectrometer configuration
 def: "A device setting that represents the measured qualities which make up the configuration state of a Raman spectrometer at the time of a measurement (e.g. operating temperature, exitation wavelength, groove density, ...)." []
 is_a: OBI:0000654
-relationship: BFO:0000051 VISPRO:0000009 ! groove density
-relationship: BFO:0000051 VISPRO:0000011 ! excitation wavelength
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/elements/1.1/date 2022-07-06T07:28:22Z xsd:dateTime
+property_value: IAO:0000112 "The set of meassured configuration characteristics of a Raman spectrometer, like the operating temperature of a Raman spectrometer." xsd:string
 
 [Term]
-id: VISPRO:0000011
+id: VIBSO:0000011
 name: excitation wavelength
-def: "A physical quality of the light source that is used used to excite a system to a higher energy state." [] {http://www.w3.org/2000/01/rdf-schema#seeAlso="https://doi.org/10.1351/goldbook"}
+def: "A physical quality of the light source that is used used to excite a system to a higher energy state." [] {http://purl.org/dc/elements/1.1/source="http://doi.org/10.1351/goldbook"}
 is_a: PATO:0001242
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/elements/1.1/date 2022-07-06T12:52:34Z xsd:dateTime
-property_value: IAO:0000114 IAO:0000423
+property_value: IAO:0000116 "This class needs to be defined in PATO or another more general ontology for such qualities." xsd:string
+
+[Term]
+id: VIBSO:0000012
+name: diffraction grating
+def: "A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)" [] {http://purl.org/dc/elements/1.1/source="Diffraction:grating"}
+is_a: OBI:0000968
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000012
-name: diffraction grating
-def: "A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e., different diffraction angles)" [] {http://purl.org/dc/elements/1.1/source="Diffraction:grating"}
-is_a: OBI:0000968
-intersection_of: OBI:0000968
-intersection_of: BFO:0000050 CHMO:0001235
-intersection_of: RO:0000086 VISPRO:0000009 ! groove density
+id: VIBSO:0000013
+name: excitation wavelength setting
+def: "A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material." []
+is_a: IAO:0000140
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/elements/1.1/date 2022-07-06T10:49:16Z xsd:dateTime
+property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 

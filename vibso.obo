@@ -1,15 +1,15 @@
 format-version: 1.2
-data-version: releases/2022-07-06
+data-version: releases/2022-10-19
 subsetdef: attribute_slim ""
 subsetdef: relational_slim ""
 subsetdef: RO:0002259 ""
 subsetdef: scalar_slim ""
 subsetdef: value_slim ""
-ontology: vispro
-property_value: http://purl.org/dc/terms/description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (ViSprO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays." xsd:string
+ontology: vibso
+property_value: http://purl.org/dc/terms/description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays." xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: http://purl.org/dc/terms/title "Vibration Spectroscopy Ontology" xsd:string
-property_value: owl:versionInfo "2022-07-06" xsd:string
+property_value: http://purl.org/dc/terms/title "Vibrational Spectroscopy Ontology" xsd:string
+property_value: owl:versionInfo "2022-10-19" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -261,7 +261,7 @@ disjoint_from: BFO:0000031 ! generically dependent continuant
 relationship: BFO:0000050 BFO:0000020 ! part of specifically dependent continuant
 property_value: BFO:0000179 "sdc" xsd:string
 property_value: BFO:0000180 "SpecificallyDependentContinuant" xsd:string
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-06-17/pato.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl
 property_value: IAO:0000112 "of one-sided specifically dependent continuants: the mass of this tomato" xsd:string
 property_value: IAO:0000112 "of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates." xsd:string
 property_value: IAO:0000112 "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key" xsd:string
@@ -437,7 +437,7 @@ name: function
 is_a: BFO:0000016 ! disposition
 property_value: BFO:0000179 "function" xsd:string
 property_value: BFO:0000180 "Function" xsd:string
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000112 "the function of a hammer to drive in nails" xsd:string
 property_value: IAO:0000112 "the function of a heart pacemaker to regulate the beating of a heart through electricity" xsd:string
 property_value: IAO:0000112 "the function of amylase in saliva to break down starch into sugar" xsd:string
@@ -625,7 +625,681 @@ name: spectroscopy
 def: "The study of the interaction of a sample with radiation or particles for measurement or detection." [https://doi.org/10.1351/goldbook.S05848]
 synonym: "spectrometry" EXACT []
 is_a: OBI:0000070 ! assay
-relationship: OBI:0000299 CHMO:0000800 ! has_specified_output spectrum
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000628
+name: vibrational spectroscopy
+def: "Spectroscopy which probes the vibrational degrees of freedom of a molecule." [https://orcid.org/0000-0002-0640-0422]
+synonym: "vibrational spectroscopic analysis" EXACT []
+is_a: CHMO:0000228 ! spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000629
+name: inelastic electron tunnelling spectroscopy
+def: "Spectroscopy where a metal-molecule-metal sandwich is formed and electrons tunnel from metal to metal through the molecules. Any additional molecules adsorbed onto the inner layer of the sandwhich can affect the tunneling via the excitation of vibrational states." [https://orcid.org/0000-0002-0640-0422]
+synonym: "IETS" EXACT []
+synonym: "inelastic electron tunnelling spectrometry" EXACT []
+is_a: CHMO:0000628 ! vibrational spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000630
+name: infrared absorption spectroscopy
+alt_id: FIX:0000015
+alt_id: FIX:0000658
+def: "Spectroscopy where the sample absorbs radiation from the infrared region (0.78 to 1000 micrometres)." [FIX:0000015, FIX:0000658, ISBN:978-3-540-74597-6]
+synonym: "infra-red absorption spectrometry" EXACT []
+synonym: "infra-red absorption spectroscopy" EXACT []
+synonym: "infra-red spectrometry" EXACT []
+synonym: "infra-red spectrophotometry" EXACT []
+synonym: "infrared (IR) spectroscopy" EXACT []
+synonym: "infrared absorption spectrometry" EXACT []
+synonym: "infrared spectrometry" EXACT []
+synonym: "infrared spectrophotometry" EXACT []
+synonym: "infrared spectroscopy" EXACT []
+synonym: "IR" RELATED non-mining_synonym []
+synonym: "IR absorption spectrometry" EXACT []
+synonym: "IR absorption spectroscopy" EXACT []
+synonym: "IR spectrometry" EXACT []
+synonym: "IR spectrophotometry" EXACT []
+synonym: "IR spectroscopy" EXACT []
+is_a: CHMO:0000628 ! vibrational spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000631
+name: infrared evanescent wave spectroscopy
+def: "Spectroscopy using radiation in the infrared region (0.78–1000 μm) where an evanescent wave is generated using an optical fibre." [https://doi.org/10.1088/0022-3727/34/9/306]
+synonym: "infra-red evanescent wave spectrometry" EXACT []
+synonym: "infrared evanescent wave spectrometry" EXACT []
+synonym: "infrared evanescent wave spectroscopy" EXACT []
+synonym: "IR-EWS" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000633
+name: infrared multiphoton dissociation spectroscopy
+def: "Spectroscopy where the sample absorbs radiation from the infrared region (0.78–1000 μm) with sufficient energy to cause photodissociation by the absorption of two or more photons." [https://orcid.org/0000-0002-0640-0422]
+synonym: "infra-red multiphoton dissociation spectrometry" EXACT []
+synonym: "infrared multiphoton dissociation spectrometry" EXACT []
+synonym: "infrared multiphoton dissociation spectroscopy" EXACT []
+synonym: "IRMPD spectrometry" EXACT []
+synonym: "IRMPD spectroscopy" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000634
+name: resonant infrared multiphoton dissociation spectroscopy
+def: "Spectroscopy where the sample absorbs resonant radiation from the infrared region (0.78–1000 μm) with sufficient energy to cause photodissociation by the absorption of two or more photons." [https://orcid.org/0000-0002-0640-0422]
+synonym: "IR REMPD" EXACT []
+synonym: "IR REMPD spectrometry" EXACT []
+synonym: "IR REMPD spectroscopy" EXACT []
+synonym: "IR-REMPD" EXACT []
+synonym: "resonance-enhanced infrared multiphoton dissociation spectrometry" EXACT []
+synonym: "resonance-enhanced infrared multiphoton dissociation spectroscopy" EXACT []
+synonym: "resonant infra-red multiphoton dissociation spectrometry" EXACT []
+synonym: "resonant infra-red multiphoton dissociation spectroscopy" EXACT []
+synonym: "resonant infrared multiphoton dissociation spectrometry" EXACT []
+is_a: CHMO:0000633 ! infrared multiphoton dissociation spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000635
+name: mid-infrared spectroscopy
+def: "Spectroscopy where the sample absorbs radiation in the mid infrared region (3–8 μm)." [FIX:0000642, ISBN:0-534-98144-5]
+synonym: "mid infrared spectroscopy" EXACT []
+synonym: "mid-infra-red spectrometry" EXACT []
+synonym: "mid-infrared spectrometry" EXACT []
+synonym: "mid-IR" EXACT []
+synonym: "mid-IR spectroscopy" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000636
+name: Fourier transform infrared spectroscopy
+alt_id: FIX:0000110
+def: "Spectroscopy where the sample absorbs a single pulse of radiation from the infrared region (0.78–1000 μm) and the spectrum obtained is subject to a Fourier transform." [https://orcid.org/0000-0002-0640-0422]
+synonym: "Fourier transform infra-red absorption spectroscopy" EXACT []
+synonym: "Fourier transform infra-red spectrometry" EXACT []
+synonym: "Fourier transform infrared (FT-IR)" EXACT []
+synonym: "Fourier transform infrared (FT-IR) spectroscopy" EXACT []
+synonym: "Fourier transform infrared spectrometry" EXACT []
+synonym: "Fourier transform infrared spectroscopy" EXACT []
+synonym: "Fourier-transform infra-red absorption spectrometry" EXACT []
+synonym: "Fourier-transform infrared (FTIR) absorption spectroscopy" EXACT []
+synonym: "FT-IR" EXACT []
+synonym: "FT-IR spectroscopy" EXACT []
+synonym: "FTIR" EXACT []
+synonym: "FTIR spectrometry" EXACT []
+synonym: "FTIR spectroscopy" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000637
+name: micro infrared spectroscopy
+def: "Spectroscopy where the sample absorbs radiation from a finely focused beam (<10 μm diameter) of infrared light  (0.78–1000 μm)." [https://orcid.org/0000-0002-0640-0422]
+synonym: "infrared microanalysis" EXACT []
+synonym: "micro infra-red spectrometry" EXACT []
+synonym: "micro-infrared spectrometry" EXACT []
+synonym: "micro-infrared spectroscopy" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000638
+name: near-infrared absorption spectroscopy
+def: "Spectroscopy where the sample absorbs radiation from the near infrared region (0.8–2 μm)." [FIX:0000321, ISBN:978-3-540-74597-6]
+synonym: "near infra-red absorbance spectrometry" EXACT []
+synonym: "near infra-red absorbance spectroscopy" EXACT []
+synonym: "near infra-red absorption spectrometry" EXACT []
+synonym: "near infra-red spectrometry" EXACT []
+synonym: "near infrared absorbance spectrometry" EXACT []
+synonym: "near infrared absorbance spectroscopy" EXACT []
+synonym: "near infrared absorption spectrometry" EXACT []
+synonym: "near infrared absorption spectroscopy" EXACT []
+synonym: "near infrared spectrometry" EXACT []
+synonym: "near infrared spectroscopy" EXACT []
+synonym: "near-infra-red absorption spectrometry" EXACT []
+synonym: "NIR absorbance spectrometry" EXACT []
+synonym: "NIR absorbance spectroscopy" EXACT []
+synonym: "NIRS" RELATED non-mining_synonym []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000639
+name: Fourier transform near infrared absorbance spectroscopy
+def: "Spectroscopy where the sample absorbs a single pulse of radiation from the near infrared region (0.8–2 μm) and the spectrum obtained is subject to a Fourier transform." [https://orcid.org/0000-0002-0640-0422]
+synonym: "Fourier transform near infra-red absorbance spectrometry" EXACT []
+synonym: "Fourier transform near infra-red absorption spectrometry" EXACT []
+synonym: "Fourier transform near infra-red spectrometry" EXACT []
+synonym: "Fourier transform near infra-red spectroscopy" EXACT []
+synonym: "Fourier transform near infrared absorbance spectrometry" EXACT []
+synonym: "Fourier transform near infrared absorbance spectroscopy" EXACT []
+synonym: "Fourier transform near infrared absorption spectrometry" EXACT []
+synonym: "Fourier transform near infrared absorption spectroscopy" EXACT []
+synonym: "FT NIRS" EXACT []
+synonym: "FT-NIRS" EXACT []
+synonym: "FTNIRS" EXACT []
+is_a: CHMO:0000638 ! near-infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000640
+name: non-dispersive infrared spectroscopy
+def: "Spectroscopy where the difference in infrared radiation (0.78–1000 μm) bsorption of a sample cell against a reference cell is measured." [ISBN:0824753593]
+synonym: "NDIR" EXACT []
+synonym: "NDIR spectrometry" EXACT []
+synonym: "NDIR spectroscopy" EXACT []
+synonym: "non-dispersive infra-red spectrometry" EXACT []
+synonym: "non-dispersive infra-red spectroscopy" EXACT []
+synonym: "non-dispersive infrared spectrometry" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000641
+name: surface enhanced infrared absorption spectroscopy
+def: "Spectroscopy where the rough metal surface of a sample absorbs radiation in the infrared region (0.78–1000 μm)." [https://doi.org/10.1039/b805223a]
+synonym: "SEIRA" EXACT []
+synonym: "SEIRA spectrometry" EXACT []
+synonym: "SEIRA spectroscopy" EXACT []
+synonym: "surface enhanced infra-red absorption spectrometry" EXACT []
+synonym: "surface enhanced infra-red absorption spectroscopy" EXACT []
+synonym: "surface enhanced infrared absorption spectrometry" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000642
+name: transient infrared spectroscopy
+alt_id: FIX:0001068
+def: "Spectroscopy where transient species such as radicals, ions or reactive intermediates are studied using pulses from an infrared laser. The infrared absorbance of the sample before and after an excitation laser pulse is measured." [ISBN:9810217498]
+synonym: "infrared laser transient absorption spectroscopy" EXACT []
+synonym: "infrared transient absorption spectroscopy" EXACT []
+synonym: "IR laser transient absorption spectroscopy" EXACT []
+synonym: "IR transient absorption spectroscopy" EXACT []
+synonym: "TIRS" EXACT []
+synonym: "transient infrared spectrometry" EXACT []
+synonym: "transient infrared spectroscopy" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000643
+name: infrared reflectance spectroscopy
+alt_id: FIX:0000652
+def: "Spectroscopy where the reflection or scattering of infrared radiation (0.78–1000 μm) by a sample is detected." [https://orcid.org/0000-0002-0640-0422]
+synonym: "infra-red reflectance spectrometry" EXACT []
+synonym: "infrared reflectance spectrometry" EXACT []
+synonym: "infrared reflectance spectroscopy" EXACT []
+synonym: "infrared reflection spectroscopy" EXACT []
+synonym: "IR reflectance spectrometry" EXACT []
+synonym: "IR reflectance spectroscopy" EXACT []
+synonym: "IR reflection spectroscopy" EXACT []
+is_a: CHMO:0000628 ! vibrational spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000644
+name: diffuse reflectance infrared spectroscopy
+alt_id: FIX:0000656
+def: "Spectroscopy where the diffuse reflection of infrared radiation by a sample is measured." [https://orcid.org/0000-0002-0640-0422]
+synonym: "diffuse reflectance IR spectroscopy" EXACT []
+is_a: CHMO:0000643 ! infrared reflectance spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000645
+name: diffuse reflectance infrared Fourier transform spectroscopy
+def: "Spectroscopy where the diffuse reflection of a single pulse of infrared radiation by a sample is measured, and the spectrum obtained is subject to a Fourier transform." [FIX:0000657, https://orcid.org/0000-0002-0640-0422]
+synonym: "diffuse reflectance infra-red Fourier transform spectrometry" EXACT []
+synonym: "diffuse reflectance infrared Fourier transform spectrometry" EXACT []
+synonym: "diffuse reflectance infrared Fourier transform spectroscopy" EXACT []
+synonym: "diffuse reflectance infrared spectroscopy by Fourier transform" EXACT []
+synonym: "DRIFT" EXACT []
+synonym: "DRIFTS" EXACT []
+is_a: CHMO:0000644 ! diffuse reflectance infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000646
+name: near-infrared reflectance spectroscopy
+def: "Spectroscopy where the reflection or scattering of near infrared radiation (0.8-2 micrometres) by a sample is detected." [https://orcid.org/0000-0002-0640-0422]
+synonym: "near infra-red reflectance spectrometry" EXACT []
+synonym: "near infrared reflectance spectroscopy" EXACT []
+synonym: "NIR reflectance spectrometry" EXACT []
+synonym: "NIR reflectance spectroscopy" EXACT []
+synonym: "NIRS" EXACT []
+is_a: CHMO:0000643 ! infrared reflectance spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000647
+name: reflection–absorption infrared spectroscopy
+def: "Spectroscopy where the absorption and reflection of low incident angle infrared light by the surface molecules of a highly reflective or polished sample is measured." [FIX:0000659, ISBN:0-471-96523-5]
+synonym: "infrared reflection absorption spectrometry" EXACT []
+synonym: "infrared reflection absorption spectroscopy" EXACT []
+synonym: "IRAS" EXACT []
+synonym: "IRRAS" EXACT []
+synonym: "RA-IR" EXACT []
+synonym: "RAIRS" EXACT []
+synonym: "reflection absorption (RA) IR" EXACT []
+synonym: "reflection absorption infra-red spectrometry" EXACT []
+synonym: "reflection absorption infrared spectrometry" EXACT []
+synonym: "reflection absorption infrared spectroscopy" EXACT []
+synonym: "reflection-absorption infrared spectroscopy" EXACT []
+is_a: CHMO:0000628 ! vibrational spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000648
+name: attenuated total reflectance infrared spectroscopy
+def: "Spectroscopy where infrared light is introduced into a prism at an angle exceeding the critical angle for internal reflection. This produces an evanescent wave at the reflecting surface (a surface which is transparent to infrared such as thallium bromide) on which the sample is supported, and the distortion of the evanescent wave by the sample is measured." [ISBN:0-471-96523-5]
+synonym: "ATR spectrometry" EXACT []
+synonym: "ATR spectroscopy" EXACT []
+synonym: "ATR-IR" EXACT []
+synonym: "ATR-IR spectrometry" EXACT []
+synonym: "ATR-IR spectroscopy" EXACT []
+synonym: "ATR/IR" EXACT []
+synonym: "ATR/IRS" EXACT []
+synonym: "attenuated total reflectance infra-red spectroscopy" EXACT []
+synonym: "attenuated total reflectance spectrometry" EXACT []
+synonym: "internal reflection spectrometry" EXACT []
+synonym: "internal reflection spectroscopy" EXACT []
+synonym: "IRS" RELATED []
+synonym: "MIRS" EXACT []
+synonym: "multiple internal reflection spectrometry" EXACT []
+synonym: "multiple internal reflection spectroscopy" EXACT []
+xref: FIX:0000653
+is_a: CHMO:0000643 ! infrared reflectance spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000649
+name: infrared emission spectroscopy
+def: "Spectroscopy where the sample is heated and the infrared radiation (0.78–1000 μm) emitted during cooling is detected." [FIX:0000651, https://orcid.org/0000-0002-0640-0422]
+synonym: "IES" EXACT []
+synonym: "infra-red emission spectrometry" EXACT []
+synonym: "infrared emission spectrometry" EXACT []
+synonym: "infrared emission spectroscopy" EXACT []
+is_a: CHMO:0000628 ! vibrational spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000650
+name: flame infrared emission spectroscopy
+def: "Spectroscopy where the sample is heated in a flame and the infrared radiation (0.78–1000 μm) emitted during cooling is detected." [https://orcid.org/0000-0002-0640-0422]
+synonym: "FIRE" EXACT []
+synonym: "flame infra-red emission spectrometry" EXACT []
+synonym: "flame infrared emission spectroscopy" EXACT []
+is_a: CHMO:0000649 ! infrared emission spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000651
+name: Fourier transform flame infrared emission spectroscopy
+def: "Spectroscopy where the sample is heated in a flame and the infrared radiation  (0.78–1000 μm) emitted during cooling is detected. The spectrum obtained is subject to a Fourier transform." [https://orcid.org/0000-0002-0640-0422]
+synonym: "Fourier transform FIRE" EXACT []
+synonym: "Fourier transform flame infra-red emission spectrometry" EXACT []
+synonym: "Fourier transform flame infrared emission spectroscopy" EXACT []
+synonym: "FT-FIRE" EXACT []
+is_a: CHMO:0000650 ! flame infrared emission spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000652
+name: Fourier transform infrared emission spectroscopy
+def: "IR emission spectroscopy where the spectrum is obtained by a single pulse of (UV) radiation, and is subject to a Fourier transform." [https://orcid.org/0000-0002-0640-0422]
+synonym: "Fourier transform infra-red emission spectrometry" EXACT []
+synonym: "Fourier transform infra-red emission spectroscopy" EXACT []
+synonym: "Fourier transform infrared emission spectrometry" EXACT []
+synonym: "Fourier transform infrared emission spectroscopy" EXACT []
+synonym: "Fourier transform IRES" EXACT []
+synonym: "Fourier-transform infrared spectroscopy" EXACT []
+synonym: "FT-IRES" EXACT []
+synonym: "FTIRES" EXACT []
+is_a: CHMO:0000649 ! infrared emission spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000653
+name: mid-infrared emission spectroscopy
+def: "Spectroscopy where the sample is heated and the mid infrared radiation (0.78–1000 μm) emitted during cooling is detected." [ISBN:0-534-98144-5]
+synonym: "mid-infra-red emission spectrometry" EXACT []
+synonym: "mid-infrared emission spectrometry" EXACT []
+synonym: "mid-infrared emission spectroscopy" EXACT []
+synonym: "MIRES" EXACT []
+is_a: CHMO:0000649 ! infrared emission spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000654
+name: planar array infrared emission spectroscopy
+def: "Spectroscopy where the sample is heated and the infrared radiation (0.78–1000 μm) emitted during cooling is detected with a two-dimensional focal plane array infrared camera." [https://doi.org/10.1021/ac061799l]
+synonym: "PA IR" EXACT []
+synonym: "PA IRES" EXACT []
+synonym: "PA-IR" EXACT []
+synonym: "PA-IRES" EXACT []
+synonym: "planar array infra-red emission spectrometry" EXACT []
+synonym: "planar array infrared emission spectrometry" EXACT []
+synonym: "planar array infrared emission spectroscopy" EXACT []
+synonym: "planar array IR emission spectrometry" EXACT []
+synonym: "planar array IR emission spectroscopy" EXACT []
+synonym: "planar array IRES" EXACT []
+is_a: CHMO:0000649 ! infrared emission spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000655
+name: single-photon infrared emission spectroscopy
+def: "Spectroscopy where the sample is heated using ultraviolet excitation (single photon) and the infrared radiation (0.78–1000 μm) emitted during cooling is detected." [https://doi.org/10.1021/jp9724434]
+synonym: "single photon infra-red emission spectrometry" EXACT []
+synonym: "single photon infra-red emission spectroscopy" EXACT []
+synonym: "single-photon infra-red emission spectrometry" EXACT []
+synonym: "single-photon infrared emission spectroscopy" EXACT []
+synonym: "SPIRES" EXACT []
+is_a: CHMO:0000649 ! infrared emission spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000656
+name: Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected." [FIX:0000058, https://orcid.org/0000-0002-0640-0422]
+synonym: "Raman scattering spectrometry" EXACT []
+synonym: "Raman scattering spectroscopy" EXACT []
+synonym: "Raman spectrometry" EXACT []
+is_a: CHMO:0002414 ! scattering spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000657
+name: chiral Raman spectroscopy
+def: "Spectroscopy where vibrational optical activity is measured by means of a small difference in the intensity of Raman scattering from chiral molecules of right- and left-circularly polarised incident light." [https://doi.org/10.1016/j.vibspec.2006.04.020]
+synonym: "chiral Raman" EXACT []
+synonym: "chiral Raman spectrometry" EXACT []
+synonym: "Raman optical activity" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000658
+name: coherent Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light from three lasers (known as pump, probe and Stokes/anti-Stokes) by a sample is detected. multiphoton excitation is used to produce a signal in which the emitted waves are coherent." [https://orcid.org/0000-0002-0640-0422]
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000659
+name: coherent Stokes Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. An anti-Stokes frequency stimulation beam is used and a Stokes frequency beam is observed. multiphoton excitation is used to produce a signal in which the emitted waves are coherent." [https://orcid.org/0000-0002-0640-0422]
+synonym: "coherent Stokes Raman scattering spectrometry" EXACT []
+synonym: "coherent Stokes Raman scattering spectroscopy" EXACT []
+synonym: "coherent Stokes Raman spectrometry" EXACT []
+synonym: "CSRS" EXACT []
+is_a: CHMO:0000658 ! coherent Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000660
+name: coherent Stokes resonance Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. An anti-Stokes frequency stimulation beam is used and a Stokes frequency beam is observed and the difference between the pump and the Stokes beams coincides with the frequency of an electronic transition within the molecule. multiphoton excitation is used to produce a signal in which the emitted waves are coherent." [https://orcid.org/0000-0002-0640-0422]
+is_a: CHMO:0000659 ! coherent Stokes Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000661
+name: coherent anti-Stokes Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. A Stokes frequency stimulation beam is used and an anti-Stokes frequency beam is observed. multiphoton excitation is used to produce a signal in which the emitted waves are coherent." [FIX:0000075, https://orcid.org/0000-0002-0640-0422]
+synonym: "CARS" EXACT []
+synonym: "coherent anti-Stokes Raman scattering spectrometry" EXACT []
+synonym: "coherent anti-Stokes Raman scattering spectroscopy" EXACT []
+synonym: "coherent anti-Stokes Raman spectrometry" EXACT []
+is_a: CHMO:0000658 ! coherent Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000662
+name: coherent anti-Stokes resonance Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. A Stokes frequency stimulation beam is used and an anti-Stokes frequency beam is observed and the difference between the pump and the anti-Stokes beams coincides with the frequency of an electronic transition within the molecule. multiphoton excitation is used to produce a signal in which the emitted waves are coherent." [https://orcid.org/0000-0002-0640-0422]
+is_a: CHMO:0000661 ! coherent anti-Stokes Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000663
+name: confocal Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light is detected. An aperture is used to discriminate between Raman signal coming from the focused laser spot and Raman signal coming from the out-of-focus region of the sample." [ISBN:0824703693]
+synonym: "confocal Raman spectrometry" EXACT []
+synonym: "CRS" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000664
+name: confocal Raman microscopy
+def: "The collection of spatially resolved Raman spectra of a sample during optical microscopy. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample." [ISBN:0824703693]
+synonym: "confocal micro Raman" EXACT []
+synonym: "confocal Raman microanalysis" EXACT []
+synonym: "confocal Raman microspectrometry" EXACT []
+synonym: "confocal Raman microspectroscopy" EXACT []
+is_a: CHMO:0000663 ! confocal Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000665
+name: Fourier transform Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of light (produced by a single laser pulse) by a sample is detected and the spectrum is subject to a Fourier transform." [https://orcid.org/0000-0002-0640-0422]
+synonym: "Fourier transform Raman spectrometry" EXACT []
+synonym: "FT-Raman" EXACT []
+xref: FIX:0000384
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000666
+name: hyper Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of light by a (liquid) sample is detected. During scattering, photons from the incident laser (with frequency ω) are scattered by sample into photons of the second harmonic (photons with frequency 2ω)." [https://orcid.org/0000-0002-0640-0422]
+synonym: "hyper Raman scattering spectrometry" EXACT []
+synonym: "hyper Raman scattering spectroscopy" EXACT []
+synonym: "hyper Raman spectrometry" EXACT []
+synonym: "hyper-Raman scattering spectrometry" EXACT []
+synonym: "hyper-Raman scattering spectroscopy" EXACT []
+synonym: "hyper-Raman spectrometry" EXACT []
+synonym: "hyper-Raman spectroscopy" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000667
+name: polarised Raman spectroscopy
+def: "Spectroscopy where the polarisation of light which has been subjected to Raman scattering by a sample is determined." [https://orcid.org/0000-0002-0640-0422]
+synonym: "polarised Raman spectrometry" EXACT []
+synonym: "polarized Raman spectrometry" EXACT []
+synonym: "polarized Raman spectroscopy" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000668
+name: resonance Raman spectroscopy
+def: "Raman spectroscopy where the energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition in the sample." [https://orcid.org/0000-0002-0640-0422]
+synonym: "resonance Raman spectrometry" EXACT []
+synonym: "resonant Raman spectrometry" EXACT []
+synonym: "resonant Raman spectroscopy" EXACT []
+synonym: "RR spectrometry" EXACT []
+synonym: "RR spectroscopy" EXACT []
+synonym: "RRS" RELATED []
+xref: FIX:0000060
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000669
+name: Kerr-gated resonance Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample, and the laser is combined with a Kerr gate fluorescence rejection system." [https://orcid.org/0000-0002-0640-0422]
+synonym: "Kerr-gated Raman spectrometry" EXACT []
+is_a: CHMO:0000668 ! resonance Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000670
+name: surface-enhanced resonance Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample." [https://orcid.org/0000-0002-0640-0422]
+synonym: "SERRS" EXACT []
+synonym: "surface enhanced resonance Raman scattering spectrometry" EXACT []
+synonym: "surface enhanced resonance Raman scattering spectroscopy" EXACT []
+synonym: "surface enhanced resonance Raman spectrometry" EXACT []
+xref: FIX:0000077
+is_a: CHMO:0000668 ! resonance Raman spectroscopy
+is_a: CHMO:0000677 ! surface-enhanced Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000671
+name: ultraviolet resonance Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from an ultraviolet laser, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample." [https://doi.org/10.1039/b702944f]
+synonym: "ultra-violet resonance Raman spectroscopy" EXACT []
+synonym: "UVRR" EXACT []
+synonym: "UVRRS" EXACT []
+is_a: CHMO:0000668 ! resonance Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000672
+name: deep ultra-violet resonance Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from a deep ultraviolet (<300 nm) laser, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample." [https://doi.org/10.1039/b702944f]
+is_a: CHMO:0000671 ! ultraviolet resonance Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000674
+name: spatially-offset Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from a laser, by a sample is detected. Scattered light is collected from regions laterally offset from the excitation laser spot." [https://orcid.org/0000-0002-0640-0422]
+synonym: "SORS" EXACT []
+synonym: "SORSS" EXACT []
+synonym: "spatially offset Raman scattering spectrometry" EXACT []
+synonym: "spatially offset Raman scattering spectroscopy" EXACT []
+synonym: "spatially offset Raman spectrometry" EXACT []
+synonym: "spatially offset Raman spectroscopy" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000675
+name: stimulated Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from two lasers ('pump' and 'probe') by a sample is detected." [ISBN:0-471-96523-5]
+synonym: "SRS" EXACT []
+synonym: "stimulated Raman scattering spectroscopy" EXACT []
+synonym: "stimulated Raman spectrometry" EXACT []
+synonym: "stimulated scattering spectrometry" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000676
+name: femosecond stimulated Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from a femtosecond laser pulse, by a sample is detected. The laser pulse is generated by the mixing of two lasers ('pump' and 'probe')." [https://doi.org/10.1088/1742-6596/28/1/007]
+synonym: "emtosecond broadband stimulated Raman scattering spectrometry" EXACT []
+synonym: "femosecond stimulated Raman scattering spectrometry" EXACT []
+synonym: "femosecond stimulated Raman scattering spectroscopy" EXACT []
+synonym: "femosecond stimulated Raman spectrometry" EXACT []
+synonym: "femtosecond broadband stimulated Raman scattering spectroscopy" EXACT []
+synonym: "femtosecond broadband stimulated Raman spectrometry" EXACT []
+synonym: "femtosecond broadband stimulated Raman spectroscopy" EXACT []
+synonym: "FSRS" EXACT []
+synonym: "FSRSS" EXACT []
+is_a: CHMO:0000675 ! stimulated Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000677
+name: surface-enhanced Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected." [FIX:0000076, https://orcid.org/0000-0002-0640-0422]
+synonym: "SERS" EXACT []
+synonym: "SERS spectroscopy" EXACT []
+synonym: "surface enhanced Raman scattering" EXACT []
+synonym: "surface enhanced Raman spectrometry" EXACT []
+synonym: "surface enhanced Raman spectroscopy" EXACT []
+synonym: "surface-enhanced Raman scattering" EXACT []
+synonym: "surface-enhanced Raman scattering (SERS) spectroscopy" EXACT []
+synonym: "surface-enhanced Raman spectrometry" EXACT []
+synonym: "surface-enhanced Raman spectroscopy" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000678
+name: tip-enhanced Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser (500–650 nm), by metal surfaces, where scattering is enhanced by the optical near-field of a metal-coated scanning probe microscopy tip, is detected." [https://doi.org/10.1002/anie.200460656, https://doi.org/10.1039/b9nr00156e]
+synonym: "TERS" EXACT []
+synonym: "tip-enhanced Raman scattering spectrometry" EXACT []
+synonym: "tip-enhanced Raman scattering spectroscopy" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000679
+name: ultra-high vacuum tip-enhanced Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of visible laser light, by metal surfaces, where scattering is enhanced by the optical near field of a scanning tunnelling tip, under ultra-high vacuum is detected." [https://orcid.org/0000-0002-0640-0422]
+synonym: "UHV-TERS" EXACT []
+is_a: CHMO:0000678 ! tip-enhanced Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000680
+name: ultraviolet Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from an ultraviolet laser, by a sample is detected." [https://doi.org/10.1021/ja044708f]
+synonym: "ultra-violet Raman spectrometry" EXACT []
+synonym: "ultra-violet Raman spectroscopy" EXACT []
+synonym: "ultraviolet Raman spectrometry" EXACT []
+synonym: "ultraviolet Raman spectroscopy" EXACT []
+synonym: "UVR" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000763
+name: attenuated total reflectance Fourier transform infrared spectroscopy
+def: "Spectroscopy where infrared light is introduced into a prism at an angle exceeding the critical angle for internal reflection. This produces an evanescent wave at the reflecting surface (a surface which is transparent to infrared such as thallium bromide) on which the sample is supported. The distortion of the evanescent wave by the sample is measured producing a spectrum which is then subject to a Fourier transform." [FIX:0000644, ISBN:0-471-96523-5]
+synonym: "ATR FT-IR spectroscopy" EXACT []
+synonym: "ATR FTIR spectroscopy" EXACT []
+synonym: "ATR-FTIR" EXACT []
+synonym: "ATR-FTIR spectroscopy" EXACT []
+synonym: "attenuated total reflectance Fourier transform infra-red spectroscopy" EXACT []
+synonym: "attenuated total reflection-Fourier transform infrared (ATR-FTIR) spectroscopy" EXACT []
+synonym: "Fourier transform attenuated total reflectance infra-red" EXACT []
+synonym: "Fourier transform attenuated total reflectance infra-red spectroscopy" EXACT []
+synonym: "Fourier transform attenuated total reflectance infrared" EXACT []
+synonym: "Fourier transform attenuated total reflectance infrared spectroscopy" EXACT []
+synonym: "Fourier transform infrared attenuated total reflectance (FTIR-ATR) spectroscopy" EXACT []
+synonym: "Fourier transform infrared attenuated total reflectance spectroscopy" EXACT []
+synonym: "Fourier transform infrared attenuated total reflection (FTIR-ATR) spectroscopy" EXACT []
+synonym: "FTIR-ATR" EXACT []
+is_a: CHMO:0000648 ! attenuated total reflectance infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000770
+name: single molecule surface-enhanced Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a single molecule sample adsorbed onto a metal (Au, Ag or Cu) surface is detected." [https://doi.org/10.1021/cr980133r]
+synonym: "single molecule surface enhanced Raman scattering" EXACT []
+synonym: "single molecule surface enhanced Raman scattering spectroscopy" EXACT []
+synonym: "single molecule surface-enhanced Raman scattering" EXACT []
+synonym: "single molecule surface-enhanced Raman scattering spectroscopy" EXACT []
+synonym: "single molecule surface-enhanced Raman spectroscopy" EXACT []
+synonym: "SM SERS" EXACT []
+synonym: "SM-SERRS" EXACT []
+synonym: "SM-SERS" EXACT []
+synonym: "SM-SERS spectroscopy" EXACT []
+synonym: "SMSERS" EXACT []
+is_a: CHMO:0000677 ! surface-enhanced Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000793
@@ -633,9 +1307,7 @@ name: assay output
 def: "An information content entity that is output by an assay." [https://orcid.org/0000-0001-5985-7429, https://orcid.org/0000-0002-0640-0422]
 synonym: "experimental data" EXACT []
 is_a: IAO:0000027 ! data item
-intersection_of: IAO:0000027 ! data item
-intersection_of: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
-relationship: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000800
@@ -644,7 +1316,7 @@ def: "A plot of a measured quantity against some experimental parameter." [https
 synonym: "spectra" EXACT []
 synonym: "spectrum plot" EXACT []
 is_a: CHMO:0000793 ! assay output
-relationship: OBI:0000312 CHMO:0000228 ! is_specified_output_of spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000823
@@ -652,12 +1324,88 @@ name: Raman spectrum
 def: "A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample." [https://doi.org/10.1021/jp001661l]
 synonym: "Raman spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000859
+name: thermogravimetry-Fourier transform infrared spectroscopy
+def: "The FTIR analysis of volatile compounds released during the measurement of the mass of a sample as a function of temperature." [https://orcid.org/0000-0002-0640-0422]
+synonym: "TG-FT-IR" EXACT []
+synonym: "TG-FTIR" EXACT []
+synonym: "TG/FTIR" EXACT []
+synonym: "TGA-FT-IR" EXACT []
+synonym: "TGA-FTIR" EXACT []
+synonym: "thermogravimetry coupled to Fourier transform infrared spectroscopy" EXACT []
+synonym: "thermogravimetry-FTIR" EXACT []
+is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000870
+name: near-infrared Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of near-infrared radiation (radiation in the range 0.8–2 μm) is detected." [https://orcid.org/0000-0002-0640-0422]
+synonym: "near-infrared Raman" EXACT []
+synonym: "NIR Raman" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000875
+name: electrochemical surface-enhanced Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, at a metal (Au, Ag or Cu) electrochemcial interface is detected." [https://doi.org/jp809363m]
+synonym: "EC-SERS" EXACT []
+synonym: "electrochemical SERS" EXACT []
+synonym: "electrochemical surface enhanced Raman scattering" EXACT []
+synonym: "electrochemical surface-enhanced Raman scattering" EXACT []
+synonym: "electrochemical surface-enhanced Raman spectroscopy" EXACT []
+is_a: CHMO:0000677 ! surface-enhanced Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000885
+name: surface-enhanced chiral Raman spectroscopy
+def: "Spectroscopy where vibrational optical activity from a sample absorbed onto a metal (Au, Ag or Cu) surface is measured by means of a small difference in the intensity of Raman scattering from chiral molecules of right- and left-circularly polarised incident light." [https://orcid.org/0000-0002-0640-0422]
+synonym: "SEROA" EXACT []
+synonym: "surface enhanced chiral Raman spectroscopy" EXACT []
+synonym: "surface enhanced Raman optical activity" EXACT []
+synonym: "surface-enhanced Raman optical activity" EXACT []
+is_a: CHMO:0000657 ! chiral Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000953
 name: microscope
 def: "A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface." [https://orcid.org/0000-0001-5985-7429]
 is_a: OBI:0000968 ! device
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0000993
+name: portion of material
+def: "An independent material continuant that is self-connected and retains its identity over time." [https://orcid.org/0000-0001-5985-7429]
+is_a: BFO:0000040 ! material entity
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0001078
+name: polarization modulation infrared reflection–adsorption spectroscopy
+def: "Spectroscopy where the differential absorption and reflection of low incident angle p- and s-polarized infrared light by the surface molecules of a highly reflective or polished sample is measured. The ultra-thin layers on metal surfaces interact with the p-polarized component of light, but not with the s-polarized component." [https://orcid.org/0000-0002-0640-0422]
+synonym: "PM-IRRAS" EXACT []
+synonym: "polarization modulation infrared reflection adsorption spectroscopy" EXACT []
+synonym: "polarization modulation-infrared reflection-adsorption spectroscopy" EXACT []
+is_a: CHMO:0000647 ! reflection–absorption infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0001157
+name: single pulse–pulsed laser polymerization–near-infrared technique
+def: "A technique for measuring the time-resolved concentration of monomers during polymerisation reactions. The polymerisation is initiated by a single pulse of laser radiation and the monomer concentration is monitored by measuring absorbance in the near-infrared (0.8–2 μm) region." [ISBN:386727682X]
+synonym: "single pulse-pulsed laser polymerization-near-infrared" EXACT []
+synonym: "SP-PLP-NIR" EXACT []
+is_a: CHMO:0000638 ! near-infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-03-13T11:42:53Z
 
 [Term]
 id: CHMO:0001234
@@ -666,6 +1414,7 @@ def: "A piece of apparatus used to measure a spectrum." [https://orcid.org/0000-
 synonym: "spectrograph" EXACT []
 synonym: "spectroscope" EXACT []
 is_a: CHMO:0002793 ! sensor
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-25T01:54:09Z
 
@@ -674,18 +1423,128 @@ id: CHMO:0001235
 name: Raman spectrometer
 def: "A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra." [https://orcid.org/0000-0002-0640-0422]
 is_a: CHMO:0001234 ! spectrometer
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-25T01:55:39Z
 
 [Term]
-id: CHMO:0001237
-name: confocal Raman microscope
-def: "A piece of apparatus, consisting of a laser beam (<10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample." [https://orcid.org/0000-0002-0640-0422]
-synonym: "confocal Raman microspectrometer" EXACT []
-synonym: "Raman confocal microscope" EXACT []
-is_a: CHMO:0001814 ! Raman microscope
+id: CHMO:0001262
+name: gas chromatography-infrared spectroscopy
+def: "Any method where a sample mixture is first separated by column chromatography where the mobile phase is a gas, then the absorption of radiation from the infrared region by the sample is measured." [https://orcid.org/0000-0002-0640-0422]
+synonym: "gas chromatography infrared spectrometry" EXACT []
+synonym: "gas chromatography infrared spectroscopy" EXACT []
+synonym: "gas chromatography-infrared spectrometry" EXACT []
+synonym: "GC IR" EXACT []
+synonym: "GC-IR" EXACT []
+synonym: "GC/IR" EXACT []
+synonym: "GCIR" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
-creation_date: 2009-03-25T02:05:53Z
+creation_date: 2009-04-06T11:47:54Z
+
+[Term]
+id: CHMO:0001263
+name: pyrolysis gas chromatography-infrared spectroscopy
+def: "Any method where a sample mixture is first chemically degraded by heating then separated by column chromatography where the mobile phase is a gas, then the absorption of radiation from the infrared region by the sample is measured." [https://orcid.org/0000-0002-0640-0422]
+synonym: "Py-GC-IR" EXACT []
+synonym: "py-GC-IR" EXACT []
+synonym: "pyrolysis gas chromatography infrared spectrometry" EXACT []
+synonym: "pyrolysis gas chromatography infrared spectroscopy" EXACT []
+synonym: "pyrolysis-gas chromatography-infrared spectrometry" EXACT []
+synonym: "pyrolysis-gas chromatography-infrared spectroscopy" EXACT []
+is_a: CHMO:0001262 ! gas chromatography-infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-04-06T11:52:44Z
+
+[Term]
+id: CHMO:0001264
+name: pyrolysis infrared spectroscopy
+def: "Spectroscopy where the sample is first chemically degraded by heating then its absorption of radiation from the infrared region (0.78–1000 μm) is measured." [OrangeBook:5.3]
+synonym: "Py-IR" EXACT []
+synonym: "py-IR" EXACT []
+synonym: "Py/IR" EXACT []
+synonym: "pyrolysis IR" EXACT []
+synonym: "pyrolysis-IR" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-04-06T11:56:10Z
+
+[Term]
+id: CHMO:0001288
+name: sum-frequency generation spectroscopy
+def: "A method for generating surface-specific vibrational spectra by mixing two light beams at a surface and detecting the output beam, which has frequency equal to the sum of the two input frequencies." [https://doi.org/10.1021/ja9831453]
+synonym: "SFG" EXACT []
+synonym: "SFG spectroscopy" EXACT []
+synonym: "SFG vibrational spectroscopy" EXACT []
+synonym: "sum frequency generation (SFG) spectroscopy" EXACT []
+synonym: "sum frequency generation (SFG) vibrational spectroscopy" EXACT []
+synonym: "sum frequency generation spectroscopy" EXACT []
+synonym: "vibrational sum-frequency generation (VSFG) spectroscopy" EXACT []
+synonym: "vibrational sum-frequency generation spectroscopy" EXACT []
+synonym: "VSFG spectroscopy" EXACT []
+is_a: CHMO:0000628 ! vibrational spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-05-07T03:31:21Z
+
+[Term]
+id: CHMO:0001766
+name: transmission Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser, by a sample is detected. The light is collected from the non-illuminated side of the sample." [https://orcid.org/0000-0002-0640-0422]
+synonym: "transmission Raman" EXACT []
+synonym: "transmission Raman scattering spectroscopy" EXACT []
+synonym: "transmission Raman spectrometry" EXACT []
+synonym: "TRS" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-05-20T10:12:23Z
+
+[Term]
+id: CHMO:0001767
+name: optical tweezers Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser, by a sample (e.g. a biological cell) constrained using optical tweezers is detected." [https://doi.org/10.1039/b815253e]
+synonym: "OTRS" EXACT []
+synonym: "Raman tweezers" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-05-20T10:18:22Z
+
+[Term]
+id: CHMO:0001794
+name: supercritical fluid extraction-Fourier transform infrared spectroscopy
+def: "Fourier transform infrared spectroscopy where the sample is initially transferred from a matrix to a liquid phase using a supercritical fluid." [https://orcid.org/0000-0002-0640-0422]
+synonym: "SFE-FTIR" EXACT []
+synonym: "supercritical fluid extraction-Fourier transform infrared absorption spectroscopy" EXACT []
+is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-05-20T02:49:54Z
+
+[Term]
+id: CHMO:0001798
+name: reflection–absorption Fourier transform infrared spectroscopy
+def: "Spectroscopy where the absorption and reflection of low-incident-angle infrared light by the surface molecules of a highly reflective or polished sample is measured. The  sample absorbs a single pulse of radiation and the spectrum obtained is subject to a Fourier transform." [https://doi.org/10.1039/b821475a, ISBN:0-471-96523-5]
+synonym: "Fourier transform infrared reflection absorption spectrometry" EXACT []
+synonym: "Fourier transform infrared reflection absorption spectroscopy" EXACT []
+synonym: "FT-IRAS" EXACT []
+synonym: "FT-IRRAS" EXACT []
+synonym: "RA FT-IR" EXACT []
+synonym: "RA FTIR" EXACT []
+synonym: "RA-FTIR" EXACT []
+synonym: "reflection absorption (RA) FT-IR" EXACT []
+synonym: "reflection absorption Fourier transform infra-red spectrometry" EXACT []
+synonym: "reflection absorption Fourier transform infrared spectrometry" EXACT []
+synonym: "reflection absorption Fourier transform infrared spectroscopy" EXACT []
+synonym: "reflection-absorption Fourier transform infrared spectroscopy" EXACT []
+is_a: CHMO:0000647 ! reflection–absorption infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-05-21T10:50:58Z
 
 [Term]
 id: CHMO:0001814
@@ -695,22 +1554,349 @@ def: "A piece of apparatus, consisting of a laser beam (<10 μm diameter), a mon
 synonym: "Raman microspectrometer" EXACT []
 is_a: CHMO:0000953 ! microscope
 is_a: CHMO:0001235 ! Raman spectrometer
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-26T01:03:35Z
+
+[Term]
+id: CHMO:0001821
+name: synchrotron Fourier transform infrared spectroscopy
+def: "Spectroscopy where the sample absorbs a single pulse of radiation from the infrared region (0.78–1000 μm), produced in a synchrotron, and the spectrum obtained is subject to a Fourier transform." [https://orcid.org/0000-0002-0640-0422]
+synonym: "S-FTIR" EXACT []
+synonym: "S-FTIR spectrometry" EXACT []
+synonym: "S-FTIR spectroscopy" EXACT []
+synonym: "SFT-IR" EXACT []
+synonym: "SFTIR" EXACT []
+synonym: "synchrotron Fourier transform infra-red absorption spectroscopy" EXACT []
+synonym: "synchrotron Fourier transform infra-red spectrometry" EXACT []
+synonym: "synchrotron Fourier transform infrared (FT-IR) spectroscopy" EXACT []
+synonym: "synchrotron Fourier transform infrared (S-FTIR)" EXACT []
+synonym: "synchrotron Fourier transform infrared spectrometry" EXACT []
+synonym: "synchrotron Fourier transform infrared spectroscopy" EXACT []
+synonym: "synchrotron-based FTIR" EXACT []
+is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-05-28T10:47:32Z
+
+[Term]
+id: CHMO:0001907
+name: rapid-scan infrared absorption spectroscopy
+def: "Spectroscopy where the sample absorbs radiation from the infrared region (0.78–1000 μm). Spectra are collected at a rate of approx. 0.05 s per spectrum." [ISBN:1574445391]
+synonym: "rapid scan infrared absorption spectroscopy" EXACT []
+synonym: "rapid scan infrared spectroscopy" EXACT []
+synonym: "rapid scan IR" EXACT []
+synonym: "rapid scan IR spectroscopy" EXACT []
+synonym: "rapid-scan infrared spectroscopy" EXACT []
+synonym: "rapid-scan IR" EXACT []
+synonym: "rapid-scan IR spectroscopy" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-06-03T10:09:14Z
+
+[Term]
+id: CHMO:0001908
+name: ultra-rapid-scan infrared absorption spectroscopy
+def: "Spectroscopy where the sample absorbs radiation from the infrared region  (0.78–1000 μm). Spectra are collected at a rate of approx. 0.001 s per spectrum." [ISBN:1574445391]
+synonym: "ultra rapid scan infrared absorption spectroscopy" EXACT []
+synonym: "ultra rapid scan infrared spectroscopy" EXACT []
+synonym: "ultra rapid scan IR" EXACT []
+synonym: "ultra rapid scan IR spectroscopy" EXACT []
+synonym: "ultra-rapid-scan infrared spectroscopy" EXACT []
+synonym: "ultra-rapid-scan IR" EXACT []
+synonym: "ultra-rapid-scan IR spectroscopy" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-06-03T10:12:17Z
+
+[Term]
+id: CHMO:0001939
+name: stimulated Raman gain spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light from two lasers ('pump' and 'probe') by a sample is detected. In stimulated Raman gain spectroscopy the probe laser has a lower frequency than the pump laser." [ISBN:0824705572]
+synonym: "Raman gain spectroscopy" EXACT []
+synonym: "SRGS" EXACT []
+is_a: CHMO:0000675 ! stimulated Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-06-10T09:51:36Z
+
+[Term]
+id: CHMO:0001940
+name: stimulated Raman loss spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light from two lasers ('pump' and 'probe') by a sample is detected. In stimulated Raman gain spectroscopy the pump laser has a lower frequency than the probe laser." [ISBN:0824705572]
+synonym: "inverse Raman gain spectroscopy" EXACT []
+synonym: "inverse Raman spectroscopy" EXACT []
+synonym: "IRGS" EXACT []
+synonym: "IRS" EXACT []
+synonym: "Raman loss spectroscopy" EXACT []
+synonym: "SRLS" EXACT []
+is_a: CHMO:0000675 ! stimulated Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-06-10T09:55:17Z
+
+[Term]
+id: CHMO:0001941
+name: photoacoustic Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. Two lasers ('pump and 'probe') are mixed and focused on the sample cell. When the frequency difference between the lasers corresponds to a Raman transition, an acoustic signal (a sound wave produced by an increase in pressure) is generated and detected by a sensitive microphone." [ISBN:0824705572]
+synonym: "PARS" EXACT []
+is_a: CHMO:0000675 ! stimulated Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-06-10T10:02:35Z
+
+[Term]
+id: CHMO:0001942
+name: ionisation-detected stimulated Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from two lasers ('pump' and 'probe') by a sample is detected. The molecules in the sample are ionised using an ultraviolet laser in order to improve the signal-to-noise ratio of the spectrum." [ISBN:0824705572]
+synonym: "IDSRS" EXACT []
+synonym: "ionization-detected stimulated Raman spectroscopy" EXACT []
+is_a: CHMO:0000675 ! stimulated Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-06-10T10:14:20Z
+
+[Term]
+id: CHMO:0001943
+name: higher-order Raman spectral excitation spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from a two-colour laser, by a sample is detected." [https://doi.org/10.1007/BF00750953]
+synonym: "higher order Raman spectral excitation studies" EXACT []
+synonym: "higher-order Raman spectral excitation spectroscopy" EXACT []
+synonym: "higher-order Raman spectral excitation studies" EXACT []
+synonym: "HORSES" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-06-10T10:23:02Z
+
+[Term]
+id: CHMO:0001986
+name: non-resonance Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light does not coincide with an electronic transition in the sample." [FIX:0000026, https://orcid.org/0000-0002-0640-0422]
+synonym: "non resonance Raman spectroscopy" EXACT []
+synonym: "non resonant Raman spectroscopy" EXACT []
+synonym: "non-resonance Raman" EXACT []
+synonym: "non-resonant Raman" EXACT []
+synonym: "non-resonant Raman spectroscopy" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-06-17T03:24:06Z
+
+[Term]
+id: CHMO:0002165
+name: drop coating deposition Raman spectroscopy
+def: "A type of Raman spectroscopy where the spectral signal is enhanced by pre-concentration of the sample. Drops of the sample in solution are deposited onto a surface and dry in a 'coffee-ring' pattern. Spectra are then obtained from this ring of excess of material, after evaporation has completed." [https://doi.org/10.1039/b701541k]
+synonym: "DCD Raman spectroscopy" EXACT []
+synonym: "DCDR" EXACT []
+synonym: "DCDR spectroscopy" EXACT []
+synonym: "drop coating deposition Raman (DCDR) spectroscopy" EXACT []
+synonym: "drop-coating deposition Raman spectroscopy" EXACT []
+synonym: "drop-coating-deposition Raman spectroscopy" EXACT []
+is_a: CHMO:0002515 ! laser Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-07-14T10:12:49Z
+
+[Term]
+id: CHMO:0002286
+name: polarised Fourier transform infrared spectroscopy
+def: "Spectroscopy where the sample absorbs a single pulse of polarised radiation from the infrared region (0.78–1000 μm) and the spectrum obtained is subject to a Fourier transform." [https://orcid.org/0000-0002-0640-0422]
+synonym: "polarised Fourier transform infra-red absorption spectroscopy" EXACT []
+synonym: "polarised Fourier transform infra-red spectrometry" EXACT []
+synonym: "polarised Fourier transform infrared (FT-IR) spectroscopy" EXACT []
+synonym: "polarised Fourier transform infrared spectrometry" EXACT []
+synonym: "polarised Fourier transform infrared spectroscopy" EXACT []
+synonym: "polarised FTIR" EXACT []
+synonym: "polarized Fourier transform infra-red absorption spectroscopy" EXACT []
+synonym: "polarized Fourier transform infra-red spectrometry" EXACT []
+synonym: "polarized Fourier transform infrared (FT-IR) spectroscopy" EXACT []
+synonym: "polarized Fourier transform infrared spectrometry" EXACT []
+synonym: "polarized Fourier transform infrared spectroscopy" EXACT []
+synonym: "polarized FTIR" EXACT []
+is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-08-24T12:48:20Z
+
+[Term]
+id: CHMO:0002287
+name: pyrolysis Fourier transform infrared spectroscopy
+def: "Spectroscopy where the sample is first chemically degraded by heating then its absorption of radiation from the infrared region (0.78–1000 μm) is measured and the spectrum obtained is subject to a Fourier transform." [https://doi.org/10.1021/jp972162w]
+synonym: "P-FTIR" EXACT []
+synonym: "P/FTIR" EXACT []
+synonym: "PFTIR" EXACT []
+synonym: "Py-FTIR" EXACT []
+synonym: "py-FTIR" EXACT []
+synonym: "Py/FTIR" EXACT []
+synonym: "pyrolysis FTIR" EXACT []
+synonym: "pyrolysis-FTIR" EXACT []
+is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
+is_a: CHMO:0001264 ! pyrolysis infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-08-24T12:53:20Z
+
+[Term]
+id: CHMO:0002288
+name: time-resolved polarised Fourier transform infrared spectroscopy
+def: "Spectroscopy where the sample absorbs a single pulse of polarised radiation from the infrared region (0.78–1000 μm) and the spectrum obtained, recorded as a function of time, is subject to a Fourier transform." [https://orcid.org/0000-0002-0640-0422]
+synonym: "time-resolved polarised Fourier transform infra-red absorption spectroscopy" EXACT []
+synonym: "time-resolved polarised Fourier transform infra-red spectrometry" EXACT []
+synonym: "time-resolved polarised Fourier transform infrared (FT-IR) spectroscopy" EXACT []
+synonym: "time-resolved polarised Fourier transform infrared spectrometry" EXACT []
+synonym: "time-resolved polarised Fourier transform infrared spectroscopy" EXACT []
+synonym: "time-resolved polarised FTIR" EXACT []
+synonym: "time-resolved polarized Fourier transform infra-red absorption spectroscopy" EXACT []
+synonym: "time-resolved polarized Fourier transform infra-red spectrometry" EXACT []
+synonym: "time-resolved polarized Fourier transform infrared (FT-IR) spectroscopy" EXACT []
+synonym: "time-resolved polarized Fourier transform infrared spectrometry" EXACT []
+synonym: "time-resolved polarized Fourier transform infrared spectroscopy" EXACT []
+synonym: "time-resolved polarized FTIR" EXACT []
+is_a: CHMO:0002286 ! polarised Fourier transform infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-08-24T12:55:24Z
+
+[Term]
+id: CHMO:0002289
+name: fast Fourier transform infrared spectroscopy
+def: "Spectroscopy where the sample absorbs a single pulse of radiation from the infrared region (0.78–1000 μm) and the spectrum obtained is subject to a fast Fourier transform." [FIX:0000647, https://doi.org/10.1021/ie960134e]
+synonym: "FFT-FTIR" EXACT []
+synonym: "FFT/FTIR" EXACT []
+is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-08-24T01:00:06Z
+
+[Term]
+id: CHMO:0002290
+name: infrared transmission spectroscopy
+def: "Spectroscopy where the transmission of infrared radiation (0.78–1000 μm) through a sample is detected." [FIX:0000661]
+synonym: "infrared transmittance spectroscopy" EXACT []
+synonym: "IR transmission spectroscopy" EXACT []
+synonym: "IR transmittance spectroscopy" EXACT []
+synonym: "transmission IR" EXACT []
+is_a: CHMO:0000628 ! vibrational spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-08-24T01:02:36Z
+
+[Term]
+id: CHMO:0002291
+name: dispersive infrared spectroscopy
+def: "Spectroscopy where the sample absorbs radiation from the infrared region (0.78–1000 μm). The infrared beam is passed through a diffraction grating which separates (or disperses) the wavelength of the light and directs each wavelength individually through a slit to a detector." [FIX:0000649, http://www.thermo.com/eThermo/CMA/PDFs/Product/productPDF_21615.pdf]
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-08-24T01:12:29Z
+
+[Term]
+id: CHMO:0002373
+name: surface-enhanced non-resonance Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected. The energy of the incoming laser is adjusted such that it or the scattered light does not coincide with an electronic transition within the sample." [https://orcid.org/0000-0002-0640-0422]
+xref: FIX:0000078
+is_a: CHMO:0000668 ! resonance Raman spectroscopy
+is_a: CHMO:0000677 ! surface-enhanced Raman spectroscopy
+is_a: CHMO:0001986 ! non-resonance Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-09-15T05:14:57Z
 
 [Term]
 id: CHMO:0002414
 name: scattering spectroscopy
 def: "Any method that measures the amount of light that a substance scatters at certain wavelengths, incident angles, and polarization angles." [FIX:0000057]
 is_a: CHMO:0000228 ! spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-17T04:09:34Z
+
+[Term]
+id: CHMO:0002515
+name: laser Raman spectroscopy
+def: "Spectroscopy where the Raman scattering of monochromatic light, from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected." [FIX:0000375]
+is_a: CHMO:0000656 ! Raman spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-10-09T11:39:33Z
+
+[Term]
+id: CHMO:0002627
+name: infrared–visible sum-frequency generation spectroscopy
+def: "A method for generating surface-specific vibrational spectra by mixing two light beams (visible and IR) at a surface and detecting the output beam, which has frequency equal to the sum of the two input frequencies." [https://doi.org/10.1021/ja9831453]
+synonym: "infrared-visible sum-frequency generation (SFG) spectroscopy" EXACT []
+synonym: "infrared-visible sum-frequency generation spectroscopy" EXACT []
+is_a: CHMO:0001288 ! sum-frequency generation spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2009-12-01T09:35:28Z
+
+[Term]
+id: CHMO:0002651
+name: thermogravimetry-differential thermal analysis
+def: "The measurement of the temperature difference between the sample and a reference material during the measurement of the mass of the sample as a function of temperature." [https://orcid.org/0000-0002-0640-0422]
+synonym: "differential thermal analysis and thermal gravimetry analysis" EXACT []
+synonym: "differential thermalgravimetric analysis" EXACT []
+synonym: "DTA-TG" EXACT []
+synonym: "DTA-TGA" EXACT []
+synonym: "DTA/TG" EXACT []
+synonym: "DTA/TGA" EXACT []
+synonym: "TG-DTA" EXACT []
+synonym: "TGA-DTA" EXACT []
+synonym: "TGDTA" EXACT []
+synonym: "thermogravimetric and differential thermal analyses" EXACT []
+synonym: "thermogravimetry coupled to differential thermal analysis" EXACT []
+is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2010-01-04T04:19:21Z
+
+[Term]
+id: CHMO:0002675
+name: electronic sum-frequency generation spectroscopy
+def: "A method for generating surface-specific electronic spectra by mixing two light beams at a surface and detecting the output beam, which has frequency equal to the sum of the two input frequencies." [https://doi.org/10.1039/b908097j]
+synonym: "electronic sum frequency generation spectroscopy" EXACT []
+synonym: "electronic sum-frequency generation (ESFG) spectroscopy" EXACT []
+synonym: "ESFG spectroscopy" EXACT []
+is_a: CHMO:0001288 ! sum-frequency generation spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: https://orcid.org/0000-0001-5985-7429
+creation_date: 2010-01-13T04:01:47Z
+
+[Term]
+id: CHMO:0002710
+name: two-dimensional infrared spectroscopy
+def: "Spectroscopy where the sample absorbs radiation from the infrared region (0.78–1000 \\μm) over two frequency axes. Cross peaks in the spectrum encode the couplings and orientation between vibrations." [FIX:0001069]
+synonym: "2D IR" EXACT []
+synonym: "2D-IR" EXACT []
+synonym: "2DIR" EXACT []
+synonym: "two dimensional infrared spectroscopy" EXACT []
+synonym: "two-dimensional infrared (2D-IR) spectroscopy" EXACT []
+synonym: "two-dimensional IR spectroscopy" EXACT []
+is_a: CHMO:0000630 ! infrared absorption spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+created_by: Hils
+creation_date: 2010-07-24T11:15:46Z
 
 [Term]
 id: CHMO:0002793
 name: sensor
 def: "A piece of apparatus that is used to measure a physical quantity." [https://orcid.org/0000-0001-5985-7429]
 is_a: OBI:0000968 ! device
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+
+[Term]
+id: CHMO:0002813
+name: in situ diffuse reflectance infrared Fourier transform spectroscopy
+def: "Diffuse reflectance infrared Fourier transform spectroscopy of a sample that is carried out in the environment where the sample might be used." [https://orcid.org/0000-0001-5985-7429]
+comment: For example, the sample might be a catalyst, so during those catalytic processes.
+synonym: "in situ DRIFT" EXACT []
+synonym: "in situ DRIFTS" EXACT []
+is_a: CHMO:0000645 ! diffuse reflectance infrared Fourier transform spectroscopy
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: IAO:0000005
@@ -749,7 +1935,7 @@ name: data item
 def: "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
 is_a: IAO:0000030 ! information content entity
 property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "data item" xsd:string
 property_value: IAO:0000112 "Data items include counts of things, analyte concentrations, and statistical summaries." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -816,7 +2002,7 @@ name: algorithm
 def: "A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata." []
 is_a: IAO:0000104 ! plan specification
 property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "algorithm" xsd:string
 property_value: IAO:0000112 "PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -860,7 +2046,7 @@ name: image
 def: "An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface." []
 is_a: IAO:0000308 ! figure
 property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "image" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
@@ -903,7 +2089,7 @@ name: measurement datum
 def: "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device." []
 is_a: IAO:0000027 ! data item
 property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "measurement datum" xsd:string
 property_value: IAO:0000112 "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -1200,7 +2386,7 @@ property_value: IAO:0000111 "EL++ ontology module" xsd:string
 id: NCBITaxon:9606
 name: person
 is_a: OBI:0100026 ! organism
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl
 
 [Term]
@@ -1208,7 +2394,7 @@ id: OBI:0000011
 name: planned process
 def: "A process that realizes a plan which is the concretization of a plan specification." []
 is_a: BFO:0000015 ! process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "planned process" xsd:string
 property_value: IAO:0000111 "planned process" xsd:string
 property_value: IAO:0000112 "Injecting mice with a vaccine in order to test its efficacy" xsd:string
@@ -1229,7 +2415,7 @@ is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
 intersection_of: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
 relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "processed material" xsd:string
 property_value: IAO:0000112 "Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1240,7 +2426,7 @@ id: OBI:0000066
 name: investigation
 def: "a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s)." []
 is_a: OBI:0000011 ! planned process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "investigation" xsd:string
 property_value: IAO:0000112 "Lung cancer investigation using expression profiling, a stem cell transplant investigation, biobanking is not an investigation, though it may be part of an investigation" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1258,7 +2444,7 @@ def: "a role that inheres in a material entity that is realized in an assay in w
 is_a: BFO:0000023 ! role
 relationship: BFO:0000054 OBI:0000070 ! realized in assay
 relationship: RO:0000052 BFO:0000040 ! characteristic of material entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "evaluant role" xsd:string
 property_value: IAO:0000112 "When a specimen of blood is assayed for glucose concentration, the blood has the evaluant role. When measuring the mass of a mouse, the evaluant is the mouse. When measuring the time of DNA replication, the evaluant is the DNA. When measuring the intensity of light on a surface, the evaluant is the light source." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1277,7 +2463,7 @@ disjoint_from: OBI:0000339 ! planning
 disjoint_from: OBI:0200000 ! data transformation
 relationship: BFO:0000055 OBI:0000067 ! realizes evaluant role
 relationship: OBI:0000417 OBI:0000441 ! achieves_planned_objective assay objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "assay" xsd:string
 property_value: IAO:0000112 "Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1294,7 +2480,7 @@ id: OBI:0000073
 name: sample preparation for assay
 def: "A sample_preparation_for_assay is a protocol_application including material_enrollments and biomaterial_transformations. definition_source: OBI." []
 is_a: OBI:0000094 ! material processing
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "sample preparation for assay" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
@@ -1307,7 +2493,7 @@ name: reagent role
 def: "A role inhering in a biological or chemical entity that is intended to be applied in a scientific technique to participate (or have molecular components that participate) in a chemical reaction that facilitates the generation of data about some entity distinct from the bearer, or the generation of some specified material output distinct from the bearer." []
 comment: (copied from ReO)\nReagents are distinguished from instruments or devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, instruments do not participate in a chemical reaction/interaction during the technique.\n\nReagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance will realize only one of these roles in the execution of a given assay or technique. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.\n\nIn regard to the statement that reagents are 'distinct' from the specified outputs of a technique, note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a 'nucleic acid molecule') that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of 'reagent-ness' is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique).
 is_a: BFO:0000023 ! role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "reagent role" xsd:string
 property_value: IAO:0000112 "Buffer, dye, a catalyst, a solvating agent." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -1324,7 +2510,7 @@ is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
 relationship: OBI:0000299 OBI:0000047 ! has_specified_output processed material
 relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "material processing" xsd:string
 property_value: IAO:0000112 "A cell lysis, production of a cloning vector, creating a buffer." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1341,7 +2527,7 @@ id: OBI:0000112
 name: specimen role
 def: "a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation" []
 is_a: BFO:0000023 ! role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "specimen role" xsd:string
 property_value: IAO:0000112 "liver section; a portion of a culture of cells; a nemotode or other animal once no longer a subject (generally killed); portion of blood from a patient." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1351,6 +2537,7 @@ property_value: IAO:0000116 "Note: definition is in specimen creation objective 
 property_value: IAO:0000116 "parasite example\n- when parasite in people we study people, people are subjects and parasites are specimen\n- when parasite extracted, they become subject in the following study\nspecimen can later be subject." xsd:string
 property_value: IAO:0000117 "GROUP:  Role Branch" xsd:string
 property_value: IAO:0000119 "OBI" xsd:string
+property_value: IAO:0000233 https://github.com/obi-ontology/obi/issues/1013
 
 [Term]
 id: OBI:0000202
@@ -1359,7 +2546,7 @@ def: "A role borne by an entity and that is realized in a process that is part o
 comment: Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable investigations run by robot scientists such as ADAM (King et al, Science, 2009)
 is_a: BFO:0000023 ! role
 relationship: BFO:0000054 OBI:0000066 ! realized in investigation
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "investigation agent role" xsd:string
 property_value: IAO:0000112 "The person perform microarray experiments and submit microarray results (including raw data, processed data) with experiment description to ArrayExpress." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1376,7 +2563,7 @@ id: OBI:0000245
 name: organization
 def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
 is_a: BFO:0000040 ! material entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "organization" xsd:string
 property_value: IAO:0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1392,7 +2579,7 @@ id: OBI:0000272
 name: protocol
 def: "A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process." []
 is_a: IAO:0000104 ! plan specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "protocol" xsd:string
 property_value: IAO:0000112 "PCR protocol, has objective specification, amplify DNA fragment of interest, and has action specification describes the amounts of experimental reagents used (e..g. buffers, dNTPS, enzyme), and the temperature and cycle time settings for running the PCR." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1404,7 +2591,7 @@ property_value: OBI:0001847 "study protocol" xsd:string
 id: OBI:0000339
 name: planning
 def: "a process of creating or modifying a plan specification" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "planning" xsd:string
 property_value: IAO:0000112 "The process of a scientist thinking about and deciding what reagents to use as part of a protocol for an experiment. Note that the scientist could be human or a \"robot scientist\" executing software." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1418,7 +2605,7 @@ id: OBI:0000369
 name: magnify function
 def: "A magnify function is a function to increase the size of a transmitted object image through the precise arrangement of energy diffraction elements along an imaging path." []
 is_a: BFO:0000034 ! function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "magnify function" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Bill Bug" xsd:string
@@ -1433,7 +2620,7 @@ def: "An image acquisition function is a function to acquire an image of a mater
 is_a: OBI:0000453 ! measure function
 relationship: BFO:0000054 OBI:0001007 ! realized in image creation
 relationship: RO:0000052 OBI:0000398 ! characteristic of image creation device
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "image acquisition function" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Frank Gibson" xsd:string
@@ -1446,7 +2633,7 @@ is_a: OBI:0000832 ! measurement device
 intersection_of: OBI:0000968 ! device
 intersection_of: RO:0000085 OBI:0000397 ! has function image acquisition function
 relationship: RO:0000085 OBI:0000397 ! has function image acquisition function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "image acquisition device" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Frank Gibson" xsd:string
@@ -1458,7 +2645,7 @@ id: OBI:0000399
 name: solid support function
 def: "A solid support function is a function of a device on which an entity is kept in a defined position and prevented in its movement" []
 is_a: BFO:0000034 ! function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "solid support function" xsd:string
 property_value: IAO:0000112 "Taped, glued, pinned, dried or molecularly bonded to a solid support" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1471,7 +2658,7 @@ id: OBI:0000441
 name: assay objective
 def: "an objective specification to determine a specified type of information about an evaluated entity (the material entity bearing evaluant role)" []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "assay objective" xsd:string
 property_value: IAO:0000112 "the objective to determine the weight of a mouse." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1484,7 +2671,7 @@ name: measure function
 def: "Measure function is a function that is borne by a processed material  and realized in a process in which information about some entity is expressed relative to some reference." []
 is_a: BFO:0000034 ! function
 relationship: RO:0000079 OBI:0000047 ! function of processed material
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "measure function" xsd:string
 property_value: IAO:0000112 "A glucometer measures blood glucose concentration, the glucometer has a measure function." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1498,7 +2685,7 @@ id: OBI:0000456
 name: material transformation objective
 def: "an objective specifiction that creates an specific output object from input materials." []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "material transformation objective" xsd:string
 property_value: IAO:0000112 "The objective to create a mouse infected with LCM virus. The objective to create a defined solution of PBS." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1515,7 +2702,7 @@ id: OBI:0000571
 name: manufacturer role
 def: "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process." []
 is_a: BFO:0000023 ! role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "manufacturer role" xsd:string
 property_value: IAO:0000112 "With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -1528,7 +2715,7 @@ name: device setting
 def: "a quality inheres_in some device and is concretization of some (device_setting_specification and is_about a quality of the device" []
 is_a: BFO:0000019 ! quality
 relationship: RO:0000052 OBI:0000047 ! characteristic of processed material
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "device setting" xsd:string
 property_value: IAO:0000112 "Examples, 300V for 4 hours, 200mvolts, 37degrees.A knob set a 300 V is the device setting, the protocol stating to set the instrument to 300V is a device setting specification" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -1545,7 +2732,7 @@ intersection_of: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen c
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
 relationship: OBI:0000299 OBI:0100051 ! has_specified_output specimen
 relationship: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "specimen collection process" xsd:string
 property_value: IAO:0000112 "drawing blood from a patient for analysis, collecting a piece of a plant for depositing in a herbarium, buying meat from a butcher in order to measure its protein content in an investigation" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1563,7 +2750,7 @@ id: OBI:0000684
 name: specimen collection objective
 def: "A objective specification to obtain a material entity for potential use as an input during an investigation." []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "specimen collection objective" xsd:string
 property_value: IAO:0000112 "The objective to collect bits of excrement in the rainforest. The objective to obtain a blood sample from a patient." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1575,11 +2762,12 @@ id: OBI:0000740
 name: material sample role
 def: "A material sample role is a specimen role borne by a material entity that is the output of a material sampling process." []
 is_a: OBI:0000112 ! specimen role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "material sample role" xsd:string
 property_value: IAO:0000112 "a role borne by a portion of blood taken to represent all the blood in an organism; the role borne by a population of humans with HIV enrolled in a study taken to represent patients with HIV in general." xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "7/13/09: Note that this is a relational role: between the sample taken and the 'sampled' material of which the sample is thought to be representative off." xsd:string
+property_value: IAO:0000233 https://github.com/obi-ontology/obi/issues/1013
 
 [Term]
 id: OBI:0000747
@@ -1589,12 +2777,13 @@ is_a: OBI:0100051 ! specimen
 intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0000087 OBI:0000740 ! has role material sample role
 relationship: RO:0000087 OBI:0000740 ! has role material sample role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "material sample" xsd:string
 property_value: IAO:0000112 "blood drawn from patient to measure his systemic glucose level. A population of humans with HIV enrolled in a study taken to represent patients with HIV in general." xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "OBI: workshop" xsd:string
 property_value: IAO:0000118 "sample population" xsd:string
+property_value: IAO:0000233 https://github.com/obi-ontology/obi/issues/1013
 property_value: OBI:0001847 "sample" xsd:string
 
 [Term]
@@ -1605,7 +2794,7 @@ is_a: OBI:0000968 ! device
 intersection_of: OBI:0000968 ! device
 intersection_of: RO:0000085 OBI:0000453 ! has function measure function
 relationship: RO:0000085 OBI:0000453 ! has function measure function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "measurement device" xsd:string
 property_value: IAO:0000112 "A ruler, a microarray scanner, a Geiger counter." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1618,7 +2807,7 @@ name: manufacturer
 def: "A person or organization that has a manufacturer role" []
 is_a: BFO:0000040 ! material entity
 relationship: RO:0000087 OBI:0000571 ! has role manufacturer role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "manufacturer" xsd:string
 property_value: IAO:0000114 IAO:0000123
 
@@ -1628,7 +2817,7 @@ name: device
 def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." []
 is_a: OBI:0000047 ! processed material
 relationship: RO:0000085 BFO:0000034 ! has function function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "device" xsd:string
 property_value: IAO:0000112 "A voltmeter is a measurement device which is intended to perform some measure function." xsd:string
 property_value: IAO:0000112 "An autoclave is a device that sterlizes instruments or contaminated waste by applying high temperature and pressure." xsd:string
@@ -1645,7 +2834,7 @@ def: "A planned process that captures an image of an object." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
 relationship: OBI:0000299 IAO:0000101 ! has_specified_output image
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "image acquisition" xsd:string
 property_value: IAO:0000112 "Taking a polaroid picture of a patients skin lesion; Using a digital camera to take a picture of a gel" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -1657,7 +2846,7 @@ id: OBI:0001616
 name: specimen identifier
 def: "A CRID symbol denotes a specimen and used to distinguish one specimen from another in an investigation." []
 is_a: IAO:0000577 ! centrally registered identifier symbol
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: http://purl.org/dc/elements/1.1/source "NIAID GSCID-BRC" xsd:string
 property_value: IAO:0000111 "specimen identifier" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -1671,7 +2860,7 @@ id: OBI:0001622
 name: investigation title
 def: "A textual entity that denotes an investigation." []
 is_a: OBI:0001898 ! comment on investigation
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: http://purl.org/dc/elements/1.1/source "NIAID GSCID-BRC" xsd:string
 property_value: IAO:0000111 "investigation title" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -1685,7 +2874,7 @@ id: OBI:0001898
 name: comment on investigation
 def: "A textual entity that is about any of the aspects of an investigation worth noting" []
 is_a: IAO:0000300 ! textual entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: http://purl.org/dc/elements/1.1/source "NIAID GSCID-BRC" xsd:string
 property_value: IAO:0000111 "comment on investigation" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -1698,7 +2887,7 @@ id: OBI:0100026
 name: organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
 is_a: BFO:0000040 ! material entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "organism" xsd:string
 property_value: IAO:0000112 "animal" xsd:string
 property_value: IAO:0000112 "fungus" xsd:string
@@ -1718,7 +2907,7 @@ is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
 relationship: RO:0000087 OBI:0000112 ! has role specimen role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "specimen" xsd:string
 property_value: IAO:0000112 "Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1726,6 +2915,7 @@ property_value: IAO:0000116 "Note: definition is in specimen creation objective 
 property_value: IAO:0000117 "PERSON: James Malone" xsd:string
 property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
 property_value: IAO:0000119 "GROUP: OBI Biomaterial Branch" xsd:string
+property_value: IAO:0000233 https://github.com/obi-ontology/obi/issues/1013
 
 [Term]
 id: OBI:0200000
@@ -1734,7 +2924,7 @@ def: "A planned process that produces output data from input data." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
 relationship: OBI:0000417 OBI:0200166 ! achieves_planned_objective data transformation objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "data transformation" xsd:string
 property_value: IAO:0000112 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1756,7 +2946,7 @@ id: OBI:0200166
 name: data transformation objective
 def: "An objective specification to transformation input data into output data" []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "data transformation objective" xsd:string
 property_value: IAO:0000112 "normalize objective" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1770,7 +2960,7 @@ name: microscope
 def: "A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)" []
 is_a: OBI:0000398 ! image creation device
 relationship: RO:0000085 OBI:0000369 ! has function magnify function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "microscope" xsd:string
 property_value: IAO:0000112 "PMID:18466942. A light and transmission electron microscope study of hepatic portal tracts in the rhesus monkey (Macacus rhesus). Tissue Cell. 2008 May 6" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -1783,7 +2973,7 @@ name: microscope slide
 def: "A microscope slide is a device usually made of glass which is used as a solid matrix for (biological) material deposited on its surface and which is compatible for use with a microscope instrument" []
 is_a: OBI:0000968 ! device
 relationship: RO:0000085 OBI:0000399 ! has function solid support function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "microscope slide" xsd:string
 property_value: IAO:0000112 "PMID: 9668975.Microscope slide for enhanced analysis of DNA damage using the comet assay." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -1796,7 +2986,7 @@ name: study design
 def: "A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution." []
 is_a: IAO:0000104 ! plan specification
 relationship: BFO:0000051 OBI:0000272 ! has part protocol
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "study design" xsd:string
 property_value: IAO:0000112 "a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1813,7 +3003,7 @@ namespace: quality
 alt_id: PATO:0000072
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
 is_a: BFO:0000020 ! specifically dependent continuant
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-06-17/pato.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl
 
 [Term]
 id: PATO:0000133
@@ -1829,7 +3019,7 @@ synonym: "angular magnitude" RELATED []
 synonym: "angular placement" EXACT []
 synonym: "plane angle" RELATED []
 is_a: PATO:0000140 ! position
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-06-17/pato.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl
 
 [Term]
 id: PATO:0000140
@@ -1843,7 +3033,7 @@ synonym: "location" EXACT []
 synonym: "placement" EXACT []
 synonym: "relational spatial quality" EXACT []
 is_a: PATO:0001018 ! physical quality
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-06-17/pato.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl
 
 [Term]
 id: PATO:0000146
@@ -1853,7 +3043,7 @@ def: "A physical quality of the thermal energy of a system." [PATOC:GVG]
 subset: attribute_slim
 subset: scalar_slim
 is_a: PATO:0001018 ! physical quality
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-06-17/pato.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl
 
 [Term]
 id: PATO:0001018
@@ -1865,7 +3055,7 @@ subset: attribute_slim
 synonym: "relational physical quality" EXACT []
 xref: Wikipedia:Physical_property
 is_a: PATO:0001241 ! physical object quality
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-06-17/pato.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl
 
 [Term]
 id: PATO:0001241
@@ -1885,7 +3075,7 @@ synonym: "quality of an object" EXACT []
 synonym: "quality of continuant" EXACT []
 xref: snap:Quality
 is_a: PATO:0000001 ! quality
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-06-17/pato.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl
 
 [Term]
 id: PATO:0001242
@@ -1895,7 +3085,7 @@ def: "A physical quality which is equal to the distance between repeating units 
 subset: attribute_slim
 subset: scalar_slim
 is_a: PATO:0001018 ! physical quality
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-06-17/pato.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl
 
 [Term]
 id: PATO:0002497
@@ -1905,7 +3095,7 @@ def: "An orientation quality inhering in a bearer by virtue of the bearer having
 subset: value_slim
 synonym: "laterally directed" EXACT []
 is_a: PATO:0000133 ! orientation
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-06-17/pato.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 creation_date: 2013-10-10T05:16:45Z
 
@@ -1916,159 +3106,129 @@ namespace: quality
 def: "An orientation quality inhering in a bearer by virtue of the bearer having a position that is directed along the longitudinal or anterior-posterior axis." [PATOC:WD]
 subset: value_slim
 is_a: PATO:0000133 ! orientation
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-06-17/pato.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-3162-7490
 creation_date: 2014-10-17T14:24:19Z
 
 [Term]
-id: VISPRO:0000000
-name: excitation wavelength setting
+id: VIBSO:0000000
 name: vibrational spectrometer configuration specification
 def: "A setting datum that specifies the needed settings of a spectrometer used in vibrational spectroscopy." []
-def: "A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material." []
 is_a: IAO:0000140 ! setting datum
-is_a: IAO:0000140 ! setting datum
-intersection_of: IAO:0000140 ! setting datum
-intersection_of: IAO:0000136 VISPRO:0000011 ! is about excitation wavelength
-disjoint_from: VISPRO:0000000 ! vibrational spectrometer configuration specification
-relationship: BFO:0000051 VISPRO:0000000 ! has part vibrational spectrometer configuration specification
-relationship: BFO:0000051 VISPRO:0000001 ! has part exposure time setting
-relationship: BFO:0000051 VISPRO:0000002 ! has part preamplifier gain setting
-relationship: BFO:0000051 VISPRO:0000003 ! has part horizontal shift speed setting
-relationship: BFO:0000051 VISPRO:0000004 ! has part vertical shift speed setting
-relationship: BFO:0000051 VISPRO:0000005 ! has part device temperature setting
-relationship: BFO:0000051 VISPRO:0000006 ! has part number of scans setting
-relationship: BFO:0000051 VISPRO:0000007 ! has part groove density setting
-relationship: BFO:0000051 VISPRO:0000008 ! has part CCD sensor binning read mode setting
-relationship: IAO:0000136 VISPRO:0000011 ! is about excitation wavelength
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
-property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000001
+id: VIBSO:0000001
 name: exposure time setting
 def: "A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor." []
 is_a: IAO:0000140 ! setting datum
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000002
+id: VIBSO:0000002
 name: preamplifier gain setting
 def: "A setting datum that specifies the preamplifier gain in CCD sensors." []
 is_a: IAO:0000140 ! setting datum
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology." xsd:string
 
 [Term]
-id: VISPRO:0000003
+id: VIBSO:0000003
 name: horizontal shift speed setting
 def: "A setting datum that specifies the horizontal shift speed in CCD sensors." []
 is_a: IAO:0000140 ! setting datum
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000004
+id: VIBSO:0000004
 name: vertical shift speed setting
 def: "A setting datum that specifies the vertical shift speed in CCD sensors." []
 is_a: IAO:0000140 ! setting datum
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000005
+id: VIBSO:0000005
 name: device temperature setting
 def: "A setting datum that specifies the operating temperature of a device." []
 is_a: IAO:0000140 ! setting datum
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology." xsd:string
 
 [Term]
-id: VISPRO:0000006
+id: VIBSO:0000006
 name: number of scans setting
 def: "A setting datum that specifies the number of iterations performed in a spectroscopic meassurement from which an aggregated assay output is generated." []
 is_a: IAO:0000140 ! setting datum
+relationship: BFO:0000050 VIBSO:0000000 ! part of vibrational spectrometer configuration specification
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
 property_value: IAO:0000112 "The setting entered into a Raman microscope which specifies the desired number of measurements this Raman microscope has to perform to produce an usable Raman spectrum." xsd:string
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology." xsd:string
 
 [Term]
-id: VISPRO:0000007
+id: VIBSO:0000007
 name: groove density setting
 def: "A setting datum that specifies the number of grooves in a diffraction grating device." []
 is_a: IAO:0000140 ! setting datum
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000008
+id: VIBSO:0000008
 name: CCD sensor binning read mode setting
 def: "A setting datum that specifies the binning read mode of a device with a CCD sensor." []
 is_a: IAO:0000140 ! setting datum
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000009
+id: VIBSO:0000009
 name: groove density
-def: "A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light." [] {http://www.w3.org/2000/01/rdf-schema#seeAlso="Diffraction:grating"}
+def: "A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light." [] {http://purl.org/dc/elements/1.1/source="Diffraction:grating"}
 is_a: PATO:0001018 ! physical quality
-relationship: RO:0000080 VISPRO:0000012 ! quality of diffraction grating
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/elements/1.1/date 2022-07-06T07:26:10Z xsd:dateTime
-property_value: IAO:0000114 IAO:0000423
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000010
+id: VIBSO:0000010
 name: Raman spectrometer configuration
 def: "A device setting that represents the measured qualities which make up the configuration state of a Raman spectrometer at the time of a measurement (e.g. operating temperature, exitation wavelength, groove density, ...)." []
 is_a: OBI:0000654 ! device setting
-relationship: BFO:0000051 VISPRO:0000009 ! has part groove density
-relationship: BFO:0000051 VISPRO:0000011 ! has part excitation wavelength
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/elements/1.1/date 2022-07-06T07:28:22Z xsd:dateTime
+property_value: IAO:0000112 "The set of meassured configuration characteristics of a Raman spectrometer, like the operating temperature of a Raman spectrometer." xsd:string
 
 [Term]
-id: VISPRO:0000011
+id: VIBSO:0000011
 name: excitation wavelength
-def: "A physical quality of the light source that is used used to excite a system to a higher energy state." [] {http://www.w3.org/2000/01/rdf-schema#seeAlso="https://doi.org/10.1351/goldbook"}
+def: "A physical quality of the light source that is used used to excite a system to a higher energy state." [] {http://purl.org/dc/elements/1.1/source="http://doi.org/10.1351/goldbook"}
 is_a: PATO:0001242 ! wavelength
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/elements/1.1/date 2022-07-06T12:52:34Z xsd:dateTime
-property_value: IAO:0000114 IAO:0000423
+property_value: IAO:0000116 "This class needs to be defined in PATO or another more general ontology for such qualities." xsd:string
+
+[Term]
+id: VIBSO:0000012
+name: diffraction grating
+def: "A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)" [] {http://purl.org/dc/elements/1.1/source="Diffraction:grating"}
+is_a: OBI:0000968 ! device
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Term]
-id: VISPRO:0000012
-name: diffraction grating
-def: "A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e., different diffraction angles)" [] {http://purl.org/dc/elements/1.1/source="Diffraction:grating"}
-is_a: OBI:0000968 ! device
-intersection_of: OBI:0000968 ! device
-intersection_of: BFO:0000050 CHMO:0001235 ! part of Raman spectrometer
-intersection_of: RO:0000086 VISPRO:0000009 ! has quality groove density
-relationship: BFO:0000050 CHMO:0001235 ! part of Raman spectrometer
-relationship: RO:0000086 VISPRO:0000009 ! has quality groove density
+id: VIBSO:0000013
+name: excitation wavelength setting
+def: "A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material." []
+is_a: IAO:0000140 ! setting datum
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/elements/1.1/date 2022-07-06T10:49:16Z xsd:dateTime
+property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 
 [Typedef]
 id: BFO:0000050
 name: part of
 def: "a core relation that holds between a part and its whole" []
 property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl
 property_value: IAO:0000111 "is part of" xsd:string
 property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
@@ -2088,7 +3248,7 @@ id: BFO:0000051
 name: has part
 def: "a core relation that holds between a whole and its part" []
 property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl
 property_value: IAO:0000111 "has part" xsd:string
 property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
@@ -2105,7 +3265,7 @@ is_transitive: true
 id: BFO:0000054
 name: realized in
 comment: Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "realized in" xsd:string
 property_value: IAO:0000112 "this disease is realized in this disease course" xsd:string
 property_value: IAO:0000112 "this fragility is realized in this shattering" xsd:string
@@ -2122,7 +3282,7 @@ inverse_of: BFO:0000055 ! realizes
 id: BFO:0000055
 name: realizes
 comment: Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "realizes" xsd:string
 property_value: IAO:0000112 "this disease course realizes this disease" xsd:string
 property_value: IAO:0000112 "this investigation realizes this investigator role" xsd:string
@@ -2137,7 +3297,7 @@ id: IAO:0000136
 name: is about
 def: "A (currently) primitive relation that relates an information artifact to an entity." []
 property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000112 "This document is about information artifacts and their representations" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \"mentions\" relation. Weaken the is_about relationship to be primitive. \n\nWe will try to build it back up by elaborating the various subproperties that are more precisely defined.\n\nSome currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic." xsd:string
@@ -2159,7 +3319,7 @@ is_a: IAO:0000136 ! is about
 id: OBI:0000293
 name: has_specified_input
 def: "The inverse property of is_specified_input_of" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "has_specified_input" xsd:string
 property_value: IAO:0000111 "has_specified_input" xsd:string
 property_value: IAO:0000112 "see is_input_of example_of_usage" xsd:string
@@ -2176,7 +3336,7 @@ is_a: RO:0000057 ! has participant
 id: OBI:0000295
 name: is_specified_input_of
 def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "is_specified_input_of" xsd:string
 property_value: IAO:0000112 "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2188,7 +3348,7 @@ is_a: RO:0000056 ! participates in
 id: OBI:0000299
 name: has_specified_output
 def: "The inverse property of is_specified_output_of" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "has_specified_output" xsd:string
 property_value: IAO:0000111 "has_specified_output" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2203,7 +3363,7 @@ is_a: RO:0000057 ! has participant
 id: OBI:0000312
 name: is_specified_output_of
 def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "is_specified_output_of" xsd:string
 property_value: IAO:0000111 "is_specified_output_of" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2216,7 +3376,7 @@ is_a: RO:0000056 ! participates in
 id: OBI:0000417
 name: achieves_planned_objective
 def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "achieves_planned_objective" xsd:string
 property_value: IAO:0000112 "A cell sorting process achieves the objective specification 'material separation objective'" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2228,7 +3388,7 @@ property_value: IAO:0000232 "modified according to email thread from 1/23/09 in 
 id: OBI:0000833
 name: objective_achieved_by
 def: "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "objective_achieved_by" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "OBI" xsd:string
@@ -2237,7 +3397,7 @@ property_value: IAO:0000119 "OBI" xsd:string
 [Typedef]
 id: OBI:0001950
 name: has performer
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "has performer" xsd:string
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "performer relation covers the need to report on who performed a planned processed. it has to cover processes done by People or Devices (such as a robot controlled by software  WF management system)" xsd:string
@@ -2248,7 +3408,7 @@ id: RO:0000052
 name: characteristic of
 def: "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence." []
 comment: Note that this relation was previously called "inheres in", but was changed to be called "characteristic of" because BFO2 uses "inheres in" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "inheres in" xsd:string
 property_value: IAO:0000112 "this fragility is a characteristic of this vase" xsd:string
 property_value: IAO:0000112 "this red color is a characteristic of this apple" xsd:string
@@ -2262,7 +3422,7 @@ inverse_of: RO:0000053 ! has characteristic
 id: RO:0000053
 name: has characteristic
 def: "Inverse of characteristic_of" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000111 "bearer of" xsd:string
 property_value: IAO:0000112 "this apple is bearer of this red color" xsd:string
 property_value: IAO:0000112 "this vase is bearer of this fragility" xsd:string
@@ -2315,7 +3475,7 @@ inverse_of: RO:0000059 ! concretizes
 id: RO:0000059
 name: concretizes
 def: "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
 domain: BFO:0000020 ! specifically dependent continuant
@@ -2326,7 +3486,7 @@ id: RO:0000079
 name: function of
 def: "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence" []
 comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000112 "this catalysis function is a function of this enzyme" xsd:string
 property_value: IAO:0000116 "A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists." xsd:string
 property_value: IAO:0000118 "function_of" xsd:string
@@ -2340,7 +3500,6 @@ id: RO:0000080
 name: quality of
 def: "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence" []
 comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl
 property_value: IAO:0000112 "this red color is a quality of this apple" xsd:string
 property_value: IAO:0000116 "A quality inheres in its bearer at all times for which the quality exists." xsd:string
 property_value: IAO:0000118 "is quality of" xsd:string
@@ -2364,7 +3523,7 @@ inverse_of: RO:0000087 ! has role
 id: RO:0000085
 name: has function
 def: "a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000112 "this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)" xsd:string
 property_value: IAO:0000116 "A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists." xsd:string
 property_value: IAO:0000118 "has_function" xsd:string
@@ -2376,7 +3535,6 @@ is_a: RO:0000053 ! has characteristic
 id: RO:0000086
 name: has quality
 def: "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl
 property_value: IAO:0000112 "this apple has quality this red color" xsd:string
 property_value: IAO:0000116 "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist." xsd:string
 property_value: IAO:0000118 "has_quality" xsd:string
@@ -2387,7 +3545,7 @@ is_a: RO:0000053 ! has characteristic
 id: RO:0000087
 name: has role
 def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl
 property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
 property_value: IAO:0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
 property_value: IAO:0000118 "has_role" xsd:string
@@ -2416,7 +3574,7 @@ is_a: RO:0000052 ! characteristic of
 id: RO:0002314
 name: characteristic of part of
 def: "q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/ro/releases/2022-05-23/ro.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl
 property_value: IAO:0000116 "Because part_of is transitive, inheres in is a sub-relation of characteristic of part of" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "inheres in part of" xsd:string
@@ -2430,7 +3588,7 @@ transitive_over: BFO:0000050 ! part of
 [Typedef]
 id: RO:0002502
 name: depends on
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/ro/releases/2022-05-23/ro.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: seeAlso BFO:0000169
 
@@ -2439,7 +3597,7 @@ id: RO:0010001
 name: generically depends on
 def: "A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*." []
 synonym: "g-depends on" EXACT []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/ro/releases/2022-05-23/ro.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl
 property_value: IAO:0000112 "Genetic information generically depend on molecules of DNA." xsd:string
 property_value: IAO:0000112 "The novel *War and Peace* generically depends on this copy of the novel." xsd:string
 property_value: IAO:0000112 "The pattern shared by chess boards generically depends on any chess board." xsd:string
@@ -2452,7 +3610,7 @@ holds_over_chain: RO:0000052 RO:0000058
 id: RO:0010002
 name: is carrier of
 def: "*b* is carrier of *c* at time *t* if and only if *c* *g-depends on* *b* at *t*" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/ro/releases/2022-05-23/ro.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl
 property_value: IAO:0000112 "Molecules of DNA are carriers of genetic information." xsd:string
 property_value: IAO:0000112 "This copy of *War and Peace* is carrier of the novel written by Tolstoy." xsd:string
 property_value: IAO:0000112 "This hard drive is carrier of these data items." xsd:string

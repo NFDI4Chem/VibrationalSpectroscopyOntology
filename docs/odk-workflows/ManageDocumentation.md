@@ -1,6 +1,6 @@
 # Updating the Documentation
 
-The documentation for VISPRO is managed in two places (relative to the repository root):
+The documentation for VIBSO is managed in two places (relative to the repository root):
 
 1. The `docs` directory contains all the files that pertain to the content of the documentation (more below)
 2. the `mkdocs.yaml` file cotains the documentation config, in particular its navigation bar and theme.
@@ -24,7 +24,7 @@ The documentation is _not_ automatically updated from the Markdown, and needs to
 
 1. In your terminal, navigate to the edit directory of your ontology, e.g.:
    ```
-   cd vispro/src/ontology
+   cd vibso/src/ontology
    ```
 2. Now you are ready to build the docs as follows:
    ```

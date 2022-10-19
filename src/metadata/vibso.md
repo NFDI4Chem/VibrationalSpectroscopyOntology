@@ -1,6 +1,6 @@
 ---
 layout: ontology_detail
-id: vispro
+id: vibso
 title: Vibration Spectroscopy Ontology
 jobs:
   - id: https://travis-ci.org/NFDI4Chem/VibrationSpectroscopyOntology
@@ -17,17 +17,17 @@ description: Vibration Spectroscopy Ontology is an ontology...
 domain: stuff
 homepage: https://github.com/NFDI4Chem/VibrationSpectroscopyOntology
 products:
-  - id: vispro.owl
+  - id: vibso.owl
     name: "Vibration Spectroscopy Ontology main release in OWL format"
-  - id: vispro.obo
+  - id: vibso.obo
     name: "Vibration Spectroscopy Ontology additional release in OBO format"
-  - id: vispro.json
+  - id: vibso.json
     name: "Vibration Spectroscopy Ontology additional release in OBOJSon format"
-  - id: vispro/vispro-base.owl
+  - id: vibso/vibso-base.owl
     name: "Vibration Spectroscopy Ontology main release in OWL format"
-  - id: vispro/vispro-base.obo
+  - id: vibso/vibso-base.obo
     name: "Vibration Spectroscopy Ontology additional release in OBO format"
-  - id: vispro/vispro-base.json
+  - id: vibso/vibso-base.json
     name: "Vibration Spectroscopy Ontology additional release in OBOJSon format"
 dependencies:
 - id: bfo
@@ -37,7 +37,6 @@ dependencies:
 - id: chmo
 - id: pato
 - id: txpo
-- id: efo
 - id: obi
 
 tracker: https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/issues
