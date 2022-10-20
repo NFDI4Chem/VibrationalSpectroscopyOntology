@@ -19,7 +19,7 @@ click on Edit->EOL Conversion->Unix LF to change this.
 
 ## Managing imports
 
-You can use the update repository worflow described on this page to perform the following operations to your imports:
+You can use the update repository workflow described on this page to perform the following operations to your imports:
 
 1. Add a new import
 2. Modify an existing import
@@ -31,7 +31,7 @@ We will discuss all these workflows in the following.
 
 ### Add new import
 
-To add a new import, you first edit your odk config as described [above](#Updating-your-ODK-repository), adding an `id` to the `product` list in the `import_group` section (for the sake of this example, we assume you already import RO, and your goal is to also import GO):
+To add a new import, you first edit your odk config as described [above](#updating-your-odk-repository), adding an `id` to the `product` list in the `import_group` section (for the sake of this example, we assume you already import RO, and your goal is to also import GO):
 
 ```
 import_group:
@@ -40,9 +40,9 @@ import_group:
     - id: go
 ```
 
-Note: our ODK file should only have one `import_group` which can contain multiple imports (in the `products` section). Next, you run the [update repo workflow](#Updating-your-ODK-repository) to apply these changes. Note that by default, this module is going to be a SLME Bottom module, see [here](http://robot.obolibrary.org/extract). To change that or customise your module, see section "Customise an import". To finalise the addition of your import, perform the following steps:
+Note: our ODK file should only have one `import_group` which can contain multiple imports (in the `products` section). Next, you run the [update repo workflow](#updating-your-odk-repository) to apply these changes. Note that by default, this module is going to be a SLME Bottom module, see [here](http://robot.obolibrary.org/extract). To change that or customise your module, see section "Customise an import". To finalise the addition of your import, perform the following steps:
 
-1. Add an imports statement to your `src/ontology/vibso-edit.owl` file. We suggest to do this using a text editor, by simply copying an existing imports declaration and renaming it to the new ontology import, for example as follows:
+1. Add an import statement to your `src/ontology/vibso-edit.owl` file. We suggest to do this using a text editor, by simply copying an existing import declaration and renaming it to the new ontology import, for example as follows:
 
 ```
 ...
@@ -60,7 +60,7 @@ Import(<http://purl.obolibrary.org/obo/vibso/imports/go_import.owl>)
 
 3. Test whether everything is in order:
     1. [Refresh your import](UpdateImports.md)
-    2. Open in your Ontology Editor of choice (Protege) and ensure that the expected terms are imported.
+    2. Open in your Ontology Editor of choice (Protégé) and ensure that the expected terms are imported.
 
 ### Modify an existing import
 
@@ -72,7 +72,7 @@ To remove an existing import, perform the following steps:
 
 1. remove the import declaration from your `src/ontology/vibso-edit.owl`.
 2. remove the id from your `src/ontology/vibso-odk.yaml`, eg. `- id: go` from the list of `products` in the `import_group`.
-3. run [update repo workflow](#Updating-your-ODK-repository)
+3. run [update repo workflow](#updating-your-odk-repository)
 4. delete the associated files manually:
     - `src/imports/go_import.owl`
     - `src/imports/go_terms.txt`
@@ -92,7 +92,7 @@ import_group:
       module_type: filter
 ```
 
-A ROBOT filter module is, essentially, importing all external terms declared by the your ontology (see [here](UpdateImports.md)] on how to declare external terms to be imported). Note that the `filter` module does 
+A ROBOT filter module is, essentially, importing all external terms declared by your ontology (see [here](UpdateImports.md) on how to declare external terms to be imported). Note that the `filter` module does 
 not consider terms/annotations from namespaces other than the base-namespace of the ontology itself. For example, in the
 example of GO above, only annotations / axioms related to the GO base IRI (http://purl.obolibrary.org/obo/GO_) would be considered. This 
 behaviour can be changed by adding additional base IRIs as follows:
