@@ -1,8 +1,8 @@
-# The ontology's competency questions
+# VISBO's Competency Questions
 
-Competency questions are used to make sure an ontology is able to fulfill the desired use case, defining the semantic field that should be covered by the ontology. 
+Competency questions can be understood as the test cases with which one can check whether the ontology is in scope and covers the intended use case. Making statements by using the terms defined in the ontology including its imported external once, the competency questions should be answerable.
 
-In the case of VSIPRO these are:
+As previously mentioned VISBO's scope is the semantic description of vibrational spectroscopy research data. So far we have thus identified the following competency questions:
 
  * What kind of vibrational spectroscopy was performed?
 
@@ -16,8 +16,8 @@ In the case of VSIPRO these are:
 
  * What was the assayed sample, including its relevant attributes?
 
- * What assay outputs were produces, such as what spectra (e.g. different formats)?
+ * What assay outputs were produced, such as what spectra (e.g. different formats)?
 
- * What kind of pre- and post-processeing was done?
+ * What kind of pre- and post-processing was done?
 
-This list of competency questions represents a first draft and needs to be thoroughly discussed with the domain experts an
+This list represents only a first draft and needs to be thoroughly discussed with the domain experts and the NFDI4Chem community. 
