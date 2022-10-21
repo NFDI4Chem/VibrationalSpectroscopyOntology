@@ -21,7 +21,7 @@ site_url: https://NFDI4Chem.github.io/VibrationSpectroscopyOntology/
 repo_url: https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/
 
 nav:
-  - About VISBO:
+  - About VIBSO:
       - Introduction: index.md
       - Domain Definition: domain_definition.md
       - Competency Questions: competency_questions.md
