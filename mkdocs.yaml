@@ -28,7 +28,9 @@ nav:
       - Development Approach: development_approach.md
       - Design Patterns & Decisions: design_patterns.md
   - How-to guides:
-      - Contributing: contributing.md
+      - Contributing To VIBSO:
+          - Getting Started: contributing.md
+          - New Term Requests: ntr_workflow.md
       - Standard ODK workflows:
           - Default ODK Workflows: odk-workflows/index.md
           - Editors Workflow: odk-workflows/EditorsWorkflow.md
