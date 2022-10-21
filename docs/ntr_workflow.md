@@ -18,7 +18,7 @@ When you've identified a term that is needed within the scope of VISBO and which
 
 ## Adding New Terms to the TSV Template
 
-Once a NTR is ready to be implemented in a PR, all you need to do is editing  [vispro_terms.tsv template](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/templates/vispro_terms.tsv). For an explanation of the TSV columns, go [here](development_approach.md#explanation-of-the-tsv-template-columns).
+Once a NTR is ready to be implemented in a PR, all you need to do is editing the [vispro_terms.tsv template](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/templates/vispro_terms.tsv). For an explanation of the TSV columns, go [here](development_approach.md#explanation-of-the-tsv-template-columns).
 
 
 ## Ontology editing: principles and best practices
