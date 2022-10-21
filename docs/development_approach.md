@@ -47,7 +47,7 @@ For a more detailed description on how to contribute please continue reading [he
 
 
 ##Are you an expert in the domain of vibrational spectroscopy and would like to be part of the VIBSO team & development?
-Then please get in touch via us via GitHub or `mailto:helpdesk@nfdi4chem.de `
+Then please get in touch with us via GitHub or `mailto:helpdesk@nfdi4chem.de `
 
 
 
