@@ -1,4 +1,4 @@
-site_name: Vibration Spectroscopy Ontology
+site_name: Vibration Spectroscopy Ontology Documentation
 theme:
   name: material
   features:
@@ -21,14 +21,18 @@ site_url: https://NFDI4Chem.github.io/VibrationSpectroscopyOntology/
 repo_url: https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/
 
 nav:
-  - About VISPRO:
-      - Intro & Scope: index.md
+  - About VISBO:
+      - Introduction: index.md
+      - Domain Definition: domain_definition.md
       - Competency Questions: competency_questions.md
       - Development Approach: development_approach.md
-  - Cite: cite.md
+      - Design Patterns & Decisions: design_patterns.md
   - How-to guides:
+      - Contributing To VIBSO:
+          - How to Contribute: contributing.md
+          - Adding New Terms: ntr_workflow.md
       - Standard ODK workflows:
-          - Overview: odk-workflows/index.md
+          - Default ODK Workflows: odk-workflows/index.md
           - Editors Workflow: odk-workflows/EditorsWorkflow.md
           - Release Workflow: odk-workflows/ReleaseWorkflow.md
           - Manage your ODK Repository: odk-workflows/RepoManagement.md
@@ -36,7 +40,7 @@ nav:
           - Imports management: odk-workflows/UpdateImports.md
           - Components management: odk-workflows/components.md
           - Managing the documentation: odk-workflows/ManageDocumentation.md
-          - Continuous Integration: odk-workflows/ContinuousIntegration.md
-          - Your ODK Repository Overview: odk-workflows/RepositoryFileStructure.md 
-      - Contributing: contributing.md
-
+  - ODK Specific Documentation:
+      - Repository Overview: odk-workflows/RepositoryFileStructure.md
+      - Continuous Integration: odk-workflows/ContinuousIntegration.md
+  - Cite: cite.md

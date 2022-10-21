@@ -1,29 +1,36 @@
-
+[![License: CC-BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/) 
 ![Build Status](https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/workflows/CI/badge.svg)
 # Vibrational Spectroscopy Ontology
 
-_WIP - NOT READY FOR PRODUCTION_ The Vibrational Spectroscopy Ontology (ViSprO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.
+_Work In Progress - NOT READY FOR PRODUCTION!_ 
 
-**For more documentation please go to: https://nfdi4chem.github.io/VibrationalSpectroscopyOntology/**
+The Vibrational Spectroscopy Ontology (VIBSO) is used to represent information regarding the execution and analysis of vibrational spectroscopy assays. That means it is intended to be used to semantically annotate the research data that is produced in such experiments with regard to the devices and lab protocols being used, the data being produced thereby (e.g the actual spectra) as well as other important metadata. 
+
+**For a more thorough documentation of the ontology please read the [documentation](https://nfdi4chem.github.io/VibrationalSpectroscopyOntology/).**
 
 ## Versions
 
-### Stable release versions
+The OWL & OBO files on the top level of this repository are the official release artifacts of the ontology. To find out more about the standardization approach behind these (e.g. why they are so many), see [this section](https://oboacademy.github.io/obook/reference/release-artefacts/) in the OBOOK (also a great place to learn more about OBO based ontology development and curation).
 
-The latest version of the ontology can always be found at:
+### Stable release version
 
-https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/blob/main/vispro.owl
+The latest main version of the ontology is the [visbo.owl](https://raw.githubusercontent.com/NFDI4Chem/VibrationalSpectroscopyOntology/main/vibso.owl).
 
+VISBO's ontology IRI (http://purl.obolibrary.org/obo/vibso.owl) does currently not resolve to [visbo.owl](https://raw.githubusercontent.com/NFDI4Chem/VibrationalSpectroscopyOntology/main/vibso.owl), as the ontology is not yet a registered at the [OBO Foundry](https://obofoundry.org/). However, it is planned to submit it there once VISBO is mature enough.
 
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/vispro-edit.owl](src/ontology/vispro-edit.owl)
+Edits to the ontology can be made in two places:
 
-Another approach of curating terms (e.g. for non Protégé experienced domain experts) is to edit [src/templates/vispro_terms.tsv](src/templates/vispro_terms.tsv) and then let the repo maintainers run `sh run.sh make recreate-components`.
+1.  [src/ontology/vispro-edit.owl](src/ontology/vispro-edit.owl).
+2. [src/templates/vispro_terms.tsv](src/templates/vispro_terms.tsv).
 
-## Contact
+The `vispro_terms.tsv` is a [ROBOT template](http://robot.obolibrary.org/template) in which all of VISBO's classes and relations are defined and which is being imported as a component into the main editor file `vispro-edit.owl`. We chose this tabular based ontology development approach in order to foster the contribution of domain experts, who are usually less experienced with the OWL format and ontology editors such as [Protégé](https://protege.stanford.edu/).
+More on this can be found in the documention of VISBO's [development approach](https://nfdi4chem.github.io/VibrationalSpectroscopyOntology/development_approach/).
 
-Please use this GitHub repository's [Issue tracker](https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+## Contributing
+
+Please use this GitHub repository's [Issue tracker](https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/issues) to request new terms/classes or report errors or specific concerns related to the ontology. For a more elaborated _how-to_, please go [here](https://nfdi4chem.github.io/VibrationalSpectroscopyOntology/contributing/).
 
 ## Acknowledgements
 

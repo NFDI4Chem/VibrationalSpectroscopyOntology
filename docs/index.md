@@ -1,14 +1,21 @@
-# VISPRO Ontology Documentation
+[![License: CC-BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
+# Introduction
 
 [//]: # "This file is meant to be edited by the ontology maintainer."
 
-The Vibrational Spectroscopy Ontology (VISPRO) is the first ontology to be developed by the [NFDI4Chem](https://www.nfdi4chem.de/) project, which has as core aim to make research data FAIR.
+_CAVE! This documentation is still a work in progress, as VIBSO is in a very early stage of development. If you have any documentation related questions or suggestions on how to improve it, please feel free to file an issue using [this](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/new?assignees=&labels=documentation&template=documentation-related-issue.md&title=%5BDocs%5D) template._
 
-The scope of VISPRO is thus focused on the use case of providing the terminology with which research data can be annotated in form of RDF knowledge graphs. Its domain covers vibrational spectroscopy, which includes all kinds of infrared and Raman spectroscopy. More specifically, VISPRO is intended to be used to make statements about who did what kind of vibrational spectroscopy, with what kind of sample, device and device configuration, under what protocol, in the context of what investigation as well as producing what kind of outputs. A more detailed description of VISPRO's competency questions can be found [here](competency_questions.md).
+Welcome to the documentation of the **Vibrational Spectroscopy Ontology (VIBSO)**!
 
-As an [OBO Foundry](https://obofoundry.org/) compliant ontology, VISPRO depends on importing many terms from existing ontologies, such as [BFO](https://terminology.nfdi4chem.de/ts/ontologies/bfo), [RO](https://terminology.nfdi4chem.de/ts/ontologies/ro), [IAO](https://terminology.nfdi4chem.de/ts/ontologies/iao) and [OBI](https://terminology.nfdi4chem.de/ts/ontologies/obi) but first and formost from the [Chemical Methods Ontology CHMO](https://terminology.nfdi4chem.de/ts/ontologies/chmo). These imported external terms are being declared in individual text files (see: [/src/ontology/imports](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/tree/main/src/ontology/imports)) from which OWL modules will be build automatically, according to the standard workflows defined in the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
+VIBSO is the first ontology to be developed by the [NFDI4Chem](https://www.nfdi4chem.de/) project, which has as core aim to make research data FAIR. The scope of VIBSO is thus focused on the use case of providing the terminology with which research data can be annotated. Such annotations can either be in form of RDF knowledge graphs that use VIBSO terms directly within their triples, or the research data is formally described according to some metadata schema which keys are mapped to terms from VISBO and compatible ontologies in order to provide a common semantic defining ground. Following an incremental ontology development approach, we are first going to focus on the domain of vibrational Raman spectroscopy before coming to other vibrational spectroscopy assays, such as infrared spectroscopy.
 
-In the future, it might be possible that, due to its domain specific overlap, VISPRO will be somehow integrated into CHMO. At the moment however, it seems best to keep the two separated and only extend CHMO in the places where it is needed to cover the use case of Research Data Management (RDM) in the domain of vibrational spectroscopy.
+## Content 
 
-
-
+* [Domain Definition](domain_definition.md)
+* [Competency Questions](competency_questions.md)
+* [Design Patterns](design_patterns.md)
+* [Development Approach](development_approach.md)
+* [Contributing to VISBO](contributing.md)
+* [Default ODK Workflows](odk-workflows/index.md)
+* [ODK based Repository Structure](RepositoryFileStructure.md)
+* [ODK based Continuous Integration](odk-workflows/ContinuousIntegration.md)
