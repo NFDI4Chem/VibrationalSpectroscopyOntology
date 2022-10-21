@@ -7,7 +7,7 @@ So far, the domain experts who contributed to VIBSO come from the institutions t
 
 
 ## Template Based Development
-To enable an easier participation of domain experts, who often might have little to no background in the development of ontologies and the tools needed for this, we are using the [vibso_terms.tsv](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/templates/vibso_terms.tsv) ( a [ROBOT template](http://robot.obolibrary.org/template)) to define new classes and relations in VIBSO. 
+To enable an easier participation of domain experts, who often might have little to no background in the development of ontologies and the tools needed for this, we are using the [vibso_terms.tsv](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/templates/vibso_terms.tsv) (a [ROBOT template](http://robot.obolibrary.org/template)) to define new classes and relations in VIBSO. 
 
 ### VIBSO's TSV ROBOT Template 
 | id                | label                                                | definition                                                                                             | definition source URI | type      | super class   | super property | inverse property | domain (if property) | range (if property) | term creaor URI (e.g. ORCID) | term curator URI (e.g. ORCID) | example of usage | editor note |
@@ -39,7 +39,7 @@ The TSV template will most likely be expanded in the near future to also include
 ## Proposed contribution workflow
 **VIBSO is an Open Science project from and for the scientific community!** 
 
-Thus, its development is aimed at allowing a broad range of contributions from stakeholders with different backgrounds. For this, the basic idea is to have everything needed within the GitHub repository and to use the ODK & GitHub based workflows (e.g. issues & pull requests) to propose and discuss any changes. This means that [design patterns and decision](design_patterns.md) will have to be documented here as early as possible.
+Thus, its development is aimed at allowing a broad range of contributions from stakeholders with different backgrounds. For this, the basic idea is to have everything needed within the GitHub repository and to use the ODK & GitHub based workflows (e.g. issues & pull requests) to propose and discuss any changes. This means that [design patterns and decisions](design_patterns.md) will have to be documented here as early as possible.
 
 As VIBSO is still at a very early stage, we will need to establish a team of domain experts that are frequently contributing and of whom some can serve as reviewers of open pull requests to assure a high quality. We envision to have regular virtual meetings in which open issues, pull request or questions can be discussed alongside the overall organization of the VIBSO development. 
 
