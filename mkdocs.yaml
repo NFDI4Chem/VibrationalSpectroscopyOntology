@@ -30,7 +30,7 @@ nav:
   - How-to guides:
       - Contributing To VIBSO:
           - How to Contribute: contributing.md
-          - New Term Requests: ntr_workflow.md
+          - Adding New Terms: ntr_workflow.md
       - Standard ODK workflows:
           - Default ODK Workflows: odk-workflows/index.md
           - Editors Workflow: odk-workflows/EditorsWorkflow.md
