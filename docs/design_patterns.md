@@ -1,6 +1,6 @@
 # Design Patterns & Decisions
  
-**This page is still a stub and will be updated regularly in the iterative development of VISBO to document modeling decisions and design patterns.**
+**This page is still a stub and will be updated regularly in the iterative development of VIBSO to document modeling decisions and design patterns.**
 
 Following best practices in ontology development, we will reuse well established design patterns whenever possible.
 
@@ -17,6 +17,6 @@ Lars Vogt and Tobias Kuhn demonstrate the actual use of this pattern within a kn
 
 Here you can see the first draft of VIBSO's terminology box that focuses on vibrational Raman spectroscopy and which also shows how VIBSO depend on reusing existing ontology classes, relations and design patterns. The initially identified needed terms, depicted here with a red border, were derived from a Raman spectrometer output.
 
-![Raman spectroscopy terminology box](images/VISBO_Raman_Tbox.png)
+![Raman spectroscopy terminology box](images/VIBSO_Raman_Tbox.png)
 
 What is needed next are iterative reviews of this draft by domain experts to expand it and to ensure that the [competency questions](competency_questions.md) of VIBSO can be answered. 

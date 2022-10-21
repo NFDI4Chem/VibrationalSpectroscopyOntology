@@ -1,8 +1,8 @@
-# VISBO's Competency Questions
+# VIBSO's Competency Questions
 
 Competency questions can be understood as the test cases with which one can check whether the ontology is in scope and covers the intended use case. Making statements by using the terms defined in the ontology including its imported external once, the competency questions should be answerable.
 
-As previously mentioned VISBO's scope is the semantic description of vibrational spectroscopy research data. So far we have thus identified the following competency questions:
+As previously mentioned VIBSO's scope is the semantic description of vibrational spectroscopy research data. So far we have thus identified the following competency questions:
 
  * What kind of vibrational spectroscopy was performed?
 
