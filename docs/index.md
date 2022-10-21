@@ -10,9 +10,11 @@ VIBSO is the first ontology to be developed by the [NFDI4Chem](https://www.nfdi4
 
 ## Content 
 
-* [Design Patterns](design_patterns.md)
 * [Domain Definition](domain_definition.md)
 * [Competency Questions](competency_questions.md)
+* [Design Patterns](design_patterns.md)
 * [Development Approach](development_approach.md)
 * [Contributing to VISBO](contributing.md)
 * [Default ODK Workflows](odk-workflows/index.md)
+* [ODK based Repository Structure](RepositoryFileStructure.md)
+* [ODK based Continuous Integration](odk-workflows/ContinuousIntegration.md)
