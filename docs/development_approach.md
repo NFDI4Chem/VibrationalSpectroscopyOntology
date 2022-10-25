@@ -46,8 +46,14 @@ As VIBSO is still at a very early stage, we will need to establish a team of dom
 For a more detailed description on how to contribute please continue reading [here](contributing.md).
 
 
-##Are you an expert in the domain of vibrational spectroscopy and would like to be part of the VIBSO team & development?
-Then please get in touch with us via GitHub or `mailto:helpdesk@nfdi4chem.de `
+##Are you an expert in the domain of vibrational spectroscopy?
+
+* You have first-hand experiences with doing vibrational spectroscopy assays, such as knowing the needed devices and their configuration parameters?
+* You know how to write issues and do easy pull requests on file formats like .tsv, .md and .txt in GitHub or GitLab?
+* You can imagine helping us to define the technical terms of vibrational spectroscopy (e.g. Raman & IR) and collecting credits for such mirco-publications?
+
+**Then we, a friendly and inclusive open science team, would like to invite you to be part of the VIBSO team & development!**
+Please get in touch with us via GitHub or `mailto:helpdesk@nfdi4chem.de `
 
 
 
