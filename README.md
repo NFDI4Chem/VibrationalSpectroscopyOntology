@@ -2,7 +2,7 @@
 ![Build Status](https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/workflows/CI/badge.svg)
 # Vibrational Spectroscopy Ontology
 
-_Work In Progress - NOT READY FOR PRODUCTION!_ 
+_Work In Progress - NOT READY FOR PRODUCTION!_
 
 The Vibrational Spectroscopy Ontology (VIBSO) is used to represent information regarding the execution and analysis of vibrational spectroscopy assays. That means it is intended to be used to semantically annotate the research data that is produced in such experiments with regard to the devices and lab protocols being used, the data being produced thereby (e.g the actual spectra) as well as other important metadata. 
 
@@ -14,19 +14,19 @@ The OWL & OBO files on the top level of this repository are the official release
 
 ### Stable release version
 
-The latest main version of the ontology is the [visbo.owl](https://raw.githubusercontent.com/NFDI4Chem/VibrationalSpectroscopyOntology/main/vibso.owl).
+The latest main version of the ontology is the [vibso.owl](https://raw.githubusercontent.com/NFDI4Chem/VibrationalSpectroscopyOntology/main/vibso.owl).
 
-VISBO's ontology IRI (http://purl.obolibrary.org/obo/vibso.owl) does currently not resolve to [visbo.owl](https://raw.githubusercontent.com/NFDI4Chem/VibrationalSpectroscopyOntology/main/vibso.owl), as the ontology is not yet a registered at the [OBO Foundry](https://obofoundry.org/). However, it is planned to submit it there once VISBO is mature enough.
+VIBSO's ontology IRI (http://purl.obolibrary.org/obo/vibso.owl) does currently not resolve to [vibso.owl](https://raw.githubusercontent.com/NFDI4Chem/VibrationalSpectroscopyOntology/main/vibso.owl), as the ontology is not yet a registered at the [OBO Foundry](https://obofoundry.org/). However, it is planned to submit it there once VIBSO is mature enough.
 
 ### Editors' version
 
 Edits to the ontology can be made in two places:
 
-1.  [src/ontology/vispro-edit.owl](src/ontology/vispro-edit.owl).
-2. [src/templates/vispro_terms.tsv](src/templates/vispro_terms.tsv).
+1. [src/ontology/vibso-edit.owl](src/ontology/vibso-edit.owl).
+2. [src/templates/vibso_terms.tsv](src/templates/vibso_terms.tsv).
 
-The `vispro_terms.tsv` is a [ROBOT template](http://robot.obolibrary.org/template) in which all of VISBO's classes and relations are defined and which is being imported as a component into the main editor file `vispro-edit.owl`. We chose this tabular based ontology development approach in order to foster the contribution of domain experts, who are usually less experienced with the OWL format and ontology editors such as [Protégé](https://protege.stanford.edu/).
-More on this can be found in the documention of VISBO's [development approach](https://nfdi4chem.github.io/VibrationalSpectroscopyOntology/development_approach/).
+The `vibso_terms.tsv` is a [ROBOT template](http://robot.obolibrary.org/template) in which all of VIBSO's classes and relations are defined and which is being imported as a component into the main editor file `vibso-edit.owl`. We chose this tabular based ontology development approach in order to foster the contribution of domain experts, who are usually less experienced with the OWL format and ontology editors such as [Protégé](https://protege.stanford.edu/).
+More on this can be found in the documention of VIBSO's [development approach](https://nfdi4chem.github.io/VibrationalSpectroscopyOntology/development_approach/).
 
 ## Contributing
 
