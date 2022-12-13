@@ -1,4 +1,4 @@
-# How to contribute to VISPRO
+# How to contribute to VIBSO
 
 Thank you for being a part of the Open Science team and being interested in finding out how to help us!
 All that you need to know on how to contribute to VIBSO should be covered within this documentation, or in the links it provides. If this isn't the case please let us know.
