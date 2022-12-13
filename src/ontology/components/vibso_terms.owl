@@ -172,11 +172,11 @@ AnnotationAssertion(dc:creator obo:VIBSO_0000013 <http://orcid.org/0000-0002-159
 AnnotationAssertion(rdfs:label obo:VIBSO_0000013 "excitation wavelength setting"@en)
 SubClassOf(obo:VIBSO_0000013 obo:IAO_0000140)
 
-# Class: obo:VIBSO_0000014 (Obkective magnification factor setting)
+# Class: obo:VIBSO_0000014 (objective magnification factor setting)
 
 AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000014 "A setting datum that specifies the magnification factor of the objective collecting the scattered light."@en)
 AnnotationAssertion(dc:creator obo:VIBSO_0000014 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(rdfs:label obo:VIBSO_0000014 "Obkective magnification factor setting"@en)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000014 "objective magnification factor setting"@en)
 SubClassOf(obo:VIBSO_0000014 obo:IAO_0000140)
 
 
