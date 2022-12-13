@@ -23,7 +23,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_terms.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2022-10-19/components/vibso_terms.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2022-12-13/components/vibso_terms.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_terms.tsv', which is edited manually by domain experts."^^xsd:string)
 
 Declaration(Class(obo:IAO_0000140))
@@ -45,6 +45,7 @@ Declaration(Class(obo:VIBSO_0000010))
 Declaration(Class(obo:VIBSO_0000011))
 Declaration(Class(obo:VIBSO_0000012))
 Declaration(Class(obo:VIBSO_0000013))
+Declaration(Class(obo:VIBSO_0000014))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000115))
@@ -170,6 +171,13 @@ AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000013 "This class should better 
 AnnotationAssertion(dc:creator obo:VIBSO_0000013 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000013 "excitation wavelength setting"@en)
 SubClassOf(obo:VIBSO_0000013 obo:IAO_0000140)
+
+# Class: obo:VIBSO_0000014 (Obkective magnification factor setting)
+
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000014 "A setting datum that specifies the magnification factor of the objective collecting the scattered light."@en)
+AnnotationAssertion(dc:creator obo:VIBSO_0000014 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000014 "Obkective magnification factor setting"@en)
+SubClassOf(obo:VIBSO_0000014 obo:IAO_0000140)
 
 
 )
