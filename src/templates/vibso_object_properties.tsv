@@ -1,0 +1,2 @@
+id	label	definition	definition source URI	Only use: owl:ObjectProperty	super property	inverse property	domain	range	term creaor URI (e.g. ORCID, for multiple contributors use ‘|‘ as seperator)	example of usage	editor note
+ID	AL rdfs:label@en	AL IAO:0000115@en	>AI dc11:source	TYPE	SP %	IP %	DOMAIN	RANGE	AI dc11:contributor SPLIT=|	AL IAO:0000112@en	AL IAO:0000116@en
