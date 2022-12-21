@@ -1,5 +1,5 @@
 id	label	definition	definition source URI	type	super class	super property	inverse property	domain (if property)	range (if property)	term creaor URI (e.g. ORCID)	term curator URI (e.g. ORCID)	example of usage	editor note
-ID	AL rdfs:label@en	AL IAO:0000115@en	>AI dc11:source	TYPE	SC % SPLIT=|	SP %	IP %	DOMAIN	RANGE	AI dc11:creator	AI IAO:0000117	AL IAO:0000112@en	AL IAO:0000116@en
+ID	AL rdfs:label@en	AL IAO:0000115@en	>AI dc11:source	TYPE	SC % SPLIT=|	SP %	IP %	DOMAIN	RANGE	AI dc11:creator SPLIT=;	AI IAO:0000117	AL IAO:0000112@en	AL IAO:0000116@en
 obo:VIBSO_0000000	vibrational spectrometer configuration specification	A setting datum that specifies the needed settings of a spectrometer used in vibrational spectroscopy.		owl:Class	setting datum 					ORCID:0000-0002-1595-3213			
 obo:VIBSO_0000001	exposure time setting	A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor.		owl:Class	setting datum					ORCID:0000-0002-1595-3213			This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.
 obo:VIBSO_0000002	preamplifier gain setting	A setting datum that specifies the preamplifier gain in CCD sensors.		owl:Class	setting datum					ORCID:0000-0002-1595-3213			This class should better be defined in a more general device ontology.
@@ -14,4 +14,12 @@ obo:VIBSO_0000010	Raman spectrometer configuration	A device setting that represe
 obo:VIBSO_0000011	excitation wavelength	A physical quality of the light source that is used used to excite a system to a higher energy state.	DOI:10.1351/goldbook	owl:Class	wavelength					ORCID:0000-0002-1595-3213			This class needs to be defined in PATO or another more general ontology for such qualities.
 obo:VIBSO_0000012	diffraction grating	A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)	https://en.wikipedia.org/wiki/Diffraction_grating	owl:Class	device					ORCID:0000-0002-1595-3213			This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.
 obo:VIBSO_0000013	excitation wavelength setting	A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material.		owl:Class	setting datum					ORCID:0000-0002-1595-3213			This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.
-obo:VIBSO_0000014	objective magnification factor setting	A setting datum that specifies the magnification factor of the objective collecting the scattered light.		owl:Class	setting datum					ORCID:0000-0002-1595-3213		:experimentXY obo:VIBSO_0000014 '100x' .	
+obo:VIBSO_0000014	objective magnification factor setting	A setting datum that specifies the magnification factor of the objective collecting the scattered light.		owl:Class	setting datum					ORCID:0000-0002-1595-3213;ORCID:0000-0001-7694-5519;ORCID:0000-0002-2239-3955		"@prefix ex: <https://example.org/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:_RamanSpectrometerX rdf:type obo:CHMO_0001235 (Raman spectrometer) ;
+            obo:OBI_0000293 (has_specified_input) ex:_objective_magnification_factor_setting_for_RamanSpectroscopeX .
+ex:_objective_magnification_factor_setting_for_RamanSpectroscopeX obo:VIBSO_0000014 ;
+            obo:OBI_0002815 (has representation) ""100x"" ."	

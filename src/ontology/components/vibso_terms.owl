@@ -23,7 +23,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_terms.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2022-12-13/components/vibso_terms.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2022-12-21/components/vibso_terms.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_terms.tsv', which is edited manually by domain experts."^^xsd:string)
 
 Declaration(Class(obo:IAO_0000140))
@@ -174,8 +174,19 @@ SubClassOf(obo:VIBSO_0000013 obo:IAO_0000140)
 
 # Class: obo:VIBSO_0000014 (objective magnification factor setting)
 
+AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000014 "@prefix ex: <https://example.org/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:_RamanSpectrometerX rdf:type obo:CHMO_0001235 (Raman spectrometer) ;
+            obo:OBI_0000293 (has_specified_input) ex:_objective_magnification_factor_setting_for_RamanSpectroscopeX .
+ex:_objective_magnification_factor_setting_for_RamanSpectroscopeX obo:VIBSO_0000014 ;
+            obo:OBI_0002815 (has representation) \"100x\" ."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000014 "A setting datum that specifies the magnification factor of the objective collecting the scattered light."@en)
+AnnotationAssertion(dc:creator obo:VIBSO_0000014 <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(dc:creator obo:VIBSO_0000014 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dc:creator obo:VIBSO_0000014 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000014 "objective magnification factor setting"@en)
 SubClassOf(obo:VIBSO_0000014 obo:IAO_0000140)
 
