@@ -17,4 +17,4 @@ obo:VIBSO_0000013	excitation wavelength setting	A setting datum that specifies t
 obo:VIBSO_0000014	objective magnification factor setting	A setting datum that specifies the magnification factor of the objective collecting the scattered light.		owl:Class	setting datum					ORCID:0000-0002-1595-3213;ORCID:0000-0001-7694-5519;ORCID:0000-0002-2239-3955		example:_RamanSpectrometerX rdf:type obo:CHMO_0001235 (Raman spectrometer) ;
             obo:OBI_0000293 (has_specified_input) example:_objective_magnification_factor_setting_for_RamanSpectrometerX .
 example:_objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type obo:VIBSO_0000014 ;
-            obo:OBI_0002815 (has representation) "100x" .	
+            obo:OBI_0002815 (has representation) '100x' .	
