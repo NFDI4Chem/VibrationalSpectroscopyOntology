@@ -43,14 +43,6 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
-############################
-#   Object Properties
-############################
-
-# Object Property: <http://purl.obolibrary.org/obo/VIBSO_0000099> (test property)
-
-FunctionalObjectProperty(<http://purl.obolibrary.org/obo/VIBSO_0000099>)
-
 
 
 ############################
