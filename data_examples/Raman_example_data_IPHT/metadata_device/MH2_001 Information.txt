@@ -1,0 +1,32 @@
+MH2_001
+
+General:
+Time:	09:47:21
+Date:	Mittwoch, 16. Juni 2021
+User Name:	user
+Sample Name:	
+Configuration:	Raman 633
+
+UHTS300:
+Excitation Wavelength [nm]:	632.800
+Grating:	T1: 300 g/mm BLZ=750nm
+Center Wavelength [nm]:	769.066
+Spectral Center [rel. 1/cm]:	2800.000
+
+DU401_DD:
+Width [Pixels]:	1024
+Height [Pixels]:	128
+Temperature [°C]:	-65
+Integration Time [s]:	20.01220
+AD Converters:	AD1 (16Bit)
+Vertical Shift Speed [µs]:	[8.25]
+Horizontal Shift Speed [MHz]:	0.1
+Preamplifier Gain:	1.6
+ReadMode:	Full Vertical Binning
+Number Of Accumulations:	1
+Integration Time [s]:	20.01220
+
+Sample Positioning:
+Position X [µm]:	-11057.200
+Position Y [µm]:	-752.800
+

@@ -1,0 +1,10 @@
+
+Scan Table calibration:
+First Point (nom):	-50,-50,-5
+First Point (act):	-49.3445,-49.9292,-4.96936
+Second Point (nom):	50,50,5
+Second Point (act):	50.271,50.0916,5.01373
+Lead Error (m):	1.00386,0.999793,1.00169
+Offset Error (b):	-0.465045,-0.0811599,-0.0222238
+Step Speed [n/sec.]:	100.061
+Calibration succesful !
