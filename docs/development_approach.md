@@ -26,10 +26,7 @@ In both TSV templates there are the following columns:
 * **editor note**: This column can be used to provide additional information regarding the term, such as summarizing a discussion about its definition or obsolescence reason.
 * **obsoleted**: This column must only be used to provide the boolean value `true`, iff the term has been deprecated.
 * **obsolescence reason**: This column should be used to provide an obsolescence reason from the controlled list of the OBO Metadata Ontology (OMO). The current allowed values are: `failed exploratory term , placeholder removed , terms merged , term imported , term split , out of scope`
-* **term replaced by**: This column should be used to provide the term that replaces a deprecated term. This is important to ensure backwards compatibility. 
-
-
-{'failed exploratory term' , 'placeholder removed' , 'terms merged' , 'term imported' , 'term split' , 'out of scope'}
+* **term replaced by**: This column should be used to provide the term that replaces a deprecated term. This is important to ensure backwards compatibility.
 
 In the **vibso_classes.tsv**, there is also the column:
 * **super class**: This column is to be used to provide the parent of the owl:Class that is being defined. It is fine to use the label of the parent class here instead of its IRI or CURIE, as long as the class is already an [imported term](ntr_workflow.md#importing terms).
