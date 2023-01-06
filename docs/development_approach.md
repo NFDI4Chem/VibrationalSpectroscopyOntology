@@ -37,7 +37,7 @@ In the **vibso_classes.tsv**, there are also the columns:
 * **domain**: This column can be used to restrict an `owl:ObjectProperty` in terms of being allowed to be used only on a certain subject.
 * **range**: This column can be used to restrict an `owl:ObjectProperty` in terms of being allowed to be used only on a certain object.
 
-The TSV template will most likely be expanded in the near future to also include more annotation properties (e.g. term tracker status, comment) that will help document the ontology in its source code.
+The TSV templates will most likely be expanded in the future to also include more annotation properties (e.g. term status, comment) that will help document the ontology in its source code.
 
 
 ## Proposed contribution workflow
