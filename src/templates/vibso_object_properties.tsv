@@ -1,2 +1,2 @@
-id	label	link(s) to issue(s)	definition	definition source URI	Only use: owl:ObjectProperty	super property	inverse property	domain	range	term creaor URI	example of usage	editor note	obsoleted? (enter „true“ if yes)	obsolescence reason	term replaced by
+id	label	link(s) to issue(s)	definition	definition source URI	type	super property	inverse property	domain	range	term creaor URI	example of usage	editor note	obsoleted? (enter „true“ if yes)	obsolescence reason	term replaced by
 ID	AL rdfs:label@en	AI rdfs:seeAlso SPLIT=|	AL IAO:0000115@en	>AI dc11:source	TYPE	SP %	IP %	DOMAIN	RANGE	AI dc11:contributor SPLIT=|	AL IAO:0000112@en	AL IAO:0000116@en SPLIT=|	AI IAO:0000231	AT owl:deprecated^^xsd:boolean	AI IAO:0100001
