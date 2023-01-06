@@ -9,7 +9,8 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso.owl>
-Import(<http://purl.obolibrary.org/obo/vibso/components/vibso_terms.owl>)
+Import(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>)
+Import(<http://purl.obolibrary.org/obo/vibso/components/vibso_object_properties.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/chmo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/iao_import.owl>)
@@ -40,6 +41,7 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 # Annotation Property: dcterms:title (title)
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
 
 
 

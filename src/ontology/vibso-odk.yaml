@@ -134,9 +134,13 @@ use_dosdps: false
 use_external_date: false
 components:
   products:
-    - filename: vibso_terms.owl
+    - filename: vibso_classes.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json 
       templates:
-        - vibso_terms.tsv
-
+        - vibso_classes.tsv
+    - filename: vibso_object_properties.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json 
+      templates:
+        - vibso_object_properties.tsv

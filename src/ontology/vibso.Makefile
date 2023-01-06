@@ -7,14 +7,24 @@
 #   components   #
 ##################
 
-$(COMPONENTSDIR)/vibso_terms.owl: $(TEMPLATEDIR)/vibso_terms.tsv
+$(COMPONENTSDIR)/vibso_classes.owl: $(TEMPLATEDIR)/vibso_classes.tsv
 	if [ $(COMP) = true ] ; then $(ROBOT) template \
 		--merge-after --input $(SRC) --add-prefixes config/context.json \
 		--template $< --output $@; fi
 	if [ $(COMP) = true ] ; then $(ROBOT) annotate -i $@ \
 		--ontology-iri $(ONTBASE)/$@ \
 		--version-iri $(ONTBASE)/releases/$(VERSION)/$@ \
-		--annotation rdfs:comment "This component is derived from the 'src/templates/vibso_terms.tsv', which is edited manually by domain experts." \
+		--annotation rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts." \
+		convert -f ofn --output $@; fi
+
+$(COMPONENTSDIR)/vibso_object_properties.owl: $(TEMPLATEDIR)/vibso_object_properties.tsv
+	if [ $(COMP) = true ] ; then $(ROBOT) template \
+		--merge-after --input $(SRC) --add-prefixes config/context.json \
+		--template $< --output $@; fi
+	if [ $(COMP) = true ] ; then $(ROBOT) annotate -i $@ \
+		--ontology-iri $(ONTBASE)/$@ \
+		--version-iri $(ONTBASE)/releases/$(VERSION)/$@ \
+		--annotation rdfs:comment "This component is derived from the 'src/templates/vibso_object_properties.tsv', which is edited manually by domain experts." \
 		convert -f ofn --output $@; fi
 
 ##################
