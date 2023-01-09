@@ -284,6 +284,10 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl $(IMPORTDIR)/omo_terms_combine
 
 $(IMPORTDIR)/chmo_import.owl: $(MIRRORDIR)/chmo.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in vibso.Makefile!" && false
+## Module for ontology: obi
+
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in vibso.Makefile!" && false
 
 .PHONY: refresh-imports
 refresh-imports:

@@ -31,8 +31,8 @@ $(COMPONENTSDIR)/vibso_object_properties.owl: $(TEMPLATEDIR)/vibso_object_proper
 # import modules #
 ##################
 
-
 ## Module for ontology: obi
+## We decided to use the ROBOT filter method to exctract the needed terms because the slme BOT method brings in too many unneeded terms due to its high axiomatization
 
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt
 	if [ $(IMP) = true ]; then $(ROBOT) filter -i $< -T $(IMPORTDIR)/obi_terms.txt --select "self ancestors equivalents" --axioms "disjoint tbox rbox" --signature false --trim true \
@@ -46,6 +46,7 @@ $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt
 
 
 ## Module for ontology: chmo
+## We decided to use the ROBOT filter method to exctract the needed terms because the slme BOT method brings in too many unneeded terms due to the axiomatization
 
 $(IMPORTDIR)/chmo_import.owl: $(MIRRORDIR)/chmo.owl $(IMPORTDIR)/chmo_terms.txt
 	if [ $(IMP) = true ]; then $(ROBOT) filter -i $< -T $(IMPORTDIR)/chmo_terms.txt --select "self ancestors equivalents" --axioms "disjoint tbox rbox" --signature false --trim true \
