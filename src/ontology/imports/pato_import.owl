@@ -8,14 +8,13 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:pato="http://purl.obolibrary.org/obo/pato#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-09/imports/pato_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
     </owl:Ontology>
     
 
@@ -78,12 +77,6 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#value_slim">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
@@ -183,9 +176,7 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
     
 
 
@@ -194,7 +185,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
         <oboInOwl:hasAlternativeId>PATO:0000072</oboInOwl:hasAlternativeId>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0000001</oboInOwl:id>
@@ -214,7 +204,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000133">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000140"/>
         <obo:IAO_0000115>A spatial quality inhering in a bearer by virtue of the bearer&apos;s placement which is defined by the angle between the bearer and an axis, or the angle between the bearer and another object.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
         <oboInOwl:hasAlternativeId>PATO:0000137</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>angular placement</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
@@ -241,7 +230,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115>A spatial quality inhering in a bearer by virtue of the bearer&apos;s spatial location relative to other objects in the vicinity.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
         <oboInOwl:hasAlternativeId>PATO:0001032</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>PATO:0001631</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>location</oboInOwl:hasExactSynonym>
@@ -266,7 +254,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000146">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115>A physical quality of the thermal energy of a system.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0000146</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
@@ -287,7 +274,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <obo:IAO_0000115>A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
         <oboInOwl:hasAlternativeId>PATO:0002079</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>Wikipedia:Physical_property</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>relational physical quality</oboInOwl:hasExactSynonym>
@@ -310,7 +296,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <obo:IAO_0000115>A quality which inheres in a continuant.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
         <oboInOwl:hasAlternativeId>PATO:0001237</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>PATO:0001238</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>snap:Quality</oboInOwl:hasDbXref>
@@ -341,7 +326,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001242">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115>A physical quality which is equal to the distance between repeating units of a wave pattern.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0001242</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
@@ -362,7 +346,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002497">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000133"/>
         <obo:IAO_0000115>An orientation quality inhering in a bearer by virtue of the bearer having a position that is directed laterally.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2013-10-10T05:16:45Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>laterally directed</oboInOwl:hasExactSynonym>
@@ -385,7 +368,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000133"/>
         <obo:IAO_0000115>An orientation quality inhering in a bearer by virtue of the bearer having a position that is directed along the longitudinal or anterior-posterior axis.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
         <oboInOwl:creation_date>2014-10-17T14:24:19Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>

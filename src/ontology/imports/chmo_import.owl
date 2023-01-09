@@ -1372,7 +1372,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000763"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where infrared light is introduced into a prism at an angle exceeding the critical angle for internal reflection. This produces an evanescent wave at the reflecting surface (a surface which is transparent to infrared such as thallium bromide) on which the sample is supported. The distortion of the evanescent wave by the sample is measured producing a spectrum which is then subject to a Fourier transform.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000644</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FIX:0000644</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0-471-96523-5</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1778,7 +1778,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001288"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A method for generating surface-specific vibrational spectra by mixing two light beams at a surface and detecting the output beam, which has frequency equal to the sum of the two input frequencies.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://doi.org/10.1021/ja9831453</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1021/ja9831453</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2155,7 +2155,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002165"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A type of Raman spectroscopy where the spectral signal is enhanced by pre-concentration of the sample. Drops of the sample in solution are deposited onto a surface and dry in a &apos;coffee-ring&apos; pattern. Spectra are then obtained from this ring of excess of material, after evaporation has completed.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://doi.org/10.1039/b701541k</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1039/b701541k</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2401,7 +2401,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002627"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A method for generating surface-specific vibrational spectra by mixing two light beams (visible and IR) at a surface and detecting the output beam, which has frequency equal to the sum of the two input frequencies.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://doi.org/10.1021/ja9831453</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1021/ja9831453</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
