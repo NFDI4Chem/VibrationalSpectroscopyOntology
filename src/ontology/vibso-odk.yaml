@@ -1,150 +1,69 @@
-allow_equivalents: asserted-only
-catalog_file: catalog-v001.xml
+## ontology metadata ##
+
+id: vibso
+title: Vibration Spectroscopy Ontology
+description: "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (ViSprO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays."
+contact: philip.stroemert [at] tib [.] eu
+creators: 
+  - wikidata:Q98270496
+license: https://creativecommons.org/licenses/by/4.0/
+
+
+## general ODK Settings ##
+
+uribase: http://purl.obolibrary.org/obo
+repo: VibrationSpectroscopyOntology
+git_main_branch: main
+github_org: NFDI4Chem
+git_user: 'StroemPhi'       # necessary for generating releases
 ci:
 - github_actions
-contact: null
-contributors: null
-create_obo_metadata: true
-creators: null
-custom_makefile_header: '
-
-  # ----------------------------------------
-
-  # More information: https://github.com/INCATools/ontology-development-kit/
-
-  '
-description: None
 documentation:
   documentation_system: mkdocs
-dosdp_tools_options: --obo-prefixes=true
-edit_format: owl
-exclude_tautologies: structural
 export_formats:
 - owl
 - obo
-export_project_yaml: false
-git_main_branch: main
-git_user: 'StroemPhi'
-git_email: 'philip.stroemert@tib.eu'
-github_org: NFDI4Chem
-gzip_main: false
-id: vibso
+reasoner: ELK
+release_artefacts:
+- full
+- base
+robot_java_args: '-Xmx16G'  # max RAM to be used by Robot in ODK
+
+
+## VIBSO specific Settings ##
+
 import_group:
-  annotation_properties:
-  - rdfs:label
-  - IAO:0000115
-  directory: imports/
-  disabled: false
-  exclude_iri_patterns: null
-  export_obo: false
-  ids:
-  - bfo
-  - ro
-  - omo
-  - iao
-  - chmo
-  - txpo
-  - pato
-  - obi
-  - stato
-  #- efo
-  mirror_max_time_download: 200
-  mirror_retry_download: 4
-  module_type: slme
-  module_type_slme: BOT
   products:
   - id: bfo
     module_type: mirror
   - id: ro
     make_base: true
-    module_type: slme
     slme_individuals: exclude
   - id: omo
     module_type: mirror
   - id: iao
     make_base: true
-    module_type: slme
-    slme_individuals: include
   - id: chmo
     make_base: true
-    module_type: custom
+    module_type: custom   # custom, because we only want a minimal subset
   - id: pato
     make_base: true
-    module_type: slme
   - id: txpo
     make_base: true
-    module_type: slme
-  #- id: efo
-  #  make_base: true
-  #  module_type: slme
-  #  mirror_from: http://www.ebi.ac.uk/efo/efo.owl
   - id: obi
     make_base: true
-    module_type: slme
   - id: stato
     make_base: true
-    module_type: slme
-  rebuild_if_source_changes: true
-  release_imports: false
-  slme_individuals: include
-  use_base_merging: false
-import_pattern_ontology: false
-license: https://creativecommons.org/licenses/by/4.0/
-namespaces: null
-obo_format_options: ''
-owltools_memory: ''
-pattern_group: null
-pattern_pipelines_group: null
-primary_release: full
-public_release: none
-public_release_assets: null
-reasoner: ELK
-release_artefacts:
-- full
-- base
-release_date: false
-remove_owl_nothing: false
-repo: VibrationSpectroscopyOntology
-robot_java_args: '-Xmx16G'
-robot_report:
-  custom_profile: false
-  custom_sparql_checks:
-  - owldef-self-reference
-  - iri-range
-  - label-with-iri
-  custom_sparql_exports:
-  - basic-report
-  - class-count-by-prefix
-  - edges
-  - xrefs
-  - obsoletes
-  - synonyms
-  ensure_owl2dl_profile: true
-  fail_on: null
-  release_reports: false
-  report_on:
-  - edit
-  use_labels: true
-robot_settings: null
-robot_version: null
-robotemplate_group: null
-subset_group: null
-title: Vibration Spectroscopy Ontology
-description: "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (ViSprO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays."
-travis_emails: null
-uribase: http://purl.obolibrary.org/obo
-use_custom_import_module: false
-use_dosdps: false
-use_external_date: false
 components:
   products:
-    - filename: vibso_classes.owl
+    - filename: vibso_classes.owl  # TSV templates to define VIBSO classes
       use_template: TRUE
       template_options: --add-prefixes config/context.json 
       templates:
-        - vibso_classes.tsv
+        - vibso_classes.tsv        # TSV templates to define VIBSO object properties
     - filename: vibso_object_properties.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json 
       templates:
         - vibso_object_properties.tsv
+
