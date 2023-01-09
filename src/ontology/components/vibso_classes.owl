@@ -23,7 +23,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-01-05/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-01-09/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts."^^xsd:string)
 
 Declaration(Class(obo:IAO_0000140))
