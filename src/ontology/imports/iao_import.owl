@@ -10,9 +10,9 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/imports/iao_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2022-10-19/imports/iao_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-19</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-09/imports/iao_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
     </owl:Ontology>
     
 
@@ -120,9 +120,47 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
+        <obo:IAO_0000111 xml:lang="en">has obsolescence reason</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <obo:IAO_0000111 xml:lang="en">term replaced by</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">Add as annotation triples in the granting ontology</rdfs:comment>
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
@@ -146,7 +184,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
     </owl:ObjectProperty>
     
 
@@ -154,7 +192,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
     </owl:ObjectProperty>
     
 
@@ -172,7 +210,7 @@ We will try to build it back up by elaborating the various subproperties that ar
 Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">is about</rdfs:label>
     </owl:ObjectProperty>
     
@@ -191,9 +229,25 @@ there is some c that is a concretization of g
 every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:label xml:lang="en">denotes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
     </owl:ObjectProperty>
     
 
@@ -212,7 +266,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
     </owl:Class>
     
 
@@ -220,7 +274,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
     </owl:Class>
     
 
@@ -228,7 +282,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
     </owl:Class>
     
 
@@ -251,7 +305,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">goal specification</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process/Roles Branch</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000217</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">objective specification</rdfs:label>
     </owl:Class>
     
@@ -266,7 +320,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">action specification</rdfs:label>
     </owl:Class>
     
@@ -295,7 +349,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">data item</rdfs:label>
     </owl:Class>
     
@@ -316,7 +370,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117 xml:lang="en">PERSON: James A. Overton</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">based on Oxford English Dictionary</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">symbol</rdfs:label>
     </owl:Class>
     
@@ -342,7 +396,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
     
@@ -366,7 +420,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000116 xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&apos;t realizable. However this name isn&apos;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">directive information entity</rdfs:label>
     </owl:Class>
     
@@ -384,7 +438,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000270</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">algorithm</rdfs:label>
     </owl:Class>
     
@@ -416,28 +470,8 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000266</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">curation status specification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000111 xml:lang="en">data set</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn&apos;t for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type</obo:IAO_0000116>
-        <obo:IAO_0000116>2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000042</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <rdfs:label xml:lang="en">data set</rdfs:label>
     </owl:Class>
     
 
@@ -454,7 +488,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000030</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">image</rdfs:label>
     </owl:Class>
     
@@ -467,7 +501,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000111 xml:lang="en">data about an ontology part</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Data about an ontology part is a data item about a part of an ontology, for example a term</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">data about an ontology part</rdfs:label>
     </owl:Class>
     
@@ -492,14 +526,16 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was &quot; a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan&quot;. It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2014-03-31: A plan specification can have other parts, such as conditional specifications.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2022-01-16 Updated definition to that proposed by Clint Dowloand, IAO Issue 231.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Clint Dowland</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000344</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
 
 Action specification not well enough specified.
@@ -508,6 +544,7 @@ Question whether all plan specifications have objective specifications.
 
 Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
         <rdfs:label xml:lang="en">plan specification</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/231#issuecomment-1010455131</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -524,7 +561,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">measurement datum</rdfs:label>
     </owl:Class>
     
@@ -543,7 +580,7 @@ This should be a &quot;setting specification&quot;. There is a question of wheth
 Pro other specification are about realizables.
 Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Alan grouped these in placeholder for the moment. Name by analogy to measurement datum.</obo:IAO_0000116>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">setting datum</rdfs:label>
     </owl:Class>
     
@@ -560,6 +597,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000227"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000228"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000229"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMO_0001000"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -570,7 +608,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">The creation of this class has been inspired in part by Werner Ceusters&apos; paper, Applying evolutionary terminology auditing to the Gene Ontology.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">obsolescence reason specification</rdfs:label>
     </owl:Class>
     
@@ -588,7 +626,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">MC, 2009-09-14 (following IAO call 2009-09-01): textual entities live at the FRBR (http://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) manifestation level. Everything is significant: line break, pdf and html versions of same document are different textual entities.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">text</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">textual entity</rdfs:label>
     </owl:Class>
     
@@ -603,7 +641,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">figure</rdfs:label>
     </owl:Class>
     
@@ -627,7 +665,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A denotator type indicates how a term should be interpreted from an ontological perspective.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Barry Smith, Werner Ceusters</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">denotator type</rdfs:label>
     </owl:Class>
     
@@ -652,7 +690,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000118>CRID symbol</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">centrally registered identifier symbol</rdfs:label>
     </owl:Class>
     
@@ -691,7 +729,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000118>CRID</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">centrally registered identifier</rdfs:label>
     </owl:Class>
     
@@ -700,17 +738,19 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000579 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000579">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <obo:IAO_0000112 xml:lang="en">PubMed is a CRID registry. It has a dataset of PubMed identifiers associated with journal articles. </obo:IAO_0000112>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
+        <obo:IAO_0000112 xml:lang="en">PubMed is a CRID registry. It has a code set of PubMed identifiers associated with journal articles. </obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">A CRID registry is a dataset of CRID records, each consisting of a CRID symbol and additional information which was recorded in the dataset through a assigning a centrally registered identifier process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A code set of CRID records, each consisting of a CRID symbol and additional information which was recorded in the code set through an assigning a centrally registered identifier process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Justin Whorton</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000118>CRID registry</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/237</obo:IAO_0000233>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <rdfs:label xml:lang="en">centrally registered identifier registry</rdfs:label>
     </owl:Class>
     
@@ -719,12 +759,109 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020010"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000111 xml:lang="en">identifier</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Justin Whorton</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">proper name</obo:IAO_0000118>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/237</obo:IAO_0000233>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
+        <rdfs:comment xml:lang="en">Sep 29, 2016: The current definition has been amended from the previous version: &quot;A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.&quot; to more accuratly reflect the necessary and sufficient condition on the class. (MB)</rdfs:comment>
         <rdfs:label xml:lang="en">identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Justin Whorton</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">dubbing process</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">naming</obo:IAO_0000118>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/237</obo:IAO_0000233>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
+        <rdfs:label xml:lang="en">identifier creating process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a collection of other information content entities that has been created to identify or annotate things in a specified domain, and where the intention of its creators is that the collection has a one-to-one correspondence with those things.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Justin Whorton</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">code map</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">code system</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">codeset</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">coding system</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">controlled vocabulary</obo:IAO_0000118>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/237</obo:IAO_0000233>
+        <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <dc:contributor>Clint Dowland</dc:contributor>
+        <dc:contributor>Matt Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
+        <rdfs:comment xml:lang="en">Code sets might include non-entities/things (e.g. missing thumbs).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Does not imply absence vs. presence of any taxonomy.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Does not imply that aggregated entities denote particulars, universals, or defined classes (a.k.a. attributive collections) or even that they denote only one of these three types of entities.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Each aggregated entity is often (but not necessarily) associated with a text string—variously called a “description,” “name,” “title,” or “label”—that helps humans reach the target of denotation.
+
+When there is no such string, it is almost always because the entities take the form of human language words. For example, a “sex” or “gender” code set could contain “MALE” and “FEMALE,” or even “M” and “F” (by convention, we understand what these mean).</rdfs:comment>
+        <rdfs:comment xml:lang="en">For National Drug Codes (NDCs) and similar code sets, there doesn’t even have to be a single, fully-concretized copy somewhere (for example, for NDCs there is no centralized database or repository where they all live as one instance of concretization of code set). The code set can be “distributively” concretized. This seems like an unusual exception, but it also likely applies to Universal Product Codes (UPCs) and their follow on Global Trade Item Numbers (GTINs).</rdfs:comment>
+        <rdfs:comment xml:lang="en">For each given domain, there can potentially exist multiple code sets. The multiplicity of code sets is partially due to the different specific purposes of those code sets.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Many code sets are created for a specific purpose in addition to merely identifying or annotating core ideas of a specified domain.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The information content entities do not denote each other.</rdfs:comment>
+        <rdfs:label xml:lang="en">code set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
     </owl:Class>
     
 
@@ -933,6 +1070,12 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">requires discussion</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMO_0001000 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMO_0001000"/>
 </rdf:RDF>
 
 

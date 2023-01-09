@@ -23,7 +23,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_object_properties.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-01-05/components/vibso_object_properties.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-01-09/components/vibso_object_properties.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_object_properties.tsv', which is edited manually by domain experts."^^xsd:string)
 
 

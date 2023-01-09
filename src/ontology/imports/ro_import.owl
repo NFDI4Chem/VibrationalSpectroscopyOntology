@@ -14,9 +14,9 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/imports/ro_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2022-10-19/imports/ro_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-19</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-09/imports/ro_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2023-01-04/ro.owl"/>
     </owl:Ontology>
     
 
@@ -95,6 +95,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
@@ -118,9 +127,9 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creator -->
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
@@ -495,7 +504,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118>inheres in part of</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20064205"/>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2023-01-04/ro.owl"/>
         <rdfs:label xml:lang="en">characteristic of part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ro/docs/reflexivity/"/>
     </owl:ObjectProperty>
@@ -515,7 +524,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502">
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2023-01-04/ro.owl"/>
         <rdfs:label>depends on</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
     </owl:ObjectProperty>
@@ -536,7 +545,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112>This pdf file generically depends on this server.</obo:IAO_0000112>
         <obo:IAO_0000115>A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*.</obo:IAO_0000115>
         <obo:IAO_0000119>[072-ISO]</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2023-01-04/ro.owl"/>
         <oboInOwl:hasExactSynonym>g-depends on</oboInOwl:hasExactSynonym>
         <rdfs:label>generically depends on</rdfs:label>
     </owl:ObjectProperty>
@@ -555,7 +564,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112>This hard drive is carrier of these data items.</obo:IAO_0000112>
         <obo:IAO_0000115>*b* is carrier of *c* at time *t* if and only if *c* *g-depends on* *b* at *t*</obo:IAO_0000115>
         <obo:IAO_0000119>[072-ISO]</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2023-01-04/ro.owl"/>
         <rdfs:label xml:lang="en">is carrier of</rdfs:label>
     </owl:ObjectProperty>
     

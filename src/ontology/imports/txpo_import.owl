@@ -10,9 +10,9 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/imports/txpo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2022-10-19/imports/txpo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-19</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-09/imports/txpo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2022-12-07/txpo.owl"/>
     </owl:Ontology>
     
 
@@ -66,7 +66,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2022-12-07/txpo.owl"/>
     </owl:ObjectProperty>
     
 
@@ -74,7 +74,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2022-12-07/txpo.owl"/>
     </owl:ObjectProperty>
     
 
@@ -84,7 +84,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/TXPO_0002523">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <obo:IAO_0000115>&quot;has ocurrent part&quot; is a relation that holds between a whole occurrent (process) and its part.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2022-12-07/txpo.owl"/>
         <rdfs:label>has occurrent part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -104,7 +104,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2022-12-07/txpo.owl"/>
     </owl:Class>
 </rdf:RDF>
 
