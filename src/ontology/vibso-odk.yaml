@@ -46,6 +46,7 @@ import_group:
   - txpo
   - pato
   - obi
+  - stato
   #- efo
   mirror_max_time_download: 200
   mirror_retry_download: 4
@@ -78,6 +79,9 @@ import_group:
   #  module_type: slme
   #  mirror_from: http://www.ebi.ac.uk/efo/efo.owl
   - id: obi
+    make_base: true
+    module_type: slme
+  - id: stato
     make_base: true
     module_type: slme
   rebuild_if_source_changes: true
