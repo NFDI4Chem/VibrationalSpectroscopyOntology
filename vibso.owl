@@ -16,11 +16,11 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2022-10-19/vibso.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-10/vibso.owl"/>
         <terms:description>_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Vibrational Spectroscopy Ontology</terms:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-19</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -630,6 +630,18 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
+    <!-- http://purl.obolibrary.org/obo/STATO_0000032 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000032"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000391 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000391"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/pato#attribute_slim -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#attribute_slim">
@@ -946,9 +958,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -971,9 +981,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
 A continuant cannot have an occurrent as part: use &apos;participates in&apos;. An occurrent cannot have a continuant as part: use &apos;has participant&apos;. An immaterial entity cannot have a material entity as part: use &apos;location of&apos;. An independent continuant cannot have a specifically dependent continuant as part: use &apos;bearer of&apos;. A specifically dependent continuant cannot have an independent continuant as part: use &apos;inheres in&apos;.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_part</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -992,7 +1000,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
         <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">realized in</rdfs:label>
@@ -1010,7 +1018,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this investigation realizes this investigator role</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this shattering realizes this fragility</obo:IAO_0000112>
         <obo:IAO_0000600 xml:lang="en">to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:comment>Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">realizes</rdfs:label>
@@ -1031,8 +1039,7 @@ We will try to build it back up by elaborating the various subproperties that ar
 Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">is about</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1051,7 +1058,6 @@ there is some c that is a concretization of g
 every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:label xml:lang="en">denotes</rdfs:label>
     </owl:ObjectProperty>
@@ -1078,7 +1084,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Larry Hunter</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Melanie Coutot</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">has_specified_input</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1094,7 +1100,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">is_specified_input_of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1118,7 +1124,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Larry Hunter</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1140,7 +1146,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1156,7 +1162,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000117>BP, AR, PPPB branch</obo:IAO_0000117>
         <obo:IAO_0000119>PPPB branch derived</obo:IAO_0000119>
         <obo:IAO_0000232>modified according to email thread from 1/23/09 in accordince with DT and PPPB branch</obo:IAO_0000232>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>achieves_planned_objective</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1170,7 +1176,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115>This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
         <obo:IAO_0000117>OBI</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>objective_achieved_by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1182,8 +1188,11 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <obo:IAO_0000111 xml:lang="en">has performer</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000117 xml:lang="en">performer relation covers the need to report on who performed a planned processed. it has to cover processes done by People or Devices (such as a robot controlled by software  WF management system)</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <obo:IAO_0000115>A relation between a planned process and a continuant where the continuant can be a person, organization or device (such as a robot controlled by software workflow management system) that performs the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">OBI</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <rdfs:comment>The &apos;has performer&apos; relation covers the need to report on who performed a planned processed. It has to cover processes done by People or Devices (such as a robot controlled by software  WF management system).</rdfs:comment>
         <rdfs:label xml:lang="en">has performer</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1201,7 +1210,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:comment>Note that this relation was previously called &quot;inheres in&quot;, but was changed to be called &quot;characteristic of&quot; because BFO2 uses &quot;inheres in&quot; in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</rdfs:comment>
         <rdfs:label xml:lang="en">characteristic of</rdfs:label>
     </owl:ObjectProperty>
@@ -1221,7 +1230,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">has characteristic</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1293,7 +1302,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">concretizes</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1310,7 +1319,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">function_of</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">is function of</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:comment>This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</rdfs:comment>
         <rdfs:label xml:lang="en">function of</rdfs:label>
     </owl:ObjectProperty>
@@ -1359,7 +1368,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_function</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">has function</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1389,7 +1398,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_role</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">has role</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1438,7 +1447,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000118>inheres in part of</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20064205"/>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl"/>
         <rdfs:label xml:lang="en">characteristic of part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ro/docs/reflexivity/"/>
     </owl:ObjectProperty>
@@ -1458,7 +1466,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502">
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl"/>
         <rdfs:label>depends on</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
     </owl:ObjectProperty>
@@ -1479,7 +1486,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000112>This pdf file generically depends on this server.</obo:IAO_0000112>
         <obo:IAO_0000115>A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*.</obo:IAO_0000115>
         <obo:IAO_0000119>[072-ISO]</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl"/>
         <oboInOwl:hasExactSynonym>g-depends on</oboInOwl:hasExactSynonym>
         <rdfs:label>generically depends on</rdfs:label>
     </owl:ObjectProperty>
@@ -1498,7 +1504,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000112>This hard drive is carrier of these data items.</obo:IAO_0000112>
         <obo:IAO_0000115>*b* is carrier of *c* at time *t* if and only if *c* *g-depends on* *b* at *t*</obo:IAO_0000115>
         <obo:IAO_0000119>[072-ISO]</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro.owl"/>
         <rdfs:label xml:lang="en">is carrier of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1509,7 +1514,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/TXPO_0002523">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <obo:IAO_0000115>&quot;has ocurrent part&quot; is a relation that holds between a whole occurrent (process) and its part.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl"/>
         <rdfs:label>has occurrent part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1539,7 +1543,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</obo:IAO_0000116>
         <obo:IAO_0000600 xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</obo:IAO_0000600>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">entity</rdfs:label>
     </owl:Class>
@@ -2135,7 +2138,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000601 xml:lang="en">All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])</obo:IAO_0000601>
         <obo:IAO_0000602>(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] </obo:IAO_0000602>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">realizable entity</rdfs:label>
     </owl:Class>
@@ -2273,7 +2275,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Specifically dependent continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. We&apos;re not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc.</obo:IAO_0000116>
         <obo:IAO_0000602>(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] </obo:IAO_0000602>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
     </owl:Class>
@@ -2578,7 +2579,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
         <obo:IAO_0000602>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </obo:IAO_0000602>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
     </owl:Class>
@@ -2609,7 +2609,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: In the past, we have distinguished two varieties of function, artifactual function and biological function. These are not asserted subtypes of BFO:function however, since the same function – for example: to pump, to transport – can exist both in artifacts and in biological entities. The asserted subtypes of function that would be needed in order to yield a separate monoheirarchy are not artifactual function, biological function, etc., but rather transporting function, pumping function, etc.</obo:IAO_0000116>
         <obo:IAO_0000600 xml:lang="en">A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])</obo:IAO_0000600>
         <obo:IAO_0000602>(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] </obo:IAO_0000602>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">function</rdfs:label>
     </owl:Class>
@@ -3399,7 +3399,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000641"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where the rough metal surface of a sample absorbs radiation in the infrared region (0.78–1000 μm).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1039/b805223a</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1039/b805223a</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4303,7 +4303,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000763"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where infrared light is introduced into a prism at an angle exceeding the critical angle for internal reflection. This produces an evanescent wave at the reflecting surface (a surface which is transparent to infrared such as thallium bromide) on which the sample is supported. The distortion of the evanescent wave by the sample is measured producing a spectrum which is then subject to a Fourier transform.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0000644</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FIX:0000644</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0-471-96523-5</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -4332,7 +4332,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000770"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a single molecule sample adsorbed onto a metal (Au, Ag or Cu) surface is detected.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://doi.org/10.1021/cr980133r</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1021/cr980133r</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4391,7 +4391,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000823"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://doi.org/10.1021/jp001661l</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1021/jp001661l</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4560,7 +4560,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001157"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A technique for measuring the time-resolved concentration of monomers during polymerisation reactions. The polymerisation is initiated by a single pulse of laser radiation and the monomer concentration is monitored by measuring absorbance in the near-infrared (0.8–2 μm) region.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:386727682X</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:386727682X</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5412,7 +5412,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002710"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where the sample absorbs radiation from the infrared region (0.78–1000 \μm) over two frequency axes. Cross peaks in the spectrum encode the couplings and orientation between vibrations.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FIX:0001069</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0001069</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5474,7 +5474,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">goal specification</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process/Roles Branch</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000217</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">objective specification</rdfs:label>
     </owl:Class>
     
@@ -5489,7 +5488,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">action specification</rdfs:label>
     </owl:Class>
     
@@ -5518,8 +5516,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">data item</rdfs:label>
     </owl:Class>
     
@@ -5540,7 +5537,6 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117 xml:lang="en">PERSON: James A. Overton</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">based on Oxford English Dictionary</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">symbol</rdfs:label>
     </owl:Class>
     
@@ -5566,7 +5562,6 @@ JAR: A data item is an approximately justified approximately true approximate be
 Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
     
@@ -5590,7 +5585,6 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000116 xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&apos;t realizable. However this name isn&apos;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">directive information entity</rdfs:label>
     </owl:Class>
     
@@ -5608,8 +5602,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000270</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">algorithm</rdfs:label>
     </owl:Class>
     
@@ -5641,28 +5634,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000266</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">curation status specification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000111 xml:lang="en">data set</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn&apos;t for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type</obo:IAO_0000116>
-        <obo:IAO_0000116>2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000042</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <rdfs:label xml:lang="en">data set</rdfs:label>
     </owl:Class>
     
 
@@ -5679,8 +5651,7 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000030</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">image</rdfs:label>
     </owl:Class>
     
@@ -5693,7 +5664,6 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000111 xml:lang="en">data about an ontology part</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Data about an ontology part is a data item about a part of an ontology, for example a term</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">data about an ontology part</rdfs:label>
     </owl:Class>
     
@@ -5718,14 +5688,15 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was &quot; a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan&quot;. It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2014-03-31: A plan specification can have other parts, such as conditional specifications.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2022-01-16 Updated definition to that proposed by Clint Dowloand, IAO Issue 231.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Clint Dowland</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000344</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
 
 Action specification not well enough specified.
@@ -5734,6 +5705,7 @@ Question whether all plan specifications have objective specifications.
 
 Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
         <rdfs:label xml:lang="en">plan specification</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/231#issuecomment-1010455131</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5750,8 +5722,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">measurement datum</rdfs:label>
     </owl:Class>
     
@@ -5770,7 +5741,6 @@ This should be a &quot;setting specification&quot;. There is a question of wheth
 Pro other specification are about realizables.
 Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Alan grouped these in placeholder for the moment. Name by analogy to measurement datum.</obo:IAO_0000116>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">setting datum</rdfs:label>
     </owl:Class>
     
@@ -5779,17 +5749,6 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000225 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000225">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000103"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000226"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000227"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000228"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000229"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
@@ -5809,7 +5768,6 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">The creation of this class has been inspired in part by Werner Ceusters&apos; paper, Applying evolutionary terminology auditing to the Gene Ontology.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">obsolescence reason specification</rdfs:label>
     </owl:Class>
     
@@ -5827,7 +5785,6 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">MC, 2009-09-14 (following IAO call 2009-09-01): textual entities live at the FRBR (http://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) manifestation level. Everything is significant: line break, pdf and html versions of same document are different textual entities.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">text</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">textual entity</rdfs:label>
     </owl:Class>
     
@@ -5842,7 +5799,6 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">figure</rdfs:label>
     </owl:Class>
     
@@ -5866,7 +5822,6 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A denotator type indicates how a term should be interpreted from an ontological perspective.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Barry Smith, Werner Ceusters</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">denotator type</rdfs:label>
     </owl:Class>
     
@@ -5891,7 +5846,6 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000118>CRID symbol</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">centrally registered identifier symbol</rdfs:label>
     </owl:Class>
     
@@ -5930,7 +5884,6 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000118>CRID</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">centrally registered identifier</rdfs:label>
     </owl:Class>
     
@@ -5939,17 +5892,18 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000579 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000579">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <obo:IAO_0000112 xml:lang="en">PubMed is a CRID registry. It has a dataset of PubMed identifiers associated with journal articles. </obo:IAO_0000112>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
+        <obo:IAO_0000112 xml:lang="en">PubMed is a CRID registry. It has a code set of PubMed identifiers associated with journal articles. </obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">A CRID registry is a dataset of CRID records, each consisting of a CRID symbol and additional information which was recorded in the dataset through a assigning a centrally registered identifier process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A code set of CRID records, each consisting of a CRID symbol and additional information which was recorded in the code set through an assigning a centrally registered identifier process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Justin Whorton</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000118>CRID registry</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/237</obo:IAO_0000233>
         <rdfs:label xml:lang="en">centrally registered identifier registry</rdfs:label>
     </owl:Class>
     
@@ -5958,12 +5912,116 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020010"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">identifier</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Justin Whorton</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">proper name</obo:IAO_0000118>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/237</obo:IAO_0000233>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <rdfs:comment xml:lang="en">Sep 29, 2016: The current definition has been amended from the previous version: &quot;A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.&quot; to more accuratly reflect the necessary and sufficient condition on the class. (MB)</rdfs:comment>
         <rdfs:label xml:lang="en">identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Justin Whorton</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">dubbing process</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">naming</obo:IAO_0000118>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/237</obo:IAO_0000233>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <rdfs:label xml:lang="en">identifier creating process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a collection of other information content entities that has been created to identify or annotate things in a specified domain, and where the intention of its creators is that the collection has a one-to-one correspondence with those things.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Justin Whorton</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">code map</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">code system</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">codeset</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">coding system</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">controlled vocabulary</obo:IAO_0000118>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/237</obo:IAO_0000233>
+        <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <dc:contributor>Clint Dowland</dc:contributor>
+        <dc:contributor>Matt Diller</dc:contributor>
+        <dc:contributor>Sarah Bost</dc:contributor>
+        <dc:contributor>William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">Code sets might include non-entities/things (e.g. missing thumbs).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Does not imply absence vs. presence of any taxonomy.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Does not imply that aggregated entities denote particulars, universals, or defined classes (a.k.a. attributive collections) or even that they denote only one of these three types of entities.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Each aggregated entity is often (but not necessarily) associated with a text string—variously called a “description,” “name,” “title,” or “label”—that helps humans reach the target of denotation.
+
+When there is no such string, it is almost always because the entities take the form of human language words. For example, a “sex” or “gender” code set could contain “MALE” and “FEMALE,” or even “M” and “F” (by convention, we understand what these mean).</rdfs:comment>
+        <rdfs:comment xml:lang="en">For National Drug Codes (NDCs) and similar code sets, there doesn’t even have to be a single, fully-concretized copy somewhere (for example, for NDCs there is no centralized database or repository where they all live as one instance of concretization of code set). The code set can be “distributively” concretized. This seems like an unusual exception, but it also likely applies to Universal Product Codes (UPCs) and their follow on Global Trade Item Numbers (GTINs).</rdfs:comment>
+        <rdfs:comment xml:lang="en">For each given domain, there can potentially exist multiple code sets. The multiplicity of code sets is partially due to the different specific purposes of those code sets.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Many code sets are created for a specific purpose in addition to merely identifying or annotating core ideas of a specified domain.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The information content entities do not denote each other.</rdfs:comment>
+        <rdfs:label xml:lang="en">code set</rdfs:label>
     </owl:Class>
     
 
@@ -6238,8 +6296,7 @@ No imports</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>person</rdfs:label>
     </owl:Class>
     
@@ -6284,7 +6341,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000232>6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
         <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
@@ -6316,7 +6373,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Is a material entity that is created or changed during material processing.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">processed material</rdfs:label>
     </owl:Class>
     
@@ -6353,7 +6410,7 @@ objectives is a planned process.</obo:IAO_0000116>
 editor = PRS</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <obo:OBI_0001847>study</obo:OBI_0001847>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">investigation</rdfs:label>
     </owl:Class>
     
@@ -6384,7 +6441,7 @@ editor = PRS</obo:IAO_0000232>
         <obo:IAO_0000117>GROUP:  Role Branch</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <obo:IAO_0000232>Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.</obo:IAO_0000232>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">evaluant role</rdfs:label>
     </owl:Class>
     
@@ -6467,7 +6524,7 @@ editor = PRS</obo:IAO_0000232>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
         <obo:OBI_0001847>study assay</obo:OBI_0001847>
         <obo:OBI_9991118>any method</obo:OBI_9991118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">assay</rdfs:label>
     </owl:Class>
     
@@ -6483,7 +6540,7 @@ editor = PRS</obo:IAO_0000232>
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">study</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">sample preparation for assay</rdfs:label>
     </owl:Class>
     
@@ -6504,7 +6561,7 @@ editor = PRS</obo:IAO_0000232>
 
 May 28 2013. Updated definition taken from ReO based on discussions initiated in Philly 2011 workshop.  Former defnition described a narrower view of reagents in chemistry that restricts bearers of the role to be chemical entities (&quot;a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances&quot;).  Updated definition allows for broader view of reagents in the domain of biomedical research to include larger materials that have parts that participate chemically in a molecular reaction or interaction.
 </obo:IAO_0000232>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:comment>(copied from ReO)
 Reagents are distinguished from instruments or devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, instruments do not participate in a chemical reaction/interaction during the technique.
 
@@ -6555,7 +6612,7 @@ In regard to the statement that reagents are &apos;distinct&apos; from the speci
         <obo:IAO_0000117>PERSON: Philippe Rocca Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">material transformation</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">material processing</rdfs:label>
     </owl:Class>
     
@@ -6596,7 +6653,7 @@ specimen can later be subject.</obo:IAO_0000116>
         <obo:IAO_0000117>GROUP:  Role Branch</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">specimen role</rdfs:label>
     </owl:Class>
     
@@ -6680,7 +6737,7 @@ specimen can later be subject.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">OBI</obo:IAO_0000119>
         <obo:IAO_0000232>Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.</obo:IAO_0000232>
         <obo:OBI_0001847>study person role</obo:OBI_0001847>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:comment>Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable investigations run by robot scientists such as ADAM (King et al, Science, 2009)</rdfs:comment>
         <rdfs:label>investigation agent role</rdfs:label>
     </owl:Class>
@@ -6727,7 +6784,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Susanna Sansone</obo:IAO_0000117>
         <obo:IAO_0000119>GROUP: OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">organization</rdfs:label>
     </owl:Class>
     
@@ -6744,7 +6801,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)</obo:IAO_0000119>
         <obo:OBI_0001847>study protocol</obo:OBI_0001847>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">protocol</rdfs:label>
     </owl:Class>
     
@@ -6772,7 +6829,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
         <obo:IAO_0000119>Plans and Planned Processes Branch</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">planning</rdfs:label>
     </owl:Class>
     
@@ -6789,7 +6846,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
         <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">magnify function</rdfs:label>
     </owl:Class>
     
@@ -6815,7 +6872,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">An image acquisition function is a function to acquire an image of a material</obo:IAO_0000115>
         <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">image acquisition function</rdfs:label>
     </owl:Class>
     
@@ -6848,7 +6905,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
         <obo:IAO_0000118>image acquisition device</obo:IAO_0000118>
         <obo:IAO_0000119>sep:00096</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>image creation device</rdfs:label>
     </owl:Class>
     
@@ -6865,7 +6922,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
         <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">solid support function</rdfs:label>
     </owl:Class>
     
@@ -6881,7 +6938,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">an objective specification to determine a specified type of information about an evaluated entity (the material entity bearing evaluant role)</obo:IAO_0000115>
         <obo:IAO_0000117>PPPB branch</obo:IAO_0000117>
         <obo:IAO_0000119>PPPB branch</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">assay objective</rdfs:label>
     </owl:Class>
     
@@ -6916,7 +6973,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON:Frank Gibson</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">measure function</rdfs:label>
     </owl:Class>
     
@@ -6937,7 +6994,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">artifact  creation objective</obo:IAO_0000118>
         <obo:IAO_0000119>GROUP: OBI PlanAndPlannedProcess Branch</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">material transformation objective</rdfs:label>
     </owl:Class>
     
@@ -6966,7 +7023,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115>Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process.</obo:IAO_0000115>
         <obo:IAO_0000117>GROUP:  Role Branch</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>manufacturer role</rdfs:label>
     </owl:Class>
     
@@ -6988,7 +7045,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115>a quality inheres_in some device and is concretization of some (device_setting_specification and is_about a quality of the device</obo:IAO_0000115>
         <obo:IAO_0000116>There is some question of whether &apos;device setting&apos; is really best modelled as a quality.  To be revisited after assay terms have been worked through. See https://github.com/obi-ontology/obi/issues/133</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Frank Gibson</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>device setting</rdfs:label>
     </owl:Class>
     
@@ -7040,7 +7097,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000118>specimen collection</obo:IAO_0000118>
         <obo:IAO_0000232>5/31/2012: This process is not necessarily an acquisition, as specimens may be collected from materials already in posession</obo:IAO_0000232>
         <obo:IAO_0000232>6/9/09: used at workshop</obo:IAO_0000232>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>specimen collection process</rdfs:label>
     </owl:Class>
     
@@ -7056,7 +7113,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000115>A objective specification to obtain a material entity for potential use as an input during an investigation.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>specimen collection objective</rdfs:label>
     </owl:Class>
     
@@ -7072,7 +7129,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000115>A material sample role is a specimen role borne by a material entity that is the output of a material sampling process.</obo:IAO_0000115>
         <obo:IAO_0000116>7/13/09: Note that this is a relational role: between the sample taken and the &apos;sampled&apos; material of which the sample is thought to be representative off.</obo:IAO_0000116>
         <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>material sample role</rdfs:label>
     </owl:Class>
     
@@ -7107,7 +7164,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000118>sample population</obo:IAO_0000118>
         <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
         <obo:OBI_0001847>sample</obo:OBI_0001847>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>material sample</rdfs:label>
     </owl:Class>
     
@@ -7140,7 +7197,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000115>A device in which a measure function inheres.</obo:IAO_0000115>
         <obo:IAO_0000117>GROUP:OBI Philly workshop</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>measurement device</rdfs:label>
     </owl:Class>
     
@@ -7175,7 +7232,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000111>manufacturer</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>A person or organization that has a manufacturer role</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>manufacturer</rdfs:label>
     </owl:Class>
     
@@ -7210,7 +7267,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000117>PERSON: Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000118>instrument</obo:IAO_0000118>
         <obo:IAO_0000119>OBI development call 2012-12-17.</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>device</rdfs:label>
     </owl:Class>
     
@@ -7238,7 +7295,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000115>A planned process that captures an image of an object.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000118>image acquisition</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>image creation</rdfs:label>
     </owl:Class>
     
@@ -7255,7 +7312,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000118 xml:lang="en">specimen ID</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
         <obo:OBI_0001886>Specimen ID</obo:OBI_0001886>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <dc:source>NIAID GSCID-BRC</dc:source>
         <rdfs:label xml:lang="en">specimen identifier</rdfs:label>
     </owl:Class>
@@ -7273,7 +7330,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000119 xml:lang="en">NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
         <obo:OBI_0001847>study title</obo:OBI_0001847>
         <obo:OBI_0001886 xml:lang="en">project title</obo:OBI_0001886>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <dc:source>NIAID GSCID-BRC</dc:source>
         <rdfs:label xml:lang="en">investigation title</rdfs:label>
     </owl:Class>
@@ -7335,7 +7392,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
         <obo:OBI_0001886>Comments</obo:OBI_0001886>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <dc:source>NIAID GSCID-BRC</dc:source>
         <rdfs:label xml:lang="en">comment on investigation</rdfs:label>
     </owl:Class>
@@ -7359,7 +7416,7 @@ OBI doesn&apos;t take position as to  when an organism starts or ends being an o
 This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117>GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
@@ -7395,7 +7452,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI Biomaterial Branch</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">specimen</rdfs:label>
     </owl:Class>
     
@@ -7460,7 +7517,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">data processing</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Branch editors</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">data transformation</rdfs:label>
     </owl:Class>
     
@@ -7477,7 +7534,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000116>Modified definition in 2013 Philly OBI workshop</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">James Malone</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">PERSON: James Malone</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">data transformation objective</rdfs:label>
     </owl:Class>
     
@@ -7499,7 +7556,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000115>A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Phillippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119>wikipedia</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>microscope</rdfs:label>
     </owl:Class>
     
@@ -7521,7 +7578,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000115>A microscope slide is a device usually made of glass which is used as a solid matrix for (biological) material deposited on its surface and which is compatible for use with a microscope instrument</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Phillippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119>OBI biomaterial branch</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label>microscope slide</rdfs:label>
     </owl:Class>
     
@@ -7546,7 +7603,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">experimental design</obo:IAO_0000118>
         <obo:IAO_0000232 xml:lang="en">rediscussed at length (MC/JF/BP). 12/9/08). The definition was clarified to differentiate it from protocol.</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">study design</rdfs:label>
     </owl:Class>
     
@@ -7557,7 +7614,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl"/>
         <oboInOwl:hasAlternativeId>PATO:0000072</oboInOwl:hasAlternativeId>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0000001</oboInOwl:id>
@@ -7577,7 +7633,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000133">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000140"/>
         <obo:IAO_0000115>A spatial quality inhering in a bearer by virtue of the bearer&apos;s placement which is defined by the angle between the bearer and an axis, or the angle between the bearer and another object.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl"/>
         <oboInOwl:hasAlternativeId>PATO:0000137</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>angular placement</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
@@ -7604,7 +7659,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115>A spatial quality inhering in a bearer by virtue of the bearer&apos;s spatial location relative to other objects in the vicinity.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl"/>
         <oboInOwl:hasAlternativeId>PATO:0001032</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>PATO:0001631</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>location</oboInOwl:hasExactSynonym>
@@ -7629,7 +7683,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000146">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115>A physical quality of the thermal energy of a system.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0000146</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
@@ -7650,7 +7703,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <obo:IAO_0000115>A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl"/>
         <oboInOwl:hasAlternativeId>PATO:0002079</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>Wikipedia:Physical_property</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>relational physical quality</oboInOwl:hasExactSynonym>
@@ -7673,7 +7725,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <obo:IAO_0000115>A quality which inheres in a continuant.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl"/>
         <oboInOwl:hasAlternativeId>PATO:0001237</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>PATO:0001238</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>snap:Quality</oboInOwl:hasDbXref>
@@ -7704,7 +7755,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001242">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115>A physical quality which is equal to the distance between repeating units of a wave pattern.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl"/>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PATO:0001242</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
@@ -7725,7 +7775,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002497">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000133"/>
         <obo:IAO_0000115>An orientation quality inhering in a bearer by virtue of the bearer having a position that is directed laterally.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
         <oboInOwl:creation_date>2013-10-10T05:16:45Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>laterally directed</oboInOwl:hasExactSynonym>
@@ -7748,7 +7797,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000133"/>
         <obo:IAO_0000115>An orientation quality inhering in a bearer by virtue of the bearer having a position that is directed along the longitudinal or anterior-posterior axis.</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-08-31/pato.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
         <oboInOwl:creation_date>2014-10-17T14:24:19Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
@@ -7765,13 +7813,52 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/STATO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000184"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">signal to noise ratio is a measurement datum comparing the amount of meaningful, useful or interesting data (the signal) to the amount of irrelevant or false data (the noise). Depending on the field and domain of application, different variables will be used to determinate a &apos;signal to noise ratio&apos;. In statistics, the definition of signal to noise ratio is the ratio of the mean of a measurement to its standard deviation. It thus corresponds to the inverse of the coefficient of variation</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">adapted from Wikipedia:
+http://en.wikipedia.org/wiki/Signal-to-noise_ratio#Alternative_definition
+last accessed: 2013-10-18</obo:IAO_0000119>
+        <obo:STATO_0000032 xml:lang="en">S/N</obo:STATO_0000032>
+        <obo:STATO_0000032 xml:lang="en">SNR</obo:STATO_0000032>
+        <obo:STATO_0000391 xml:lang="en">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.signaltonoise.html#scipy.stats.signaltonoise</obo:STATO_0000391>
+        <rdfs:label xml:lang="en">signal to noise ratio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000184">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A ratio is a data item which is formed with two numbers r and s is written r/s, where r is the numerator and s is the denominator. The ratio of r to s is equivalent to the quotient r/s. 
+</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">review formal definition as both numerator and denominator should be of the same type, not just some data item</obo:IAO_0000116>
+        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">adapted from Wolfram Alpha:
+https://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427efdcsig76g7</obo:IAO_0000119>
+        <rdfs:label>ratio</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the needed settings of a spectrometer used in vibrational spectroscopy.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">vibrational spectrometer configuration specification</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/39"/>
     </owl:Class>
     
 
@@ -7779,11 +7866,12 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">exposure time setting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000654"/>
+        <obo:IAO_0000112 xml:lang="en">The set of meassured configuration characteristics of a Raman spectrometer, like the operating temperature of a Raman spectrometer.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A device setting that represents the measured or set physical qualities which make up the configuration state of a Raman spectrometer at the time of a measurement (e.g. operating temperature, exitation wavelength, groove density, ...).</obo:IAO_0000115>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">Raman spectrometer configuration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/47"/>
     </owl:Class>
     
 
@@ -7792,10 +7880,11 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the preamplifier gain in CCD sensors.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">preamplifier gain setting</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">exposure time setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/40"/>
     </owl:Class>
     
 
@@ -7804,10 +7893,11 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the horizontal shift speed in CCD sensors.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">horizontal shift speed setting</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the preamplifier gain in CCD sensors.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">preamplifier gain setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/41"/>
     </owl:Class>
     
 
@@ -7816,10 +7906,11 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the vertical shift speed in CCD sensors.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the horizontal shift speed in CCD sensors.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">vertical shift speed setting</rdfs:label>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">horizontal shift speed setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/42"/>
     </owl:Class>
     
 
@@ -7828,10 +7919,11 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the operating temperature of a device.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">device temperature setting</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the vertical shift speed in CCD sensors.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">vertical shift speed setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/42"/>
     </owl:Class>
     
 
@@ -7839,6 +7931,19 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the operating temperature of a device.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">device temperature setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7849,20 +7954,9 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">The setting entered into a Raman microscope which specifies the desired number of measurements this Raman microscope has to perform to produce an usable Raman spectrum.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the number of iterations performed in a spectroscopic meassurement from which an aggregated assay output is generated.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">number of scans setting</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/VIBSO_0000007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the number of grooves in a diffraction grating device.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">groove density setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/44"/>
     </owl:Class>
     
 
@@ -7873,8 +7967,9 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the binning read mode of a device with a CCD sensor.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">CCD sensor binning read mode setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/46"/>
     </owl:Class>
     
 
@@ -7885,8 +7980,9 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115 xml:lang="en">A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">groove density</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000009"/>
@@ -7900,11 +7996,12 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000654"/>
-        <obo:IAO_0000112 xml:lang="en">The set of meassured configuration characteristics of a Raman spectrometer, like the operating temperature of a Raman spectrometer.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A device setting that represents the measured qualities which make up the configuration state of a Raman spectrometer at the time of a measurement (e.g. operating temperature, exitation wavelength, groove density, ...).</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">Raman spectrometer configuration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the number of grooves in a diffraction grating device.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">groove density setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45"/>
     </owl:Class>
     
 
@@ -7912,17 +8009,18 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001242"/>
-        <obo:IAO_0000115 xml:lang="en">A physical quality of the light source that is used used to excite a system to a higher energy state.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class needs to be defined in PATO or another more general ontology for such qualities.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">excitation wavelength</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115 xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">diffraction grating</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/49"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A physical quality of the light source that is used used to excite a system to a higher energy state.</owl:annotatedTarget>
-        <dc:source rdf:resource="http://doi.org/10.1351/goldbook"/>
+        <owl:annotatedTarget xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</owl:annotatedTarget>
+        <dc:source rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
     </owl:Axiom>
     
 
@@ -7930,18 +8028,15 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <obo:IAO_0000115 xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">diffraction grating</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A physical quality of the light source that is used used to excite a system to a higher energy state.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is not needed, as PATO:wavelength is sufficient, if this quality of a Raman device is really needed.</obo:IAO_0000116>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001242"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">deprecated_excitation wavelength</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/48"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000012"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</owl:annotatedTarget>
-        <dc:source rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
-    </owl:Axiom>
     
 
 
@@ -7951,8 +8046,27 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">excitation wavelength setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/48"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">example:RamanSpectrometerX rdf:type obo:CHMO_0001235 (Raman spectrometer) ;
+            obo:OBI_0000293 (has_specified_input) example:objective_magnification_factor_setting_for_RamanSpectrometerX .
+example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type obo:VIBSO_0000014 ;
+            obo:OBI_0002815 (has representation) &apos;100 x&apos; .</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the magnification factor of the objective collecting the scattered light.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:label xml:lang="en">objective magnification factor setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/24%20"/>
     </owl:Class>
     
 
@@ -8257,8 +8371,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000769">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <rdfs:label>Li-Cor</rdfs:label>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000111>Li-Cor</obo:IAO_0000111>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000770">
         <obo:IAO_0000111>Bruker Corporation</obo:IAO_0000111>
@@ -8285,18 +8399,18 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000846">
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <obo:IAO_0000115>Relating a legal person or organization to an organization in the case where the legal person or organization has a role as member of the organization.</obo:IAO_0000115>
         <obo:IAO_0000117>Person:Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000111>is member of organization</obo:IAO_0000111>
         <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000116>JZ: Discussed on May 7, 2012 OBI dev call. Bjoern points out that we need to allow for organizations to be members of organizations. And agreed by the other OBI developers. So, human and organization were specified in &apos;Domains&apos;. The textual definition was updated based on it.</obo:IAO_0000116>
-        <obo:IAO_0000232>2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000232>
         <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000232>2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000232>
         <obo:IAO_0000116>2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population</obo:IAO_0000116>
         <rdfs:label>is member of organization</rdfs:label>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000119>Person:Helen Parkinson</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001213">
         <rdfs:label>eBioscience</rdfs:label>
@@ -8308,8 +8422,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001224">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000119>WEB:http://www.cytopeia.com/@2011/04/11</obo:IAO_0000119>
-        <obo:IAO_0000111>Cytopeia</obo:IAO_0000111>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
+        <obo:IAO_0000111>Cytopeia</obo:IAO_0000111>
         <rdfs:label>Cytopeia</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001287">
@@ -8334,10 +8448,10 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000119>WEB:http://www.exbio.cz/@2011/04/11</obo:IAO_0000119>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001321">
-        <obo:IAO_0000119>WEB:http://www.bdbiosciences.com/@2011/04/11</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000111>Becton Dickinson (BD Biosciences)</obo:IAO_0000111>
+        <obo:IAO_0000119>WEB:http://www.bdbiosciences.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Becton Dickinson (BD Biosciences)</rdfs:label>
+        <obo:IAO_0000111>Becton Dickinson (BD Biosciences)</obo:IAO_0000111>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001338">
@@ -8358,8 +8472,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000111>Antigenix</obo:IAO_0000111>
         <rdfs:label>Antigenix</rdfs:label>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000119>WEB:http://www.antigenix.com/@2011/04/11</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001355">
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
@@ -8404,8 +8518,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000119>WEB:http://bentleyinstruments.com/@2011/04/11</obo:IAO_0000119>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001434">
-        <rdfs:label>Invitrogen</rdfs:label>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
+        <rdfs:label>Invitrogen</rdfs:label>
         <obo:IAO_0000119>WEB:http://www.invitrogen.com/@2011/04/11</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>Invitrogen</obo:IAO_0000111>
@@ -8425,13 +8539,13 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000119>WEB:http://www.cytobuoy.com/@2011/04/11</obo:IAO_0000119>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001688">
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <obo:IAO_0000115>Relating an organization to a legal person or organization.</obo:IAO_0000115>
-        <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has organization member</rdfs:label>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
+        <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has organization member</obo:IAO_0000111>
         <obo:IAO_0000116>See tracker:
 https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_id=177891&amp;atid=886178</obo:IAO_0000116>
-        <obo:IAO_0000111 xml:lang="en">has organization member</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001855">
@@ -8450,8 +8564,8 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001860">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>NanoString Technologies</rdfs:label>
         <obo:IAO_0000111>NanoString Technologies</obo:IAO_0000111>
+        <rdfs:label>NanoString Technologies</rdfs:label>
         <obo:IAO_0000115>An organization that supplies life science tools for translational research and molecular diagnostics based on a novel digital molecular barcoding technology. The NanoString platform can provide simple, multiplexed digital profiling of single molecules.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0002193">
@@ -8463,8 +8577,8 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
         <obo:IAO_0000115>An organization that is an American multinational, biotechnology product development company, created in 2006 by the merger of Thermo Electron and Fisher Scientific.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0002755">
-        <rdfs:label>Oxford Nanopore Technologies</rdfs:label>
         <obo:IAO_0000115>An organization that is developing and selling nanopore sequencing products and is based in the UK.</obo:IAO_0000115>
+        <rdfs:label>Oxford Nanopore Technologies</rdfs:label>
         <obo:IAO_0000117>James A. Overton</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Oxford_Nanopore_Technologies</obo:IAO_0000119>
