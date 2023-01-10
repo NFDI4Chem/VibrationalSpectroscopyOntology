@@ -10,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/vibso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2022-10-19/vibso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-10/vibso-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:description>_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Vibrational Spectroscopy Ontology</terms:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-19</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -49,9 +49,21 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creator -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
@@ -152,19 +164,14 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0001242 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001242"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the needed settings of a spectrometer used in vibrational spectroscopy.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">vibrational spectrometer configuration specification</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/39"/>
     </owl:Class>
     
 
@@ -172,11 +179,12 @@
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">exposure time setting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000654"/>
+        <obo:IAO_0000112 xml:lang="en">The set of meassured configuration characteristics of a Raman spectrometer, like the operating temperature of a Raman spectrometer.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A device setting that represents the measured or set physical qualities which make up the configuration state of a Raman spectrometer at the time of a measurement (e.g. operating temperature, exitation wavelength, groove density, ...).</obo:IAO_0000115>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">Raman spectrometer configuration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/47"/>
     </owl:Class>
     
 
@@ -185,10 +193,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the preamplifier gain in CCD sensors.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">preamplifier gain setting</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">exposure time setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/40"/>
     </owl:Class>
     
 
@@ -197,10 +206,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the horizontal shift speed in CCD sensors.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">horizontal shift speed setting</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the preamplifier gain in CCD sensors.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">preamplifier gain setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/41"/>
     </owl:Class>
     
 
@@ -209,10 +219,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the vertical shift speed in CCD sensors.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the horizontal shift speed in CCD sensors.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">vertical shift speed setting</rdfs:label>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">horizontal shift speed setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/42"/>
     </owl:Class>
     
 
@@ -221,10 +232,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the operating temperature of a device.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">device temperature setting</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the vertical shift speed in CCD sensors.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">vertical shift speed setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/42"/>
     </owl:Class>
     
 
@@ -232,6 +244,19 @@
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the operating temperature of a device.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">device temperature setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -242,20 +267,9 @@
         <obo:IAO_0000112 xml:lang="en">The setting entered into a Raman microscope which specifies the desired number of measurements this Raman microscope has to perform to produce an usable Raman spectrum.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the number of iterations performed in a spectroscopic meassurement from which an aggregated assay output is generated.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">number of scans setting</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/VIBSO_0000007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the number of grooves in a diffraction grating device.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">groove density setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/44"/>
     </owl:Class>
     
 
@@ -266,8 +280,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the binning read mode of a device with a CCD sensor.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">CCD sensor binning read mode setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/46"/>
     </owl:Class>
     
 
@@ -278,8 +293,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115 xml:lang="en">A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">groove density</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000009"/>
@@ -293,11 +309,12 @@
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000654"/>
-        <obo:IAO_0000112 xml:lang="en">The set of meassured configuration characteristics of a Raman spectrometer, like the operating temperature of a Raman spectrometer.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A device setting that represents the measured qualities which make up the configuration state of a Raman spectrometer at the time of a measurement (e.g. operating temperature, exitation wavelength, groove density, ...).</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">Raman spectrometer configuration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the number of grooves in a diffraction grating device.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">groove density setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45"/>
     </owl:Class>
     
 
@@ -305,17 +322,18 @@
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001242"/>
-        <obo:IAO_0000115 xml:lang="en">A physical quality of the light source that is used used to excite a system to a higher energy state.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class needs to be defined in PATO or another more general ontology for such qualities.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">excitation wavelength</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115 xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">diffraction grating</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/49"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A physical quality of the light source that is used used to excite a system to a higher energy state.</owl:annotatedTarget>
-        <dc:source rdf:resource="http://doi.org/10.1351/goldbook"/>
+        <owl:annotatedTarget xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</owl:annotatedTarget>
+        <dc:source rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
     </owl:Axiom>
     
 
@@ -323,18 +341,15 @@
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <obo:IAO_0000115 xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">diffraction grating</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A physical quality of the light source that is used used to excite a system to a higher energy state.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is not needed, as PATO:wavelength is sufficient, if this quality of a Raman device is really needed.</obo:IAO_0000116>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001242"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">deprecated_excitation wavelength</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/48"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000012"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</owl:annotatedTarget>
-        <dc:source rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
-    </owl:Axiom>
     
 
 
@@ -344,8 +359,27 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">excitation wavelength setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/48"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">example:RamanSpectrometerX rdf:type obo:CHMO_0001235 (Raman spectrometer) ;
+            obo:OBI_0000293 (has_specified_input) example:objective_magnification_factor_setting_for_RamanSpectrometerX .
+example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type obo:VIBSO_0000014 ;
+            obo:OBI_0002815 (has representation) &apos;100 x&apos; .</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the magnification factor of the objective collecting the scattered light.</obo:IAO_0000115>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:label xml:lang="en">objective magnification factor setting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/24%20"/>
     </owl:Class>
 </rdf:RDF>
 

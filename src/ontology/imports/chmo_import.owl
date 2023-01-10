@@ -11,8 +11,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/imports/chmo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-09/imports/chmo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-09</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-10/imports/chmo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-10</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
     </owl:Ontology>
     
@@ -1340,7 +1340,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000680"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, from an ultraviolet laser, by a sample is detected.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1021/ja044708f</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1021/ja044708f</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1824,7 +1824,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001767"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where the Raman scattering of monochromatic light, usually from a laser, by a sample (e.g. a biological cell) constrained using optical tweezers is detected.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1039/b815253e</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1039/b815253e</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2481,7 +2481,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002710"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Spectroscopy where the sample absorbs radiation from the infrared region (0.78–1000 \μm) over two frequency axes. Cross peaks in the spectrum encode the couplings and orientation between vibrations.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FIX:0001069</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIX:0001069</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
