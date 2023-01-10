@@ -23,9 +23,10 @@ VIBSO's ontology IRI (http://purl.obolibrary.org/obo/vibso.owl) does currently n
 Edits to the ontology can be made in two places:
 
 1. [src/ontology/vibso-edit.owl](src/ontology/vibso-edit.owl).
-2. [src/templates/vibso_terms.tsv](src/templates/vibso_terms.tsv).
+2. [src/templates/vibso_terms.tsv](src/templates/vibso_classes.tsv).
+3. [src/templates/vibso_terms.tsv](src/templates/vibso_object_properties.tsv).
 
-The `vibso_terms.tsv` is a [ROBOT template](http://robot.obolibrary.org/template) in which all of VIBSO's classes and relations are defined and which is being imported as a component into the main editor file `vibso-edit.owl`. We chose this tabular based ontology development approach in order to foster the contribution of domain experts, who are usually less experienced with the OWL format and ontology editors such as [Protégé](https://protege.stanford.edu/).
+The `vibso_classes.tsv` and `vibso_object_properties.tsv` are [ROBOT templates](http://robot.obolibrary.org/template) in which all of VIBSO's classes and relations are defined and which are being imported as a components into the main editor file `vibso-edit.owl`. We chose this tabular based ontology development approach in order to foster the contribution of domain experts, who are usually less experienced with the OWL format and ontology editors such as [Protégé](https://protege.stanford.edu/).
 More on this can be found in the documention of VIBSO's [development approach](https://nfdi4chem.github.io/VibrationalSpectroscopyOntology/development_approach/).
 
 ## Contributing
