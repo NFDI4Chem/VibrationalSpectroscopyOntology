@@ -1,0 +1,1 @@
+These two folders where shared by the [National Enterprise for nanoScience and nanoTechnology](https://www.laboratorionest.it/) and used to develop the first draft of VIBSO. 

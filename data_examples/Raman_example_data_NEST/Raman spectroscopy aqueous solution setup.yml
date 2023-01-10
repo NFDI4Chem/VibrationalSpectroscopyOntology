@@ -1,0 +1,56 @@
+method: pre-resonant Raman spectroscopy in aqueous solution
+experimental setup / configuration:
+    excitation_source:
+        excitation wavelength:        647.1 nm
+        Beam Diameter at 1/e points:  1.8 mm
+        Beam Divergence, full angle:  0.65 mrad
+        Polarization:                 ">100:1, vertical"
+        Mode Spacing, with prism:     133 MHz
+                      without prism:  136 MHz
+        Cavity Length, with prism:    1.17 m
+                       without prism: 1.10 m
+        Noise, current mode:          0.40% rms
+               power mode:            0.30% rm
+        Stability power mode, 8 hr period:             ±0.5%
+                  power mode, 2 hr period:             ±0.3%
+                  current mode, 8 hr period:           ±1.0%
+        Beam Pointing Stability, position offset:      <0.5 µm/°C
+                                 angular offset:       <5.0 µrad/°C
+        Temperature Range for mode-hop free operation: <8°C
+        Frequency Jitter, with J-Lok:                  <3 MHz
+                          without J-Lok:               <15 MHz
+        Frequency Drift:              <30 MHz/°C
+        Conversion Efficiency:        ">50%"
+    spectrometer:
+        groove density: 1200 mm^-1
+        blaze angle: ...
+        "usage mode": "fixed grating"
+        optimum/blaze/center wavelength: 500 nm
+        bandwidth (as WL): 60 nm
+        bandwidth (as WN): 1000 cm^-1
+    detector:
+        type: CCD, multichannel
+        dimensions: 256 × 1024 pixel
+        temperature: -130°C
+    sample holder:
+        sample container: precision cuvette
+        material: quartz, darkened
+        sealing: ParaFilm
+        evaporation protection: octanole
+        inner dimensions: 1.5 × 1.5 mm
+        outer dimensions: 13 × 13 mm
+        sample volume: 15 µl
+    optical path:
+        "irradiation mode": "doubled (concave mirror behind sample holder)"
+        entrance slit width: 130 µm
+        propagation means: optical fiber
+        other optical components:
+            for incident light: flat mirrors, convergent lenses, excitation filter
+            for scattered light: photo objective, long-pass filter with cutoff at 650 nm
+    postprocessing:
+        "signal depth": 16 bit
+        acquisition software: Win-Spec 32
+        acquisition band: 210 ÷ 1960 cm^−1
+        incident power: 200 ÷ 300 mW
+        integration time: 1 min
+        
