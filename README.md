@@ -10,7 +10,7 @@ The Vibrational Spectroscopy Ontology (VIBSO) is used to represent information r
 
 ## Versions
 
-The OWL & OBO files on the top level of this repository are the official release artifacts of the ontology. To find out more about the standardization approach behind these (e.g. why they are so many), see [this section](https://oboacademy.github.io/obook/reference/release-artefacts/) in the OBOOK (also a great place to learn more about OBO based ontology development and curation).
+The OWL & OBO files on the top level of this repository are the official release artifacts of the ontology. To find out more about the standardization approach behind these (e.g. why they are so many), see [this section](https://oboacademy.github.io/obook/reference/release-artefacts/) in the OBOOK (also a great place to learn more about OBO based ontology development and curation). blah
 
 ### Stable release version
 
