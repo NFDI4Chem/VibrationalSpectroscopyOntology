@@ -23,7 +23,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-02-02/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-02-03/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts."^^xsd:string)
 
 Declaration(Class(obo:CHMO_0000823))
@@ -49,6 +49,8 @@ Declaration(Class(obo:VIBSO_0000013))
 Declaration(Class(obo:VIBSO_0000014))
 Declaration(Class(obo:VIBSO_0000015))
 Declaration(Class(obo:VIBSO_0000016))
+Declaration(Class(obo:VIBSO_0000017))
+Declaration(Class(obo:VIBSO_0000018))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000115))
@@ -82,12 +84,13 @@ AnnotationAssertion(rdfs:label obo:VIBSO_0000001 "Raman spectrometer configurati
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000001 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/47>)
 SubClassOf(obo:VIBSO_0000001 obo:OBI_0000654)
 
-# Class: obo:VIBSO_0000002 (exposure time setting)
+# Class: obo:VIBSO_0000002 (integration time setting)
 
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000002 "A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor."@en)
+AnnotationAssertion(Annotation(dc:source <https://www.oceaninsight.com/knowledge-hub/glossary/#i>) obo:IAO_0000115 obo:VIBSO_0000002 "A setting datum that specifies the length of time that a photo detector is allowed to collect photons before passing the accumulated charge to the A/D converter for processing. The minimum integration time is the shortest integration time the device supports and is dependent on how fast the detector can read out all of the pixel information. Integration time should not be confused with data transfer speed."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000002 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000002 "integration period setting"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000002 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(rdfs:label obo:VIBSO_0000002 "exposure time setting"@en)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000002 "integration time setting"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000002 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/40>)
 SubClassOf(obo:VIBSO_0000002 obo:IAO_0000140)
 
