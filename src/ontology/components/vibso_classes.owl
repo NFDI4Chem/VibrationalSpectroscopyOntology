@@ -152,8 +152,9 @@ SubClassOf(obo:VIBSO_0000008 obo:IAO_0000140)
 
 # Class: obo:VIBSO_0000009 (groove density)
 
-AnnotationAssertion(Annotation(dc:source Wikipedia:Diffraction_grating) obo:IAO_0000115 obo:VIBSO_0000009 "A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000009 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(Annotation(dc:source Wikipedia:Diffraction_grating) Annotation(dc:source <https://www.meetoptics.com/academy/groove-density#:~:text=The%20groove%20density%20(or%20groove,of%20the%20operational%20wavelength%20range>) obo:IAO_0000115 obo:VIBSO_0000009 "A physical quality inhering in a diffraction grating device by virtue of the device's function to diffract light. This quality specifically depends on the number of grooves per area of the grating device and is usually expressed in grooves per millimeter."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000009 "temp class until NTR in PATO has been accepted and merged (https://github.com/pato-ontology/pato/issues/541)"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000009 "groove frequency"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000009 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000009 "groove density"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000009 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45>)
