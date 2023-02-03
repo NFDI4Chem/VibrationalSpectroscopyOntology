@@ -236,5 +236,15 @@ AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000016 <https://github.com/NFDI4Chem
 SubClassOf(obo:VIBSO_0000016 obo:IAO_0000027)
 SubClassOf(obo:VIBSO_0000016 ObjectSomeValuesFrom(obo:BFO_0000050 obo:CHMO_0000823))
 
+# Class: obo:VIBSO_0000017 (total integration time setting)
+
+AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000017 "1 min"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000017 "A setting datum that specifies the total integration time of a spectroscopy assay, by being the product of the integration time setting and the number of scans setting."@en)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000017 <http://orcid.org/0000-0001-7694-5519>)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000017 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000017 "total integration time setting"@en)
+AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000017 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/30>)
+SubClassOf(obo:VIBSO_0000017 obo:IAO_0000140)
+
 
 )
