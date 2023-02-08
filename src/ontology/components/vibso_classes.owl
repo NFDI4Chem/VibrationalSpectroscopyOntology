@@ -128,16 +128,15 @@ AnnotationAssertion(rdfs:label obo:VIBSO_0000006 "device temperature setting"@en
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000006 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/43>)
 SubClassOf(obo:VIBSO_0000006 obo:IAO_0000140)
 
-# Class: obo:VIBSO_0000007 (number of scans setting)
+# Class: obo:VIBSO_0000007 (number of accumulations)
 
-AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000007 "The setting entered into a Raman microscope which specifies the desired number of measurements this Raman microscope has to perform to produce an usable Raman spectrum."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000007 "A setting datum that specifies the number of iterations performed in a spectroscopic meassurement from which an aggregated assay output is generated."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000007 "This class should better be defined in a more general device ontology."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000007 "A setting datum that specifies the desired number of measurements a spectrometer has to perform to produce an usable spectrum"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000007 "This class might better be defined in a more general device ontology."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000007 "number of acquisitions"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000007 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(rdfs:label obo:VIBSO_0000007 "number of scans setting"@en)
-AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000007 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/44>)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000007 "number of accumulations"@en)
+AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000007 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/30>)
 SubClassOf(obo:VIBSO_0000007 obo:IAO_0000140)
-SubClassOf(obo:VIBSO_0000007 ObjectSomeValuesFrom(obo:BFO_0000050 obo:VIBSO_0000000))
 
 # Class: obo:VIBSO_0000008 (CCD sensor binning read mode setting)
 
