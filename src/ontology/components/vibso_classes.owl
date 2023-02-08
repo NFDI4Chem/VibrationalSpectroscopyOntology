@@ -130,7 +130,7 @@ SubClassOf(obo:VIBSO_0000006 obo:IAO_0000140)
 
 # Class: obo:VIBSO_0000007 (number of accumulations)
 
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000007 "A setting datum that specifies the desired number of measurements a spectrometer has to perform to produce an usable spectrum"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000007 "A setting datum that specifies the desired number of measurements a spectrometer has to perform to produce an usable spectrum."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000007 "This class might better be defined in a more general device ontology."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000007 "number of acquisitions"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000007 <http://orcid.org/0000-0002-1595-3213>)
