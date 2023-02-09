@@ -23,7 +23,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-02-08/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-02-09/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts."^^xsd:string)
 
 Declaration(Class(obo:CHMO_0000823))
@@ -130,7 +130,7 @@ SubClassOf(obo:VIBSO_0000006 obo:IAO_0000140)
 
 # Class: obo:VIBSO_0000007 (number of accumulations)
 
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000007 "A setting datum that specifies the desired number of measurements a spectrometer has to perform to produce an usable spectrum."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000007 "A setting datum that specifies the desired number of measurements a spectrometer has to perform on the same location, without position change to produce an usable spectrum. This setting datum is relevant to improve the signal to noise ratio."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000007 "This class might better be defined in a more general device ontology."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000007 "number of acquisitions"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000007 <http://orcid.org/0000-0002-1595-3213>)
