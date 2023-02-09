@@ -23,9 +23,11 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-01-09/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-02-09/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts."^^xsd:string)
 
+Declaration(Class(obo:CHMO_0000823))
+Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000140))
 Declaration(Class(obo:OBI_0000654))
 Declaration(Class(obo:OBI_0000968))
@@ -45,10 +47,13 @@ Declaration(Class(obo:VIBSO_0000011))
 Declaration(Class(obo:VIBSO_0000012))
 Declaration(Class(obo:VIBSO_0000013))
 Declaration(Class(obo:VIBSO_0000014))
+Declaration(Class(obo:VIBSO_0000015))
+Declaration(Class(obo:VIBSO_0000016))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000115))
 Declaration(AnnotationProperty(obo:IAO_0000116))
+Declaration(AnnotationProperty(obo:IAO_0000118))
 Declaration(AnnotationProperty(obo:IAO_0000231))
 Declaration(AnnotationProperty(obo:IAO_0100001))
 Declaration(AnnotationProperty(dc:contributor))
@@ -77,12 +82,13 @@ AnnotationAssertion(rdfs:label obo:VIBSO_0000001 "Raman spectrometer configurati
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000001 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/47>)
 SubClassOf(obo:VIBSO_0000001 obo:OBI_0000654)
 
-# Class: obo:VIBSO_0000002 (exposure time setting)
+# Class: obo:VIBSO_0000002 (integration time setting)
 
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000002 "A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor."@en)
+AnnotationAssertion(Annotation(dc:source <https://www.oceaninsight.com/knowledge-hub/glossary/#i>) obo:IAO_0000115 obo:VIBSO_0000002 "A setting datum that specifies the length of time that a photo detector is allowed to collect photons before passing the accumulated charge to the A/D converter for processing. The minimum integration time is the shortest integration time the device supports and is dependent on how fast the detector can read out all of the pixel information. Integration time should not be confused with data transfer speed."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000002 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000002 "integration period setting"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000002 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(rdfs:label obo:VIBSO_0000002 "exposure time setting"@en)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000002 "integration time setting"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000002 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/40>)
 SubClassOf(obo:VIBSO_0000002 obo:IAO_0000140)
 
@@ -122,16 +128,15 @@ AnnotationAssertion(rdfs:label obo:VIBSO_0000006 "device temperature setting"@en
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000006 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/43>)
 SubClassOf(obo:VIBSO_0000006 obo:IAO_0000140)
 
-# Class: obo:VIBSO_0000007 (number of scans setting)
+# Class: obo:VIBSO_0000007 (number of accumulations)
 
-AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000007 "The setting entered into a Raman microscope which specifies the desired number of measurements this Raman microscope has to perform to produce an usable Raman spectrum."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000007 "A setting datum that specifies the number of iterations performed in a spectroscopic meassurement from which an aggregated assay output is generated."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000007 "This class should better be defined in a more general device ontology."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000007 "A setting datum that specifies the desired number of measurements a spectrometer has to perform on the same location, without position change to produce an usable spectrum. This setting datum is relevant to improve the signal to noise ratio."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000007 "This class might better be defined in a more general device ontology."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000007 "number of acquisitions"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000007 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(rdfs:label obo:VIBSO_0000007 "number of scans setting"@en)
-AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000007 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/44>)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000007 "number of accumulations"@en)
+AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000007 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/30>)
 SubClassOf(obo:VIBSO_0000007 obo:IAO_0000140)
-SubClassOf(obo:VIBSO_0000007 ObjectSomeValuesFrom(obo:BFO_0000050 obo:VIBSO_0000000))
 
 # Class: obo:VIBSO_0000008 (CCD sensor binning read mode setting)
 
@@ -144,8 +149,9 @@ SubClassOf(obo:VIBSO_0000008 obo:IAO_0000140)
 
 # Class: obo:VIBSO_0000009 (groove density)
 
-AnnotationAssertion(Annotation(dc:source Wikipedia:Diffraction_grating) obo:IAO_0000115 obo:VIBSO_0000009 "A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000009 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(Annotation(dc:source Wikipedia:Diffraction_grating) Annotation(dc:source <https://www.meetoptics.com/academy/groove-density#:~:text=The%20groove%20density%20(or%20groove,of%20the%20operational%20wavelength%20range>) obo:IAO_0000115 obo:VIBSO_0000009 "A physical quality inhering in a diffraction grating device by virtue of the device's function to diffract light. This quality specifically depends on the number of grooves per area of the grating device and is usually expressed in grooves per millimeter."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000009 "temp class until NTR in PATO has been accepted and merged (https://github.com/pato-ontology/pato/issues/541)"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000009 "groove frequency"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000009 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000009 "groove density"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000009 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45>)
@@ -202,6 +208,32 @@ AnnotationAssertion(dc:contributor obo:VIBSO_0000014 <http://orcid.org/0000-0002
 AnnotationAssertion(rdfs:label obo:VIBSO_0000014 "objective magnification factor setting"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000014 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/24%20>)
 SubClassOf(obo:VIBSO_0000014 obo:IAO_0000140)
+
+# Class: obo:VIBSO_0000015 (spectral window range maximum)
+
+AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000015 "210 cm^-1"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000015 "A data item that is the part of a Raman spectrum which represents the maximum wavenumber included in the spectrum and which is calculated from the windows size and window center."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000015 "It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000015 "acquisition band maximum"@en)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000015 <http://orcid.org/0000-0001-7694-5519>)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000015 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000015 "spectral window range maximum"@en)
+AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000015 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/31>)
+SubClassOf(obo:VIBSO_0000015 obo:IAO_0000027)
+SubClassOf(obo:VIBSO_0000015 ObjectSomeValuesFrom(obo:BFO_0000050 obo:CHMO_0000823))
+
+# Class: obo:VIBSO_0000016 (spectral window range minimum)
+
+AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000016 "1960 cm^-1"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000016 "A data item that is the part of a Raman spectrum which represents the minimum wavenumber included in the spectrum and which is calculated from the windows size and window center."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000016 "It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000016 "acquisition band minimum"@en)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000016 <http://orcid.org/0000-0001-7694-5519>)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000016 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000016 "spectral window range minimum"@en)
+AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000016 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/31>)
+SubClassOf(obo:VIBSO_0000016 obo:IAO_0000027)
+SubClassOf(obo:VIBSO_0000016 ObjectSomeValuesFrom(obo:BFO_0000050 obo:CHMO_0000823))
 
 
 )
