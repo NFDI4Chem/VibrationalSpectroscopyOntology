@@ -29,7 +29,7 @@ As previously mentioned, VIBSO's scope is the semantic description of vibrationa
 
 * Find me all Raman spectra of wolfram wires on a silicium substrate covering the range 600-1800 cm^-1.
 
-* Find me which is a safe range of incoming laser powers to perform Raman experiments at wavelength Z on probe XY.
+* Find me which is a safe range of incoming laser powers to perform Raman experiments at wavelength Z on sample XY.
 
 * Find me a suitable solvent which is compatible with sample XY, i.e. which does not have any Raman peak or band between wavenumbers W1 and W2.
 
