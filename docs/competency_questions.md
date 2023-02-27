@@ -27,6 +27,6 @@ As previously mentioned, VIBSO's scope is the semantic description of vibrationa
 
 ### Questions addressing the full database
 
-* 
+* Find me all Raman spectra of wolfram wires on a silicium substrate covering the range 600-1800 cm^-1.
 
 This list represents only a first draft and needs to be thoroughly discussed with the domain experts and the NFDI4Chem community. 
