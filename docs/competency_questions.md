@@ -31,4 +31,6 @@ As previously mentioned, VIBSO's scope is the semantic description of vibrationa
 
 * Find me which is a safe range of incoming laser powers to perform Raman experiments at wavelength Z on probe XY.
 
+* Find me a suitable solvent which is compatible with sample XY, i.e. which does not have any Raman peak or band between wavenumbers W1 and W2.
+
 This list represents only a first draft and needs to be thoroughly discussed with the domain experts and the NFDI4Chem community. 
