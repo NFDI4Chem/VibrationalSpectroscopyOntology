@@ -28,6 +28,7 @@ release_artefacts:
 - full
 - base
 robot_java_args: '-Xmx16G'  # max RAM to be used by Robot in ODK
+use_templates: TRUE
 
 
 ## VIBSO specific Settings ##
