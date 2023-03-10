@@ -17,7 +17,7 @@ These are the current imports in VIBSO
 | Import | URL | Type |
 | ------ | --- | ---- |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | mirror |
-| ro | http://purl.obolibrary.org/obo/ro/ro-base.owl | None |
+| ro | http://purl.obolibrary.org/obo/ro.owl | None |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
 | iao | http://purl.obolibrary.org/obo/iao.owl | None |
 | chmo | http://purl.obolibrary.org/obo/chmo.owl | custom |

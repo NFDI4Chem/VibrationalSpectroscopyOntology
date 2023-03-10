@@ -38,7 +38,8 @@ import_group:
   - id: bfo
     module_type: mirror
   - id: ro
-    mirror_from: http://purl.obolibrary.org/obo/ro/ro-base.owl
+    #mirror_from: http://purl.obolibrary.org/obo/ro/ro-base.owl
+    use_base: true
     slme_individuals: exclude
   - id: omo
     module_type: mirror
