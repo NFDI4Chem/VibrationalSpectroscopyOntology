@@ -1,30 +1,15 @@
-Prefix(:=<http://www.w3.org/2002/07/owl#>)
-Prefix(cc:=<http://creativecommons.org/ns#>)
-Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
-Prefix(DOI:=<http://doi.org/>)
-Prefix(ROR:=<http://ror.org/>)
-Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(:=<http://purl.obolibrary.org/obo/vibso/components/vibso_object_properties.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
-Prefix(prov:=<http://www.w3.org/ns/prov#>)
-Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
-Prefix(void:=<http://rdfs.org/ns/void#>)
-Prefix(ORCID:=<http://orcid.org/>)
-Prefix(vibso:=<http://purl.obolibrary.org/obo/VIBSO_>)
-Prefix(schema:=<http://schema.org/>)
-Prefix(dcterms:=<http://purl.org/dc/terms/>)
-Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
-Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_object_properties.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-02-02/components/vibso_object_properties.owl>
-Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_object_properties.tsv', which is edited manually by domain experts."^^xsd:string)
+<http://purl.obolibrary.org/obo/vibso/releases/2023-03-13/components/vibso_object_properties.owl>
+Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_object_properties.tsv', which is edited manually by domain experts.")
+
 
 
 )

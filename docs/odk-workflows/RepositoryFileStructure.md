@@ -10,20 +10,21 @@ The main kinds of files in the repository:
 Release file are the file that are considered part of the official ontology release and to be used by the community. A detailed description of the release artefacts can be found [here](https://github.com/INCATools/ontology-development-kit/blob/master/docs/ReleaseArtefacts.md).
 
 ## Imports
-Imports are subsets of external ontologies that contain terms and axioms you would like to re-use in your ontology. These are considered "external", like dependencies in software development, and are not included in your "base" product, which is the [release artefact](https://oboacademy.github.io/obook/reference/release-artefacts/) which contains only those axioms that you personally maintain.
+Imports are subsets of external ontologies that contain terms and axioms you would like to re-use in your ontology. These are considered "external", like dependencies in software development, and are not included in your "base" product, which is the [release artefact](https://github.com/INCATools/ontology-development-kit/blob/master/docs/ReleaseArtefacts.md) which contains only those axioms that you personally maintain.
 
 These are the current imports in VIBSO
 
 | Import | URL | Type |
 | ------ | --- | ---- |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | mirror |
-| ro | http://purl.obolibrary.org/obo/ro.owl | slme |
+| ro | http://purl.obolibrary.org/obo/ro.owl | None |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
-| iao | http://purl.obolibrary.org/obo/iao.owl | slme |
+| iao | http://purl.obolibrary.org/obo/iao.owl | None |
 | chmo | http://purl.obolibrary.org/obo/chmo.owl | custom |
-| pato | http://purl.obolibrary.org/obo/pato.owl | slme |
-| txpo | http://purl.obolibrary.org/obo/txpo.owl | slme |
-| obi | http://purl.obolibrary.org/obo/obi.owl | slme |
+| pato | http://purl.obolibrary.org/obo/pato.owl | None |
+| txpo | http://purl.obolibrary.org/obo/txpo.owl | None |
+| obi | http://purl.obolibrary.org/obo/obi.owl | custom |
+| stato | http://purl.obolibrary.org/obo/stato.owl | None |
 
 ## Components
 Components, in contrast to imports, are considered full members of the ontology. This means that any axiom in a component is also included in the ontology base - which means it is considered _native_ to the ontology. While this sounds complicated, consider this: conceptually, no component should be part of more than one ontology. If that seems to be the case, we are most likely talking about an import. Components are often not needed for ontologies, but there are some use cases:
@@ -36,4 +37,5 @@ These are the components in VIBSO
 
 | Filename | URL |
 | -------- | --- |
-| vibso_terms.owl | None |
+| vibso_classes.owl | None |
+| vibso_object_properties.owl | None |

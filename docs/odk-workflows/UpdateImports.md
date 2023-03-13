@@ -14,16 +14,16 @@ Importing a new term is split into two sub-phases:
 ### Declaring terms to be imported
 There are three ways to declare terms that are to be imported from an external ontology. Choose the appropriate one for your particular scenario (all three can be used in parallel if need be):
 
-1. Protege-based declaration
+1. Protégé-based declaration
 2. Using term files
 3. Using the custom import template
 
-#### Protege-based declaration
+#### Protégé-based declaration
 
 This workflow is to be avoided, but may be appropriate if the editor _does not have access to the ODK docker container_. 
 This approach also applies to ontologies that use base module import approach.
 
-1. Open your ontology (edit file) in Protege (5.5+).
+1. Open your ontology (edit file) in Protégé (5.5+).
 1. Select 'owl:Thing'
 1. Add a new class as usual.
 1. Paste the _full iri_ in the 'Name:' field, for example, http://purl.obolibrary.org/obo/CHEBI_50906.
