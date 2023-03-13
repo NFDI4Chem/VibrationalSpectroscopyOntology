@@ -8,10 +8,12 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-10/imports/obi_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-10</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-03-13/imports/obi_import.owl"/>
+        <owl:versionInfo>2023-03-13</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
     </owl:Ontology>
     
@@ -25,6 +27,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://protege.stanford.edu/plugins/owl/protege#defaultLanguage -->
+
+    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
     
 
 
@@ -94,6 +102,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001847 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001847"/>
@@ -112,9 +126,80 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -178,8 +263,8 @@
             </rdf:Description>
         </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <obo:IAO_0000111>has_specified_input</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">has_specified_input</obo:IAO_0000111>
+        <obo:IAO_0000111>has_specified_input</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">see is_input_of example_of_usage</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">The inverse property of is_specified_input_of</obo:IAO_0000115>
@@ -220,8 +305,8 @@
             </rdf:Description>
         </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <obo:IAO_0000111>has_specified_output</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">has_specified_output</obo:IAO_0000111>
+        <obo:IAO_0000111>has_specified_output</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">The inverse property of is_specified_output_of</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
@@ -238,14 +323,9 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
-        <owl:equivalentProperty>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            </rdf:Description>
-        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <obo:IAO_0000111>is_specified_output_of</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">is_specified_output_of</obo:IAO_0000111>
+        <obo:IAO_0000111>is_specified_output_of</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
@@ -485,8 +565,8 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000111>planned process</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
+        <obo:IAO_0000111>planned process</obo:IAO_0000111>
         <obo:IAO_0000112>Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
@@ -495,8 +575,8 @@
 objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>branch derived</obo:IAO_0000119>
-        <obo:IAO_0000232>6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
         <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
+        <obo:IAO_0000232>6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
         <rdfs:label xml:lang="en">planned process</rdfs:label>
@@ -556,9 +636,9 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <obo:IAO_0000232>Could add specific objective specification</obo:IAO_0000232>
         <obo:IAO_0000232 xml:lang="en">Following OBI call November 2012,26th: it was decided there was no need for adding &quot;achieves objective of drawing conclusion&quot; as existing relations were providing equivalent ability. this note closes the issue and validates the class definition to be part of the OBI core
 editor = PRS</obo:IAO_0000232>
+        <obo:IAO_0000232>Could add specific objective specification</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <obo:OBI_0001847>study</obo:OBI_0001847>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
@@ -787,14 +867,14 @@ In regard to the statement that reagents are &apos;distinct&apos; from the speci
         <obo:IAO_0000112>liver section; a portion of a culture of cells; a nemotode or other animal once no longer a subject (generally killed); portion of blood from a patient.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation</obo:IAO_0000115>
-        <obo:IAO_0000116>22Jun09.  The definition includes whole organisms, and can include a human.  The link between specimen role and study subject role has been removed.  A specimen taken as part of a case study is not considered to be a population representative, while a specimen taken as representing a population, e.g. person taken from a cohort, blood specimen taken from an animal) would be considered a population representative and would also bear material sample role.</obo:IAO_0000116>
-        <obo:IAO_0000116>Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">blood taken from animal: animal continues in study, whereas blood has role specimen.
 something taken from study subject, leaves the study and becomes the specimen.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">parasite example
 - when parasite in people we study people, people are subjects and parasites are specimen
 - when parasite extracted, they become subject in the following study
 specimen can later be subject.</obo:IAO_0000116>
+        <obo:IAO_0000116>22Jun09.  The definition includes whole organisms, and can include a human.  The link between specimen role and study subject role has been removed.  A specimen taken as part of a case study is not considered to be a population representative, while a specimen taken as representing a population, e.g. person taken from a cohort, blood specimen taken from an animal) would be considered a population representative and would also bear material sample role.</obo:IAO_0000116>
+        <obo:IAO_0000116>Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
         <obo:IAO_0000117>GROUP:  Role Branch</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
@@ -1573,10 +1653,10 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">James Malone</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Richard Scheuermann</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Ryan Brinkman</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Tina Hernandez-Boussard</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">data analysis</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">data processing</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Branch editors</obo:IAO_0000119>
@@ -1688,287 +1768,287 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000462">
-        <obo:IAO_0000115>An organization which supplies technology, tools and protocols for use in high throughput applications</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000112>Affymetrix supplied microarray</obo:IAO_0000112>
         <obo:IAO_0000111>Affymetrix</obo:IAO_0000111>
+        <obo:IAO_0000112>Affymetrix supplied microarray</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>An organization which supplies technology, tools and protocols for use in high throughput applications</obo:IAO_0000115>
         <rdfs:label>Affymetrix</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000752">
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>Thermo</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <rdfs:label>Thermo</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000753">
+        <obo:IAO_0000111>Waters</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <rdfs:label>Waters</rdfs:label>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000111>Waters</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000754">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>BIO-RAD</rdfs:label>
         <obo:IAO_0000111>BIO-RAD</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>BIO-RAD</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000756">
-        <rdfs:label>Ambion</rdfs:label>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>Ambion</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>Ambion</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000757">
         <obo:IAO_0000111>Helicos</obo:IAO_0000111>
-        <rdfs:label>Helicos</rdfs:label>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>Helicos</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000758">
-        <rdfs:label>Roche</rdfs:label>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>Roche</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>Roche</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000759">
         <obo:IAO_0000111>Illumina</obo:IAO_0000111>
-        <rdfs:label>Illumina</rdfs:label>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>Illumina</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000765">
         <obo:IAO_0000111>Agilent</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>Agilent</rdfs:label>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>Agilent</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000769">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>Li-Cor</rdfs:label>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000111>Li-Cor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>Li-Cor</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000770">
         <obo:IAO_0000111>Bruker Corporation</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>Bruker Corporation</rdfs:label>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>Bruker Corporation</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000776">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>Applied Biosystems</rdfs:label>
         <obo:IAO_0000111>Applied Biosystems</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>Applied Biosystems</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000779">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>Bruker Daltonics</obo:IAO_0000111>
-        <rdfs:label>Bruker Daltonics</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>Bruker Daltonics</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000829">
         <obo:IAO_0000111>Sysmex Corporation, Kobe, Japan</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000119>WEB:http://www.sysmex.com/@2009/08/06</obo:IAO_0000119>
         <rdfs:label>Sysmex Corporation, Kobe, Japan</rdfs:label>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000846">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
-        <obo:IAO_0000115>Relating a legal person or organization to an organization in the case where the legal person or organization has a role as member of the organization.</obo:IAO_0000115>
         <obo:IAO_0000111>is member of organization</obo:IAO_0000111>
-        <obo:IAO_0000117>Person:Helen Parkinson</obo:IAO_0000117>
-        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000116>JZ: Discussed on May 7, 2012 OBI dev call. Bjoern points out that we need to allow for organizations to be members of organizations. And agreed by the other OBI developers. So, human and organization were specified in &apos;Domains&apos;. The textual definition was updated based on it.</obo:IAO_0000116>
-        <obo:IAO_0000232>2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000232>
-        <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
-        <obo:IAO_0000116>2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population</obo:IAO_0000116>
-        <rdfs:label>is member of organization</rdfs:label>
-        <obo:IAO_0000119>Person:Helen Parkinson</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>Relating a legal person or organization to an organization in the case where the legal person or organization has a role as member of the organization.</obo:IAO_0000115>
+        <obo:IAO_0000116>2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population</obo:IAO_0000116>
+        <obo:IAO_0000116>JZ: Discussed on May 7, 2012 OBI dev call. Bjoern points out that we need to allow for organizations to be members of organizations. And agreed by the other OBI developers. So, human and organization were specified in &apos;Domains&apos;. The textual definition was updated based on it.</obo:IAO_0000116>
+        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>Person:Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000119>Person:Helen Parkinson</obo:IAO_0000119>
+        <obo:IAO_0000232>2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000232>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <rdfs:label>is member of organization</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001213">
-        <rdfs:label>eBioscience</rdfs:label>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>eBioscience</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.ebioscience.com/@2011/04/11</obo:IAO_0000119>
+        <rdfs:label>eBioscience</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001224">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000119>WEB:http://www.cytopeia.com/@2011/04/11</obo:IAO_0000119>
         <obo:IAO_0000111>Cytopeia</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:http://www.cytopeia.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Cytopeia</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001287">
-        <obo:IAO_0000119>WEB:http://www.exalpha.com/@2011/04/11</obo:IAO_0000119>
+        <obo:IAO_0000111>Exalpha Biological</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
-        <obo:IAO_0000111>Exalpha Biological</obo:IAO_0000111>
+        <obo:IAO_0000119>WEB:http://www.exalpha.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Exalpha Biological</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001312">
-        <obo:IAO_0000119>WEB:http://www.apogeeflow.com/@2011/04/11</obo:IAO_0000119>
         <obo:IAO_0000111>Apogee Flow Systems</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>Apogee Flow Systems</rdfs:label>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:http://www.apogeeflow.com/@2011/04/11</obo:IAO_0000119>
+        <rdfs:label>Apogee Flow Systems</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001320">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>Exbio Antibodies</obo:IAO_0000111>
-        <rdfs:label>Exbio Antibodies</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.exbio.cz/@2011/04/11</obo:IAO_0000119>
+        <rdfs:label>Exbio Antibodies</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001321">
-        <obo:IAO_0000119>WEB:http://www.bdbiosciences.com/@2011/04/11</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>Becton Dickinson (BD Biosciences)</rdfs:label>
         <obo:IAO_0000111>Becton Dickinson (BD Biosciences)</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:http://www.bdbiosciences.com/@2011/04/11</obo:IAO_0000119>
+        <rdfs:label>Becton Dickinson (BD Biosciences)</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001338">
-        <rdfs:label>Dako Cytomation</rdfs:label>
-        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>Dako Cytomation</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.dakousa.com/@2011/04/11</obo:IAO_0000119>
+        <rdfs:label>Dako Cytomation</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001340">
-        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000111>Millipore</obo:IAO_0000111>
-        <obo:IAO_0000119>WEB:http://www.guavatechnologies.com/@2011/04/11</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:http://www.guavatechnologies.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Millipore</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001347">
         <obo:IAO_0000111>Antigenix</obo:IAO_0000111>
-        <rdfs:label>Antigenix</rdfs:label>
-        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.antigenix.com/@2011/04/11</obo:IAO_0000119>
+        <rdfs:label>Antigenix</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001355">
+        <obo:IAO_0000111>Partec</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.partec.de/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Partec</rdfs:label>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000111>Partec</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001372">
         <obo:IAO_0000111>Beckman Coulter</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.beckmancoulter.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Beckman Coulter</rdfs:label>
-        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001375">
+        <obo:IAO_0000111>Advanced Instruments Inc. (AI Companies)</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.aicompanies.com/@2011/04/11</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000111>Advanced Instruments Inc. (AI Companies)</obo:IAO_0000111>
         <rdfs:label>Advanced Instruments Inc. (AI Companies)</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001424">
+        <obo:IAO_0000111>Miltenyi Biotec</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.miltenyibiotec.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Miltenyi Biotec</rdfs:label>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000111>Miltenyi Biotec</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001428">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000119>WEB:http://www.aeschemunex.com/@2011/04/11</obo:IAO_0000119>
         <obo:IAO_0000111>AES Chemunex</obo:IAO_0000111>
-        <rdfs:label>AES Chemunex</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:http://www.aeschemunex.com/@2011/04/11</obo:IAO_0000119>
+        <rdfs:label>AES Chemunex</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001431">
-        <rdfs:label>Bentley Instruments</rdfs:label>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>Bentley Instruments</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://bentleyinstruments.com/@2011/04/11</obo:IAO_0000119>
+        <rdfs:label>Bentley Instruments</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001434">
-        <rdfs:label>Invitrogen</rdfs:label>
+        <obo:IAO_0000111>Invitrogen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.invitrogen.com/@2011/04/11</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000111>Invitrogen</obo:IAO_0000111>
+        <rdfs:label>Invitrogen</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001443">
         <obo:IAO_0000111>Luminex</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>Luminex</rdfs:label>
-        <obo:IAO_0000119>WEB:http://www.luminexcorp.com/@2011/04/11</obo:IAO_0000119>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:http://www.luminexcorp.com/@2011/04/11</obo:IAO_0000119>
+        <rdfs:label>Luminex</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001458">
-        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000111>CytoBuoy</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>CytoBuoy</rdfs:label>
+        <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.cytobuoy.com/@2011/04/11</obo:IAO_0000119>
+        <rdfs:label>CytoBuoy</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001688">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
-        <obo:IAO_0000115>Relating an organization to a legal person or organization.</obo:IAO_0000115>
-        <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">has organization member</rdfs:label>
         <obo:IAO_0000111 xml:lang="en">has organization member</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>Relating an organization to a legal person or organization.</obo:IAO_0000115>
         <obo:IAO_0000116>See tracker:
 https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_id=177891&amp;atid=886178</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <rdfs:label xml:lang="en">has organization member</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001855">
-        <obo:IAO_0000115>An organization that focuses on manufacturing target enrichment probe pools for DNA sequencing.</obo:IAO_0000115>
-        <rdfs:label>Nimblegen</rdfs:label>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000111>Nimblegen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>An organization that focuses on manufacturing target enrichment probe pools for DNA sequencing.</obo:IAO_0000115>
         <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
+        <rdfs:label>Nimblegen</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001856">
+        <obo:IAO_0000111>Pacific Biosciences</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>An organization that supplies tools for studying the synthesis and regulation of DNA, RNA and protein. It developed a powerful technology platform called single molecule real-time (SMRT) technology which enables real-time analysis of biomolecules with single molecule resolution.</obo:IAO_0000115>
-        <obo:IAO_0000111>Pacific Biosciences</obo:IAO_0000111>
         <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
         <rdfs:label>Pacific Biosciences</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001860">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <rdfs:label>NanoString Technologies</rdfs:label>
         <obo:IAO_0000111>NanoString Technologies</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>An organization that supplies life science tools for translational research and molecular diagnostics based on a novel digital molecular barcoding technology. The NanoString platform can provide simple, multiplexed digital profiling of single molecules.</obo:IAO_0000115>
+        <rdfs:label>NanoString Technologies</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0002193">
-        <obo:IAO_0000117>Chris Stoeckert, Helena Ellis</obo:IAO_0000117>
-        <rdfs:label>Thermo Fisher Scientific</rdfs:label>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Thermo_Fisher_Scientific</obo:IAO_0000119>
         <obo:IAO_0000111>Thermo Fisher Scientific</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>An organization that is an American multinational, biotechnology product development company, created in 2006 by the merger of Thermo Electron and Fisher Scientific.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Stoeckert, Helena Ellis</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Thermo_Fisher_Scientific</obo:IAO_0000119>
+        <rdfs:label>Thermo Fisher Scientific</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0002755">
-        <rdfs:label>Oxford Nanopore Technologies</rdfs:label>
+        <obo:IAO_0000111>Oxford Nanopore Technologies</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>An organization that is developing and selling nanopore sequencing products and is based in the UK.</obo:IAO_0000115>
         <obo:IAO_0000117>James A. Overton</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Oxford_Nanopore_Technologies</obo:IAO_0000119>
-        <obo:IAO_0000111>Oxford Nanopore Technologies</obo:IAO_0000111>
+        <rdfs:label>Oxford Nanopore Technologies</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0002903">
-        <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <rdfs:label>BioGents</rdfs:label>
         <obo:IAO_0000111>BioGents</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>An organization that manufactures mosquito traps and other mosquito control products.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:https://eu.biogents.com/about-biogents/</obo:IAO_0000119>
+        <rdfs:label>BioGents</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
 

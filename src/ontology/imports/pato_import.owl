@@ -1,389 +1,192 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-10/imports/pato_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2022-12-15/pato.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-10</owl:versionInfo>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/pato#attribute_slim -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#attribute_slim">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/pato#relational_slim -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#relational_slim">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/pato#scalar_slim -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#scalar_slim">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/pato#value_slim -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#value_slim">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>PATO:0000072</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000001</oboInOwl:id>
-        <rdfs:label>quality</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0000133 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000133">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000140"/>
-        <obo:IAO_0000115>A spatial quality inhering in a bearer by virtue of the bearer&apos;s placement which is defined by the angle between the bearer and an axis, or the angle between the bearer and another object.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>PATO:0000137</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym>angular placement</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>amount of rotation</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>angle</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>angular magnitude</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>plane angle</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>PATO:0000133</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#relational_slim"/>
-        <rdfs:label>orientation</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000133"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A spatial quality inhering in a bearer by virtue of the bearer&apos;s placement which is defined by the angle between the bearer and an axis, or the angle between the bearer and another object.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:JE</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0000140 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000140">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
-        <obo:IAO_0000115>A spatial quality inhering in a bearer by virtue of the bearer&apos;s spatial location relative to other objects in the vicinity.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>PATO:0001032</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId>PATO:0001631</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym>location</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>placement</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>relational spatial quality</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000140</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <rdfs:label>position</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000140"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A spatial quality inhering in a bearer by virtue of the bearer&apos;s spatial location relative to other objects in the vicinity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0000146 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000146">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
-        <obo:IAO_0000115>A physical quality of the thermal energy of a system.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0000146</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
-        <rdfs:label>temperature</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000146"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A physical quality of the thermal energy of a system.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
-        <obo:IAO_0000115>A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>PATO:0002079</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>Wikipedia:Physical_property</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>relational physical quality</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001018</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <rdfs:label>physical quality</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <obo:IAO_0000115>A quality which inheres in a continuant.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>PATO:0001237</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId>PATO:0001238</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>snap:Quality</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>monadic quality of a continuant</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>multiply inhering quality of a physical entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>quality of a continuant</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>quality of a single physical entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>quality of an object</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>quality of continuant</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>monadic quality of an object</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>monadic quality of continuant</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001241</oboInOwl:id>
-        <rdfs:comment>Relational qualities are qualities that hold between multiple entities. Normal (monadic) qualities such as the shape of a eyeball exist purely as a quality of that eyeball. A relational quality such as sensitivity to light is a quality of that eyeball (and connecting nervous system) as it relates to incoming light waves/particles.</rdfs:comment>
-        <rdfs:label>physical object quality</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A quality which inheres in a continuant.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0001242 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001242">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
-        <obo:IAO_0000115>A physical quality which is equal to the distance between repeating units of a wave pattern.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0001242</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
-        <rdfs:label>wavelength</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001242"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A physical quality which is equal to the distance between repeating units of a wave pattern.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0002497 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002497">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000133"/>
-        <obo:IAO_0000115>An orientation quality inhering in a bearer by virtue of the bearer having a position that is directed laterally.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
-        <oboInOwl:creation_date>2013-10-10T05:16:45Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym>laterally directed</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0002497</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>lateral orientation</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002497"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An orientation quality inhering in a bearer by virtue of the bearer having a position that is directed laterally.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:WD</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0005024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000133"/>
-        <obo:IAO_0000115>An orientation quality inhering in a bearer by virtue of the bearer having a position that is directed along the longitudinal or anterior-posterior axis.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0003-3162-7490"/>
-        <oboInOwl:creation_date>2014-10-17T14:24:19Z</oboInOwl:creation_date>
-        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PATO:0005024</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
-        <rdfs:label>longitudinal orientation</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0005024"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An orientation quality inhering in a bearer by virtue of the bearer having a position that is directed along the longitudinal or anterior-posterior axis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:WD</oboInOwl:hasDbXref>
-    </owl:Axiom>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
-
+Prefix(:=<http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-03-13/imports/pato_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2023-02-17/pato.owl>)
+Annotation(owl:versionInfo "2023-03-13")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000133>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000146>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001242>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002497>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0005024>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000231>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000700>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/pato#attribute_slim>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/pato#relational_slim>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/pato#scalar_slim>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/pato#value_slim>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#default-namespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/pato#attribute_slim> (<http://purl.obolibrary.org/obo/pato#attribute_slim>)
+
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/pato#attribute_slim> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/pato#relational_slim> (<http://purl.obolibrary.org/obo/pato#relational_slim>)
+
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/pato#relational_slim> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/pato#scalar_slim> (<http://purl.obolibrary.org/obo/pato#scalar_slim>)
+
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/pato#scalar_slim> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/pato#value_slim> (<http://purl.obolibrary.org/obo/pato#value_slim>)
+
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/pato#value_slim> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000001> "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000001> "PATO:0000072")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000001> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000001> "PATO:0000001")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000001> "quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000133> (orientation)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:JE") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000133> "A spatial quality inhering in a bearer by virtue of the bearer's placement which is defined by the angle between the bearer and an axis, or the angle between the bearer and another object.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000133> "PATO:0000137")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000133> "angular placement")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000133> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000133> "amount of rotation")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000133> "angle")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000133> "angular magnitude")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000133> "plane angle")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000133> "PATO:0000133")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000133> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000133> <http://purl.obolibrary.org/obo/pato#relational_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000133> "orientation")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000133> <http://purl.obolibrary.org/obo/PATO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000140> (position)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000140> "A spatial quality inhering in a bearer by virtue of the bearer's spatial location relative to other objects in the vicinity.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000140> "PATO:0001032")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000140> "PATO:0001631")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000140> "location")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000140> "placement")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000140> "relational spatial quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000140> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000140> "PATO:0000140")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000140> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000140> "position")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000140> <http://purl.obolibrary.org/obo/PATO_0001018>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000146> (temperature)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000146> "A physical quality of the thermal energy of a system.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000146> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000146> "PATO:0000146")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000146> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000146> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000146> "temperature")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000146> <http://purl.obolibrary.org/obo/PATO_0001018>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001018> (physical quality)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001018> "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0001018> "PATO:0002079")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PATO_0001018> "Wikipedia:Physical_property")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001018> "relational physical quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0001018> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0001018> "PATO:0001018")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001018> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001018> "physical quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001018> <http://purl.obolibrary.org/obo/PATO_0001241>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001241> (physical object quality)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001241> "A quality which inheres in a continuant.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0001241> "PATO:0001237")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0001241> "PATO:0001238")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PATO_0001241> "snap:Quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001241> "monadic quality of a continuant")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001241> "multiply inhering quality of a physical entity")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001241> "quality of a continuant")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001241> "quality of a single physical entity")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001241> "quality of an object")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001241> "quality of continuant")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/PATO_0001241> "monadic quality of an object")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/PATO_0001241> "monadic quality of continuant")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0001241> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0001241> "PATO:0001241")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0001241> "Relational qualities are qualities that hold between multiple entities. Normal (monadic) qualities such as the shape of a eyeball exist purely as a quality of that eyeball. A relational quality such as sensitivity to light is a quality of that eyeball (and connecting nervous system) as it relates to incoming light waves/particles.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001241> "physical object quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001241> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001242> (wavelength)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001242> "A physical quality which is equal to the distance between repeating units of a wave pattern.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0001242> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0001242> "PATO:0001242")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001242> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001242> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001242> "wavelength")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001242> <http://purl.obolibrary.org/obo/PATO_0001018>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002497> (lateral orientation)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:WD") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002497> "An orientation quality inhering in a bearer by virtue of the bearer having a position that is directed laterally.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PATO_0002497> <https://orcid.org/0000-0002-2061-091X>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0002497> "2013-10-10T05:16:45Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0002497> "laterally directed")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0002497> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002497> "PATO:0002497")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0002497> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002497> "lateral orientation")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002497> <http://purl.obolibrary.org/obo/PATO_0000133>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0005024> (longitudinal orientation)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:WD") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0005024> "An orientation quality inhering in a bearer by virtue of the bearer having a position that is directed along the longitudinal or anterior-posterior axis.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PATO_0005024> <https://orcid.org/0000-0003-3162-7490>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0005024> "2014-10-17T14:24:19Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0005024> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0005024> "PATO:0005024")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0005024> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0005024> "longitudinal orientation")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0005024> <http://purl.obolibrary.org/obo/PATO_0000133>)
+
+
+)

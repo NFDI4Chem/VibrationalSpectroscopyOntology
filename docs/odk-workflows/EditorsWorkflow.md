@@ -43,9 +43,9 @@ git checkout -b issue23removeprocess
 #### 4. _Perform edit_
 Using your editor of choice, perform the intended edit. For example:
 
-_Protege_
+_Protégé_
 
-1. Open `src/ontology/vibso-edit.owl` in Protege
+1. Open `src/ontology/vibso-edit.owl` in Protégé
 2. Make the change
 3. Save the file
 
