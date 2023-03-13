@@ -10,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/vibso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-10/vibso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-03-13/vibso-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:description>_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Vibrational Spectroscopy Ontology</terms:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-10</owl:versionInfo>
+        <owl:versionInfo>2023-03-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -49,6 +49,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
@@ -70,6 +76,12 @@
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
     
 
 
@@ -122,6 +134,24 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000823 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000823"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032"/>
     
 
 
@@ -193,12 +223,19 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the duration in which an electromagnetic radiation beam is exposed to / recorded by a photosensor.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the length of time that a photo detector is allowed to collect photons before passing the accumulated charge to the A/D converter for processing. The minimum integration time is the shortest integration time the device supports and is dependent on how fast the detector can read out all of the pixel information. Integration time should not be confused with data transfer speed.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">integration period setting</obo:IAO_0000118>
         <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">exposure time setting</rdfs:label>
+        <rdfs:label xml:lang="en">integration time setting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/40"/>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A setting datum that specifies the length of time that a photo detector is allowed to collect photons before passing the accumulated charge to the A/D converter for processing. The minimum integration time is the shortest integration time the device supports and is dependent on how fast the detector can read out all of the pixel information. Integration time should not be confused with data transfer speed.</owl:annotatedTarget>
+        <dc:source rdf:resource="https://www.oceaninsight.com/knowledge-hub/glossary/#i"/>
+    </owl:Axiom>
     
 
 
@@ -258,18 +295,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">The setting entered into a Raman microscope which specifies the desired number of measurements this Raman microscope has to perform to produce an usable Raman spectrum.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the number of iterations performed in a spectroscopic meassurement from which an aggregated assay output is generated.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the desired number of measurements a spectrometer has to perform on the same location, without position change to produce an usable spectrum. This setting datum is relevant to improve the signal to noise ratio.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class might better be defined in a more general device ontology.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">number of acquisitions</obo:IAO_0000118>
         <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <rdfs:label xml:lang="en">number of scans setting</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/44"/>
+        <rdfs:label xml:lang="en">number of accumulations</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/30"/>
     </owl:Class>
     
 
@@ -291,8 +322,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
-        <obo:IAO_0000115 xml:lang="en">A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A physical quality inhering in a diffraction grating device by virtue of the device&apos;s function to diffract light. This quality specifically depends on the number of grooves per area of the grating device and is usually expressed in grooves per millimeter.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">temp class until NTR in PATO has been accepted and merged (https://github.com/pato-ontology/pato/issues/541)</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">groove frequency</obo:IAO_0000118>
         <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">groove density</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45"/>
@@ -300,8 +332,9 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000009"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A physical quality of a diffraction grating that represents the number of grooves per length unit (e.g. mm) on the surface that causes the diffraction of the light.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A physical quality inhering in a diffraction grating device by virtue of the device&apos;s function to diffract light. This quality specifically depends on the number of grooves per area of the grating device and is usually expressed in grooves per millimeter.</owl:annotatedTarget>
         <dc:source rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
+        <dc:source rdf:resource="https://www.meetoptics.com/academy/groove-density#:~:text=The%20groove%20density%20(or%20groove,of%20the%20operational%20wavelength%20range"/>
     </owl:Axiom>
     
 
@@ -381,9 +414,67 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <rdfs:label xml:lang="en">objective magnification factor setting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/24%20"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000823"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">210 cm^-1</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A data item that is the part of a Raman spectrum which represents the maximum wavenumber included in the spectrum and which is calculated from the windows size and window center.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">acquisition band maximum</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">spectral window range maximum</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/31"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000823"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">1960 cm^-1</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A data item that is the part of a Raman spectrum which represents the minimum wavenumber included in the spectrum and which is calculated from the windows size and window center.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">acquisition band minimum</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <rdfs:label xml:lang="en">spectral window range minimum</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/31"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <obo:IAO_0000112 xml:lang="en">200 mW</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measuring the incoming light power before the sample holder and which depends on the laser power and on the dispersive behaviour of the filters and optical components.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">excitation light power; light power on the sample</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <rdfs:label xml:lang="en">incident light power datum</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/29"/>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
 

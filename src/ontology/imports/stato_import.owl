@@ -1,163 +1,77 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/vibso/imports/stato_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/vibso/imports/stato_import.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/imports/stato_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-01-10/imports/stato_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-10</owl:versionInfo>
-    </owl:Ontology>
-    
+Prefix(:=<http://purl.obolibrary.org/obo/vibso/imports/stato_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+Ontology(<http://purl.obolibrary.org/obo/vibso/imports/stato_import.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-03-13/imports/stato_import.owl>
+Annotation(owl:versionInfo "2023-03-13")
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
-    
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/STATO_0000050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/STATO_0000184>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/STATO_0000032>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/STATO_0000391>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/rights>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/subject>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#bug-database>))
+Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#homepage>))
+Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#mailing-list>))
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    
+############################
+#   Classes
+############################
 
+# Class: <http://purl.obolibrary.org/obo/STATO_0000050> (signal to noise ratio)
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/STATO_0000032 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000032"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/STATO_0000391 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000391"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/STATO_0000050 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000184"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">signal to noise ratio is a measurement datum comparing the amount of meaningful, useful or interesting data (the signal) to the amount of irrelevant or false data (the noise). Depending on the field and domain of application, different variables will be used to determinate a &apos;signal to noise ratio&apos;. In statistics, the definition of signal to noise ratio is the ratio of the mean of a measurement to its standard deviation. It thus corresponds to the inverse of the coefficient of variation</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
-        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">adapted from Wikipedia:
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/STATO_0000050> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/STATO_0000050> "signal to noise ratio is a measurement datum comparing the amount of meaningful, useful or interesting data (the signal) to the amount of irrelevant or false data (the noise). Depending on the field and domain of application, different variables will be used to determinate a 'signal to noise ratio'. In statistics, the definition of signal to noise ratio is the ratio of the mean of a measurement to its standard deviation. It thus corresponds to the inverse of the coefficient of variation"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/STATO_0000050> "Alejandra Gonzalez-Beltran"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/STATO_0000050> "Philippe Rocca-Serra"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/STATO_0000050> "Orlaith Burke")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/STATO_0000050> "adapted from Wikipedia:
 http://en.wikipedia.org/wiki/Signal-to-noise_ratio#Alternative_definition
-last accessed: 2013-10-18</obo:IAO_0000119>
-        <obo:STATO_0000032 xml:lang="en">S/N</obo:STATO_0000032>
-        <obo:STATO_0000032 xml:lang="en">SNR</obo:STATO_0000032>
-        <obo:STATO_0000391 xml:lang="en">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.signaltonoise.html#scipy.stats.signaltonoise</obo:STATO_0000391>
-        <rdfs:label xml:lang="en">signal to noise ratio</rdfs:label>
-    </owl:Class>
-    
+last accessed: 2013-10-18"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/STATO_0000032> <http://purl.obolibrary.org/obo/STATO_0000050> "S/N"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/STATO_0000032> <http://purl.obolibrary.org/obo/STATO_0000050> "SNR"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/STATO_0000391> <http://purl.obolibrary.org/obo/STATO_0000050> "http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.signaltonoise.html#scipy.stats.signaltonoise"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/STATO_0000050> "signal to noise ratio"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/STATO_0000050> <http://purl.obolibrary.org/obo/STATO_0000184>)
+
+# Class: <http://purl.obolibrary.org/obo/STATO_0000184> (ratio)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/STATO_0000184> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/STATO_0000184> "A ratio is a data item which is formed with two numbers r and s is written r/s, where r is the numerator and s is the denominator. The ratio of r to s is equivalent to the quotient r/s. 
+"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/STATO_0000184> "review formal definition as both numerator and denominator should be of the same type, not just some data item"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/STATO_0000184> "Alejandra Gonzalez-Beltran")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/STATO_0000184> "Orlaith Burke")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/STATO_0000184> "Philippe Rocca-Serra")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/STATO_0000184> "adapted from Wolfram Alpha:
+https://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427efdcsig76g7"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/STATO_0000184> "ratio")
+SubClassOf(<http://purl.obolibrary.org/obo/STATO_0000184> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
 
-    <!-- http://purl.obolibrary.org/obo/STATO_0000184 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000184">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">A ratio is a data item which is formed with two numbers r and s is written r/s, where r is the numerator and s is the denominator. The ratio of r to s is equivalent to the quotient r/s. 
-</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">review formal definition as both numerator and denominator should be of the same type, not just some data item</obo:IAO_0000116>
-        <obo:IAO_0000117>Alejandra Gonzalez-Beltran</obo:IAO_0000117>
-        <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
-        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">adapted from Wolfram Alpha:
-https://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427efdcsig76g7</obo:IAO_0000119>
-        <rdfs:label>ratio</rdfs:label>
-    </owl:Class>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
-
+)
