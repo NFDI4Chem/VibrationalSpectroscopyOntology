@@ -28,6 +28,7 @@ release_artefacts:
 - full
 - base
 robot_java_args: '-Xmx16G'  # max RAM to be used by Robot in ODK
+use_templates: TRUE
 
 
 ## VIBSO specific Settings ##
@@ -37,7 +38,8 @@ import_group:
   - id: bfo
     module_type: mirror
   - id: ro
-    make_base: true
+    #mirror_from: http://purl.obolibrary.org/obo/ro/ro-base.owl
+    use_base: true
     slme_individuals: exclude
   - id: omo
     module_type: mirror

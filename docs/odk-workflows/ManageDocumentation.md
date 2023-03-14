@@ -43,3 +43,4 @@ The documentation is _not_ automatically updated from the Markdown, and needs to
 3. Just to double check, you can now navigate to your documentation pages (usually https://NFDI4Chem.github.io/VibrationSpectroscopyOntology/). 
    Just make sure you give GitHub 2-5 minutes to build the pages!
 
+
