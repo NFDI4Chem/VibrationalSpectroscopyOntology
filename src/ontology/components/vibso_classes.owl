@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-03-20/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-03-24/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts.")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
@@ -268,16 +268,16 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VIBSO_0000019> "r
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/VIBSO_0000019> <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32>)
 SubClassOf(<http://purl.obolibrary.org/obo/VIBSO_0000019> <http://purl.obolibrary.org/obo/IAO_0000140>)
 
-# Class: <http://purl.obolibrary.org/obo/VIBSO_0000020> (region of interest height)
+# Class: <http://purl.obolibrary.org/obo/VIBSO_0000020> (region of interest breadth)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/VIBSO_0000020> "0.5 mm"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000020> "A setting datum that specifies the height (length in the Y direction) of the region of interest."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000020> "ROI height"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000020> "ROI vertical length"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000020> "ROI breadth"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000020> "ROI lateral length"@en)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000020> <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000020> <http://orcid.org/0000-0002-2239-3955>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/VIBSO_0000020> "region of interest height = (point distance Y) * (number of measurements Y)"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VIBSO_0000020> "region of interest height"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/VIBSO_0000020> "region of interest breadth = (point distance Y) * (number of measurements Y)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VIBSO_0000020> "region of interest breadth"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/VIBSO_0000020> <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32>)
 SubClassOf(<http://purl.obolibrary.org/obo/VIBSO_0000020> <http://purl.obolibrary.org/obo/IAO_0000140>)
 
@@ -285,7 +285,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/VIBSO_0000020> <http://purl.obolibrar
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/VIBSO_0000021> "0.1 mm"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000021> "A setting datum that specifies the depth (length in the Z direction) of the region of interest."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000021> "ROI depth, ROI length in the z direction"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000021> "ROI depth"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000021> "ROI vertical length"@en)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000021> <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000021> <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/VIBSO_0000021> "region of interest depth = (point distance Z) * (number of measurements Z)"@en)
@@ -299,7 +300,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000022> "A setting datum that specifies the equal distance which the incident light beam will be moved laterally in the X direction on a given sample within the region of interest after each measurement, when performing a spatially resolved spectroscopy."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000022> "sampling pace in the X direction"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000022> "sampling step in the X direction"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000022> "voxal distance in the X direction"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000022> "voxel distance in the X direction"@en)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000022> <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000022> <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/VIBSO_0000022> "point distance X = (region of interest width) / (number of measurements X)"@en)
@@ -313,10 +314,10 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000023> "A setting datum that specifies the equal distance which the incident light beam will be moved laterally in the Y direction on a given sample within the region of interest after each measurement, when performing a spatially resolved spectroscopy."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000023> "sampling pace in the Y direction"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000023> "sampling step in the X direction"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000023> "voxal distance in the X direction"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000023> "voxel distance in the X direction"@en)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000023> <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000023> <http://orcid.org/0000-0002-2239-3955>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/VIBSO_0000023> "point distance Y = (region of interest height) / (number of measurements Y)"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/VIBSO_0000023> "point distance Y = (region of interest breadth) / (number of measurements Y)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VIBSO_0000023> "point distance Y"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/VIBSO_0000023> <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32>)
 SubClassOf(<http://purl.obolibrary.org/obo/VIBSO_0000023> <http://purl.obolibrary.org/obo/IAO_0000140>)
@@ -324,10 +325,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/VIBSO_0000023> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/VIBSO_0000024> (point distance Z)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/VIBSO_0000024> "10 µm"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000024> "A setting datum that specifies the equal distance which the incident light beam will moved on the focal plane within the region of interest, when performing a spatially resolved spectroscopy."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000024> "A setting datum that specifies the equal distance which the incident light beam will moved along the focal axis within the region of interest, when performing a spatially resolved spectroscopy."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "focal sampling pace"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "focal sampling step"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "focal voxal distance"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "focal voxel distance"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "vertical mapping distance"@en)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000024> <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000024> <http://orcid.org/0000-0002-2239-3955>)
@@ -339,7 +340,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/VIBSO_0000024> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/VIBSO_0000025> (number of measurements X)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/VIBSO_0000025> "50"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000025> "A setting datum that specifies how many equally configured measurements of a sample are to be performed on the X-axis of a certain region of interest. Together with the point distance X, this setting defines the region of interest width."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000025> "A setting datum that specifies how many equally configured measurements of a sample are to be performed along the X-axis of a certain region of interest. Together with the point distance X, this setting defines the region of interest width."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000025> "number of points in the X direction"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000025> "number of points per line"@en)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000025> <http://orcid.org/0000-0001-7694-5519>)
@@ -352,12 +353,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/VIBSO_0000025> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/VIBSO_0000026> (number of measurements Y)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/VIBSO_0000026> "100"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000026> "A setting datum that specifies how many equally configured measurements of a sample are to be performed on the Y-axis of a certain region of interest. Together with the point distance Y, this setting defines the region of interest height."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000026> "A setting datum that specifies how many equally configured measurements of a sample are to be performed along the Y-axis of a certain region of interest. Together with the point distance Y, this setting defines the region of interest breadth."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000026> "number of lines per layer"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000026> "number of points in the Y direction"@en)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000026> <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000026> <http://orcid.org/0000-0002-2239-3955>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/VIBSO_0000026> "number of measurements = (region of interest height) / (point distance Y)"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/VIBSO_0000026> "number of measurements = (region of interest breadth) / (point distance Y)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VIBSO_0000026> "number of measurements Y"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/VIBSO_0000026> <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32>)
 SubClassOf(<http://purl.obolibrary.org/obo/VIBSO_0000026> <http://purl.obolibrary.org/obo/IAO_0000140>)
