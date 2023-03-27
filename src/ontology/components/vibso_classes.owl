@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-03-24/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-03-27/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts.")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
@@ -236,7 +236,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/VIBSO_0000016> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/VIBSO_0000017> "200 mW"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000017> "A scalar measurement datum that is the result of measuring the incoming light power before the sample holder and which depends on the laser power and on the dispersive behaviour of the filters and optical components."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000017> "excitation light power; light power on the sample"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000017> "excitation light power"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000017> "light power on the sample"@en)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000017> <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/VIBSO_0000017> "The incident power is an elementary measurement parameter allowing to compare among measurements conducted with the same setup. A thorough investigation of the effects of light irradiation onto the sample depends on the local irradiance (power per unit area) and requires deeper knowledge of the irradiation geometry, e.g. width, depth and shape of the focal spot."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VIBSO_0000017> "incident light power datum"@en)
@@ -313,8 +314,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/VIBSO_0000022> <http://purl.obolibrar
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/VIBSO_0000023> "10 µm"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000023> "A setting datum that specifies the equal distance which the incident light beam will be moved laterally in the Y direction on a given sample within the region of interest after each measurement, when performing a spatially resolved spectroscopy."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000023> "sampling pace in the Y direction"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000023> "sampling step in the X direction"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000023> "voxel distance in the X direction"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000023> "sampling step in the Y direction"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000023> "voxel distance in the Y direction"@en)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000023> <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000023> <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/VIBSO_0000023> "point distance Y = (region of interest breadth) / (number of measurements Y)"@en)
@@ -326,10 +327,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/VIBSO_0000023> <http://purl.obolibrar
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/VIBSO_0000024> "10 µm"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VIBSO_0000024> "A setting datum that specifies the equal distance which the incident light beam will moved along the focal axis within the region of interest, when performing a spatially resolved spectroscopy."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "focal sampling pace"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "focal sampling step"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "focal voxel distance"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "axial mapping distance"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "sampling pace in the Z direction"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "sampling step in the Z direction"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "vertical mapping distance"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/VIBSO_0000024> "voxel distance in the Z direction"@en)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000024> <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/VIBSO_0000024> <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/VIBSO_0000024> "point distance Z = (region of interest depth) / (number of measurements Z)"@en)
