@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-03-27/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-05-04/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts.")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
