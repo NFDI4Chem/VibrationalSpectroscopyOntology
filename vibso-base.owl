@@ -10,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/vibso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-03-13/vibso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-05-04/vibso-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:description>_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Vibrational Spectroscopy Ontology</terms:title>
-        <owl:versionInfo>2023-03-13</owl:versionInfo>
+        <owl:versionInfo>2023-05-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -134,6 +134,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
     
 
 
@@ -467,10 +473,193 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <obo:IAO_0000112 xml:lang="en">200 mW</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measuring the incoming light power before the sample holder and which depends on the laser power and on the dispersive behaviour of the filters and optical components.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">excitation light power; light power on the sample</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">excitation light power</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">light power on the sample</obo:IAO_0000118>
         <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <rdfs:comment xml:lang="en">The incident power is an elementary measurement parameter allowing to compare among measurements conducted with the same setup. A thorough investigation of the effects of light irradiation onto the sample depends on the local irradiance (power per unit area) and requires deeper knowledge of the irradiation geometry, e.g. width, depth and shape of the focal spot.</rdfs:comment>
         <rdfs:label xml:lang="en">incident light power datum</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/29"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <obo:IAO_0000115 xml:lang="en">A site that refers to a user-defined portion of the image area in which data will be acquired. The remainder of the image area will be discarded.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">See also https://w3id.org/reproduceme#ROI &amp; http://purl.obolibrary.org/obo/NCIT_C85402</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">ROI</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">imaging region of interest</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:label xml:lang="en">region of interest</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000018"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A site that refers to a user-defined portion of the image area in which data will be acquired. The remainder of the image area will be discarded.</owl:annotatedTarget>
+        <dc:source rdf:resource="https://wiki.charisma.ideaconsult.net/wiki/Item:Q57"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">1 mm</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the width (length in the X direction) of the region of interest.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">ROI horizontal length</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">ROI width</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:comment xml:lang="en">region of interest width = (point distance X) * (number of measurements X)</rdfs:comment>
+        <rdfs:label xml:lang="en">region of interest width</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">0.5 mm</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the height (length in the Y direction) of the region of interest.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">ROI breadth</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">ROI lateral length</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:comment xml:lang="en">region of interest breadth = (point distance Y) * (number of measurements Y)</rdfs:comment>
+        <rdfs:label xml:lang="en">region of interest breadth</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">0.1 mm</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the depth (length in the Z direction) of the region of interest.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">ROI depth</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">ROI vertical length</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:comment xml:lang="en">region of interest depth = (point distance Z) * (number of measurements Z)</rdfs:comment>
+        <rdfs:label xml:lang="en">region of interest depth</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">20 µm</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the equal distance which the incident light beam will be moved laterally in the X direction on a given sample within the region of interest after each measurement, when performing a spatially resolved spectroscopy.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">sampling pace in the X direction</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">sampling step in the X direction</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">voxel distance in the X direction</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:comment xml:lang="en">point distance X = (region of interest width) / (number of measurements X)</rdfs:comment>
+        <rdfs:label xml:lang="en">point distance X</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">10 µm</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the equal distance which the incident light beam will be moved laterally in the Y direction on a given sample within the region of interest after each measurement, when performing a spatially resolved spectroscopy.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">sampling pace in the Y direction</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">sampling step in the Y direction</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">voxel distance in the Y direction</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:comment xml:lang="en">point distance Y = (region of interest breadth) / (number of measurements Y)</rdfs:comment>
+        <rdfs:label xml:lang="en">point distance Y</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">10 µm</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the equal distance which the incident light beam will moved along the focal axis within the region of interest, when performing a spatially resolved spectroscopy.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">axial mapping distance</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">sampling pace in the Z direction</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">sampling step in the Z direction</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">vertical mapping distance</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">voxel distance in the Z direction</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:comment xml:lang="en">point distance Z = (region of interest depth) / (number of measurements Z)</rdfs:comment>
+        <rdfs:label xml:lang="en">point distance Z</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">50</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies how many equally configured measurements of a sample are to be performed along the X-axis of a certain region of interest. Together with the point distance X, this setting defines the region of interest width.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">number of points in the X direction</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">number of points per line</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:comment xml:lang="en">number of measurements X = (region of interest width) / (point distance X)</rdfs:comment>
+        <rdfs:label xml:lang="en">number of measurements X</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">100</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies how many equally configured measurements of a sample are to be performed along the Y-axis of a certain region of interest. Together with the point distance Y, this setting defines the region of interest breadth.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">number of lines per layer</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">number of points in the Y direction</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:comment xml:lang="en">number of measurements = (region of interest breadth) / (point distance Y)</rdfs:comment>
+        <rdfs:label xml:lang="en">number of measurements Y</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">10</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies how many equally configured measurements of a sample are to be performed in the vertical direction (on the Z-axis) of a certain region of interest.
+Together with the focal point distance, this setting defines the region of interest depth.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">number of layers per acquisition</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">number of points in the Z direction</obo:IAO_0000118>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3956"/>
+        <rdfs:comment xml:lang="en">number of measurements Z = (region of interest depth) / (point distance Z)</rdfs:comment>
+        <rdfs:label xml:lang="en">number of measurements Z</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
     </owl:Class>
 </rdf:RDF>
 
