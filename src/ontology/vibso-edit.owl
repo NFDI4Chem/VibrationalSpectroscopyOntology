@@ -31,7 +31,7 @@ Import(<http://purl.obolibrary.org/obo/vibso/imports/txpo_import.owl>)
 Annotation(dcterms:description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Vibrational Spectroscopy Ontology")
-Annotation(dcterms:creator "NFDI4Chem, VIBSO Workgroup")
+Annotation(dcterms:creator "NFDI4Chem (https://www.wikidata.org/wiki/Q96678459), VIBSO Workgroup")
 Annotation(dcterm:contributor "Philip Strömert (https://orcid.org/0000-0002-1595-3213), Technische Informationsbibliothek (TIB) (https://ror.org/04aj4c181, http://isni.org/isni/0000000121746694)",
                               "Johannes Hunold (https://orcid.org/0000-0002-4378-6061), Technische Informationsbibliothek (TIB) (https://ror.org/04aj4c181, http://isni.org/isni/0000000121746694)",
                               "Giacomo Lanza (https://orcid.org/0000-0002-2239-3955), Physikalisch-Technische Bundesanstalt (PTB) (https://ror.org/05r3f7h03, https://isni.org/isni/0000000121861887)" ,
