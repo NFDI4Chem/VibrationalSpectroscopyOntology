@@ -1,4 +1,4 @@
-These notes are for the EDITORS of vispro
+These notes are for the EDITORS of VIBSO
 
 This project was created using the [ontology development kit](https://github.com/INCATools/ontology-development-kit). See the site for details.
 
@@ -14,15 +14,15 @@ You may also want to read the [GO ontology editors guide](http://go-ontology.rea
 
 ## Editors Version
 
-Make sure you have an ID range in the [idranges file](vispro-idranges.owl)
+Make sure you have an ID range in the [idranges file](vibso-idranges.owl)
 
 If you do not have one, get one from the maintainer of this repo.
 
-The editors version is [vispro-edit.owl](vispro-edit.owl)
+The editors version is [vibso-edit.owl](vibso-edit.owl)
 
-** DO NOT EDIT vispro.obo OR vispro.owl in the top level directory **
+** DO NOT EDIT vibso.obo OR vibso.owl in the top level directory **
 
-[../../vispro.owl](../../vispro.owl) is the release version
+[../../vibso.owl](../../vibso.owl) is the release version
 
 To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/NFDI4Chem/VibrationSpectroscopyOntology) for details.
 
@@ -39,7 +39,7 @@ better to make changes on a branch, and make Pull Requests.
 
 These are stored in the file
 
- * [vispro-idranges.owl](vispro-idranges.owl)
+ * [vibso-idranges.owl](vibso-idranges.owl)
 
 ** ONLY USE IDs WITHIN YOUR RANGE!! **
 
@@ -96,7 +96,7 @@ If this looks good type:
 
     sh run.sh make prepare_release
 
-This generates derived files such as vispro.owl and vispro.obo and places
+This generates derived files such as vibso.owl and vibso.obo and places
 them in the top level (../..).
 
 Note that the versionIRI value automatically will be added, and will
@@ -122,8 +122,8 @@ __IMPORTANT__: The value of the "Tag version" field MUST be
     vYYYY-MM-DD
 
 The initial lowercase "v" is REQUIRED. The YYYY-MM-DD *must* match
-what is in the `owl:versionIRI` of the derived vispro.owl (`data-version` in
-vispro.obo). This will be today's date.
+what is in the `owl:versionIRI` of the derived vibso.owl (`data-version` in
+vibso.obo). This will be today's date.
 
 This cannot be changed after the fact, be sure to get this right!
 
@@ -140,8 +140,8 @@ The PURLs are already configured to pull from github. This means that
 BOTH ontology purls and versioned ontology purls will resolve to the
 correct ontologies. Try it!
 
- * http://purl.obolibrary.org/obo/vispro.owl <-- current ontology PURL
- * http://purl.obolibrary.org/obo/vispro/releases/YYYY-MM-DD.owl <-- change to the release you just made
+ * http://purl.obolibrary.org/obo/vibso.owl <-- current ontology PURL
+ * http://purl.obolibrary.org/obo/vibso/releases/tab/vYYYY-MM-DD.owl <-- change to the release you just made
 
 For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 
