@@ -28,25 +28,38 @@ Import(<http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/stato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/txpo_import.owl>)
+Annotation(dcterms:contributor <https://orcid.org/0000-0002-1595-3213>)
+Annotation(dcterms:contributor <https://orcid.org/0000-0002-2239-3955>)
+Annotation(dcterms:contributor <https://orcid.org/0000-0002-4378-6061>)
+Annotation(dcterms:creator <https://www.wikidata.org/wiki/Q96678459>)
+Annotation(dcterms:creator "VIBSO Workgroup"@en)
 Annotation(dcterms:description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Vibrational Spectroscopy Ontology")
-Annotation(dcterms:creator "NFDI4Chem (https://www.wikidata.org/wiki/Q96678459), VIBSO Workgroup")
-Annotation(dcterm:contributor "Philip Strömert (https://orcid.org/0000-0002-1595-3213), Technische Informationsbibliothek (TIB) (https://ror.org/04aj4c181, http://isni.org/isni/0000000121746694)",
-                              "Johannes Hunold (https://orcid.org/0000-0002-4378-6061), Technische Informationsbibliothek (TIB) (https://ror.org/04aj4c181, http://isni.org/isni/0000000121746694)",
-                              "Giacomo Lanza (https://orcid.org/0000-0002-2239-3955), Physikalisch-Technische Bundesanstalt (PTB) (https://ror.org/05r3f7h03, https://isni.org/isni/0000000121861887)" ,
-                              "Rainer Stosch (https://orcid.org/0000-0001-7694-5519), Physikalisch-Technische Bundesanstalt (PTB) (https://ror.org/05r3f7h03, https://isni.org/isni/0000000121861887)" ,
-                              "Stefano Luin (https://orcid.org/0000-0003-2673-366X), Scuola Normale Superiore di Pisa (SNS) (https://ror.org/03aydme10)",
-                              "",
-                              ""
-)
 
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-1595-3213>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-2239-3955>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-4378-6061>))
+Declaration(NamedIndividual(<https://ror.org/04aj4c181>))
+Declaration(NamedIndividual(<https://ror.org/05r3f7h03>))
+Declaration(NamedIndividual(<https://www.wikidata.org/wiki/Q96678459>))
+Declaration(AnnotationProperty(dcterms:contributor))
+Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(<https://schema.org/affiliation>))
 ############################
 #   Annotation Properties
 ############################
+
+# Annotation Property: dcterms:contributor (contributor)
+
+AnnotationAssertion(rdfs:label dcterms:contributor "contributor")
+
+# Annotation Property: dcterms:creator (creator)
+
+AnnotationAssertion(rdfs:label dcterms:creator "creator")
 
 # Annotation Property: dcterms:description (description)
 
@@ -60,13 +73,7 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
-# Annotation Property: dcterms:creator (creator)
 
-AnnotationAssertion(rdfs:label dcterms:creator "creator")
-
-# Annotation Property: dcterms:contributor (contributor)
-
-AnnotationAssertion(rdfs:label dcterms:contributor "contributor")
 
 ############################
 #   Classes
@@ -76,6 +83,46 @@ AnnotationAssertion(rdfs:label dcterms:contributor "contributor")
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "person")
 SubClassOf(obo:NCBITaxon_9606 obo:OBI_0100026)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://orcid.org/0000-0002-1595-3213> (Philip Strömert)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1595-3213> "Philip Strömert")
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-1595-3213> <https://ror.org/04aj4c181>)
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-1595-3213> <https://www.wikidata.org/wiki/Q96678459>)
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-1595-3213> "VIBSO Workgroup"@en)
+
+# Individual: <https://orcid.org/0000-0002-2239-3955> (Giacomo Lanza)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-2239-3955> "Giacomo Lanza")
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-2239-3955> <https://ror.org/05r3f7h03>)
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-2239-3955> <https://www.wikidata.org/wiki/Q96678459>)
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-2239-3955> "VIBSO Workgroup"@en)
+
+# Individual: <https://orcid.org/0000-0002-4378-6061> (Johannes Hunold)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-4378-6061> "Johannes Hunold")
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-4378-6061> <https://ror.org/04aj4c181>)
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-4378-6061> <https://www.wikidata.org/wiki/Q96678459>)
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-4378-6061> "VIBSO Workgroup"@en)
+
+# Individual: <https://ror.org/04aj4c181> (Technische Informationsbibliothek (TIB))
+
+AnnotationAssertion(rdfs:label <https://ror.org/04aj4c181> "German National Library of Science and Technology Hannover"@en)
+AnnotationAssertion(rdfs:label <https://ror.org/04aj4c181> "Technische Informationsbibliothek (TIB)"@de)
+
+# Individual: <https://ror.org/05r3f7h03> (German National Metrology Institute)
+
+AnnotationAssertion(rdfs:label <https://ror.org/05r3f7h03> "German National Metrology Institute"@en)
+AnnotationAssertion(rdfs:label <https://ror.org/05r3f7h03> "Physikalisch-Technische Bundesanstalt (PTB)"@de)
+
+# Individual: <https://www.wikidata.org/wiki/Q96678459> (NFDI4Chem)
+
+AnnotationAssertion(rdfs:label <https://www.wikidata.org/wiki/Q96678459> "NFDI4Chem")
 
 
 )
