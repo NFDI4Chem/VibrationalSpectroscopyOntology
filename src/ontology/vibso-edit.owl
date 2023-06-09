@@ -31,6 +31,15 @@ Import(<http://purl.obolibrary.org/obo/vibso/imports/txpo_import.owl>)
 Annotation(dcterms:description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Vibrational Spectroscopy Ontology")
+Annotation(dcterms:creator "NFDI4Chem, VIBSO Workgroup")
+Annotation(dcterm:contributor "Philip Strömert (https://orcid.org/0000-0002-1595-3213), Technische Informationsbibliothek (TIB) (https://ror.org/04aj4c181, http://isni.org/isni/0000000121746694)",
+                              "Johannes Hunold (https://orcid.org/0000-0002-4378-6061), Technische Informationsbibliothek (TIB) (https://ror.org/04aj4c181, http://isni.org/isni/0000000121746694)",
+                              "Giacomo Lanza (https://orcid.org/0000-0002-2239-3955), Physikalisch-Technische Bundesanstalt (PTB) (https://ror.org/05r3f7h03, https://isni.org/isni/0000000121861887)" ,
+                              "Rainer Stosch (https://orcid.org/0000-0001-7694-5519), Physikalisch-Technische Bundesanstalt (PTB) (https://ror.org/05r3f7h03, https://isni.org/isni/0000000121861887)" ,
+                              "Stefano Luin (https://orcid.org/0000-0003-2673-366X), Scuola Normale Superiore di Pisa (SNS) (https://ror.org/03aydme10)",
+                              "",
+                              ""
+)
 
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -51,7 +60,13 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
+# Annotation Property: dcterms:creator (creator)
 
+AnnotationAssertion(rdfs:label dcterms:creator "creator")
+
+# Annotation Property: dcterms:contributor (contributor)
+
+AnnotationAssertion(rdfs:label dcterms:contributor "contributor")
 
 ############################
 #   Classes
