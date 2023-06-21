@@ -7,18 +7,22 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-05-04/imports/pato_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2023-02-17/pato.owl>)
-Annotation(owl:versionInfo "2023-05-04")
+<http://purl.obolibrary.org/obo/vibso/releases/2023-06-21/imports/pato_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2023-05-18/pato.owl>)
+Annotation(owl:versionInfo "2023-06-21")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000125>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000133>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000146>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001242>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002182>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002497>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0005024>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
@@ -83,6 +87,30 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000001> "quality")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/BFO_0000020>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000033> (concentration of)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:http://en.wikipedia.org/wiki/concentration") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000033> "A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000033> "concentration")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000033> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000033> "PATO:0000033")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000033> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000033> <http://purl.obolibrary.org/obo/pato#relational_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000033> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000033> "concentration of")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000033> <http://purl.obolibrary.org/obo/PATO_0002182>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000125> (mass)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000125> "A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000125> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000125> "PATO:0000125")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000125> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000125> <http://purl.obolibrary.org/obo/pato#relational_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000125> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0000125> "For any biological use of PATO, the concept that should be used is 'mass' and not 'weight'. For example, increased weight of an organism.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000125> "mass")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000125> <http://purl.obolibrary.org/obo/PATO_0001018>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0000133> (orientation)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:JE") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000133> "A spatial quality inhering in a bearer by virtue of the bearer's placement which is defined by the angle between the bearer and an axis, or the angle between the bearer and another object.")
@@ -135,6 +163,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001018> "physical quality")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001018> <http://purl.obolibrary.org/obo/PATO_0001241>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0001019> (mass density)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WordNet:WordNet") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001019> "A physical quality which inheres in a bearer by virtue of some influence is exerted by the bearer's mass per unit size.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0001019> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0001019> "density")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0001019> "PATO:0001019")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001019> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001019> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001019> "mass density")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001019> <http://purl.obolibrary.org/obo/PATO_0001018>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001241> (physical object quality)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001241> "A quality which inheres in a continuant.")
@@ -164,6 +203,18 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001242> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001242> "wavelength")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001242> <http://purl.obolibrary.org/obo/PATO_0001018>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002182> (molecular quality)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002182> "A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PATO_0002182> <https://orcid.org/0000-0002-2061-091X>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0002182> "2010-03-10T03:18:15Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0002182> "PATO:0002061")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0002182> "relational molecular quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0002182> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002182> "PATO:0002182")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002182> "molecular quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002182> <http://purl.obolibrary.org/obo/PATO_0001241>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002497> (lateral orientation)
 

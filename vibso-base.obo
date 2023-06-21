@@ -1,11 +1,16 @@
 format-version: 1.2
-data-version: vibso/releases/2023-05-04/vibso-base.owl
+data-version: vibso/releases/2023-06-21/vibso-base.owl
 ontology: vibso/vibso-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1595-3213
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2239-3955
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-4378-6061
+property_value: http://purl.org/dc/terms/creator https://www.wikidata.org/wiki/Q96678459
+property_value: http://purl.org/dc/terms/creator "VIBSO Workgroup" xsd:string
 property_value: http://purl.org/dc/terms/description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays." xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/title "Vibrational Spectroscopy Ontology" xsd:string
-property_value: owl:versionInfo "2023-05-04" xsd:string
+property_value: owl:versionInfo "2023-06-21" xsd:string
 
 [Term]
 id: NCBITaxon:9606
