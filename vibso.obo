@@ -4997,9 +4997,3 @@ holds_over_chain: RO:0002212 RO:0019001
 holds_over_chain: RO:0002213 RO:0019002
 is_a: RO:0019000 ! regulates characteristic
 
-[Typedef]
-id: TXPO:0002523
-name: has occurrent part
-def: "\"has ocurrent part\" is a relation that holds between a whole occurrent (process) and its part." []
-is_a: BFO:0000051 ! has part
-
