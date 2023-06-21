@@ -215,6 +215,8 @@ AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000014 "example:RamanSpectrometer
 example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type obo:VIBSO_0000014 ;
             obo:OBI_0002815 (has representation) '100 x' ."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000014 "A setting datum that specifies the magnification factor of the objective collecting the scattered light."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000014 "magnification"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000014 "magnification setting"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000014 <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000014 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000014 <http://orcid.org/0000-0002-2239-3955>)
