@@ -12,8 +12,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-05-04/imports/obi_import.owl"/>
-        <owl:versionInfo>2023-05-04</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-06-21/imports/obi_import.owl"/>
+        <owl:versionInfo>2023-06-21</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:Ontology>
     
@@ -1679,6 +1679,22 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">PERSON: James Malone</obo:IAO_0000119>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">data transformation objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302732 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302732">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000111>solvent role</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18373502.Transfusion. 2008 Mar 25. Solvent/detergent treatment of platelet concentrates enhances the release of growth factors.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">solvent role is a role which inheres in a molecular entity capable of ensuring the dissolution of another chemical entity and realized by the process of solvation</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>adpated from wikipedia (http://en.wikipedia.org/wiki/Solvatation)</obo:IAO_0000119>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
+        <rdfs:label xml:lang="en">solvent role</rdfs:label>
     </owl:Class>
     
 
