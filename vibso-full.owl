@@ -925,12 +925,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/member -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/member"/>
@@ -3486,16 +3480,6 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115>A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C.</obo:IAO_0000115>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-8688-6599"/>
         <rdfs:label>negatively regulates characteristic</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/TXPO_0002523 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/TXPO_0002523">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <obo:IAO_0000115>&quot;has ocurrent part&quot; is a relation that holds between a whole occurrent (process) and its part.</obo:IAO_0000115>
-        <rdfs:label>has occurrent part</rdfs:label>
     </owl:ObjectProperty>
     
 
