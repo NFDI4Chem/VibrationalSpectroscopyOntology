@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/imports/txpo_import.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-05-04/imports/txpo_import.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-06-21/imports/txpo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/txpo/releases/2022-12-07/txpo.owl>)
-Annotation(owl:versionInfo "2023-05-04")
+Annotation(owl:versionInfo "2023-06-21")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
