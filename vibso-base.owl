@@ -1,21 +1,34 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/vibso/vibso-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/vibso/vibso-base.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:DOI="http://doi.org/"
+     xmlns:ROR="http://ror.org/"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:ORCID="http://orcid.org/"
+     xmlns:schema="http://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema1="https://schema.org/"
+     xmlns:wikipedia="https://en.wikipedia.org/wiki/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/vibso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-05-04/vibso-base.owl"/>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:description>_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.</terms:description>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:title>Vibrational Spectroscopy Ontology</terms:title>
-        <owl:versionInfo>2023-05-04</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-06-21/vibso-base.owl"/>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-2239-3955"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-4378-6061"/>
+        <dcterms:creator rdf:resource="https://www.wikidata.org/wiki/Q96678459"/>
+        <dcterms:creator xml:lang="en">VIBSO Workgroup</dcterms:creator>
+        <dcterms:description>_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.</dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:title>Vibrational Spectroscopy Ontology</dcterms:title>
+        <owl:versionInfo>2023-06-21</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -85,6 +98,22 @@
     
 
 
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <rdfs:label>contributor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:label>creator</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
@@ -106,6 +135,12 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
         <rdfs:label>title</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- https://schema.org/affiliation -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
     
 
 
@@ -205,7 +240,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the needed settings of a spectrometer used in vibrational spectroscopy.</obo:IAO_0000115>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">vibrational spectrometer configuration specification</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/39"/>
     </owl:Class>
@@ -218,7 +253,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000654"/>
         <obo:IAO_0000112 xml:lang="en">The set of meassured configuration characteristics of a Raman spectrometer, like the operating temperature of a Raman spectrometer.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A device setting that represents the measured or set physical qualities which make up the configuration state of a Raman spectrometer at the time of a measurement (e.g. operating temperature, exitation wavelength, groove density, ...).</obo:IAO_0000115>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">Raman spectrometer configuration</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/47"/>
     </owl:Class>
@@ -232,7 +267,7 @@
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the length of time that a photo detector is allowed to collect photons before passing the accumulated charge to the A/D converter for processing. The minimum integration time is the shortest integration time the device supports and is dependent on how fast the detector can read out all of the pixel information. Integration time should not be confused with data transfer speed.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">integration period setting</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">integration time setting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/40"/>
     </owl:Class>
@@ -240,7 +275,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">A setting datum that specifies the length of time that a photo detector is allowed to collect photons before passing the accumulated charge to the A/D converter for processing. The minimum integration time is the shortest integration time the device supports and is dependent on how fast the detector can read out all of the pixel information. Integration time should not be confused with data transfer speed.</owl:annotatedTarget>
-        <dc:source rdf:resource="https://www.oceaninsight.com/knowledge-hub/glossary/#i"/>
+        <dce:source rdf:resource="https://www.oceaninsight.com/knowledge-hub/glossary/#i"/>
     </owl:Axiom>
     
 
@@ -251,7 +286,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the preamplifier gain in CCD sensors.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">preamplifier gain setting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/41"/>
     </owl:Class>
@@ -264,7 +299,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the horizontal shift speed in CCD sensors.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">horizontal shift speed setting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/42"/>
     </owl:Class>
@@ -277,7 +312,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the vertical shift speed in CCD sensors.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">vertical shift speed setting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/42"/>
     </owl:Class>
@@ -290,7 +325,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the operating temperature of a device.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology.</obo:IAO_0000116>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">device temperature setting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/43"/>
     </owl:Class>
@@ -304,7 +339,7 @@
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the desired number of measurements a spectrometer has to perform on the same location, without position change to produce an usable spectrum. This setting datum is relevant to improve the signal to noise ratio.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class might better be defined in a more general device ontology.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">number of acquisitions</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">number of accumulations</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/30"/>
     </owl:Class>
@@ -317,7 +352,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the binning read mode of a device with a CCD sensor.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">CCD sensor binning read mode setting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/46"/>
     </owl:Class>
@@ -331,7 +366,7 @@
         <obo:IAO_0000115 xml:lang="en">A physical quality inhering in a diffraction grating device by virtue of the device&apos;s function to diffract light. This quality specifically depends on the number of grooves per area of the grating device and is usually expressed in grooves per millimeter.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">temp class until NTR in PATO has been accepted and merged (https://github.com/pato-ontology/pato/issues/541)</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">groove frequency</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">groove density</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45"/>
     </owl:Class>
@@ -339,8 +374,8 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000009"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">A physical quality inhering in a diffraction grating device by virtue of the device&apos;s function to diffract light. This quality specifically depends on the number of grooves per area of the grating device and is usually expressed in grooves per millimeter.</owl:annotatedTarget>
-        <dc:source rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
-        <dc:source rdf:resource="https://www.meetoptics.com/academy/groove-density#:~:text=The%20groove%20density%20(or%20groove,of%20the%20operational%20wavelength%20range"/>
+        <dce:source rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
+        <dce:source rdf:resource="https://www.meetoptics.com/academy/groove-density#:~:text=The%20groove%20density%20(or%20groove,of%20the%20operational%20wavelength%20range"/>
     </owl:Axiom>
     
 
@@ -351,7 +386,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the number of grooves in a diffraction grating device.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">groove density setting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45"/>
     </owl:Class>
@@ -364,7 +399,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
         <obo:IAO_0000115 xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">diffraction grating</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/49"/>
     </owl:Class>
@@ -372,7 +407,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)</owl:annotatedTarget>
-        <dc:source rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
+        <dce:source rdf:resource="https://en.wikipedia.org/wiki/Diffraction_grating"/>
     </owl:Axiom>
     
 
@@ -384,7 +419,7 @@
         <obo:IAO_0000116 xml:lang="en">This class is not needed, as PATO:wavelength is sufficient, if this quality of a Raman device is really needed.</obo:IAO_0000116>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001242"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">deprecated_excitation wavelength</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/48"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -398,7 +433,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices.</obo:IAO_0000116>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">excitation wavelength setting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/48"/>
     </owl:Class>
@@ -414,9 +449,9 @@
 example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type obo:VIBSO_0000014 ;
             obo:OBI_0002815 (has representation) &apos;100 x&apos; .</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the magnification factor of the objective collecting the scattered light.</obo:IAO_0000115>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
         <rdfs:label xml:lang="en">objective magnification factor setting</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/24%20"/>
     </owl:Class>
@@ -437,8 +472,8 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000115 xml:lang="en">A data item that is the part of a Raman spectrum which represents the maximum wavenumber included in the spectrum and which is calculated from the windows size and window center.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">acquisition band maximum</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">spectral window range maximum</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/31"/>
     </owl:Class>
@@ -459,8 +494,8 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000115 xml:lang="en">A data item that is the part of a Raman spectrum which represents the minimum wavenumber included in the spectrum and which is calculated from the windows size and window center.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">acquisition band minimum</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">spectral window range minimum</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/31"/>
     </owl:Class>
@@ -475,7 +510,7 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measuring the incoming light power before the sample holder and which depends on the laser power and on the dispersive behaviour of the filters and optical components.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">excitation light power</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">light power on the sample</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
         <rdfs:comment xml:lang="en">The incident power is an elementary measurement parameter allowing to compare among measurements conducted with the same setup. A thorough investigation of the effects of light irradiation onto the sample depends on the local irradiance (power per unit area) and requires deeper knowledge of the irradiation geometry, e.g. width, depth and shape of the focal spot.</rdfs:comment>
         <rdfs:label xml:lang="en">incident light power datum</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/29"/>
@@ -491,8 +526,8 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000116 xml:lang="en">See also https://w3id.org/reproduceme#ROI &amp; http://purl.obolibrary.org/obo/NCIT_C85402</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">ROI</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">imaging region of interest</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
         <rdfs:label xml:lang="en">region of interest</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
     </owl:Class>
@@ -500,7 +535,7 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000018"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">A site that refers to a user-defined portion of the image area in which data will be acquired. The remainder of the image area will be discarded.</owl:annotatedTarget>
-        <dc:source rdf:resource="https://wiki.charisma.ideaconsult.net/wiki/Item:Q57"/>
+        <dce:source rdf:resource="https://wiki.charisma.ideaconsult.net/wiki/Item:Q57"/>
     </owl:Axiom>
     
 
@@ -513,8 +548,8 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the width (length in the X direction) of the region of interest.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">ROI horizontal length</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">ROI width</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
         <rdfs:comment xml:lang="en">region of interest width = (point distance X) * (number of measurements X)</rdfs:comment>
         <rdfs:label xml:lang="en">region of interest width</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
@@ -530,8 +565,8 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the height (length in the Y direction) of the region of interest.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">ROI breadth</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">ROI lateral length</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
         <rdfs:comment xml:lang="en">region of interest breadth = (point distance Y) * (number of measurements Y)</rdfs:comment>
         <rdfs:label xml:lang="en">region of interest breadth</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
@@ -547,8 +582,8 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the depth (length in the Z direction) of the region of interest.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">ROI depth</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">ROI vertical length</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
         <rdfs:comment xml:lang="en">region of interest depth = (point distance Z) * (number of measurements Z)</rdfs:comment>
         <rdfs:label xml:lang="en">region of interest depth</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
@@ -565,8 +600,8 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000118 xml:lang="en">sampling pace in the X direction</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">sampling step in the X direction</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">voxel distance in the X direction</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
         <rdfs:comment xml:lang="en">point distance X = (region of interest width) / (number of measurements X)</rdfs:comment>
         <rdfs:label xml:lang="en">point distance X</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
@@ -583,8 +618,8 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000118 xml:lang="en">sampling pace in the Y direction</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">sampling step in the Y direction</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">voxel distance in the Y direction</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
         <rdfs:comment xml:lang="en">point distance Y = (region of interest breadth) / (number of measurements Y)</rdfs:comment>
         <rdfs:label xml:lang="en">point distance Y</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
@@ -603,8 +638,8 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000118 xml:lang="en">sampling step in the Z direction</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">vertical mapping distance</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">voxel distance in the Z direction</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
         <rdfs:comment xml:lang="en">point distance Z = (region of interest depth) / (number of measurements Z)</rdfs:comment>
         <rdfs:label xml:lang="en">point distance Z</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
@@ -620,8 +655,8 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies how many equally configured measurements of a sample are to be performed along the X-axis of a certain region of interest. Together with the point distance X, this setting defines the region of interest width.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">number of points in the X direction</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">number of points per line</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
         <rdfs:comment xml:lang="en">number of measurements X = (region of interest width) / (point distance X)</rdfs:comment>
         <rdfs:label xml:lang="en">number of measurements X</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
@@ -637,8 +672,8 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies how many equally configured measurements of a sample are to be performed along the Y-axis of a certain region of interest. Together with the point distance Y, this setting defines the region of interest breadth.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">number of lines per layer</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">number of points in the Y direction</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
         <rdfs:comment xml:lang="en">number of measurements = (region of interest breadth) / (point distance Y)</rdfs:comment>
         <rdfs:label xml:lang="en">number of measurements Y</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
@@ -655,12 +690,82 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
 Together with the focal point distance, this setting defines the region of interest depth.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">number of layers per acquisition</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">number of points in the Z direction</obo:IAO_0000118>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
-        <dc:contributor rdf:resource="http://orcid.org/0000-0002-2239-3956"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3956"/>
         <rdfs:comment xml:lang="en">number of measurements Z = (region of interest depth) / (point distance Z)</rdfs:comment>
         <rdfs:label xml:lang="en">number of measurements Z</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://orcid.org/0000-0002-1595-3213 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-1595-3213">
+        <rdfs:label>Philip Strömert</rdfs:label>
+        <schema1:affiliation rdf:resource="https://ror.org/04aj4c181"/>
+        <schema1:affiliation rdf:resource="https://www.wikidata.org/wiki/Q96678459"/>
+        <schema1:affiliation xml:lang="en">VIBSO Workgroup</schema1:affiliation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0002-2239-3955 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-2239-3955">
+        <rdfs:label>Giacomo Lanza</rdfs:label>
+        <schema1:affiliation rdf:resource="https://ror.org/05r3f7h03"/>
+        <schema1:affiliation rdf:resource="https://www.wikidata.org/wiki/Q96678459"/>
+        <schema1:affiliation xml:lang="en">VIBSO Workgroup</schema1:affiliation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0002-4378-6061 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-4378-6061">
+        <rdfs:label>Johannes Hunold</rdfs:label>
+        <schema1:affiliation rdf:resource="https://ror.org/04aj4c181"/>
+        <schema1:affiliation rdf:resource="https://www.wikidata.org/wiki/Q96678459"/>
+        <schema1:affiliation xml:lang="en">VIBSO Workgroup</schema1:affiliation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ror.org/04aj4c181 -->
+
+    <owl:NamedIndividual rdf:about="https://ror.org/04aj4c181">
+        <rdfs:label xml:lang="en">German National Library of Science and Technology Hannover</rdfs:label>
+        <rdfs:label xml:lang="de">Technische Informationsbibliothek (TIB)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ror.org/05r3f7h03 -->
+
+    <owl:NamedIndividual rdf:about="https://ror.org/05r3f7h03">
+        <rdfs:label xml:lang="en">German National Metrology Institute</rdfs:label>
+        <rdfs:label xml:lang="de">Physikalisch-Technische Bundesanstalt (PTB)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q96678459 -->
+
+    <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Q96678459">
+        <rdfs:label>NFDI4Chem</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

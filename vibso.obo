@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2023-05-04
+data-version: releases/2023-06-21
 subsetdef: attribute_slim ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -11,10 +11,15 @@ subsetdef: RO:0002259 ""
 subsetdef: scalar_slim ""
 subsetdef: value_slim ""
 ontology: vibso
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1595-3213
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2239-3955
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-4378-6061
+property_value: http://purl.org/dc/terms/creator https://www.wikidata.org/wiki/Q96678459
+property_value: http://purl.org/dc/terms/creator "VIBSO Workgroup" xsd:string
 property_value: http://purl.org/dc/terms/description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays." xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/title "Vibrational Spectroscopy Ontology" xsd:string
-property_value: owl:versionInfo "2023-05-04" xsd:string
+property_value: owl:versionInfo "2023-06-21" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -1904,6 +1909,19 @@ property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.or
 id: GO:0016301
 
 [Term]
+id: IAO:0000003
+name: measurement unit label
+def: "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure." []
+is_a: IAO:0000009 ! datum label
+property_value: IAO:0000111 "measurement unit label" xsd:string
+property_value: IAO:0000112 "Examples of measurement unit labels are liters, inches, weight per volume." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "2009-03-16: provenance: a term measurement unit was\nproposed for OBI (OBI_0000176) , edited by Chris Stoeckert and\nCristian Cocos, and subsequently moved to IAO where the objective for\nwhich the original term was defined was satisfied with the definition\nof this, different, term." xsd:string
+property_value: IAO:0000116 "2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI." xsd:string
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
+
+[Term]
 id: IAO:0000005
 name: objective specification
 def: "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved." []
@@ -1931,6 +1949,27 @@ property_value: IAO:0000112 "Pour the contents of flask 1 into flask 2" xsd:stri
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "OBI Plan and Planned Process branch" xsd:string
+
+[Term]
+id: IAO:0000009
+name: datum label
+def: "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label" []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000111 "datum label" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000116 "http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n" xsd:string
+property_value: IAO:0000117 "GROUP: IAO" xsd:string
+property_value: IAO:0000232 "9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. \n" xsd:string
+
+[Term]
+id: IAO:0000017
+name: model number
+def: "A model number is an information content entity specifically borne by catalogs, design specifications, advertising materials, inventory systems and similar  that is about manufactured objects of the same class. The model number is an alternative term for the class. The manufactered objects may or may not also bear the model number. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots." []
+is_a: IAO:0000028 ! symbol
+property_value: IAO:0000111 "model number" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "manufactered items may have more than one model number, sometimes by rebranding, or because companies are sold and the products issued new model numbers" xsd:string
+property_value: IAO:0000117 "Person: Alan Ruttenberg" xsd:string
 
 [Term]
 id: IAO:0000027
@@ -2134,6 +2173,16 @@ property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
 
 [Term]
+id: IAO:0000408
+name: length measurement datum
+def: "A scalar measurement datum that is the result of measurement of length quality" []
+is_a: IAO:0000032 ! scalar measurement datum
+relationship: IAO:0000039 UO:0000001 ! has measurement unit label
+relationship: IAO:0000221 PATO:0000122 ! is quality measurement of
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+
+[Term]
 id: IAO:0000409
 name: denotator type
 def: "A denotator type indicates how a term should be interpreted from an ontological perspective." []
@@ -2142,6 +2191,17 @@ property_value: IAO:0000111 "denotator type" xsd:string
 property_value: IAO:0000112 "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities." xsd:string
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "Barry Smith, Werner Ceusters" xsd:string
+
+[Term]
+id: IAO:0000414
+name: mass measurement datum
+def: "A scalar measurement datum that is the result of measurement of mass quality" []
+is_a: IAO:0000032 ! scalar measurement datum
+relationship: IAO:0000039 UO:0000002 ! has measurement unit label
+relationship: IAO:0000221 PATO:0000125 ! is quality measurement of mass
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000116 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case" xsd:string
+property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
 
 [Term]
 id: IAO:0000577
@@ -2993,6 +3053,18 @@ property_value: IAO:0000117 "James Malone" xsd:string
 property_value: IAO:0000119 "PERSON: James Malone" xsd:string
 
 [Term]
+id: OBI:0302732
+name: solvent role
+def: "solvent role is a role which inheres in a molecular entity capable of ensuring the dissolution of another chemical entity and realized by the process of solvation" []
+is_a: BFO:0000023 ! role
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
+property_value: IAO:0000111 "solvent role" xsd:string
+property_value: IAO:0000112 "PMID: 18373502.Transfusion. 2008 Mar 25. Solvent/detergent treatment of platelet concentrates enhances the release of growth factors." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000119 "adpated from wikipedia (http://en.wikipedia.org/wiki/Solvatation)" xsd:string
+
+[Term]
 id: OBI:0400169
 name: microscope
 def: "A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)" []
@@ -3043,6 +3115,28 @@ def: "A dependent entity that inheres in a bearer by virtue of how the bearer is
 is_a: BFO:0000020 ! specifically dependent continuant
 
 [Term]
+id: PATO:0000033
+name: concentration of
+namespace: quality
+def: "A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance." [Wikipedia:http\://en.wikipedia.org/wiki/concentration]
+subset: attribute_slim
+subset: relational_slim
+subset: scalar_slim
+synonym: "concentration" EXACT []
+is_a: PATO:0002182 ! molecular quality
+
+[Term]
+id: PATO:0000125
+name: mass
+namespace: quality
+def: "A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter." [PATOC:GVG]
+comment: For any biological use of PATO, the concept that should be used is 'mass' and not 'weight'. For example, increased weight of an organism.
+subset: attribute_slim
+subset: relational_slim
+subset: scalar_slim
+is_a: PATO:0001018 ! physical quality
+
+[Term]
 id: PATO:0000133
 name: orientation
 namespace: quality
@@ -3091,6 +3185,16 @@ xref: Wikipedia:Physical_property
 is_a: PATO:0001241 ! physical object quality
 
 [Term]
+id: PATO:0001019
+name: mass density
+namespace: quality
+def: "A physical quality which inheres in a bearer by virtue of some influence is exerted by the bearer's mass per unit size." [WordNet:WordNet]
+subset: attribute_slim
+subset: scalar_slim
+synonym: "density" RELATED []
+is_a: PATO:0001018 ! physical quality
+
+[Term]
 id: PATO:0001241
 name: physical object quality
 namespace: quality
@@ -3117,6 +3221,17 @@ def: "A physical quality which is equal to the distance between repeating units 
 subset: attribute_slim
 subset: scalar_slim
 is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0002182
+name: molecular quality
+namespace: quality
+alt_id: PATO:0002061
+def: "A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc." [PATOC:GVG]
+synonym: "relational molecular quality" EXACT []
+is_a: PATO:0001241 ! physical object quality
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
+creation_date: 2010-03-10T03:18:15Z
 
 [Term]
 id: PATO:0002497
@@ -3614,6 +3729,18 @@ property_value: IAO:0000112 "A person's name denotes the person. A variable name
 property_value: IAO:0000116 "2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have 'specifically denotes', which would have been primitive, so make this relation primitive.\ng denotes r =def \nr is a portion of reality\nthere is some c that is a concretization of g \nevery c that is a concretization of g specifically denotes r" xsd:string
 property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan" xsd:string
+is_a: IAO:0000136 ! is about
+
+[Typedef]
+id: IAO:0000221
+name: is quality measurement of
+def: "m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q" []
+property_value: IAO:0000116 "8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later" xsd:string
+property_value: IAO:0000116 "From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]\n\nThis one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details.\n--\nFrom the second IAO workshop, various comments, [commented on by Alan Ruttenberg 8/6/2009]\n\nunit of measure is a quality, e.g. the length of a ruler.\n\n[We decided to hedge on what units of measure are, instead talking about measurement unit labels, which are the information content entities that are about whatever measurement units are. For IAO we need that information entity in any case. See the term measurement unit label]\n\n[Some struggling with the various subflavors of is_about. We subsequently removed the relation represents, and describes until and only when we have a better theory]\n\na represents b means either a denotes b or a describes\n\ndescribe:\na describes b means a is about b and a allows an inference of at least one quality of b\n\nWe have had a long discussion about denotes versus describes." xsd:string
+property_value: IAO:0000116 "From the second IAO workshop: An attempt at tieing the quality to the measurement datum more carefully.\n\na is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality." xsd:string
+property_value: IAO:0000116 "From the second meeting on IAO:\n\nAn attempt at defining assay using Barry's \"reliability\" wording\n\nassay:\nprocess and has_input some material entity\nand has_output some information content entity \nand which is such that instances of this process type reliably generate \noutputs that describes the input." xsd:string
+property_value: IAO:0000116 "This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details." xsd:string
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 is_a: IAO:0000136 ! is about
 
 [Typedef]
