@@ -31,7 +31,6 @@ Declaration(Class(obo:BFO_0000029))
 Declaration(Class(obo:CHMO_0000823))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000032))
-Declaration(Class(obo:IAO_0000109))
 Declaration(Class(obo:IAO_0000140))
 Declaration(Class(obo:OBI_0000654))
 Declaration(Class(obo:OBI_0000968))
@@ -64,7 +63,6 @@ Declaration(Class(obo:VIBSO_0000024))
 Declaration(Class(obo:VIBSO_0000025))
 Declaration(Class(obo:VIBSO_0000026))
 Declaration(Class(obo:VIBSO_0000027))
-Declaration(Class(obo:VIBSO_0000028))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000115))
@@ -74,7 +72,6 @@ Declaration(AnnotationProperty(obo:IAO_0000231))
 Declaration(AnnotationProperty(obo:IAO_0100001))
 Declaration(AnnotationProperty(dc:contributor))
 Declaration(AnnotationProperty(dc:source))
-Declaration(AnnotationProperty(skos:exactMatch))
 
 
 
@@ -403,18 +400,6 @@ AnnotationAssertion(rdfs:comment obo:VIBSO_0000027 "number of measurements Z = (
 AnnotationAssertion(rdfs:label obo:VIBSO_0000027 "number of measurements Z"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000027 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32>)
 SubClassOf(obo:VIBSO_0000027 obo:IAO_0000140)
-
-# Class: obo:VIBSO_0000028 (absorbance meassurement datum)
-
-AnnotationAssertion(Annotation(dc:source <http://purl.allotrope.org/ontologies/result#AFR_0001157>) Annotation(dc:source <https://doi.org/10.1351/goldbook>) obo:IAO_0000115 obo:VIBSO_0000028 "A meassurement datum that represents the logarithm to the base 10 (linear absorbance) of the incident (prior to absorption) spectral radiant power, divided by the transmitted spectral radiant power."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000028 "absorbance"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000028 "extinction"@en)
-AnnotationAssertion(dc:contributor obo:VIBSO_0000028 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(rdfs:comment obo:VIBSO_0000028 "Definition was adapted from “afo:absorbance“. We did not reuse/import this AFO term directly due to the associated ontological commitment of AFO. Yet, we will provide a mapping."@en)
-AnnotationAssertion(rdfs:label obo:VIBSO_0000028 "absorbance meassurement datum"@en)
-AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000028 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/86>)
-AnnotationAssertion(skos:exactMatch obo:VIBSO_0000028 <http://purl.allotrope.org/ontologies/result#AFR_0001157>)
-SubClassOf(obo:VIBSO_0000028 obo:IAO_0000109)
 
 
 )
