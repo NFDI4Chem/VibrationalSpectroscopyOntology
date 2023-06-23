@@ -24,14 +24,13 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-06-22/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-06-23/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts.")
 
 Declaration(Class(obo:BFO_0000029))
 Declaration(Class(obo:CHMO_0000823))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000032))
-Declaration(Class(obo:IAO_0000109))
 Declaration(Class(obo:IAO_0000140))
 Declaration(Class(obo:OBI_0000654))
 Declaration(Class(obo:OBI_0000968))
@@ -405,13 +404,12 @@ SubClassOf(obo:VIBSO_0000027 obo:IAO_0000140)
 
 # Class: obo:VIBSO_0000028 (absorbance)
 
-AnnotationAssertion(Annotation(dc:source <http://purl.allotrope.org/ontologies/result#AFR_0001157>) Annotation(dc:source <https://doi.org/10.1351/goldbook>) obo:IAO_0000115 obo:VIBSO_0000028 "A meassurement datum that represents the logarithm to the base 10 (linear absorbance) of the incident (prior to absorption) spectral radiant power, divided by the transmitted spectral radiant power."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000028 "extinction"@en)
+AnnotationAssertion(Annotation(dc:source <http://purl.allotrope.org/ontologies/result#AFR_0001157>) Annotation(dc:source <https://doi.org/10.1351/goldbook>) obo:IAO_0000115 obo:VIBSO_0000028 "A data item that quantifies the absorption quality of a sample by being the logarithm of the incident electromagnetic radiation power (before absorption), divided by the transmitted electromagnetic radiation power (after absorption)."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000028 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:comment obo:VIBSO_0000028 "Definition was adapted from “afo:absorbance“. We did not reuse/import this AFO term directly due to the associated ontological commitment of AFO. Yet, we will provide a mapping."@en)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000028 "absorbance"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000028 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/86>)
-SubClassOf(obo:VIBSO_0000028 obo:IAO_0000109)
+SubClassOf(obo:VIBSO_0000028 obo:IAO_0000027)
 
 
 )
