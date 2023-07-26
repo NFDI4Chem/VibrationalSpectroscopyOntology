@@ -3,7 +3,7 @@
 ## 1. [`Comparability of Raman Spectroscopic Configurations: A Large Scale Cross-Laboratory Study`](https://doi.org/10.5281/zenodo.4152952)
 
 Data: Slightly processed raw data (spike removal to allow an interpolation to a common wavenumber axis) from different sources
-Metadata: sample measured
+Metadata fields: sample measured
 
 ## 2. [`Raman spectra of the Adenoma-Carcinoma-Sequence in a mice model`](https://doi.org/10.5281/zenodo.3905057)
 
