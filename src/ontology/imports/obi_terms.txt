@@ -47,6 +47,7 @@ http://purl.obolibrary.org/obo/OBI_0000202 # investigation agent role
 http://purl.obolibrary.org/obo/OBI_0000067 # evaluant role
 http://purl.obolibrary.org/obo/OBI_0000086 # reagent role
 http://purl.obolibrary.org/obo/OBI_0000112 # specimen role
+http://purl.obolibrary.org/obo/OBI_0302732 # solvent role
 http://purl.obolibrary.org/obo/OBI_0000740 # material sample role
 http://purl.obolibrary.org/obo/OBI_0000453 # measure function
 http://purl.obolibrary.org/obo/OBI_0000397 # image acquisition function

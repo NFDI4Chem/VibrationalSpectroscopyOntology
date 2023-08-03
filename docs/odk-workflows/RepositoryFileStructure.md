@@ -22,7 +22,6 @@ These are the current imports in VIBSO
 | iao | http://purl.obolibrary.org/obo/iao.owl | None |
 | chmo | http://purl.obolibrary.org/obo/chmo.owl | custom |
 | pato | http://purl.obolibrary.org/obo/pato.owl | None |
-| txpo | http://purl.obolibrary.org/obo/txpo.owl | None |
 | obi | http://purl.obolibrary.org/obo/obi.owl | custom |
 | stato | http://purl.obolibrary.org/obo/stato.owl | None |
 

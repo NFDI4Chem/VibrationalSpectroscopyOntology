@@ -12,9 +12,9 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-03-13/imports/obi_import.owl"/>
-        <owl:versionInfo>2023-03-13</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-06-21/imports/obi_import.owl"/>
+        <owl:versionInfo>2023-06-21</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:Ontology>
     
 
@@ -217,7 +217,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -225,7 +225,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -233,7 +233,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -241,7 +241,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -249,7 +249,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -274,7 +274,7 @@
         <obo:IAO_0000117>PERSON: Larry Hunter</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Melanie Coutot</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">has_specified_input</rdfs:label>
     </owl:ObjectProperty>
     
@@ -290,7 +290,7 @@
         <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">is_specified_input_of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -314,7 +314,7 @@
         <obo:IAO_0000117>PERSON: Larry Hunter</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
     </owl:ObjectProperty>
     
@@ -331,7 +331,7 @@
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -347,7 +347,7 @@
         <obo:IAO_0000117>BP, AR, PPPB branch</obo:IAO_0000117>
         <obo:IAO_0000119>PPPB branch derived</obo:IAO_0000119>
         <obo:IAO_0000232>modified according to email thread from 1/23/09 in accordince with DT and PPPB branch</obo:IAO_0000232>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>achieves_planned_objective</rdfs:label>
     </owl:ObjectProperty>
     
@@ -361,7 +361,7 @@
         <obo:IAO_0000115>This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
         <obo:IAO_0000117>OBI</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>objective_achieved_by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -376,7 +376,7 @@
         <obo:IAO_0000115>A relation between a planned process and a continuant where the continuant can be a person, organization or device (such as a robot controlled by software workflow management system) that performs the planned process.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">OBI</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:comment>The &apos;has performer&apos; relation covers the need to report on who performed a planned processed. It has to cover processes done by People or Devices (such as a robot controlled by software  WF management system).</rdfs:comment>
         <rdfs:label xml:lang="en">has performer</rdfs:label>
     </owl:ObjectProperty>
@@ -386,7 +386,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -394,7 +394,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -414,7 +414,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -422,7 +422,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000079 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000079">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -430,7 +430,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000085 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000085">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -438,7 +438,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:ObjectProperty>
     
 
@@ -475,7 +475,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:Class>
     
 
@@ -495,7 +495,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:Class>
     
 
@@ -503,7 +503,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:Class>
     
 
@@ -511,7 +511,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000101">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:Class>
     
 
@@ -525,7 +525,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:Class>
     
 
@@ -545,7 +545,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
     </owl:Class>
     
 
@@ -578,7 +578,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
         <obo:IAO_0000232>6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
@@ -604,7 +604,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Is a material entity that is created or changed during material processing.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">processed material</rdfs:label>
     </owl:Class>
     
@@ -641,7 +641,7 @@ editor = PRS</obo:IAO_0000232>
         <obo:IAO_0000232>Could add specific objective specification</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <obo:OBI_0001847>study</obo:OBI_0001847>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">investigation</rdfs:label>
     </owl:Class>
     
@@ -672,7 +672,7 @@ editor = PRS</obo:IAO_0000232>
         <obo:IAO_0000117>GROUP:  Role Branch</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <obo:IAO_0000232>Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.</obo:IAO_0000232>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">evaluant role</rdfs:label>
     </owl:Class>
     
@@ -742,14 +742,14 @@ editor = PRS</obo:IAO_0000232>
         <obo:IAO_0000112>Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</obo:IAO_0000115>
-        <obo:IAO_0000116>12/3/12: BP: the reference to the &apos;physical examination&apos; is included to point out that a prediction is not an assay, as that does not require physical examiniation. </obo:IAO_0000116>
+        <obo:IAO_0000116>12/3/12: BP: the reference to the &apos;physical examination&apos; is included to point out that a prediction is not an assay, as that does not require physical examiniation.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">measuring</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">scientific observation</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
         <obo:OBI_0001847>study assay</obo:OBI_0001847>
         <obo:OBI_9991118>any method</obo:OBI_9991118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">assay</rdfs:label>
     </owl:Class>
     
@@ -771,7 +771,7 @@ editor = PRS</obo:IAO_0000232>
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">study</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">sample preparation for assay</rdfs:label>
     </owl:Class>
     
@@ -790,9 +790,8 @@ editor = PRS</obo:IAO_0000232>
         <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000232>Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.
 
-May 28 2013. Updated definition taken from ReO based on discussions initiated in Philly 2011 workshop.  Former defnition described a narrower view of reagents in chemistry that restricts bearers of the role to be chemical entities (&quot;a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances&quot;).  Updated definition allows for broader view of reagents in the domain of biomedical research to include larger materials that have parts that participate chemically in a molecular reaction or interaction.
-</obo:IAO_0000232>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+May 28 2013. Updated definition taken from ReO based on discussions initiated in Philly 2011 workshop.  Former defnition described a narrower view of reagents in chemistry that restricts bearers of the role to be chemical entities (&quot;a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances&quot;).  Updated definition allows for broader view of reagents in the domain of biomedical research to include larger materials that have parts that participate chemically in a molecular reaction or interaction.</obo:IAO_0000232>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:comment>(copied from ReO)
 Reagents are distinguished from instruments or devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, instruments do not participate in a chemical reaction/interaction during the technique.
 
@@ -837,7 +836,7 @@ In regard to the statement that reagents are &apos;distinct&apos; from the speci
         <obo:IAO_0000117>PERSON: Philippe Rocca Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">material transformation</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">material processing</rdfs:label>
     </owl:Class>
     
@@ -878,7 +877,7 @@ specimen can later be subject.</obo:IAO_0000116>
         <obo:IAO_0000117>GROUP:  Role Branch</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">specimen role</rdfs:label>
     </owl:Class>
     
@@ -936,7 +935,7 @@ specimen can later be subject.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">OBI</obo:IAO_0000119>
         <obo:IAO_0000232>Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.</obo:IAO_0000232>
         <obo:OBI_0001847>study person role</obo:OBI_0001847>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:comment>Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable investigations run by robot scientists such as ADAM (King et al, Science, 2009)</rdfs:comment>
         <rdfs:label>investigation agent role</rdfs:label>
     </owl:Class>
@@ -983,7 +982,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Susanna Sansone</obo:IAO_0000117>
         <obo:IAO_0000119>GROUP: OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">organization</rdfs:label>
     </owl:Class>
     
@@ -1000,7 +999,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)</obo:IAO_0000119>
         <obo:OBI_0001847>study protocol</obo:OBI_0001847>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">protocol</rdfs:label>
     </owl:Class>
     
@@ -1025,11 +1024,11 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000112>The process of a scientist thinking about and deciding what reagents to use as part of a protocol for an experiment. Note that the scientist could be human or a &quot;robot scientist&quot; executing software.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a process of creating or modifying a plan specification</obo:IAO_0000115>
-        <obo:IAO_0000116>7/18/2011 BP: planning used to itself be a planned process. Barry Smith pointed out that this would lead to an infinite regression, as there would have to be a plan to conduct a planning process, which in itself would be the result of planning etc. Therefore, the restrictions on &apos;planning&apos; were loosened to allow for informal processes that result in an &apos;ad hoc plan &apos;. This required changing from &apos;has_specified_output some plan specifiction&apos; to &apos;has_participant some plan specification&apos;. </obo:IAO_0000116>
+        <obo:IAO_0000116>7/18/2011 BP: planning used to itself be a planned process. Barry Smith pointed out that this would lead to an infinite regression, as there would have to be a plan to conduct a planning process, which in itself would be the result of planning etc. Therefore, the restrictions on &apos;planning&apos; were loosened to allow for informal processes that result in an &apos;ad hoc plan &apos;. This required changing from &apos;has_specified_output some plan specifiction&apos; to &apos;has_participant some plan specification&apos;.</obo:IAO_0000116>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
         <obo:IAO_0000119>Plans and Planned Processes Branch</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">planning</rdfs:label>
     </owl:Class>
     
@@ -1046,7 +1045,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
         <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">magnify function</rdfs:label>
     </owl:Class>
     
@@ -1072,7 +1071,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">An image acquisition function is a function to acquire an image of a material</obo:IAO_0000115>
         <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">image acquisition function</rdfs:label>
     </owl:Class>
     
@@ -1099,7 +1098,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
         <obo:IAO_0000118>image acquisition device</obo:IAO_0000118>
         <obo:IAO_0000119>sep:00096</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>image creation device</rdfs:label>
     </owl:Class>
     
@@ -1116,7 +1115,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
         <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">solid support function</rdfs:label>
     </owl:Class>
     
@@ -1132,7 +1131,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">an objective specification to determine a specified type of information about an evaluated entity (the material entity bearing evaluant role)</obo:IAO_0000115>
         <obo:IAO_0000117>PPPB branch</obo:IAO_0000117>
         <obo:IAO_0000119>PPPB branch</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">assay objective</rdfs:label>
     </owl:Class>
     
@@ -1167,7 +1166,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON:Frank Gibson</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">measure function</rdfs:label>
     </owl:Class>
     
@@ -1188,7 +1187,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">artifact  creation objective</obo:IAO_0000118>
         <obo:IAO_0000119>GROUP: OBI PlanAndPlannedProcess Branch</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">material transformation objective</rdfs:label>
     </owl:Class>
     
@@ -1217,7 +1216,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115>Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process.</obo:IAO_0000115>
         <obo:IAO_0000117>GROUP:  Role Branch</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>manufacturer role</rdfs:label>
     </owl:Class>
     
@@ -1239,7 +1238,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000115>a quality inheres_in some device and is concretization of some (device_setting_specification and is_about a quality of the device</obo:IAO_0000115>
         <obo:IAO_0000116>There is some question of whether &apos;device setting&apos; is really best modelled as a quality.  To be revisited after assay terms have been worked through. See https://github.com/obi-ontology/obi/issues/133</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Frank Gibson</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>device setting</rdfs:label>
     </owl:Class>
     
@@ -1285,7 +1284,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000118>specimen collection</obo:IAO_0000118>
         <obo:IAO_0000232>5/31/2012: This process is not necessarily an acquisition, as specimens may be collected from materials already in posession</obo:IAO_0000232>
         <obo:IAO_0000232>6/9/09: used at workshop</obo:IAO_0000232>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>specimen collection process</rdfs:label>
     </owl:Class>
     
@@ -1301,7 +1300,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000115>A objective specification to obtain a material entity for potential use as an input during an investigation.</obo:IAO_0000115>
         <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>specimen collection objective</rdfs:label>
     </owl:Class>
     
@@ -1317,7 +1316,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000115>A material sample role is a specimen role borne by a material entity that is the output of a material sampling process.</obo:IAO_0000115>
         <obo:IAO_0000116>7/13/09: Note that this is a relational role: between the sample taken and the &apos;sampled&apos; material of which the sample is thought to be representative off.</obo:IAO_0000116>
         <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>material sample role</rdfs:label>
     </owl:Class>
     
@@ -1346,7 +1345,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000118>sample population</obo:IAO_0000118>
         <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
         <obo:OBI_0001847>sample</obo:OBI_0001847>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>material sample</rdfs:label>
     </owl:Class>
     
@@ -1373,7 +1372,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000115>A device in which a measure function inheres.</obo:IAO_0000115>
         <obo:IAO_0000117>GROUP:OBI Philly workshop</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>measurement device</rdfs:label>
     </owl:Class>
     
@@ -1402,7 +1401,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000111>manufacturer</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>A person or organization that has a manufacturer role</obo:IAO_0000115>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>manufacturer</rdfs:label>
     </owl:Class>
     
@@ -1439,11 +1438,11 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
 
 (3) A gel running  box  is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it.  This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.
 
-In the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation).  In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay.  </obo:IAO_0000116>
+In the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation).  In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000118>instrument</obo:IAO_0000118>
         <obo:IAO_0000119>OBI development call 2012-12-17.</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>device</rdfs:label>
     </owl:Class>
     
@@ -1471,7 +1470,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000115>A planned process that captures an image of an object.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000118>image acquisition</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>image creation</rdfs:label>
     </owl:Class>
     
@@ -1488,7 +1487,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000118 xml:lang="en">specimen ID</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
         <obo:OBI_0001886>Specimen ID</obo:OBI_0001886>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <dc:source>NIAID GSCID-BRC</dc:source>
         <rdfs:label xml:lang="en">specimen identifier</rdfs:label>
     </owl:Class>
@@ -1506,7 +1505,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000119 xml:lang="en">NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
         <obo:OBI_0001847>study title</obo:OBI_0001847>
         <obo:OBI_0001886 xml:lang="en">project title</obo:OBI_0001886>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <dc:source>NIAID GSCID-BRC</dc:source>
         <rdfs:label xml:lang="en">investigation title</rdfs:label>
     </owl:Class>
@@ -1548,7 +1547,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
         <obo:OBI_0001886>Comments</obo:OBI_0001886>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <dc:source>NIAID GSCID-BRC</dc:source>
         <rdfs:label xml:lang="en">comment on investigation</rdfs:label>
     </owl:Class>
@@ -1572,7 +1571,7 @@ OBI doesn&apos;t take position as to  when an organism starts or ends being an o
 This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117>GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
@@ -1602,7 +1601,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI Biomaterial Branch</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">specimen</rdfs:label>
     </owl:Class>
     
@@ -1661,7 +1660,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">data processing</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Branch editors</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">data transformation</rdfs:label>
     </owl:Class>
     
@@ -1678,8 +1677,24 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000116>Modified definition in 2013 Philly OBI workshop</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">James Malone</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">PERSON: James Malone</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">data transformation objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302732 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302732">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000111>solvent role</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18373502.Transfusion. 2008 Mar 25. Solvent/detergent treatment of platelet concentrates enhances the release of growth factors.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">solvent role is a role which inheres in a molecular entity capable of ensuring the dissolution of another chemical entity and realized by the process of solvation</obo:IAO_0000115>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>adpated from wikipedia (http://en.wikipedia.org/wiki/Solvatation)</obo:IAO_0000119>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
+        <rdfs:label xml:lang="en">solvent role</rdfs:label>
     </owl:Class>
     
 
@@ -1706,7 +1721,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000115>A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Phillippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119>wikipedia</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>microscope</rdfs:label>
     </owl:Class>
     
@@ -1728,7 +1743,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000115>A microscope slide is a device usually made of glass which is used as a solid matrix for (biological) material deposited on its surface and which is compatible for use with a microscope instrument</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Phillippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119>OBI biomaterial branch</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>microscope slide</rdfs:label>
     </owl:Class>
     
@@ -1753,7 +1768,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">experimental design</obo:IAO_0000118>
         <obo:IAO_0000232 xml:lang="en">rediscussed at length (MC/JF/BP). 12/9/08). The definition was clarified to differentiate it from protocol.</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">study design</rdfs:label>
     </owl:Class>
     
@@ -1863,7 +1878,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
         <obo:IAO_0000119>Person:Helen Parkinson</obo:IAO_0000119>
         <obo:IAO_0000232>2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000232>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label>is member of organization</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001213">
@@ -1999,7 +2014,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000116>See tracker:
 https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_id=177891&amp;atid=886178</obo:IAO_0000116>
         <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl"/>
         <rdfs:label xml:lang="en">has organization member</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001855">
@@ -2045,6 +2060,33 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
         <obo:IAO_0000117>John Judkins</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:https://eu.biogents.com/about-biogents/</obo:IAO_0000119>
         <rdfs:label>BioGents</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003495">
+        <obo:IAO_0000111>Abbott</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A manufacturer of rapid point-of-care assay devices.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:https://www.globalpointofcare.abbott/en/about.html</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>Abbott</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003496">
+        <obo:IAO_0000111>J. Mitra</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A manufacturer of in vitro diagnostic assay kits in India.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:https://jmitra.co.in/about-us/</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>J. Mitra</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003497">
+        <obo:IAO_0000111>InBios</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A manufacturer that specializes in in vitro diagnostic devices designed to test for infectious diseases.</obo:IAO_0000115>
+        <obo:IAO_0000117>John Judkins ORCID:0000-0001-6595-0902</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:https://inbios.com/about/</obo:IAO_0000119>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1456</obo:IAO_0000233>
+        <rdfs:label>InBios</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
