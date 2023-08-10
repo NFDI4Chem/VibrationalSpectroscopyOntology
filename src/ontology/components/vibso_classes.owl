@@ -23,7 +23,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-06-21/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-08-10/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts.")
 
 Declaration(Class(obo:BFO_0000029))
@@ -100,6 +100,7 @@ SubClassOf(obo:VIBSO_0000001 obo:OBI_0000654)
 AnnotationAssertion(Annotation(dc:source <https://www.oceaninsight.com/knowledge-hub/glossary/#i>) obo:IAO_0000115 obo:VIBSO_0000002 "A setting datum that specifies the length of time that a photo detector is allowed to collect photons before passing the accumulated charge to the A/D converter for processing. The minimum integration time is the shortest integration time the device supports and is dependent on how fast the detector can read out all of the pixel information. Integration time should not be confused with data transfer speed."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000002 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000002 "integration period setting"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000002 "integration time"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000002 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000002 "integration time setting"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000002 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/40>)
@@ -174,6 +175,8 @@ SubClassOf(obo:VIBSO_0000009 obo:PATO_0001018)
 
 AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000010 "A setting datum that specifies the number of grooves in a diffraction grating device."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000010 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000010 "grating"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000010 "grating setting"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000010 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000010 "groove density setting"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000010 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45>)
