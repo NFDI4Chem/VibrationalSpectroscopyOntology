@@ -14,6 +14,8 @@ As previously mentioned, VIBSO's scope is the semantic description of vibrationa
  ~* What protocol and devices were used?~
 > Somehow redundant with the following one; "what protocol" meaningful only within a workgroup
 
+ * What devices were used?
+
  * What were the protocol parameters & device configurations?
 
  * Who was involved in the assay? (identified by a PID like ORCID at best)
@@ -33,4 +35,4 @@ As previously mentioned, VIBSO's scope is the semantic description of vibrationa
 
 * Find me a suitable solvent which is compatible with sample XY, i.e. which does not have any Raman peak or band between wavenumbers W1 and W2.
 
-This list represents only a first draft and needs to be thoroughly discussed with the domain experts and the NFDI4Chem community. 
+This list represents only a first draft and needs to be thoroughly discussed with the domain experts and the NFDI4Chem community.

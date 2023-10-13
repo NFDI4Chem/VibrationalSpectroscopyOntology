@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: vibso/releases/2023-03-13/vibso-full.owl
+data-version: vibso/releases/2023-06-21/vibso-full.owl
 subsetdef: attribute_slim ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -11,10 +11,15 @@ subsetdef: RO:0002259 ""
 subsetdef: scalar_slim ""
 subsetdef: value_slim ""
 ontology: vibso/vibso-full
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1595-3213
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2239-3955
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-4378-6061
+property_value: http://purl.org/dc/terms/creator https://www.wikidata.org/wiki/Q96678459
+property_value: http://purl.org/dc/terms/creator "VIBSO Workgroup" xsd:string
 property_value: http://purl.org/dc/terms/description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays." xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/title "Vibrational Spectroscopy Ontology" xsd:string
-property_value: owl:versionInfo "2023-03-13" xsd:string
+property_value: owl:versionInfo "2023-06-21" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -438,7 +443,7 @@ name: function
 is_a: BFO:0000016 ! disposition
 property_value: BFO:0000179 "function" xsd:string
 property_value: BFO:0000180 "Function" xsd:string
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000112 "the function of a hammer to drive in nails" xsd:string
 property_value: IAO:0000112 "the function of a heart pacemaker to regulate the beating of a heart through electricity" xsd:string
 property_value: IAO:0000112 "the function of amylase in saliva to break down starch into sugar" xsd:string
@@ -1904,6 +1909,19 @@ property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.or
 id: GO:0016301
 
 [Term]
+id: IAO:0000003
+name: measurement unit label
+def: "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure." []
+is_a: IAO:0000009 ! datum label
+property_value: IAO:0000111 "measurement unit label" xsd:string
+property_value: IAO:0000112 "Examples of measurement unit labels are liters, inches, weight per volume." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "2009-03-16: provenance: a term measurement unit was\nproposed for OBI (OBI_0000176) , edited by Chris Stoeckert and\nCristian Cocos, and subsequently moved to IAO where the objective for\nwhich the original term was defined was satisfied with the definition\nof this, different, term." xsd:string
+property_value: IAO:0000116 "2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI." xsd:string
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
+
+[Term]
 id: IAO:0000005
 name: objective specification
 def: "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved." []
@@ -1933,11 +1951,32 @@ property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "OBI Plan and Planned Process branch" xsd:string
 
 [Term]
+id: IAO:0000009
+name: datum label
+def: "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label" []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000111 "datum label" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000116 "http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n" xsd:string
+property_value: IAO:0000117 "GROUP: IAO" xsd:string
+property_value: IAO:0000232 "9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. \n" xsd:string
+
+[Term]
+id: IAO:0000017
+name: model number
+def: "A model number is an information content entity specifically borne by catalogs, design specifications, advertising materials, inventory systems and similar  that is about manufactured objects of the same class. The model number is an alternative term for the class. The manufactered objects may or may not also bear the model number. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots." []
+is_a: IAO:0000028 ! symbol
+property_value: IAO:0000111 "model number" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "manufactered items may have more than one model number, sometimes by rebranding, or because companies are sold and the products issued new model numbers" xsd:string
+property_value: IAO:0000117 "Person: Alan Ruttenberg" xsd:string
+
+[Term]
 id: IAO:0000027
 name: data item
 def: "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
 is_a: IAO:0000030 ! information content entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "data item" xsd:string
 property_value: IAO:0000112 "Data items include counts of things, analyte concentrations, and statistical summaries." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -2012,7 +2051,7 @@ id: IAO:0000064
 name: algorithm
 def: "A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata." []
 is_a: IAO:0000104 ! plan specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "algorithm" xsd:string
 property_value: IAO:0000112 "PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2038,7 +2077,7 @@ id: IAO:0000101
 name: image
 def: "An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface." []
 is_a: IAO:0000308 ! figure
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "image" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
@@ -2081,7 +2120,7 @@ id: IAO:0000109
 name: measurement datum
 def: "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device." []
 is_a: IAO:0000027 ! data item
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "measurement datum" xsd:string
 property_value: IAO:0000112 "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -2134,6 +2173,16 @@ property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
 
 [Term]
+id: IAO:0000408
+name: length measurement datum
+def: "A scalar measurement datum that is the result of measurement of length quality" []
+is_a: IAO:0000032 ! scalar measurement datum
+relationship: IAO:0000039 UO:0000001 ! has measurement unit label
+relationship: IAO:0000221 PATO:0000122 ! is quality measurement of
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+
+[Term]
 id: IAO:0000409
 name: denotator type
 def: "A denotator type indicates how a term should be interpreted from an ontological perspective." []
@@ -2142,6 +2191,17 @@ property_value: IAO:0000111 "denotator type" xsd:string
 property_value: IAO:0000112 "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities." xsd:string
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "Barry Smith, Werner Ceusters" xsd:string
+
+[Term]
+id: IAO:0000414
+name: mass measurement datum
+def: "A scalar measurement datum that is the result of measurement of mass quality" []
+is_a: IAO:0000032 ! scalar measurement datum
+relationship: IAO:0000039 UO:0000002 ! has measurement unit label
+relationship: IAO:0000221 PATO:0000125 ! is quality measurement of mass
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000116 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case" xsd:string
+property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
 
 [Term]
 id: IAO:0000577
@@ -2425,14 +2485,14 @@ property_value: IAO:0000111 "EL++ ontology module" xsd:string
 id: NCBITaxon:9606
 name: person
 is_a: OBI:0100026 ! organism
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 
 [Term]
 id: OBI:0000011
 name: planned process
 def: "A process that realizes a plan which is the concretization of a plan specification." []
 is_a: BFO:0000015 ! process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "planned process" xsd:string
 property_value: IAO:0000111 "planned process" xsd:string
 property_value: IAO:0000112 "Injecting mice with a vaccine in order to test its efficacy" xsd:string
@@ -2453,7 +2513,7 @@ is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
 intersection_of: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
 relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "processed material" xsd:string
 property_value: IAO:0000112 "Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2464,7 +2524,7 @@ id: OBI:0000066
 name: investigation
 def: "a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s)." []
 is_a: OBI:0000011 ! planned process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "investigation" xsd:string
 property_value: IAO:0000112 "Lung cancer investigation using expression profiling, a stem cell transplant investigation, biobanking is not an investigation, though it may be part of an investigation" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2482,7 +2542,7 @@ def: "a role that inheres in a material entity that is realized in an assay in w
 is_a: BFO:0000023 ! role
 relationship: BFO:0000054 OBI:0000070 {all_only="true"} ! realized in assay
 relationship: RO:0000052 BFO:0000040 ! characteristic of material entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "evaluant role" xsd:string
 property_value: IAO:0000112 "When a specimen of blood is assayed for glucose concentration, the blood has the evaluant role. When measuring the mass of a mouse, the evaluant is the mouse. When measuring the time of DNA replication, the evaluant is the DNA. When measuring the intensity of light on a surface, the evaluant is the light source." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2501,11 +2561,11 @@ disjoint_from: OBI:0000339 ! planning
 disjoint_from: OBI:0200000 ! data transformation
 relationship: BFO:0000055 OBI:0000067 ! realizes evaluant role
 relationship: OBI:0000417 OBI:0000441 ! achieves_planned_objective assay objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "assay" xsd:string
 property_value: IAO:0000112 "Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house." xsd:string
 property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "12/3/12: BP: the reference to the 'physical examination' is included to point out that a prediction is not an assay, as that does not require physical examiniation. " xsd:string
+property_value: IAO:0000116 "12/3/12: BP: the reference to the 'physical examination' is included to point out that a prediction is not an assay, as that does not require physical examiniation." xsd:string
 property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
 property_value: IAO:0000118 "measuring" xsd:string
 property_value: IAO:0000118 "scientific observation" xsd:string
@@ -2518,7 +2578,7 @@ id: OBI:0000073
 name: sample preparation for assay
 def: "A sample_preparation_for_assay is a protocol_application including material_enrollments and biomaterial_transformations. definition_source: OBI." []
 is_a: OBI:0000094 ! material processing
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "sample preparation for assay" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
@@ -2531,14 +2591,14 @@ name: reagent role
 def: "A role inhering in a biological or chemical entity that is intended to be applied in a scientific technique to participate (or have molecular components that participate) in a chemical reaction that facilitates the generation of data about some entity distinct from the bearer, or the generation of some specified material output distinct from the bearer." []
 comment: (copied from ReO)\nReagents are distinguished from instruments or devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, instruments do not participate in a chemical reaction/interaction during the technique.\n\nReagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance will realize only one of these roles in the execution of a given assay or technique. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.\n\nIn regard to the statement that reagents are 'distinct' from the specified outputs of a technique, note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a 'nucleic acid molecule') that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of 'reagent-ness' is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique).
 is_a: BFO:0000023 ! role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "reagent role" xsd:string
 property_value: IAO:0000112 "Buffer, dye, a catalyst, a solvating agent." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON:Matthew Brush" xsd:string
 property_value: IAO:0000118 "reagent" xsd:string
 property_value: IAO:0000119 "PERSON:Matthew Brush" xsd:string
-property_value: IAO:0000232 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.\n\nMay 28 2013. Updated definition taken from ReO based on discussions initiated in Philly 2011 workshop.  Former defnition described a narrower view of reagents in chemistry that restricts bearers of the role to be chemical entities (\"a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances\").  Updated definition allows for broader view of reagents in the domain of biomedical research to include larger materials that have parts that participate chemically in a molecular reaction or interaction.\n" xsd:string
+property_value: IAO:0000232 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.\n\nMay 28 2013. Updated definition taken from ReO based on discussions initiated in Philly 2011 workshop.  Former defnition described a narrower view of reagents in chemistry that restricts bearers of the role to be chemical entities (\"a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances\").  Updated definition allows for broader view of reagents in the domain of biomedical research to include larger materials that have parts that participate chemically in a molecular reaction or interaction." xsd:string
 
 [Term]
 id: OBI:0000094
@@ -2548,7 +2608,7 @@ is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 BFO:0000040 {all_only="true"} ! has_specified_input material entity
 relationship: OBI:0000299 OBI:0000047 ! has_specified_output processed material
 relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "material processing" xsd:string
 property_value: IAO:0000112 "A cell lysis, production of a cloning vector, creating a buffer." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2565,7 +2625,7 @@ id: OBI:0000112
 name: specimen role
 def: "a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation" []
 is_a: BFO:0000023 ! role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "specimen role" xsd:string
 property_value: IAO:0000112 "liver section; a portion of a culture of cells; a nemotode or other animal once no longer a subject (generally killed); portion of blood from a patient." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2584,7 +2644,7 @@ def: "A role borne by an entity and that is realized in a process that is part o
 comment: Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable investigations run by robot scientists such as ADAM (King et al, Science, 2009)
 is_a: BFO:0000023 ! role
 relationship: BFO:0000054 OBI:0000066 {all_only="true"} ! realized in investigation
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "investigation agent role" xsd:string
 property_value: IAO:0000112 "The person perform microarray experiments and submit microarray results (including raw data, processed data) with experiment description to ArrayExpress." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2601,7 +2661,7 @@ id: OBI:0000245
 name: organization
 def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
 is_a: BFO:0000040 ! material entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "organization" xsd:string
 property_value: IAO:0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2617,7 +2677,7 @@ id: OBI:0000272
 name: protocol
 def: "A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process." []
 is_a: IAO:0000104 ! plan specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "protocol" xsd:string
 property_value: IAO:0000112 "PCR protocol, has objective specification, amplify DNA fragment of interest, and has action specification describes the amounts of experimental reagents used (e..g. buffers, dNTPS, enzyme), and the temperature and cycle time settings for running the PCR." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2629,11 +2689,11 @@ property_value: OBI:0001847 "study protocol" xsd:string
 id: OBI:0000339
 name: planning
 def: "a process of creating or modifying a plan specification" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "planning" xsd:string
 property_value: IAO:0000112 "The process of a scientist thinking about and deciding what reagents to use as part of a protocol for an experiment. Note that the scientist could be human or a \"robot scientist\" executing software." xsd:string
 property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "7/18/2011 BP: planning used to itself be a planned process. Barry Smith pointed out that this would lead to an infinite regression, as there would have to be a plan to conduct a planning process, which in itself would be the result of planning etc. Therefore, the restrictions on 'planning' were loosened to allow for informal processes that result in an 'ad hoc plan '. This required changing from 'has_specified_output some plan specifiction' to 'has_participant some plan specification'. " xsd:string
+property_value: IAO:0000116 "7/18/2011 BP: planning used to itself be a planned process. Barry Smith pointed out that this would lead to an infinite regression, as there would have to be a plan to conduct a planning process, which in itself would be the result of planning etc. Therefore, the restrictions on 'planning' were loosened to allow for informal processes that result in an 'ad hoc plan '. This required changing from 'has_specified_output some plan specifiction' to 'has_participant some plan specification'." xsd:string
 property_value: IAO:0000117 "Bjoern Peters" xsd:string
 property_value: IAO:0000119 "Bjoern Peters" xsd:string
 property_value: IAO:0000119 "Plans and Planned Processes Branch" xsd:string
@@ -2643,7 +2703,7 @@ id: OBI:0000369
 name: magnify function
 def: "A magnify function is a function to increase the size of a transmitted object image through the precise arrangement of energy diffraction elements along an imaging path." []
 is_a: BFO:0000034 ! function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "magnify function" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Bill Bug" xsd:string
@@ -2658,7 +2718,7 @@ def: "An image acquisition function is a function to acquire an image of a mater
 is_a: OBI:0000453 ! measure function
 relationship: BFO:0000054 OBI:0001007 {all_only="true"} ! realized in image creation
 relationship: RO:0000052 OBI:0000398 ! characteristic of image creation device
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "image acquisition function" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Frank Gibson" xsd:string
@@ -2671,7 +2731,7 @@ is_a: OBI:0000832 ! measurement device
 intersection_of: OBI:0000968 ! device
 intersection_of: RO:0000085 OBI:0000397 ! has function image acquisition function
 relationship: RO:0000085 OBI:0000397 ! has function image acquisition function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "image acquisition device" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Frank Gibson" xsd:string
@@ -2683,7 +2743,7 @@ id: OBI:0000399
 name: solid support function
 def: "A solid support function is a function of a device on which an entity is kept in a defined position and prevented in its movement" []
 is_a: BFO:0000034 ! function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "solid support function" xsd:string
 property_value: IAO:0000112 "Taped, glued, pinned, dried or molecularly bonded to a solid support" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2696,7 +2756,7 @@ id: OBI:0000441
 name: assay objective
 def: "an objective specification to determine a specified type of information about an evaluated entity (the material entity bearing evaluant role)" []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "assay objective" xsd:string
 property_value: IAO:0000112 "the objective to determine the weight of a mouse." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2709,7 +2769,7 @@ name: measure function
 def: "Measure function is a function that is borne by a processed material  and realized in a process in which information about some entity is expressed relative to some reference." []
 is_a: BFO:0000034 ! function
 relationship: RO:0000079 OBI:0000047 ! function of processed material
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "measure function" xsd:string
 property_value: IAO:0000112 "A glucometer measures blood glucose concentration, the glucometer has a measure function." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2723,7 +2783,7 @@ id: OBI:0000456
 name: material transformation objective
 def: "an objective specifiction that creates an specific output object from input materials." []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "material transformation objective" xsd:string
 property_value: IAO:0000112 "The objective to create a mouse infected with LCM virus. The objective to create a defined solution of PBS." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2740,7 +2800,7 @@ id: OBI:0000571
 name: manufacturer role
 def: "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process." []
 is_a: BFO:0000023 ! role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "manufacturer role" xsd:string
 property_value: IAO:0000112 "With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -2753,7 +2813,7 @@ name: device setting
 def: "a quality inheres_in some device and is concretization of some (device_setting_specification and is_about a quality of the device" []
 is_a: BFO:0000019 ! quality
 relationship: RO:0000052 OBI:0000047 ! characteristic of processed material
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "device setting" xsd:string
 property_value: IAO:0000112 "Examples, 300V for 4 hours, 200mvolts, 37degrees.A knob set a 300 V is the device setting, the protocol stating to set the instrument to 300V is a device setting specification" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -2770,7 +2830,7 @@ intersection_of: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen c
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
 relationship: OBI:0000299 OBI:0100051 ! has_specified_output specimen
 relationship: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "specimen collection process" xsd:string
 property_value: IAO:0000112 "drawing blood from a patient for analysis, collecting a piece of a plant for depositing in a herbarium, buying meat from a butcher in order to measure its protein content in an investigation" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2788,7 +2848,7 @@ id: OBI:0000684
 name: specimen collection objective
 def: "A objective specification to obtain a material entity for potential use as an input during an investigation." []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "specimen collection objective" xsd:string
 property_value: IAO:0000112 "The objective to collect bits of excrement in the rainforest. The objective to obtain a blood sample from a patient." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2800,7 +2860,7 @@ id: OBI:0000740
 name: material sample role
 def: "A material sample role is a specimen role borne by a material entity that is the output of a material sampling process." []
 is_a: OBI:0000112 ! specimen role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "material sample role" xsd:string
 property_value: IAO:0000112 "a role borne by a portion of blood taken to represent all the blood in an organism; the role borne by a population of humans with HIV enrolled in a study taken to represent patients with HIV in general." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -2815,7 +2875,7 @@ is_a: OBI:0100051 ! specimen
 intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0000087 OBI:0000740 ! has role material sample role
 relationship: RO:0000087 OBI:0000740 ! has role material sample role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "material sample" xsd:string
 property_value: IAO:0000112 "blood drawn from patient to measure his systemic glucose level. A population of humans with HIV enrolled in a study taken to represent patients with HIV in general." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -2832,7 +2892,7 @@ is_a: OBI:0000968 ! device
 intersection_of: OBI:0000968 ! device
 intersection_of: RO:0000085 OBI:0000453 ! has function measure function
 relationship: RO:0000085 OBI:0000453 ! has function measure function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "measurement device" xsd:string
 property_value: IAO:0000112 "A ruler, a microarray scanner, a Geiger counter." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2845,7 +2905,7 @@ name: manufacturer
 def: "A person or organization that has a manufacturer role" []
 is_a: BFO:0000040 ! material entity
 relationship: RO:0000087 OBI:0000571 ! has role manufacturer role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "manufacturer" xsd:string
 property_value: IAO:0000114 IAO:0000123
 
@@ -2855,12 +2915,12 @@ name: device
 def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." []
 is_a: OBI:0000047 ! processed material
 relationship: RO:0000085 BFO:0000034 ! has function function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "device" xsd:string
 property_value: IAO:0000112 "A voltmeter is a measurement device which is intended to perform some measure function." xsd:string
 property_value: IAO:0000112 "An autoclave is a device that sterlizes instruments or contaminated waste by applying high temperature and pressure." xsd:string
 property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \"device\", and are enumerating the types of roles that a reagent can perform.\n\n2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For example:\n\n(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component.  This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.\n\n(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.\n\n(3) A gel running  box  is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it.  This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.\n\nIn the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation).  In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay.  " xsd:string
+property_value: IAO:0000116 "2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \"device\", and are enumerating the types of roles that a reagent can perform.\n\n2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For example:\n\n(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component.  This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.\n\n(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.\n\n(3) A gel running  box  is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it.  This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.\n\nIn the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation).  In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay." xsd:string
 property_value: IAO:0000117 "PERSON: Helen Parkinson" xsd:string
 property_value: IAO:0000118 "instrument" xsd:string
 property_value: IAO:0000119 "OBI development call 2012-12-17." xsd:string
@@ -2872,7 +2932,7 @@ def: "A planned process that captures an image of an object." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
 relationship: OBI:0000299 IAO:0000101 ! has_specified_output image
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "image acquisition" xsd:string
 property_value: IAO:0000112 "Taking a polaroid picture of a patients skin lesion; Using a digital camera to take a picture of a gel" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -2884,7 +2944,7 @@ id: OBI:0001616
 name: specimen identifier
 def: "A CRID symbol denotes a specimen and used to distinguish one specimen from another in an investigation." []
 is_a: IAO:0000577 ! centrally registered identifier symbol
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: http://purl.org/dc/elements/1.1/source "NIAID GSCID-BRC" xsd:string
 property_value: IAO:0000111 "specimen identifier" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2898,7 +2958,7 @@ id: OBI:0001622
 name: investigation title
 def: "A textual entity that denotes an investigation." []
 is_a: OBI:0001898 ! comment on investigation
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: http://purl.org/dc/elements/1.1/source "NIAID GSCID-BRC" xsd:string
 property_value: IAO:0000111 "investigation title" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2912,7 +2972,7 @@ id: OBI:0001898
 name: comment on investigation
 def: "A textual entity that is about any of the aspects of an investigation worth noting" []
 is_a: IAO:0000300 ! textual entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: http://purl.org/dc/elements/1.1/source "NIAID GSCID-BRC" xsd:string
 property_value: IAO:0000111 "comment on investigation" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2925,7 +2985,7 @@ id: OBI:0100026
 name: organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
 is_a: BFO:0000040 ! material entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "organism" xsd:string
 property_value: IAO:0000112 "animal" xsd:string
 property_value: IAO:0000112 "fungus" xsd:string
@@ -2945,7 +3005,7 @@ is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
 relationship: RO:0000087 OBI:0000112 ! has role specimen role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "specimen" xsd:string
 property_value: IAO:0000112 "Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2962,7 +3022,7 @@ def: "A planned process that produces output data from input data." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has_specified_input data item
 relationship: OBI:0000417 OBI:0200166 ! achieves_planned_objective data transformation objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "data transformation" xsd:string
 property_value: IAO:0000112 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2984,7 +3044,7 @@ id: OBI:0200166
 name: data transformation objective
 def: "An objective specification to transformation input data into output data" []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "data transformation objective" xsd:string
 property_value: IAO:0000112 "normalize objective" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2993,12 +3053,24 @@ property_value: IAO:0000117 "James Malone" xsd:string
 property_value: IAO:0000119 "PERSON: James Malone" xsd:string
 
 [Term]
+id: OBI:0302732
+name: solvent role
+def: "solvent role is a role which inheres in a molecular entity capable of ensuring the dissolution of another chemical entity and realized by the process of solvation" []
+is_a: BFO:0000023 ! role
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
+property_value: IAO:0000111 "solvent role" xsd:string
+property_value: IAO:0000112 "PMID: 18373502.Transfusion. 2008 Mar 25. Solvent/detergent treatment of platelet concentrates enhances the release of growth factors." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000119 "adpated from wikipedia (http://en.wikipedia.org/wiki/Solvatation)" xsd:string
+
+[Term]
 id: OBI:0400169
 name: microscope
 def: "A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)" []
 is_a: OBI:0000398 ! image creation device
 relationship: RO:0000085 OBI:0000369 ! has function magnify function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "microscope" xsd:string
 property_value: IAO:0000112 "PMID:18466942. A light and transmission electron microscope study of hepatic portal tracts in the rhesus monkey (Macacus rhesus). Tissue Cell. 2008 May 6" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -3011,7 +3083,7 @@ name: microscope slide
 def: "A microscope slide is a device usually made of glass which is used as a solid matrix for (biological) material deposited on its surface and which is compatible for use with a microscope instrument" []
 is_a: OBI:0000968 ! device
 relationship: RO:0000085 OBI:0000399 ! has function solid support function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "microscope slide" xsd:string
 property_value: IAO:0000112 "PMID: 9668975.Microscope slide for enhanced analysis of DNA damage using the comet assay." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -3024,7 +3096,7 @@ name: study design
 def: "A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution." []
 is_a: IAO:0000104 ! plan specification
 relationship: BFO:0000051 OBI:0000272 ! has part protocol
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "study design" xsd:string
 property_value: IAO:0000112 "a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3041,6 +3113,28 @@ namespace: quality
 alt_id: PATO:0000072
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
 is_a: BFO:0000020 ! specifically dependent continuant
+
+[Term]
+id: PATO:0000033
+name: concentration of
+namespace: quality
+def: "A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance." [Wikipedia:http\://en.wikipedia.org/wiki/concentration]
+subset: attribute_slim
+subset: relational_slim
+subset: scalar_slim
+synonym: "concentration" EXACT []
+is_a: PATO:0002182 ! molecular quality
+
+[Term]
+id: PATO:0000125
+name: mass
+namespace: quality
+def: "A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter." [PATOC:GVG]
+comment: For any biological use of PATO, the concept that should be used is 'mass' and not 'weight'. For example, increased weight of an organism.
+subset: attribute_slim
+subset: relational_slim
+subset: scalar_slim
+is_a: PATO:0001018 ! physical quality
 
 [Term]
 id: PATO:0000133
@@ -3091,6 +3185,16 @@ xref: Wikipedia:Physical_property
 is_a: PATO:0001241 ! physical object quality
 
 [Term]
+id: PATO:0001019
+name: mass density
+namespace: quality
+def: "A physical quality which inheres in a bearer by virtue of some influence is exerted by the bearer's mass per unit size." [WordNet:WordNet]
+subset: attribute_slim
+subset: scalar_slim
+synonym: "density" RELATED []
+is_a: PATO:0001018 ! physical quality
+
+[Term]
 id: PATO:0001241
 name: physical object quality
 namespace: quality
@@ -3117,6 +3221,17 @@ def: "A physical quality which is equal to the distance between repeating units 
 subset: attribute_slim
 subset: scalar_slim
 is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0002182
+name: molecular quality
+namespace: quality
+alt_id: PATO:0002061
+def: "A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc." [PATOC:GVG]
+synonym: "relational molecular quality" EXACT []
+is_a: PATO:0001241 ! physical object quality
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
+creation_date: 2010-03-10T03:18:15Z
 
 [Term]
 id: PATO:0002497
@@ -3336,11 +3451,147 @@ property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOnto
 id: VIBSO:0000017
 name: incident light power datum
 def: "A scalar measurement datum that is the result of measuring the incoming light power before the sample holder and which depends on the laser power and on the dispersive behaviour of the filters and optical components." []
+comment: The incident power is an elementary measurement parameter allowing to compare among measurements conducted with the same setup. A thorough investigation of the effects of light irradiation onto the sample depends on the local irradiance (power per unit area) and requires deeper knowledge of the irradiation geometry, e.g. width, depth and shape of the focal spot.
 is_a: IAO:0000032 ! scalar measurement datum
 property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
 property_value: IAO:0000112 "200 mW" xsd:string
-property_value: IAO:0000118 "excitation light power; light power on the sample" xsd:string
+property_value: IAO:0000118 "excitation light power" xsd:string
+property_value: IAO:0000118 "light power on the sample" xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/29
+
+[Term]
+id: VIBSO:0000018
+name: region of interest
+def: "A site that refers to a user-defined portion of the image area in which data will be acquired. The remainder of the image area will be discarded." [] {http://purl.org/dc/elements/1.1/source="https://wiki.charisma.ideaconsult.net/wiki/Item:Q57"}
+is_a: BFO:0000029 ! site
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: IAO:0000116 "See also https://w3id.org/reproduceme#ROI & http://purl.obolibrary.org/obo/NCIT_C85402" xsd:string
+property_value: IAO:0000118 "imaging region of interest" xsd:string
+property_value: IAO:0000118 "ROI" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32
+
+[Term]
+id: VIBSO:0000019
+name: region of interest width
+def: "A setting datum that specifies the width (length in the X direction) of the region of interest." []
+comment: region of interest width = (point distance X) * (number of measurements X)
+is_a: IAO:0000140 ! setting datum
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: IAO:0000112 "1 mm" xsd:string
+property_value: IAO:0000118 "ROI horizontal length" xsd:string
+property_value: IAO:0000118 "ROI width" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32
+
+[Term]
+id: VIBSO:0000020
+name: region of interest breadth
+def: "A setting datum that specifies the height (length in the Y direction) of the region of interest." []
+comment: region of interest breadth = (point distance Y) * (number of measurements Y)
+is_a: IAO:0000140 ! setting datum
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: IAO:0000112 "0.5 mm" xsd:string
+property_value: IAO:0000118 "ROI breadth" xsd:string
+property_value: IAO:0000118 "ROI lateral length" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32
+
+[Term]
+id: VIBSO:0000021
+name: region of interest depth
+def: "A setting datum that specifies the depth (length in the Z direction) of the region of interest." []
+comment: region of interest depth = (point distance Z) * (number of measurements Z)
+is_a: IAO:0000140 ! setting datum
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: IAO:0000112 "0.1 mm" xsd:string
+property_value: IAO:0000118 "ROI depth" xsd:string
+property_value: IAO:0000118 "ROI vertical length" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32
+
+[Term]
+id: VIBSO:0000022
+name: point distance X
+def: "A setting datum that specifies the equal distance which the incident light beam will be moved laterally in the X direction on a given sample within the region of interest after each measurement, when performing a spatially resolved spectroscopy." []
+comment: point distance X = (region of interest width) / (number of measurements X)
+is_a: IAO:0000140 ! setting datum
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: IAO:0000112 "20 µm" xsd:string
+property_value: IAO:0000118 "sampling pace in the X direction" xsd:string
+property_value: IAO:0000118 "sampling step in the X direction" xsd:string
+property_value: IAO:0000118 "voxel distance in the X direction" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32
+
+[Term]
+id: VIBSO:0000023
+name: point distance Y
+def: "A setting datum that specifies the equal distance which the incident light beam will be moved laterally in the Y direction on a given sample within the region of interest after each measurement, when performing a spatially resolved spectroscopy." []
+comment: point distance Y = (region of interest breadth) / (number of measurements Y)
+is_a: IAO:0000140 ! setting datum
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: IAO:0000112 "10 µm" xsd:string
+property_value: IAO:0000118 "sampling pace in the Y direction" xsd:string
+property_value: IAO:0000118 "sampling step in the Y direction" xsd:string
+property_value: IAO:0000118 "voxel distance in the Y direction" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32
+
+[Term]
+id: VIBSO:0000024
+name: point distance Z
+def: "A setting datum that specifies the equal distance which the incident light beam will moved along the focal axis within the region of interest, when performing a spatially resolved spectroscopy." []
+comment: point distance Z = (region of interest depth) / (number of measurements Z)
+is_a: IAO:0000140 ! setting datum
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: IAO:0000112 "10 µm" xsd:string
+property_value: IAO:0000118 "axial mapping distance" xsd:string
+property_value: IAO:0000118 "sampling pace in the Z direction" xsd:string
+property_value: IAO:0000118 "sampling step in the Z direction" xsd:string
+property_value: IAO:0000118 "vertical mapping distance" xsd:string
+property_value: IAO:0000118 "voxel distance in the Z direction" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32
+
+[Term]
+id: VIBSO:0000025
+name: number of measurements X
+def: "A setting datum that specifies how many equally configured measurements of a sample are to be performed along the X-axis of a certain region of interest. Together with the point distance X, this setting defines the region of interest width." []
+comment: number of measurements X = (region of interest width) / (point distance X)
+is_a: IAO:0000140 ! setting datum
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: IAO:0000112 "50" xsd:string
+property_value: IAO:0000118 "number of points in the X direction" xsd:string
+property_value: IAO:0000118 "number of points per line" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32
+
+[Term]
+id: VIBSO:0000026
+name: number of measurements Y
+def: "A setting datum that specifies how many equally configured measurements of a sample are to be performed along the Y-axis of a certain region of interest. Together with the point distance Y, this setting defines the region of interest breadth." []
+comment: number of measurements = (region of interest breadth) / (point distance Y)
+is_a: IAO:0000140 ! setting datum
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: IAO:0000112 "100" xsd:string
+property_value: IAO:0000118 "number of lines per layer" xsd:string
+property_value: IAO:0000118 "number of points in the Y direction" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32
+
+[Term]
+id: VIBSO:0000027
+name: number of measurements Z
+def: "A setting datum that specifies how many equally configured measurements of a sample are to be performed in the vertical direction (on the Z-axis) of a certain region of interest.\nTogether with the focal point distance, this setting defines the region of interest depth." []
+comment: number of measurements Z = (region of interest depth) / (point distance Z)
+is_a: IAO:0000140 ! setting datum
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3956
+property_value: IAO:0000112 "10" xsd:string
+property_value: IAO:0000118 "number of layers per acquisition" xsd:string
+property_value: IAO:0000118 "number of points in the Z direction" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32
 
 [Typedef]
 id: BFO:0000050
@@ -3350,7 +3601,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "is part of" xsd:string
 property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
@@ -3381,7 +3632,7 @@ def: "a core relation that holds between a whole and its part" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "has part" xsd:string
 property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
@@ -3398,7 +3649,7 @@ is_a: RO:0002131 ! overlaps
 id: BFO:0000054
 name: realized in
 comment: Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "realized in" xsd:string
 property_value: IAO:0000112 "this disease is realized in this disease course" xsd:string
 property_value: IAO:0000112 "this fragility is realized in this shattering" xsd:string
@@ -3415,7 +3666,7 @@ inverse_of: BFO:0000055 ! realizes
 id: BFO:0000055
 name: realizes
 comment: Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "realizes" xsd:string
 property_value: IAO:0000112 "this disease course realizes this disease" xsd:string
 property_value: IAO:0000112 "this investigation realizes this investigator role" xsd:string
@@ -3463,7 +3714,7 @@ is_a: BFO:0000051 ! has part
 id: IAO:0000136
 name: is about
 def: "A (currently) primitive relation that relates an information artifact to an entity." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000112 "This document is about information artifacts and their representations" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \"mentions\" relation. Weaken the is_about relationship to be primitive. \n\nWe will try to build it back up by elaborating the various subproperties that are more precisely defined.\n\nSome currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic." xsd:string
@@ -3481,10 +3732,22 @@ property_value: IAO:0000119 "Conversations with Barry Smith, Werner Ceusters, Bj
 is_a: IAO:0000136 ! is about
 
 [Typedef]
+id: IAO:0000221
+name: is quality measurement of
+def: "m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q" []
+property_value: IAO:0000116 "8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later" xsd:string
+property_value: IAO:0000116 "From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]\n\nThis one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details.\n--\nFrom the second IAO workshop, various comments, [commented on by Alan Ruttenberg 8/6/2009]\n\nunit of measure is a quality, e.g. the length of a ruler.\n\n[We decided to hedge on what units of measure are, instead talking about measurement unit labels, which are the information content entities that are about whatever measurement units are. For IAO we need that information entity in any case. See the term measurement unit label]\n\n[Some struggling with the various subflavors of is_about. We subsequently removed the relation represents, and describes until and only when we have a better theory]\n\na represents b means either a denotes b or a describes\n\ndescribe:\na describes b means a is about b and a allows an inference of at least one quality of b\n\nWe have had a long discussion about denotes versus describes." xsd:string
+property_value: IAO:0000116 "From the second IAO workshop: An attempt at tieing the quality to the measurement datum more carefully.\n\na is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality." xsd:string
+property_value: IAO:0000116 "From the second meeting on IAO:\n\nAn attempt at defining assay using Barry's \"reliability\" wording\n\nassay:\nprocess and has_input some material entity\nand has_output some information content entity \nand which is such that instances of this process type reliably generate \noutputs that describes the input." xsd:string
+property_value: IAO:0000116 "This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details." xsd:string
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+is_a: IAO:0000136 ! is about
+
+[Typedef]
 id: OBI:0000293
 name: has_specified_input
 def: "The inverse property of is_specified_input_of" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "has_specified_input" xsd:string
 property_value: IAO:0000111 "has_specified_input" xsd:string
 property_value: IAO:0000112 "see is_input_of example_of_usage" xsd:string
@@ -3501,7 +3764,7 @@ is_a: RO:0000057 ! has participant
 id: OBI:0000295
 name: is_specified_input_of
 def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "is_specified_input_of" xsd:string
 property_value: IAO:0000112 "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3513,7 +3776,7 @@ is_a: RO:0000056 ! participates in
 id: OBI:0000299
 name: has_specified_output
 def: "The inverse property of is_specified_output_of" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "has_specified_output" xsd:string
 property_value: IAO:0000111 "has_specified_output" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3528,7 +3791,7 @@ is_a: RO:0000057 ! has participant
 id: OBI:0000312
 name: is_specified_output_of
 def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "is_specified_output_of" xsd:string
 property_value: IAO:0000111 "is_specified_output_of" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3541,7 +3804,7 @@ is_a: RO:0000056 ! participates in
 id: OBI:0000417
 name: achieves_planned_objective
 def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "achieves_planned_objective" xsd:string
 property_value: IAO:0000112 "A cell sorting process achieves the objective specification 'material separation objective'" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -3553,7 +3816,7 @@ property_value: IAO:0000232 "modified according to email thread from 1/23/09 in 
 id: OBI:0000833
 name: objective_achieved_by
 def: "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "objective_achieved_by" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "OBI" xsd:string
@@ -3564,7 +3827,7 @@ id: OBI:0001950
 name: has performer
 def: "A relation between a planned process and a continuant where the continuant can be a person, organization or device (such as a robot controlled by software workflow management system) that performs the planned process." []
 comment: The 'has performer' relation covers the need to report on who performed a planned processed. It has to cover processes done by People or Devices (such as a robot controlled by software  WF management system).
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "has performer" xsd:string
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "OBI" xsd:string
@@ -3576,7 +3839,7 @@ id: RO:0000052
 name: characteristic of
 def: "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence." []
 comment: Note that this relation was previously called "inheres in", but was changed to be called "characteristic of" because BFO2 uses "inheres in" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "inheres in" xsd:string
 property_value: IAO:0000112 "this fragility is a characteristic of this vase" xsd:string
 property_value: IAO:0000112 "this red color is a characteristic of this apple" xsd:string
@@ -3590,7 +3853,7 @@ inverse_of: RO:0000053 ! has characteristic
 id: RO:0000053
 name: has characteristic
 def: "Inverse of characteristic_of" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000111 "bearer of" xsd:string
 property_value: IAO:0000112 "this apple is bearer of this red color" xsd:string
 property_value: IAO:0000112 "this vase is bearer of this fragility" xsd:string
@@ -3643,7 +3906,7 @@ inverse_of: RO:0000059 ! concretizes
 id: RO:0000059
 name: concretizes
 def: "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
 domain: BFO:0000020 ! specifically dependent continuant
@@ -3654,7 +3917,7 @@ id: RO:0000079
 name: function of
 def: "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence" []
 comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000112 "this catalysis function is a function of this enzyme" xsd:string
 property_value: IAO:0000116 "A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists." xsd:string
 property_value: IAO:0000118 "function_of" xsd:string
@@ -3691,7 +3954,7 @@ inverse_of: RO:0000087 ! has role
 id: RO:0000085
 name: has function
 def: "a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000112 "this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)" xsd:string
 property_value: IAO:0000116 "A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists." xsd:string
 property_value: IAO:0000118 "has_function" xsd:string
@@ -3713,7 +3976,7 @@ is_a: RO:0000053 ! has characteristic
 id: RO:0000087
 name: has role
 def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2022-12-14/obi.owl
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl
 property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
 property_value: IAO:0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
 property_value: IAO:0000118 "has_role" xsd:string
@@ -4733,10 +4996,4 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002
 holds_over_chain: RO:0002212 RO:0019001
 holds_over_chain: RO:0002213 RO:0019002
 is_a: RO:0019000 ! regulates characteristic
-
-[Typedef]
-id: TXPO:0002523
-name: has occurrent part
-def: "\"has ocurrent part\" is a relation that holds between a whole occurrent (process) and its part." []
-is_a: BFO:0000051 ! has part
 
