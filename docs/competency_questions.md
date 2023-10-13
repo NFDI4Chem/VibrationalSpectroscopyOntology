@@ -11,7 +11,6 @@ As previously mentioned, VIBSO's scope is the semantic description of vibrationa
  * In what context was it performed, e.g. as part of what study or investigation?
 > Requires to clarify the hierarchy in the ontology: e.g. experiment < investigation < project
 
-
  * What devices were used?
 
  * What were the protocol parameters & device configurations?
