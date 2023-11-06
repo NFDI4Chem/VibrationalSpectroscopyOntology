@@ -10,8 +10,8 @@ assignees: ''
 For new term requests (NTRs), please provide the following information:
 
 | Preferred term label | Synonyms | Textual definition | Link to [CHARISMA Wiki equivalent] | Suggested parent term | Axiomatization | Examples | Remarks |
-| -------------------- | -------- | ------------------ | ---------------------------------- | --------------------- | -------------- | -------- | ------- |
-|                      |          | [definition1]      |                                    |                       |                |          | [note1] |
+| --- | --- | ------------- | --- | --- | --- | --- | ------- |
+|     |     | [definition1] |     |     |     |     | [note1] |
 
 
 [definition1]: ## "You may use this syntax for lengthy sentences, in order to maintain the code of the table legible. This applies specially to definitions and remarks. The text becomes visible upon hovering the mouse pointer over the placeholder text."
