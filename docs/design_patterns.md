@@ -5,8 +5,14 @@
 Following best practices in ontology development, we will reuse well established design patterns whenever possible.
 
 ## Assay pattern
-<iframe src="images/asserted_obi_assay_pattern.html" width="600" height="400"></iframe>
-
+<div id="container"></div>
+<script>
+  fetch('images/asserted_obi_assay_pattern.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('container').innerHTML = data;
+    });
+</script>
 
 This Turtle example instantiates OBI's assay pattern. The type and number of relations between the instances are based on the `rdfs:subclassOf` and `rdfs:equivalentTo` axioms asserted on OBIs assay. 
 ```
