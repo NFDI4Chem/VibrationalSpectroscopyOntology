@@ -17,7 +17,7 @@ An HTML version with links to the used classes in the NFDI4Chem Terminology Serv
 The source file to edit the TBox with the [draw.io](https://draw.io) app is [here](images/VIBSO_T-Box_graph_views.drawio).
 
 ## OBO Assay Pattern
-As the scope of VIBSO covers the definitions of various types of vibrational spectroscopy assay and their specific research information outputs, we reuse the class `assay` from the Ontology for Biomedical Investigations (OBI). It is defined as:
+As the scope of VIBSO covers the definitions of various types of vibrational spectroscopy assays and their specific research information outputs, we need to reuse the class `assay` from the Ontology for Biomedical Investigations (OBI). It is defined as:
 
      A planned process that has the objective to produce information about a material entity (the evaluant) by examining it.
 
@@ -25,17 +25,17 @@ Along with this textual definition, the logical axioms asserted on this class co
 
 ![OBI_asserted_assay_pattern](images/OBI_asserted_assay_pattern.png)
 
-## OBO Assay Device Settings Pattern
+## OBO Assay Pattern with Device Settings
 Since we also want to say what kind of devices were used in VIBSO specific assays and how these were set, we extend the assay pattern by importing these classes and relations:
 
 ![OBI_asserted_assay_pattern](images/OBO_setting_pattern.png)
 
-## OBO Assay Pattern with Investigation and Sampling
+## OBO  Assay Pattern with Data Transformation, Investigation and Sampling
 To zoom out a bit further, this is the pattern proposed to be able to also express:
 * who performed an assay,
-* what kind of data transformations where performed on the raw data of an assay,
+* what kind of data transformations where performed on the data output of an assay,
 * what kind of sampling process was done before the assay,
-* and in which grander investigation process is the assay a part of.
+* and in which grander investigation process the assay is a part of.
 
 ![OBI_asserted_assay_pattern](images/OBO_Investigation_Assay_Pattern.png)
 
