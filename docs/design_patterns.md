@@ -1,8 +1,40 @@
 # Design Patterns & Decisions
  
-**This page is still a stub and will be updated regularly in the iterative development of VIBSO to document modeling decisions and design patterns.**
+**This page is will be updated regularly in the iterative development of VIBSO to document modeling decisions and design patterns.**
 
 Following best practices in ontology development, we will reuse well established design patterns whenever possible.
+
+## Assay pattern
+<iframe src="images/asserted_obi_assay_pattern.html" width="600" height="400"></iframe>
+
+
+This Turtle example instantiates OBI's assay pattern. The type and number of relations between the instances are based on the `rdfs:subclassOf` and `rdfs:equivalentTo` axioms asserted on OBIs assay. 
+```
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix ex: <https://example.instances/> .
+
+###  https://example.instances/AssayObjective_O
+ex:AssayObjective_O rdf:type obo:OBI_0000441 .
+
+###  https://example.instances/Assay_A
+ex:Assay_A rdf:type obo:OBI_0000070 ;
+           obo:BFO_0000055 ex:EvaluantRole_R ;
+           obo:OBI_0000293 ex:MaterialEntity_M ;
+           obo:OBI_0000299 ex:DataItem_D ;
+           obo:OBI_0000417 ex:AssayObjective_O ;
+
+###  https://example.instances/DataItem_D
+ex:DataItem_D rdf:type obo:IAO_0000027 ;
+              obo:IAO_0000136 ex:MaterialEntity_M .
+
+###  https://example.instances/EvaluantRole_R
+ex:EvaluantRole_R rdf:type obo:BFO_0000023 .
+
+###  https://example.instances/MaterialEntity_M
+ex:MaterialEntity_M rdf:type obo:BFO_0000040 ;
+                    obo:RO_0000087 ex:EvaluantRole_R .
+```
 
 ## Planned Process Pattern
  OBI's way of modeling [data and values](https://github.com/obi-ontology/obi/wiki/Data-and-Values) is a very prominent pattern in many OBO ontologies and thus one we also use. Please read their documentation in order to understand how we model values and data. Here is an illustrative example graphic from that documentation:  ![measurement process pattern example](images/data_john_mass.png) Using this OBI pattern allows us to differentiate data values of qualities (aka attributes) of a material entity, such as the spectroscope or sample, into data values that represent settings and those that represent measurements. From a data repository use case perspective, we might not need this fine-grained approach and defining qualities/attributes and their value specifications might suffice. Yet in order to allow the integration of VIBSO in Electronic Lab Notebooks, such a differentiation will most likely be very useful.
