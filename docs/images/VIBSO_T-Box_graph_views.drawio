@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-12-08T10:36:02.009Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="VqgYSa78RwevsVIcJLvP" version="22.1.2" type="device" pages="4">
+<mxfile host="Electron" modified="2023-12-08T16:20:22.510Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="K0xqz1veMQluzajvBMHP" version="22.1.2" type="device" pages="4">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="VIBSO T-Box">
-    <mxGraphModel dx="1434" dy="7488" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="1502" dy="7272" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1253,11 +1253,22 @@
         <mxCell id="KSbcgcm5T-NmKo-zs545-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="lnHGb59-9foJHnMW3seC-4" target="lnHGb59-9foJHnMW3seC-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;strokeColor=#FF0000;strokeWidth=3;" edge="1" parent="1" source="Ohz4nThSJCRxAfsm-9E9-1" target="QKKoRjnMVttNz9pZIT6n-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1907" y="-5451" as="sourcePoint" />
+            <mxPoint x="1654" y="-5503" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-19" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/ro/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000050&quot;&gt;RO:part of&lt;/a&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="KSbcgcm5T-NmKo-zs545-18">
+          <mxGeometry x="-0.4428" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="RaRunR0CgYgHAUNHZkXp" name="OBI Assay Pattern">
-    <mxGraphModel dx="2231" dy="7320" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2172" dy="7246" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1402,7 +1413,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="RJyPYTd1dPuKDFe7L87s" name="Setting Data Pattern">
-    <mxGraphModel dx="4304" dy="7023" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="4222" dy="6936" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1420,9 +1431,6 @@
         </mxCell>
         <mxCell id="o8L-Z2-yZFtt_jv4HN5G-6" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillColor=#f8cecc;fontStyle=1;fontSize=11;shadow=0;strokeColor=#b85450;strokeWidth=2;" parent="o8L-Z2-yZFtt_jv4HN5G-1" vertex="1">
           <mxGeometry x="11.126373626373606" y="41.12495928730685" width="33.72527472527472" height="9.292582222011296" as="geometry" />
-        </mxCell>
-        <mxCell id="o8L-Z2-yZFtt_jv4HN5G-7" value="&lt;a style=&quot;background-color: initial;&quot; href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000011&quot;&gt;OBI:planned process&lt;/a&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" parent="o8L-Z2-yZFtt_jv4HN5G-1" vertex="1">
-          <mxGeometry x="50.289999999999964" y="25.638496240601715" width="135.71" height="10.841278195488721" as="geometry" />
         </mxCell>
         <mxCell id="o8L-Z2-yZFtt_jv4HN5G-8" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillColor=#fff2cc;fontStyle=1;fontSize=11;shadow=0;strokeColor=#d6b656;strokeWidth=2;" parent="o8L-Z2-yZFtt_jv4HN5G-1" vertex="1">
           <mxGeometry x="11.126373626373606" y="57.38697817582695" width="33.72527472527472" height="9.292582222011296" as="geometry" />
@@ -1443,7 +1451,10 @@
           <mxGeometry x="50.29" y="91.46" width="111.71" height="10.84" as="geometry" />
         </mxCell>
         <mxCell id="o8L-Z2-yZFtt_jv4HN5G-14" value="&lt;a style=&quot;background-color: initial;&quot; href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/iao/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000030&quot;&gt;IAO:information content entity&lt;/a&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" parent="o8L-Z2-yZFtt_jv4HN5G-1" vertex="1">
-          <mxGeometry x="50.29" y="41.13" width="190.71" height="10.84" as="geometry" />
+          <mxGeometry x="50.29" y="24.860000000000003" width="190.71" height="10.84" as="geometry" />
+        </mxCell>
+        <mxCell id="o8L-Z2-yZFtt_jv4HN5G-7" value="&lt;a style=&quot;background-color: initial;&quot; href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000011&quot;&gt;OBI:planned process&lt;/a&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" parent="o8L-Z2-yZFtt_jv4HN5G-1" vertex="1">
+          <mxGeometry x="50.289999999999964" y="41.128496240601635" width="135.71" height="10.841278195488721" as="geometry" />
         </mxCell>
         <mxCell id="94nmWB1LQxYs46ytpGWJ-1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontSize=12;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -1722,7 +1733,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="6V28p7OpUvu9fe2h39fW" name="Extended Assay Pattern">
-    <mxGraphModel dx="4598" dy="6483" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4560" dy="6405" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2311,7 +2322,7 @@
           <mxGeometry x="11.126373626373606" y="49.27585211902533" width="33.72527472527472" height="11.134355275022543" as="geometry" />
         </mxCell>
         <mxCell id="-z3_VW25mmPXF4-7PT6f-7" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000011&quot;&gt;OBI:planned process&lt;/a&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" parent="-z3_VW25mmPXF4-7PT6f-1" vertex="1">
-          <mxGeometry x="52" y="30.72" width="134" height="12.99" as="geometry" />
+          <mxGeometry x="52" y="48.349999999999994" width="134" height="12.99" as="geometry" />
         </mxCell>
         <mxCell id="-z3_VW25mmPXF4-7PT6f-8" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillColor=#fff2cc;fontStyle=1;fontSize=11;shadow=0;strokeColor=#d6b656;strokeWidth=2;" parent="-z3_VW25mmPXF4-7PT6f-1" vertex="1">
           <mxGeometry x="11.126373626373606" y="68.76097385031517" width="33.72527472527472" height="11.134355275022543" as="geometry" />
@@ -2332,7 +2343,7 @@
           <mxGeometry x="51.999999999999964" y="109.59000000000015" width="71.71" height="12.99" as="geometry" />
         </mxCell>
         <mxCell id="-z3_VW25mmPXF4-7PT6f-14" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/iao/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000030&quot;&gt;IAO:information content entity&lt;/a&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" parent="-z3_VW25mmPXF4-7PT6f-1" vertex="1">
-          <mxGeometry x="52" y="49.28" width="160" height="12.99" as="geometry" />
+          <mxGeometry x="52" y="29.790000000000255" width="160" height="12.99" as="geometry" />
         </mxCell>
         <mxCell id="Vd4jsmEapnGj9XaUWAWn-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mfDhzh_7G0-HPue0CaQ2-53" target="mfDhzh_7G0-HPue0CaQ2-83" edge="1">
           <mxGeometry relative="1" as="geometry">
