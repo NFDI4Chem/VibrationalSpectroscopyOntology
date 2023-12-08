@@ -29,9 +29,11 @@ In both TSV templates there are the following columns:
 * **term replaced by**: This column should be used to provide the term that replaces a deprecated term. This is important to ensure backwards compatibility.
 
 In the **vibso_classes.tsv**, there is also the column:
+
 * **super class**: This column is to be used to provide the parent of the owl:Class that is being defined. It is fine to use the label of the parent class here instead of its IRI or CURIE, as long as the class is already an [imported term](ntr_workflow.md#importing terms).
 
 In the **vibso_classes.tsv**, there are also the columns:
+
 * **super property**: This column is to be used to provide the parent of the `owl:ObjectProperty` or `owl:DatatypeProperty` that is being defined, via its label.
 * **inverse property**: This column can be used to define the inverse of an `owl:ObjectProperty`, via its label. 
 * **domain**: This column can be used to restrict an `owl:ObjectProperty` in terms of being allowed to be used only on a certain subject.

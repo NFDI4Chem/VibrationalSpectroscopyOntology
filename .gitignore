@@ -42,3 +42,4 @@ poetry.lock
 .idea/*
 src/templates/.~lock.vibso_classes.tsv\#
 docs/images/.$VIBSO_T-Box_graph_views.drawio.bkp
+*.dtmp

@@ -2,7 +2,7 @@
  
 **This page will be updated regularly in the iterative development of VIBSO to document modeling decisions and design patterns.**
 
-Following best practices in ontology development, we will reuse established design patterns whenever possible. Since most ontologies we reuse are OBO Foundry based, we also reuse their design patterns to be logically sound and interoperable. Some of these patterns are provided in the formal definitions of the classes we reuse in form of asserted as `rdfs:subclassOf` or `rdfs:equivalentTo` axioms. Others are only implicitly provided in the textual definitions and the domain and range restriction of suitable OBO relations.
+Following best practices in ontology development, we will reuse established design patterns whenever possible. Since most ontologies we reuse are OBO Foundry based, we also reuse their design patterns to be logically sound and interoperable. Some of these patterns are provided in the logical definitions of the reused classes in form of asserted `rdfs:subclassOf` or `rdfs:equivalentTo` axioms. Others are only implicitly provided in the textual definitions of the reused terms and the domain and range restrictions of suitable OBO relations.
 
 ## VIBSO TBox
 
@@ -12,7 +12,7 @@ Here you can see VIBSO's current terminology box that focuses on vibrational Ram
 
 This TBox is supposed to be updated iteratively whenever a new term is being discussed for inclusion. We hope that it might be easier for domain experts to define technical terms in this ontological framework by adding them here first.
 
-An HTML version with links to the used classes in the NFDI4Chem Terminology Service can be found [here](images/VIBSO_TBox_graph_views.html).
+A higher resolution HTML version with links to the used terms in the NFDI4Chem Terminology Service can be found [here](images/VIBSO_TBox_graph_views.html).
 
 The source file to edit the TBox with the [draw.io](https://draw.io) app is [here](images/VIBSO_T-Box_graph_views.drawio).
 
@@ -52,4 +52,4 @@ Lars Vogt and Tobias Kuhn demonstrate the use of the OBO assay pattern within a 
 ![measurement process pattern example](images/data_john_mass.png)
  Since we are reusing OBO ontologies and their patterns, we also try to reuse OBI's way of modeling [data and values](https://github.com/obi-ontology/obi/wiki/Data-and-Values). Please read their documentation for more background.
  Using this OBI pattern allows us to differentiate data values of qualities (aka attributes) of a material entity, such as the spectroscope or sample, into data values that represent settings and those that represent measurements. From a data repository use case perspective, we might not need this fine-grained approach and defining qualities/attributes and their value specifications might suffice. Yet in order to allow the integration of VIBSO in Electronic Lab Notebooks, such a differentiation will most likely be very useful.
-Although this pattern seems to work in many OBO use cases, we need to see, if we have to adjust it for our needs. Other ontologies like QUDT or SIO are using slightly different pattern to model qualities and their quantitative representations.
+Although this pattern seems to work in many OBO use cases, we need to see, if we have to adjust it for our needs. Other ontologies like QUDT or SIO use slightly different patterns to model qualities and their quantitative representations.
