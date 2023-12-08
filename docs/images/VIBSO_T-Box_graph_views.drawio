@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-12-08T09:15:24.013Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="ZxzjLSR9i3569LMTP5bJ" version="22.1.2" type="device" pages="4">
+<mxfile host="Electron" modified="2023-12-08T10:30:32.687Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="hm6pCRCvmk_wXRGj-l2M" version="22.1.2" type="device" pages="4">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="VIBSO T-Box">
-    <mxGraphModel dx="1290" dy="7238" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="1434" dy="7488" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -188,14 +188,6 @@
         <mxCell id="QKKoRjnMVttNz9pZIT6n-1" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0000656&quot;&gt;CHMO:Raman spectroscopy&lt;/a&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="969" y="-5716.37" width="105" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="HSRpBaIqdERPjxUPZWGu-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="QKKoRjnMVttNz9pZIT6n-2" target="wu6-uM-ZaK9YjNjoD32W-161" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="HSRpBaIqdERPjxUPZWGu-27" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot; color=&quot;#ff0000&quot;&gt;owl:sameAs???&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="HSRpBaIqdERPjxUPZWGu-26" connectable="0" vertex="1">
-          <mxGeometry x="0.2614" y="1" relative="1" as="geometry">
-            <mxPoint x="-23" y="-9" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="QKKoRjnMVttNz9pZIT6n-2" value="&lt;a href=&quot;https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/77&quot;&gt;NTR:Raw Raman data&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;arcSize=15;glass=0;shadow=0;strokeWidth=5;align=center;" parent="1" vertex="1">
           <mxGeometry x="1110" y="-5539.5" width="105" height="40" as="geometry" />
         </mxCell>
@@ -261,7 +253,7 @@
           <mxGeometry x="1539" y="-5556.5" width="105" height="65" as="geometry" />
         </mxCell>
         <mxCell id="QKKoRjnMVttNz9pZIT6n-34" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/search?q=assay%20objective&amp;amp;ontology=OBI&quot;&gt;OBI:assay objective&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="775" y="-5575.37" width="105" height="40" as="geometry" />
+          <mxGeometry x="749" y="-5581.5" width="105" height="40" as="geometry" />
         </mxCell>
         <mxCell id="QKKoRjnMVttNz9pZIT6n-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="QKKoRjnMVttNz9pZIT6n-34" target="QKKoRjnMVttNz9pZIT6n-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -291,7 +283,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="QKKoRjnMVttNz9pZIT6n-98" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001896&quot;&gt;OBI:investigation&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001896&quot;&gt;assay specification&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001896&quot;&gt;(aka project method)&lt;/a&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="588" y="-5698.5" width="105" height="94.13" as="geometry" />
+          <mxGeometry x="588" y="-5716.37" width="105" height="94.13" as="geometry" />
         </mxCell>
         <mxCell id="QKKoRjnMVttNz9pZIT6n-105" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/pato/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0001241&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;PATO:physical object quality&lt;/font&gt;&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillColor=#f5f5f5;fontStyle=0;fontSize=14;shadow=0;strokeColor=#666666;strokeWidth=1;fontColor=#333333;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="849.75" y="-6236.37" width="123.5" height="40" as="geometry" />
@@ -525,24 +517,13 @@
           <mxGeometry x="27" y="-6575" width="2657" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wu6-uM-ZaK9YjNjoD32W-154" value="&lt;a href=&quot;https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/28&quot;&gt;NTR:Raman mapping specification&lt;/a&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;verticalAlign=middle;align=center;strokeWidth=5;" parent="1" vertex="1">
-          <mxGeometry x="588" y="-5431.5" width="105" height="50" as="geometry" />
+          <mxGeometry x="691" y="-5430" width="105" height="50" as="geometry" />
         </mxCell>
         <mxCell id="wu6-uM-ZaK9YjNjoD32W-157" value="&lt;a href=&quot;https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/28&quot;&gt;NTR:Raman mapping&lt;/a&gt; (aka Raman imaging)" style="text;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FF0000;strokeWidth=5;verticalAlign=middle;align=center;" parent="1" vertex="1">
-          <mxGeometry x="866" y="-5431.5" width="105" height="56" as="geometry" />
-        </mxCell>
-        <mxCell id="wu6-uM-ZaK9YjNjoD32W-158" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;strokeColor=#000000;fontColor=#000000;exitX=-0.014;exitY=0.488;exitDx=0;exitDy=0;entryX=1.008;entryY=0.593;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="wu6-uM-ZaK9YjNjoD32W-157" target="wu6-uM-ZaK9YjNjoD32W-154" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1320.7399999999998" y="-5580.44" as="sourcePoint" />
-            <mxPoint x="921.7399999999998" y="-5540.44" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="wu6-uM-ZaK9YjNjoD32W-159" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/ro/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000055&quot;&gt;BFO:realizes&lt;/a&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="wu6-uM-ZaK9YjNjoD32W-158" connectable="0" vertex="1">
-          <mxGeometry x="-0.3129" y="2" relative="1" as="geometry">
-            <mxPoint x="-31" y="-2" as="offset" />
-          </mxGeometry>
+          <mxGeometry x="921" y="-5456" width="105" height="56" as="geometry" />
         </mxCell>
         <mxCell id="wu6-uM-ZaK9YjNjoD32W-161" value="&lt;a href=&quot;https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/28&quot;&gt;NTR:Raman map&lt;/a&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;align=center;verticalAlign=middle;strokeWidth=5;" parent="1" vertex="1">
-          <mxGeometry x="1340" y="-5417.5" width="105" height="40" as="geometry" />
+          <mxGeometry x="1099" y="-5331.5" width="105" height="40" as="geometry" />
         </mxCell>
         <mxCell id="wu6-uM-ZaK9YjNjoD32W-163" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0200000&quot;&gt;OBI:data transformation&lt;/a&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="1338" y="-5541.5" width="105" height="40" as="geometry" />
@@ -848,16 +829,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="lnHGb59-9foJHnMW3seC-4" value="&lt;div&gt;&lt;a href=&quot;https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/28&quot;&gt;NTR:Raman 0D map&lt;/a&gt; &lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;align=center;verticalAlign=middle;strokeWidth=5;" parent="1" vertex="1">
-          <mxGeometry x="1259" y="-5329.5" width="105" height="40" as="geometry" />
+          <mxGeometry x="1014" y="-5169" width="105" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lnHGb59-9foJHnMW3seC-5" value="&lt;div&gt;&lt;a href=&quot;https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/28&quot;&gt;NTR:Raman 1D map&lt;/a&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;align=center;verticalAlign=middle;strokeWidth=5;" parent="1" vertex="1">
-          <mxGeometry x="1316" y="-5269.5" width="105" height="40" as="geometry" />
+          <mxGeometry x="1127" y="-5218" width="105" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lnHGb59-9foJHnMW3seC-6" value="&lt;div&gt;&lt;a href=&quot;https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/28&quot;&gt;NTR:Raman 2D map&lt;/a&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;align=center;verticalAlign=middle;strokeWidth=5;" parent="1" vertex="1">
-          <mxGeometry x="1443" y="-5265.5" width="105" height="40" as="geometry" />
+          <mxGeometry x="1257" y="-5223" width="105" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lnHGb59-9foJHnMW3seC-7" value="&lt;div&gt;&lt;a href=&quot;https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/28&quot;&gt;NTR:Raman 3D map&lt;/a&gt;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;align=center;verticalAlign=middle;strokeWidth=5;" parent="1" vertex="1">
-          <mxGeometry x="1485" y="-5331.5" width="105" height="40" as="geometry" />
+          <mxGeometry x="1291" y="-5293" width="105" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lnHGb59-9foJHnMW3seC-8" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;" parent="1" source="lnHGb59-9foJHnMW3seC-4" target="wu6-uM-ZaK9YjNjoD32W-161" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -881,17 +862,6 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1156" y="-5065.5" as="sourcePoint" />
             <mxPoint x="1160" y="-5245.5" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="lnHGb59-9foJHnMW3seC-16" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;" parent="1" source="wu6-uM-ZaK9YjNjoD32W-161" target="QKKoRjnMVttNz9pZIT6n-24" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1164" y="-5282.5" as="sourcePoint" />
-            <mxPoint x="1250" y="-5361.5" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HSRpBaIqdERPjxUPZWGu-23" value="???" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=19;fontStyle=1;fontColor=#FF0000;" parent="lnHGb59-9foJHnMW3seC-16" connectable="0" vertex="1">
-          <mxGeometry x="-0.1121" y="1" relative="1" as="geometry">
-            <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="lnHGb59-9foJHnMW3seC-18" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;edgeStyle=entityRelationEdgeStyle;opacity=50;" parent="1" source="lnHGb59-9foJHnMW3seC-17" target="QKKoRjnMVttNz9pZIT6n-13" edge="1">
@@ -1062,7 +1032,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="HSRpBaIqdERPjxUPZWGu-11" value="&lt;a href=&quot;https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/88&quot;&gt;NTR:spectral center&lt;/a&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;align=center;verticalAlign=middle;strokeWidth=5;" parent="1" vertex="1">
-          <mxGeometry x="1050" y="-5265.5" width="105" height="59" as="geometry" />
+          <mxGeometry x="1539" y="-5408" width="105" height="59" as="geometry" />
         </mxCell>
         <mxCell id="HSRpBaIqdERPjxUPZWGu-12" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000674&quot;&gt;OBI:&lt;/a&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000674&quot;&gt;center value&lt;/a&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=15;glass=0;shadow=0;" parent="1" vertex="1">
           <mxGeometry x="1722.5" y="-5277.5" width="105" height="40" as="geometry" />
@@ -1078,7 +1048,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="HSRpBaIqdERPjxUPZWGu-16" value="NTR:Raman spectrum ???" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;arcSize=15;glass=0;shadow=0;strokeWidth=5;align=center;" parent="1" vertex="1">
-          <mxGeometry x="1050" y="-5381.5" width="105" height="40" as="geometry" />
+          <mxGeometry x="1296" y="-5448" width="105" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HSRpBaIqdERPjxUPZWGu-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="HSRpBaIqdERPjxUPZWGu-16" target="QKKoRjnMVttNz9pZIT6n-2" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -1107,8 +1077,8 @@
             <mxPoint x="2204" y="-5530.5" as="sourcePoint" />
             <mxPoint x="2148" y="-5406.5" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1109" y="-5114.5" />
-              <mxPoint x="1775" y="-5114.5" />
+              <mxPoint x="1612" y="-5114" />
+              <mxPoint x="1775" y="-5114" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1227,11 +1197,76 @@
         <mxCell id="9ekoSSevbt_1KeLg__0n-26" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/bfo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000040&quot;&gt;BFO:material entity&lt;/a&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" parent="9MOIq46I4B49n-lCAWnw-3" vertex="1">
           <mxGeometry x="50.106651785714234" y="62.32999999999993" width="118.03620535714286" height="12.99" as="geometry" />
         </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KSbcgcm5T-NmKo-zs545-1" target="lnHGb59-9foJHnMW3seC-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-8" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KSbcgcm5T-NmKo-zs545-7">
+          <mxGeometry x="-0.3113" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-1" value="NTR:Raman single-point mapping specification" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;verticalAlign=middle;align=center;strokeWidth=5;" vertex="1" parent="1">
+          <mxGeometry x="782" y="-5190" width="105" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-2" value="NTR:Raman line-focus mapping specification" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;verticalAlign=middle;align=center;strokeWidth=5;" vertex="1" parent="1">
+          <mxGeometry x="623" y="-5253" width="105" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-3" value="NTR:Raman point-by-point mapping specification" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;verticalAlign=middle;align=center;strokeWidth=5;" vertex="1" parent="1">
+          <mxGeometry x="507" y="-5316" width="105" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-4" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;" edge="1" parent="1" source="KSbcgcm5T-NmKo-zs545-1" target="wu6-uM-ZaK9YjNjoD32W-154">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="651" y="-5421" as="sourcePoint" />
+            <mxPoint x="651" y="-5594" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-5" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="KSbcgcm5T-NmKo-zs545-2" target="wu6-uM-ZaK9YjNjoD32W-154">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="575" y="-5289" as="sourcePoint" />
+            <mxPoint x="633" y="-5371" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-6" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;" edge="1" parent="1" source="KSbcgcm5T-NmKo-zs545-3" target="wu6-uM-ZaK9YjNjoD32W-154">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="664" y="-5235" as="sourcePoint" />
+            <mxPoint x="651" y="-5371" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;" edge="1" parent="1" source="wu6-uM-ZaK9YjNjoD32W-154" target="wu6-uM-ZaK9YjNjoD32W-157">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="703" y="-5644" as="sourcePoint" />
+            <mxPoint x="979" y="-5659" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-10" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/iao/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136&quot;&gt;IAO:is about&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KSbcgcm5T-NmKo-zs545-9">
+          <mxGeometry x="-0.3384" y="-2" relative="1" as="geometry">
+            <mxPoint x="16" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-13" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;" edge="1" parent="1" source="wu6-uM-ZaK9YjNjoD32W-161" target="QKKoRjnMVttNz9pZIT6n-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="989" y="-5446" as="sourcePoint" />
+            <mxPoint x="1023" y="-5616" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;" edge="1" parent="1" source="wu6-uM-ZaK9YjNjoD32W-157" target="wu6-uM-ZaK9YjNjoD32W-161">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1073" y="-5616" as="sourcePoint" />
+            <mxPoint x="1108" y="-5413" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KSbcgcm5T-NmKo-zs545-16" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000299&quot;&gt;OBI:has &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000299&quot;&gt;specified &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000299&quot;&gt;output&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KSbcgcm5T-NmKo-zs545-15">
+          <mxGeometry x="-0.2927" y="1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="RaRunR0CgYgHAUNHZkXp" name="OBI Assay Pattern">
-    <mxGraphModel dx="2324" dy="7356" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2231" dy="7320" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
