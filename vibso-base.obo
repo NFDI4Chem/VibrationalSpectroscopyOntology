@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: vibso/releases/2023-06-21/vibso-base.owl
+data-version: vibso/releases/2023-11-27/vibso-base.owl
 ontology: vibso/vibso-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1595-3213
@@ -10,7 +10,7 @@ property_value: http://purl.org/dc/terms/creator "VIBSO Workgroup" xsd:string
 property_value: http://purl.org/dc/terms/description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays." xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/title "Vibrational Spectroscopy Ontology" xsd:string
-property_value: owl:versionInfo "2023-06-21" xsd:string
+property_value: owl:versionInfo "2023-11-27" xsd:string
 
 [Term]
 id: NCBITaxon:9606
@@ -42,6 +42,7 @@ is_a: IAO:0000140
 property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 property_value: IAO:0000118 "integration period setting" xsd:string
+property_value: IAO:0000118 "integration time" xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/40
 
 [Term]
@@ -116,6 +117,8 @@ def: "A setting datum that specifies the number of grooves in a diffraction grat
 is_a: IAO:0000140
 property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
+property_value: IAO:0000118 "grating" xsd:string
+property_value: IAO:0000118 "grating setting" xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45
 
 [Term]
@@ -156,6 +159,8 @@ property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/000
 property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
 property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
 property_value: IAO:0000112 "example:RamanSpectrometerX rdf:type obo:CHMO_0001235 (Raman spectrometer) ;\n            obo:OBI_0000293 (has_specified_input) example:objective_magnification_factor_setting_for_RamanSpectrometerX .\nexample:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type obo:VIBSO_0000014 ;\n            obo:OBI_0002815 (has representation) '100 x' ." xsd:string
+property_value: IAO:0000118 "magnification" xsd:string
+property_value: IAO:0000118 "magnification setting" xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/24%20
 
 [Term]
