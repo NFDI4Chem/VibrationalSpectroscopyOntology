@@ -1,4 +1,5 @@
 Prefix(:=<http://purl.obolibrary.org/obo/vibso.owl#>)
+Prefix(ex:=<https://example.instances/>)
 Prefix(DOI:=<http://doi.org/>)
 Prefix(ROR:=<http://ror.org/>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
@@ -27,7 +28,6 @@ Import(<http://purl.obolibrary.org/obo/vibso/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/stato_import.owl>)
-Import(<http://purl.obolibrary.org/obo/vibso/imports/txpo_import.owl>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-1595-3213>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-2239-3955>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-4378-6061>)
@@ -37,6 +37,11 @@ Annotation(dcterms:description "_WIP - NOT READY FOR PRODUCTION_ The Vibration S
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Vibrational Spectroscopy Ontology")
 
+Declaration(NamedIndividual(ex:AssayObjective_O))
+Declaration(NamedIndividual(ex:Assay_A))
+Declaration(NamedIndividual(ex:DataItem_D))
+Declaration(NamedIndividual(ex:EvaluantRole_R))
+Declaration(NamedIndividual(ex:MaterialEntity_M))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-1595-3213>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-2239-3955>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-4378-6061>))
@@ -75,6 +80,7 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
+
 ############################
 #   Classes
 ############################
@@ -88,6 +94,35 @@ SubClassOf(obo:NCBITaxon_9606 obo:OBI_0100026)
 ############################
 #   Named Individuals
 ############################
+
+# Individual: ex:AssayObjective_O (ex:AssayObjective_O)
+
+ClassAssertion(obo:OBI_0000441 ex:AssayObjective_O)
+
+# Individual: ex:Assay_A (ex:Assay_A)
+
+AnnotationAssertion(dce:description ex:Assay_A "The assay A is planned to produce as a specified output the data item D which is a specific kind of information about the material entity M, which has the evaluant role R that gets realized in this planned observation process.
+
+This example instance is part of the ontology to demonstrate the OBI assay pattern. The type and number of relations between this instance and other example instances are based on the subclassOf and equivalentTo axioms asserted on OBI's assay."@en)
+ClassAssertion(obo:OBI_0000070 ex:Assay_A)
+ObjectPropertyAssertion(obo:BFO_0000055 ex:Assay_A ex:EvaluantRole_R)
+ObjectPropertyAssertion(obo:OBI_0000293 ex:Assay_A ex:MaterialEntity_M)
+ObjectPropertyAssertion(obo:OBI_0000299 ex:Assay_A ex:DataItem_D)
+ObjectPropertyAssertion(obo:OBI_0000417 ex:Assay_A ex:AssayObjective_O)
+
+# Individual: ex:DataItem_D (ex:DataItem_D)
+
+ClassAssertion(obo:IAO_0000027 ex:DataItem_D)
+ObjectPropertyAssertion(obo:IAO_0000136 ex:DataItem_D ex:MaterialEntity_M)
+
+# Individual: ex:EvaluantRole_R (ex:EvaluantRole_R)
+
+ClassAssertion(obo:BFO_0000023 ex:EvaluantRole_R)
+
+# Individual: ex:MaterialEntity_M (ex:MaterialEntity_M)
+
+ClassAssertion(obo:BFO_0000040 ex:MaterialEntity_M)
+ObjectPropertyAssertion(obo:RO_0000087 ex:MaterialEntity_M ex:EvaluantRole_R)
 
 # Individual: <https://orcid.org/0000-0002-1595-3213> (Philip Strömert)
 

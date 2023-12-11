@@ -1,5 +1,5 @@
 [![License: CC-BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/) 
-![Build Status](https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/workflows/CI/badge.svg)
+[![CI](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/actions/workflows/qc.yml/badge.svg)](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/actions/workflows/qc.yml)
 # Vibrational Spectroscopy Ontology
 
 _Work In Progress - NOT READY FOR PRODUCTION!_
