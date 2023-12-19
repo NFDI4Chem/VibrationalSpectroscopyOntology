@@ -32,18 +32,16 @@ $(COMPONENTSDIR)/vibso_object_properties.owl: $(TEMPLATEDIR)/vibso_object_proper
 ##################
 
 ## Module for ontology: obi
-## We decided to use the ROBOT filter method to exctract the needed terms because the slme BOT method brings in too many unneeded terms due to its high axiomatization
+## Since the default extract BOT method imports too many unneeded terms, we customize the import module build process by
+## sing ROBOT "remove" for the terms specified here and in the remove list txt
 
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt
-	if [ $(IMP) = true ]; then $(ROBOT) filter -i $< -T $(IMPORTDIR)/obi_terms.txt --select "self ancestors equivalents" --axioms "disjoint tbox rbox" --signature false --trim true \
-		--output $@.tmp.owl; fi
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module_provo.ru \
-		filter -T $(IMPORTDIR)/obi_terms.txt --select "self annotations domains ranges equivalents instances ontology" --axioms "disjoint tbox rbox" --signature false --trim true \
-		query --update ../sparql/postprocess-module_2.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		merge -i $@.tmp.owl \
-		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
+        extract -T $(IMPORTDIR)/obi_terms.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+        query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module_2.ru \
+        remove --term http://purl.obolibrary.org/obo/OBI_0001930 --select descendants \
+        remove -T $(IMPORTDIR)/obi_remove_list.txt --select "self descendants" \
+        $(ANNOTATE_CONVERT_FILE); fi
 
 ## Module for ontology: chmo
 ## We decided to use the ROBOT filter method to exctract the needed terms because the slme BOT method brings in too many unneeded terms due to the axiomatization
