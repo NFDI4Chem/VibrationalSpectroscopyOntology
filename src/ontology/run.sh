@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Wrapper script for docker.
 #
 # This is used primarily for wrapping the GNU Make workflow.
