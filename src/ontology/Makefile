@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bfo ro omo iao chmo pato obi stato
+IMPORTS =  bfo ro omo iao chmo pato obi stato chebi
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -333,6 +333,13 @@ $(IMPORTDIR)/chmo_import.owl: $(MIRRORDIR)/chmo.owl
 
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in vibso.Makefile!" && false
+## Module for ontology: chebi
+
+$(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl $(IMPORTDIR)/chebi_terms_combined.txt
+	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) extract -i $< -T $(IMPORTDIR)/chebi_terms_combined.txt --force true  --copy-ontology-annotations true --individuals include --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -484,6 +491,16 @@ mirror-stato: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/stato.owl --create-dirs -o $(MIRRORDIR)/stato.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/stato.owl -o $@.tmp.owl && \
 		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/STATO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: chebi
+.PHONY: mirror-chebi
+.PRECIOUS: $(MIRRORDIR)/chebi.owl
+mirror-chebi: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(OBOBASE)/chebi.owl.gz --create-dirs -o $(MIRRORDIR)/chebi.owl.gz --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/chebi.owl.gz -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/CHEBI --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

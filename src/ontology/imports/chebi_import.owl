@@ -1,0 +1,77 @@
+Prefix(:=<http://purl.obolibrary.org/obo/vibso/imports/chebi_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/vibso/imports/chebi_import.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2023-12-20/imports/chebi_import.owl>
+Annotation(owl:versionInfo "2023-12-20")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_24431>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_59999>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_60004>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000087>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000231>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi#3_STAR>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#default-namespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#saved-by>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/chebi#3_STAR> (<http://purl.obolibrary.org/obo/chebi#3_STAR>)
+
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/chebi#3_STAR> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_24431> (chemical entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_24431> "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UniProt") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHEBI_24431> "chemical entity")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/CHEBI_24431> "chebi_ontology")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_24431> "CHEBI:24431")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_24431> <http://purl.obolibrary.org/obo/chebi#3_STAR>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_24431> "chemical entity")
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_59999> (chemical substance)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_59999> "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/CHEBI_59999> "chebi_ontology")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ChEBI") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_59999> "Chemische Substanz")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_59999> "CHEBI:59999")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_59999> <http://purl.obolibrary.org/obo/chebi#3_STAR>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_59999> "chemical substance")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_59999> <http://purl.obolibrary.org/obo/CHEBI_24431>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_60004> (mixture)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_60004> "A mixture is a chemical substance composed of multiple molecules, at least two of which are of a different kind.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/CHEBI_60004> "chebi_ontology")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ChEBI") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_60004> "Mischung")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_60004> "CHEBI:60004")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_60004> <http://purl.obolibrary.org/obo/chebi#3_STAR>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_60004> "mixture")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_60004> <http://purl.obolibrary.org/obo/CHEBI_59999>)
+
+
+)
