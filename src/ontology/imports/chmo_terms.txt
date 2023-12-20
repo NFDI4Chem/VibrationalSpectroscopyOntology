@@ -14,3 +14,5 @@ http://purl.obolibrary.org/obo/CHMO_0002823 # volume concentration
 http://purl.obolibrary.org/obo/CHMO_0002824 # number concentration
 http://purl.obolibrary.org/obo/CHMO_0002821 # mass concentration
 http://purl.obolibrary.org/obo/CHMO_0002822 # amount concentration
+CHMO:0002515 # 'laser Raman spectroscopy'
+CHMO:0000628 # 'vibrational spectroscopy'
