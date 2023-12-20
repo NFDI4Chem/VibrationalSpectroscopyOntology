@@ -5,6 +5,7 @@ http://purl.obolibrary.org/obo/RO_0000087 # has role
 http://purl.obolibrary.org/obo/RO_0000091 # has disposition
 http://purl.obolibrary.org/obo/RO_0000056 # participates in
 http://purl.obolibrary.org/obo/RO_0000057 # has participant
+http://purl.obolibrary.org/obo/RO_0002351 # has member
 http://purl.obolibrary.org/obo/RO_0000059 # concretizes
 http://purl.obolibrary.org/obo/RO_0002502 # depends on
 http://purl.obolibrary.org/obo/RO_0002314 # characteristic of part of
