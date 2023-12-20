@@ -87,6 +87,10 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
+# Class: obo:CHEBI_24431 (chemical entity)
+
+SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
+
 # Class: obo:NCBITaxon_9606 (person)
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "person")
