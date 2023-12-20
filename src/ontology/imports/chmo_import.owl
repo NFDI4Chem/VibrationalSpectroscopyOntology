@@ -8,8 +8,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/imports/chmo_import.owl>
 <http://purl.obolibrary.org/obo/vibso/releases/2023-12-20/imports/chmo_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 Annotation(owl:versionInfo "2023-12-20")
-Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_60004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000228>))
@@ -138,7 +138,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#saved-by>))
-Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#wasDerivedFrom>))
 
 
 
@@ -146,14 +145,9 @@ Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#wasDerivedFrom>))
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/CHEBI_60004> (<http://purl.obolibrary.org/obo/CHEBI_60004>)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHEBI_60004> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
-
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000228> (spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1351/goldbook.S05848") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000228> "The study of the interaction of a sample with radiation or particles for measurement or detection.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000228> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000228> "spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000228> "CHMO:0000228")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000228> "spectroscopy")
@@ -163,7 +157,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000228> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000628> (vibrational spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000628> "Spectroscopy which probes the vibrational degrees of freedom of a molecule.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000628> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000628> "vibrational spectroscopic analysis")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000628> "CHMO:0000628")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000628> "vibrational spectroscopy")
@@ -172,7 +165,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000628> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000629> (inelastic electron tunnelling spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000629> "Spectroscopy where a metal-molecule-metal sandwich is formed and electrons tunnel from metal to metal through the molecules. Any additional molecules adsorbed onto the inner layer of the sandwhich can affect the tunneling via the excitation of vibrational states.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000629> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000629> "IETS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000629> "inelastic electron tunnelling spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000629> "CHMO:0000629")
@@ -182,7 +174,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000629> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000630> (infrared absorption spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000015") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000658") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:978-3-540-74597-6") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000630> "Spectroscopy where the sample absorbs radiation from the infrared region (0.78 to 1000 micrometres).")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000630> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHMO_0000630> "FIX:0000015")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHMO_0000630> "FIX:0000658")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000630> "IR absorption spectrometry")
@@ -207,7 +198,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000630> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000631> (infrared evanescent wave spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1088/0022-3727/34/9/306") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000631> "Spectroscopy using radiation in the infrared region (0.78–1000 μm) where an evanescent wave is generated using an optical fibre.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000631> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000631> "IR-EWS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000631> "infra-red evanescent wave spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000631> "infrared evanescent wave spectrometry")
@@ -219,7 +209,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000631> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000633> (infrared multiphoton dissociation spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000633> "Spectroscopy where the sample absorbs radiation from the infrared region (0.78–1000 μm) with sufficient energy to cause photodissociation by the absorption of two or more photons.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000633> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000633> "IRMPD spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000633> "IRMPD spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000633> "infra-red multiphoton dissociation spectrometry")
@@ -232,7 +221,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000633> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000634> (resonant infrared multiphoton dissociation spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000634> "Spectroscopy where the sample absorbs resonant radiation from the infrared region (0.78–1000 μm) with sufficient energy to cause photodissociation by the absorption of two or more photons.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000634> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000634> "IR REMPD")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000634> "IR REMPD spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000634> "IR REMPD spectroscopy")
@@ -249,7 +237,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000634> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000635> (mid-infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000642") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0-534-98144-5") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000635> "Spectroscopy where the sample absorbs radiation in the mid infrared region (3–8 μm).")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000635> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000635> "mid infrared spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000635> "mid-IR")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000635> "mid-IR spectroscopy")
@@ -262,7 +249,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000635> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000636> (Fourier transform infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000636> "Spectroscopy where the sample absorbs a single pulse of radiation from the infrared region (0.78–1000 μm) and the spectrum obtained is subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000636> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHMO_0000636> "FIX:0000110")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000636> "FT-IR")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000636> "FT-IR spectroscopy")
@@ -284,7 +270,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000636> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000637> (micro infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000637> "Spectroscopy where the sample absorbs radiation from a finely focused beam (<10 μm diameter) of infrared light  (0.78–1000 μm).")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000637> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000637> "infrared microanalysis")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000637> "micro infra-red spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000637> "micro-infrared spectrometry")
@@ -296,7 +281,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000637> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000638> (near-infrared absorption spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000321") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:978-3-540-74597-6") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000638> "Spectroscopy where the sample absorbs radiation from the near infrared region (0.8–2 μm).")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000638> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000638> "NIR absorbance spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000638> "NIR absorbance spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000638> "near infra-red absorbance spectrometry")
@@ -318,7 +302,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000638> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000639> (Fourier transform near infrared absorbance spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000639> "Spectroscopy where the sample absorbs a single pulse of radiation from the near infrared region (0.8–2 μm) and the spectrum obtained is subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000639> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000639> "FT NIRS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000639> "FT-NIRS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000639> "FTNIRS")
@@ -337,7 +320,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000639> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000640> (non-dispersive infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0824753593") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000640> "Spectroscopy where the difference in infrared radiation (0.78–1000 μm) bsorption of a sample cell against a reference cell is measured.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000640> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000640> "NDIR")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000640> "NDIR spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000640> "NDIR spectroscopy")
@@ -351,7 +333,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000640> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000641> (surface enhanced infrared absorption spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1039/b805223a") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000641> "Spectroscopy where the rough metal surface of a sample absorbs radiation in the infrared region (0.78–1000 μm).")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000641> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000641> "SEIRA")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000641> "SEIRA spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000641> "SEIRA spectroscopy")
@@ -365,7 +346,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000641> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000642> (transient infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:9810217498") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000642> "Spectroscopy where transient species such as radicals, ions or reactive intermediates are studied using pulses from an infrared laser. The infrared absorbance of the sample before and after an excitation laser pulse is measured.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000642> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHMO_0000642> "FIX:0001068")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000642> "IR laser transient absorption spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000642> "IR transient absorption spectroscopy")
@@ -381,7 +361,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000642> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000643> (infrared reflectance spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000643> "Spectroscopy where the reflection or scattering of infrared radiation (0.78–1000 μm) by a sample is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000643> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHMO_0000643> "FIX:0000652")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000643> "IR reflectance spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000643> "IR reflectance spectroscopy")
@@ -397,7 +376,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000643> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000644> (diffuse reflectance infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000644> "Spectroscopy where the diffuse reflection of infrared radiation by a sample is measured.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000644> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHMO_0000644> "FIX:0000656")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000644> "diffuse reflectance IR spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000644> "CHMO:0000644")
@@ -407,7 +385,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000644> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000645> (diffuse reflectance infrared Fourier transform spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000657") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000645> "Spectroscopy where the diffuse reflection of a single pulse of infrared radiation by a sample is measured, and the spectrum obtained is subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000645> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000645> "DRIFT")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000645> "DRIFTS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000645> "diffuse reflectance infra-red Fourier transform spectrometry")
@@ -421,7 +398,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000645> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000646> (near-infrared reflectance spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000646> "Spectroscopy where the reflection or scattering of near infrared radiation (0.8-2 micrometres) by a sample is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000646> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000646> "NIR reflectance spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000646> "NIR reflectance spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000646> "NIRS")
@@ -434,7 +410,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000646> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000647> (reflection–absorption infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000659") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0-471-96523-5") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000647> "Spectroscopy where the absorption and reflection of low incident angle infrared light by the surface molecules of a highly reflective or polished sample is measured.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000647> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000647> "IRAS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000647> "IRRAS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000647> "RA-IR")
@@ -453,7 +428,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000647> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000648> (attenuated total reflectance infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0-471-96523-5") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000648> "Spectroscopy where infrared light is introduced into a prism at an angle exceeding the critical angle for internal reflection. This produces an evanescent wave at the reflecting surface (a surface which is transparent to infrared such as thallium bromide) on which the sample is supported, and the distortion of the evanescent wave by the sample is measured.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000648> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHMO_0000648> "FIX:0000653")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000648> "ATR spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000648> "ATR spectroscopy")
@@ -477,7 +451,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000648> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000649> (infrared emission spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000651") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000649> "Spectroscopy where the sample is heated and the infrared radiation (0.78–1000 μm) emitted during cooling is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000649> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000649> "IES")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000649> "infra-red emission spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000649> "infrared emission spectrometry")
@@ -489,7 +462,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000649> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000650> (flame infrared emission spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000650> "Spectroscopy where the sample is heated in a flame and the infrared radiation (0.78–1000 μm) emitted during cooling is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000650> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000650> "FIRE")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000650> "flame infra-red emission spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000650> "flame infrared emission spectroscopy")
@@ -500,7 +472,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000650> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000651> (Fourier transform flame infrared emission spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000651> "Spectroscopy where the sample is heated in a flame and the infrared radiation  (0.78–1000 μm) emitted during cooling is detected. The spectrum obtained is subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000651> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000651> "FT-FIRE")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000651> "Fourier transform FIRE")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000651> "Fourier transform flame infra-red emission spectrometry")
@@ -512,7 +483,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000651> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000652> (Fourier transform infrared emission spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000652> "IR emission spectroscopy where the spectrum is obtained by a single pulse of (UV) radiation, and is subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000652> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000652> "FT-IRES")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000652> "FTIRES")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000652> "Fourier transform IRES")
@@ -528,7 +498,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000652> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000653> (mid-infrared emission spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0-534-98144-5") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000653> "Spectroscopy where the sample is heated and the mid infrared radiation (0.78–1000 μm) emitted during cooling is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000653> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000653> "MIRES")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000653> "mid-infra-red emission spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000653> "mid-infrared emission spectrometry")
@@ -540,7 +509,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000653> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000654> (planar array infrared emission spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1021/ac061799l") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000654> "Spectroscopy where the sample is heated and the infrared radiation (0.78–1000 μm) emitted during cooling is detected with a two-dimensional focal plane array infrared camera.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000654> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000654> "PA IR")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000654> "PA IRES")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000654> "PA-IR")
@@ -558,7 +526,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000654> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000655> (single-photon infrared emission spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1021/jp9724434") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000655> "Spectroscopy where the sample is heated using ultraviolet excitation (single photon) and the infrared radiation (0.78–1000 μm) emitted during cooling is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000655> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000655> "SPIRES")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000655> "single photon infra-red emission spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000655> "single photon infra-red emission spectroscopy")
@@ -571,7 +538,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000655> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000656> (Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000058") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000656> "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000656> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000656> "Raman scattering spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000656> "Raman scattering spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000656> "Raman spectrometry")
@@ -582,7 +548,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000656> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000657> (chiral Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1016/j.vibspec.2006.04.020") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000657> "Spectroscopy where vibrational optical activity is measured by means of a small difference in the intensity of Raman scattering from chiral molecules of right- and left-circularly polarised incident light.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000657> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000657> "Raman optical activity")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000657> "chiral Raman")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000657> "chiral Raman spectrometry")
@@ -593,7 +558,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000657> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000658> (coherent Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000658> "Spectroscopy where the Raman scattering of monochromatic light from three lasers (known as pump, probe and Stokes/anti-Stokes) by a sample is detected. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000658> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000658> "CHMO:0000658")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000658> "coherent Raman spectroscopy")
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000658> <http://purl.obolibrary.org/obo/CHMO_0002515>)
@@ -601,7 +565,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000658> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000659> (coherent Stokes Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000659> "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. An anti-Stokes frequency stimulation beam is used and a Stokes frequency beam is observed. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000659> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000659> "CSRS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000659> "coherent Stokes Raman scattering spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000659> "coherent Stokes Raman scattering spectroscopy")
@@ -613,7 +576,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000659> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000660> (coherent Stokes resonance Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000660> "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. An anti-Stokes frequency stimulation beam is used and a Stokes frequency beam is observed and the difference between the pump and the Stokes beams coincides with the frequency of an electronic transition within the molecule. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000660> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000660> "CHMO:0000660")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000660> "coherent Stokes resonance Raman spectroscopy")
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000660> <http://purl.obolibrary.org/obo/CHMO_0000659>)
@@ -621,7 +583,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000660> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000661> (coherent anti-Stokes Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000075") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000661> "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. A Stokes frequency stimulation beam is used and an anti-Stokes frequency beam is observed. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000661> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000661> "CARS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000661> "coherent anti-Stokes Raman scattering spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000661> "coherent anti-Stokes Raman scattering spectroscopy")
@@ -633,7 +594,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000661> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000662> (coherent anti-Stokes resonance Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000662> "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. A Stokes frequency stimulation beam is used and an anti-Stokes frequency beam is observed and the difference between the pump and the anti-Stokes beams coincides with the frequency of an electronic transition within the molecule. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000662> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000662> "CHMO:0000662")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000662> "coherent anti-Stokes resonance Raman spectroscopy")
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000662> <http://purl.obolibrary.org/obo/CHMO_0000661>)
@@ -641,7 +601,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000662> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000663> (confocal Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0824703693") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000663> "Spectroscopy where the Raman scattering of monochromatic light is detected. An aperture is used to discriminate between Raman signal coming from the focused laser spot and Raman signal coming from the out-of-focus region of the sample.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000663> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000663> "CRS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000663> "confocal Raman spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000663> "CHMO:0000663")
@@ -651,7 +610,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000663> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000664> (confocal Raman microscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0824703693") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000664> "The collection of spatially resolved Raman spectra of a sample during optical microscopy. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000664> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000664> "confocal Raman microanalysis")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000664> "confocal Raman microspectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000664> "confocal Raman microspectroscopy")
@@ -663,7 +621,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000664> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000665> (Fourier transform Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000665> "Spectroscopy where the Raman scattering of light (produced by a single laser pulse) by a sample is detected and the spectrum is subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000665> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHMO_0000665> "FIX:0000384")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000665> "FT-Raman")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000665> "Fourier transform Raman spectrometry")
@@ -674,7 +631,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000665> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000666> (hyper Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000666> "Spectroscopy where the Raman scattering of light by a (liquid) sample is detected. During scattering, photons from the incident laser (with frequency ω) are scattered by sample into photons of the second harmonic (photons with frequency 2ω).")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000666> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000666> "hyper Raman scattering spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000666> "hyper Raman scattering spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000666> "hyper Raman spectrometry")
@@ -689,7 +645,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000666> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000667> (polarised Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000667> "Spectroscopy where the polarisation of light which has been subjected to Raman scattering by a sample is determined.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000667> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000667> "polarised Raman spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000667> "polarized Raman spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000667> "polarized Raman spectroscopy")
@@ -700,7 +655,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000667> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000668> (resonance Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000668> "Raman spectroscopy where the energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition in the sample.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000668> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHMO_0000668> "FIX:0000060")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000668> "RR spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000668> "RR spectroscopy")
@@ -715,7 +669,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000668> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000669> (Kerr-gated resonance Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000669> "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample, and the laser is combined with a Kerr gate fluorescence rejection system.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000669> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000669> "Kerr-gated Raman spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000669> "CHMO:0000669")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000669> "Kerr-gated resonance Raman spectroscopy")
@@ -724,7 +677,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000669> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000670> (surface-enhanced resonance Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000670> "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000670> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHMO_0000670> "FIX:0000077")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000670> "SERRS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000670> "surface enhanced resonance Raman scattering spectrometry")
@@ -738,7 +690,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000670> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000671> (ultraviolet resonance Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1039/b702944f") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000671> "Spectroscopy where the Raman scattering of monochromatic light, from an ultraviolet laser, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000671> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000671> "UVRR")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000671> "UVRRS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000671> "ultra-violet resonance Raman spectroscopy")
@@ -749,7 +700,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000671> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000672> (deep ultra-violet resonance Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1039/b702944f") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000672> "Spectroscopy where the Raman scattering of monochromatic light, from a deep ultraviolet (<300 nm) laser, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000672> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000672> "CHMO:0000672")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000672> "deep ultra-violet resonance Raman spectroscopy")
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000672> <http://purl.obolibrary.org/obo/CHMO_0000671>)
@@ -757,7 +707,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000672> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000674> (spatially-offset Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000674> "Spectroscopy where the Raman scattering of monochromatic light, from a laser, by a sample is detected. Scattered light is collected from regions laterally offset from the excitation laser spot.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000674> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000674> "SORS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000674> "SORSS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000674> "spatially offset Raman scattering spectrometry")
@@ -771,7 +720,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000674> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000675> (stimulated Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0-471-96523-5") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000675> "Spectroscopy where the Raman scattering of monochromatic light, from two lasers ('pump' and 'probe') by a sample is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000675> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000675> "SRS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000675> "stimulated Raman scattering spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000675> "stimulated Raman spectrometry")
@@ -783,7 +731,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000675> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000676> (femosecond stimulated Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1088/1742-6596/28/1/007") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000676> "Spectroscopy where the Raman scattering of monochromatic light, from a femtosecond laser pulse, by a sample is detected. The laser pulse is generated by the mixing of two lasers ('pump' and 'probe').")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000676> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000676> "FSRS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000676> "FSRSS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000676> "emtosecond broadband stimulated Raman scattering spectrometry")
@@ -800,7 +747,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000676> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000677> (surface-enhanced Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000076") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000677> "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000677> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000677> "SERS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000677> "SERS spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000677> "surface enhanced Raman scattering")
@@ -817,7 +763,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000677> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000678> (tip-enhanced Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1002/anie.200460656") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1039/b9nr00156e") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000678> "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser (500–650 nm), by metal surfaces, where scattering is enhanced by the optical near-field of a metal-coated scanning probe microscopy tip, is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000678> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000678> "TERS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000678> "tip-enhanced Raman scattering spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000678> "tip-enhanced Raman scattering spectroscopy")
@@ -828,7 +773,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000678> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000679> (ultra-high vacuum tip-enhanced Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000679> "Spectroscopy where the Raman scattering of visible laser light, by metal surfaces, where scattering is enhanced by the optical near field of a scanning tunnelling tip, under ultra-high vacuum is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000679> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000679> "UHV-TERS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000679> "CHMO:0000679")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000679> "ultra-high vacuum tip-enhanced Raman spectroscopy")
@@ -837,7 +781,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000679> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000680> (ultraviolet Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1021/ja044708f") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000680> "Spectroscopy where the Raman scattering of monochromatic light, from an ultraviolet laser, by a sample is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000680> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000680> "UVR")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000680> "ultra-violet Raman spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000680> "ultra-violet Raman spectroscopy")
@@ -850,7 +793,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000680> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000763> (attenuated total reflectance Fourier transform infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000644") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0-471-96523-5") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000763> "Spectroscopy where infrared light is introduced into a prism at an angle exceeding the critical angle for internal reflection. This produces an evanescent wave at the reflecting surface (a surface which is transparent to infrared such as thallium bromide) on which the sample is supported. The distortion of the evanescent wave by the sample is measured producing a spectrum which is then subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000763> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000763> "ATR FT-IR spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000763> "ATR FTIR spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000763> "ATR-FTIR")
@@ -872,7 +814,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000763> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000770> (single molecule surface-enhanced Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1021/cr980133r") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000770> "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a single molecule sample adsorbed onto a metal (Au, Ag or Cu) surface is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000770> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000770> "SM SERS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000770> "SM-SERRS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000770> "SM-SERS")
@@ -890,7 +831,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000770> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000793> (assay output)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000793> "An information content entity that is output by an assay.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000793> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000793> "experimental data")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000793> "CHMO:0000793")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000793> "assay output")
@@ -901,7 +841,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000793> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000800> (spectrum)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000800> "A plot of a measured quantity against some experimental parameter.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000800> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000800> "spectra")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000800> "spectrum plot")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000800> "CHMO:0000800")
@@ -912,7 +851,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000800> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000823> (Raman spectrum)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1021/jp001661l") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000823> "A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000823> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000823> "Raman spectra")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000823> "CHMO:0000823")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000823> "Raman spectrum")
@@ -921,7 +859,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000823> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000859> (thermogravimetry-Fourier transform infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000859> "The FTIR analysis of volatile compounds released during the measurement of the mass of a sample as a function of temperature.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000859> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000859> "TG-FT-IR")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000859> "TG-FTIR")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000859> "TG/FTIR")
@@ -936,7 +873,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000859> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000870> (near-infrared Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000870> "Spectroscopy where the Raman scattering of near-infrared radiation (radiation in the range 0.8–2 μm) is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000870> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000870> "NIR Raman")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000870> "near-infrared Raman")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000870> "CHMO:0000870")
@@ -946,7 +882,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000870> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000875> (electrochemical surface-enhanced Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/jp809363m") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000875> "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, at a metal (Au, Ag or Cu) electrochemcial interface is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000875> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000875> "EC-SERS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000875> "electrochemical SERS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000875> "electrochemical surface enhanced Raman scattering")
@@ -959,7 +894,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000875> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000885> (surface-enhanced chiral Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000885> "Spectroscopy where vibrational optical activity from a sample absorbed onto a metal (Au, Ag or Cu) surface is measured by means of a small difference in the intensity of Raman scattering from chiral molecules of right- and left-circularly polarised incident light.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000885> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000885> "SEROA")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000885> "surface enhanced Raman optical activity")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000885> "surface enhanced chiral Raman spectroscopy")
@@ -971,7 +905,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000885> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000953> (microscope)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000953> "A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0000953> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000953> "CHMO:0000953")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000953> "microscope")
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000953> <http://purl.obolibrary.org/obo/OBI_0000968>)
@@ -979,7 +912,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000953> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001078> (polarization modulation infrared reflection–adsorption spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001078> "Spectroscopy where the differential absorption and reflection of low incident angle p- and s-polarized infrared light by the surface molecules of a highly reflective or polished sample is measured. The ultra-thin layers on metal surfaces interact with the p-polarized component of light, but not with the s-polarized component.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001078> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001078> "PM-IRRAS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001078> "polarization modulation infrared reflection adsorption spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001078> "polarization modulation-infrared reflection-adsorption spectroscopy")
@@ -990,7 +922,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001078> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001157> (single pulse–pulsed laser polymerization–near-infrared technique)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:386727682X") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001157> "A technique for measuring the time-resolved concentration of monomers during polymerisation reactions. The polymerisation is initiated by a single pulse of laser radiation and the monomer concentration is monitored by measuring absorbance in the near-infrared (0.8–2 μm) region.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001157> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001157> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001157> "2009-03-13T11:42:53Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001157> "SP-PLP-NIR")
@@ -1002,7 +933,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001157> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001234> (spectrometer)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001234> "A piece of apparatus used to measure a spectrum.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001234> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001234> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001234> "2009-03-25T01:54:09Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001234> "spectrograph")
@@ -1014,7 +944,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001234> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001235> (Raman spectrometer)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001235> "A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001235> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001235> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001235> "2009-03-25T01:55:39Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0001235> "CHMO:0001235")
@@ -1024,7 +953,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001235> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001262> (gas chromatography-infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001262> "Any method where a sample mixture is first separated by column chromatography where the mobile phase is a gas, then the absorption of radiation from the infrared region by the sample is measured.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001262> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001262> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001262> "2009-04-06T11:47:54Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001262> "GC IR")
@@ -1041,7 +969,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001262> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001263> (pyrolysis gas chromatography-infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001263> "Any method where a sample mixture is first chemically degraded by heating then separated by column chromatography where the mobile phase is a gas, then the absorption of radiation from the infrared region by the sample is measured.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001263> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001263> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001263> "2009-04-06T11:52:44Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001263> "Py-GC-IR")
@@ -1057,7 +984,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001263> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001264> (pyrolysis infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "OrangeBook:5.3") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001264> "Spectroscopy where the sample is first chemically degraded by heating then its absorption of radiation from the infrared region (0.78–1000 μm) is measured.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001264> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001264> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001264> "2009-04-06T11:56:10Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001264> "Py-IR")
@@ -1072,7 +998,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001264> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001288> (sum-frequency generation spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1021/ja9831453") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001288> "A method for generating surface-specific vibrational spectra by mixing two light beams at a surface and detecting the output beam, which has frequency equal to the sum of the two input frequencies.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001288> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001288> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001288> "2009-05-07T03:31:21Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001288> "SFG")
@@ -1091,7 +1016,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001288> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001766> (transmission Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001766> "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser, by a sample is detected. The light is collected from the non-illuminated side of the sample.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001766> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001766> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001766> "2009-05-20T10:12:23Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001766> "TRS")
@@ -1105,7 +1029,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001766> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001767> (optical tweezers Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1039/b815253e") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001767> "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser, by a sample (e.g. a biological cell) constrained using optical tweezers is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001767> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001767> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001767> "2009-05-20T10:18:22Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001767> "OTRS")
@@ -1117,7 +1040,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001767> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001794> (supercritical fluid extraction-Fourier transform infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001794> "Fourier transform infrared spectroscopy where the sample is initially transferred from a matrix to a liquid phase using a supercritical fluid.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001794> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001794> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001794> "2009-05-20T02:49:54Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001794> "SFE-FTIR")
@@ -1129,7 +1051,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001794> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001798> (reflection–absorption Fourier transform infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0-471-96523-5") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1039/b821475a") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001798> "Spectroscopy where the absorption and reflection of low-incident-angle infrared light by the surface molecules of a highly reflective or polished sample is measured. The  sample absorbs a single pulse of radiation and the spectrum obtained is subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001798> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001798> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001798> "2009-05-21T10:50:58Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001798> "FT-IRAS")
@@ -1151,7 +1072,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001798> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001814> (Raman microscope)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001814> "A piece of apparatus, consisting of a laser beam (<10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001814> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001814> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001814> "2009-05-26T01:03:35Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHMO_0001814> "CHMO:0001236")
@@ -1164,7 +1084,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001814> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001821> (synchrotron Fourier transform infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001821> "Spectroscopy where the sample absorbs a single pulse of radiation from the infrared region (0.78–1000 μm), produced in a synchrotron, and the spectrum obtained is subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001821> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001821> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001821> "2009-05-28T10:47:32Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001821> "S-FTIR")
@@ -1186,7 +1105,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001821> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001907> (rapid-scan infrared absorption spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:1574445391") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001907> "Spectroscopy where the sample absorbs radiation from the infrared region (0.78–1000 μm). Spectra are collected at a rate of approx. 0.05 s per spectrum.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001907> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001907> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001907> "2009-06-03T10:09:14Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001907> "rapid scan IR")
@@ -1203,7 +1121,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001907> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001908> (ultra-rapid-scan infrared absorption spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:1574445391") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001908> "Spectroscopy where the sample absorbs radiation from the infrared region  (0.78–1000 μm). Spectra are collected at a rate of approx. 0.001 s per spectrum.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001908> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001908> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001908> "2009-06-03T10:12:17Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001908> "ultra rapid scan IR")
@@ -1220,7 +1137,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001908> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001939> (stimulated Raman gain spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0824705572") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001939> "Spectroscopy where the Raman scattering of monochromatic light from two lasers ('pump' and 'probe') by a sample is detected. In stimulated Raman gain spectroscopy the probe laser has a lower frequency than the pump laser.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001939> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001939> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001939> "2009-06-10T09:51:36Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001939> "Raman gain spectroscopy")
@@ -1232,7 +1148,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001939> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001940> (stimulated Raman loss spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0824705572") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001940> "Spectroscopy where the Raman scattering of monochromatic light from two lasers ('pump' and 'probe') by a sample is detected. In stimulated Raman gain spectroscopy the pump laser has a lower frequency than the probe laser.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001940> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001940> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001940> "2009-06-10T09:55:17Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001940> "IRGS")
@@ -1248,7 +1163,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001940> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001941> (photoacoustic Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0824705572") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001941> "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. Two lasers ('pump and 'probe') are mixed and focused on the sample cell. When the frequency difference between the lasers corresponds to a Raman transition, an acoustic signal (a sound wave produced by an increase in pressure) is generated and detected by a sensitive microphone.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001941> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001941> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001941> "2009-06-10T10:02:35Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001941> "PARS")
@@ -1259,7 +1173,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001941> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001942> (ionisation-detected stimulated Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0824705572") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001942> "Spectroscopy where the Raman scattering of monochromatic light, from two lasers ('pump' and 'probe') by a sample is detected. The molecules in the sample are ionised using an ultraviolet laser in order to improve the signal-to-noise ratio of the spectrum.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001942> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001942> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001942> "2009-06-10T10:14:20Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001942> "IDSRS")
@@ -1271,7 +1184,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001942> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001943> (higher-order Raman spectral excitation spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1007/BF00750953") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001943> "Spectroscopy where the Raman scattering of monochromatic light, from a two-colour laser, by a sample is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001943> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001943> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001943> "2009-06-10T10:23:02Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001943> "HORSES")
@@ -1285,7 +1197,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001943> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001986> (non-resonance Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000026") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001986> "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light does not coincide with an electronic transition in the sample.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0001986> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001986> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001986> "2009-06-17T03:24:06Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001986> "non resonance Raman spectroscopy")
@@ -1300,7 +1211,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001986> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002165> (drop coating deposition Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1039/b701541k") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002165> "A type of Raman spectroscopy where the spectral signal is enhanced by pre-concentration of the sample. Drops of the sample in solution are deposited onto a surface and dry in a 'coffee-ring' pattern. Spectra are then obtained from this ring of excess of material, after evaporation has completed.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002165> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002165> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002165> "2009-07-14T10:12:49Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002165> "DCD Raman spectroscopy")
@@ -1316,7 +1226,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002165> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002286> (polarised Fourier transform infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002286> "Spectroscopy where the sample absorbs a single pulse of polarised radiation from the infrared region (0.78–1000 μm) and the spectrum obtained is subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002286> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002286> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002286> "2009-08-24T12:48:20Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002286> "polarised FTIR")
@@ -1338,7 +1247,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002286> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002287> (pyrolysis Fourier transform infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1021/jp972162w") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002287> "Spectroscopy where the sample is first chemically degraded by heating then its absorption of radiation from the infrared region (0.78–1000 μm) is measured and the spectrum obtained is subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002287> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002287> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002287> "2009-08-24T12:53:20Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002287> "P-FTIR")
@@ -1357,7 +1265,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002287> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002288> (time-resolved polarised Fourier transform infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002288> "Spectroscopy where the sample absorbs a single pulse of polarised radiation from the infrared region (0.78–1000 μm) and the spectrum obtained, recorded as a function of time, is subject to a Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002288> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002288> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002288> "2009-08-24T12:55:24Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002288> "time-resolved polarised FTIR")
@@ -1379,7 +1286,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002288> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002289> (fast Fourier transform infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000647") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1021/ie960134e") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002289> "Spectroscopy where the sample absorbs a single pulse of radiation from the infrared region (0.78–1000 μm) and the spectrum obtained is subject to a fast Fourier transform.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002289> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002289> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002289> "2009-08-24T01:00:06Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002289> "FFT-FTIR")
@@ -1391,7 +1297,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002289> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002290> (infrared transmission spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000661") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002290> "Spectroscopy where the transmission of infrared radiation (0.78–1000 μm) through a sample is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002290> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002290> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002290> "2009-08-24T01:02:36Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002290> "IR transmission spectroscopy")
@@ -1405,7 +1310,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002290> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002291> (dispersive infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000649") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://www.thermo.com/eThermo/CMA/PDFs/Product/productPDF_21615.pdf") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002291> "Spectroscopy where the sample absorbs radiation from the infrared region (0.78–1000 μm). The infrared beam is passed through a diffraction grating which separates (or disperses) the wavelength of the light and directs each wavelength individually through a slit to a detector.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002291> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002291> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002291> "2009-08-24T01:12:29Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002291> "CHMO:0002291")
@@ -1415,7 +1319,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002291> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002373> (surface-enhanced non-resonance Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002373> "Spectroscopy where the Raman scattering of monochromatic light, from a visible laser, by a sample adsorbed onto a metal (Au, Ag or Cu) surface is detected. The energy of the incoming laser is adjusted such that it or the scattered light does not coincide with an electronic transition within the sample.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002373> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002373> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002373> "2009-09-15T05:14:57Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHMO_0002373> "FIX:0000078")
@@ -1428,7 +1331,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002373> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002414> (scattering spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000057") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002414> "Any method that measures the amount of light that a substance scatters at certain wavelengths, incident angles, and polarization angles.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002414> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002414> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002414> "2009-09-17T04:09:34Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002414> "CHMO:0002414")
@@ -1438,7 +1340,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002414> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002515> (laser Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000375") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002515> "Spectroscopy where the Raman scattering of monochromatic light, from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002515> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002515> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002515> "2009-10-09T11:39:33Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002515> "CHMO:0002515")
@@ -1448,7 +1349,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002515> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002627> (infrared–visible sum-frequency generation spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1021/ja9831453") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002627> "A method for generating surface-specific vibrational spectra by mixing two light beams (visible and IR) at a surface and detecting the output beam, which has frequency equal to the sum of the two input frequencies.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002627> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002627> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002627> "2009-12-01T09:35:28Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002627> "infrared-visible sum-frequency generation (SFG) spectroscopy")
@@ -1460,7 +1360,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002627> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002651> (thermogravimetry-differential thermal analysis)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002651> "The measurement of the temperature difference between the sample and a reference material during the measurement of the mass of the sample as a function of temperature.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002651> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002651> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002651> "2010-01-04T04:19:21Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002651> "DTA-TG")
@@ -1481,7 +1380,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002651> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002675> (electronic sum-frequency generation spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1039/b908097j") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002675> "A method for generating surface-specific electronic spectra by mixing two light beams at a surface and detecting the output beam, which has frequency equal to the sum of the two input frequencies.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002675> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002675> "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002675> "2010-01-13T04:01:47Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002675> "ESFG spectroscopy")
@@ -1494,7 +1392,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002675> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002710> (two-dimensional infrared spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0001069") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002710> "Spectroscopy where the sample absorbs radiation from the infrared region (0.78–1000 \\μm) over two frequency axes. Cross peaks in the spectrum encode the couplings and orientation between vibrations.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002710> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002710> "Hils")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002710> "2010-07-24T11:15:46Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002710> "2D IR")
@@ -1510,7 +1407,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002710> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002793> (sensor)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002793> "A piece of apparatus that is used to measure a physical quantity.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002793> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002793> "CHMO:0002793")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0002793> "sensor")
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002793> <http://purl.obolibrary.org/obo/OBI_0000968>)
@@ -1518,7 +1414,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002793> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002813> (in situ diffuse reflectance infrared Fourier transform spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002813> "Diffuse reflectance infrared Fourier transform spectroscopy of a sample that is carried out in the environment where the sample might be used.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002813> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002813> "in situ DRIFT")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002813> "in situ DRIFTS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002813> "CHMO:0002813")
@@ -1529,7 +1424,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002813> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002820> (concentration)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002820> "Experimental method output expressing the contribution of one constituent to the composition of a mixture.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002820> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002820> "CHMO:0002820")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CHMO_0002820> "based heavily on https://doi.org/10.1351/goldbook.C01222")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0002820> "concentration")
@@ -1539,7 +1433,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002820> ObjectSomeValuesFrom(<h
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002821> (mass concentration)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002821> "Experimental method output expressing a concentration in terms of the mass of a constituent divided by the volume of the mixture.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002821> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002821> "CHMO:0002821")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CHMO_0002821> "based heavily on https://doi.org/10.1351/goldbook.M03713")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0002821> "mass concentration")
@@ -1548,7 +1441,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002821> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002822> (amount concentration)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002822> "Experimental method output expressing a concentration in terms of the amount of a constituent divided by the volume of the mixture.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002822> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002822> "amount-of-substance concentration")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002822> "molarity")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002822> "substance concentration")
@@ -1560,7 +1452,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002822> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002823> (volume concentration)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002823> "Experimental method output expressing a concentration in terms of the volume of a constituent divided by the volume of the mixture.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002823> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002823> "CHMO:0002823")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CHMO_0002823> "based heavily on https://doi.org/10.1351/goldbook.C01222")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0002823> "volume concentration")
@@ -1569,23 +1460,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002823> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002824> (number concentration)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0001-5985-7429") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002824> "Experimental method output expressing a concentration in terms of the number of entities of a constituent divided by the volume of the mixture.")
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/CHMO_0002824> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002824> "CHMO:0002824")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CHMO_0002824> "based heavily on https://doi.org/10.1351/goldbook.N04260")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0002824> "number concentration")
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002824> <http://purl.obolibrary.org/obo/CHMO_0002820>)
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (<http://purl.obolibrary.org/obo/IAO_0000027>)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
-
-# Class: <http://purl.obolibrary.org/obo/OBI_0000070> (<http://purl.obolibrary.org/obo/OBI_0000070>)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/OBI_0000070> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
-
-# Class: <http://purl.obolibrary.org/obo/OBI_0000968> (<http://purl.obolibrary.org/obo/OBI_0000968>)
-
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
 
 
 )
