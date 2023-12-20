@@ -38,7 +38,7 @@ import_group:
   - id: bfo
     module_type: mirror
   - id: ro
-    #mirror_from: http://purl.obolibrary.org/obo/ro/ro-base.owl
+    module_type: custom   # custom, because we need to get rid of dangling classes after extracting wth default BOT
     use_base: true
     slme_individuals: exclude
   - id: omo
