@@ -24,6 +24,7 @@ These are the current imports in VIBSO
 | pato | http://purl.obolibrary.org/obo/pato.owl | None |
 | obi | http://purl.obolibrary.org/obo/obi.owl | custom |
 | stato | http://purl.obolibrary.org/obo/stato.owl | None |
+| uo | http://purl.obolibrary.org/obo/uo.owl | custom |
 | chebi | http://purl.obolibrary.org/obo/chebi.owl | None |
 
 ## Components

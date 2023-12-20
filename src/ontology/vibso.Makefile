@@ -67,3 +67,11 @@ $(IMPORTDIR)/chmo_import.owl: $(MIRRORDIR)/chmo.owl $(IMPORTDIR)/chmo_terms.txt
             query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module_2.ru \
             merge -i $@.tmp.owl \
             $(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: uo
+## We use a ROBOT "filter" command to only get the instances
+
+$(IMPORTDIR)/uo_import.owl: $(MIRRORDIR)/uo.owl $(IMPORTDIR)/uo_terms.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module_provo.ru \
+    		filter -T $(IMPORTDIR)/uo_terms.txt --select "annotations self descendants instances" --signature true --trim true \
+    		$(ANNOTATE_CONVERT_FILE); fi

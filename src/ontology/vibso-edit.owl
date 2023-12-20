@@ -21,6 +21,7 @@ Ontology(<http://purl.obolibrary.org/obo/vibso.owl>
 Import(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/components/vibso_object_properties.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/vibso/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/chmo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/obi_import.owl>)
@@ -28,7 +29,7 @@ Import(<http://purl.obolibrary.org/obo/vibso/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/stato_import.owl>)
-Import(<http://purl.obolibrary.org/obo/vibso/imports/chebi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/vibso/imports/uo_import.owl>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-1595-3213>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-2239-3955>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-4378-6061>)
@@ -90,6 +91,18 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "person")
 SubClassOf(obo:NCBITaxon_9606 obo:OBI_0100026)
+
+# Class: obo:UO_0000001 (length unit)
+
+SubClassOf(obo:UO_0000001 obo:IAO_0000003)
+
+# Class: obo:UO_0000002 (mass unit)
+
+SubClassOf(obo:UO_0000002 obo:IAO_0000003)
+
+# Class: obo:UO_0000051 (concentration unit)
+
+SubClassOf(obo:UO_0000051 obo:IAO_0000003)
 
 
 ############################
