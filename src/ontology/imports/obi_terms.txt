@@ -2,61 +2,55 @@
 ### BFO processes ###
 #####################
 http://purl.obolibrary.org/obo/OBI_0000011 # planned process
-http://purl.obolibrary.org/obo/OBI_0000066 # investigation
 http://purl.obolibrary.org/obo/OBI_0000070 # assay
-http://purl.obolibrary.org/obo/OBI_0000073 # sample preparation for assay
 http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
-http://purl.obolibrary.org/obo/OBI_0000094 # material processing
-http://purl.obolibrary.org/obo/OBI_0000339 # planning
 http://purl.obolibrary.org/obo/OBI_0001007 # image creation
-http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
+http://purl.obolibrary.org/obo/OBI_0000066 # investigation
+http://purl.obolibrary.org/obo/OBI_0000094 # material processing
+http://purl.obolibrary.org/obo/OBI_0000073 # sample preparation for assay
+http://purl.obolibrary.org/obo/OBI_0000744 # material sampling process
+http://purl.obolibrary.org/obo/OBI_0000339 # planning
 
 #############################
 ### BFO material entities ###
 #############################
-http://purl.obolibrary.org/obo/OBI_0000047 # processed material
+http://purl.obolibrary.org/obo/OBI_0000835 # manufacturer
 http://purl.obolibrary.org/obo/OBI_0000747 # material sample
-http://purl.obolibrary.org/obo/OBI_0100051 # specimen
 http://purl.obolibrary.org/obo/OBI_0100026 # organism
+http://purl.obolibrary.org/obo/OBI_0000245 # organization
+http://purl.obolibrary.org/obo/OBI_0000047 # processed material
 http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/OBI_0000398 # image creation device
 http://purl.obolibrary.org/obo/OBI_0000832 # measurement device
 http://purl.obolibrary.org/obo/OBI_0400169 # microscope
 http://purl.obolibrary.org/obo/OBI_0400170 # microscope slide
-http://purl.obolibrary.org/obo/OBI_0000398 # image creation device
-http://purl.obolibrary.org/obo/OBI_0000245 # organization
-http://purl.obolibrary.org/obo/OBI_0000835 # manufacturer
 
 ################
 ### BFO ICEs ###
 ################
-http://purl.obolibrary.org/obo/OBI_0000272 # protocol
-http://purl.obolibrary.org/obo/OBI_0000654 # device setting
-http://purl.obolibrary.org/obo/OBI_0001616 # specimen identifier
-http://purl.obolibrary.org/obo/OBI_0001898 # comment on investigation
-http://purl.obolibrary.org/obo/OBI_0001622 # investigation title
 http://purl.obolibrary.org/obo/OBI_0000441 # assay objective
 http://purl.obolibrary.org/obo/OBI_0200166 # data transformation objective
-http://purl.obolibrary.org/obo/OBI_0500000 # study design
 http://purl.obolibrary.org/obo/OBI_0000456 # material transformation objective
-http://purl.obolibrary.org/obo/OBI_0000684 # specimen collection objective
+http://purl.obolibrary.org/obo/OBI_0001896 # investigation assay specification
+http://purl.obolibrary.org/obo/OBI_0000272 # protocol
+http://purl.obolibrary.org/obo/OBI_0001931 # scalar value specification
+http://purl.obolibrary.org/obo/OBI_0001930 # categorical value specification
+http://purl.obolibrary.org/obo/OBI_0000674 # center value
 
 ################
 ### BFO SDCs ###
 ################
-http://purl.obolibrary.org/obo/OBI_0000202 # investigation agent role
+http://purl.obolibrary.org/obo/OBI_0000654 # device setting
 http://purl.obolibrary.org/obo/OBI_0000067 # evaluant role
-http://purl.obolibrary.org/obo/OBI_0000086 # reagent role
-http://purl.obolibrary.org/obo/OBI_0000112 # specimen role
-http://purl.obolibrary.org/obo/OBI_0302732 # solvent role
+http://purl.obolibrary.org/obo/OBI_0000202 # investigation agent role
+http://purl.obolibrary.org/obo/OBI_0000571 # manufacturer role
 http://purl.obolibrary.org/obo/OBI_0000740 # material sample role
+http://purl.obolibrary.org/obo/OBI_0000369 # magnify function
 http://purl.obolibrary.org/obo/OBI_0000453 # measure function
 http://purl.obolibrary.org/obo/OBI_0000397 # image acquisition function
-http://purl.obolibrary.org/obo/OBI_0000369 # magnify function
-http://purl.obolibrary.org/obo/OBI_0000399 # solid support function
-http://purl.obolibrary.org/obo/OBI_0000571 # manufacturer role
 
 #########################
-### Object properties ###
+### Properties ###
 #########################
 http://purl.obolibrary.org/obo/OBI_0000293 # has_specified_input
 http://purl.obolibrary.org/obo/OBI_0000295 # is_specified_input_of
@@ -67,27 +61,7 @@ http://purl.obolibrary.org/obo/OBI_0001688 # has organization member
 http://purl.obolibrary.org/obo/OBI_0001950 # has performer
 http://purl.obolibrary.org/obo/OBI_0000417 # achieves_planned_objective
 http://purl.obolibrary.org/obo/OBI_0000833 # objective_achieved_by
-
-###########################################################
-# external classes needed due to OBI axioms of term above #
-###########################################################
-http://purl.obolibrary.org/obo/NCBITaxon_9606 # homo sapiens
-http://purl.obolibrary.org/obo/RO_0000087 # has role
-http://purl.obolibrary.org/obo/BFO_0000055 # realizes
-http://purl.obolibrary.org/obo/BFO_0000054 # realized in
-http://purl.obolibrary.org/obo/RO_0000059 # concretizes
-
-http://purl.obolibrary.org/obo/BFO_0000050 # part of
-http://purl.obolibrary.org/obo/BFO_0000051 # has part
-http://purl.obolibrary.org/obo/RO_0000052 # inheres in
-http://purl.obolibrary.org/obo/RO_0000053 # bearer of
-http://purl.obolibrary.org/obo/RO_0000079 # function of
-
-http://purl.obolibrary.org/obo/RO_0000085 # has function
-http://purl.obolibrary.org/obo/BFO_0000034 # function
-
-http://purl.obolibrary.org/obo/IAO_0000027 # data item
-http://purl.obolibrary.org/obo/IAO_0000136 # is about
-http://purl.obolibrary.org/obo/IAO_0000109 # measurement datum
-http://purl.obolibrary.org/obo/IAO_0000101 # image
-http://purl.obolibrary.org/obo/IAO_0000064 # algorithm
+http://purl.obolibrary.org/obo/OBI_0001927 # specifies value of
+http://purl.obolibrary.org/obo/OBI_0001938 # has value specification
+http://purl.obolibrary.org/obo/OBI_0002135 # has specified value
+http://purl.obolibrary.org/obo/OBI_0001937 # has specified numeric value

@@ -21,6 +21,7 @@ Ontology(<http://purl.obolibrary.org/obo/vibso.owl>
 Import(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/components/vibso_object_properties.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/vibso/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/chmo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/obi_import.owl>)
@@ -28,6 +29,7 @@ Import(<http://purl.obolibrary.org/obo/vibso/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/stato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/vibso/imports/uo_import.owl>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-1595-3213>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-2239-3955>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-4378-6061>)
@@ -85,10 +87,26 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
+# Class: obo:CHEBI_24431 (chemical entity)
+
+SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
+
 # Class: obo:NCBITaxon_9606 (person)
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "person")
 SubClassOf(obo:NCBITaxon_9606 obo:OBI_0100026)
+
+# Class: obo:UO_0000001 (length unit)
+
+SubClassOf(obo:UO_0000001 obo:IAO_0000003)
+
+# Class: obo:UO_0000002 (mass unit)
+
+SubClassOf(obo:UO_0000002 obo:IAO_0000003)
+
+# Class: obo:UO_0000051 (concentration unit)
+
+SubClassOf(obo:UO_0000051 obo:IAO_0000003)
 
 
 ############################
@@ -130,6 +148,7 @@ AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1595-3213> "Philip S
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-1595-3213> <https://ror.org/04aj4c181>)
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-1595-3213> <https://www.wikidata.org/wiki/Q96678459>)
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-1595-3213> "VIBSO Workgroup"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-1595-3213>)
 
 # Individual: <https://orcid.org/0000-0002-2239-3955> (Giacomo Lanza)
 
@@ -137,6 +156,7 @@ AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-2239-3955> "Giacomo 
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-2239-3955> <https://ror.org/05r3f7h03>)
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-2239-3955> <https://www.wikidata.org/wiki/Q96678459>)
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-2239-3955> "VIBSO Workgroup"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-2239-3955>)
 
 # Individual: <https://orcid.org/0000-0002-4378-6061> (Johannes Hunold)
 
@@ -144,16 +164,19 @@ AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-4378-6061> "Johannes
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-4378-6061> <https://ror.org/04aj4c181>)
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-4378-6061> <https://www.wikidata.org/wiki/Q96678459>)
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-4378-6061> "VIBSO Workgroup"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-4378-6061>)
 
 # Individual: <https://ror.org/04aj4c181> (Technische Informationsbibliothek (TIB))
 
 AnnotationAssertion(rdfs:label <https://ror.org/04aj4c181> "German National Library of Science and Technology Hannover"@en)
 AnnotationAssertion(rdfs:label <https://ror.org/04aj4c181> "Technische Informationsbibliothek (TIB)"@de)
+ClassAssertion(obo:OBI_0000245 <https://ror.org/04aj4c181>)
 
 # Individual: <https://ror.org/05r3f7h03> (German National Metrology Institute)
 
 AnnotationAssertion(rdfs:label <https://ror.org/05r3f7h03> "German National Metrology Institute"@en)
 AnnotationAssertion(rdfs:label <https://ror.org/05r3f7h03> "Physikalisch-Technische Bundesanstalt (PTB)"@de)
+ClassAssertion(obo:OBI_0000245 <https://ror.org/05r3f7h03>)
 
 # Individual: <https://www.wikidata.org/wiki/Q96678459> (NFDI4Chem)
 
