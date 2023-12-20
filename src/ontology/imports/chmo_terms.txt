@@ -1,4 +1,3 @@
-http://purl.obolibrary.org/obo/CHMO_0000993 # 'portion of material'
 http://purl.obolibrary.org/obo/CHMO_0000953 # microscope
 http://purl.obolibrary.org/obo/CHMO_0002793 # sensor
 http://purl.obolibrary.org/obo/CHMO_0001234 # spectrometer
@@ -10,3 +9,8 @@ http://purl.obolibrary.org/obo/CHMO_0000628 # vibrational spectroscopy
 http://purl.obolibrary.org/obo/CHMO_0001814 # Raman microscope
 http://purl.obolibrary.org/obo/CHMO_0001235 # Raman spectrometer
 http://purl.obolibrary.org/obo/CHMO_0000823 # Raman spectrum
+http://purl.obolibrary.org/obo/CHMO_0002820 # concentration
+http://purl.obolibrary.org/obo/CHMO_0002823 # volume concentration
+http://purl.obolibrary.org/obo/CHMO_0002824 # number concentration
+http://purl.obolibrary.org/obo/CHMO_0002821 # mass concentration
+http://purl.obolibrary.org/obo/CHMO_0002822 # amount concentration
