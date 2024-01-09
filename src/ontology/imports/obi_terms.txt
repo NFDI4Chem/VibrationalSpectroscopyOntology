@@ -16,7 +16,6 @@ http://purl.obolibrary.org/obo/OBI_0000339 # planning
 #############################
 http://purl.obolibrary.org/obo/OBI_0000835 # manufacturer
 http://purl.obolibrary.org/obo/OBI_0000747 # material sample
-http://purl.obolibrary.org/obo/OBI_0100026 # organism
 http://purl.obolibrary.org/obo/OBI_0000245 # organization
 http://purl.obolibrary.org/obo/OBI_0000047 # processed material
 http://purl.obolibrary.org/obo/OBI_0000968 # device

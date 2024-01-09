@@ -22,6 +22,8 @@ OBI:0200178  # 'class discovery objective'
 OBI:0200179  # 'class prediction objective'
 OBI:0000704  # 'decision tree induction objective'
 OBI:0200172  # 'partitioning objective'
+OBI:0001909 # 'conclusion based on data'
+IAO:0000102  # 'data about an ontology part'
 IAO:0000009  #
 IAO:0000037  #
 IAO:0000100  #
@@ -34,5 +36,4 @@ IAO:0000184  #
 IAO:0000310  #
 NCBITaxon:2  #
 NCBITaxon:2157  #
-NCBITaxon:2759  #
 NCBITaxon:10239  #
