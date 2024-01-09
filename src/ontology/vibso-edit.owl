@@ -94,7 +94,6 @@ SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
 # Class: obo:NCBITaxon_9606 (person)
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "person")
-SubClassOf(obo:NCBITaxon_9606 obo:OBI_0100026)
 
 # Class: obo:UO_0000001 (length unit)
 
