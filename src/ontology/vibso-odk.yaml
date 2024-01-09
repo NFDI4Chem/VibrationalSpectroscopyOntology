@@ -62,6 +62,8 @@ import_group:
     is_large: true
     use_gzipped: true
     make_base: true
+  - id: foodon
+    make_base: true
 components:
   products:
     - filename: vibso_classes.owl  # TSV templates to define VIBSO classes
