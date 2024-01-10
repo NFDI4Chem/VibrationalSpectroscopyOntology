@@ -492,8 +492,7 @@ mirror-obi: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/stato.owl
 mirror-stato: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/stato.owl --create-dirs -o $(MIRRORDIR)/stato.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/stato.owl -o $@.tmp.owl && \
-		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/STATO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/stato.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
