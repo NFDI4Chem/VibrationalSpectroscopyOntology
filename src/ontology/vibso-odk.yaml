@@ -54,7 +54,7 @@ import_group:
     #make_base: true # this cannot be done as it would otherwise exclude logical axioms of OBI object relations
     module_type: custom   # custom, because we only want a minimal subset
   - id: stato
-    #make_base: true # this cannot be done as it excludes object property chains
+    make_base: true #  cause STATO's OWL profile to be relaxed from Full to DL
   - id: uo
     make_base: true
     module_type: custom   # custom, because we only want a minimal subset of UO instances
