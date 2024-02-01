@@ -95,7 +95,7 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
 
-# Class: obo:NCBITaxon_9606 (Homo sapiens)
+# Class: obo:NCBITaxon_9606 (person)
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "person")
 
@@ -110,10 +110,6 @@ SubClassOf(obo:UO_0000002 obo:IAO_0000003)
 # Class: obo:UO_0000051 (concentration unit)
 
 SubClassOf(obo:UO_0000051 obo:IAO_0000003)
-
-# Class: obo:VIBSO_0000013 (excitation wavelength setting)
-
-EquivalentClasses(obo:VIBSO_0000013 ObjectSomeValuesFrom(obo:RO_0002566 ObjectIntersectionOf(obo:PATO_0001242 ObjectSomeValuesFrom(obo:RO_0000080 ObjectIntersectionOf(obo:OBI_0000968 ObjectSomeValuesFrom(obo:RO_0000085 obo:OBI_0000374))))))
 
 
 ############################
