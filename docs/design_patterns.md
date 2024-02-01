@@ -97,7 +97,7 @@ statement or a composition of truthful statements about the examined 'material e
 VIBSO's domain, we can say that a Raman spectrum is a 'data item' because it is composed of the measurements (e.g. 
 scattered light intensity values) that were recorded during a Raman spectroscopy assay.
 
-### Defining an Assay according to this Pattern
+### Defining an Assay According to the OBI Core Assay Pattern
 There is an axiom asserted on the assay class which states that whenever an 'assay objective' is achieved by the use of 
 a planned process, this process must be classified as an 'assay'. Hence, the 'assay objective' must be the information 
 that describes the assay type by specifying what kind of data about the evaluated material is to be produced. 
@@ -173,6 +173,15 @@ To exemplify this extended pattern in the context of VIBSO, we can instantiate i
 
 ![OBO_setting_pattern_example.png](images/OBO_setting_pattern_example.png)
 
+### Defining an Assay According to the Extended Assay Pattern in the Context of VIBSO
+As discussions with domain experts in the VIBSO development calls have made clear, the classification of 
+the various types of Raman spectroscopy as currently done in CHMO has some problems (see https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/103).
+All of these types have in common that they somehow record the Raman scattering of the evaluated sample. 
+However, their methodology differs in the ways in which the Raman scattering is produced, recorded or subsequently 
+processed, by using either different devices, device settings, sample preparation steps or signal recording steps. 
+We thus need the extended assay pattern described here, to be able to describe these different methods in more 
+detail and thereby formally define the various types of Raman spectroscopy assays they specify. 
+
 
 ## The Assay Pattern in a Bigger Picture
 This assay pattern can of course combined with other planned process patterns, to be able to describe its embedding 
@@ -184,6 +193,20 @@ competency questions:
 * What is the investigation the assay is a part of?
 
 ![OBI_asserted_assay_pattern](images/OBO_Investigation_Assay_Pattern.png)
+
+
+## Using Example Instances in VIBSO
+In the previous VIBSO development calls, it became apparent that the proper use of the design patterns described 
+here should be illustrated with concrete example instances. This should not only make it easier for the domain 
+experts with little knowledge on ontology development to follow. We also hope to be able to spot logical inconsistencies 
+when minting new classes and asserting their class restrictions by using reasoners, such as ELK or HERMIT during the 
+development.
+
+We have thus added the ROBOT TSV template [scr/templates/vibso_examples.tsv](..%2Fsrc%2Ftemplates%2Fvibso_examples.tsv),
+to be able to add example instances for each class minted in VIBSO. Similar to the other ROBOT templates we use, 
+this one gets automatically converted into an OWL component ([vibso_examples.owl](..
+%2Fsrc%2Fontology%2Fcomponents%2Fvibso_examples.owl)) that is being imported into the main editor file ([vibso-edit.
+owl](..%2Fsrc%2Fontology%2Fvibso-edit.owl)).
 
 -----
 
