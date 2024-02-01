@@ -50,7 +50,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(COMPONENTSDIR)/vibso_classes.owl $(COMPONENTSDIR)/vibso_object_properties.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/vibso_classes.owl $(COMPONENTSDIR)/vibso_object_properties.owl $(COMPONENTSDIR)/vibso_examples.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
@@ -412,6 +412,14 @@ $(COMPONENTSDIR)/vibso_object_properties.owl: $(TEMPLATEDIR)/vibso_object_proper
 		$(ANNOTATE_CONVERT_FILE); fi
 
 .PRECIOUS: $(COMPONENTSDIR)/vibso_object_properties.owl
+
+
+$(COMPONENTSDIR)/vibso_examples.owl: $(TEMPLATEDIR)/vibso_examples.tsv
+	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
+		$(patsubst %, --template %, $^) \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+.PRECIOUS: $(COMPONENTSDIR)/vibso_examples.owl
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------

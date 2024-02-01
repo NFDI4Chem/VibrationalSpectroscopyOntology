@@ -14,7 +14,7 @@ $(COMPONENTSDIR)/vibso_classes.owl: $(TEMPLATEDIR)/vibso_classes.tsv
 	if [ $(COMP) = true ] ; then $(ROBOT) annotate -i $@ \
 		--ontology-iri $(ONTBASE)/$@ \
 		--version-iri $(ONTBASE)/releases/$(VERSION)/$@ \
-		--annotation rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts." \
+		--annotation rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_classes.tsv' template." \
 		convert -f ofn --output $@; fi
 
 $(COMPONENTSDIR)/vibso_object_properties.owl: $(TEMPLATEDIR)/vibso_object_properties.tsv
@@ -24,8 +24,20 @@ $(COMPONENTSDIR)/vibso_object_properties.owl: $(TEMPLATEDIR)/vibso_object_proper
 	if [ $(COMP) = true ] ; then $(ROBOT) annotate -i $@ \
 		--ontology-iri $(ONTBASE)/$@ \
 		--version-iri $(ONTBASE)/releases/$(VERSION)/$@ \
-		--annotation rdfs:comment "This component is derived from the 'src/templates/vibso_object_properties.tsv', which is edited manually by domain experts." \
+		--annotation rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_object_properties.tsv' template." \
 		convert -f ofn --output $@; fi
+
+$(COMPONENTSDIR)/vibso_examples.owl: $(TEMPLATEDIR)/vibso_examples.tsv
+	if [ $(COMP) = true ] ; then $(ROBOT) template \
+		--merge-after --input $(SRC) --add-prefixes config/context.json \
+		--template $< --output $@; fi
+	if [ $(COMP) = true ] ; then $(ROBOT) annotate -i $@ \
+		--ontology-iri $(ONTBASE)/$@ \
+		--version-iri $(ONTBASE)/releases/$(VERSION)/$@ \
+		--annotation rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_examples.tsv' template." \
+		convert -f ofn --output $@; fi
+	if [ $(COMP) = true ] ; then $(ROBOT) convert --input $@ -f ttl --output $(COMPONENTSDIR)/vibso_examples.ttl; fi
+
 
 ##################
 # import modules #

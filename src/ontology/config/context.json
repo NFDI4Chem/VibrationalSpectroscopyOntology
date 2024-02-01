@@ -20,6 +20,7 @@
 		"schema": "http://schema.org/",
 
 		"vibso": "http://purl.obolibrary.org/obo/VIBSO_",
+		"ex": "https://example.instances/",
 		"ORCID": "http://orcid.org/",
 		"ROR": "http://ror.org/",
 		"DOI": "http://doi.org/",

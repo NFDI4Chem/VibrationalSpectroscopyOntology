@@ -41,3 +41,4 @@ These are the components in VIBSO
 | -------- | --- |
 | vibso_classes.owl | None |
 | vibso_object_properties.owl | None |
+| vibso_examples.owl | None |

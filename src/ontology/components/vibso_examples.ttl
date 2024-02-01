@@ -1,0 +1,222 @@
+@prefix : <http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <https://example.instances/> .
+@prefix DOI: <http://doi.org/> .
+@prefix ROR: <http://ror.org/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix ORCID: <http://orcid.org/> .
+@prefix vibso: <http://purl.obolibrary.org/obo/VIBSO_> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix Wikipedia: <https://en.wikipedia.org/wiki/> .
+@base <http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl> .
+
+<http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl> rdf:type owl:Ontology ;
+                                                                      owl:versionIRI <http://purl.obolibrary.org/obo/vibso/releases/2024-02-01/components/vibso_examples.owl> ;
+                                                                      rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_examples.tsv' template." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000051
+obo:BFO_0000051 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000039
+obo:IAO_0000039 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000136
+obo:IAO_0000136 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000293
+obo:OBI_0000293 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000299
+obo:OBI_0000299 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000417
+obo:OBI_0000417 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0001927
+obo:OBI_0001927 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0001938
+obo:OBI_0001938 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000080
+obo:RO_0000080 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002566
+obo:RO_0002566 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000102
+obo:STATO_0000102 rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/OBI_0002135
+obo:OBI_0002135 rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/CHMO_0001235
+obo:CHMO_0001235 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/CHMO_0002515
+obo:CHMO_0002515 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000027
+obo:IAO_0000027 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000441
+obo:OBI_0000441 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000747
+obo:OBI_0000747 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0001896
+obo:OBI_0001896 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0001931
+obo:OBI_0001931 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001242
+obo:PATO_0001242 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/VIBSO_0000013
+obo:VIBSO_0000013 rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.obolibrary.org/obo/UO_0000018
+obo:UO_0000018 rdf:type owl:NamedIndividual .
+
+
+###  https://example.instances/_Laser_Wavelength_1
+ex:_Laser_Wavelength_1 rdf:type owl:NamedIndividual ,
+                                obo:PATO_0001242 ;
+                       obo:RO_0000080 ex:_Raman_Spectrometer_1 ;
+                       dcterms:description "The laser wavelength of _Raman_Spectrometer_1 which is a general attribute (aka quality/characteristic) of _Raman_Spectrometer_1. The quantity of this attribute is represented by the _Wavelength_Value_Specification_1."@en ;
+                       rdfs:label "_Laser_Wavelength_1"@en .
+
+
+###  https://example.instances/_Raman_Spectrometer_1
+ex:_Raman_Spectrometer_1 rdf:type owl:NamedIndividual ,
+                                  obo:CHMO_0001235 ;
+                         dcterms:description "The Raman spectrometer that is used in _RamanAssay_1."@en ;
+                         rdfs:label "_Raman_Spectrometer_1"@en .
+
+
+###  https://example.instances/_Raman_Spectroscopy_1
+ex:_Raman_Spectroscopy_1 rdf:type owl:NamedIndividual ,
+                                  obo:CHMO_0002515 ;
+                         obo:OBI_0000293 ex:_Raman_Spectrometer_1 ,
+                                         ex:_Sample_1 ,
+                                         ex:_Wavelength_Setting_Info_1 ;
+                         obo:OBI_0000299 ex:_Raman_Spectrum_1 ;
+                         obo:OBI_0000417 ex:_Raman_Spectrum_Objective_1 ;
+                         obo:STATO_0000102 ex:_Raman_Spectroscopy_Method_1 ;
+                         dcterms:description "The Raman spectroscopy in which _Sample_1 is being assayed according to _Raman_Spectroscopy_Method_1 in order to achieve _Raman_Spectrum_Objective_1."@en ;
+                         rdfs:label "_Raman_Spectroscopy_1"@en .
+
+
+###  https://example.instances/_Raman_Spectroscopy_Method_1
+ex:_Raman_Spectroscopy_Method_1 rdf:type owl:NamedIndividual ,
+                                         obo:OBI_0001896 ;
+                                obo:BFO_0000051 ex:_Raman_Spectrum_Objective_1 ,
+                                                ex:_Wavelength_Setting_Info_1 ;
+                                obo:IAO_0000136 ex:_Raman_Spectrometer_1 ,
+                                                ex:_Raman_Spectroscopy_1 ;
+                                dcterms:description "The information that indicates the type of _Raman_Spectroscopy_1 by describing its method, specifying its inputs and outputs, as well as the necessary steps and actions that have to be taken in order to achieve _Raman_Spectrum_Objective_1. For the sake of keeping it simple, not all parts of this assay specification will be provided as assertions on this example."@en ;
+                                rdfs:label "_Raman_Spectroscopy_Method_1"@en .
+
+
+###  https://example.instances/_Raman_Spectrum_1
+ex:_Raman_Spectrum_1 rdf:type owl:NamedIndividual ,
+                              obo:IAO_0000027 ;
+                     obo:IAO_0000136 ex:_Sample_1 ;
+                     dcterms:description "The Raman spectrum (the data outputed by _RamanSpectrometer_1 NOT the plot) of _Sample_1 created by _RamanAssay_1. Currently classified as an IAO:'data item' as a more specific subclass thereof has yet to be minted in VIBSO (see alos: https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/77)"@en ;
+                     rdfs:label "_Raman_Spectrum_1"@en .
+
+
+###  https://example.instances/_Raman_Spectrum_Objective_1
+ex:_Raman_Spectrum_Objective_1 rdf:type owl:NamedIndividual ,
+                                        obo:OBI_0000441 ;
+                               dcterms:description "The information that specifies the intended outcome of _Raman_Spectroscopy_1 to be the creation of a Raman Spectrum."@en ;
+                               rdfs:label "_Raman_Spectrum_Objective_1"@en .
+
+
+###  https://example.instances/_Sample_1
+ex:_Sample_1 rdf:type owl:NamedIndividual ,
+                      obo:OBI_0000747 ;
+             dcterms:description "The material entity that is being evaluated in _RamanAssay_1."@en ;
+             rdfs:label "_Sample_1"@en .
+
+
+###  https://example.instances/_Wavelength_Setting_Info_1
+ex:_Wavelength_Setting_Info_1 rdf:type owl:NamedIndividual ,
+                                       obo:VIBSO_0000013 ;
+                              obo:OBI_0001938 ex:_Wavelength_Value_Specification_1 ;
+                              obo:RO_0002566 ex:_Laser_Wavelength_1 ;
+                              dcterms:description "The information that determines the wavelength of the laser of _Raman_Spectrometer_1 which is used to excite the sample. This information gets encoded by the _Laser_Value_Specification_1."@en ;
+                              rdfs:label "_Wavelength_Setting_Info_1"@en .
+
+
+###  https://example.instances/_Wavelength_Value_Specification_1
+ex:_Wavelength_Value_Specification_1 rdf:type owl:NamedIndividual ,
+                                              obo:OBI_0001931 ;
+                                     obo:IAO_0000039 obo:UO_0000018 ;
+                                     obo:OBI_0001927 ex:_Laser_Wavelength_1 ;
+                                     obo:OBI_0002135 "555.0"^^xsd:float ;
+                                     dcterms:description "The encoding of the value determined by _Wavelength_Setting_Info_1, which consists of the unit label and the literal value of the laser wavelength of _Raman_Spectrometer_1."@en ;
+                                     rdfs:label "_Wavelength_Value_Specification_1"@en .
+
+
+###  Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi

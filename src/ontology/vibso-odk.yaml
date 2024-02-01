@@ -76,4 +76,9 @@ components:
       template_options: --add-prefixes config/context.json 
       templates:
         - vibso_object_properties.tsv
+    - filename: vibso_examples.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json
+      templates:
+        - vibso_examples.tsv      # TSV to define example instances that are meant to help grok the design patterns
 
