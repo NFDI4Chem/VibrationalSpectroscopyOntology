@@ -72,7 +72,7 @@ To exemplify this pattern within the domain of VIBSO we can instantiate these cl
 
 ![OBI_asserted_assay_pattern_example.png](images/OBI_asserted_assay_pattern_example.png)
 
-To better understand the defined logic of this pattern, it seems useful to look at its part more closely.
+To better understand the defined logic of this pattern, it seems useful to look at its parts more closely.
 
 ### Subjects of an Assay
 As we can see in this graph, the use of the term 'assay' is restricted to only those planned processes that examine a 
@@ -144,25 +144,21 @@ relation between the 'setting datum' and the characteristic of the assay device 
 quality'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0001241), 
 which we can import from the Phenotype and Trait Ontology (PATO). It is the parent class of more specific physical 
 characteristics, such as temperature, wavelength, mass or position, and it can be related to the device via the 
-'quality of' relation from BFO. To be able to say that a 'setting datum' determines the value of such a device 
+['quality of'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_0000080) relation from BFO. To be able to say that a 'setting datum' determines the value of such a device 
 characteristic, we can use the RO relation 'causally influences'. 
 
 Since the actual quantitative value specified in a 'setting datum' can be encoded using different units of measurement,
 we also need a way to formally represent this. The way this is currently done in OBI is via the 
-['value specification'](https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001933) 
-class, which is defined as an information "that specifies a value within a classification scheme or on a quantitative 
-scale". We can link this class to a 'setting datum' via the 'has value specification' relation which is a 
-specialization of the very general 'has part' relation. For the part of this value encoding that represents a given 
-measurement unit, such as any SI unit, we can use one of the instances of the class 'unit' defined in the Unit 
-Ontology (UO), and link it via the 'has measurement unit label' relation from IAO. The last missing pieces are the 
-links between a value specification and the actual literal value respectively the device characteristic. Both are defined in 
-OBI as ['has specified value'](https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002135), 
-respectively ['specifies value of'](https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001927).
-
+['value specification'](https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001933) class, which is defined as an information "that specifies a value within a classification 
+scheme or on a quantitative scale". We can link this class to a 'setting datum' via the ['has value specification'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001938) 
+relation which is a specialization of the very general 'has part' relation. For the part of this value encoding that 
+represents a given measurement unit, such as any SI unit, we can use one of the instances of the class '[unit](https://terminology.nfdi4chem.de/ts/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000000)' 
+defined in the Unit Ontology (UO), and link it via the ['has measurement unit label'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000039) relation from IAO. The last
+missing pieces are the links between a value specification and the actual literal value respectively the device 
+characteristic. Both are defined in OBI as ['has specified value'](https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002135), respectively ['specifies value of'](https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001927).
 
 Having described all the classes and relations we need to extend the OBI core assay pattern, we can now visualize 
 this in from of the following graph:
-
 ![OBI_asserted_assay_pattern](images/OBO_setting_pattern.png)
 
 When comparing this graph to the previous one, one can see that we have also added an 'is about' relation between
@@ -170,30 +166,28 @@ When comparing this graph to the previous one, one can see that we have also add
 asserted in OBI, but only given in the textual definition of the 'assay objective'. 
 
 To exemplify this extended pattern in the context of VIBSO, we can instantiate its classes as follows:
-
 ![OBO_setting_pattern_example.png](images/OBO_setting_pattern_example.png)
 
 ### Defining an Assay According to the Extended Assay Pattern in the Context of VIBSO
 As discussions with domain experts in the VIBSO development calls have made clear, the classification of 
-the various types of Raman spectroscopy as currently done in CHMO has some problems (see https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/103).
+the various types of Raman spectroscopy as currently done in CHMO has some problems (see [issue#103](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/103)).
 All of these types have in common that they somehow record the Raman scattering of the evaluated sample. 
 However, their methodology differs in the ways in which the Raman scattering is produced, recorded or subsequently 
 processed, by using either different devices, device settings, sample preparation steps or signal recording steps. 
 We thus need the extended assay pattern described here, to be able to describe these different methods in more 
 detail and thereby formally define the various types of Raman spectroscopy assays they specify. 
 
-
 ## The Assay Pattern in a Bigger Picture
 This assay pattern can of course combined with other planned process patterns, to be able to describe its embedding 
 in a grander context. Without going into the details, the following TBox shows how this can be done with respect the 
 competency questions:
+
 * Who performed the assay?
-* what kind of data transformations where performed on the data output of the assay?
-* what kind of sampling process was done before the assay?
+* What kind of data transformations where performed on the data output of the assay?
+* What kind of sampling process was done before the assay?
 * What is the investigation the assay is a part of?
 
 ![OBI_asserted_assay_pattern](images/OBO_Investigation_Assay_Pattern.png)
-
 
 ## Using Example Instances in VIBSO
 In the previous VIBSO development calls, it became apparent that the proper use of the design patterns described 
@@ -202,19 +196,14 @@ experts with little knowledge on ontology development to follow. We also hope to
 when minting new classes and asserting their class restrictions by using reasoners, such as ELK or HERMIT during the 
 development.
 
-We have thus added the ROBOT TSV template [scr/templates/vibso_examples.tsv](..%2Fsrc%2Ftemplates%2Fvibso_examples.tsv),
+We have thus added the ROBOT TSV template [vibso_examples.tsv](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/templates/vibso_examples.tsv),
 to be able to add example instances for each class minted in VIBSO. Similar to the other ROBOT templates we use, 
-this one gets automatically converted into an OWL component ([vibso_examples.owl](..
-%2Fsrc%2Fontology%2Fcomponents%2Fvibso_examples.owl)) that is being imported into the main editor file ([vibso-edit.
-owl](..%2Fsrc%2Fontology%2Fvibso-edit.owl)).
+this one gets automatically converted into an OWL component ([vibso_examples.owl](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/ontology/components/vibso_examples.owl)) that is being imported into the 
+main editor file ([vibso-edit.owl](https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/ontology/vibso-edit.owl)).
 
------
-
-## External Sources Explaining and Reusing the Described Pattern
-
-### OBI Quality & Quantity Pattern
+## OBI Quality & Quantity Pattern
 ![measurement process pattern example](images/data_john_mass.png)
- Since we are reusing OBO ontologies and their patterns, we also try to reuse OBI's way of modeling 
+Since we are reusing OBO ontologies and their patterns, we also try to reuse OBI's way of modeling 
 [data and values](https://github.com/obi-ontology/obi/wiki/Data-and-Values). Please read their documentation for more 
 background. Using this OBI pattern allows us to differentiate data values of qualities (aka attributes) of a material 
 entity, such as the spectroscope or sample, into data values that represent settings and those that represent 
@@ -224,11 +213,12 @@ Electronic Lab Notebooks, such a differentiation will most likely be very useful
 work in many OBO use cases, we need to see, if we have to adjust it for our needs. Other ontologies like QUDT or SIO 
 use slightly different patterns to model qualities and their quantitative representations.
 
-### Measurement Example KG of the Assay Pattern
+-----
+
+## Measurement Example KG of the Assay Pattern
 Lars Vogt and Tobias Kuhn demonstrate the use of the OBO assay pattern within a grander research context as follows
 (cited from their preprint [DOI:10.13140/RG.2.2.13742.59203](http://doi.org/10.13140/RG.2.2.13742.59203), p.8):
 ![measurement process pattern example](images/Fig4_10.13140_RG.2.2.13742.59203.png)
-
 > Figure 3: A detailed machine-actionable representation of the metadata relating to a weight measurement datum
 > documented as an RDF ABox graph. The representation takes the form of an ABox semantic graph following the RDF
 > syntax. The graph documents a mass measurement process using a balance. It relates an instance of mass measurement
