@@ -41,7 +41,7 @@ that gets concretized by a 'plan'. A 'plan specification' is defined in the Info
 directive information that specifies through its parts which actions have to be performed (['action specification'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FIAO_0000007))
 in order to achieve the intended goals (['objective specification'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FIAO_0000005))
 of a 'planned process'. It thus resembles more fittingly what we usually mean in natural language when speaking of a 
-plan or method. To have a direct relation from a plan specification to its planned process, we can reuse 
+plan or method. To have a direct relation from a 'plan specification' to its 'planned proces', we can reuse 
 'executes' from the Statistical Methods Ontology (STATO), as it is defined exactly for this purpose.
 
 The pattern can be visualized like this:
@@ -121,41 +121,38 @@ to classify certain assay types. Especially, if we want to differentiate or grou
 need more information about the used method including the devices and device settings.
  
 ## Extending the OBI Core Assay Pattern
-Since 'assay' is a specialization of 'planned process', we know that its method must be 
-a kind of 'plan specification'. In OBI, we find the class 'investigation assay specification', which is defined as a 
-'plan specification' about an assay that indicates the assay type, and which also called 'Project Method'. Some provided 
-examples for this class are: sequence or mass spectrometry. Hence, we can say that the 'assay objective' is an 
-essential part of this class. Similarly, we can say that the information which determines the essential experimental 
-setup of a specific assay, such as the needed devices and device settings, must also be an essential part of the 
-'investigation assay specification'.
+Since 'assay' is a specialization of 'planned process', we know that its method (plan) must be defined in some kind of 
+'plan specification'. In OBI, we find the class ['investigation assay specification'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0001896), which is defined as a 
+'plan specification' that indicates the assay type, and which is also called 'Project Method'. 
+Some provided examples for this class are: sequence or mass spectrometry. Hence, we should be using this subclass of 
+'plan specification' in our assay pattern, and we can assert that an essential part of it is an 'assay objective'. 
+Similarly, we can say that the information which determines the experimental setup of a specific assay, such 
+as the needed devices, their settings or the way in which the evaluated sample must be prepared, is also an essential 
+part of the 'investigation assay specification'.
 
 ### Assay Devices
 To represent the instruments used in an assay, we can import the already existing 'device' class from OBI and link 
-it to 'assay' via the 'has specified input' relation. The definition of this relation makes clear that the range of it, 
-in our case a 'device', must be specified in a 'plan specification', in our case an 'investigation assay specification'.
+it to 'assay' via the ['has specified input'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000293) relation. The definition of this relation makes clear that the range 
+of it, in our case a 'device', must be specified in a 'plan specification', in our case an 'investigation assay 
+specification'.
 
-### Device Settings 
-Representing the device settings of an assay is a bit more complex. From IAO, we can use the class ['setting datum'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FIAO_0000140), 
-to represent the part of an 'investigation assay specification' that is about the device setting, since it is defined 
-as a 'data item' "that denotes some configuration of an instrument". We can thus also link it directly to an 
-'assay' via the 'is specified input' relation. What we need to represent next in this extended pattern is the 
-relation between the 'setting datum' and the characteristic of the assay device that it determines. As a 
-'device' is a material entity, its configurable characteristics can be represented with the class ['physical object 
-quality'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0001241), 
-which we can import from the Phenotype and Trait Ontology (PATO). It is the parent class of more specific physical 
-characteristics, such as temperature, wavelength, mass or position, and it can be related to the device via the 
-['quality of'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_0000080) relation from BFO. To be able to say that a 'setting datum' determines the value of such a device 
-characteristic, we can use the RO relation 'causally influences'. 
-
-Since the actual quantitative value specified in a 'setting datum' can be encoded using different units of measurement,
-we also need a way to formally represent this. The way this is currently done in OBI is via the 
-['value specification'](https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001933) class, which is defined as an information "that specifies a value within a classification 
-scheme or on a quantitative scale". We can link this class to a 'setting datum' via the ['has value specification'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001938) 
-relation which is a specialization of the very general 'has part' relation. For the part of this value encoding that 
-represents a given measurement unit, such as any SI unit, we can use one of the instances of the class '[unit](https://terminology.nfdi4chem.de/ts/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000000)' 
-defined in the Unit Ontology (UO), and link it via the ['has measurement unit label'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000039) relation from IAO. The last
-missing pieces are the links between a value specification and the actual literal value respectively the device 
-characteristic. Both are defined in OBI as ['has specified value'](https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002135), respectively ['specifies value of'](https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001927).
+### Assay Device Settings 
+To represent the part of an 'investigation assay specification' that is the information which specifies what kind of 
+configurable qualities an assay device must have, we can use the class ['setting datum'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FIAO_0000140), since it is defined as a 
+'data item' about "some configuration of an instrument". To represent the configurable device quality 
+specified by a setting datum, we can use the class ['physical object quality'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0001241) from the Phenotype and Trait 
+Ontology (PATO), as it is the parent class of more specific physical qualities, such as temperature, wavelength, mass or 
+position. This quality can be related to the device via the ['quality of'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_0000080) relation from BFO.
+Since the actual quantitative value of the 'physical object quality' specified by a 'setting datum' can be encoded 
+using different units of measurement, we also need a way to formally represent this. The way this is currently done 
+in OBI is via the ['value specification'](https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001933) class, which is defined as an information "that specifies a value within 
+a classification scheme or on a quantitative scale". We can link this class to a 'setting datum' via the 
+['has value specification'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001938) relation which is a specialization of the very general 'has part' relation. For the 
+part of this value encoding that represents a given measurement unit, such as any SI unit, we can use one of the 
+instances of the class '[unit](https://terminology.nfdi4chem.de/ts/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000000)' defined in the Unit Ontology (UO), and link it via the 
+['has measurement unit label'](https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000039) relation from IAO. The last missing pieces are the links between a value 
+specification and the actual literal value respectively the configurable device quality. Both are defined in 
+OBI as ['has specified value'](https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002135), respectively ['specifies value of'](https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001927).
 
 Having described all the classes and relations we need to extend the OBI core assay pattern, we can now visualize 
 this in from of the following graph:
