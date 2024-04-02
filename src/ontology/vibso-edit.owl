@@ -95,7 +95,15 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
 
-# Class: obo:NCBITaxon_9606 (person)
+# Class: obo:CHMO_0000680 (ultraviolet Raman spectroscopy)
+
+EquivalentClasses(obo:CHMO_0000680 ObjectIntersectionOf(obo:CHMO_0000656 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000029)))
+
+# Class: obo:CHMO_0000870 (near-infrared Raman spectroscopy)
+
+EquivalentClasses(obo:CHMO_0000870 ObjectIntersectionOf(obo:CHMO_0000656 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000028)))
+
+# Class: obo:NCBITaxon_9606 (Homo sapiens)
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "person")
 
