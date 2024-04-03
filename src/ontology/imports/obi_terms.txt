@@ -4,13 +4,17 @@
 http://purl.obolibrary.org/obo/OBI_0000011 # planned process
 http://purl.obolibrary.org/obo/OBI_0000070 # assay
 http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
-#http://purl.obolibrary.org/obo/OBI_0000185 # imaging assay
+http://purl.obolibrary.org/obo/OBI_0000185 # imaging assay
 http://purl.obolibrary.org/obo/OBI_0001007 # image creation
 http://purl.obolibrary.org/obo/OBI_0000066 # investigation
 http://purl.obolibrary.org/obo/OBI_0000094 # material processing
 http://purl.obolibrary.org/obo/OBI_0000073 # sample preparation for assay
 http://purl.obolibrary.org/obo/OBI_0000744 # material sampling process
 http://purl.obolibrary.org/obo/OBI_0000339 # planning
+
+# importing CHMO optical microscopy, as it is relabeled and subsumed under OBI:microscopy assay based on
+# https://github.com/obi-ontology/obi/blob/master/src/ontology/templates/assays.tsv#L5
+CHMO:0000102
 
 #############################
 ### BFO material entities ###
