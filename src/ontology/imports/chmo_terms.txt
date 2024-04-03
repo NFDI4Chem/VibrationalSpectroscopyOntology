@@ -1,7 +1,7 @@
 http://purl.obolibrary.org/obo/CHMO_0000953 # microscope
 http://purl.obolibrary.org/obo/CHMO_0002793 # sensor
 http://purl.obolibrary.org/obo/CHMO_0001234 # spectrometer
-http://purl.obolibrary.org/obo/CHMO_0000793 # 'assay output'
+http://purl.obolibrary.org/obo/CHMO_0000793 # assay output
 http://purl.obolibrary.org/obo/CHMO_0000800 # spectrum
 http://purl.obolibrary.org/obo/CHMO_0000228 # spectroscopy
 http://purl.obolibrary.org/obo/CHMO_0002414 # scattering spectroscopy
@@ -16,3 +16,6 @@ http://purl.obolibrary.org/obo/CHMO_0002821 # mass concentration
 http://purl.obolibrary.org/obo/CHMO_0002822 # amount concentration
 CHMO:0002515 # 'laser Raman spectroscopy'
 CHMO:0000628 # 'vibrational spectroscopy'
+http://purl.obolibrary.org/obo/CHMO_0001818 # vibrational microscopy
+http://purl.obolibrary.org/obo/CHMO_0000103 # confocal microscopy
+http://purl.obolibrary.org/obo/CHMO_0000664 # confocal Raman microscopy
