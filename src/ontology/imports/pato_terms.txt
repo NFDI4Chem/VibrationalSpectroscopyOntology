@@ -10,3 +10,4 @@ http://purl.obolibrary.org/obo/PATO_0000122 # length
 http://purl.obolibrary.org/obo/PATO_0000921 # width
 http://purl.obolibrary.org/obo/PATO_0001595 # depth
 http://purl.obolibrary.org/obo/PATO_0000119 # height
+http://purl.obolibrary.org/obo/PATO_0001300 # optical quality
