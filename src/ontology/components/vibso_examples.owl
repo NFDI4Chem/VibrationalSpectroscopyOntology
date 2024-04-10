@@ -24,7 +24,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2024-02-01/components/vibso_examples.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-04-04/components/vibso_examples.owl>
 Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_examples.tsv' template.")
 
 Declaration(Class(obo:CHMO_0001235))

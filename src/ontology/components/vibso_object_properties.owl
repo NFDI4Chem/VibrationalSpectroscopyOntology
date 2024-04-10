@@ -24,7 +24,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_object_properties.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2024-01-31/components/vibso_object_properties.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-04-04/components/vibso_object_properties.owl>
 Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_object_properties.tsv' template.")
 
 

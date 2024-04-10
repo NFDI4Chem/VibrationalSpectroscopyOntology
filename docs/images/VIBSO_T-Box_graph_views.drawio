@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-07T15:14:54.517Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="UdtLmupxSAdj0hl_W-mr" version="24.0.2" type="device" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-03-09T22:51:27.603Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="zBybcO6jB9tuXftEzE3a" version="24.0.4" type="device" pages="5">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="VIBSO T-Box">
-    <mxGraphModel dx="1912" dy="7685" grid="0" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="1147" dy="7155" grid="0" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -285,7 +285,7 @@
             <mxPoint y="-6" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-qVNJrEobh2uuxl9ESg2-114" style="edgeStyle=none;rounded=0;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=12;strokeColor=#000000;strokeWidth=1;" parent="1" source="-qVNJrEobh2uuxl9ESg2-33" target="-qVNJrEobh2uuxl9ESg2-33" edge="1">
+        <mxCell id="-qVNJrEobh2uuxl9ESg2-114" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=12;strokeColor=#000000;strokeWidth=1;" parent="1" source="-qVNJrEobh2uuxl9ESg2-33" target="-qVNJrEobh2uuxl9ESg2-33" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-qVNJrEobh2uuxl9ESg2-142" value="&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FVIBSO_0000006&quot;&gt;VIBSO:device temperature setting&lt;span style=&quot;font-size: 12px; color: rgb(0, 0, 0); font-weight: normal; text-decoration: none; font-style: normal; text-decoration-skip-ink: none;&quot;&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;verticalAlign=middle;" parent="1" vertex="1">
@@ -1163,15 +1163,623 @@
             <mxPoint x="-2" y="2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xHoVo2DcHmAl1nWcT_Nq-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;strokeColor=#000000;fontColor=#000000;" edge="1" parent="1" source="QKKoRjnMVttNz9pZIT6n-1" target="QKKoRjnMVttNz9pZIT6n-13">
+        <mxCell id="xHoVo2DcHmAl1nWcT_Nq-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;strokeColor=#000000;fontColor=#000000;" parent="1" source="QKKoRjnMVttNz9pZIT6n-1" target="QKKoRjnMVttNz9pZIT6n-13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1232" y="-5719" as="sourcePoint" />
             <mxPoint x="1387" y="-5886" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xHoVo2DcHmAl1nWcT_Nq-2" value="&lt;div class=&quot;node-metadata-label&quot;&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;OBI:has &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;specified &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;input&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xHoVo2DcHmAl1nWcT_Nq-1">
+        <mxCell id="xHoVo2DcHmAl1nWcT_Nq-2" value="&lt;div class=&quot;node-metadata-label&quot;&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;OBI:has &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;specified &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;input&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="xHoVo2DcHmAl1nWcT_Nq-1" vertex="1" connectable="0">
           <mxGeometry x="-0.4164" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;entryX=-0.006;entryY=0.348;entryDx=0;entryDy=0;entryPerimeter=0;jumpStyle=arc;" parent="1" source="-5r2tn9ypXcgWWPkocFn-26" target="-5r2tn9ypXcgWWPkocFn-20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1470.0359126604098" y="-4954.36" as="sourcePoint" />
+            <mxPoint x="2175" y="-4957.36" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-6" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/ro/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_0000080&quot;&gt;RO:quality of&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-5r2tn9ypXcgWWPkocFn-5" vertex="1" connectable="0">
+          <mxGeometry x="-0.7237" y="-1" relative="1" as="geometry">
+            <mxPoint x="28" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;strokeColor=#000000;fontColor=#000000;" parent="1" source="-5r2tn9ypXcgWWPkocFn-19" target="-5r2tn9ypXcgWWPkocFn-20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1355.42" y="-4656.17" as="sourcePoint" />
+            <mxPoint x="1723" y="-5066.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-8" value="&lt;div class=&quot;node-metadata-label&quot;&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;OBI:has &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;specified &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;input&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-5r2tn9ypXcgWWPkocFn-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.4164" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-19" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0000656&quot;&gt;CHMO:Raman spectroscopy&lt;/a&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1408" y="-4812.919999999999" width="105" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-20" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0001235&quot;&gt;chmo:Raman spectrometer&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1404.8400000000001" y="-4943" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-21" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000140&quot;&gt;IAO:setting datum&lt;/a&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=15;glass=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="923" y="-4920.86" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;fontColor=#000000;strokeColor=#000000;" parent="1" source="-5r2tn9ypXcgWWPkocFn-25" target="-5r2tn9ypXcgWWPkocFn-146" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1009.969310344828" y="-4738.419999999999" as="sourcePoint" />
+            <mxPoint x="1128" y="-4718.549999999999" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-24" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/ro/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051&quot;&gt;BFO:has part&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="-5r2tn9ypXcgWWPkocFn-23" connectable="0" vertex="1">
+          <mxGeometry x="-0.2064" y="1" relative="1" as="geometry">
+            <mxPoint x="11" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-25" value="Raman spectroscopy method" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="923" y="-4812.919999999999" width="105" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-26" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/pato/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0001241&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;PATO:physical object quality&lt;/font&gt;&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillColor=#f5f5f5;fontStyle=0;fontSize=14;shadow=0;strokeColor=#666666;strokeWidth=1;fontColor=#333333;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="1169.8400000000001" y="-4999" width="123.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="-5r2tn9ypXcgWWPkocFn-25" target="-5r2tn9ypXcgWWPkocFn-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1144" y="-4848.049999999999" as="sourcePoint" />
+            <mxPoint x="1530" y="-4848.049999999999" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-28" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/iao/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136&quot;&gt;IAO:is about&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-5r2tn9ypXcgWWPkocFn-27" vertex="1" connectable="0">
+          <mxGeometry x="-0.3384" y="-2" relative="1" as="geometry">
+            <mxPoint x="-34" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-29" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001933&quot;&gt;OBI:value specification&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="923" y="-5046" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="-5r2tn9ypXcgWWPkocFn-29" target="-5r2tn9ypXcgWWPkocFn-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1816" y="-5544.5" as="targetPoint" />
+            <mxPoint x="1934" y="-5227.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-31" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001927&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;OBI:specifies&lt;/font&gt;&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001927&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;value of&lt;/font&gt;&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" parent="-5r2tn9ypXcgWWPkocFn-30" connectable="0" vertex="1">
+          <mxGeometry x="-0.261" y="2" relative="1" as="geometry">
+            <mxPoint x="6" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-43" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-5r2tn9ypXcgWWPkocFn-21" target="-5r2tn9ypXcgWWPkocFn-29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="723" y="-4668.549999999999" as="sourcePoint" />
+            <mxPoint x="723" y="-5196.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-44" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001938&quot;&gt;OBI:has value&lt;br&gt;specification&lt;/a&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-5r2tn9ypXcgWWPkocFn-43" vertex="1" connectable="0">
+          <mxGeometry x="0.2344" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-50" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-5r2tn9ypXcgWWPkocFn-19" target="-5r2tn9ypXcgWWPkocFn-146" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="752.5" y="-5643.419999999999" as="sourcePoint" />
+            <mxPoint x="1233" y="-4714.549999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-51" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000417&quot;&gt;OBI:achieves&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000417&quot;&gt;planned objective&lt;/a&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-5r2tn9ypXcgWWPkocFn-50" connectable="0" vertex="1">
+          <mxGeometry x="-0.2881" y="-4" relative="1" as="geometry">
+            <mxPoint x="-32" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-65" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="-5r2tn9ypXcgWWPkocFn-19" target="-5r2tn9ypXcgWWPkocFn-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="-4513.549999999999" as="sourcePoint" />
+            <mxPoint x="396.00000000000006" y="-4332.549999999999" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-66" value="&lt;a href=&quot;https://terminology.tib.eu/ts/ontologies/ms/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FSTATO_0000102&quot;&gt;STATO:executes&lt;/a&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="-5r2tn9ypXcgWWPkocFn-65" connectable="0" vertex="1">
+          <mxGeometry x="-0.2313" y="-1" relative="1" as="geometry">
+            <mxPoint x="77" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-67" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;fontColor=#000000;strokeColor=#000000;" parent="1" source="-5r2tn9ypXcgWWPkocFn-25" target="-5r2tn9ypXcgWWPkocFn-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1039" y="-4578.36" as="sourcePoint" />
+            <mxPoint x="1118" y="-4525.36" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-68" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/ro/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051&quot;&gt;BFO:has part&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="-5r2tn9ypXcgWWPkocFn-67" connectable="0" vertex="1">
+          <mxGeometry x="-0.2064" y="1" relative="1" as="geometry">
+            <mxPoint x="7" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-69" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;" parent="1" source="-5r2tn9ypXcgWWPkocFn-21" target="-5r2tn9ypXcgWWPkocFn-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1238" y="-4771.889411764706" as="targetPoint" />
+            <mxPoint x="984" y="-4718.36" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-70" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/iao/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136&quot;&gt;IAO:is about&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-5r2tn9ypXcgWWPkocFn-69" connectable="0" vertex="1">
+          <mxGeometry x="0.1145" y="-1" relative="1" as="geometry">
+            <mxPoint x="-2" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-71" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;strokeColor=#000000;fontColor=#000000;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="-5r2tn9ypXcgWWPkocFn-19" target="-5r2tn9ypXcgWWPkocFn-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1492" y="-4672.86" as="sourcePoint" />
+            <mxPoint x="1647" y="-4839.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-72" value="&lt;div class=&quot;node-metadata-label&quot;&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;OBI:has &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;specified &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;input&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-5r2tn9ypXcgWWPkocFn-71" vertex="1" connectable="0">
+          <mxGeometry x="-0.4164" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-146" value="Raman spectrum objective" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="1146.8400000000001" y="-4733.69" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-149" value="rotational transitions focus objective" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="963.0000000000002" y="-4594" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-150" value="vibrational transitions focus objective" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="963" y="-4639" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-152" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-149" target="-5r2tn9ypXcgWWPkocFn-146" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="930" y="-5441" as="sourcePoint" />
+            <mxPoint x="994" y="-5366" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-153" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-150" target="-5r2tn9ypXcgWWPkocFn-146" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1087" y="-4586" as="sourcePoint" />
+            <mxPoint x="1152" y="-4709" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-159" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-5r2tn9ypXcgWWPkocFn-157" target="-5r2tn9ypXcgWWPkocFn-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="739" y="-4862" as="sourcePoint" />
+            <mxPoint x="928" y="-4896" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-160" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-5r2tn9ypXcgWWPkocFn-158" target="-5r2tn9ypXcgWWPkocFn-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="661" y="-5010" as="sourcePoint" />
+            <mxPoint x="928" y="-4896" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-180" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-5r2tn9ypXcgWWPkocFn-172" target="-5r2tn9ypXcgWWPkocFn-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="659" y="-4847" as="sourcePoint" />
+            <mxPoint x="928" y="-4896" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-182" value="polarized Raman&lt;br&gt;focus objective" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="966" y="-4526" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-189" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-5r2tn9ypXcgWWPkocFn-182" target="-5r2tn9ypXcgWWPkocFn-146" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1087" y="-4524" as="sourcePoint" />
+            <mxPoint x="1152" y="-4709" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-191" value="ROA&lt;br&gt;focus objective" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="779" y="-4508" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-192" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-191" target="-5r2tn9ypXcgWWPkocFn-182" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1091" y="-4501" as="sourcePoint" />
+            <mxPoint x="1152" y="-4704" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-200" value="&lt;div&gt;spatially offset Raman spectroscopy&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1602.5" y="-4871.999999999999" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-206" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-245" target="-5r2tn9ypXcgWWPkocFn-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1925" y="-4635" as="sourcePoint" />
+            <mxPoint x="1821" y="-4647" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-208" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-200" target="-5r2tn9ypXcgWWPkocFn-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1701" y="-4614" as="sourcePoint" />
+            <mxPoint x="1518" y="-4763" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-209" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-244" target="-5r2tn9ypXcgWWPkocFn-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1696" y="-4709" as="sourcePoint" />
+            <mxPoint x="1518" y="-4763" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-212" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="1813" y="-4615.999999999999" width="306" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-201" value="&lt;div&gt;stimulated Raman spectroscopy (SRS)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="-5r2tn9ypXcgWWPkocFn-212" vertex="1">
+          <mxGeometry x="181" y="108" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-202" value="&lt;div&gt;coherent anti-Stokes Raman spectroscopy (CARS)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="-5r2tn9ypXcgWWPkocFn-212" vertex="1">
+          <mxGeometry x="181" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-203" value="&lt;div&gt;coherent Stokes Raman spectroscopy (CSRS)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="-5r2tn9ypXcgWWPkocFn-212" vertex="1">
+          <mxGeometry x="181" y="54" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-204" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="-5r2tn9ypXcgWWPkocFn-212" source="-5r2tn9ypXcgWWPkocFn-202" target="-5r2tn9ypXcgWWPkocFn-210" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-605" y="115.99999999999909" as="sourcePoint" />
+            <mxPoint x="-544" y="-87.00000000000091" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-205" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="-5r2tn9ypXcgWWPkocFn-212" source="-5r2tn9ypXcgWWPkocFn-203" target="-5r2tn9ypXcgWWPkocFn-210" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="224" y="-18.00000000000091" as="sourcePoint" />
+            <mxPoint x="120" y="-30.00000000000091" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-210" value="&lt;span class=&quot;animate-in fade-in-25 duration-700&quot;&gt;&lt;span class=&quot;animate-in fade-in-25 duration-700&quot;&gt;coherent Raman spectroscopy (CRS)&lt;/span&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="-5r2tn9ypXcgWWPkocFn-212" vertex="1">
+          <mxGeometry y="55.5" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-211" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="-5r2tn9ypXcgWWPkocFn-212" source="-5r2tn9ypXcgWWPkocFn-201" target="-5r2tn9ypXcgWWPkocFn-210" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="224" y="35.99999999999909" as="sourcePoint" />
+            <mxPoint x="125" y="77.99999999999909" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-199" value="&lt;div&gt;spontaneous Raman spectroscopy&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FF0000;" parent="-5r2tn9ypXcgWWPkocFn-212" vertex="1">
+          <mxGeometry x="-9" y="-15" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-218" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="497" y="-4880.86" width="312.84" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-172" value="observation field setting datum" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;arcSize=15;glass=0;shadow=0;" parent="-5r2tn9ypXcgWWPkocFn-218" vertex="1">
+          <mxGeometry x="192.83999999999997" y="29.5" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-173" value="confocal setting datum" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="-5r2tn9ypXcgWWPkocFn-218" vertex="1">
+          <mxGeometry width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-174" value="broadfield setting datum" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="-5r2tn9ypXcgWWPkocFn-218" vertex="1">
+          <mxGeometry y="39" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-175" value="spacially- offset setting datum" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="-5r2tn9ypXcgWWPkocFn-218" vertex="1">
+          <mxGeometry y="78" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-176" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="-5r2tn9ypXcgWWPkocFn-218" source="-5r2tn9ypXcgWWPkocFn-173" target="-5r2tn9ypXcgWWPkocFn-172" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="304.99999999999994" y="-19.3100000000004" as="sourcePoint" />
+            <mxPoint x="173" y="58.6899999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-177" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="-5r2tn9ypXcgWWPkocFn-218" source="-5r2tn9ypXcgWWPkocFn-174" target="-5r2tn9ypXcgWWPkocFn-172" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="105" y="48.6899999999996" as="sourcePoint" />
+            <mxPoint x="173" y="58.6899999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-178" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="-5r2tn9ypXcgWWPkocFn-218" source="-5r2tn9ypXcgWWPkocFn-175" target="-5r2tn9ypXcgWWPkocFn-172" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="105" y="75.6899999999996" as="sourcePoint" />
+            <mxPoint x="173" y="58.6899999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-219" value="&lt;div&gt;confocal Raman spectroscopy&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1602.5" y="-4823.999999999999" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-221" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-219" target="-5r2tn9ypXcgWWPkocFn-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1701" y="-4800" as="sourcePoint" />
+            <mxPoint x="1518" y="-4763" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-225" value="&lt;div&gt;transmission Raman spectroscopy&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1602.5" y="-4751.999999999999" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-226" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="-5r2tn9ypXcgWWPkocFn-225" target="-5r2tn9ypXcgWWPkocFn-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1696" y="-4939" as="sourcePoint" />
+            <mxPoint x="1518" y="-4763" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-227" value="resonance Raman spectroscopy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1604.5" y="-4678.999999999999" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-228" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="497" y="-4618" width="312.84" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-229" value="signal enhancement setting datum" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;arcSize=15;glass=0;shadow=0;" parent="-5r2tn9ypXcgWWPkocFn-228" vertex="1">
+          <mxGeometry x="192.83999999999997" y="29.5" width="120" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-230" value="surface enhanced setting datum" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="-5r2tn9ypXcgWWPkocFn-228" vertex="1">
+          <mxGeometry width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-231" value="tip-enhanced setting datum" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="-5r2tn9ypXcgWWPkocFn-228" vertex="1">
+          <mxGeometry y="39" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-232" value="resonance enhanced setting datum" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="-5r2tn9ypXcgWWPkocFn-228" vertex="1">
+          <mxGeometry y="78" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-233" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="-5r2tn9ypXcgWWPkocFn-228" source="-5r2tn9ypXcgWWPkocFn-230" target="-5r2tn9ypXcgWWPkocFn-229" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="304.99999999999994" y="-19.3100000000004" as="sourcePoint" />
+            <mxPoint x="173" y="58.6899999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-234" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="-5r2tn9ypXcgWWPkocFn-228" source="-5r2tn9ypXcgWWPkocFn-231" target="-5r2tn9ypXcgWWPkocFn-229" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="105" y="48.6899999999996" as="sourcePoint" />
+            <mxPoint x="173" y="58.6899999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-235" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="-5r2tn9ypXcgWWPkocFn-228" source="-5r2tn9ypXcgWWPkocFn-232" target="-5r2tn9ypXcgWWPkocFn-229" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="105" y="75.6899999999996" as="sourcePoint" />
+            <mxPoint x="173" y="58.6899999999996" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-236" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-229" target="-5r2tn9ypXcgWWPkocFn-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="656" y="-4702" as="sourcePoint" />
+            <mxPoint x="928" y="-4896" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-244" value="&lt;div&gt;linear Raman spectroscopy&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FF0000;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1605.5" y="-4600.999999999999" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-245" value="&lt;div&gt;non-linear Raman spectroscopy&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FF0000;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1602.5" y="-4488.579999999999" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-249" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-199" target="-5r2tn9ypXcgWWPkocFn-244" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1689" y="-4663" as="sourcePoint" />
+            <mxPoint x="1518" y="-4763" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-250" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-210" target="-5r2tn9ypXcgWWPkocFn-245" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1953" y="-4702" as="sourcePoint" />
+            <mxPoint x="1809" y="-4663" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-251" value="hyper Raman spectroscopy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1811.5" y="-4499.3099999999995" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-252" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-251" target="-5r2tn9ypXcgWWPkocFn-245" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1957" y="-4550" as="sourcePoint" />
+            <mxPoint x="1809" y="-4527" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-253" value="higher-order Raman spectral excitation spectroscopy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1811.5" y="-4437.3099999999995" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-254" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-253" target="-5r2tn9ypXcgWWPkocFn-245" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1953" y="-4434" as="sourcePoint" />
+            <mxPoint x="1809" y="-4527" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-256" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-227" target="-5r2tn9ypXcgWWPkocFn-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1698" y="-4853" as="sourcePoint" />
+            <mxPoint x="1518" y="-4763" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-257" value="Stokes lines focus objective" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="966.0000000000001" y="-4459" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-258" value="Anti-Stokes lines focus objective" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="966.0000000000001" y="-4407" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-259" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-257" target="-5r2tn9ypXcgWWPkocFn-146" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1091" y="-4501" as="sourcePoint" />
+            <mxPoint x="1152" y="-4709" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-260" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-258" target="-5r2tn9ypXcgWWPkocFn-146" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1091" y="-4434" as="sourcePoint" />
+            <mxPoint x="1157" y="-4704" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-266" value="&#39;polarised Raman spectroscopy&#39;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1602.5" y="-4928.999999999999" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-267" value="&#39;chiral Raman spectroscopy&#39;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1800" y="-4928.999999999999" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-268" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-267" target="-5r2tn9ypXcgWWPkocFn-266" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1697" y="-5052.31" as="sourcePoint" />
+            <mxPoint x="1513" y="-5106.31" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-269" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-266" target="-5r2tn9ypXcgWWPkocFn-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1697" y="-4995" as="sourcePoint" />
+            <mxPoint x="1518" y="-4763" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-270" value="&#39;near-infrared Raman spectroscopy&#39;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1602.5" y="-5027.999999999999" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-271" value="&#39;ultraviolet Raman spectroscopy&#39;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1602.5" y="-5078.999999999999" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-272" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-270" target="-5r2tn9ypXcgWWPkocFn-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1697" y="-5052" as="sourcePoint" />
+            <mxPoint x="1518" y="-4763" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-273" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-271" target="-5r2tn9ypXcgWWPkocFn-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1697" y="-5151" as="sourcePoint" />
+            <mxPoint x="1518" y="-4763" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-275" value="&#39;Fourier transform Raman spectroscopy&#39;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1602.5" y="-5140" width="120" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-276" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" parent="1" source="-5r2tn9ypXcgWWPkocFn-275" target="-5r2tn9ypXcgWWPkocFn-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1697" y="-5202" as="sourcePoint" />
+            <mxPoint x="1518" y="-4763" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-162" value="backscattering setting datum" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="434" y="-4738" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-163" value="90°&amp;nbsp; setting datum" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="288" y="-4738" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-164" value="transmission setting datum" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="144" y="-4738" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;jumpStyle=arc;" edge="1" parent="1" source="VfjT_V7_vvZIIO-IPtBv-26" target="VfjT_V7_vvZIIO-IPtBv-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2946.0359126604103" y="-4986.36" as="sourcePoint" />
+            <mxPoint x="3651" y="-4989.36" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-153" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/ro/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_0000080&quot;&gt;RO:quality of&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VfjT_V7_vvZIIO-IPtBv-6">
+          <mxGeometry x="0.0322" y="-4" relative="1" as="geometry">
+            <mxPoint x="-1" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;strokeColor=#000000;fontColor=#000000;" edge="1" parent="1" source="VfjT_V7_vvZIIO-IPtBv-20" target="VfjT_V7_vvZIIO-IPtBv-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2831.42" y="-4688.17" as="sourcePoint" />
+            <mxPoint x="3199" y="-5098.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-9" value="&lt;div class=&quot;node-metadata-label&quot;&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;OBI:has &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;specified&lt;/a&gt; &lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;input&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VfjT_V7_vvZIIO-IPtBv-8">
+          <mxGeometry x="-0.4164" y="-3" relative="1" as="geometry">
+            <mxPoint x="-3" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object label="&lt;div&gt;CHMO:ultraviolet Raman spectroscopy&lt;/div&gt;" equivalentTo="&#39;laser Raman spectroscopy&#39;&#xa; and (has_specified_input some &#xa;    (&#39;setting datum&#39;&#xa;     and (&#39;is about&#39; some &#xa;        (&#39;ultraviolet wavelength&#39;&#xa;         and (&#39;quality of&#39; some &#xa;            (spectrometer or (&#39;part of&#39; some spectrometer)))))))" id="VfjT_V7_vvZIIO-IPtBv-20">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+            <mxGeometry x="2842" y="-4703" width="120" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-21" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0001235&quot;&gt;chmo:Raman spectrometer&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="2842" y="-4784" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-22" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FVIBSO_0000013&quot;&gt;&lt;span style=&quot;font-size: 12px; color: rgb(0, 0, 0); font-weight: normal; text-decoration: none; font-style: normal; text-decoration-skip-ink: none;&quot;&gt;VIBSO:exitation wavelength setting&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=15;glass=0;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="2628.5" y="-4703" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-26" value="NTR:near-IR wavelength" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillColor=#f5f5f5;fontStyle=0;fontSize=12;shadow=0;strokeColor=#FF0000;strokeWidth=1;fontColor=#333333;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="2628.5" y="-4783.5" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-69" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;" edge="1" parent="1" source="VfjT_V7_vvZIIO-IPtBv-22" target="VfjT_V7_vvZIIO-IPtBv-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2714" y="-4803.889411764706" as="targetPoint" />
+            <mxPoint x="2460" y="-4750.36" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-70" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/iao/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136&quot;&gt;IAO:is about&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="VfjT_V7_vvZIIO-IPtBv-69">
+          <mxGeometry x="0.1145" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-71" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;strokeColor=#000000;fontColor=#000000;" edge="1" parent="1" source="VfjT_V7_vvZIIO-IPtBv-20" target="VfjT_V7_vvZIIO-IPtBv-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2968" y="-4704.86" as="sourcePoint" />
+            <mxPoint x="3123" y="-4871.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-72" value="&lt;div class=&quot;node-metadata-label&quot;&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;OBI:has &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;specified &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;col-sm-8 col-md-9 node-metadata-value&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293&quot;&gt;input&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VfjT_V7_vvZIIO-IPtBv-71">
+          <mxGeometry x="-0.4164" y="-3" relative="1" as="geometry">
+            <mxPoint x="-19" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-149" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0400064&quot;&gt;OBI:laser&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="2738" y="-4864" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-150" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VfjT_V7_vvZIIO-IPtBv-149" target="VfjT_V7_vvZIIO-IPtBv-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3344.99" y="-5038.37" as="sourcePoint" />
+            <mxPoint x="2995.99" y="-4955.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VfjT_V7_vvZIIO-IPtBv-151" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/ro/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000050&quot;&gt;RO:part of&lt;/a&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="VfjT_V7_vvZIIO-IPtBv-150">
+          <mxGeometry x="-0.4428" y="-3" relative="1" as="geometry">
+            <mxPoint x="18" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;jumpStyle=arc;" edge="1" parent="1" source="VfjT_V7_vvZIIO-IPtBv-26" target="VfjT_V7_vvZIIO-IPtBv-149">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2748" y="-4764" as="sourcePoint" />
+            <mxPoint x="2865" y="-4764" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-5" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/ro/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_0000080&quot;&gt;RO:quality of&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="amAlDQcrRpI_VdE5Itus-4">
+          <mxGeometry x="0.0322" y="-4" relative="1" as="geometry">
+            <mxPoint x="-5" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="amAlDQcrRpI_VdE5Itus-7" target="VfjT_V7_vvZIIO-IPtBv-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-12" value="equivalentTo" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="amAlDQcrRpI_VdE5Itus-8">
+          <mxGeometry x="0.0108" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-7" value="&lt;div&gt;laser Raman spectroscopy&#39;&lt;/div&gt;&amp;nbsp;&lt;font color=&quot;#0066cc&quot;&gt;and &lt;/font&gt;(has specified input &lt;font color=&quot;#cc0066&quot;&gt;some &lt;/font&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; (&#39;excitation wavelength setting&#39; &lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;font color=&quot;#0066cc&quot;&gt;and &lt;/font&gt;(&#39;is about&#39; &lt;font color=&quot;#cc0066&quot;&gt;some &lt;/font&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; (&#39;ultraviolet wavelength&#39;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;font color=&quot;#0066cc&quot;&gt;and &lt;/font&gt;(&#39;quality of&#39; &lt;font color=&quot;#cc0066&quot;&gt;some &lt;/font&gt;&lt;br&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; (spectrometer &lt;font color=&quot;#0066cc&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#0066cc&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; or &lt;/font&gt;(&#39;part of&#39; &lt;font color=&quot;#cc0066&quot;&gt;some &lt;/font&gt;spectrometer)))))))&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=default;spacingRight=0;spacingLeft=7;" vertex="1" parent="1">
+          <mxGeometry x="3054" y="-4829" width="246" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-9" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;&lt;b&gt;excitation wavelength spectrum specific Raman Spectroscopy&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2628.5" y="-4965" width="622.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-13" value="equivalentTo" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1663.666666666667" y="-5088.666666666666" width="87" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-158" value="light polarization setting datum" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;fillColor=#dae8fc;strokeColor=#ff0000;strokeWidth=1;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="692.8399999999999" y="-5072.000394736841" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-14" value="AFO:polarisation" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillColor=#f5f5f5;fontStyle=0;fontSize=12;shadow=0;strokeColor=#666666;strokeWidth=1;fontColor=#333333;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="471.0000000000001" y="-5072" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;" edge="1" parent="1" source="-5r2tn9ypXcgWWPkocFn-158" target="amAlDQcrRpI_VdE5Itus-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1175" y="-4955" as="targetPoint" />
+            <mxPoint x="1033" y="-4912" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-16" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/iao/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136&quot;&gt;IAO:is about&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="amAlDQcrRpI_VdE5Itus-15">
+          <mxGeometry x="0.1145" y="-1" relative="1" as="geometry">
+            <mxPoint x="14" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5r2tn9ypXcgWWPkocFn-157" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FVIBSO_0000013&quot;&gt;&lt;span style=&quot;font-size: 12px; color: rgb(0, 0, 0); font-weight: normal; text-decoration: none; font-style: normal; text-decoration-skip-ink: none;&quot;&gt;VIBSO:exitation wavelength setting&lt;/span&gt;&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="692.84" y="-5022.000394736841" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-17" value="PATO:wavelength" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fillColor=#f5f5f5;fontStyle=0;fontSize=12;shadow=0;strokeColor=#666666;strokeWidth=1;fontColor=#333333;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="471.0000000000001" y="-5022" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;" edge="1" parent="1" target="amAlDQcrRpI_VdE5Itus-17" source="-5r2tn9ypXcgWWPkocFn-157">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1148" y="-4924" as="targetPoint" />
+            <mxPoint x="666" y="-5021" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-19" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/iao/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000136&quot;&gt;IAO:is about&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="amAlDQcrRpI_VdE5Itus-18">
+          <mxGeometry x="0.1145" y="-1" relative="1" as="geometry">
+            <mxPoint x="14" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-20" value="NTR:observation direction" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="692.84" y="-4960.860394736841" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="amAlDQcrRpI_VdE5Itus-21" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;opacity=50;edgeStyle=entityRelationEdgeStyle;" edge="1" parent="1" source="amAlDQcrRpI_VdE5Itus-20" target="-5r2tn9ypXcgWWPkocFn-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="808" y="-4997" as="sourcePoint" />
+            <mxPoint x="928" y="-4896" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
@@ -2520,7 +3128,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="6V28p7OpUvu9fe2h39fW" name="Extended Assay Pattern">
-    <mxGraphModel dx="4742" dy="6659" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4570" dy="6393" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />

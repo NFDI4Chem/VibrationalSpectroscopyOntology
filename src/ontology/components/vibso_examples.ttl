@@ -24,7 +24,7 @@
 @base <http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl> .
 
 <http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl> rdf:type owl:Ontology ;
-                                                                      owl:versionIRI <http://purl.obolibrary.org/obo/vibso/releases/2024-02-01/components/vibso_examples.owl> ;
+                                                                      owl:versionIRI <http://purl.obolibrary.org/obo/vibso/releases/2024-04-04/components/vibso_examples.owl> ;
                                                                       rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_examples.tsv' template." .
 
 #################################################################
