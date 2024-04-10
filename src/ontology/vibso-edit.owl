@@ -102,6 +102,10 @@ EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asse
 # Class: obo:CHMO_0000067 (microscopy)
 
 EquivalentClasses(Annotation(rdfs:comment "Equivalence asserted manually in VIBSO based on the definitions of both classes.") Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000067 obo:OBI_0002119)
+# Class: obo:CHMO_0000581 (microspectroscopy)
+
+EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(obo:IAO_0000119 "Manually asserted based on the definition."@en) Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000581 ObjectIntersectionOf(obo:CHMO_0000102 obo:CHMO_0000228))
+
 # Class: obo:CHMO_0000628 (vibrational spectroscopy)
 
 EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(obo:IAO_0000119 obo:vibso.owl) Annotation(rdfs:comment "Manually asserted based on the definition."@en) obo:CHMO_0000628 ObjectIntersectionOf(obo:CHMO_0000228 ObjectSomeValuesFrom(obo:OBI_0000417 obo:VIBSO_0000033)))
