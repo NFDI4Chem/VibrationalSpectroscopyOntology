@@ -128,6 +128,10 @@ EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asse
 
 EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(rdfs:comment "Manually asserted based on the definition."@en) Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000664 ObjectIntersectionOf(obo:CHMO_0000056 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000038)))
 
+# Class: obo:CHMO_0000674 (spatially-offset Raman spectroscopy)
+
+EquivalentClasses(obo:CHMO_0000674 ObjectIntersectionOf(obo:CHMO_0000656 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000040)))
+
 # Class: obo:CHMO_0000680 (ultraviolet Raman spectroscopy)
 
 EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(obo:IAO_0000119 obo:vibso.owl) Annotation(rdfs:comment "Manually asserted based on the definition."@en) obo:CHMO_0000680 ObjectIntersectionOf(obo:CHMO_0000656 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000029)))
