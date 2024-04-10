@@ -102,6 +102,11 @@ EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asse
 # Class: obo:CHMO_0000067 (microscopy)
 
 EquivalentClasses(Annotation(rdfs:comment "Equivalence asserted manually in VIBSO based on the definitions of both classes.") Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000067 obo:OBI_0002119)
+
+# Class: obo:CHMO_0000103 (confocal microscopy)
+
+EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(rdfs:comment "Manually asserted based on the definition."@en) Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000103 ObjectIntersectionOf(obo:CHMO_0000067 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000038)))
+
 # Class: obo:CHMO_0000581 (microspectroscopy)
 
 EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(obo:IAO_0000119 "Manually asserted based on the definition."@en) Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000581 ObjectIntersectionOf(obo:CHMO_0000102 obo:CHMO_0000228))
@@ -114,6 +119,14 @@ EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asse
 
 EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(rdfs:comment "Manually asserted based on the definition."@en) Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000656 ObjectIntersectionOf(obo:CHMO_0000228 ObjectSomeValuesFrom(obo:OBI_0000417 obo:VIBSO_0000030)))
 SubClassOf(obo:CHMO_0000656 ObjectIntersectionOf(obo:CHMO_0000228 ObjectSomeValuesFrom(obo:OBI_0000417 obo:VIBSO_0000033)))
+
+# Class: obo:CHMO_0000663 (confocal Raman spectroscopy)
+
+EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(rdfs:comment "Manually asserted based on the definition."@en) Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000663 ObjectIntersectionOf(obo:CHMO_0000656 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000038)))
+
+# Class: obo:CHMO_0000664 (confocal Raman microscopy)
+
+EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(rdfs:comment "Manually asserted based on the definition."@en) Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000664 ObjectIntersectionOf(obo:CHMO_0000056 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000038)))
 
 # Class: obo:CHMO_0000680 (ultraviolet Raman spectroscopy)
 
