@@ -107,11 +107,12 @@ EquivalentClasses(Annotation(rdfs:comment "Equivalence asserted manually in VIBS
 EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(rdfs:comment "Manually asserted based on the definition."@en) Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000656 ObjectIntersectionOf(obo:CHMO_0000228 ObjectSomeValuesFrom(obo:OBI_0000417 obo:VIBSO_0000030)))
 # Class: obo:CHMO_0000680 (ultraviolet Raman spectroscopy)
 
-EquivalentClasses(obo:CHMO_0000680 ObjectIntersectionOf(obo:CHMO_0000656 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000029)))
+EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(obo:IAO_0000119 obo:vibso.owl) Annotation(rdfs:comment "Manually asserted based on the definition."@en) obo:CHMO_0000680 ObjectIntersectionOf(obo:CHMO_0000656 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000029)))
 
 # Class: obo:CHMO_0000870 (near-infrared Raman spectroscopy)
 
-EquivalentClasses(obo:CHMO_0000870 ObjectIntersectionOf(obo:CHMO_0000656 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000028)))
+EquivalentClasses(Annotation(obo:IAO_0000116 "This axiom should actually be asserted in CHMO and is only injected in VIBSO to demonstrate the benefit of this axiomatization for better inference."@en) Annotation(rdfs:comment "Manually asserted based on the definition."@en) Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000870 ObjectIntersectionOf(obo:CHMO_0000656 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000028)))
+
 
 # Class: obo:NCBITaxon_9606 (Homo sapiens)
 
