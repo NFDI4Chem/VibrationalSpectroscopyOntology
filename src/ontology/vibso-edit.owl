@@ -95,6 +95,9 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
 
+# Class: obo:CHMO_0000056 (Raman microscopy)
+
+EquivalentClasses(Annotation(rdfs:comment "Equivalence asserted manually in VIBSO based on the textual definition of this class.") Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000056 ObjectIntersectionOf(obo:CHMO_0000102 obo:CHMO_0000656))
 
 # Class: obo:CHMO_0000067 (microscopy)
 
