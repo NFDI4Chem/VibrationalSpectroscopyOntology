@@ -24,13 +24,14 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2024-01-31/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-05-13/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_classes.tsv' template.")
 
 Declaration(Class(obo:BFO_0000029))
 Declaration(Class(obo:CHMO_0000823))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000032))
+Declaration(Class(obo:IAO_0000109))
 Declaration(Class(obo:IAO_0000140))
 Declaration(Class(obo:OBI_0000654))
 Declaration(Class(obo:OBI_0000968))
@@ -63,6 +64,7 @@ Declaration(Class(obo:VIBSO_0000024))
 Declaration(Class(obo:VIBSO_0000025))
 Declaration(Class(obo:VIBSO_0000026))
 Declaration(Class(obo:VIBSO_0000027))
+Declaration(Class(obo:VIBSO_0000028))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000115))
@@ -400,6 +402,15 @@ AnnotationAssertion(rdfs:comment obo:VIBSO_0000027 "number of measurements Z = (
 AnnotationAssertion(rdfs:label obo:VIBSO_0000027 "number of measurements Z"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000027 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32>)
 SubClassOf(obo:VIBSO_0000027 obo:IAO_0000140)
+
+# Class: obo:VIBSO_0000028 (Raman raw data)
+
+AnnotationAssertion(Annotation(dc:source <https://wiki.charisma.ideaconsult.net/wiki/Item:Q64>) obo:IAO_0000115 obo:VIBSO_0000028 "A measurment datum that is obtained from a calibrated and ready Raman spectrometer and prior to be submitted to any mathematical modification. The only corrections on the data shall be the one associated with the spectrometer. The data will assign pixels readouts with nm as per calibration of the spectrometer and a.u. as intensity readout but will not be corrected in relationship of the incident monochromatic beam."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000028 "raw Raman data"@en)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000028 <http://orcid.org/0000-0002-2239-3955>)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000028 "Raman raw data"@en)
+AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000028 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/77>)
+SubClassOf(obo:VIBSO_0000028 obo:IAO_0000109)
 
 
 )
