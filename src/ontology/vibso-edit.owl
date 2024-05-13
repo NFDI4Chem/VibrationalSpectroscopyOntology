@@ -95,7 +95,11 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
 
-# Class: obo:NCBITaxon_9606 (person)
+# Class: obo:CHMO_0000067 (microscopy)
+
+EquivalentClasses(Annotation(rdfs:comment "Equivalence asserted manually in VIBSO based on the definitions of both classes.") Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000067 obo:OBI_0002119)
+
+# Class: obo:NCBITaxon_9606 (Homo sapiens)
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "person")
 
