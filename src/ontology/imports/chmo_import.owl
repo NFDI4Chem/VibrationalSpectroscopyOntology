@@ -7,12 +7,18 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/imports/chmo_import.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-12-20/imports/chmo_import.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-05-13/imports/chmo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
-Annotation(owl:versionInfo "2023-12-20")
+Annotation(owl:versionInfo "2024-05-13")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_60004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000103>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000228>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000581>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000628>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000629>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000630>))
@@ -87,6 +93,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0001767>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0001794>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0001798>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0001814>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0001818>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0001821>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0001907>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0001908>))
@@ -119,7 +126,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002823>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002824>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000185>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000057>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
@@ -145,6 +154,75 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#sav
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/CHMO_0000049> (chemical imaging)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000049> "The simultaneous measurement of spectra and images. A radiation source illuminates the sample and a series of spatially resolved spectra are collected.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000049> "CIS")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000049> "chemical imaging spectrometry")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000049> "chemical imaging spectroscopy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000049> "hyperspectral imaging")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000049> "imaging spectrometry")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000049> "imaging spectroscopy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000049> "multispectral imaging")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000049> "spectral imaging")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000049> "spectroscopic imaging")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000049> "CHMO:0000049")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000049> "chemical imaging")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000049> <http://purl.obolibrary.org/obo/OBI_0000185>)
+
+# Class: <http://purl.obolibrary.org/obo/CHMO_0000056> (Raman microscopy)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1039/b815117b") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000056> "The collection of spatially resolved Raman spectra of a sample during optical microscopy.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHMO_0000056> "CHMO:0000673")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHMO_0000056> "FIX:0000697")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "LRMA")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "MRS")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "RCIS")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "Raman chemical imaging spectrometry")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "Raman chemical imaging spectroscopy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "Raman imaging")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "Raman mapping")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "Raman micro spectrometry")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "Raman micro spectroscopy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "Raman microprobe spectroscopy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "Raman microspectrometry")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "Raman microspectroscopy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "Raman spectral imaging")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "laser Raman microanalysis")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "micro Raman spectrometry")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "micro Raman spectroscopy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "micro-Raman spectrometry")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000056> "micro-Raman spectroscopy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000056> "CHMO:0000056")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000056> "Raman microscopy")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000056> <http://purl.obolibrary.org/obo/CHMO_0001818>)
+
+# Class: <http://purl.obolibrary.org/obo/CHMO_0000067> (microscopy)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000067> "Any technique where a microscope is used to view a small object (or specimen) by producing a magnified image.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHMO_0000067> "FIX:0000005")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000067> "CHMO:0000067")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000067> "microscopy")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000067> <http://purl.obolibrary.org/obo/OBI_0000185>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000057> <http://purl.obolibrary.org/obo/CHMO_0000953>))
+
+# Class: <http://purl.obolibrary.org/obo/CHMO_0000102> (optical microscopy)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000102> "Microscopy where the specimen is illuminated with visible light and a system of lenses is used to produce an image.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/CHMO_0000102> "FIX:0000113")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000102> "OM")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000102> "light microscopy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000102> "CHMO:0000102")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000102> "optical microscopy")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000102> <http://purl.obolibrary.org/obo/CHMO_0000067>)
+
+# Class: <http://purl.obolibrary.org/obo/CHMO_0000103> (confocal microscopy)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:978-3-540-74597-6") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000103> "Microscopy where visible light coming from the specimen is collected and guided through a pinhole before it is detected. The pinhole allows only light from the focal point to pass to the detector, reducing background interference.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000103> "CHMO:0000103")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000103> "confocal microscopy")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000103> <http://purl.obolibrary.org/obo/CHMO_0000102>)
+
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000228> (spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://doi.org/10.1351/goldbook.S05848") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000228> "The study of the interaction of a sample with radiation or particles for measurement or detection.")
@@ -153,6 +231,14 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000228> "spectroscopy")
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000228> <http://purl.obolibrary.org/obo/OBI_0000070>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000228> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/CHMO_0000800>))
+
+# Class: <http://purl.obolibrary.org/obo/CHMO_0000581> (microspectroscopy)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000581> "Any type of chemical imaging spectroscopy where an optical microscope is used to image the sample and locate a small area for spectral analysis.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000581> "microspectrometry")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000581> "CHMO:0000581")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000581> "microspectroscopy")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000581> <http://purl.obolibrary.org/obo/CHMO_0000049>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000628> (vibrational spectroscopy)
 
@@ -616,6 +702,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000664> "confocal micro Raman")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000664> "CHMO:0000664")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000664> "confocal Raman microscopy")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000664> <http://purl.obolibrary.org/obo/CHMO_0000056>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000664> <http://purl.obolibrary.org/obo/CHMO_0000663>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000665> (Fourier transform Raman spectroscopy)
@@ -1080,6 +1167,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0001814> "Raman microscope")
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001814> <http://purl.obolibrary.org/obo/CHMO_0000953>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001814> <http://purl.obolibrary.org/obo/CHMO_0001235>)
+
+# Class: <http://purl.obolibrary.org/obo/CHMO_0001818> (vibrational microscopy)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000695") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0001818> "A type of chemical imaging spectroscopy where an optical microscope is used to image the sample and locate a small area for spectral analysis that probes the vibrational degrees of freedom of a molecule.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0001818> "https://orcid.org/0000-0001-5985-7429")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0001818> "2009-05-28T10:08:22Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001818> "vibrational microspectroscopy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001818> "vibrational spectroscopic imaging")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0001818> "CHMO:0001818")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0001818> "vibrational microscopy")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001818> <http://purl.obolibrary.org/obo/CHMO_0000581>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001821> (synchrotron Fourier transform infrared spectroscopy)
 
