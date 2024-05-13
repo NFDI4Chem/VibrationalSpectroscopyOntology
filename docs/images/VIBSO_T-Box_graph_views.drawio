@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-13T08:12:30.625Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="57ZWlL_0ZOLiXTzs_Ei3" version="24.4.0" type="device" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-05-13T08:47:39.410Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="RPYLS2W0n3CjhV7G2Gtj" version="24.4.0" type="device" pages="5">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="VIBSO T-Box">
-    <mxGraphModel dx="2074" dy="7724" grid="0" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="2963" dy="8206" grid="0" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -303,7 +303,7 @@
         <mxCell id="QKKoRjnMVttNz9pZIT6n-1" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0000656&quot;&gt;CHMO:Raman spectroscopy&lt;/a&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="1148" y="-5725.37" width="105" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="QKKoRjnMVttNz9pZIT6n-2" value="&lt;a href=&quot;https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/77&quot;&gt;VIBSO:raw Raman data&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=15;glass=0;shadow=0;strokeWidth=1;align=center;" parent="1" vertex="1">
+        <mxCell id="QKKoRjnMVttNz9pZIT6n-2" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FVIBSO_0000028&quot;&gt;VIBSO:raw Raman data&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=15;glass=0;shadow=0;strokeWidth=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1148" y="-5561" width="105" height="40" as="geometry" />
         </mxCell>
         <mxCell id="QKKoRjnMVttNz9pZIT6n-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;" parent="1" source="QKKoRjnMVttNz9pZIT6n-1" target="QKKoRjnMVttNz9pZIT6n-2" edge="1">
@@ -1065,7 +1065,7 @@
         <mxCell id="yY9HiGbYDIGNY1c0d9uf-41" value="&lt;div&gt;optical&amp;nbsp;&lt;/div&gt;&lt;div&gt;settings&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=default;" parent="Nw7-E2_MfOwgosX6pQGJ-2" vertex="1">
           <mxGeometry width="185" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="lnHGb59-9foJHnMW3seC-17" value="&lt;a href=&quot;https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/76&quot;&gt;NTR:numerical aperture&lt;/a&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;verticalAlign=middle;align=center;strokeWidth=5;" parent="Nw7-E2_MfOwgosX6pQGJ-2" vertex="1">
+        <mxCell id="lnHGb59-9foJHnMW3seC-17" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FVIBSO_0000029&quot;&gt;VIBSO:numerical aperture&lt;/a&gt;" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=middle;align=center;strokeWidth=1;" parent="Nw7-E2_MfOwgosX6pQGJ-2" vertex="1">
           <mxGeometry x="53.5" y="181" width="125" height="40" as="geometry" />
         </mxCell>
         <mxCell id="-qVNJrEobh2uuxl9ESg2-140" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FVIBSO_0000013&quot;&gt;&lt;span style=&quot;font-size: 12px; color: rgb(0, 0, 0); font-weight: normal; text-decoration: none; font-style: normal; text-decoration-skip-ink: none;&quot;&gt;VIBSO:exitation wavelength setting&lt;/span&gt;&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;verticalAlign=middle;" parent="Nw7-E2_MfOwgosX6pQGJ-2" vertex="1">
