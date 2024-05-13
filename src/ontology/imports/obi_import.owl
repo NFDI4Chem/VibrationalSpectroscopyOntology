@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2024-01-09/imports/obi_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl>)
-Annotation(owl:versionInfo "2024-01-09")
+<http://purl.obolibrary.org/obo/vibso/releases/2024-05-13/imports/obi_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2024-01-09/obi.owl>)
+Annotation(owl:versionInfo "2024-05-13")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -24,6 +24,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000102>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000015>))
@@ -46,12 +47,14 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000094>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000112>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000185>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000202>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000245>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000272>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000338>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000339>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000369>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000374>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000397>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000398>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000399>))
@@ -79,6 +82,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001930>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001931>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001933>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0002076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0002119>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200000>))
@@ -863,6 +867,16 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000040
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
 
+# Class: <http://purl.obolibrary.org/obo/CHMO_0000102> (light microscopy assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000102> "Microscopy where the specimen is illuminated with visible light and a system of lenses is used to produce an image.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/CHMO_0000102> "OM")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/CHMO_0000102> "light microscopy")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/CHMO_0000102> "optical microscopy")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/CHMO_0000102> "CHMO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000102> "light microscopy assay")
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000102> <http://purl.obolibrary.org/obo/OBI_0002119>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000005> (objective specification)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000005> "objective specification"@en)
@@ -1211,6 +1225,17 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000112> "spe
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000112> <http://purl.obolibrary.org/obo/BFO_0000023>)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000112> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000659>))))
 
+# Class: <http://purl.obolibrary.org/obo/OBI_0000185> (imaging assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000185> "imaging assay")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000185> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000185> "An assay that produces a picture of an entity.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000185> "PlanAndPlannedProcess Branch")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000185> "OBI branch derived")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000185> "imaging assay")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000185> <http://purl.obolibrary.org/obo/OBI_0000070>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000185> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000101>))
+
 # Class: <http://purl.obolibrary.org/obo/OBI_0000202> (investigation agent role)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000202> "investigation agent role")
@@ -1321,6 +1346,18 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000369> "Melanie Courtot")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000369> "magnify function"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000369> <http://purl.obolibrary.org/obo/BFO_0000034>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000374> (excitation function)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000374> "excitation function"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000374> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000374> "A excitation function is a function  to inject energy by bombarding a material with energetic particles (e.g., photons) thereby imbuing internal material components such as electrons with additional energy.  These internal, 'excited' particles may lead to the rupturing of covalent chemical bonds or may quickly relax back to there unexcited state with an exponential time course thereby locally emitting energy in the form of photons."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000374> "Bill Bug")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000374> "Daniel Schober")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000374> "Frank Gibson")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000374> "Melanie Courtot")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000374> "excitation function"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000374> <http://purl.obolibrary.org/obo/BFO_0000034>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000397> (image acquisition function)
 
@@ -1687,6 +1724,18 @@ AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolib
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0002076> "collection of specimens"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0002076> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/OBI_0100051>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0002076> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0002119> (microscopy assay)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0002119> "microscopy assay")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0002119> "Lung, liver, and spleen tissue samples were collected from female BALB/c mice and fixed in 100% formalin solution, embedded in paraffin, sectioned, and stained with hematoxylin and eosin. The stained samples were examined for signs of pathological changes under light microscopy.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0002119> <http://purl.obolibrary.org/obo/IAO_0000120>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0002119> "An imaging assay that utilizes a microscope to magnify features of the visualized material of interest that are not visible to naked eye.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0002119> "ImmPort")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0002119> "PMID:21685355")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0002119> "microscopy assay")
+EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0002119> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000185> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/OBI_0400169>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0400169>))))
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0002119> <http://purl.obolibrary.org/obo/OBI_0000185>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0100026> (organism)
 
