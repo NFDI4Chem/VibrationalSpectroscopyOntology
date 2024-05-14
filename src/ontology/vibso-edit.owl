@@ -123,6 +123,10 @@ SubClassOf(obo:UO_0000002 obo:IAO_0000003)
 
 SubClassOf(obo:UO_0000051 obo:IAO_0000003)
 
+# Class: obo:VIBSO_0000031 (Stokes Raman scattering)
+
+DisjointClasses(obo:VIBSO_0000031 obo:VIBSO_0000032)
+
 
 ############################
 #   Named Individuals
