@@ -37,7 +37,6 @@ Declaration(Class(obo:IAO_0000032))
 Declaration(Class(obo:IAO_0000109))
 Declaration(Class(obo:IAO_0000140))
 Declaration(Class(obo:OBI_0000067))
-Declaration(Class(obo:OBI_0000070))
 Declaration(Class(obo:OBI_0000654))
 Declaration(Class(obo:OBI_0000968))
 Declaration(Class(obo:PATO_0001018))
@@ -79,7 +78,6 @@ Declaration(Class(obo:VIBSO_0000034))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:IAO_0000136))
 Declaration(ObjectProperty(obo:OBI_0000299))
-Declaration(ObjectProperty(obo:OBI_0000312))
 Declaration(ObjectProperty(obo:RO_0000087))
 Declaration(ObjectProperty(obo:RO_0002500))
 Declaration(ObjectProperty(obo:RO_0002608))
@@ -473,7 +471,7 @@ AnnotationAssertion(dc:contributor obo:VIBSO_0000033 <http://orcid.org/0000-0002
 AnnotationAssertion(rdfs:label obo:VIBSO_0000033 "Stokes Raman Spectroscopy"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000033 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/103>)
 SubClassOf(obo:VIBSO_0000033 obo:CHMO_0000656)
-SubClassOf(obo:VIBSO_0000033 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000109 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067) ObjectSomeValuesFrom(obo:RO_0002500 obo:VIBSO_0000031))) ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:VIBSO_0000031 ObjectSomeValuesFrom(obo:RO_0002608 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067))))) ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0000070))))
+SubClassOf(obo:VIBSO_0000033 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000109 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067) ObjectSomeValuesFrom(obo:RO_0002500 obo:VIBSO_0000031))) ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:VIBSO_0000031 ObjectSomeValuesFrom(obo:RO_0002608 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067))))))))
 
 # Class: obo:VIBSO_0000034 (anti-Stokes Raman Spectroscopy)
 
@@ -482,7 +480,7 @@ AnnotationAssertion(dc:contributor obo:VIBSO_0000034 <http://orcid.org/0000-0002
 AnnotationAssertion(rdfs:label obo:VIBSO_0000034 "anti-Stokes Raman Spectroscopy"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000034 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/103>)
 SubClassOf(obo:VIBSO_0000034 obo:CHMO_0000656)
-SubClassOf(obo:VIBSO_0000034 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000109 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067) ObjectSomeValuesFrom(obo:RO_0002500 obo:VIBSO_0000032))) ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:VIBSO_0000032 ObjectSomeValuesFrom(obo:RO_0002608 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067))))) ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0000070))))
+SubClassOf(obo:VIBSO_0000034 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000109 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067) ObjectSomeValuesFrom(obo:RO_0002500 obo:VIBSO_0000032))) ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:VIBSO_0000032 ObjectSomeValuesFrom(obo:RO_0002608 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000087 obo:OBI_0000067))))))))
 
 
 )
