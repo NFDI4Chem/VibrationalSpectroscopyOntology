@@ -420,7 +420,7 @@ SubClassOf(obo:VIBSO_0000027 obo:IAO_0000140)
 
 # Class: obo:VIBSO_0000028 (Raman raw data)
 
-AnnotationAssertion(Annotation(dc:source <https://wiki.charisma.ideaconsult.net/wiki/Item:Q64>) obo:IAO_0000115 obo:VIBSO_0000028 "A measurment datum that is obtained from a calibrated and ready Raman spectrometer and prior to be submitted to any mathematical modification. The only corrections on the data shall be the one associated with the spectrometer. The data will assign pixels readouts with nm as per calibration of the spectrometer and a.u. as intensity readout but will not be corrected in relationship of the incident monochromatic beam."@en)
+AnnotationAssertion(Annotation(dc:source <https://wiki.charisma.ideaconsult.net/wiki/Item:Q64>) obo:IAO_0000115 obo:VIBSO_0000028 "A measurement datum that is obtained from a calibrated and ready Raman spectrometer and prior to be submitted to any mathematical modification. The only corrections on the data shall be the one associated with the spectrometer. The data will assign pixels readouts with nm as per calibration of the spectrometer and a.u. as intensity readout but will not be corrected in relationship of the incident monochromatic beam."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000028 "raw Raman data"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000028 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000028 "Raman raw data"@en)
