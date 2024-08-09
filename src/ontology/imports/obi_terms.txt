@@ -11,6 +11,12 @@ http://purl.obolibrary.org/obo/OBI_0000094 # material processing
 http://purl.obolibrary.org/obo/OBI_0000073 # sample preparation for assay
 http://purl.obolibrary.org/obo/OBI_0000744 # material sampling process
 http://purl.obolibrary.org/obo/OBI_0000339 # planning
+http://purl.obolibrary.org/obo/OBI_0000185 # imaging assay
+
+# importing CHMO optical microscopy, as it is relabeled and subsumed under OBI:microscopy assay based on
+# https://github.com/obi-ontology/obi/blob/master/src/ontology/templates/assays.tsv#L5
+CHMO:0000102
+
 
 # importing CHMO optical microscopy, as it is relabeled and subsumed under OBI:microscopy assay based on
 # https://github.com/obi-ontology/obi/blob/master/src/ontology/templates/assays.tsv#L5
