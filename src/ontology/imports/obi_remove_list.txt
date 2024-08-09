@@ -1,0 +1,39 @@
+IAO:0000010  # software
+OBI:0000450  # regulatory agency
+OBI:0000707  # decision tree building data transformation
+OBI:0200171  # partitioning data transformation
+OBI:0000663  # class prediction data transformation
+OBI:0200051  # principal components analysis dimensionality reduction
+OBI:0200050  # dimensionality reduction
+OBI:0200042  # hierarchical clustering
+OBI:0200041  # k-means clustering
+OBI:0000727  # k-nearest neighbors
+OBI:0000713  # 'GenePattern software'
+OBI:0000749  # CART
+OBI:0200175  # 'class discovery data transformation'
+OBI:0000792  # 'statistical model validation'
+APOLLO_SV:00000796  # dataset creating
+OBI:0200190  # 'clustered data visualization'
+OBI:0000017  # 'regulatory role'
+OBI:0000947  # 'service provider role'
+OBI:0002989  # 'material supplier'
+OBI:0000778  # 'GenePattern peak matching'
+OBI:0200178  # 'class discovery objective'
+OBI:0200179  # 'class prediction objective'
+OBI:0000704  # 'decision tree induction objective'
+OBI:0200172  # 'partitioning objective'
+OBI:0001909 # 'conclusion based on data'
+IAO:0000102  # 'data about an ontology part'
+IAO:0000009  #
+IAO:0000037  #
+IAO:0000100  #
+IAO:0000098  #
+IAO:0000310  #
+IAO:0000179  #
+IAO:0000180  #
+IAO:0000183  #
+IAO:0000184  #
+IAO:0000310  #
+NCBITaxon:2  #
+NCBITaxon:2157  #
+NCBITaxon:10239  #

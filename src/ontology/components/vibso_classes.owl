@@ -1,6 +1,7 @@
 Prefix(:=<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl#>)
 Prefix(cc:=<http://creativecommons.org/ns#>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(ex:=<https://example.instances/>)
 Prefix(DOI:=<http://doi.org/>)
 Prefix(ROR:=<http://ror.org/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
@@ -23,16 +24,18 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-08-10/components/vibso_classes.owl>
-Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_classes.tsv', which is edited manually by domain experts.")
+<http://purl.obolibrary.org/obo/vibso/releases/2024-08-08/components/vibso_classes.owl>
+Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_classes.tsv' template.")
 
 Declaration(Class(obo:BFO_0000029))
 Declaration(Class(obo:CHMO_0000823))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000032))
+Declaration(Class(obo:IAO_0000109))
 Declaration(Class(obo:IAO_0000140))
 Declaration(Class(obo:OBI_0000654))
 Declaration(Class(obo:OBI_0000968))
+Declaration(Class(obo:OBI_0200000))
 Declaration(Class(obo:PATO_0001018))
 Declaration(Class(obo:VIBSO_0000000))
 Declaration(Class(obo:VIBSO_0000001))
@@ -62,7 +65,12 @@ Declaration(Class(obo:VIBSO_0000024))
 Declaration(Class(obo:VIBSO_0000025))
 Declaration(Class(obo:VIBSO_0000026))
 Declaration(Class(obo:VIBSO_0000027))
+Declaration(Class(obo:VIBSO_0000028))
+Declaration(Class(obo:VIBSO_0000029))
+Declaration(Class(obo:VIBSO_000030))
 Declaration(ObjectProperty(obo:BFO_0000050))
+Declaration(ObjectProperty(obo:OBI_0000293))
+Declaration(ObjectProperty(obo:OBI_0000312))
 Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000115))
 Declaration(AnnotationProperty(obo:IAO_0000116))
@@ -213,10 +221,7 @@ SubClassOf(obo:VIBSO_0000013 obo:IAO_0000140)
 
 # Class: obo:VIBSO_0000014 (objective magnification factor setting)
 
-AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000014 "example:RamanSpectrometerX rdf:type obo:CHMO_0001235 (Raman spectrometer) ;
-            obo:OBI_0000293 (has_specified_input) example:objective_magnification_factor_setting_for_RamanSpectrometerX .
-example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type obo:VIBSO_0000014 ;
-            obo:OBI_0002815 (has representation) '100 x' ."@en)
+AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000014 "100x"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000014 "A setting datum that specifies the magnification factor of the objective collecting the scattered light."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000014 "magnification"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000014 "magnification setting"@en)
@@ -389,8 +394,7 @@ SubClassOf(obo:VIBSO_0000026 obo:IAO_0000140)
 # Class: obo:VIBSO_0000027 (number of measurements Z)
 
 AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000027 "10"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000027 "A setting datum that specifies how many equally configured measurements of a sample are to be performed in the vertical direction (on the Z-axis) of a certain region of interest.
-Together with the focal point distance, this setting defines the region of interest depth."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000027 "A setting datum that specifies how many equally configured measurements of a sample are to be performed in the vertical direction (on the Z-axis) of a certain region of interest. Together with the focal point distance, this setting defines the region of interest depth."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000027 "number of layers per acquisition"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000027 "number of points in the Z direction"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000027 <http://orcid.org/0000-0001-7694-5519>)
@@ -399,6 +403,37 @@ AnnotationAssertion(rdfs:comment obo:VIBSO_0000027 "number of measurements Z = (
 AnnotationAssertion(rdfs:label obo:VIBSO_0000027 "number of measurements Z"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000027 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32>)
 SubClassOf(obo:VIBSO_0000027 obo:IAO_0000140)
+
+# Class: obo:VIBSO_0000028 (Raman raw data)
+
+AnnotationAssertion(Annotation(dc:source <https://wiki.charisma.ideaconsult.net/wiki/Item:Q64>) obo:IAO_0000115 obo:VIBSO_0000028 "A measurment datum that is obtained from a calibrated and ready Raman spectrometer and prior to be submitted to any mathematical modification. The only corrections on the data shall be the one associated with the spectrometer. The data will assign pixels readouts with nm as per calibration of the spectrometer and a.u. as intensity readout but will not be corrected in relationship of the incident monochromatic beam."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000028 "raw Raman data"@en)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000028 <http://orcid.org/0000-0002-2239-3955>)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000028 "Raman raw data"@en)
+AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000028 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/77>)
+SubClassOf(obo:VIBSO_0000028 obo:IAO_0000109)
+
+# Class: obo:VIBSO_0000029 (lens numerical aperture)
+
+AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000029 "The light was focused onto the embedded sample using a 100× objective with a numerical aperture of 0.9, resulting in a diffraction-limited in-plane laser spot size of <1 μm."@en)
+AnnotationAssertion(Annotation(dc:source Wikipedia:Numerical_aperture) Annotation(dc:source <https://wiki.charisma.ideaconsult.net/wiki/Item:Q385>) obo:IAO_0000115 obo:VIBSO_0000029 "A setting datum that, as a dimensionless number, represents the quality which characterizes the range of angles over which an optical system can accept or emit light [dc:source wikidata:Numerical_aperture]. It gets calculated by the sine of one half of the vertex angle of the largest cone of meridional rays that can enter or leave an optical system or element, multiplied by the refractive index of the medium in which the cone is located."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000029 "possible equivalents in other terminologies: http://purl.obolibrary.org/obo/NCIT_C181921 & https://w3id.org/reproduceme#LensNA"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000029 "numerical aperture"@en)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000029 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000029 <http://orcid.org/0000-0002-2239-3955>)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000029 "lens numerical aperture"@en)
+AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000029 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/76>)
+SubClassOf(obo:VIBSO_0000029 obo:IAO_0000140)
+
+# Class: obo:VIBSO_000030 (primary Raman data)
+
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_000030 "A data item that is obtained by processing raw Raman data."@en)
+AnnotationAssertion(dc:contributor obo:VIBSO_000030 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dc:contributor obo:VIBSO_000030 <http://orcid.org/0000-0002-2239-3955>)
+AnnotationAssertion(rdfs:label obo:VIBSO_000030 "primary Raman data"@en)
+AnnotationAssertion(rdfs:seeAlso obo:VIBSO_000030 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/132>)
+SubClassOf(obo:VIBSO_000030 obo:IAO_0000027)
+SubClassOf(obo:VIBSO_000030 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:OBI_0200000 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000028))))
 
 
 )

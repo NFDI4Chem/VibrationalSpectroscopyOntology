@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/vibso/vibso-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/vibso/vibso-base.owl"
+     xmlns:ex="https://example.instances/"
      xmlns:DOI="http://doi.org/"
      xmlns:ROR="http://ror.org/"
      xmlns:dce="http://purl.org/dc/elements/1.1/"
@@ -18,7 +19,7 @@
      xmlns:schema1="https://schema.org/"
      xmlns:wikipedia="https://en.wikipedia.org/wiki/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/vibso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-11-27/vibso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-12-20/vibso-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-2239-3955"/>
@@ -28,7 +29,7 @@
         <dcterms:description>_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Vibrational Spectroscopy Ontology</dcterms:title>
-        <owl:versionInfo>2023-11-27</owl:versionInfo>
+        <owl:versionInfo>2023-12-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -83,6 +84,12 @@
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
     
 
 
@@ -161,6 +168,42 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -172,15 +215,41 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHMO_0000823 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000823"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003"/>
     
 
 
@@ -211,6 +280,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000441 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000441"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000654 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000654"/>
@@ -232,6 +313,30 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </owl:Class>
     
 
 
@@ -712,6 +817,55 @@ Together with the focal point distance, this setting defines the region of inter
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- https://example.instances/AssayObjective_O -->
+
+    <owl:NamedIndividual rdf:about="https://example.instances/AssayObjective_O">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000441"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://example.instances/Assay_A -->
+
+    <owl:NamedIndividual rdf:about="https://example.instances/Assay_A">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:BFO_0000055 rdf:resource="https://example.instances/EvaluantRole_R"/>
+        <obo:OBI_0000293 rdf:resource="https://example.instances/MaterialEntity_M"/>
+        <obo:OBI_0000299 rdf:resource="https://example.instances/DataItem_D"/>
+        <obo:OBI_0000417 rdf:resource="https://example.instances/AssayObjective_O"/>
+        <dce:description xml:lang="en">The assay A is planned to produce as a specified output the data item D which is a specific kind of information about the material entity M, which has the evaluant role R that gets realized in this planned observation process.
+
+This example instance is part of the ontology to demonstrate the OBI assay pattern. The type and number of relations between this instance and other example instances are based on the subclassOf and equivalentTo axioms asserted on OBI&apos;s assay.</dce:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://example.instances/DataItem_D -->
+
+    <owl:NamedIndividual rdf:about="https://example.instances/DataItem_D">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000136 rdf:resource="https://example.instances/MaterialEntity_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://example.instances/EvaluantRole_R -->
+
+    <owl:NamedIndividual rdf:about="https://example.instances/EvaluantRole_R">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://example.instances/MaterialEntity_M -->
+
+    <owl:NamedIndividual rdf:about="https://example.instances/MaterialEntity_M">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:RO_0000087 rdf:resource="https://example.instances/EvaluantRole_R"/>
+    </owl:NamedIndividual>
     
 
 
