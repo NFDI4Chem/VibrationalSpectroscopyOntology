@@ -1,6 +1,7 @@
 Prefix(:=<http://purl.obolibrary.org/obo/vibso/components/vibso_object_properties.owl#>)
 Prefix(cc:=<http://creativecommons.org/ns#>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(ex:=<https://example.instances/>)
 Prefix(DOI:=<http://doi.org/>)
 Prefix(ROR:=<http://ror.org/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
@@ -23,8 +24,8 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_object_properties.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-08-10/components/vibso_object_properties.owl>
-Annotation(rdfs:comment "This component is derived from the 'src/templates/vibso_object_properties.tsv', which is edited manually by domain experts.")
+<http://purl.obolibrary.org/obo/vibso/releases/2024-01-31/components/vibso_object_properties.owl>
+Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_object_properties.tsv' template.")
 
 
 

@@ -1,0 +1,6 @@
+UO:0000001 # length unit
+UO:7000008 # meter based unit
+UO:0000002 # mass unit
+UO:0000051 # concentration unit
+UO:1000021 # gram based unit
+UO:0000055 # molar mass unit

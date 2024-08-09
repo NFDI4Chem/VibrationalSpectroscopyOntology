@@ -6,3 +6,7 @@ http://purl.obolibrary.org/obo/PATO_0002497 # lateral orientation
 http://purl.obolibrary.org/obo/PATO_0000033 # concentration of
 http://purl.obolibrary.org/obo/PATO_0001019 # mass density
 http://purl.obolibrary.org/obo/PATO_0000125 # mass
+http://purl.obolibrary.org/obo/PATO_0000122 # length
+http://purl.obolibrary.org/obo/PATO_0000921 # width
+http://purl.obolibrary.org/obo/PATO_0001595 # depth
+http://purl.obolibrary.org/obo/PATO_0000119 # height

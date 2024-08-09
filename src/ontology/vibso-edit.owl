@@ -19,15 +19,20 @@ Prefix(wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 Ontology(<http://purl.obolibrary.org/obo/vibso.owl>
 Import(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>)
+Import(<http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/components/vibso_object_properties.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/vibso/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/chmo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/vibso/imports/foodon_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/vibso/imports/stato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/vibso/imports/uo_import.owl>)
+Annotation(dcterms:contributor <https://orcid.org/0000-0001-7694-5519>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-1595-3213>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-2239-3955>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-4378-6061>)
@@ -42,6 +47,7 @@ Declaration(NamedIndividual(ex:Assay_A))
 Declaration(NamedIndividual(ex:DataItem_D))
 Declaration(NamedIndividual(ex:EvaluantRole_R))
 Declaration(NamedIndividual(ex:MaterialEntity_M))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-7694-5519>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-1595-3213>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-2239-3955>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-4378-6061>))
@@ -85,10 +91,37 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
-# Class: obo:NCBITaxon_9606 (person)
+# Class: obo:CHEBI_24431 (chemical entity)
+
+SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
+
+# Class: obo:CHMO_0000056 (Raman microscopy)
+
+EquivalentClasses(Annotation(rdfs:comment "Equivalence asserted manually in VIBSO based on the textual definition of this class.") Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000056 ObjectIntersectionOf(obo:CHMO_0000102 obo:CHMO_0000656))
+
+# Class: obo:CHMO_0000067 (microscopy)
+
+EquivalentClasses(Annotation(rdfs:comment "Equivalence asserted manually in VIBSO based on the definitions of both classes.") Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000067 obo:OBI_0002119)
+
+# Class: obo:CHMO_0000581 (microspectroscopy)
+
+EquivalentClasses(Annotation(rdfs:comment "Equivalence asserted manually in VIBSO based on the textual definition of this class.") Annotation(rdfs:isDefinedBy obo:vibso.owl) obo:CHMO_0000581 ObjectIntersectionOf(obo:CHMO_0000102 obo:CHMO_0000228))
+
+# Class: obo:NCBITaxon_9606 (Homo sapiens)
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "person")
-SubClassOf(obo:NCBITaxon_9606 obo:OBI_0100026)
+
+# Class: obo:UO_0000001 (length unit)
+
+SubClassOf(obo:UO_0000001 obo:IAO_0000003)
+
+# Class: obo:UO_0000002 (mass unit)
+
+SubClassOf(obo:UO_0000002 obo:IAO_0000003)
+
+# Class: obo:UO_0000051 (concentration unit)
+
+SubClassOf(obo:UO_0000051 obo:IAO_0000003)
 
 
 ############################
@@ -124,40 +157,54 @@ ClassAssertion(obo:BFO_0000023 ex:EvaluantRole_R)
 ClassAssertion(obo:BFO_0000040 ex:MaterialEntity_M)
 ObjectPropertyAssertion(obo:RO_0000087 ex:MaterialEntity_M ex:EvaluantRole_R)
 
+# Individual: <https://orcid.org/0000-0001-7694-5519> (Rainer Stosch)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-7694-5519> "Rainer Stosch")
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0001-7694-5519> <https://ror.org/05r3f7h03>)
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0001-7694-5519> <https://www.wikidata.org/wiki/Q96678459>)
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0001-7694-5519> "VIBSO Working Group"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0001-7694-5519>)
+
 # Individual: <https://orcid.org/0000-0002-1595-3213> (Philip Strömert)
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1595-3213> "Philip Strömert")
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-1595-3213> <https://ror.org/04aj4c181>)
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-1595-3213> <https://www.wikidata.org/wiki/Q96678459>)
-AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-1595-3213> "VIBSO Workgroup"@en)
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-1595-3213> "VIBSO Working Group"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-1595-3213>)
 
 # Individual: <https://orcid.org/0000-0002-2239-3955> (Giacomo Lanza)
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-2239-3955> "Giacomo Lanza")
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-2239-3955> <https://ror.org/05r3f7h03>)
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-2239-3955> <https://www.wikidata.org/wiki/Q96678459>)
-AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-2239-3955> "VIBSO Workgroup"@en)
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-2239-3955> "VIBSO Working Group"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-2239-3955>)
 
 # Individual: <https://orcid.org/0000-0002-4378-6061> (Johannes Hunold)
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-4378-6061> "Johannes Hunold")
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-4378-6061> <https://ror.org/04aj4c181>)
 AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-4378-6061> <https://www.wikidata.org/wiki/Q96678459>)
-AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-4378-6061> "VIBSO Workgroup"@en)
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0002-4378-6061> "VIBSO Working Group"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-4378-6061>)
 
 # Individual: <https://ror.org/04aj4c181> (Technische Informationsbibliothek (TIB))
 
 AnnotationAssertion(rdfs:label <https://ror.org/04aj4c181> "German National Library of Science and Technology Hannover"@en)
 AnnotationAssertion(rdfs:label <https://ror.org/04aj4c181> "Technische Informationsbibliothek (TIB)"@de)
+ClassAssertion(obo:OBI_0000245 <https://ror.org/04aj4c181>)
 
 # Individual: <https://ror.org/05r3f7h03> (German National Metrology Institute)
 
 AnnotationAssertion(rdfs:label <https://ror.org/05r3f7h03> "German National Metrology Institute"@en)
 AnnotationAssertion(rdfs:label <https://ror.org/05r3f7h03> "Physikalisch-Technische Bundesanstalt (PTB)"@de)
+ClassAssertion(obo:OBI_0000245 <https://ror.org/05r3f7h03>)
 
 # Individual: <https://www.wikidata.org/wiki/Q96678459> (NFDI4Chem)
 
 AnnotationAssertion(rdfs:label <https://www.wikidata.org/wiki/Q96678459> "NFDI4Chem")
 
 
+SubClassOf(ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:IAO_0000140 ObjectSomeValuesFrom(obo:OBI_0000295 obo:OBI_0000070) ObjectSomeValuesFrom(obo:RO_0002566 ObjectSomeValuesFrom(obo:RO_0000080 ObjectIntersectionOf(obo:OBI_0000968 ObjectSomeValuesFrom(obo:OBI_0000295 obo:OBI_0000070)))))) obo:OBI_0001896)
 )

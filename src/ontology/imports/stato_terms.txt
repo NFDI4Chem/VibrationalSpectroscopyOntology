@@ -1,1 +1,2 @@
 http://purl.obolibrary.org/obo/STATO_0000050 # signal to noise ratio
+http://purl.obolibrary.org/obo/STATO_0000102 # executes
