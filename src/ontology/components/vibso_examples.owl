@@ -1,0 +1,143 @@
+Prefix(:=<http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl#>)
+Prefix(cc:=<http://creativecommons.org/ns#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(ex:=<https://example.instances/>)
+Prefix(DOI:=<http://doi.org/>)
+Prefix(ROR:=<http://ror.org/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(prov:=<http://www.w3.org/ns/prov#>)
+Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(void:=<http://rdfs.org/ns/void#>)
+Prefix(ORCID:=<http://orcid.org/>)
+Prefix(vibso:=<http://purl.obolibrary.org/obo/VIBSO_>)
+Prefix(schema:=<http://schema.org/>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-02-01/components/vibso_examples.owl>
+Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_examples.tsv' template.")
+
+Declaration(Class(obo:CHMO_0001235))
+Declaration(Class(obo:CHMO_0002515))
+Declaration(Class(obo:IAO_0000027))
+Declaration(Class(obo:OBI_0000441))
+Declaration(Class(obo:OBI_0000747))
+Declaration(Class(obo:OBI_0001896))
+Declaration(Class(obo:OBI_0001931))
+Declaration(Class(obo:PATO_0001242))
+Declaration(Class(obo:VIBSO_0000013))
+Declaration(ObjectProperty(obo:BFO_0000051))
+Declaration(ObjectProperty(obo:IAO_0000039))
+Declaration(ObjectProperty(obo:IAO_0000136))
+Declaration(ObjectProperty(obo:OBI_0000293))
+Declaration(ObjectProperty(obo:OBI_0000299))
+Declaration(ObjectProperty(obo:OBI_0000417))
+Declaration(ObjectProperty(obo:OBI_0001927))
+Declaration(ObjectProperty(obo:OBI_0001938))
+Declaration(ObjectProperty(obo:RO_0000080))
+Declaration(ObjectProperty(obo:RO_0002566))
+Declaration(ObjectProperty(obo:STATO_0000102))
+Declaration(DataProperty(obo:OBI_0002135))
+Declaration(NamedIndividual(obo:UO_0000018))
+Declaration(NamedIndividual(ex:_Laser_Wavelength_1))
+Declaration(NamedIndividual(ex:_Raman_Spectrometer_1))
+Declaration(NamedIndividual(ex:_Raman_Spectroscopy_1))
+Declaration(NamedIndividual(ex:_Raman_Spectroscopy_Method_1))
+Declaration(NamedIndividual(ex:_Raman_Spectrum_1))
+Declaration(NamedIndividual(ex:_Raman_Spectrum_Objective_1))
+Declaration(NamedIndividual(ex:_Sample_1))
+Declaration(NamedIndividual(ex:_Wavelength_Setting_Info_1))
+Declaration(NamedIndividual(ex:_Wavelength_Value_Specification_1))
+Declaration(AnnotationProperty(dcterms:description))
+
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: ex:_Laser_Wavelength_1 (_Laser_Wavelength_1)
+
+AnnotationAssertion(dcterms:description ex:_Laser_Wavelength_1 "The laser wavelength of _Raman_Spectrometer_1 which is a general attribute (aka quality/characteristic) of _Raman_Spectrometer_1. The quantity of this attribute is represented by the _Wavelength_Value_Specification_1."@en)
+AnnotationAssertion(rdfs:label ex:_Laser_Wavelength_1 "_Laser_Wavelength_1"@en)
+ClassAssertion(obo:PATO_0001242 ex:_Laser_Wavelength_1)
+ObjectPropertyAssertion(obo:RO_0000080 ex:_Laser_Wavelength_1 ex:_Raman_Spectrometer_1)
+
+# Individual: ex:_Raman_Spectrometer_1 (_Raman_Spectrometer_1)
+
+AnnotationAssertion(dcterms:description ex:_Raman_Spectrometer_1 "The Raman spectrometer that is used in _RamanAssay_1."@en)
+AnnotationAssertion(rdfs:label ex:_Raman_Spectrometer_1 "_Raman_Spectrometer_1"@en)
+ClassAssertion(obo:CHMO_0001235 ex:_Raman_Spectrometer_1)
+
+# Individual: ex:_Raman_Spectroscopy_1 (_Raman_Spectroscopy_1)
+
+AnnotationAssertion(dcterms:description ex:_Raman_Spectroscopy_1 "The Raman spectroscopy in which _Sample_1 is being assayed according to _Raman_Spectroscopy_Method_1 in order to achieve _Raman_Spectrum_Objective_1."@en)
+AnnotationAssertion(rdfs:label ex:_Raman_Spectroscopy_1 "_Raman_Spectroscopy_1"@en)
+ClassAssertion(obo:CHMO_0002515 ex:_Raman_Spectroscopy_1)
+ObjectPropertyAssertion(obo:OBI_0000293 ex:_Raman_Spectroscopy_1 ex:_Raman_Spectrometer_1)
+ObjectPropertyAssertion(obo:OBI_0000293 ex:_Raman_Spectroscopy_1 ex:_Sample_1)
+ObjectPropertyAssertion(obo:OBI_0000293 ex:_Raman_Spectroscopy_1 ex:_Wavelength_Setting_Info_1)
+ObjectPropertyAssertion(obo:OBI_0000299 ex:_Raman_Spectroscopy_1 ex:_Raman_Spectrum_1)
+ObjectPropertyAssertion(obo:OBI_0000417 ex:_Raman_Spectroscopy_1 ex:_Raman_Spectrum_Objective_1)
+ObjectPropertyAssertion(obo:STATO_0000102 ex:_Raman_Spectroscopy_1 ex:_Raman_Spectroscopy_Method_1)
+
+# Individual: ex:_Raman_Spectroscopy_Method_1 (_Raman_Spectroscopy_Method_1)
+
+AnnotationAssertion(dcterms:description ex:_Raman_Spectroscopy_Method_1 "The information that indicates the type of _Raman_Spectroscopy_1 by describing its method, specifying its inputs and outputs, as well as the necessary steps and actions that have to be taken in order to achieve _Raman_Spectrum_Objective_1. For the sake of keeping it simple, not all parts of this assay specification will be provided as assertions on this example."@en)
+AnnotationAssertion(rdfs:label ex:_Raman_Spectroscopy_Method_1 "_Raman_Spectroscopy_Method_1"@en)
+ClassAssertion(obo:OBI_0001896 ex:_Raman_Spectroscopy_Method_1)
+ObjectPropertyAssertion(obo:BFO_0000051 ex:_Raman_Spectroscopy_Method_1 ex:_Raman_Spectrum_Objective_1)
+ObjectPropertyAssertion(obo:BFO_0000051 ex:_Raman_Spectroscopy_Method_1 ex:_Wavelength_Setting_Info_1)
+ObjectPropertyAssertion(obo:IAO_0000136 ex:_Raman_Spectroscopy_Method_1 ex:_Raman_Spectrometer_1)
+ObjectPropertyAssertion(obo:IAO_0000136 ex:_Raman_Spectroscopy_Method_1 ex:_Raman_Spectroscopy_1)
+
+# Individual: ex:_Raman_Spectrum_1 (_Raman_Spectrum_1)
+
+AnnotationAssertion(dcterms:description ex:_Raman_Spectrum_1 "The Raman spectrum (the data outputed by _RamanSpectrometer_1 NOT the plot) of _Sample_1 created by _RamanAssay_1. Currently classified as an IAO:'data item' as a more specific subclass thereof has yet to be minted in VIBSO (see alos: https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/77)"@en)
+AnnotationAssertion(rdfs:label ex:_Raman_Spectrum_1 "_Raman_Spectrum_1"@en)
+ClassAssertion(obo:IAO_0000027 ex:_Raman_Spectrum_1)
+ObjectPropertyAssertion(obo:IAO_0000136 ex:_Raman_Spectrum_1 ex:_Sample_1)
+
+# Individual: ex:_Raman_Spectrum_Objective_1 (_Raman_Spectrum_Objective_1)
+
+AnnotationAssertion(dcterms:description ex:_Raman_Spectrum_Objective_1 "The information that specifies the intended outcome of _Raman_Spectroscopy_1 to be the creation of a Raman Spectrum."@en)
+AnnotationAssertion(rdfs:label ex:_Raman_Spectrum_Objective_1 "_Raman_Spectrum_Objective_1"@en)
+ClassAssertion(obo:OBI_0000441 ex:_Raman_Spectrum_Objective_1)
+
+# Individual: ex:_Sample_1 (_Sample_1)
+
+AnnotationAssertion(dcterms:description ex:_Sample_1 "The material entity that is being evaluated in _RamanAssay_1."@en)
+AnnotationAssertion(rdfs:label ex:_Sample_1 "_Sample_1"@en)
+ClassAssertion(obo:OBI_0000747 ex:_Sample_1)
+
+# Individual: ex:_Wavelength_Setting_Info_1 (_Wavelength_Setting_Info_1)
+
+AnnotationAssertion(dcterms:description ex:_Wavelength_Setting_Info_1 "The information that determines the wavelength of the laser of _Raman_Spectrometer_1 which is used to excite the sample. This information gets encoded by the _Laser_Value_Specification_1."@en)
+AnnotationAssertion(rdfs:label ex:_Wavelength_Setting_Info_1 "_Wavelength_Setting_Info_1"@en)
+ClassAssertion(obo:VIBSO_0000013 ex:_Wavelength_Setting_Info_1)
+ObjectPropertyAssertion(obo:OBI_0001938 ex:_Wavelength_Setting_Info_1 ex:_Wavelength_Value_Specification_1)
+ObjectPropertyAssertion(obo:RO_0002566 ex:_Wavelength_Setting_Info_1 ex:_Laser_Wavelength_1)
+
+# Individual: ex:_Wavelength_Value_Specification_1 (_Wavelength_Value_Specification_1)
+
+AnnotationAssertion(dcterms:description ex:_Wavelength_Value_Specification_1 "The encoding of the value determined by _Wavelength_Setting_Info_1, which consists of the unit label and the literal value of the laser wavelength of _Raman_Spectrometer_1."@en)
+AnnotationAssertion(rdfs:label ex:_Wavelength_Value_Specification_1 "_Wavelength_Value_Specification_1"@en)
+ClassAssertion(obo:OBI_0001931 ex:_Wavelength_Value_Specification_1)
+ObjectPropertyAssertion(obo:IAO_0000039 ex:_Wavelength_Value_Specification_1 obo:UO_0000018)
+ObjectPropertyAssertion(obo:OBI_0001927 ex:_Wavelength_Value_Specification_1 ex:_Laser_Wavelength_1)
+DataPropertyAssertion(obo:OBI_0002135 ex:_Wavelength_Value_Specification_1 "555.0"^^xsd:float)
+
+
+)

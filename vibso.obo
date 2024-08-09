@@ -1,10 +1,12 @@
 format-version: 1.2
-data-version: releases/2023-11-27
+data-version: releases/2023-12-20
+subsetdef: 3_STAR ""
 subsetdef: attribute_slim ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
+subsetdef: mpath_slim ""
 subsetdef: relational_slim ""
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
@@ -32,7 +34,7 @@ property_value: http://purl.org/dc/terms/creator "VIBSO Workgroup" xsd:string
 property_value: http://purl.org/dc/terms/description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays." xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/title "Vibrational Spectroscopy Ontology" xsd:string
-property_value: owl:versionInfo "2023-11-27" xsd:string
+property_value: owl:versionInfo "2023-12-20" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -456,7 +458,6 @@ name: function
 is_a: BFO:0000016 ! disposition
 property_value: BFO:0000179 "function" xsd:string
 property_value: BFO:0000180 "Function" xsd:string
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000112 "the function of a hammer to drive in nails" xsd:string
 property_value: IAO:0000112 "the function of a heart pacemaker to regulate the beating of a heart through electricity" xsd:string
 property_value: IAO:0000112 "the function of amylase in saliva to break down starch into sugar" xsd:string
@@ -640,12 +641,39 @@ property_value: IAO:0000600 "A history is a process that is the sum of the total
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
+id: CHEBI:24431
+name: chemical entity
+namespace: chebi_ontology
+def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." []
+subset: 3_STAR
+synonym: "chemical entity" EXACT [UniProt]
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: CHEBI:59999
+name: chemical substance
+namespace: chebi_ontology
+def: "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types." []
+subset: 3_STAR
+synonym: "Chemische Substanz" RELATED [ChEBI]
+is_a: CHEBI:24431 ! chemical entity
+
+[Term]
+id: CHEBI:60004
+name: mixture
+namespace: chebi_ontology
+def: "A mixture is a chemical substance composed of multiple molecules, at least two of which are of a different kind." []
+subset: 3_STAR
+synonym: "Mischung" RELATED [ChEBI]
+is_a: CHEBI:59999 ! chemical substance
+
+[Term]
 id: CHMO:0000228
 name: spectroscopy
 def: "The study of the interaction of a sample with radiation or particles for measurement or detection." [https://doi.org/10.1351/goldbook.S05848]
 synonym: "spectrometry" EXACT []
 is_a: OBI:0000070 ! assay
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+relationship: OBI:0000299 CHMO:0000800 ! has_specified_output spectrum
 
 [Term]
 id: CHMO:0000628
@@ -653,7 +681,6 @@ name: vibrational spectroscopy
 def: "Spectroscopy which probes the vibrational degrees of freedom of a molecule." [https://orcid.org/0000-0002-0640-0422]
 synonym: "vibrational spectroscopic analysis" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000629
@@ -662,7 +689,6 @@ def: "Spectroscopy where a metal-molecule-metal sandwich is formed and electrons
 synonym: "IETS" EXACT []
 synonym: "inelastic electron tunnelling spectrometry" EXACT []
 is_a: CHMO:0000628 ! vibrational spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000630
@@ -686,7 +712,6 @@ synonym: "IR spectrometry" EXACT []
 synonym: "IR spectrophotometry" EXACT []
 synonym: "IR spectroscopy" EXACT []
 is_a: CHMO:0000628 ! vibrational spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000631
@@ -697,7 +722,6 @@ synonym: "infrared evanescent wave spectrometry" EXACT []
 synonym: "infrared evanescent wave spectroscopy" EXACT []
 synonym: "IR-EWS" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000633
@@ -709,7 +733,6 @@ synonym: "infrared multiphoton dissociation spectroscopy" EXACT []
 synonym: "IRMPD spectrometry" EXACT []
 synonym: "IRMPD spectroscopy" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000634
@@ -725,7 +748,6 @@ synonym: "resonant infra-red multiphoton dissociation spectrometry" EXACT []
 synonym: "resonant infra-red multiphoton dissociation spectroscopy" EXACT []
 synonym: "resonant infrared multiphoton dissociation spectrometry" EXACT []
 is_a: CHMO:0000633 ! infrared multiphoton dissociation spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000635
@@ -737,7 +759,6 @@ synonym: "mid-infrared spectrometry" EXACT []
 synonym: "mid-IR" EXACT []
 synonym: "mid-IR spectroscopy" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000636
@@ -758,7 +779,6 @@ synonym: "FTIR" EXACT []
 synonym: "FTIR spectrometry" EXACT []
 synonym: "FTIR spectroscopy" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000637
@@ -769,7 +789,6 @@ synonym: "micro infra-red spectrometry" EXACT []
 synonym: "micro-infrared spectrometry" EXACT []
 synonym: "micro-infrared spectroscopy" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000638
@@ -790,7 +809,6 @@ synonym: "NIR absorbance spectrometry" EXACT []
 synonym: "NIR absorbance spectroscopy" EXACT []
 synonym: "NIRS" RELATED non-mining_synonym []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000639
@@ -808,7 +826,6 @@ synonym: "FT NIRS" EXACT []
 synonym: "FT-NIRS" EXACT []
 synonym: "FTNIRS" EXACT []
 is_a: CHMO:0000638 ! near-infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000640
@@ -821,7 +838,6 @@ synonym: "non-dispersive infra-red spectrometry" EXACT []
 synonym: "non-dispersive infra-red spectroscopy" EXACT []
 synonym: "non-dispersive infrared spectrometry" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000641
@@ -834,7 +850,6 @@ synonym: "surface enhanced infra-red absorption spectrometry" EXACT []
 synonym: "surface enhanced infra-red absorption spectroscopy" EXACT []
 synonym: "surface enhanced infrared absorption spectrometry" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000642
@@ -849,7 +864,6 @@ synonym: "TIRS" EXACT []
 synonym: "transient infrared spectrometry" EXACT []
 synonym: "transient infrared spectroscopy" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000643
@@ -864,7 +878,6 @@ synonym: "IR reflectance spectrometry" EXACT []
 synonym: "IR reflectance spectroscopy" EXACT []
 synonym: "IR reflection spectroscopy" EXACT []
 is_a: CHMO:0000628 ! vibrational spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000644
@@ -873,7 +886,6 @@ alt_id: FIX:0000656
 def: "Spectroscopy where the diffuse reflection of infrared radiation by a sample is measured." [https://orcid.org/0000-0002-0640-0422]
 synonym: "diffuse reflectance IR spectroscopy" EXACT []
 is_a: CHMO:0000643 ! infrared reflectance spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000645
@@ -886,7 +898,6 @@ synonym: "diffuse reflectance infrared spectroscopy by Fourier transform" EXACT 
 synonym: "DRIFT" EXACT []
 synonym: "DRIFTS" EXACT []
 is_a: CHMO:0000644 ! diffuse reflectance infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000646
@@ -898,7 +909,6 @@ synonym: "NIR reflectance spectrometry" EXACT []
 synonym: "NIR reflectance spectroscopy" EXACT []
 synonym: "NIRS" EXACT []
 is_a: CHMO:0000643 ! infrared reflectance spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000647
@@ -916,7 +926,6 @@ synonym: "reflection absorption infrared spectrometry" EXACT []
 synonym: "reflection absorption infrared spectroscopy" EXACT []
 synonym: "reflection-absorption infrared spectroscopy" EXACT []
 is_a: CHMO:0000628 ! vibrational spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000648
@@ -939,7 +948,6 @@ synonym: "multiple internal reflection spectrometry" EXACT []
 synonym: "multiple internal reflection spectroscopy" EXACT []
 xref: FIX:0000653
 is_a: CHMO:0000643 ! infrared reflectance spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000649
@@ -950,7 +958,6 @@ synonym: "infra-red emission spectrometry" EXACT []
 synonym: "infrared emission spectrometry" EXACT []
 synonym: "infrared emission spectroscopy" EXACT []
 is_a: CHMO:0000628 ! vibrational spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000650
@@ -960,7 +967,6 @@ synonym: "FIRE" EXACT []
 synonym: "flame infra-red emission spectrometry" EXACT []
 synonym: "flame infrared emission spectroscopy" EXACT []
 is_a: CHMO:0000649 ! infrared emission spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000651
@@ -971,7 +977,6 @@ synonym: "Fourier transform flame infra-red emission spectrometry" EXACT []
 synonym: "Fourier transform flame infrared emission spectroscopy" EXACT []
 synonym: "FT-FIRE" EXACT []
 is_a: CHMO:0000650 ! flame infrared emission spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000652
@@ -986,7 +991,6 @@ synonym: "Fourier-transform infrared spectroscopy" EXACT []
 synonym: "FT-IRES" EXACT []
 synonym: "FTIRES" EXACT []
 is_a: CHMO:0000649 ! infrared emission spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000653
@@ -997,7 +1001,6 @@ synonym: "mid-infrared emission spectrometry" EXACT []
 synonym: "mid-infrared emission spectroscopy" EXACT []
 synonym: "MIRES" EXACT []
 is_a: CHMO:0000649 ! infrared emission spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000654
@@ -1014,7 +1017,6 @@ synonym: "planar array IR emission spectrometry" EXACT []
 synonym: "planar array IR emission spectroscopy" EXACT []
 synonym: "planar array IRES" EXACT []
 is_a: CHMO:0000649 ! infrared emission spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000655
@@ -1026,7 +1028,6 @@ synonym: "single-photon infra-red emission spectrometry" EXACT []
 synonym: "single-photon infrared emission spectroscopy" EXACT []
 synonym: "SPIRES" EXACT []
 is_a: CHMO:0000649 ! infrared emission spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000656
@@ -1036,7 +1037,6 @@ synonym: "Raman scattering spectrometry" EXACT []
 synonym: "Raman scattering spectroscopy" EXACT []
 synonym: "Raman spectrometry" EXACT []
 is_a: CHMO:0002414 ! scattering spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000657
@@ -1046,14 +1046,12 @@ synonym: "chiral Raman" EXACT []
 synonym: "chiral Raman spectrometry" EXACT []
 synonym: "Raman optical activity" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000658
 name: coherent Raman spectroscopy
 def: "Spectroscopy where the Raman scattering of monochromatic light from three lasers (known as pump, probe and Stokes/anti-Stokes) by a sample is detected. multiphoton excitation is used to produce a signal in which the emitted waves are coherent." [https://orcid.org/0000-0002-0640-0422]
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000659
@@ -1064,14 +1062,12 @@ synonym: "coherent Stokes Raman scattering spectroscopy" EXACT []
 synonym: "coherent Stokes Raman spectrometry" EXACT []
 synonym: "CSRS" EXACT []
 is_a: CHMO:0000658 ! coherent Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000660
 name: coherent Stokes resonance Raman spectroscopy
 def: "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. An anti-Stokes frequency stimulation beam is used and a Stokes frequency beam is observed and the difference between the pump and the Stokes beams coincides with the frequency of an electronic transition within the molecule. multiphoton excitation is used to produce a signal in which the emitted waves are coherent." [https://orcid.org/0000-0002-0640-0422]
 is_a: CHMO:0000659 ! coherent Stokes Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000661
@@ -1082,14 +1078,12 @@ synonym: "coherent anti-Stokes Raman scattering spectrometry" EXACT []
 synonym: "coherent anti-Stokes Raman scattering spectroscopy" EXACT []
 synonym: "coherent anti-Stokes Raman spectrometry" EXACT []
 is_a: CHMO:0000658 ! coherent Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000662
 name: coherent anti-Stokes resonance Raman spectroscopy
 def: "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. A Stokes frequency stimulation beam is used and an anti-Stokes frequency beam is observed and the difference between the pump and the anti-Stokes beams coincides with the frequency of an electronic transition within the molecule. multiphoton excitation is used to produce a signal in which the emitted waves are coherent." [https://orcid.org/0000-0002-0640-0422]
 is_a: CHMO:0000661 ! coherent anti-Stokes Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000663
@@ -1098,7 +1092,6 @@ def: "Spectroscopy where the Raman scattering of monochromatic light is detected
 synonym: "confocal Raman spectrometry" EXACT []
 synonym: "CRS" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000664
@@ -1109,7 +1102,6 @@ synonym: "confocal Raman microanalysis" EXACT []
 synonym: "confocal Raman microspectrometry" EXACT []
 synonym: "confocal Raman microspectroscopy" EXACT []
 is_a: CHMO:0000663 ! confocal Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000665
@@ -1119,7 +1111,6 @@ synonym: "Fourier transform Raman spectrometry" EXACT []
 synonym: "FT-Raman" EXACT []
 xref: FIX:0000384
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000666
@@ -1133,7 +1124,6 @@ synonym: "hyper-Raman scattering spectroscopy" EXACT []
 synonym: "hyper-Raman spectrometry" EXACT []
 synonym: "hyper-Raman spectroscopy" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000667
@@ -1143,7 +1133,6 @@ synonym: "polarised Raman spectrometry" EXACT []
 synonym: "polarized Raman spectrometry" EXACT []
 synonym: "polarized Raman spectroscopy" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000668
@@ -1157,7 +1146,6 @@ synonym: "RR spectroscopy" EXACT []
 synonym: "RRS" RELATED []
 xref: FIX:0000060
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000669
@@ -1165,7 +1153,6 @@ name: Kerr-gated resonance Raman spectroscopy
 def: "Spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample, and the laser is combined with a Kerr gate fluorescence rejection system." [https://orcid.org/0000-0002-0640-0422]
 synonym: "Kerr-gated Raman spectrometry" EXACT []
 is_a: CHMO:0000668 ! resonance Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000670
@@ -1178,7 +1165,6 @@ synonym: "surface enhanced resonance Raman spectrometry" EXACT []
 xref: FIX:0000077
 is_a: CHMO:0000668 ! resonance Raman spectroscopy
 is_a: CHMO:0000677 ! surface-enhanced Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000671
@@ -1188,14 +1174,12 @@ synonym: "ultra-violet resonance Raman spectroscopy" EXACT []
 synonym: "UVRR" EXACT []
 synonym: "UVRRS" EXACT []
 is_a: CHMO:0000668 ! resonance Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000672
 name: deep ultra-violet resonance Raman spectroscopy
 def: "Spectroscopy where the Raman scattering of monochromatic light, from a deep ultraviolet (<300 nm) laser, by a sample is detected. The energy of the incoming laser is adjusted such that it or the scattered light coincides with an electronic transition within the sample." [https://doi.org/10.1039/b702944f]
 is_a: CHMO:0000671 ! ultraviolet resonance Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000674
@@ -1208,7 +1192,6 @@ synonym: "spatially offset Raman scattering spectroscopy" EXACT []
 synonym: "spatially offset Raman spectrometry" EXACT []
 synonym: "spatially offset Raman spectroscopy" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000675
@@ -1219,7 +1202,6 @@ synonym: "stimulated Raman scattering spectroscopy" EXACT []
 synonym: "stimulated Raman spectrometry" EXACT []
 synonym: "stimulated scattering spectrometry" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000676
@@ -1235,7 +1217,6 @@ synonym: "femtosecond broadband stimulated Raman spectroscopy" EXACT []
 synonym: "FSRS" EXACT []
 synonym: "FSRSS" EXACT []
 is_a: CHMO:0000675 ! stimulated Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000677
@@ -1251,7 +1232,6 @@ synonym: "surface-enhanced Raman scattering (SERS) spectroscopy" EXACT []
 synonym: "surface-enhanced Raman spectrometry" EXACT []
 synonym: "surface-enhanced Raman spectroscopy" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000678
@@ -1261,7 +1241,6 @@ synonym: "TERS" EXACT []
 synonym: "tip-enhanced Raman scattering spectrometry" EXACT []
 synonym: "tip-enhanced Raman scattering spectroscopy" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000679
@@ -1269,7 +1248,6 @@ name: ultra-high vacuum tip-enhanced Raman spectroscopy
 def: "Spectroscopy where the Raman scattering of visible laser light, by metal surfaces, where scattering is enhanced by the optical near field of a scanning tunnelling tip, under ultra-high vacuum is detected." [https://orcid.org/0000-0002-0640-0422]
 synonym: "UHV-TERS" EXACT []
 is_a: CHMO:0000678 ! tip-enhanced Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000680
@@ -1281,7 +1259,6 @@ synonym: "ultraviolet Raman spectrometry" EXACT []
 synonym: "ultraviolet Raman spectroscopy" EXACT []
 synonym: "UVR" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000763
@@ -1302,7 +1279,6 @@ synonym: "Fourier transform infrared attenuated total reflectance spectroscopy" 
 synonym: "Fourier transform infrared attenuated total reflection (FTIR-ATR) spectroscopy" EXACT []
 synonym: "FTIR-ATR" EXACT []
 is_a: CHMO:0000648 ! attenuated total reflectance infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000770
@@ -1319,7 +1295,6 @@ synonym: "SM-SERS" EXACT []
 synonym: "SM-SERS spectroscopy" EXACT []
 synonym: "SMSERS" EXACT []
 is_a: CHMO:0000677 ! surface-enhanced Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000793
@@ -1327,7 +1302,9 @@ name: assay output
 def: "An information content entity that is output by an assay." [https://orcid.org/0000-0001-5985-7429, https://orcid.org/0000-0002-0640-0422]
 synonym: "experimental data" EXACT []
 is_a: IAO:0000027 ! data item
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+intersection_of: IAO:0000027 ! data item
+intersection_of: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
+relationship: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
 
 [Term]
 id: CHMO:0000800
@@ -1336,7 +1313,7 @@ def: "A plot of a measured quantity against some experimental parameter." [https
 synonym: "spectra" EXACT []
 synonym: "spectrum plot" EXACT []
 is_a: CHMO:0000793 ! assay output
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+relationship: OBI:0000312 CHMO:0000228 ! is_specified_output_of spectroscopy
 
 [Term]
 id: CHMO:0000823
@@ -1344,7 +1321,6 @@ name: Raman spectrum
 def: "A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample." [https://doi.org/10.1021/jp001661l]
 synonym: "Raman spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000859
@@ -1358,7 +1334,6 @@ synonym: "TGA-FTIR" EXACT []
 synonym: "thermogravimetry coupled to Fourier transform infrared spectroscopy" EXACT []
 synonym: "thermogravimetry-FTIR" EXACT []
 is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000870
@@ -1367,7 +1342,6 @@ def: "Spectroscopy where the Raman scattering of near-infrared radiation (radiat
 synonym: "near-infrared Raman" EXACT []
 synonym: "NIR Raman" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000875
@@ -1379,7 +1353,6 @@ synonym: "electrochemical surface enhanced Raman scattering" EXACT []
 synonym: "electrochemical surface-enhanced Raman scattering" EXACT []
 synonym: "electrochemical surface-enhanced Raman spectroscopy" EXACT []
 is_a: CHMO:0000677 ! surface-enhanced Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000885
@@ -1390,21 +1363,12 @@ synonym: "surface enhanced chiral Raman spectroscopy" EXACT []
 synonym: "surface enhanced Raman optical activity" EXACT []
 synonym: "surface-enhanced Raman optical activity" EXACT []
 is_a: CHMO:0000657 ! chiral Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0000953
 name: microscope
 def: "A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface." [https://orcid.org/0000-0001-5985-7429]
 is_a: OBI:0000968 ! device
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
-
-[Term]
-id: CHMO:0000993
-name: portion of material
-def: "An independent material continuant that is self-connected and retains its identity over time." [https://orcid.org/0000-0001-5985-7429]
-is_a: BFO:0000040 ! material entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0001078
@@ -1414,7 +1378,6 @@ synonym: "PM-IRRAS" EXACT []
 synonym: "polarization modulation infrared reflection adsorption spectroscopy" EXACT []
 synonym: "polarization modulation-infrared reflection-adsorption spectroscopy" EXACT []
 is_a: CHMO:0000647 ! reflection–absorption infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0001157
@@ -1423,7 +1386,6 @@ def: "A technique for measuring the time-resolved concentration of monomers duri
 synonym: "single pulse-pulsed laser polymerization-near-infrared" EXACT []
 synonym: "SP-PLP-NIR" EXACT []
 is_a: CHMO:0000638 ! near-infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-13T11:42:53Z
 
@@ -1434,7 +1396,6 @@ def: "A piece of apparatus used to measure a spectrum." [https://orcid.org/0000-
 synonym: "spectrograph" EXACT []
 synonym: "spectroscope" EXACT []
 is_a: CHMO:0002793 ! sensor
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-25T01:54:09Z
 
@@ -1443,7 +1404,6 @@ id: CHMO:0001235
 name: Raman spectrometer
 def: "A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra." [https://orcid.org/0000-0002-0640-0422]
 is_a: CHMO:0001234 ! spectrometer
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-25T01:55:39Z
 
@@ -1459,7 +1419,6 @@ synonym: "GC-IR" EXACT []
 synonym: "GC/IR" EXACT []
 synonym: "GCIR" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-04-06T11:47:54Z
 
@@ -1474,7 +1433,6 @@ synonym: "pyrolysis gas chromatography infrared spectroscopy" EXACT []
 synonym: "pyrolysis-gas chromatography-infrared spectrometry" EXACT []
 synonym: "pyrolysis-gas chromatography-infrared spectroscopy" EXACT []
 is_a: CHMO:0001262 ! gas chromatography-infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-04-06T11:52:44Z
 
@@ -1488,7 +1446,6 @@ synonym: "Py/IR" EXACT []
 synonym: "pyrolysis IR" EXACT []
 synonym: "pyrolysis-IR" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-04-06T11:56:10Z
 
@@ -1506,7 +1463,6 @@ synonym: "vibrational sum-frequency generation (VSFG) spectroscopy" EXACT []
 synonym: "vibrational sum-frequency generation spectroscopy" EXACT []
 synonym: "VSFG spectroscopy" EXACT []
 is_a: CHMO:0000628 ! vibrational spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-07T03:31:21Z
 
@@ -1519,7 +1475,6 @@ synonym: "transmission Raman scattering spectroscopy" EXACT []
 synonym: "transmission Raman spectrometry" EXACT []
 synonym: "TRS" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-20T10:12:23Z
 
@@ -1530,7 +1485,6 @@ def: "Spectroscopy where the Raman scattering of monochromatic light, usually fr
 synonym: "OTRS" EXACT []
 synonym: "Raman tweezers" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-20T10:18:22Z
 
@@ -1541,7 +1495,6 @@ def: "Fourier transform infrared spectroscopy where the sample is initially tran
 synonym: "SFE-FTIR" EXACT []
 synonym: "supercritical fluid extraction-Fourier transform infrared absorption spectroscopy" EXACT []
 is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-20T02:49:54Z
 
@@ -1562,7 +1515,6 @@ synonym: "reflection absorption Fourier transform infrared spectrometry" EXACT [
 synonym: "reflection absorption Fourier transform infrared spectroscopy" EXACT []
 synonym: "reflection-absorption Fourier transform infrared spectroscopy" EXACT []
 is_a: CHMO:0000647 ! reflection–absorption infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-21T10:50:58Z
 
@@ -1574,7 +1526,6 @@ def: "A piece of apparatus, consisting of a laser beam (<10 μm diameter), a mon
 synonym: "Raman microspectrometer" EXACT []
 is_a: CHMO:0000953 ! microscope
 is_a: CHMO:0001235 ! Raman spectrometer
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-26T01:03:35Z
 
@@ -1595,7 +1546,6 @@ synonym: "synchrotron Fourier transform infrared spectrometry" EXACT []
 synonym: "synchrotron Fourier transform infrared spectroscopy" EXACT []
 synonym: "synchrotron-based FTIR" EXACT []
 is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-28T10:47:32Z
 
@@ -1611,7 +1561,6 @@ synonym: "rapid-scan infrared spectroscopy" EXACT []
 synonym: "rapid-scan IR" EXACT []
 synonym: "rapid-scan IR spectroscopy" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-03T10:09:14Z
 
@@ -1627,7 +1576,6 @@ synonym: "ultra-rapid-scan infrared spectroscopy" EXACT []
 synonym: "ultra-rapid-scan IR" EXACT []
 synonym: "ultra-rapid-scan IR spectroscopy" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-03T10:12:17Z
 
@@ -1638,7 +1586,6 @@ def: "Spectroscopy where the Raman scattering of monochromatic light from two la
 synonym: "Raman gain spectroscopy" EXACT []
 synonym: "SRGS" EXACT []
 is_a: CHMO:0000675 ! stimulated Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-10T09:51:36Z
 
@@ -1653,7 +1600,6 @@ synonym: "IRS" EXACT []
 synonym: "Raman loss spectroscopy" EXACT []
 synonym: "SRLS" EXACT []
 is_a: CHMO:0000675 ! stimulated Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-10T09:55:17Z
 
@@ -1663,7 +1609,6 @@ name: photoacoustic Raman spectroscopy
 def: "Spectroscopy where the Raman scattering of monochromatic light by a sample is detected. Two lasers ('pump and 'probe') are mixed and focused on the sample cell. When the frequency difference between the lasers corresponds to a Raman transition, an acoustic signal (a sound wave produced by an increase in pressure) is generated and detected by a sensitive microphone." [ISBN:0824705572]
 synonym: "PARS" EXACT []
 is_a: CHMO:0000675 ! stimulated Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-10T10:02:35Z
 
@@ -1674,7 +1619,6 @@ def: "Spectroscopy where the Raman scattering of monochromatic light, from two l
 synonym: "IDSRS" EXACT []
 synonym: "ionization-detected stimulated Raman spectroscopy" EXACT []
 is_a: CHMO:0000675 ! stimulated Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-10T10:14:20Z
 
@@ -1687,7 +1631,6 @@ synonym: "higher-order Raman spectral excitation spectroscopy" EXACT []
 synonym: "higher-order Raman spectral excitation studies" EXACT []
 synonym: "HORSES" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-10T10:23:02Z
 
@@ -1701,7 +1644,6 @@ synonym: "non-resonance Raman" EXACT []
 synonym: "non-resonant Raman" EXACT []
 synonym: "non-resonant Raman spectroscopy" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-17T03:24:06Z
 
@@ -1716,7 +1658,6 @@ synonym: "drop coating deposition Raman (DCDR) spectroscopy" EXACT []
 synonym: "drop-coating deposition Raman spectroscopy" EXACT []
 synonym: "drop-coating-deposition Raman spectroscopy" EXACT []
 is_a: CHMO:0002515 ! laser Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-14T10:12:49Z
 
@@ -1737,7 +1678,6 @@ synonym: "polarized Fourier transform infrared spectrometry" EXACT []
 synonym: "polarized Fourier transform infrared spectroscopy" EXACT []
 synonym: "polarized FTIR" EXACT []
 is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-08-24T12:48:20Z
 
@@ -1755,7 +1695,6 @@ synonym: "pyrolysis FTIR" EXACT []
 synonym: "pyrolysis-FTIR" EXACT []
 is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
 is_a: CHMO:0001264 ! pyrolysis infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-08-24T12:53:20Z
 
@@ -1776,7 +1715,6 @@ synonym: "time-resolved polarized Fourier transform infrared spectrometry" EXACT
 synonym: "time-resolved polarized Fourier transform infrared spectroscopy" EXACT []
 synonym: "time-resolved polarized FTIR" EXACT []
 is_a: CHMO:0002286 ! polarised Fourier transform infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-08-24T12:55:24Z
 
@@ -1787,7 +1725,6 @@ def: "Spectroscopy where the sample absorbs a single pulse of radiation from the
 synonym: "FFT-FTIR" EXACT []
 synonym: "FFT/FTIR" EXACT []
 is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-08-24T01:00:06Z
 
@@ -1800,7 +1737,6 @@ synonym: "IR transmission spectroscopy" EXACT []
 synonym: "IR transmittance spectroscopy" EXACT []
 synonym: "transmission IR" EXACT []
 is_a: CHMO:0000628 ! vibrational spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-08-24T01:02:36Z
 
@@ -1809,7 +1745,6 @@ id: CHMO:0002291
 name: dispersive infrared spectroscopy
 def: "Spectroscopy where the sample absorbs radiation from the infrared region (0.78–1000 μm). The infrared beam is passed through a diffraction grating which separates (or disperses) the wavelength of the light and directs each wavelength individually through a slit to a detector." [FIX:0000649, http://www.thermo.com/eThermo/CMA/PDFs/Product/productPDF_21615.pdf]
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-08-24T01:12:29Z
 
@@ -1821,7 +1756,6 @@ xref: FIX:0000078
 is_a: CHMO:0000668 ! resonance Raman spectroscopy
 is_a: CHMO:0000677 ! surface-enhanced Raman spectroscopy
 is_a: CHMO:0001986 ! non-resonance Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-15T05:14:57Z
 
@@ -1830,7 +1764,6 @@ id: CHMO:0002414
 name: scattering spectroscopy
 def: "Any method that measures the amount of light that a substance scatters at certain wavelengths, incident angles, and polarization angles." [FIX:0000057]
 is_a: CHMO:0000228 ! spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-17T04:09:34Z
 
@@ -1839,7 +1772,6 @@ id: CHMO:0002515
 name: laser Raman spectroscopy
 def: "Spectroscopy where the Raman scattering of monochromatic light, from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected." [FIX:0000375]
 is_a: CHMO:0000656 ! Raman spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-10-09T11:39:33Z
 
@@ -1850,7 +1782,6 @@ def: "A method for generating surface-specific vibrational spectra by mixing two
 synonym: "infrared-visible sum-frequency generation (SFG) spectroscopy" EXACT []
 synonym: "infrared-visible sum-frequency generation spectroscopy" EXACT []
 is_a: CHMO:0001288 ! sum-frequency generation spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-12-01T09:35:28Z
 
@@ -1870,7 +1801,6 @@ synonym: "TGDTA" EXACT []
 synonym: "thermogravimetric and differential thermal analyses" EXACT []
 synonym: "thermogravimetry coupled to differential thermal analysis" EXACT []
 is_a: CHMO:0000636 ! Fourier transform infrared spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2010-01-04T04:19:21Z
 
@@ -1882,7 +1812,6 @@ synonym: "electronic sum frequency generation spectroscopy" EXACT []
 synonym: "electronic sum-frequency generation (ESFG) spectroscopy" EXACT []
 synonym: "ESFG spectroscopy" EXACT []
 is_a: CHMO:0001288 ! sum-frequency generation spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2010-01-13T04:01:47Z
 
@@ -1897,7 +1826,6 @@ synonym: "two dimensional infrared spectroscopy" EXACT []
 synonym: "two-dimensional infrared (2D-IR) spectroscopy" EXACT []
 synonym: "two-dimensional IR spectroscopy" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 created_by: Hils
 creation_date: 2010-07-24T11:15:46Z
 
@@ -1906,7 +1834,6 @@ id: CHMO:0002793
 name: sensor
 def: "A piece of apparatus that is used to measure a physical quantity." [https://orcid.org/0000-0001-5985-7429]
 is_a: OBI:0000968 ! device
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
 id: CHMO:0002813
@@ -1916,10 +1843,45 @@ comment: For example, the sample might be a catalyst, so during those catalytic 
 synonym: "in situ DRIFT" EXACT []
 synonym: "in situ DRIFTS" EXACT []
 is_a: CHMO:0000645 ! diffuse reflectance infrared Fourier transform spectroscopy
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
 
 [Term]
-id: GO:0016301
+id: CHMO:0002820
+name: concentration
+def: "Experimental method output expressing the contribution of one constituent to the composition of a mixture." [https://orcid.org/0000-0001-5985-7429]
+comment: based heavily on https://doi.org/10.1351/goldbook.C01222
+is_a: CHMO:0000793 ! assay output
+relationship: IAO:0000136 CHEBI:60004 ! is about mixture
+
+[Term]
+id: CHMO:0002821
+name: mass concentration
+def: "Experimental method output expressing a concentration in terms of the mass of a constituent divided by the volume of the mixture." [https://orcid.org/0000-0001-5985-7429]
+comment: based heavily on https://doi.org/10.1351/goldbook.M03713
+is_a: CHMO:0002820 ! concentration
+
+[Term]
+id: CHMO:0002822
+name: amount concentration
+def: "Experimental method output expressing a concentration in terms of the amount of a constituent divided by the volume of the mixture." [https://orcid.org/0000-0001-5985-7429]
+comment: based heavily on https://doi.org/10.1351/goldbook.A00295
+synonym: "amount-of-substance concentration" EXACT []
+synonym: "molarity" EXACT []
+synonym: "substance concentration" EXACT []
+is_a: CHMO:0002820 ! concentration
+
+[Term]
+id: CHMO:0002823
+name: volume concentration
+def: "Experimental method output expressing a concentration in terms of the volume of a constituent divided by the volume of the mixture." [https://orcid.org/0000-0001-5985-7429]
+comment: based heavily on https://doi.org/10.1351/goldbook.C01222
+is_a: CHMO:0002820 ! concentration
+
+[Term]
+id: CHMO:0002824
+name: number concentration
+def: "Experimental method output expressing a concentration in terms of the number of entities of a constituent divided by the volume of the mixture." [https://orcid.org/0000-0001-5985-7429]
+comment: based heavily on https://doi.org/10.1351/goldbook.N04260
+is_a: CHMO:0002820 ! concentration
 
 [Term]
 id: IAO:0000003
@@ -1989,7 +1951,6 @@ id: IAO:0000027
 name: data item
 def: "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
 is_a: IAO:0000030 ! information content entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "data item" xsd:string
 property_value: IAO:0000112 "Data items include counts of things, analyte concentrations, and statistical summaries." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -2060,11 +2021,23 @@ property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
 
 [Term]
+id: IAO:0000038
+name: graph
+def: "A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way." []
+is_a: IAO:0000309 ! diagram
+property_value: IAO:0000111 "graph" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
+property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "person:Allyson Lister" xsd:string
+property_value: IAO:0000119 "group:OBI" xsd:string
+property_value: IAO:0000119 "OBI_0000240" xsd:string
+
+[Term]
 id: IAO:0000064
 name: algorithm
 def: "A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata." []
 is_a: IAO:0000104 ! plan specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "algorithm" xsd:string
 property_value: IAO:0000112 "PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2090,7 +2063,6 @@ id: IAO:0000101
 name: image
 def: "An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface." []
 is_a: IAO:0000308 ! figure
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "image" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
@@ -2133,7 +2105,6 @@ id: IAO:0000109
 name: measurement datum
 def: "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device." []
 is_a: IAO:0000027 ! data item
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "measurement datum" xsd:string
 property_value: IAO:0000112 "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -2150,6 +2121,20 @@ is_a: IAO:0000027 ! data item
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000116 "2/3/2009 Feedback from OBI\n\nThis should be a \"setting specification\". There is a question of whether it is information about a realizable or not.\n\nPro other specification are about realizables.\nCons sometimes specifies a quality which is not a realizable." xsd:string
 property_value: IAO:0000116 "Alan grouped these in placeholder for the moment. Name by analogy to measurement datum." xsd:string
+
+[Term]
+id: IAO:0000184
+name: scatter plot
+def: "A scatterplot is a graph which uses Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis." []
+is_a: IAO:0000038 ! graph
+property_value: IAO:0000111 "scatter plot" xsd:string
+property_value: IAO:0000112 "Comparison of gene expression values in two samples can be displayed in a scatter plot" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON:Chris Stoeckert" xsd:string
+property_value: IAO:0000117 "PERSON:James Malone" xsd:string
+property_value: IAO:0000117 "PERSON:Melanie Courtot" xsd:string
+property_value: IAO:0000118 "scattergraph" xsd:string
+property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Scatterplot" xsd:string
 
 [Term]
 id: IAO:0000225
@@ -2186,12 +2171,49 @@ property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
 
 [Term]
+id: IAO:0000309
+name: diagram
+def: "A figure that expresses one or more propositions" []
+is_a: IAO:0000308 ! figure
+property_value: IAO:0000111 "diagram" xsd:string
+property_value: IAO:0000112 "A molecular structure ribbon cartoon showing helices, turns and sheets and their relations to each other in space." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
+
+[Term]
+id: IAO:0000310
+name: document
+def: "A collection of information content entities intended to be understood together as a whole" []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000111 "document" xsd:string
+property_value: IAO:0000112 "A journal article, patent application, laboratory notebook, or a book" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
+
+[Term]
+id: IAO:0000311
+name: publication
+def: "A document that is the output of a publishing process." []
+comment: Revisit the term in Octorber 2020. Improve the defintion.
+is_a: IAO:0000310 ! document
+intersection_of: IAO:0000310 ! document
+intersection_of: OBI:0000312 IAO:0000444 {all_only="true"} ! is_specified_output_of publishing process
+property_value: IAO:0000111 "publication" xsd:string
+property_value: IAO:0000112 "journal article, newspaper story, book, etc." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Chris Stoeckert" xsd:string
+property_value: IAO:0000117 "PERSON: Jie Zheng" xsd:string
+property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
+property_value: IAO:0000118 "published document" xsd:string
+property_value: IAO:0000233 https://github.com/information-artifact-ontology/IAO/issues/232
+
+[Term]
 id: IAO:0000408
 name: length measurement datum
 def: "A scalar measurement datum that is the result of measurement of length quality" []
 is_a: IAO:0000032 ! scalar measurement datum
-relationship: IAO:0000039 UO:0000001 ! has measurement unit label
-relationship: IAO:0000221 PATO:0000122 ! is quality measurement of
+relationship: IAO:0000039 UO:0000001 ! has measurement unit label length unit
+relationship: IAO:0000221 PATO:0000122 ! is quality measurement of length
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 
@@ -2210,11 +2232,35 @@ id: IAO:0000414
 name: mass measurement datum
 def: "A scalar measurement datum that is the result of measurement of mass quality" []
 is_a: IAO:0000032 ! scalar measurement datum
-relationship: IAO:0000039 UO:0000002 ! has measurement unit label
+relationship: IAO:0000039 UO:0000002 ! has measurement unit label mass unit
 relationship: IAO:0000221 PATO:0000125 ! is quality measurement of mass
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000116 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case" xsd:string
 property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
+
+[Term]
+id: IAO:0000444
+name: publishing process
+def: "A planned process of making information, such as literature, music, and software etc., available to the public for sale or for free." []
+is_a: OBI:0000011 ! planned process
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "Person: Jie Zheng" xsd:string
+property_value: IAO:0000119 "https://en.wikipedia.org/wiki/Publishing" xsd:string
+property_value: IAO:0000233 https://github.com/information-artifact-ontology/IAO/issues/232
+property_value: IAO:0000234 "VEuPathDB" xsd:string
+
+[Term]
+id: IAO:0000572
+name: documenting
+def: "A planned process in which a document is created or added to by including the specified input in it." []
+is_a: OBI:0000011 ! planned process
+relationship: OBI:0000293 IAO:0000030 ! has_specified_input information content entity
+relationship: OBI:0000299 IAO:0000310 ! has_specified_output document
+property_value: IAO:0000112 "Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape" xsd:string
+property_value: IAO:0000117 "Bjoern Peters" xsd:string
+property_value: IAO:0000119 "wikipedia http://en.wikipedia.org/wiki/Documenting" xsd:string
 
 [Term]
 id: IAO:0000577
@@ -2498,14 +2544,12 @@ property_value: IAO:0000111 "EL++ ontology module" xsd:string
 id: NCBITaxon:9606
 name: person
 is_a: OBI:0100026 ! organism
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 
 [Term]
 id: OBI:0000011
 name: planned process
 def: "A process that realizes a plan which is the concretization of a plan specification." []
 is_a: BFO:0000015 ! process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "planned process" xsd:string
 property_value: IAO:0000111 "planned process" xsd:string
 property_value: IAO:0000112 "Injecting mice with a vaccine in order to test its efficacy" xsd:string
@@ -2526,7 +2570,6 @@ is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
 intersection_of: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
 relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "processed material" xsd:string
 property_value: IAO:0000112 "Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2537,7 +2580,9 @@ id: OBI:0000066
 name: investigation
 def: "a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s)." []
 is_a: OBI:0000011 ! planned process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
+relationship: BFO:0000051 IAO:0000572 ! has part documenting
+relationship: BFO:0000051 OBI:0000338 ! has part drawing a conclusion based on data
+relationship: BFO:0000051 OBI:0000471 ! has part study design execution
 property_value: IAO:0000111 "investigation" xsd:string
 property_value: IAO:0000112 "Lung cancer investigation using expression profiling, a stem cell transplant investigation, biobanking is not an investigation, though it may be part of an investigation" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2553,9 +2598,7 @@ id: OBI:0000067
 name: evaluant role
 def: "a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role" []
 is_a: BFO:0000023 ! role
-relationship: BFO:0000054 OBI:0000070 {all_only="true"} ! realized in assay
 relationship: RO:0000052 BFO:0000040 ! characteristic of material entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "evaluant role" xsd:string
 property_value: IAO:0000112 "When a specimen of blood is assayed for glucose concentration, the blood has the evaluant role. When measuring the mass of a mouse, the evaluant is the mouse. When measuring the time of DNA replication, the evaluant is the DNA. When measuring the intensity of light on a surface, the evaluant is the light source." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2574,7 +2617,6 @@ disjoint_from: OBI:0000339 ! planning
 disjoint_from: OBI:0200000 ! data transformation
 relationship: BFO:0000055 OBI:0000067 ! realizes evaluant role
 relationship: OBI:0000417 OBI:0000441 ! achieves_planned_objective assay objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "assay" xsd:string
 property_value: IAO:0000112 "Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2592,27 +2634,11 @@ id: OBI:0000073
 name: sample preparation for assay
 def: "A sample_preparation_for_assay is a protocol_application including material_enrollments and biomaterial_transformations. definition_source: OBI." []
 is_a: OBI:0000094 ! material processing
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "sample preparation for assay" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
 property_value: IAO:0000118 "study" xsd:string
 property_value: IAO:0000119 "OBI branch derived" xsd:string
-
-[Term]
-id: OBI:0000086
-name: reagent role
-def: "A role inhering in a biological or chemical entity that is intended to be applied in a scientific technique to participate (or have molecular components that participate) in a chemical reaction that facilitates the generation of data about some entity distinct from the bearer, or the generation of some specified material output distinct from the bearer." []
-comment: (copied from ReO)\nReagents are distinguished from instruments or devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, instruments do not participate in a chemical reaction/interaction during the technique.\n\nReagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance will realize only one of these roles in the execution of a given assay or technique. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.\n\nIn regard to the statement that reagents are 'distinct' from the specified outputs of a technique, note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a 'nucleic acid molecule') that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of 'reagent-ness' is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique).
-is_a: BFO:0000023 ! role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
-property_value: IAO:0000111 "reagent role" xsd:string
-property_value: IAO:0000112 "Buffer, dye, a catalyst, a solvating agent." xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "PERSON:Matthew Brush" xsd:string
-property_value: IAO:0000118 "reagent" xsd:string
-property_value: IAO:0000119 "PERSON:Matthew Brush" xsd:string
-property_value: IAO:0000232 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.\n\nMay 28 2013. Updated definition taken from ReO based on discussions initiated in Philly 2011 workshop.  Former defnition described a narrower view of reagents in chemistry that restricts bearers of the role to be chemical entities (\"a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances\").  Updated definition allows for broader view of reagents in the domain of biomedical research to include larger materials that have parts that participate chemically in a molecular reaction or interaction." xsd:string
 
 [Term]
 id: OBI:0000094
@@ -2622,7 +2648,6 @@ is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 BFO:0000040 {all_only="true"} ! has_specified_input material entity
 relationship: OBI:0000299 OBI:0000047 ! has_specified_output processed material
 relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "material processing" xsd:string
 property_value: IAO:0000112 "A cell lysis, production of a cloning vector, creating a buffer." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2639,7 +2664,6 @@ id: OBI:0000112
 name: specimen role
 def: "a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation" []
 is_a: BFO:0000023 ! role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "specimen role" xsd:string
 property_value: IAO:0000112 "liver section; a portion of a culture of cells; a nemotode or other animal once no longer a subject (generally killed); portion of blood from a patient." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2657,8 +2681,6 @@ name: investigation agent role
 def: "A role borne by an entity and that is realized in a process that is part of an investigation in which an objective is achieved. These processes include, among others: planning, overseeing, funding, reviewing." []
 comment: Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable investigations run by robot scientists such as ADAM (King et al, Science, 2009)
 is_a: BFO:0000023 ! role
-relationship: BFO:0000054 OBI:0000066 {all_only="true"} ! realized in investigation
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "investigation agent role" xsd:string
 property_value: IAO:0000112 "The person perform microarray experiments and submit microarray results (including raw data, processed data) with experiment description to ArrayExpress." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2675,7 +2697,6 @@ id: OBI:0000245
 name: organization
 def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
 is_a: BFO:0000040 ! material entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "organization" xsd:string
 property_value: IAO:0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2691,7 +2712,6 @@ id: OBI:0000272
 name: protocol
 def: "A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process." []
 is_a: IAO:0000104 ! plan specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "protocol" xsd:string
 property_value: IAO:0000112 "PCR protocol, has objective specification, amplify DNA fragment of interest, and has action specification describes the amounts of experimental reagents used (e..g. buffers, dNTPS, enzyme), and the temperature and cycle time settings for running the PCR." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2700,10 +2720,23 @@ property_value: IAO:0000119 "OBI branch derived + wikipedia (http://en.wikipedia
 property_value: OBI:0001847 "study protocol" xsd:string
 
 [Term]
+id: OBI:0000338
+name: drawing a conclusion based on data
+def: "A planned process in which data gathered in an investigation is evaluated in the context of existing knowledge with the objective to generate more general conclusions or to conclude that the data does not allow one to draw general conclusion" []
+is_a: OBI:0000011 ! planned process
+relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
+relationship: OBI:0000299 OBI:0001909 ! has_specified_output conclusion based on data
+property_value: IAO:0000111 "interpreting data" xsd:string
+property_value: IAO:0000112 "Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
+property_value: IAO:0000117 "PERSON: Jennifer Fostel" xsd:string
+property_value: IAO:0000119 "Bjoern Peters" xsd:string
+
+[Term]
 id: OBI:0000339
 name: planning
 def: "a process of creating or modifying a plan specification" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "planning" xsd:string
 property_value: IAO:0000112 "The process of a scientist thinking about and deciding what reagents to use as part of a protocol for an experiment. Note that the scientist could be human or a \"robot scientist\" executing software." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2717,7 +2750,6 @@ id: OBI:0000369
 name: magnify function
 def: "A magnify function is a function to increase the size of a transmitted object image through the precise arrangement of energy diffraction elements along an imaging path." []
 is_a: BFO:0000034 ! function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "magnify function" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Bill Bug" xsd:string
@@ -2730,9 +2762,7 @@ id: OBI:0000397
 name: image acquisition function
 def: "An image acquisition function is a function to acquire an image of a material" []
 is_a: OBI:0000453 ! measure function
-relationship: BFO:0000054 OBI:0001007 {all_only="true"} ! realized in image creation
 relationship: RO:0000052 OBI:0000398 ! characteristic of image creation device
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "image acquisition function" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Frank Gibson" xsd:string
@@ -2745,7 +2775,6 @@ is_a: OBI:0000832 ! measurement device
 intersection_of: OBI:0000968 ! device
 intersection_of: RO:0000085 OBI:0000397 ! has function image acquisition function
 relationship: RO:0000085 OBI:0000397 ! has function image acquisition function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "image acquisition device" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Frank Gibson" xsd:string
@@ -2757,7 +2786,6 @@ id: OBI:0000399
 name: solid support function
 def: "A solid support function is a function of a device on which an entity is kept in a defined position and prevented in its movement" []
 is_a: BFO:0000034 ! function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "solid support function" xsd:string
 property_value: IAO:0000112 "Taped, glued, pinned, dried or molecularly bonded to a solid support" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2770,7 +2798,6 @@ id: OBI:0000441
 name: assay objective
 def: "an objective specification to determine a specified type of information about an evaluated entity (the material entity bearing evaluant role)" []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "assay objective" xsd:string
 property_value: IAO:0000112 "the objective to determine the weight of a mouse." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2783,7 +2810,6 @@ name: measure function
 def: "Measure function is a function that is borne by a processed material  and realized in a process in which information about some entity is expressed relative to some reference." []
 is_a: BFO:0000034 ! function
 relationship: RO:0000079 OBI:0000047 ! function of processed material
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "measure function" xsd:string
 property_value: IAO:0000112 "A glucometer measures blood glucose concentration, the glucometer has a measure function." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2797,7 +2823,6 @@ id: OBI:0000456
 name: material transformation objective
 def: "an objective specifiction that creates an specific output object from input materials." []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "material transformation objective" xsd:string
 property_value: IAO:0000112 "The objective to create a mouse infected with LCM virus. The objective to create a defined solution of PBS." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2810,11 +2835,23 @@ property_value: IAO:0000118 "artifact  creation objective" xsd:string
 property_value: IAO:0000119 "GROUP: OBI PlanAndPlannedProcess Branch" xsd:string
 
 [Term]
+id: OBI:0000471
+name: study design execution
+def: "a planned process that carries out a study design" []
+is_a: OBI:0000011 ! planned process
+property_value: IAO:0000111 "study design execution" xsd:string
+property_value: IAO:0000112 "injecting a mouse with PBS solution, weighing it, and recording the weight according to a study design." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "removed axiom has_part some (assay or 'data transformation') per discussion on protocol application mailing list to improve reasoner performance. The axiom is still desired." xsd:string
+property_value: IAO:0000119 "branch derived" xsd:string
+property_value: IAO:0000232 "6/11/9: edited at workshop. Used to be: study design execution is a process with the objective to generate data according to a concretized study design. The execution of a study design is part of an investigation, and minimally consists of an assay or data transformation." xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
 id: OBI:0000571
 name: manufacturer role
 def: "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process." []
 is_a: BFO:0000023 ! role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "manufacturer role" xsd:string
 property_value: IAO:0000112 "With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -2827,7 +2864,6 @@ name: device setting
 def: "a quality inheres_in some device and is concretization of some (device_setting_specification and is_about a quality of the device" []
 is_a: BFO:0000019 ! quality
 relationship: RO:0000052 OBI:0000047 ! characteristic of processed material
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "device setting" xsd:string
 property_value: IAO:0000112 "Examples, 300V for 4 hours, 200mvolts, 37degrees.A knob set a 300 V is the device setting, the protocol stating to set the instrument to 300V is a device setting specification" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -2844,7 +2880,6 @@ intersection_of: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen c
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
 relationship: OBI:0000299 OBI:0100051 ! has_specified_output specimen
 relationship: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "specimen collection process" xsd:string
 property_value: IAO:0000112 "drawing blood from a patient for analysis, collecting a piece of a plant for depositing in a herbarium, buying meat from a butcher in order to measure its protein content in an investigation" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2858,11 +2893,22 @@ property_value: IAO:0000232 "5/31/2012: This process is not necessarily an acqui
 property_value: IAO:0000232 "6/9/09: used at workshop" xsd:string
 
 [Term]
+id: OBI:0000674
+name: center value
+def: "A data item that is produced as the output of a center calculation data transformation and represents the center value of the input data." []
+is_a: IAO:0000027 ! data item
+relationship: OBI:0000312 OBI:0200181 ! is_specified_output_of center calculation data transformation
+property_value: IAO:0000111 "center value" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "PERSON: James Malone" xsd:string
+property_value: IAO:0000117 "PERSON: Monnie McGee" xsd:string
+property_value: IAO:0000118 "median" xsd:string
+
+[Term]
 id: OBI:0000684
 name: specimen collection objective
 def: "A objective specification to obtain a material entity for potential use as an input during an investigation." []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "specimen collection objective" xsd:string
 property_value: IAO:0000112 "The objective to collect bits of excrement in the rainforest. The objective to obtain a blood sample from a patient." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2874,12 +2920,26 @@ id: OBI:0000740
 name: material sample role
 def: "A material sample role is a specimen role borne by a material entity that is the output of a material sampling process." []
 is_a: OBI:0000112 ! specimen role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "material sample role" xsd:string
 property_value: IAO:0000112 "a role borne by a portion of blood taken to represent all the blood in an organism; the role borne by a population of humans with HIV enrolled in a study taken to represent patients with HIV in general." xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "7/13/09: Note that this is a relational role: between the sample taken and the 'sampled' material of which the sample is thought to be representative off." xsd:string
 property_value: IAO:0000233 https://github.com/obi-ontology/obi/issues/1013
+
+[Term]
+id: OBI:0000744
+name: material sampling process
+def: "A specimen gathering process with the objective to obtain a specimen that is representative of the input material entity" []
+is_a: OBI:0000659 ! specimen collection process
+intersection_of: OBI:0000659 ! specimen collection process
+intersection_of: OBI:0000293 BFO:0000040 ! has_specified_input material entity
+intersection_of: OBI:0000299 OBI:0000747 ! has_specified_output material sample
+relationship: OBI:0000299 OBI:0000747 ! has_specified_output material sample
+property_value: IAO:0000111 "material sampling process" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000118 "sample collection" xsd:string
+property_value: IAO:0000118 "sampling" xsd:string
+property_value: IAO:0000233 "https://github.com/obi-ontology/obi/issues/1002" xsd:string
 
 [Term]
 id: OBI:0000747
@@ -2889,7 +2949,6 @@ is_a: OBI:0100051 ! specimen
 intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0000087 OBI:0000740 ! has role material sample role
 relationship: RO:0000087 OBI:0000740 ! has role material sample role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "material sample" xsd:string
 property_value: IAO:0000112 "blood drawn from patient to measure his systemic glucose level. A population of humans with HIV enrolled in a study taken to represent patients with HIV in general." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -2906,7 +2965,6 @@ is_a: OBI:0000968 ! device
 intersection_of: OBI:0000968 ! device
 intersection_of: RO:0000085 OBI:0000453 ! has function measure function
 relationship: RO:0000085 OBI:0000453 ! has function measure function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "measurement device" xsd:string
 property_value: IAO:0000112 "A ruler, a microarray scanner, a Geiger counter." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -2919,9 +2977,23 @@ name: manufacturer
 def: "A person or organization that has a manufacturer role." []
 is_a: BFO:0000040 ! material entity
 relationship: RO:0000087 OBI:0000571 ! has role manufacturer role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "manufacturer" xsd:string
 property_value: IAO:0000114 IAO:0000123
+
+[Term]
+id: OBI:0000953
+name: processed specimen
+def: "A specimen that has been intentionally physically modified." []
+comment: A tissue sample that has been sliced and stained for a histology study.
+is_a: OBI:0000047 ! processed material
+is_a: OBI:0100051 ! specimen
+intersection_of: OBI:0000047 ! processed material
+intersection_of: OBI:0100051 ! specimen
+property_value: IAO:0000111 "processed specimen" xsd:string
+property_value: IAO:0000112 "A tissue sample that has been sliced and stained for a histology study.\nA blood specimen that has been centrifuged to obtain the white blood cells." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Bjoern Peters" xsd:string
+property_value: IAO:0000119 "Bjoern Peters" xsd:string
 
 [Term]
 id: OBI:0000968
@@ -2929,7 +3001,6 @@ name: device
 def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." []
 is_a: OBI:0000047 ! processed material
 relationship: RO:0000085 BFO:0000034 ! has function function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "device" xsd:string
 property_value: IAO:0000112 "A voltmeter is a measurement device which is intended to perform some measure function." xsd:string
 property_value: IAO:0000112 "An autoclave is a device that sterlizes instruments or contaminated waste by applying high temperature and pressure." xsd:string
@@ -2946,7 +3017,6 @@ def: "A planned process that captures an image of an object." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
 relationship: OBI:0000299 IAO:0000101 ! has_specified_output image
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "image acquisition" xsd:string
 property_value: IAO:0000112 "Taking a polaroid picture of a patients skin lesion; Using a digital camera to take a picture of a gel" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -2954,52 +3024,83 @@ property_value: IAO:0000117 "PERSON: Jie Zheng" xsd:string
 property_value: IAO:0000118 "image acquisition" xsd:string
 
 [Term]
-id: OBI:0001616
-name: specimen identifier
-def: "A CRID symbol denotes a specimen and used to distinguish one specimen from another in an investigation." []
-is_a: IAO:0000577 ! centrally registered identifier symbol
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
+id: OBI:0001896
+name: investigation assay specification
+def: "A plan specification which indicates the assay type used to obtain data." []
+is_a: IAO:0000104 ! plan specification
+relationship: BFO:0000050 OBI:0500000 ! part of study design
+relationship: IAO:0000136 OBI:0000070 ! is about assay
 property_value: http://purl.org/dc/elements/1.1/source "NIAID GSCID-BRC" xsd:string
-property_value: IAO:0000111 "specimen identifier" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Person: Chris Stoeckert, Jie Zheng" xsd:string
-property_value: IAO:0000118 "specimen ID" xsd:string
-property_value: IAO:0000119 "NIAID GSCID-BRC metadata working group" xsd:string
-property_value: OBI:0001886 "Specimen ID" xsd:string
-
-[Term]
-id: OBI:0001622
-name: investigation title
-def: "A textual entity that denotes an investigation." []
-is_a: OBI:0001898 ! comment on investigation
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
-property_value: http://purl.org/dc/elements/1.1/source "NIAID GSCID-BRC" xsd:string
-property_value: IAO:0000111 "investigation title" xsd:string
-property_value: IAO:0000114 IAO:0000120
-property_value: IAO:0000117 "Person:Chris Stoeckert, Jie Zheng" xsd:string
-property_value: IAO:0000119 "NIAID GSCID-BRC metadata working group" xsd:string
-property_value: OBI:0001847 "study title" xsd:string
-property_value: OBI:0001886 "project title" xsd:string
-
-[Term]
-id: OBI:0001898
-name: comment on investigation
-def: "A textual entity that is about any of the aspects of an investigation worth noting" []
-is_a: IAO:0000300 ! textual entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
-property_value: http://purl.org/dc/elements/1.1/source "NIAID GSCID-BRC" xsd:string
-property_value: IAO:0000111 "comment on investigation" xsd:string
+property_value: IAO:0000111 "investigation assay specification" xsd:string
+property_value: IAO:0000112 "Some examples of Project Method are Sequence, Array, Mass Spectrometry" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Chris Stoeckert, Jie Zheng" xsd:string
 property_value: IAO:0000119 "NIAID GSCID-BRC metadata working group" xsd:string
-property_value: OBI:0001886 "Comments" xsd:string
+property_value: OBI:0001886 "Project Method" xsd:string
+
+[Term]
+id: OBI:0001909
+name: conclusion based on data
+def: "An information content entity that is inferred from data." []
+is_a: IAO:0000030 ! information content entity
+relationship: OBI:0000124 IAO:0000027 ! is_supported_by_data data item
+relationship: OBI:0000312 OBI:0000338 ! is_specified_output_of drawing a conclusion based on data
+property_value: IAO:0000111 "conclusion based on data" xsd:string
+property_value: IAO:0000112 "The conclusion that a gene is upregulated in a tissue sample based on the band intensity in a western blot. The conclusion that a patient has a infection based on measurement of an elevated body temperature and reported headache. The conclusion that there were problems in an investigation because data from PCR and microarray are conflicting.\nThe following are NOT conclusions based on data: data themselves; results from pure mathematics, e.g. \"13 is prime\"." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "In the Philly 2013 workshop, we recognized the limitations of \"conclusion textual entity\", and we introduced this as more general. The need for the 'textual entity' term going forward is up for future debate." xsd:string
+property_value: IAO:0000117 "Group:2013 Philly Workshop group" xsd:string
+property_value: IAO:0000119 "Group:2013 Philly Workshop group" xsd:string
+
+[Term]
+id: OBI:0001930
+name: categorical value specification
+def: "A value specification that is specifies one category out of a fixed number of nominal categories" []
+is_a: OBI:0001933 ! value specification
+property_value: IAO:0000111 "categorical value specification" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
+
+[Term]
+id: OBI:0001931
+name: scalar value specification
+def: "A value specification that consists of two parts: a numeral and a unit label" []
+is_a: OBI:0001933 ! value specification
+property_value: IAO:0000111 "scalar value specification" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
+
+[Term]
+id: OBI:0001933
+name: value specification
+def: "An information content entity that specifies a value within a classification scheme or on a quantitative scale." []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000111 "value specification" xsd:string
+property_value: IAO:0000112 "The value of 'positive' in a classification scheme of \"positive or negative\"; the value of '20g' on the quantitative scale of mass." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "This term is currently a descendant of 'information content entity', which requires that it 'is about' something. A value specification of '20g' for a measurement data item of the mass of a particular mouse 'is about' the mass of that mouse. However there are cases where a value specification is not clearly about any particular. In the future we may change 'value specification' to remove the 'is about' requirement." xsd:string
+property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
+
+[Term]
+id: OBI:0002076
+name: collection of specimens
+def: "A material entity that has two or more specimens as its parts." []
+is_a: BFO:0000040 ! material entity
+intersection_of: BFO:0000040 ! material entity
+intersection_of: RO:0002351 OBI:0100051 {all_only="true"} ! has member specimen
+property_value: http://purl.org/dc/elements/1.1/source "Biobank" xsd:string
+property_value: IAO:0000111 "collection of specimens" xsd:string
+property_value: IAO:0000112 "Blood cells collected from multiple donors over the course of a study." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "Details see tracker: https://sourceforge.net/p/obi/obi-terms/778/" xsd:string
+property_value: IAO:0000117 "Person: Chris Stoeckert, Jie Zheng" xsd:string
+property_value: IAO:0000119 "OBIB, OBI" xsd:string
 
 [Term]
 id: OBI:0100026
 name: organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
 is_a: BFO:0000040 ! material entity
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "organism" xsd:string
 property_value: IAO:0000112 "animal" xsd:string
 property_value: IAO:0000112 "fungus" xsd:string
@@ -3019,7 +3120,6 @@ is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
 intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
 relationship: RO:0000087 OBI:0000112 ! has role specimen role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "specimen" xsd:string
 property_value: IAO:0000112 "Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3036,7 +3136,6 @@ def: "A planned process that produces output data from input data." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has_specified_input data item
 relationship: OBI:0000417 OBI:0200166 ! achieves_planned_objective data transformation objective
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "data transformation" xsd:string
 property_value: IAO:0000112 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3058,7 +3157,6 @@ id: OBI:0200166
 name: data transformation objective
 def: "An objective specification to transformation input data into output data" []
 is_a: IAO:0000005 ! objective specification
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "data transformation objective" xsd:string
 property_value: IAO:0000112 "normalize objective" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3067,16 +3165,25 @@ property_value: IAO:0000117 "James Malone" xsd:string
 property_value: IAO:0000119 "PERSON: James Malone" xsd:string
 
 [Term]
-id: OBI:0302732
-name: solvent role
-def: "solvent role is a role which inheres in a molecular entity capable of ensuring the dissolution of another chemical entity and realized by the process of solvation" []
-is_a: BFO:0000023 ! role
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
-property_value: IAO:0000111 "solvent role" xsd:string
-property_value: IAO:0000112 "PMID: 18373502.Transfusion. 2008 Mar 25. Solvent/detergent treatment of platelet concentrates enhances the release of growth factors." xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
-property_value: IAO:0000119 "adpated from wikipedia (http://en.wikipedia.org/wiki/Solvatation)" xsd:string
+id: OBI:0200177
+name: center calculation objective
+def: "A center calculation objective is a data transformation objective where the aim is to calculate the center of an input data set." []
+is_a: OBI:0200166 ! data transformation objective
+property_value: IAO:0000111 "center calculation objective" xsd:string
+property_value: IAO:0000112 "A mean calculation which has center calculation objective is a data transformation in which the center of the input data is discovered through the calculation of a mean average." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+
+[Term]
+id: OBI:0200181
+name: center calculation data transformation
+def: "A center calculation data transformation is a data transformation that has objective of center calculation." []
+is_a: OBI:0200000 ! data transformation
+property_value: IAO:0000111 "center calculation data transformation" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
 
 [Term]
 id: OBI:0400169
@@ -3084,7 +3191,6 @@ name: microscope
 def: "A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)" []
 is_a: OBI:0000398 ! image creation device
 relationship: RO:0000085 OBI:0000369 ! has function magnify function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "microscope" xsd:string
 property_value: IAO:0000112 "PMID:18466942. A light and transmission electron microscope study of hepatic portal tracts in the rhesus monkey (Macacus rhesus). Tissue Cell. 2008 May 6" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -3097,7 +3203,6 @@ name: microscope slide
 def: "A microscope slide is a device usually made of glass which is used as a solid matrix for (biological) material deposited on its surface and which is compatible for use with a microscope instrument" []
 is_a: OBI:0000968 ! device
 relationship: RO:0000085 OBI:0000399 ! has function solid support function
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "microscope slide" xsd:string
 property_value: IAO:0000112 "PMID: 9668975.Microscope slide for enhanced analysis of DNA damage using the comet assay." xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -3110,7 +3215,6 @@ name: study design
 def: "A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution." []
 is_a: IAO:0000104 ! plan specification
 relationship: BFO:0000051 OBI:0000272 ! has part protocol
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "study design" xsd:string
 property_value: IAO:0000112 "a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3138,6 +3242,44 @@ subset: relational_slim
 subset: scalar_slim
 synonym: "concentration" EXACT []
 is_a: PATO:0002182 ! molecular quality
+
+[Term]
+id: PATO:0000051
+name: morphology
+namespace: quality
+def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
+id: PATO:0000117
+name: size
+namespace: quality
+def: "A morphology quality inhering in a bearer by virtue of the bearer's physical magnitude." [WordNet:WordNet]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0000051 ! morphology
+
+[Term]
+id: PATO:0000119
+name: height
+namespace: quality
+def: "A 1-D extent quality inhering in a bearer by virtue of the bearer's vertical dimension of extension." [PATOC:GVG]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0001708 ! 1-D extent
+
+[Term]
+id: PATO:0000122
+name: length
+namespace: quality
+def: "A 1-D extent quality which is equal to the distance between two points." [PATOC:GVG]
+comment: Length often refers to the longer or longest dimension of an object, however, this is not always true. See https://github.com/pato-ontology/pato/issues/337 for full discussion.
+subset: attribute_slim
+subset: mpath_slim
+subset: scalar_slim
+is_a: PATO:0001708 ! 1-D extent
+property_value: seeAlso "https://github.com/pato-ontology/pato/issues/337" xsd:string
 
 [Term]
 id: PATO:0000125
@@ -3188,6 +3330,18 @@ subset: scalar_slim
 is_a: PATO:0001018 ! physical quality
 
 [Term]
+id: PATO:0000921
+name: width
+namespace: quality
+def: "A 1-D extent quality which is equal to the distance from one side of an object to another side which is opposite." [PATOC:GVG]
+comment: Width often refers to the dimension that is greater than the extent in only one of the other two orthogonal dimensions, however, this is not always true. See https://github.com/pato-ontology/pato/issues/337 for full discussion.
+subset: attribute_slim
+subset: scalar_slim
+synonym: "breadth" RELATED []
+is_a: PATO:0001708 ! 1-D extent
+property_value: seeAlso "https://github.com/pato-ontology/pato/issues/337" xsd:string
+
+[Term]
 id: PATO:0001018
 name: physical quality
 namespace: quality
@@ -3235,6 +3389,24 @@ def: "A physical quality which is equal to the distance between repeating units 
 subset: attribute_slim
 subset: scalar_slim
 is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0001595
+name: depth
+namespace: quality
+def: "A 1-D extent quality inhering in a bearer by virtue of the bearer's downward or backward or inward dimension." [WordNet:WordNet]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0001708 ! 1-D extent
+
+[Term]
+id: PATO:0001708
+name: 1-D extent
+namespace: quality
+def: "A size quality inhering in an bearer by virtue of the bearer's extension in one dimension." [PATOC:GVG]
+subset: attribute_slim
+synonym: "1-D size" EXACT []
+is_a: PATO:0000117 ! size
 
 [Term]
 id: PATO:0002182
@@ -3293,6 +3465,908 @@ property_value: IAO:0000117 "Alejandra Gonzalez-Beltran" xsd:string
 property_value: IAO:0000117 "Orlaith Burke" xsd:string
 property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
 property_value: IAO:0000119 "adapted from Wolfram Alpha:\nhttps://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427efdcsig76g7" xsd:string
+
+[Term]
+id: UO:0000001
+name: length unit
+comment: "A unit which is a standard measure of the distance between two points." [Wikipedia:Wikipedia]
+is_a: IAO:0000003 ! measurement unit label
+
+[Term]
+id: UO:0000002
+name: mass unit
+comment: "A unit which is a standard measure of the amount of matter/energy of a physical object." [Wikipedia:Wikipedia]
+is_a: IAO:0000003 ! measurement unit label
+
+[Term]
+id: UO:0000008
+name: meter
+comment: "A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second." [BIPM:BIPM, NIST:NIST]
+synonym: "m" EXACT []
+synonym: "metre" EXACT []
+is_a: UO:1000008 ! meter based unit
+
+[Term]
+id: UO:0000009
+name: kilogram
+comment: "A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France." [BIPM:BIPM, NIST:NIST]
+synonym: "kg" EXACT []
+is_a: UO:1000021 ! gram based unit
+
+[Term]
+id: UO:0000015
+name: centimeter
+comment: "A length unit which is equal to one hundredth of a meter or 10^[-2] m." [NIST:NIST]
+synonym: "centimetre" EXACT []
+synonym: "cm" EXACT []
+is_a: UO:1000008 ! meter based unit
+
+[Term]
+id: UO:0000016
+name: millimeter
+comment: "A length unit which is equal to one thousandth of a meter or 10^[-3] m." [NIST:NIST]
+synonym: "millimetre" EXACT []
+synonym: "mm" EXACT []
+is_a: UO:1000008 ! meter based unit
+
+[Term]
+id: UO:0000017
+name: micrometer
+comment: "A length unit which is equal to one millionth of a meter or 10^[-6] m." [NIST:NIST]
+synonym: "micrometre" EXACT []
+synonym: "micron" EXACT []
+synonym: "um" EXACT []
+is_a: UO:1000008 ! meter based unit
+
+[Term]
+id: UO:0000018
+name: nanometer
+comment: "A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m." [NIST:NIST]
+synonym: "nanometre" EXACT []
+synonym: "nm" EXACT []
+is_a: UO:1000008 ! meter based unit
+
+[Term]
+id: UO:0000019
+name: angstrom
+comment: "A length unit which is equal to 10 [-10] m." [NIST:NIST]
+synonym: "Å" EXACT []
+is_a: UO:1000019 ! angstrom based unit
+
+[Term]
+id: UO:0000020
+name: picometer
+comment: "A length unit which is equal to 10^[-12] m." [NIST:NIST]
+synonym: "picometre" EXACT []
+synonym: "pm" EXACT []
+is_a: UO:1000008 ! meter based unit
+
+[Term]
+id: UO:0000021
+name: gram
+comment: "A mass unit which is equal to one thousandth of a kilogram or 10^[-3] kg." [NIST:NIST]
+synonym: "g" EXACT []
+is_a: UO:1000021 ! gram based unit
+
+[Term]
+id: UO:0000022
+name: milligram
+comment: "A mass unit which is equal to one thousandth of a gram or 10^[-3] g." [UOC:GVG]
+synonym: "mg" EXACT []
+is_a: UO:1000021 ! gram based unit
+
+[Term]
+id: UO:0000023
+name: microgram
+comment: "A mass unit which is equal to one millionth of a gram or 10^[-6] g." [UOC:GVG]
+synonym: "ug" EXACT []
+is_a: UO:1000021 ! gram based unit
+
+[Term]
+id: UO:0000024
+name: nanogram
+comment: "A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g." [UOC:GVG]
+synonym: "ng" EXACT []
+is_a: UO:1000021 ! gram based unit
+
+[Term]
+id: UO:0000025
+name: picogram
+comment: "A mass unit which is equal to 10^[-12] g." [UOC:GVG]
+synonym: "pg" EXACT []
+is_a: UO:1000021 ! gram based unit
+
+[Term]
+id: UO:0000026
+name: femtogram
+comment: "A mass unit which is equal to 10^[-15] g." [NIST:NIST]
+synonym: "fg" EXACT []
+is_a: UO:1000021 ! gram based unit
+
+[Term]
+id: UO:0000051
+name: concentration unit
+comment: "A unit which represents a standard measurement of how much of a given substance there is mixed with another substance." [UOC:GVG]
+is_a: IAO:0000003 ! measurement unit label
+
+[Term]
+id: UO:0000055
+name: molar mass unit
+comment: "A unit which is a standard measure of the mass of a homogeneous substance containing 6.02 x 1023 atoms or molecules." [Wikipedia:Wikipedia]
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:0000061
+name: unit of molarity
+comment: "A concentration unit which is a standard measure of the number of moles of a given substance per liter of solution." [UOC:GVG]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000062
+name: molar
+comment: "A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L)." [UOC:GVG]
+synonym: "M" EXACT []
+is_a: UO:1000062 ! molar based unit
+
+[Term]
+id: UO:0000063
+name: millimolar
+comment: "A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M." [UOC:GVG]
+synonym: "mM" EXACT []
+is_a: UO:1000062 ! molar based unit
+
+[Term]
+id: UO:0000064
+name: micromolar
+comment: "A unit of molarity which is equal to one millionth of a molar or 10^[-6] M." [UOC:GVG]
+synonym: "uM" EXACT []
+is_a: UO:1000062 ! molar based unit
+
+[Term]
+id: UO:0000065
+name: nanomolar
+comment: "A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M." [UOC:GVG]
+synonym: "nM" EXACT []
+is_a: UO:1000062 ! molar based unit
+
+[Term]
+id: UO:0000066
+name: picomolar
+comment: "A unit of molarity which is equal to 10^[-12] M." [UOC:GVG]
+synonym: "pM" EXACT []
+is_a: UO:1000062 ! molar based unit
+
+[Term]
+id: UO:0000067
+name: unit of molality
+comment: "A concentration unit which is a standard measure of the number of moles of a given substance per kilogram of solvent." [UOC:GVG]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000068
+name: molal
+comment: "A unit of concentration which expresses a concentration of a solution of 1 mole per kilogram of solvent (mol/kg)." [UOC:GVG]
+synonym: "m" EXACT []
+is_a: UO:1000068 ! molal based unit
+
+[Term]
+id: UO:0000069
+name: millimolal
+comment: "A molality unit which is equal to one thousandth of a molal or 10^[-3] m." [UOC:GVG]
+synonym: "mm" EXACT []
+is_a: UO:1000068 ! molal based unit
+
+[Term]
+id: UO:0000070
+name: micromolal
+comment: "A molality unit which is equal to one millionth of a molal or 10^[-6] m." [UOC:GVG]
+synonym: "um" EXACT []
+is_a: UO:1000068 ! molal based unit
+
+[Term]
+id: UO:0000071
+name: nanomolal
+comment: "A molality unit which is equal to one thousandth of one millionth of a molal or 10^[-9] m." [UOC:GVG]
+synonym: "nm" EXACT []
+is_a: UO:1000068 ! molal based unit
+
+[Term]
+id: UO:0000072
+name: picomolal
+comment: "A molality unit which is equal to 10^[-12] m." [UOC:GVG]
+synonym: "pm" EXACT []
+is_a: UO:1000068 ! molal based unit
+
+[Term]
+id: UO:0000073
+name: femtomolar
+comment: "A unit of molarity which is equal to 10^[-15] M." [UOC:GVG]
+synonym: "fM" EXACT []
+is_a: UO:1000062 ! molar based unit
+
+[Term]
+id: UO:0000074
+name: unit of normality
+comment: "A unit of concentration which highlights the chemical nature of salts." [Wikipedia:Wikipedia]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000075
+name: normal
+comment: "A unit of concentration which is one gram equivalent of a solute per liter of solution. A gram equivalent weight or equivalent is a measure of the reactive capacity of a given molecule." [Wikipedia:Wikipedia]
+synonym: "N" EXACT []
+is_a: UO:1000075 ! normal based unit
+
+[Term]
+id: UO:0000076
+name: mole fraction
+comment: "A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution." [Wikipedia:Wikipedia]
+synonym: "(x)" EXACT []
+synonym: "chi" EXACT []
+is_a: UO:1000076 ! mole fraction based unit
+
+[Term]
+id: UO:0000087
+name: kilogram per mole
+comment: "A molar mass unit which is equal to one kilogram of mass of one mole of chemical element or chemical compound." [NIST:NIST]
+synonym: "kg/mol" EXACT []
+is_a: UO:1000088 ! gram per mole based unit
+
+[Term]
+id: UO:0000088
+name: gram per mole
+comment: "A molar mass unit which is equal to one gram of mass of one mole of chemical element or chemical compound." [NIST:NIST]
+synonym: "g/mol" EXACT []
+is_a: UO:1000088 ! gram per mole based unit
+
+[Term]
+id: UO:0000163
+name: mass percentage
+comment: "A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture." [Wikipedia:Wikipedia]
+synonym: "w/w" EXACT []
+synonym: "weight-weight percentage" EXACT []
+is_a: UO:1000163 ! mass percentage based unit
+
+[Term]
+id: UO:0000164
+name: mass volume percentage
+comment: "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture." [UOC:GVG]
+synonym: "(w/v)" EXACT []
+synonym: "weight-volume percentage" EXACT []
+is_a: UO:1000164 ! mass volume percentage based unit
+
+[Term]
+id: UO:0000165
+name: volume percentage
+comment: "A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution." [UOC:GVG]
+synonym: "% (v/v)" EXACT []
+is_a: UO:1000165 ! volume percentage based unit
+
+[Term]
+id: UO:0000177
+name: unit per volume unit
+comment: "A concentration unit which is a standard measure of the number of units, as an agreed arbitrary amount, of a given substance per a specific volume of solution." [Webmd:Webmd]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000178
+name: unit per milliliter
+comment: "A unit per milliliter unit which is equal to one unit of an agreed arbitrary amount per one milliliter." [Webmd:Webmd]
+synonym: "U/ml" EXACT []
+synonym: "unit per millilitre" EXACT []
+is_a: UO:1000178 ! unit per milliliter based unit
+
+[Term]
+id: UO:0000179
+name: unit per liter
+comment: "A unit per milliliter unit which is equal to one unit of an agreed arbitrary amount per one liter." [UOC:GVG]
+synonym: "U/l" EXACT []
+synonym: "unit per litre" EXACT []
+is_a: UO:1000179 ! unit per liter based unit
+
+[Term]
+id: UO:0000180
+name: mass per unit volume
+comment: "A concentration unit which is a standard measure of the mass of a substance in a given volume (density)." [Wikipedia:Wikipedia]
+is_a: UO:1000180 ! mass per unit volume based unit
+
+[Term]
+id: UO:0000196
+name: pH
+comment: "A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+)." [Wikipedia:Wikipedia]
+is_a: UO:1000196 ! pH based unit
+
+[Term]
+id: UO:0000200
+name: cell concentration unit
+comment: "A concentration unit which denotes the average cell number in a given volume." [Bioedonline:Bioedonline]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000201
+name: cells per milliliter
+comment: "A unit of cell concentration which is equal to one cell in a volume of 1 milliliter." [Bioedonline:Bioedonline]
+synonym: "cells per millilitre" EXACT []
+synonym: "cells per ml" EXACT []
+is_a: UO:1000201 ! cells per milliliter based unit
+
+[Term]
+id: UO:0000202
+name: catalytic (activity) concentration unit
+comment: "A concentration unit which is a standard measure of the amount of the action of a catalyst in a given volume." [UOC:GVG]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000203
+name: katal per cubic meter
+comment: "A catalytic (activity) concentration unit which is equal to 1 katal activity of a catalyst in a given volume of one cubic meter." [NIST:NIST]
+synonym: "kat/m^[3]" EXACT []
+synonym: "katal per cubic metre" EXACT []
+is_a: UO:1000203 ! katal per cubic meter based unit
+
+[Term]
+id: UO:0000204
+name: katal per liter
+comment: "A catalytic (activity) concentration unit which is equal to 1 katal activity of a catalyst in a given volume of one thousandth of a cubic meter." [NIST:NIST]
+synonym: "kat/l" EXACT []
+synonym: "katal per litre" EXACT []
+is_a: UO:1000204 ! katal per liter based unit
+
+[Term]
+id: UO:0000205
+name: volume per unit volume
+comment: "A dimensionless concentration unit which denotes the given volume of the solute in the total volume of the resulting solution." [NIST:NIST]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000206
+name: milliliter per cubic meter
+comment: "A volume per unit volume unit which is equal to one millionth of a liter of solute in one cubic meter of solution." [NIST:NIST]
+synonym: "millilitre per cubic metre" EXACT []
+synonym: "ml/m^[3]" EXACT []
+is_a: UO:0000205 ! volume per unit volume
+
+[Term]
+id: UO:0000207
+name: milliliter per liter
+comment: "A volume per unit volume unit which is equal to one millionth of a liter of solute in one liter of solution." [NIST:NIST]
+synonym: "millilitre per litre" EXACT []
+synonym: "ml/l" EXACT []
+is_a: UO:0000205 ! volume per unit volume
+
+[Term]
+id: UO:0000212
+name: colony forming unit per volume
+comment: "A concentration unit which a measure of viable bacterial numbers in a given volume." [Wikipedia:Wikipedia]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000213
+name: colony forming unit per milliliter
+comment: "A colony forming unit which a measure of viable bacterial numbers in one milliliter." [Wikipedia:Wikipedia]
+synonym: "cfu/ml" EXACT []
+synonym: "colony forming unit per millilitre" EXACT []
+is_a: UO:1000213 ! colony forming unit per milliliter based unit
+
+[Term]
+id: UO:0000214
+name: plaque forming unit per volume
+comment: "A concentration unit which a measure of plaque forming units in a given volume." [UOC:GVG]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000215
+name: plaque forming unit per milliliter
+comment: "A concentration unit which a measure of plaque forming units in one milliliter." [UOC:GVG]
+synonym: "pfu/ml" EXACT []
+synonym: "plaque forming unit per millilitre" EXACT []
+is_a: UO:1000215 ! plaque forming unit per milliliter based unit
+
+[Term]
+id: UO:0000221
+name: dalton
+comment: "An independently to the base SI units defined mass unit which is equal to one twelfth of the mass of an unbound atom of the carbon-12 nuclide, at rest and in its ground state." [Wikipedia:Wikipedia]
+synonym: "amu" EXACT []
+synonym: "Da" EXACT []
+synonym: "u" EXACT []
+synonym: "unified atomic mass unit" EXACT []
+is_a: UO:1000221 ! dalton based unit
+
+[Term]
+id: UO:0000222
+name: kilodalton
+comment: "A mass unit which is equal to one thousand daltons." [Wikipedia:Wikipedia]
+synonym: "kDa" EXACT []
+is_a: UO:1000221 ! dalton based unit
+
+[Term]
+id: UO:0000276
+name: amount per container
+comment: "A concentration unit which is a standard measure of the amount of a substance in a given container." [UOC:GVG]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000277
+name: ug/disk
+comment: "A unit which is equal to one microgram per disk, where a disk is some physical surface/container upon which the substance is deposited." [UOC:MD]
+is_a: UO:0000276 ! amount per container
+
+[Term]
+id: UO:0000278
+name: nmole/disk
+comment: "A unit which is equal to one nanomole per disk, where a disk is some physical surface/container upon which the substance is deposited." [UOC:MD]
+is_a: UO:0000276 ! amount per container
+
+[Term]
+id: UO:0000279
+name: milliunits per milliliter
+comment: "A unit per milliliter unit which is equal to one thousandth of a unit of an agreed arbitrary amount per one milliliter." [UOC:GVG]
+synonym: "milliunits per millilitre" EXACT []
+synonym: "mU/ml" EXACT []
+is_a: UO:0000177 ! unit per volume unit
+
+[Term]
+id: UO:0000307
+name: dose unit
+comment: "A concentration unit which is a standard measure of the amount of a toxic or pharmaceutical substance administered to a recipient subject, expressed in terms of the size of the subject." [UO:PC]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000308
+name: milligram per kilogram
+comment: "A dose unit which is equal to 1 milligram of a toxic or pharmaceutical substance per kilogram body weight of the recipient subject." [UO:PC]
+is_a: UO:0000307 ! dose unit
+
+[Term]
+id: UO:0000309
+name: milligram per square meter
+comment: "A dose unit which is equal to 1 milligram of a toxic or pharmaceutical substance per square meter of surface area of the recipient subject." [UO:PC]
+is_a: UO:0000307 ! dose unit
+
+[Term]
+id: UO:0000310
+name: dosage unit
+comment: "A concentration unit which is a standard measure of the amount of a toxic or pharmaceutical substance administered over time to a recipient subject, expressed in terms of the size of the subject." [UO:PC]
+is_a: UO:1000310 ! dosage unit based unit
+
+[Term]
+id: UO:0000311
+name: milligram per kilogram per day
+comment: "A dosage unit which is equal to 1 milligram per day of a toxic or pharmaceutical substance per kilogram body weight of the recipient subject." [UO:PC]
+is_a: UO:0000310 ! dosage unit
+
+[Term]
+id: UO:0000316
+name: cells per microliter
+comment: "A unit of cell concentration which is equal to one cell in a volume of 1 microliter." [UO:GVG]
+synonym: "cells per microlitre" EXACT []
+synonym: "cells per ul" EXACT []
+is_a: UO:0000200 ! cell concentration unit
+
+[Term]
+id: UO:0000317
+name: cells per well
+comment: "A unit of cell concentration which is equal to 1 cell in a well or discrete container of arbitrary volume." [UO:PC]
+is_a: UO:0000200 ! cell concentration unit
+
+[Term]
+id: UO:0000319
+name: radioactivity concentration
+comment: "A concentration unit which is a standard measure of the amount of radioactivity in a given volume." [UO:GVG]
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:0000320
+name: curie per liter
+comment: "A unit of radioactivity concentration which is equal to one curie in a volume of 1 liter." [UO:GVG]
+synonym: "curie per litre" EXACT []
+is_a: UO:0000319 ! radioactivity concentration
+
+[Term]
+id: UO:0000321
+name: microcurie per milliliter
+comment: "A unit of radioactivity concentration which is equal to one micro curie in a volume of 1 liter." [UO:GVG]
+synonym: "microcurie per millilitre" EXACT []
+is_a: UO:0000319 ! radioactivity concentration
+
+[Term]
+id: UO:0000326
+name: centiMorgan
+comment: "A unit used to express distances on a genetic map. In genetic mapping, distances between markers are determined by measuring the rate of meoitic recombination between them, which increases proportionately with the distance separating them. A cM is defined as the length of an interval in which there is a 1% probability of recombination. On the average, 1 cM is roughly equivalent to 1 megabase (Mb) of DNA, although this can vary widely due to hot and cold spots of recombination." [NCBI:http\\://www.ncbi.nlm.nih.gov/SCIENCE96/Glossary.html]
+synonym: "cM" EXACT []
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:0000327
+name: centiRay
+comment: "A unit of genetic map distance defined corresponding to an interval in which there is a 1% probability of X-irradiation induced breakage. To be completely specified, the unit must be qualified by the radiation in dosage in rads (e.g. cR8000), because this determines the actual breakage probability." [NCBI:http\\://www.ncbi.nlm.nih.gov/SCIENCE96/Glossary.html]
+synonym: "cR" EXACT []
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:0010003
+name: micromole per litre
+comment: "A specific concentration unit which is equal to 1 micromole in a given volume of one thousandth of a cubic meter." [NIST:NIST]
+is_a: UO:0000067 ! unit of molality
+
+[Term]
+id: UO:0010004
+name: micromole per kilogram
+comment: "A specific concentration unit which is equal to 1 micromole of a given substance per kilogram of solvent." [UOB:LKSR]
+is_a: UO:0000067 ! unit of molality
+
+[Term]
+id: UO:0010009
+name: milli
+comment: "A mass unit which is equal to 1/12 the mass of 12C" [Wikipedia:Wikipedia]
+synonym: "mDa" EXACT []
+synonym: "milli unified atomic mass unit" EXACT []
+synonym: "millidalton" EXACT []
+synonym: "mmu" EXACT []
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:0010011
+name: inch
+comment: "A length unit which is equal to 0.0254 metres." [Wikipedia:Wikpiedia]
+synonym: "in" EXACT []
+is_a: UO:1010011 ! inch based unit
+
+[Term]
+id: UO:0010012
+name: thou
+comment: "A length unit which is equal to 0.0254 millimetres." [Wikipedia:Wikpiedia]
+synonym: "mil" EXACT []
+synonym: "th" EXACT []
+is_a: UO:1010012 ! thou based unit
+
+[Term]
+id: UO:0010013
+name: foot
+comment: "A length unit which is equal to 0.3048 metres, or 12 inches." [Wikipedia:Wikpiedia]
+synonym: "ft" EXACT []
+is_a: UO:1010013 ! foot based unit
+
+[Term]
+id: UO:0010014
+name: yard
+comment: "A length unit which is equal to 0.9144 metres, or 3 feet." [Wikipedia:Wikpiedia]
+synonym: "yd" EXACT []
+is_a: UO:1010014 ! yard based unit
+
+[Term]
+id: UO:0010015
+name: chain
+comment: "A length unit which is equal to 20.1168 metres, 66 feet, or 22 yards." [Wikipedia:Wikpiedia]
+synonym: "ch" EXACT []
+is_a: UO:1010015 ! chain based unit
+
+[Term]
+id: UO:0010016
+name: furlong
+comment: "A length unit which is equal to 20,116.8 metres, 660 feet, or 10 chains." [Wikipedia:Wikpiedia]
+synonym: "fur" EXACT []
+is_a: UO:1010016 ! furlong based unit
+
+[Term]
+id: UO:0010017
+name: mile
+comment: "A length unit which is equal to 1,609.344 metres, or 8 furlongs." [Wikipedia:Wikpiedia]
+synonym: "mi" EXACT []
+is_a: UO:1010017 ! mile based unit
+
+[Term]
+id: UO:0010018
+name: league
+comment: "A length unit which is equal to 3 miles, or 4,828.032 metres" [Wikipedia:Wikpiedia]
+synonym: "lea" EXACT []
+is_a: UO:1010018 ! league based unit
+
+[Term]
+id: UO:0010019
+name: maritime length unit
+comment: "A maritime length unit is one used primarily at sea." [Wikipedia:Wikpiedia]
+is_a: UO:1010019 ! maritime length unit based unit
+
+[Term]
+id: UO:0010020
+name: fathom
+comment: "A maritime length unit which is equal to 6.08 feet, or 1.853184 metres" [Wikipedia:Wikpiedia]
+synonym: "ftm" EXACT []
+is_a: UO:1010020 ! fathom based unit
+
+[Term]
+id: UO:0010021
+name: cable
+comment: "A maritime length unit which is equal to 608 feet, 100 fathoms, or 185.3184 metres" [Wikipedia:Wikpiedia]
+is_a: UO:1010021 ! cable based unit
+
+[Term]
+id: UO:0010022
+name: nautical mile
+comment: "A maritime length unit which is equal to 6,080 feet, 10 cables, or 1,853.184 metres" [Wikipedia:Wikpiedia]
+is_a: UO:1010022 ! nautical mile based unit
+
+[Term]
+id: UO:0010031
+name: grain
+comment: "An imperial mass unit which is equivalent to 64.798,91 milligrams." [Wikipedia:Wikipedia]
+synonym: "gr" EXACT []
+is_a: UO:1010031 ! grain based unit
+
+[Term]
+id: UO:0010032
+name: drachm
+comment: "An imperial mass unit which is equivalent to 1.771,845,195,3125 grams, or 1/256 of 1 pound." [Wikipedia:Wikipedia]
+synonym: "dr" EXACT []
+is_a: UO:1010032 ! drachm based unit
+
+[Term]
+id: UO:0010033
+name: ounce
+comment: "An imperial mass unit which is equivalent to 28.349,523,125 grams, or 1/16 of 1 pound." [Wikipedia:Wikipedia]
+synonym: "oz" EXACT []
+is_a: UO:1010033 ! ounce based unit
+
+[Term]
+id: UO:0010034
+name: pound
+comment: "An imperial mass unit which is equivalent to 453.592,37 grams." [Wikipedia:Wikipedia]
+synonym: "lb" EXACT []
+is_a: UO:1010034 ! pound based unit
+
+[Term]
+id: UO:0010035
+name: stone
+comment: "An imperial mass unit which is equivalent to 6,350.293,18 grams, or 14 pounds." [Wikipedia:Wikipedia]
+synonym: "st" EXACT []
+is_a: UO:1010035 ! stone based unit
+
+[Term]
+id: UO:0010036
+name: quarter
+comment: "An imperial mass unit which is equivalent to 12.700,586,36 kilograms, or 28 pounds." [Wikipedia:Wikipedia]
+synonym: "qr" EXACT []
+synonym: "qtr" EXACT []
+is_a: UO:1010036 ! quarter based unit
+
+[Term]
+id: UO:0010037
+name: hundredweight
+comment: "An imperial mass unit which is equivalent to 50.802,345,44 kilograms, 112 pounds, or 8 stone." [Wikipedia:Wikipedia]
+synonym: "cwt" EXACT []
+is_a: UO:1010037 ! hundredweight based unit
+
+[Term]
+id: UO:0010038
+name: ton
+comment: "An imperial mass unit which is equivalent to 1,016.046,9088 kilograms, or 2,240 pounds." [Wikipedia:Wikipedia]
+synonym: "t" EXACT []
+is_a: UO:1010038 ! ton based unit
+
+[Term]
+id: UO:0010066
+name: kilometer
+comment: "A length unit which is equal to one thousand meters." [UOB:LKSR]
+synonym: "kilometre" EXACT []
+synonym: "km" EXACT []
+is_a: UO:1000008 ! meter based unit
+
+[Term]
+id: UO:0010080
+name: titer
+comment: A concentration unit which denotes the minimum amount of a substance in a solution that still yields a positive reading, as determined by serial dilution.
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:1000008
+name: meter based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1000019
+name: angstrom based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1000021
+name: gram based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1000062
+name: molar based unit
+is_a: UO:0000061 ! unit of molarity
+
+[Term]
+id: UO:1000068
+name: molal based unit
+is_a: UO:0000067 ! unit of molality
+
+[Term]
+id: UO:1000075
+name: normal based unit
+is_a: UO:0000074 ! unit of normality
+
+[Term]
+id: UO:1000076
+name: mole fraction based unit
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:1000088
+name: gram per mole based unit
+is_a: UO:0000055 ! molar mass unit
+
+[Term]
+id: UO:1000163
+name: mass percentage based unit
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:1000164
+name: mass volume percentage based unit
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:1000165
+name: volume percentage based unit
+is_a: UO:0000205 ! volume per unit volume
+
+[Term]
+id: UO:1000178
+name: unit per milliliter based unit
+is_a: UO:0000177 ! unit per volume unit
+
+[Term]
+id: UO:1000179
+name: unit per liter based unit
+is_a: UO:0000177 ! unit per volume unit
+
+[Term]
+id: UO:1000180
+name: mass per unit volume based unit
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:1000196
+name: pH based unit
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:1000201
+name: cells per milliliter based unit
+is_a: UO:0000200 ! cell concentration unit
+
+[Term]
+id: UO:1000203
+name: katal per cubic meter based unit
+is_a: UO:0000202 ! catalytic (activity) concentration unit
+
+[Term]
+id: UO:1000204
+name: katal per liter based unit
+is_a: UO:0000202 ! catalytic (activity) concentration unit
+
+[Term]
+id: UO:1000213
+name: colony forming unit per milliliter based unit
+is_a: UO:0000212 ! colony forming unit per volume
+
+[Term]
+id: UO:1000215
+name: plaque forming unit per milliliter based unit
+is_a: UO:0000214 ! plaque forming unit per volume
+
+[Term]
+id: UO:1000221
+name: dalton based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1000310
+name: dosage unit based unit
+is_a: UO:0000051 ! concentration unit
+
+[Term]
+id: UO:1010011
+name: inch based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010012
+name: thou based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010013
+name: foot based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010014
+name: yard based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010015
+name: chain based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010016
+name: furlong based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010017
+name: mile based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010018
+name: league based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010019
+name: maritime length unit based unit
+is_a: UO:0000001 ! length unit
+
+[Term]
+id: UO:1010020
+name: fathom based unit
+is_a: UO:0010019 ! maritime length unit
+
+[Term]
+id: UO:1010021
+name: cable based unit
+is_a: UO:0010019 ! maritime length unit
+
+[Term]
+id: UO:1010022
+name: nautical mile based unit
+is_a: UO:0010019 ! maritime length unit
+
+[Term]
+id: UO:1010031
+name: grain based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010032
+name: drachm based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010033
+name: ounce based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010034
+name: pound based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010035
+name: stone based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010036
+name: quarter based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010037
+name: hundredweight based unit
+is_a: UO:0000002 ! mass unit
+
+[Term]
+id: UO:1010038
+name: ton based unit
+is_a: UO:0000002 ! mass unit
 
 [Term]
 id: VIBSO:0000000
@@ -3620,7 +4694,6 @@ subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "is part of" xsd:string
 property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
@@ -3652,7 +4725,6 @@ def: "a core relation that holds between a whole and its part" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "has part" xsd:string
 property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
@@ -3669,7 +4741,6 @@ is_a: RO:0002131 ! overlaps
 id: BFO:0000054
 name: realized in
 comment: Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "realized in" xsd:string
 property_value: IAO:0000112 "this disease is realized in this disease course" xsd:string
 property_value: IAO:0000112 "this fragility is realized in this shattering" xsd:string
@@ -3686,7 +4757,6 @@ inverse_of: BFO:0000055 ! realizes
 id: BFO:0000055
 name: realizes
 comment: Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "realizes" xsd:string
 property_value: IAO:0000112 "this disease course realizes this disease" xsd:string
 property_value: IAO:0000112 "this investigation realizes this investigator role" xsd:string
@@ -3734,7 +4804,6 @@ is_a: BFO:0000051 ! has part
 id: IAO:0000136
 name: is about
 def: "A (currently) primitive relation that relates an information artifact to an entity." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000112 "This document is about information artifacts and their representations" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \"mentions\" relation. Weaken the is_about relationship to be primitive. \n\nWe will try to build it back up by elaborating the various subproperties that are more precisely defined.\n\nSome currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic." xsd:string
@@ -3764,10 +4833,20 @@ property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 is_a: IAO:0000136 ! is about
 
 [Typedef]
+id: OBI:0000124
+name: is_supported_by_data
+def: "The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process" []
+property_value: IAO:0000111 "is_supported_by_data" xsd:string
+property_value: IAO:0000112 "The relation between the conclusion \"Gene tpbA is involved in EPS production\" and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "OBI" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+property_value: IAO:0000119 "Philly 2011 workshop" xsd:string
+
+[Typedef]
 id: OBI:0000293
 name: has_specified_input
 def: "The inverse property of is_specified_input_of" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "has_specified_input" xsd:string
 property_value: IAO:0000111 "has_specified_input" xsd:string
 property_value: IAO:0000112 "see is_input_of example_of_usage" xsd:string
@@ -3784,7 +4863,6 @@ is_a: RO:0000057 ! has participant
 id: OBI:0000295
 name: is_specified_input_of
 def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "is_specified_input_of" xsd:string
 property_value: IAO:0000112 "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3796,7 +4874,6 @@ is_a: RO:0000056 ! participates in
 id: OBI:0000299
 name: has_specified_output
 def: "The inverse property of is_specified_output_of" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "has_specified_output" xsd:string
 property_value: IAO:0000111 "has_specified_output" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3811,7 +4888,6 @@ is_a: RO:0000057 ! has participant
 id: OBI:0000312
 name: is_specified_output_of
 def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "is_specified_output_of" xsd:string
 property_value: IAO:0000111 "is_specified_output_of" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3824,7 +4900,6 @@ is_a: RO:0000056 ! participates in
 id: OBI:0000417
 name: achieves_planned_objective
 def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "achieves_planned_objective" xsd:string
 property_value: IAO:0000112 "A cell sorting process achieves the objective specification 'material separation objective'" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -3836,18 +4911,57 @@ property_value: IAO:0000232 "modified according to email thread from 1/23/09 in 
 id: OBI:0000833
 name: objective_achieved_by
 def: "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "objective_achieved_by" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "OBI" xsd:string
 property_value: IAO:0000119 "OBI" xsd:string
 
 [Typedef]
+id: OBI:0000846
+name: is member of organization
+def: "Relating a legal person or organization to an organization in the case where the legal person or organization has a role as member of the organization." []
+property_value: IAO:0000111 "is member of organization" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population" xsd:string
+property_value: IAO:0000116 "JZ: Discussed on May 7, 2012 OBI dev call. Bjoern points out that we need to allow for organizations to be members of organizations. And agreed by the other OBI developers. So, human and organization were specified in 'Domains'. The textual definition was updated based on it." xsd:string
+property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "Person:Helen Parkinson" xsd:string
+property_value: IAO:0000119 "Person:Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "Person:Helen Parkinson" xsd:string
+property_value: IAO:0000232 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case" xsd:string
+
+[Typedef]
+id: OBI:0001688
+name: has organization member
+def: "Relating an organization to a legal person or organization." []
+property_value: IAO:0000111 "has organization member" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000116 "See tracker:\nhttps://sourceforge.net/tracker/index.php?func=detail&aid=3512902&group_id=177891&atid=886178" xsd:string
+property_value: IAO:0000117 "Person: Jie Zheng" xsd:string
+
+[Typedef]
+id: OBI:0001927
+name: specifies value of
+def: "A relation between a value specification and an entity which the specification is about." []
+property_value: IAO:0000111 "specifies value of" xsd:string
+property_value: IAO:0000114 IAO:0000123
+is_a: IAO:0000136 ! is about
+
+[Typedef]
+id: OBI:0001938
+name: has value specification
+def: "A relation between an information content entity and a value specification that specifies its value." []
+property_value: IAO:0000111 "has value specification" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: James A. Overton" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+is_a: BFO:0000051 ! has part
+
+[Typedef]
 id: OBI:0001950
 name: has performer
 def: "A relation between a planned process and a continuant where the continuant can be a person, organization or device (such as a robot controlled by software workflow management system) that performs the planned process." []
 comment: The 'has performer' relation covers the need to report on who performed a planned processed. It has to cover processes done by People or Devices (such as a robot controlled by software  WF management system).
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "has performer" xsd:string
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "OBI" xsd:string
@@ -3859,7 +4973,6 @@ id: RO:0000052
 name: characteristic of
 def: "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence." []
 comment: Note that this relation was previously called "inheres in", but was changed to be called "characteristic of" because BFO2 uses "inheres in" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "inheres in" xsd:string
 property_value: IAO:0000112 "this fragility is a characteristic of this vase" xsd:string
 property_value: IAO:0000112 "this red color is a characteristic of this apple" xsd:string
@@ -3873,7 +4986,6 @@ inverse_of: RO:0000053 ! has characteristic
 id: RO:0000053
 name: has characteristic
 def: "Inverse of characteristic_of" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000111 "bearer of" xsd:string
 property_value: IAO:0000112 "this apple is bearer of this red color" xsd:string
 property_value: IAO:0000112 "this vase is bearer of this fragility" xsd:string
@@ -3926,7 +5038,6 @@ inverse_of: RO:0000059 ! concretizes
 id: RO:0000059
 name: concretizes
 def: "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant." []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
 domain: BFO:0000020 ! specifically dependent continuant
@@ -3937,7 +5048,6 @@ id: RO:0000079
 name: function of
 def: "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence" []
 comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000112 "this catalysis function is a function of this enzyme" xsd:string
 property_value: IAO:0000116 "A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists." xsd:string
 property_value: IAO:0000118 "function_of" xsd:string
@@ -3974,7 +5084,6 @@ inverse_of: RO:0000087 ! has role
 id: RO:0000085
 name: has function
 def: "a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000112 "this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)" xsd:string
 property_value: IAO:0000116 "A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists." xsd:string
 property_value: IAO:0000118 "has_function" xsd:string
@@ -3996,7 +5105,6 @@ is_a: RO:0000053 ! has characteristic
 id: RO:0000087
 name: has role
 def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/obi/2023-09-20/obi.owl
 property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
 property_value: IAO:0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
 property_value: IAO:0000118 "has_role" xsd:string
@@ -4428,6 +5536,26 @@ def: "inverse of positively regulates" []
 subset: RO:0002259
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 is_a: RO:0002334 ! regulated by
+
+[Typedef]
+id: RO:0002350
+name: member of
+def: "is member of is a mereological relation between a item and a collection." []
+property_value: IAO:0000112 "An organism that is a member of a population of organisms" xsd:string
+property_value: IAO:0000118 "is member of" xsd:string
+property_value: IAO:0000118 "member part of" xsd:string
+property_value: IAO:0000119 "SIO" xsd:string
+property_value: RO:0001900 RO:0001901
+is_a: BFO:0000050 ! part of
+inverse_of: RO:0002351 ! has member
+
+[Typedef]
+id: RO:0002351
+name: has member
+def: "has member is a mereological relation between a collection and an item." []
+property_value: IAO:0000119 "SIO" xsd:string
+property_value: RO:0001900 RO:0001901
+is_a: BFO:0000051 ! has part
 
 [Typedef]
 id: RO:0002352

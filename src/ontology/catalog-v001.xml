@@ -3,6 +3,7 @@
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl" uri="components/vibso_classes.owl"/>
         <uri name="http://purl.obolibrary.org/obo/vibso/components/vibso_object_properties.owl" uri="components/vibso_object_properties.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl" uri="components/vibso_examples.owl"/>
         <uri name="http://purl.obolibrary.org/obo/vibso/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/vibso/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
         <uri name="http://purl.obolibrary.org/obo/vibso/imports/ro_import.owl" uri="imports/ro_import.owl"/>
@@ -19,5 +20,11 @@
         <uri name="http://purl.obolibrary.org/obo/vibso/imports/obi_import.obo" uri="imports/obi_import.obo"/>
         <uri name="http://purl.obolibrary.org/obo/vibso/imports/stato_import.owl" uri="imports/stato_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/vibso/imports/stato_import.obo" uri="imports/stato_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/vibso/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/vibso/imports/chebi_import.obo" uri="imports/chebi_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/vibso/imports/uo_import.owl" uri="imports/uo_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/vibso/imports/uo_import.obo" uri="imports/uo_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/vibso/imports/foodon_import.owl" uri="imports/foodon_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/vibso/imports/foodon_import.obo" uri="imports/foodon_import.obo"/>
     </group>
 </catalog>
