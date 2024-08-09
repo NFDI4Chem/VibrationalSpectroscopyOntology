@@ -24,7 +24,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2024-08-08/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-08-09/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_classes.tsv' template.")
 
 Declaration(Class(obo:BFO_0000029))
@@ -67,7 +67,7 @@ Declaration(Class(obo:VIBSO_0000026))
 Declaration(Class(obo:VIBSO_0000027))
 Declaration(Class(obo:VIBSO_0000028))
 Declaration(Class(obo:VIBSO_0000029))
-Declaration(Class(obo:VIBSO_000030))
+Declaration(Class(obo:VIBSO_0000030))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:OBI_0000293))
 Declaration(ObjectProperty(obo:OBI_0000312))
@@ -425,15 +425,15 @@ AnnotationAssertion(rdfs:label obo:VIBSO_0000029 "lens numerical aperture"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000029 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/76>)
 SubClassOf(obo:VIBSO_0000029 obo:IAO_0000140)
 
-# Class: obo:VIBSO_000030 (primary Raman data)
+# Class: obo:VIBSO_0000030 (primary Raman data)
 
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_000030 "A data item that is obtained by processing raw Raman data."@en)
-AnnotationAssertion(dc:contributor obo:VIBSO_000030 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(dc:contributor obo:VIBSO_000030 <http://orcid.org/0000-0002-2239-3955>)
-AnnotationAssertion(rdfs:label obo:VIBSO_000030 "primary Raman data"@en)
-AnnotationAssertion(rdfs:seeAlso obo:VIBSO_000030 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/132>)
-SubClassOf(obo:VIBSO_000030 obo:IAO_0000027)
-SubClassOf(obo:VIBSO_000030 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:OBI_0200000 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000028))))
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000030 "A data item that is obtained by processing raw Raman data."@en)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000030 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dc:contributor obo:VIBSO_0000030 <http://orcid.org/0000-0002-2239-3955>)
+AnnotationAssertion(rdfs:label obo:VIBSO_0000030 "primary Raman data"@en)
+AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000030 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/132>)
+SubClassOf(obo:VIBSO_0000030 obo:IAO_0000027)
+SubClassOf(obo:VIBSO_0000030 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:OBI_0200000 ObjectSomeValuesFrom(obo:OBI_0000293 obo:VIBSO_0000028))))
 
 
 )
