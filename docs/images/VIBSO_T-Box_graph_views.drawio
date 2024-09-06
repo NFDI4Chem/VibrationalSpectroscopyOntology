@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-15T12:03:20.661Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="F6nBQzBlzReOGsSRxqo9" version="24.4.0" type="device" pages="5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0" version="24.7.12" pages="5">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="VIBSO T-Box">
-    <mxGraphModel dx="869" dy="7063" grid="0" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="1290" dy="7148" grid="0" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1172,21 +1172,36 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XxMMapCrq4y9Iv6NPPO3-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3XHYb5-U-1SFmk8pDu2I-5" target="QKKoRjnMVttNz9pZIT6n-1">
+        <mxCell id="XxMMapCrq4y9Iv6NPPO3-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3XHYb5-U-1SFmk8pDu2I-5" target="QKKoRjnMVttNz9pZIT6n-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1527" y="-5310" as="sourcePoint" />
             <mxPoint x="1267" y="-5498" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XxMMapCrq4y9Iv6NPPO3-2" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/ro/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000050&quot;&gt;RO:part of&lt;/a&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="XxMMapCrq4y9Iv6NPPO3-1">
+        <mxCell id="XxMMapCrq4y9Iv6NPPO3-2" value="&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/ro/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000050&quot;&gt;RO:part of&lt;/a&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="XxMMapCrq4y9Iv6NPPO3-1" connectable="0" vertex="1">
           <mxGeometry x="-0.4428" y="-3" relative="1" as="geometry">
             <mxPoint x="-6" y="24" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XxMMapCrq4y9Iv6NPPO3-3" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#FF0000;strokeWidth=3;fontSize=14;fontFamily=Helvetica;opacity=90;" edge="1" parent="1" source="wu6-uM-ZaK9YjNjoD32W-161" target="QKKoRjnMVttNz9pZIT6n-2">
+        <mxCell id="XxMMapCrq4y9Iv6NPPO3-3" value="" style="endArrow=classic;html=1;dashed=1;strokeColor=#FF0000;strokeWidth=3;fontSize=14;fontFamily=Helvetica;opacity=90;" parent="1" source="wu6-uM-ZaK9YjNjoD32W-161" target="QKKoRjnMVttNz9pZIT6n-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1175" y="-5316" as="sourcePoint" />
             <mxPoint x="1200" y="-5397" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YDiMKNxxH6nwS26olgr4-1" value="VIBSO:primary Raman data" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=15;glass=0;shadow=0;strokeWidth=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1038" y="-5283" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YDiMKNxxH6nwS26olgr4-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=arc;" edge="1" parent="1" source="3XHYb5-U-1SFmk8pDu2I-5" target="YDiMKNxxH6nwS26olgr4-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1244" y="-5630" as="sourcePoint" />
+            <mxPoint x="1305" y="-5558" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YDiMKNxxH6nwS26olgr4-3" value="&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000299&quot;&gt;OBI:has &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000299&quot;&gt;specified &lt;br&gt;&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000299&quot;&gt;output&lt;/a&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YDiMKNxxH6nwS26olgr4-2">
+          <mxGeometry x="-0.2927" y="1" relative="1" as="geometry">
+            <mxPoint x="4" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
