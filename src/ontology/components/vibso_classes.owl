@@ -24,7 +24,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2024-09-06/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-09-13/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_classes.tsv' template.")
 
 Declaration(Class(obo:BFO_0000029))
@@ -456,7 +456,8 @@ SubClassOf(obo:VIBSO_0000030 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersec
 
 # Class: obo:VIBSO_0000031 (resolution)
 
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000031 "A quality of a measurement device by virtue of the device's capacity to distinguish between two distinct but closely related measurements of the same physical quality or type, often quantified as the smallest detectable difference (resolution interval) between measured values."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000031 "A physical quality of a measurement device that expresses (realizes) the device's capacity to distinguish between two distinct but closely related measurements of the same physical quality or type, often quantified as the smallest detectable difference (resolution interval) between measured values."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000031 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000031 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000031 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000031 "resolution"@en)
@@ -465,7 +466,8 @@ SubClassOf(obo:VIBSO_0000031 obo:PATO_0001018)
 
 # Class: obo:VIBSO_0000032 (resolution interval)
 
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000032 "A data item that is quantifies a resolution, by representing the minimum measurable difference between two measurements of the same physical quality or type, such that the measurements can be distinguished as different."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000032 "A data item that quantifies a resolution, by representing the minimum measurable difference between two measurements of the same physical quality or type, such that the measurements can be distinguished as different."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000032 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000032 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000032 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000032 "resolution interval"@en)
@@ -476,7 +478,8 @@ SubClassOf(obo:VIBSO_0000032 ObjectSomeValuesFrom(obo:OBI_0001938 obo:OBI_000193
 
 # Class: obo:VIBSO_0000033 (resolution power)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000033 "A ratio that quantifies the ability of a measurement device to distinguish between small differences in measurement values, expressed as the ratio between a typical measurement datum and the corresponding resolution interval."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000033 "A ratio that quantifies the ability of a measurement device to distinguish between small differences in measurement values, expressed as the ratio between a typical measurement datum and the corresponding resolution interval."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000033 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000033 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000033 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000033 "resolution power"@en)
@@ -485,7 +488,8 @@ SubClassOf(obo:VIBSO_0000033 obo:STATO_0000184)
 
 # Class: obo:VIBSO_0000034 (spatial resolution interval)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000034 "A resolution interval that quantifies the minimum distance between two points such that they can be considered two separate points in a given microscope under specific experimental parameters."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000034 "A resolution interval that quantifies the minimum distance between two points such that they can be considered two separate points in a given microscope under specific experimental parameters."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000034 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000034 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000034 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000034 "spatial resolution interval"@en)
@@ -494,7 +498,8 @@ SubClassOf(obo:VIBSO_0000034 obo:VIBSO_0000032)
 
 # Class: obo:VIBSO_0000035 (lateral resolution interval as angle)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000035 "A spatial resolution interval that quantifies the minimum angular separation between two points on a plane orthogonal to the light ray, expressed as an angle centered in the lens (Formula: δθ = 1.22 * λ / D)."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000035 "A spatial resolution interval that quantifies the minimum angular separation between two points on a plane orthogonal to the light ray, expressed as an angle centered in the lens (Formula: δθ = 1.22 * λ / D)."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000035 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000035 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000035 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment obo:VIBSO_0000035 "$δθ = 1.22cdotλ/D$"@en)
@@ -504,7 +509,8 @@ SubClassOf(obo:VIBSO_0000035 obo:VIBSO_0000034)
 
 # Class: obo:VIBSO_0000036 (lateral resolution interval as length)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000036 "A spatial resolution interval that quantifies the minimum linear separation between two points on a plane orthogonal to the light ray, expressed as the distance from the center of the optical spot (Formula: δr = 0.61 * λ / NA)."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000036 "A spatial resolution interval that quantifies the minimum linear separation between two points on a plane orthogonal to the light ray, expressed as the distance from the center of the optical spot (Formula: δr = 0.61 * λ / NA)."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000036 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000036 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000036 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment obo:VIBSO_0000036 "$δr = 0.61cdotλ/NA$ (Abbe formula, derived from the Rayleigh criterion with the Kirchhoff, Debye and paraxial approximation) $= 1.22 λcdot(f/sharp)$"@en)
@@ -514,7 +520,8 @@ SubClassOf(obo:VIBSO_0000036 obo:VIBSO_0000034)
 
 # Class: obo:VIBSO_0000037 (axial resolution interval as length)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000037 "A spatial resolution interval that quantifies the minimum measurable separation between two points along the axis of propagation of the light ray, expressed as a linear distance (Formula: δz = 2 ⋅ n ⋅ λ / NA²)."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000037 "A spatial resolution interval that quantifies the minimum measurable separation between two points along the axis of propagation of the light ray, expressed as a linear distance (Formula: δz = 2 ⋅ n ⋅ λ / NA²)."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000037 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000037 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000037 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment obo:VIBSO_0000037 "$δz = 2cdot ncdotλ/NA²$"@en)
@@ -524,7 +531,8 @@ SubClassOf(obo:VIBSO_0000037 obo:VIBSO_0000034)
 
 # Class: obo:VIBSO_0000038 (spectral resolution interval)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000038 "A resolution interval that quantifies the minimum separation between two narrow peaks in a spectrum such that they can be distinguished as two separate peaks."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000038 "A resolution interval that quantifies the minimum separation between two narrow peaks in a spectrum such that they can be distinguished as two separate peaks."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000038 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000038 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000038 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000038 "spectral resolution interval"@en)
@@ -533,7 +541,8 @@ SubClassOf(obo:VIBSO_0000038 obo:VIBSO_0000032)
 
 # Class: obo:VIBSO_0000039 (spectral resolution interval as wavelength)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000039 "A spectral resolution interval that quantifies the minimum separation between two wavelengths such that they can be distinguished as different (Formula: δλ = λ / (n * N))."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) Annotation(dc:source <https://wiki.charisma.ideaconsult.net/wiki/Item:Q200>) Annotation(dc:source <https://wiki.charisma.ideaconsult.net/wiki/Item:Q22>) obo:IAO_0000115 obo:VIBSO_0000039 "A spectral resolution interval that quantifies the minimum separation between two wavelengths such that they can be distinguished as different (Formula: δλ = λ / (n * N))."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000039 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000039 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000039 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment obo:VIBSO_0000039 "$δλ = λ / (ncdot N) = RFcdot Δλcdot WS / n$"@en)
@@ -543,7 +552,8 @@ SubClassOf(obo:VIBSO_0000039 obo:VIBSO_0000038)
 
 # Class: obo:VIBSO_0000040 (spectral resolution interval as wavenumber)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000040 "A spectral resolution interval that quantifies the minimum separation between two wavenumbers such that they can be distinguished as different (Formula: δν)."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000040 "A spectral resolution interval that quantifies the minimum separation between two wavenumbers such that they can be distinguished as different (Formula: δν~ = δλ / λ²)."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000040 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000040 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000040 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment obo:VIBSO_0000040 "$δbarν$"@en)
@@ -553,7 +563,8 @@ SubClassOf(obo:VIBSO_0000040 obo:VIBSO_0000038)
 
 # Class: obo:VIBSO_0000041 (spectral resolution interval as frequency)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000041 "A spectral resolution interval that quantifies the minimum separation between two frequencies such that they can be distinguished as different (Formula: δν)."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000041 "A spectral resolution interval that quantifies the minimum separation between two frequencies such that they can be distinguished as different (Formula: δν = c * δν~ = c * δλ / λ²)."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000041 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000041 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000041 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment obo:VIBSO_0000041 "$δν$"@en)
@@ -563,7 +574,8 @@ SubClassOf(obo:VIBSO_0000041 obo:VIBSO_0000038)
 
 # Class: obo:VIBSO_0000042 (spectral resolution interval as energy)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000042 "A spectral resolution interval that quantifies the minimum separation between two energy levels such that they can be distinguished as different (Formula: δE)."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000042 "A spectral resolution interval that quantifies the minimum separation between two energy levels such that they can be distinguished as different (Formula: δE = h * δν = h * c * δν~ = h * c * δλ / λ²)."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000042 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000042 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000042 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment obo:VIBSO_0000042 "$δE$"@en)
@@ -573,7 +585,8 @@ SubClassOf(obo:VIBSO_0000042 obo:VIBSO_0000038)
 
 # Class: obo:VIBSO_0000043 (radiometric resolution interval)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000043 "A resolution interval that quantifies the minimum difference in irradiated energy such that different values, such as different gray levels in a grayscale or look-up-table (LUT), can be assigned."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000043 "A resolution interval that quantifies the minimum difference in irradiated energy, often coded as gray level in a grayscale or look-up-table (LUT)."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000043 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000043 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000043 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000043 "radiometric resolution interval"@en)
@@ -582,7 +595,8 @@ SubClassOf(obo:VIBSO_0000043 obo:VIBSO_0000032)
 
 # Class: obo:VIBSO_0000044 (temporal resolution interval)
 
-AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/,%20ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000044 "A resolution interval that quantifies the temporal separation between two measurements or frames, often expressed as the inverse of the frame rate. In techniques where temporal resolution is not directly derived from frame rate, it quantifies the minimum temporal interval between two resolvable events."@en)
+AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISBN%20081946043-5>) obo:IAO_0000115 obo:VIBSO_0000044 "A resolution interval that quantifies the temporal separation between two measurements or frames, often expressed as the inverse of the frame rate. In techniques where temporal resolution is not directly derived from frame rate, it quantifies the minimum temporal interval between two resolvable events."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000044 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000044 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000044 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment obo:VIBSO_0000044 "In techniques where the temporal resolution is not given directly from a temporal distance between subsequent measurements (e.g., pulsed time resolved pump-probe techniques), it can be used more properly as defined above"@en)
@@ -593,6 +607,7 @@ SubClassOf(obo:VIBSO_0000044 obo:VIBSO_0000032)
 # Class: obo:VIBSO_0000045 (diffraction limit)
 
 AnnotationAssertion(Annotation(dc:source <http://www.w3.org/2002/07/ISO/DIS%2018115-3,%20https:/www.iso.org/obp/ui#d25805417e256>) obo:IAO_0000115 obo:VIBSO_0000045 "A spatial resolution interval that quantifies the theoretical maximum spatial resolution achievable by an optical system, constrained by the diffraction of light."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000045 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far."@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000045 <http://orcid.org/%200000-0003-2673-366X>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000045 <http://orcid.org/0000-0002-2239-3955>)
 AnnotationAssertion(rdfs:comment obo:VIBSO_0000045 "The Abbe diffraction limit, is defined as λ/ (2 NA) in which λ is the wavelength of the illuminating light and NA is the numerical aperture."@en)
