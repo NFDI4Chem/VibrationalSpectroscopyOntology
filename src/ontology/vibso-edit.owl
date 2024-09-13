@@ -42,6 +42,7 @@ Annotation(dcterms:description "_WIP - NOT READY FOR PRODUCTION_ The Vibration S
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Vibrational Spectroscopy Ontology")
 
+Declaration(NamedIndividual(<http://orcid.org/0000-0003-2673-366X>))
 Declaration(NamedIndividual(ex:AssayObjective_O))
 Declaration(NamedIndividual(ex:Assay_A))
 Declaration(NamedIndividual(ex:DataItem_D))
@@ -127,6 +128,13 @@ SubClassOf(obo:UO_0000051 obo:IAO_0000003)
 ############################
 #   Named Individuals
 ############################
+
+# Individual: <http://orcid.org/0000-0003-2673-366X> (Stefano Luin)
+
+AnnotationAssertion(rdfs:label <http://orcid.org/0000-0003-2673-366X> "Stefano Luin")
+AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0001-7694-5519> "VIBSO Working Group"@en)
+ClassAssertion(obo:NCBITaxon_9606 <http://orcid.org/0000-0003-2673-366X>)
+
 
 # Individual: ex:AssayObjective_O (ex:AssayObjective_O)
 
