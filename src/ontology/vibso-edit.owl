@@ -132,9 +132,8 @@ SubClassOf(obo:UO_0000051 obo:IAO_0000003)
 # Individual: <http://orcid.org/0000-0003-2673-366X> (Stefano Luin)
 
 AnnotationAssertion(rdfs:label <http://orcid.org/0000-0003-2673-366X> "Stefano Luin")
-AnnotationAssertion(<https://schema.org/affiliation> <https://orcid.org/0000-0001-7694-5519> "VIBSO Working Group"@en)
+AnnotationAssertion(<https://schema.org/affiliation> <http://orcid.org/0000-0003-2673-366X> "VIBSO Working Group"@en)
 ClassAssertion(obo:NCBITaxon_9606 <http://orcid.org/0000-0003-2673-366X>)
-
 
 # Individual: ex:AssayObjective_O (ex:AssayObjective_O)
 
@@ -214,5 +213,4 @@ ClassAssertion(obo:OBI_0000245 <https://ror.org/05r3f7h03>)
 AnnotationAssertion(rdfs:label <https://www.wikidata.org/wiki/Q96678459> "NFDI4Chem")
 
 
-SubClassOf(ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:IAO_0000140 ObjectSomeValuesFrom(obo:OBI_0000295 obo:OBI_0000070) ObjectSomeValuesFrom(obo:RO_0002566 ObjectSomeValuesFrom(obo:RO_0000080 ObjectIntersectionOf(obo:OBI_0000968 ObjectSomeValuesFrom(obo:OBI_0000295 obo:OBI_0000070)))))) obo:OBI_0001896)
 )
