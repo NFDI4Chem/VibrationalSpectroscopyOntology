@@ -24,11 +24,11 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2024-02-01/components/vibso_examples.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-09-16/components/vibso_examples.owl>
 Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_examples.tsv' template.")
 
+Declaration(Class(obo:CHMO_0000656))
 Declaration(Class(obo:CHMO_0001235))
-Declaration(Class(obo:CHMO_0002515))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:OBI_0000441))
 Declaration(Class(obo:OBI_0000747))
@@ -85,7 +85,7 @@ ClassAssertion(obo:CHMO_0001235 ex:_Raman_Spectrometer_1)
 
 AnnotationAssertion(dcterms:description ex:_Raman_Spectroscopy_1 "The Raman spectroscopy in which _Sample_1 is being assayed according to _Raman_Spectroscopy_Method_1 in order to achieve _Raman_Spectrum_Objective_1."@en)
 AnnotationAssertion(rdfs:label ex:_Raman_Spectroscopy_1 "_Raman_Spectroscopy_1"@en)
-ClassAssertion(obo:CHMO_0002515 ex:_Raman_Spectroscopy_1)
+ClassAssertion(obo:CHMO_0000656 ex:_Raman_Spectroscopy_1)
 ObjectPropertyAssertion(obo:OBI_0000293 ex:_Raman_Spectroscopy_1 ex:_Raman_Spectrometer_1)
 ObjectPropertyAssertion(obo:OBI_0000293 ex:_Raman_Spectroscopy_1 ex:_Sample_1)
 ObjectPropertyAssertion(obo:OBI_0000293 ex:_Raman_Spectroscopy_1 ex:_Wavelength_Setting_Info_1)
