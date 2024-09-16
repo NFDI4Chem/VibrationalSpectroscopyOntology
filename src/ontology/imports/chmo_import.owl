@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/imports/chmo_import.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2024-05-13/imports/chmo_import.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-09-13/imports/chmo_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl>)
-Annotation(owl:versionInfo "2024-05-13")
+Annotation(owl:versionInfo "2024-09-13")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_60004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000049>))
@@ -112,7 +112,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002290>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002291>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002373>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002414>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002515>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002627>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002651>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0002675>))
@@ -639,14 +638,14 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000657> "chiral Raman spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000657> "CHMO:0000657")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000657> "chiral Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000657> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000657> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000658> (coherent Raman spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://orcid.org/0000-0002-0640-0422") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0000658> "Spectroscopy where the Raman scattering of monochromatic light from three lasers (known as pump, probe and Stokes/anti-Stokes) by a sample is detected. multiphoton excitation is used to produce a signal in which the emitted waves are coherent.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000658> "CHMO:0000658")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000658> "coherent Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000658> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000658> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000659> (coherent Stokes Raman spectroscopy)
 
@@ -691,7 +690,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000663> "confocal Raman spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000663> "CHMO:0000663")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000663> "confocal Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000663> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000663> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000664> (confocal Raman microscopy)
 
@@ -713,7 +712,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000665> "Fourier transform Raman spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000665> "CHMO:0000665")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000665> "Fourier transform Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000665> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000665> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000666> (hyper Raman spectroscopy)
 
@@ -727,7 +726,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000666> "hyper-Raman spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000666> "CHMO:0000666")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000666> "hyper Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000666> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000666> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000667> (polarised Raman spectroscopy)
 
@@ -737,7 +736,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000667> "polarized Raman spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000667> "CHMO:0000667")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000667> "polarised Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000667> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000667> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000668> (resonance Raman spectroscopy)
 
@@ -751,7 +750,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHMO_0000668> "RRS")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000668> "CHMO:0000668")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000668> "resonance Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000668> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000668> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000669> (Kerr-gated resonance Raman spectroscopy)
 
@@ -802,7 +801,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000674> "spatially offset Raman spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000674> "CHMO:0000674")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000674> "spatially-offset Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000674> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000674> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000675> (stimulated Raman spectroscopy)
 
@@ -813,7 +812,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000675> "stimulated scattering spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000675> "CHMO:0000675")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000675> "stimulated Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000675> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000675> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000676> (femosecond stimulated Raman spectroscopy)
 
@@ -845,7 +844,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000677> "surface-enhanced Raman spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000677> "CHMO:0000677")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000677> "surface-enhanced Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000677> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000677> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000678> (tip-enhanced Raman spectroscopy)
 
@@ -855,7 +854,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000678> "tip-enhanced Raman scattering spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000678> "CHMO:0000678")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000678> "tip-enhanced Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000678> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000678> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000679> (ultra-high vacuum tip-enhanced Raman spectroscopy)
 
@@ -875,7 +874,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000680> "ultraviolet Raman spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000680> "CHMO:0000680")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000680> "ultraviolet Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000680> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000680> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000763> (attenuated total reflectance Fourier transform infrared spectroscopy)
 
@@ -964,7 +963,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0000870> "near-infrared Raman")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0000870> "CHMO:0000870")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0000870> "near-infrared Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000870> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000870> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000875> (electrochemical surface-enhanced Raman spectroscopy)
 
@@ -1111,7 +1110,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001766> "transmission Raman spectrometry")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0001766> "CHMO:0001766")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0001766> "transmission Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001766> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001766> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001767> (optical tweezers Raman spectroscopy)
 
@@ -1122,7 +1121,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001767> "Raman tweezers")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0001767> "CHMO:0001767")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0001767> "optical tweezers Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001767> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001767> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001794> (supercritical fluid extraction-Fourier transform infrared spectroscopy)
 
@@ -1290,7 +1289,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001943> "higher-order Raman spectral excitation studies")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0001943> "CHMO:0001943")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0001943> "higher-order Raman spectral excitation spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001943> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001943> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0001986> (non-resonance Raman spectroscopy)
 
@@ -1304,7 +1303,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0001986> "non-resonant Raman spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0001986> "CHMO:0001986")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0001986> "non-resonance Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001986> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0001986> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002165> (drop coating deposition Raman spectroscopy)
 
@@ -1319,7 +1318,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHMO_0002165> "drop-coating-deposition Raman spectroscopy")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002165> "CHMO:0002165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0002165> "drop coating deposition Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002165> <http://purl.obolibrary.org/obo/CHMO_0002515>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002165> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002286> (polarised Fourier transform infrared spectroscopy)
 
@@ -1434,15 +1433,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date>
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002414> "CHMO:0002414")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0002414> "scattering spectroscopy")
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002414> <http://purl.obolibrary.org/obo/CHMO_0000228>)
-
-# Class: <http://purl.obolibrary.org/obo/CHMO_0002515> (laser Raman spectroscopy)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FIX:0000375") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHMO_0002515> "Spectroscopy where the Raman scattering of monochromatic light, from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CHMO_0002515> "https://orcid.org/0000-0001-5985-7429")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CHMO_0002515> "2009-10-09T11:39:33Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHMO_0002515> "CHMO:0002515")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHMO_0002515> "laser Raman spectroscopy")
-SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0002515> <http://purl.obolibrary.org/obo/CHMO_0000656>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0002627> (infrared–visible sum-frequency generation spectroscopy)
 
