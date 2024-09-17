@@ -36,6 +36,7 @@ Declaration(Class(obo:OBI_0000654))
 Declaration(Class(obo:OBI_0000968))
 Declaration(Class(obo:OBI_0001933))
 Declaration(Class(obo:OBI_0200000))
+Declaration(Class(obo:OBI_0200181))
 Declaration(Class(obo:PATO_0001018))
 Declaration(Class(obo:STATO_0000184))
 Declaration(Class(obo:VIBSO_0000000))
@@ -621,6 +622,7 @@ AnnotationAssertion(dc:contributor obo:VIBSO_0003017 <http://orcid.org/0000-0002
 AnnotationAssertion(rdfs:label obo:VIBSO_0003017 "spectral window center"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0003017 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/88>)
 SubClassOf(obo:VIBSO_0003017 obo:IAO_0000140)
+SubClassOf(obo:VIBSO_0003017 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0200181))
 
 
 )
