@@ -24,11 +24,10 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2024-09-13/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-09-17/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_classes.tsv' template.")
 
 Declaration(Class(obo:BFO_0000029))
-Declaration(Class(obo:CHMO_0000823))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000032))
 Declaration(Class(obo:IAO_0000109))
@@ -85,7 +84,7 @@ Declaration(Class(obo:VIBSO_0000042))
 Declaration(Class(obo:VIBSO_0000043))
 Declaration(Class(obo:VIBSO_0000044))
 Declaration(Class(obo:VIBSO_0000045))
-Declaration(ObjectProperty(obo:BFO_0000050))
+Declaration(Class(obo:VIBSO_0003017))
 Declaration(ObjectProperty(obo:IAO_0000136))
 Declaration(ObjectProperty(obo:OBI_0000293))
 Declaration(ObjectProperty(obo:OBI_0000312))
@@ -254,28 +253,26 @@ SubClassOf(obo:VIBSO_0000014 obo:IAO_0000140)
 # Class: obo:VIBSO_0000015 (spectral window range maximum)
 
 AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000015 "210 cm^-1"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000015 "A data item that is the part of a Raman spectrum which represents the maximum wavenumber included in the spectrum and which is calculated from the windows size and window center."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000015 "A setting datum that specifies the upper boundary of the spectral window range utilized during the acquisition of spectroscopic data."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000015 "It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000015 "acquisition band maximum"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000015 <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000015 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000015 "spectral window range maximum"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000015 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/31>)
-SubClassOf(obo:VIBSO_0000015 obo:IAO_0000027)
-SubClassOf(obo:VIBSO_0000015 ObjectSomeValuesFrom(obo:BFO_0000050 obo:CHMO_0000823))
+SubClassOf(obo:VIBSO_0000015 obo:IAO_0000140)
 
 # Class: obo:VIBSO_0000016 (spectral window range minimum)
 
 AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0000016 "1960 cm^-1"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000016 "A data item that is the part of a Raman spectrum which represents the minimum wavenumber included in the spectrum and which is calculated from the windows size and window center."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0000016 "A setting datum that specifies the lower boundary of the spectral window range utilized during the acquisition of spectroscopic data."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:VIBSO_0000016 "It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:VIBSO_0000016 "acquisition band minimum"@en)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000016 <http://orcid.org/0000-0001-7694-5519>)
 AnnotationAssertion(dc:contributor obo:VIBSO_0000016 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:VIBSO_0000016 "spectral window range minimum"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000016 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/31>)
-SubClassOf(obo:VIBSO_0000016 obo:IAO_0000027)
-SubClassOf(obo:VIBSO_0000016 ObjectSomeValuesFrom(obo:BFO_0000050 obo:CHMO_0000823))
+SubClassOf(obo:VIBSO_0000016 obo:IAO_0000140)
 
 # Class: obo:VIBSO_0000017 (incident light power datum)
 
@@ -614,6 +611,16 @@ AnnotationAssertion(rdfs:comment obo:VIBSO_0000045 "The Abbe diffraction limit, 
 AnnotationAssertion(rdfs:label obo:VIBSO_0000045 "diffraction limit"@en)
 AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0000045 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125>)
 SubClassOf(obo:VIBSO_0000045 obo:VIBSO_0000034)
+
+# Class: obo:VIBSO_0003017 (spectral window center)
+
+AnnotationAssertion(obo:IAO_0000112 obo:VIBSO_0003017 "560 cm^-1"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:VIBSO_0003017 "A setting datum that specifies the middle wavelength/wavenumber of a spectrum, equal to the average of the maximum and minimum of the spectral window range utilized during the acquisition of spectroscopic data. It corresponds to the optimal alignment or centering of the spectrometer to ensure that the most relevant spectral features are captured effectively within the defined acquisition range."@en)
+AnnotationAssertion(dc:contributor obo:VIBSO_0003017 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dc:contributor obo:VIBSO_0003017 <http://orcid.org/0000-0002-2239-3955>)
+AnnotationAssertion(rdfs:label obo:VIBSO_0003017 "spectral window center"@en)
+AnnotationAssertion(rdfs:seeAlso obo:VIBSO_0003017 <https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/88>)
+SubClassOf(obo:VIBSO_0003017 obo:IAO_0000140)
 
 
 )
