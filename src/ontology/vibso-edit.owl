@@ -42,6 +42,7 @@ Annotation(dcterms:description "_WIP - NOT READY FOR PRODUCTION_ The Vibration S
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Vibrational Spectroscopy Ontology")
 
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
 Declaration(NamedIndividual(<http://orcid.org/0000-0003-2673-366X>))
 Declaration(NamedIndividual(ex:AssayObjective_O))
 Declaration(NamedIndividual(ex:Assay_A))
@@ -123,6 +124,10 @@ SubClassOf(obo:UO_0000002 obo:IAO_0000003)
 # Class: obo:UO_0000051 (concentration unit)
 
 SubClassOf(obo:UO_0000051 obo:IAO_0000003)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> (<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+AnnotationAssertion(rdfs:comment <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "This class was imported via MIREOT technique just to have a grouping class for all obsoleted classes."@en)
 
 
 ############################
