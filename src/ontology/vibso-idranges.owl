@@ -19,35 +19,60 @@ Annotations:
     idprefix: "http://purl.obolibrary.org/obo/VIBSO_",
     iddigits: 7
 
-AnnotationProperty: idprefix:
-
-    
-AnnotationProperty: iddigits:
-
-    
+AnnotationProperty: idprefix: 
+AnnotationProperty: iddigits:  
 AnnotationProperty: idsfor:
-
-    
 AnnotationProperty: allocatedto:
 
 Datatype: idrange:1
-
     Annotations: 
-        allocatedto: "ONTOLOGY-CREATOR"
-    
+        allocatedto: "Information (IAO:0000030)"
     EquivalentTo: 
-        xsd:integer[>= 0 , <= 999999]
-
-    
+        xsd:integer[>= 1000 , <= 1999]
+        
 Datatype: idrange:2
-
     Annotations: 
-        allocatedto: "ADDITIONAL EDITOR"
+        allocatedto: "Data Item (IAO:0000027)"
+    EquivalentTo: 
+        xsd:integer[>= 2000 , <= 2999]
+
+Datatype: idrange:3
+    Annotations: 
+        allocatedto: "Settings (IAO:0000140)"
+    EquivalentTo: 
+        xsd:integer[>= 3000 , <= 3999]
+
+Datatype: idrange:4
+    Annotations: 
+        allocatedto: "Measurement Datum (IAO:0000109)"
+    EquivalentTo: 
+        xsd:integer[>= 4000 , <= 4999]
+
+Datatype: idrange:5
+    Annotations: 
+        allocatedto: "Directive Information (IAO:0000033)"
+    EquivalentTo: 
+        xsd:integer[>= 5000 , <= 5999]    
+
+Datatype: idrange:6
+    Annotations: 
+        allocatedto: "Devices (OBI:0000968)"
     
     EquivalentTo: 
-        xsd:integer[>= 1000000 , <= 1999999]
-    
-    
+        xsd:integer[>= 6000 , <= 6999]  
+
+Datatype: idrange:7
+    Annotations: 
+        allocatedto: "Qualities (BFO:0000019)"
+    EquivalentTo: 
+        xsd:integer[>= 7000 , <= 7999]
+        
+Datatype: idrange:8
+    Annotations: 
+        allocatedto: "Processes (OBI:0000011)"
+    EquivalentTo: 
+        xsd:integer[>= 8000 , <= 8999]
+
 Datatype: xsd:integer
 Datatype: rdf:PlainLiteral
 

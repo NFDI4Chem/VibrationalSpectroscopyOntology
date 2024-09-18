@@ -1,0 +1,9 @@
+ID range	Entity
+1000 - 1999	Information (IAO:0000030)
+2000 - 2999	Data Item (IAO:0000027)
+3000 - 3999	Setting (IAO:0000140)
+4000 - 4999	Measurement Datum (IAO:0000109)
+5000 - 5999	Directive Information (IAO:0000033)
+6000 - 6999	Devices (OBI:0000968)
+7000 - 7999	Qualities (BFO:0000019)
+8000 - 8999	Processes (OBI:0000011)
