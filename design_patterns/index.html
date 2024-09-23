@@ -1,0 +1,1412 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://NFDI4Chem.github.io/VibrationSpectroscopyOntology/design_patterns/">
+      
+      
+        <link rel="prev" href="../development_approach/">
+      
+      
+        <link rel="next" href="../contributing/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Design Patterns & Decisions - Vibrational Spectroscopy Ontology Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#design-patterns-decisions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Vibrational Spectroscopy Ontology Documentation" class="md-header__button md-logo" aria-label="Vibrational Spectroscopy Ontology Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Vibrational Spectroscopy Ontology Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Design Patterns & Decisions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Vibrational Spectroscopy Ontology Documentation" class="md-nav__button md-logo" aria-label="Vibrational Spectroscopy Ontology Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Vibrational Spectroscopy Ontology Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About VIBSO
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            About VIBSO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain_definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Domain Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../competency_questions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Competency Questions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development_approach/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Development Approach
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Design Patterns & Decisions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Design Patterns & Decisions
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vibso-tbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      VIBSO TBox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planned-process-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planned Process Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obi-core-assay-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBI Core Assay Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OBI Core Assay Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subjects-of-an-assay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subjects of an Assay
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outputs-of-an-assay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outputs of an Assay
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-an-assay-according-to-the-obi-core-assay-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining an Assay According to the OBI Core Assay Pattern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extending-the-obi-core-assay-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extending the OBI Core Assay Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extending the OBI Core Assay Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assay-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assay Devices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assay-device-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assay Device Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-an-assay-according-to-the-extended-assay-pattern-in-the-context-of-vibso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining an Assay According to the Extended Assay Pattern in the Context of VIBSO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-assay-pattern-in-a-bigger-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Assay Pattern in a Bigger Picture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-example-instances-in-vibso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Example Instances in VIBSO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obi-quality-quantity-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBI Quality &amp; Quantity Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measurement-example-kg-of-the-assay-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measurement Example KG of the Assay Pattern
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contributing To VIBSO
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Contributing To VIBSO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Contribute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ntr_workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding New Terms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Default ODK Workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Components management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ODK Specific Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            ODK Specific Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vibso-tbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      VIBSO TBox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planned-process-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planned Process Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obi-core-assay-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBI Core Assay Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OBI Core Assay Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subjects-of-an-assay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subjects of an Assay
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outputs-of-an-assay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outputs of an Assay
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-an-assay-according-to-the-obi-core-assay-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining an Assay According to the OBI Core Assay Pattern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extending-the-obi-core-assay-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extending the OBI Core Assay Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extending the OBI Core Assay Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assay-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assay Devices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assay-device-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assay Device Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-an-assay-according-to-the-extended-assay-pattern-in-the-context-of-vibso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining an Assay According to the Extended Assay Pattern in the Context of VIBSO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-assay-pattern-in-a-bigger-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Assay Pattern in a Bigger Picture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-example-instances-in-vibso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Example Instances in VIBSO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obi-quality-quantity-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBI Quality &amp; Quantity Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measurement-example-kg-of-the-assay-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measurement Example KG of the Assay Pattern
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="design-patterns-decisions">Design Patterns &amp; Decisions</h1>
+<p><strong>This page will be updated regularly in the iterative development of VIBSO to document modeling decisions and design 
+patterns.</strong></p>
+<p>Following best practices in ontology development, we will reuse established design patterns whenever possible. 
+Since most ontologies we reuse are OBO Foundry based, we also reuse their design patterns to be logically sound and 
+interoperable. This entails committing to its underlying ontological framework, which is on the most abstract level
+grounded in the Basic Formal Ontology (BFO) 2.0 classes only version and the current version of the Relation Ontology 
+(RO).
+These patterns are expressed formally in the logical definitions of the imported classes in form of asserted
+<code>rdfs:equivalentTo</code> or <code>rdfs:subclassOf</code> axioms and in the logical definitions of the imported properties in form of 
+asserted <code>rdfs:domain</code> and <code>rdfs:range</code> axioms and their type (e.g. transitive, functional, symmetric, etc.). 
+Although less formally binding, the textual definitions of the classes and relations constituting these pattern are 
+also part of their expression.</p>
+<h2 id="vibso-tbox">VIBSO TBox</h2>
+<p>Here you can see VIBSO's current terminology box (TBox) that focuses on vibrational Raman spectroscopy and 
+which also shows how VIBSO depends on reusing existing ontology classes, relations and design patterns.</p>
+<p><img alt="Raman spectroscopy terminology box" src="../images/VIBSO_Raman_Tbox.png" /></p>
+<p>This TBox is supposed to be updated iteratively whenever a new term is being discussed for inclusion. 
+We hope that it might be easier for domain experts to define technical terms in this ontological framework by adding 
+them here first.</p>
+<p>A higher resolution HTML version of this TBox and the below discussed pattern graphs with links to the used terms in 
+the NFDI4Chem Terminology Service can be found <a href="../images/VIBSO_TBox_graph_views.html">here</a>. The source file to edit these with the <a href="https://draw.io">draw.io</a> app 
+is <a href="../images/VIBSO_T-Box_graph_views.drawio">here</a>.</p>
+<h2 id="planned-process-pattern">Planned Process Pattern</h2>
+<p>Within the above TBox we can find specializations of a central class defined in the Ontology for Biomedical 
+Investigations (OBI) which is called <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000011">'planned proces'</a>.
+This class is central in the OBO framework because it provides a general pattern for defining all kinds of processes in 
+which some agent(s) act(s) according to a set of predetermined instructions in order to achieve a certain outcome. 
+Logically, it is defined as a "process that realizes a plan which is the concretization of a plan specification". 
+Following the formalization of this definition, we can safely ignore the very abstract 'plan' class and only need to 
+focus on the <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FIAO_0000104">'plan specification'</a> 
+that gets concretized by a 'plan'. A 'plan specification' is defined in the Information Artifact Ontology (IAO) as the 
+directive information that specifies through its parts which actions have to be performed (<a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FIAO_0000007">'action specification'</a>)
+in order to achieve the intended goals (<a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FIAO_0000005">'objective specification'</a>)
+of a 'planned process'. It thus resembles more fittingly what we usually mean in natural language when speaking of a 
+plan or method. To have a direct relation from a 'plan specification' to its 'planned proces', we can reuse 
+'executes' from the Statistical Methods Ontology (STATO), as it is defined exactly for this purpose.</p>
+<p>The pattern can be visualized like this:</p>
+<p><img alt="planned_process_pattern.png" src="../images/planned_process_pattern.png" /></p>
+<p>We could apply this very general pattern for example to describe the baking of cookies like this:</p>
+<p><img alt="planned_process_pattern_example.png" src="../images/planned_process_pattern_example.png" /></p>
+<h2 id="obi-core-assay-pattern">OBI Core Assay Pattern</h2>
+<p>As defining all relevant types of vibrational spectroscopy assays, including their different kinds of data outputs 
+and their experimental setups from a research data management perspective is the central goal of VIBSO, we are 
+always dealing with special kinds of planned processes. For this we can leverage the fact that there also already 
+exists an <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000070">'assay'</a> 
+class within OBI, which we can reuse as the central parent class for all vibrational spectroscopy assays. 
+It is defined as:</p>
+<div class="highlight"><pre><span></span><code> A planned process that has the objective to produce information 
+ about a material entity (the evaluant) by examining it.
+</code></pre></div>
+<p>This definition, along with the logical axioms asserted on this class and their entailments, constitute a core 
+design pattern which can be represented graphically like this:</p>
+<p><img alt="OBI_asserted_assay_pattern" src="../images/OBI_asserted_assay_pattern.png" /></p>
+<p>To exemplify this pattern within the domain of VIBSO we can instantiate these classes like this.</p>
+<p><img alt="OBI_asserted_assay_pattern_example.png" src="../images/OBI_asserted_assay_pattern_example.png" /></p>
+<p>To better understand the defined logic of this pattern, it seems useful to look at its parts more closely.</p>
+<h3 id="subjects-of-an-assay">Subjects of an Assay</h3>
+<p>As we can see in this graph, the use of the term 'assay' is restricted to only those planned processes that examine a 
+<a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000040">'material entity'</a> via the <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000293">'has specified input'</a> relation. A material entity is defined in BFO as anything 
+that is extended in three-dimensional space, has a unique identity and contains some portion of matter. This could 
+include objects identified by their mass, material boundaries, or energy. Therefore, a rock, a nostril, or an elementary 
+particle such as an electron or quark, all qualify as a material entity. This restriction on the meaning of assay is not 
+just given in the above definition, but also in the definitions of <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000441">'assay objective'</a> and <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000441">'evaluant role'</a>. 
+Therefore, a planned process which examines a thing that is not a material entity cannot be classified as an assay in 
+this sense, its role can never be an 'evaluant role' and its objective can never be an 'assay objective'.</p>
+<h3 id="outputs-of-an-assay">Outputs of an Assay</h3>
+<p>When looking at the output of an 'assay', we see that, although its textual definition only speaks of information in 
+general, the axiomatization in this pattern rather restricts the possible output to <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000441">'data item'</a>, a special kind 
+of information, via the <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000441">'has specified output'</a> 
+relation. The 'data item' class is defined in IAO as a kind of information "that is intended to be a truthful 
+statement about something [...] and is constructed/acquired by a method which reliably tends to produce (approximately) 
+truthful statements." Although this definition might suggest otherwise, an editor note on this class and the synonym 
+'data' make clear that 'data item' also includes the kinds of information that are compositions of multiple truthful 
+statements about a thing. In the context of the 'assay' pattern, we can thus say that an 'assay' must produce a truthful
+statement or a composition of truthful statements about the examined 'material entity'. To apply this to an example from 
+VIBSO's domain, we can say that a Raman spectrum is a 'data item' because it is composed of the measurements (e.g. 
+scattered light intensity values) that were recorded during a Raman spectroscopy assay.</p>
+<h3 id="defining-an-assay-according-to-the-obi-core-assay-pattern">Defining an Assay According to the OBI Core Assay Pattern</h3>
+<p>There is an axiom asserted on the assay class which states that whenever an 'assay objective' is achieved by the use of 
+a planned process, this process must be classified as an 'assay'. Hence, the 'assay objective' must be the information 
+that describes the assay type by specifying what kind of data about the evaluated material is to be produced. 
+Accordingly, the definition of 'assay objective' reads: "an objective specification to determine a specified type of 
+information about an evaluated entity (the material entity bearing evaluant role)". However, <a href="https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000437">'analyte measurement 
+objective'</a>
+seems to be the only subclass of 'assay objective' in OBO ontologies, and it is only used to group roughly 600 kinds of 
+assays as an 'analyte assay', which produces information about the presence, concentration, or amount of a 
+molecular entity or an atom, within the evaluated material. These analyte assays themselves are formally stratified 
+mostly by specifying which kind of molecular entity or atom is being analysed within the evaluated material. The 
+remaining 1000+ specializations of assay in OBI are formally stratified either by focusing on the evaluated material, 
+a certain characteristic of the evaluated material, the specific kind of data output, the devices used, or a 
+combination of these. </p>
+<p>This shows that we can use various axis of differentiation within the core assay pattern to classify a specific 
+kind of assay. Using logical axioms in the formal definition of assay types helps alot, as it allows multiple 
+inheritance to be inferred automatically by reasoners, an example of which is
+<a href="https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0001721">'3D molecular structure determination assay of an antigen:antibody complex'</a>.
+What some assay definitions in OBI also indicate is that we sometimes need to extend the core OBI assay pattern 
+to classify certain assay types. Especially, if we want to differentiate or group assays in more detail, like when we 
+need more information about the used method including the devices and device settings.</p>
+<h2 id="extending-the-obi-core-assay-pattern">Extending the OBI Core Assay Pattern</h2>
+<p>Since 'assay' is a specialization of 'planned process', we know that its method (plan) must be defined in some kind of 
+'plan specification'. In OBI, we find the class <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0001896">'investigation assay specification'</a>, which is defined as a 
+'plan specification' that indicates the assay type, and which is also called 'Project Method'. 
+Some provided examples for this class are: sequence or mass spectrometry. Hence, we should be using this subclass of 
+'plan specification' in our assay pattern, and we can assert that an essential part of it is an 'assay objective'. 
+Similarly, we can say that the information which determines the experimental setup of a specific assay, such 
+as the needed devices, their settings or the way in which the evaluated sample must be prepared, is also an essential 
+part of the 'investigation assay specification'.</p>
+<h3 id="assay-devices">Assay Devices</h3>
+<p>To represent the instruments used in an assay, we can import the already existing 'device' class from OBI and link 
+it to 'assay' via the <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBI_0000293">'has specified input'</a> relation. The definition of this relation makes clear that the range 
+of it, in our case a 'device', must be specified in a 'plan specification', in our case an 'investigation assay 
+specification'.</p>
+<h3 id="assay-device-settings">Assay Device Settings</h3>
+<p>To represent the part of an 'investigation assay specification' that is the information which specifies what kind of 
+configurable qualities an assay device must have, we can use the class <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FIAO_0000140">'setting datum'</a>, since it is defined as a 
+'data item' about "some configuration of an instrument". To represent the configurable device quality 
+specified by a setting datum, we can use the class <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0001241">'physical object quality'</a> from the Phenotype and Trait 
+Ontology (PATO), as it is the parent class of more specific physical qualities, such as temperature, wavelength, mass or 
+position. This quality can be related to the device via the <a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_0000080">'quality of'</a> relation from BFO.
+Since the actual quantitative value of the 'physical object quality' specified by a 'setting datum' can be encoded 
+using different units of measurement, we also need a way to formally represent this. The way this is currently done 
+in OBI is via the <a href="https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001933">'value specification'</a> class, which is defined as an information "that specifies a value within 
+a classification scheme or on a quantitative scale". We can link this class to a 'setting datum' via the 
+<a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001938">'has value specification'</a> relation which is a specialization of the very general 'has part' relation. For the 
+part of this value encoding that represents a given measurement unit, such as any SI unit, we can use one of the 
+instances of the class '<a href="https://terminology.nfdi4chem.de/ts/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000000">unit</a>' defined in the Unit Ontology (UO), and link it via the 
+<a href="https://terminology.nfdi4chem.de/ts/ontologies/vibso/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000039">'has measurement unit label'</a> relation from IAO. The last missing pieces are the links between a value 
+specification and the actual literal value respectively the configurable device quality. Both are defined in 
+OBI as <a href="https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0002135">'has specified value'</a>, respectively <a href="https://terminology.nfdi4chem.de/ts/ontologies/obi/props?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0001927">'specifies value of'</a>.</p>
+<p>Having described all the classes and relations we need to extend the OBI core assay pattern, we can now visualize 
+this in from of the following graph:
+<img alt="OBI_asserted_assay_pattern" src="../images/OBO_setting_pattern.png" /></p>
+<p>When comparing this graph to the previous one, one can see that we have also added an 'is about' relation between
+'assay objective' and 'data item'. This relation was not added to the core pattern previously, as it is not formally 
+asserted in OBI, but only given in the textual definition of the 'assay objective'. </p>
+<p>To exemplify this extended pattern in the context of VIBSO, we can instantiate its classes as follows:
+<img alt="OBO_setting_pattern_example.png" src="../images/OBO_setting_pattern_example.png" /></p>
+<h3 id="defining-an-assay-according-to-the-extended-assay-pattern-in-the-context-of-vibso">Defining an Assay According to the Extended Assay Pattern in the Context of VIBSO</h3>
+<p>As discussions with domain experts in the VIBSO development calls have made clear, the classification of 
+the various types of Raman spectroscopy as currently done in CHMO has some problems (see <a href="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/103">issue#103</a>).
+All of these types have in common that they somehow record the Raman scattering of the evaluated sample. 
+However, their methodology differs in the ways in which the Raman scattering is produced, recorded or subsequently 
+processed, by using either different devices, device settings, sample preparation steps or signal recording steps. 
+We thus need the extended assay pattern described here, to be able to describe these different methods in more 
+detail and thereby formally define the various types of Raman spectroscopy assays they specify. </p>
+<h2 id="the-assay-pattern-in-a-bigger-picture">The Assay Pattern in a Bigger Picture</h2>
+<p>This assay pattern can of course combined with other planned process patterns, to be able to describe its embedding 
+in a grander context. Without going into the details, the following TBox shows how this can be done with respect the 
+competency questions:</p>
+<ul>
+<li>Who performed the assay?</li>
+<li>What kind of data transformations where performed on the data output of the assay?</li>
+<li>What kind of sampling process was done before the assay?</li>
+<li>What is the investigation the assay is a part of?</li>
+</ul>
+<p><img alt="OBI_asserted_assay_pattern" src="../images/OBO_Investigation_Assay_Pattern.png" /></p>
+<h2 id="using-example-instances-in-vibso">Using Example Instances in VIBSO</h2>
+<p>In the previous VIBSO development calls, it became apparent that the proper use of the design patterns described 
+here should be illustrated with concrete example instances. This should not only make it easier for the domain 
+experts with little knowledge on ontology development to follow. We also hope to be able to spot logical inconsistencies 
+when minting new classes and asserting their class restrictions by using reasoners, such as ELK or HERMIT during the 
+development.</p>
+<p>We have thus added the ROBOT TSV template <a href="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/templates/vibso_examples.tsv">vibso_examples.tsv</a>,
+to be able to add example instances for each class minted in VIBSO. Similar to the other ROBOT templates we use, 
+this one gets automatically converted into an OWL component (<a href="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/ontology/components/vibso_examples.owl">vibso_examples.owl</a>) that is being imported into the 
+main editor file (<a href="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/ontology/vibso-edit.owl">vibso-edit.owl</a>).</p>
+<h2 id="obi-quality-quantity-pattern">OBI Quality &amp; Quantity Pattern</h2>
+<p><img alt="measurement process pattern example" src="../images/data_john_mass.png" />
+Since we are reusing OBO ontologies and their patterns, we also try to reuse OBI's way of modeling 
+<a href="https://github.com/obi-ontology/obi/wiki/Data-and-Values">data and values</a>. Please read their documentation for more 
+background. Using this OBI pattern allows us to differentiate data values of qualities (aka attributes) of a material 
+entity, such as the spectroscope or sample, into data values that represent settings and those that represent 
+measurements. From a data repository use case perspective, we might not need this fine-grained approach and defining 
+qualities/attributes and their value specifications might suffice. Yet in order to allow the integration of VIBSO in 
+Electronic Lab Notebooks, such a differentiation will most likely be very useful. Although this pattern seems to 
+work in many OBO use cases, we need to see, if we have to adjust it for our needs. Other ontologies like QUDT or SIO 
+use slightly different patterns to model qualities and their quantitative representations.</p>
+<hr />
+<h2 id="measurement-example-kg-of-the-assay-pattern">Measurement Example KG of the Assay Pattern</h2>
+<p>Lars Vogt and Tobias Kuhn demonstrate the use of the OBO assay pattern within a grander research context as follows
+(cited from their preprint <a href="http://doi.org/10.13140/RG.2.2.13742.59203">DOI:10.13140/RG.2.2.13742.59203</a>, p.8):
+<img alt="measurement process pattern example" src="../images/Fig4_10.13140_RG.2.2.13742.59203.png" /></p>
+<blockquote>
+<p>Figure 3: A detailed machine-actionable representation of the metadata relating to a weight measurement datum
+documented as an RDF ABox graph. The representation takes the form of an ABox semantic graph following the RDF
+syntax. The graph documents a mass measurement process using a balance. It relates an instance of mass measurement
+assay (OBI:0000445) with instances of various other classes from different ontologies, specifying who conducted the
+measurement, where and when it took place, following which protocol and using which device (i.e., balance). The
+graph furthermore specifies the particular material entity that served as subject and thus as input of the
+measurement process (i.e., ‘objectX’), and it specifies the data that is the output of the observation, which is
+contained in a particular weight measurement assertion.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
