@@ -24,7 +24,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_classes.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2024-09-17/components/vibso_classes.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-09-23/components/vibso_classes.owl>
 Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_classes.tsv' template.")
 
 Declaration(Class(obo:BFO_0000029))

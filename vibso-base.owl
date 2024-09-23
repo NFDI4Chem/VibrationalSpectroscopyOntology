@@ -16,11 +16,11 @@
      xmlns:ORCID="http://orcid.org/"
      xmlns:schema="http://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:schema1="https://schema.org/"
      xmlns:wikipedia="https://en.wikipedia.org/wiki/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/vibso/vibso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2023-12-20/vibso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/vibso/releases/2024-09-23/vibso-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-7694-5519"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-2239-3955"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-4378-6061"/>
@@ -29,7 +29,7 @@
         <dcterms:description>_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Vibrational Spectroscopy Ontology</dcterms:title>
-        <owl:versionInfo>2023-12-20</owl:versionInfo>
+        <owl:versionInfo>2024-09-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -87,12 +87,6 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
@@ -107,47 +101,31 @@
 
     <!-- http://purl.org/dc/terms/contributor -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
-        <rdfs:label>contributor</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
-        <rdfs:label>creator</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
-        <rdfs:label>description</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <rdfs:label>license</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
-        <rdfs:label>title</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- https://schema.org/affiliation -->
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -159,18 +137,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
     
 
 
@@ -186,21 +152,15 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0001938 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001938"/>
     
 
 
@@ -215,41 +175,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHMO_0000823 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000823"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003"/>
     
 
 
@@ -265,30 +193,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000140 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000140"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <rdfs:label>person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000441 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000441"/>
     
 
 
@@ -298,15 +211,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000674"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0001933 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001933"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
     
 
 
@@ -316,27 +241,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/STATO_0000184 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000051 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000184"/>
     
 
 
@@ -552,10 +459,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000112 xml:lang="en">example:RamanSpectrometerX rdf:type obo:CHMO_0001235 (Raman spectrometer) ;
-            obo:OBI_0000293 (has_specified_input) example:objective_magnification_factor_setting_for_RamanSpectrometerX .
-example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type obo:VIBSO_0000014 ;
-            obo:OBI_0002815 (has representation) &apos;100 x&apos; .</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">100x</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the magnification factor of the objective collecting the scattered light.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">magnification</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">magnification setting</obo:IAO_0000118>
@@ -571,15 +475,9 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000823"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000112 xml:lang="en">210 cm^-1</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A data item that is the part of a Raman spectrum which represents the maximum wavenumber included in the spectrum and which is calculated from the windows size and window center.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the upper boundary of the spectral window range utilized during the acquisition of spectroscopic data.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">acquisition band maximum</obo:IAO_0000118>
         <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
@@ -593,15 +491,9 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
     <!-- http://purl.obolibrary.org/obo/VIBSO_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000823"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000112 xml:lang="en">1960 cm^-1</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A data item that is the part of a Raman spectrum which represents the minimum wavenumber included in the spectrum and which is calculated from the windows size and window center.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the lower boundary of the spectral window range utilized during the acquisition of spectroscopic data.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">acquisition band minimum</obo:IAO_0000118>
         <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
@@ -796,8 +688,7 @@ example:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type o
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <obo:IAO_0000112 xml:lang="en">10</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies how many equally configured measurements of a sample are to be performed in the vertical direction (on the Z-axis) of a certain region of interest.
-Together with the focal point distance, this setting defines the region of interest depth.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies how many equally configured measurements of a sample are to be performed in the vertical direction (on the Z-axis) of a certain region of interest. Together with the focal point distance, this setting defines the region of interest depth.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">number of layers per acquisition</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">number of points in the Z direction</obo:IAO_0000118>
         <dce:contributor rdf:resource="http://orcid.org/0000-0001-7694-5519"/>
@@ -809,125 +700,403 @@ Together with the focal point distance, this setting defines the region of inter
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000028 -->
 
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is obtained from a calibrated and ready Raman spectrometer and prior to be submitted to any mathematical modification. The only corrections on the data shall be the one associated with the spectrometer. The data will assign pixels readouts with nm as per calibration of the spectrometer and a.u. as intensity readout but will not be corrected in relationship of the incident monochromatic beam.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">raw Raman data</obo:IAO_0000118>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:label xml:lang="en">Raman raw data</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/77"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000028"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A measurement datum that is obtained from a calibrated and ready Raman spectrometer and prior to be submitted to any mathematical modification. The only corrections on the data shall be the one associated with the spectrometer. The data will assign pixels readouts with nm as per calibration of the spectrometer and a.u. as intensity readout but will not be corrected in relationship of the incident monochromatic beam.</owl:annotatedTarget>
+        <dce:source rdf:resource="https://wiki.charisma.ideaconsult.net/wiki/Item:Q64"/>
+    </owl:Axiom>
     
 
 
-    <!-- https://example.instances/AssayObjective_O -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000029 -->
 
-    <owl:NamedIndividual rdf:about="https://example.instances/AssayObjective_O">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000441"/>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <obo:IAO_0000112 xml:lang="en">The light was focused onto the embedded sample using a 100× objective with a numerical aperture of 0.9, resulting in a diffraction-limited in-plane laser spot size of &lt;1 μm.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that, as a dimensionless number, represents the quality which characterizes the range of angles over which an optical system can accept or emit light [dc:source wikidata:Numerical_aperture]. It gets calculated by the sine of one half of the vertex angle of the largest cone of meridional rays that can enter or leave an optical system or element, multiplied by the refractive index of the medium in which the cone is located.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">possible equivalents in other terminologies: http://purl.obolibrary.org/obo/NCIT_C181921 &amp; https://w3id.org/reproduceme#LensNA</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">numerical aperture</obo:IAO_0000118>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:label xml:lang="en">lens numerical aperture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/76"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000029"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A setting datum that, as a dimensionless number, represents the quality which characterizes the range of angles over which an optical system can accept or emit light [dc:source wikidata:Numerical_aperture]. It gets calculated by the sine of one half of the vertex angle of the largest cone of meridional rays that can enter or leave an optical system or element, multiplied by the refractive index of the medium in which the cone is located.</owl:annotatedTarget>
+        <dce:source rdf:resource="https://en.wikipedia.org/wiki/Numerical_aperture"/>
+        <dce:source rdf:resource="https://wiki.charisma.ideaconsult.net/wiki/Item:Q385"/>
+    </owl:Axiom>
     
 
 
-    <!-- https://example.instances/Assay_A -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000030 -->
 
-    <owl:NamedIndividual rdf:about="https://example.instances/Assay_A">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <obo:BFO_0000055 rdf:resource="https://example.instances/EvaluantRole_R"/>
-        <obo:OBI_0000293 rdf:resource="https://example.instances/MaterialEntity_M"/>
-        <obo:OBI_0000299 rdf:resource="https://example.instances/DataItem_D"/>
-        <obo:OBI_0000417 rdf:resource="https://example.instances/AssayObjective_O"/>
-        <dce:description xml:lang="en">The assay A is planned to produce as a specified output the data item D which is a specific kind of information about the material entity M, which has the evaluant role R that gets realized in this planned observation process.
-
-This example instance is part of the ontology to demonstrate the OBI assay pattern. The type and number of relations between this instance and other example instances are based on the subclassOf and equivalentTo axioms asserted on OBI&apos;s assay.</dce:description>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000028"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A data item that is obtained by processing raw Raman data.</obo:IAO_0000115>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:label xml:lang="en">primary Raman data</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/132"/>
+    </owl:Class>
     
 
 
-    <!-- https://example.instances/DataItem_D -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000031 -->
 
-    <owl:NamedIndividual rdf:about="https://example.instances/DataItem_D">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000136 rdf:resource="https://example.instances/MaterialEntity_M"/>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <obo:IAO_0000115 xml:lang="en">A physical quality of a measurement device that expresses (realizes) the device&apos;s capacity to distinguish between two distinct but closely related measurements of the same physical quality or type, often quantified as the smallest detectable difference (resolution interval) between measured values.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:label xml:lang="en">resolution</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
     
 
 
-    <!-- https://example.instances/EvaluantRole_R -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000032 -->
 
-    <owl:NamedIndividual rdf:about="https://example.instances/EvaluantRole_R">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A data item that quantifies a resolution, by representing the minimum measurable difference between two measurements of the same physical quality or type, such that the measurements can be distinguished as different.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:label xml:lang="en">resolution interval</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
     
 
 
-    <!-- https://example.instances/MaterialEntity_M -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000033 -->
 
-    <owl:NamedIndividual rdf:about="https://example.instances/MaterialEntity_M">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:RO_0000087 rdf:resource="https://example.instances/EvaluantRole_R"/>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000184"/>
+        <obo:IAO_0000115 xml:lang="en">A ratio that quantifies the ability of a measurement device to distinguish between small differences in measurement values, expressed as the ratio between a typical measurement datum and the corresponding resolution interval.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:label xml:lang="en">resolution power</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000033"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A ratio that quantifies the ability of a measurement device to distinguish between small differences in measurement values, expressed as the ratio between a typical measurement datum and the corresponding resolution interval.</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+    </owl:Axiom>
     
 
 
-    <!-- https://orcid.org/0000-0002-1595-3213 -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000034 -->
 
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-1595-3213">
-        <rdfs:label>Philip Strömert</rdfs:label>
-        <schema1:affiliation rdf:resource="https://ror.org/04aj4c181"/>
-        <schema1:affiliation rdf:resource="https://www.wikidata.org/wiki/Q96678459"/>
-        <schema1:affiliation xml:lang="en">VIBSO Workgroup</schema1:affiliation>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000032"/>
+        <obo:IAO_0000115 xml:lang="en">A resolution interval that quantifies the minimum distance between two points such that they can be considered two separate points in a given microscope under specific experimental parameters.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:label xml:lang="en">spatial resolution interval</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A resolution interval that quantifies the minimum distance between two points such that they can be considered two separate points in a given microscope under specific experimental parameters.</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+    </owl:Axiom>
     
 
 
-    <!-- https://orcid.org/0000-0002-2239-3955 -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000035 -->
 
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-2239-3955">
-        <rdfs:label>Giacomo Lanza</rdfs:label>
-        <schema1:affiliation rdf:resource="https://ror.org/05r3f7h03"/>
-        <schema1:affiliation rdf:resource="https://www.wikidata.org/wiki/Q96678459"/>
-        <schema1:affiliation xml:lang="en">VIBSO Workgroup</schema1:affiliation>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000034"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial resolution interval that quantifies the minimum angular separation between two points on a plane orthogonal to the light ray, expressed as an angle centered in the lens (Formula: δθ = 1.22 * λ / D).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:comment xml:lang="en">$δθ = 1.22cdotλ/D$</rdfs:comment>
+        <rdfs:label xml:lang="en">lateral resolution interval as angle</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000035"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A spatial resolution interval that quantifies the minimum angular separation between two points on a plane orthogonal to the light ray, expressed as an angle centered in the lens (Formula: δθ = 1.22 * λ / D).</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+    </owl:Axiom>
     
 
 
-    <!-- https://orcid.org/0000-0002-4378-6061 -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000036 -->
 
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-4378-6061">
-        <rdfs:label>Johannes Hunold</rdfs:label>
-        <schema1:affiliation rdf:resource="https://ror.org/04aj4c181"/>
-        <schema1:affiliation rdf:resource="https://www.wikidata.org/wiki/Q96678459"/>
-        <schema1:affiliation xml:lang="en">VIBSO Workgroup</schema1:affiliation>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000034"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial resolution interval that quantifies the minimum linear separation between two points on a plane orthogonal to the light ray, expressed as the distance from the center of the optical spot (Formula: δr = 0.61 * λ / NA).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:comment xml:lang="en">$δr = 0.61cdotλ/NA$ (Abbe formula, derived from the Rayleigh criterion with the Kirchhoff, Debye and paraxial approximation) $= 1.22 λcdot(f/sharp)$</rdfs:comment>
+        <rdfs:label xml:lang="en">lateral resolution interval as length</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000036"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A spatial resolution interval that quantifies the minimum linear separation between two points on a plane orthogonal to the light ray, expressed as the distance from the center of the optical spot (Formula: δr = 0.61 * λ / NA).</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+    </owl:Axiom>
     
 
 
-    <!-- https://ror.org/04aj4c181 -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000037 -->
 
-    <owl:NamedIndividual rdf:about="https://ror.org/04aj4c181">
-        <rdfs:label xml:lang="en">German National Library of Science and Technology Hannover</rdfs:label>
-        <rdfs:label xml:lang="de">Technische Informationsbibliothek (TIB)</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000034"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial resolution interval that quantifies the minimum measurable separation between two points along the axis of propagation of the light ray, expressed as a linear distance (Formula: δz = 2 ⋅ n ⋅ λ / NA²).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:comment xml:lang="en">$δz = 2cdot ncdotλ/NA²$</rdfs:comment>
+        <rdfs:label xml:lang="en">axial resolution interval as length</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000037"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A spatial resolution interval that quantifies the minimum measurable separation between two points along the axis of propagation of the light ray, expressed as a linear distance (Formula: δz = 2 ⋅ n ⋅ λ / NA²).</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+    </owl:Axiom>
     
 
 
-    <!-- https://ror.org/05r3f7h03 -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000038 -->
 
-    <owl:NamedIndividual rdf:about="https://ror.org/05r3f7h03">
-        <rdfs:label xml:lang="en">German National Metrology Institute</rdfs:label>
-        <rdfs:label xml:lang="de">Physikalisch-Technische Bundesanstalt (PTB)</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000032"/>
+        <obo:IAO_0000115 xml:lang="en">A resolution interval that quantifies the minimum separation between two narrow peaks in a spectrum such that they can be distinguished as two separate peaks.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:label xml:lang="en">spectral resolution interval</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000038"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A resolution interval that quantifies the minimum separation between two narrow peaks in a spectrum such that they can be distinguished as two separate peaks.</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+    </owl:Axiom>
     
 
 
-    <!-- https://www.wikidata.org/wiki/Q96678459 -->
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000039 -->
 
-    <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Q96678459">
-        <rdfs:label>NFDI4Chem</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">A spectral resolution interval that quantifies the minimum separation between two wavelengths such that they can be distinguished as different (Formula: δλ = λ / (n * N)).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:comment xml:lang="en">$δλ = λ / (ncdot N) = RFcdot Δλcdot WS / n$</rdfs:comment>
+        <rdfs:label xml:lang="en">spectral resolution interval as wavelength</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000039"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A spectral resolution interval that quantifies the minimum separation between two wavelengths such that they can be distinguished as different (Formula: δλ = λ / (n * N)).</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+        <dce:source rdf:resource="https://wiki.charisma.ideaconsult.net/wiki/Item:Q200"/>
+        <dce:source rdf:resource="https://wiki.charisma.ideaconsult.net/wiki/Item:Q22"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">A spectral resolution interval that quantifies the minimum separation between two wavenumbers such that they can be distinguished as different (Formula: δν~ = δλ / λ²).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:comment xml:lang="en">$δbarν$</rdfs:comment>
+        <rdfs:label xml:lang="en">spectral resolution interval as wavenumber</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A spectral resolution interval that quantifies the minimum separation between two wavenumbers such that they can be distinguished as different (Formula: δν~ = δλ / λ²).</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">A spectral resolution interval that quantifies the minimum separation between two frequencies such that they can be distinguished as different (Formula: δν = c * δν~ = c * δλ / λ²).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:comment xml:lang="en">$δν$</rdfs:comment>
+        <rdfs:label xml:lang="en">spectral resolution interval as frequency</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000041"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A spectral resolution interval that quantifies the minimum separation between two frequencies such that they can be distinguished as different (Formula: δν = c * δν~ = c * δλ / λ²).</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">A spectral resolution interval that quantifies the minimum separation between two energy levels such that they can be distinguished as different (Formula: δE = h * δν = h * c * δν~ = h * c * δλ / λ²).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:comment xml:lang="en">$δE$</rdfs:comment>
+        <rdfs:label xml:lang="en">spectral resolution interval as energy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000042"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A spectral resolution interval that quantifies the minimum separation between two energy levels such that they can be distinguished as different (Formula: δE = h * δν = h * c * δν~ = h * c * δλ / λ²).</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000032"/>
+        <obo:IAO_0000115 xml:lang="en">A resolution interval that quantifies the minimum difference in irradiated energy, often coded as gray level in a grayscale or look-up-table (LUT).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:label xml:lang="en">radiometric resolution interval</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000043"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A resolution interval that quantifies the minimum difference in irradiated energy, often coded as gray level in a grayscale or look-up-table (LUT).</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000032"/>
+        <obo:IAO_0000115 xml:lang="en">A resolution interval that quantifies the temporal separation between two measurements or frames, often expressed as the inverse of the frame rate. In techniques where temporal resolution is not directly derived from frame rate, it quantifies the minimum temporal interval between two resolvable events.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:comment xml:lang="en">In techniques where the temporal resolution is not given directly from a temporal distance between subsequent measurements (e.g., pulsed time resolved pump-probe techniques), it can be used more properly as defined above</rdfs:comment>
+        <rdfs:label xml:lang="en">temporal resolution interval</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000044"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A resolution interval that quantifies the temporal separation between two measurements or frames, often expressed as the inverse of the frame rate. In techniques where temporal resolution is not directly derived from frame rate, it quantifies the minimum temporal interval between two resolvable events.</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISBN%20081946043-5"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000034"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial resolution interval that quantifies the theoretical maximum spatial resolution achievable by an optical system, constrained by the diffraction of light.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This class is actually to general for VIBSO&apos;s scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far.</obo:IAO_0000116>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0003-2673-366X"/>
+        <rdfs:comment xml:lang="en">The Abbe diffraction limit, is defined as λ/ (2 NA) in which λ is the wavelength of the illuminating light and NA is the numerical aperture.</rdfs:comment>
+        <rdfs:label xml:lang="en">diffraction limit</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/VIBSO_0000045"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A spatial resolution interval that quantifies the theoretical maximum spatial resolution achievable by an optical system, constrained by the diffraction of light.</owl:annotatedTarget>
+        <dce:source rdf:resource="http://www.w3.org/2002/07/ISO/DIS%2018115-3,%20https:/www.iso.org/obp/ui#d25805417e256"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VIBSO_0003017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VIBSO_0003017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000674"/>
+        <obo:IAO_0000112 xml:lang="en">560 cm^-1</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A setting datum that specifies the middle wavelength/wavenumber of a spectrum, equal to the average of the maximum and minimum of the spectral window range utilized during the acquisition of spectroscopic data. It corresponds to the optimal alignment or centering of the spectrometer to ensure that the most relevant spectral features are captured effectively within the defined acquisition range.</obo:IAO_0000115>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
+        <dce:contributor rdf:resource="http://orcid.org/0000-0002-2239-3955"/>
+        <rdfs:label xml:lang="en">spectral window center</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/88"/>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

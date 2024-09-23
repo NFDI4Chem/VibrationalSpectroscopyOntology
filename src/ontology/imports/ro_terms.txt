@@ -20,5 +20,6 @@ http://purl.obolibrary.org/obo/BFO_0000050 # part of
 http://purl.obolibrary.org/obo/BFO_0000051 # has part
 http://purl.obolibrary.org/obo/BFO_0000054 # realized in
 http://purl.obolibrary.org/obo/BFO_0000055 # realizes
+http://purl.obolibrary.org/obo/RO_0015012 # reciprocal of
 
 http://purl.obolibrary.org/obo/IAO_0000136 # is about

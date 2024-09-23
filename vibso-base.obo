@@ -1,44 +1,34 @@
 format-version: 1.2
-data-version: vibso/releases/2023-12-20/vibso-base.owl
+data-version: vibso/releases/2024-09-23/vibso-base.owl
+idspace: dce http://purl.org/dc/elements/1.1/ 
+idspace: dcterms http://purl.org/dc/terms/ 
+idspace: DOI http://doi.org/ 
+idspace: ex https://example.instances/ 
+idspace: ORCID http://orcid.org/ 
+idspace: prov http://www.w3.org/ns/prov# 
+idspace: ROR http://ror.org/ 
+idspace: schema http://schema.org/ 
+idspace: skos http://www.w3.org/2004/02/skos/core# 
+idspace: wikipedia https://en.wikipedia.org/wiki/ 
 ontology: vibso/vibso-base
-property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2239-3955
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-4378-6061
-property_value: http://purl.org/dc/terms/creator https://www.wikidata.org/wiki/Q96678459
-property_value: http://purl.org/dc/terms/creator "VIBSO Workgroup" xsd:string
-property_value: http://purl.org/dc/terms/description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays." xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
-property_value: http://purl.org/dc/terms/title "Vibrational Spectroscopy Ontology" xsd:string
-property_value: owl:versionInfo "2023-12-20" xsd:string
-
-[Term]
-id: CHEBI:24431
-is_a: BFO:0000040
-
-[Term]
-id: NCBITaxon:9606
-name: person
-is_a: OBI:0100026
-
-[Term]
-id: UO:0000001
-is_a: IAO:0000003
-
-[Term]
-id: UO:0000002
-is_a: IAO:0000003
-
-[Term]
-id: UO:0000051
-is_a: IAO:0000003
+property_value: dce:type IAO:8000001
+property_value: dcterms:contributor https://orcid.org/0000-0001-7694-5519
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:contributor https://orcid.org/0000-0002-2239-3955
+property_value: dcterms:contributor https://orcid.org/0000-0002-4378-6061
+property_value: dcterms:creator https://www.wikidata.org/wiki/Q96678459
+property_value: dcterms:creator "VIBSO Workgroup" xsd:string
+property_value: dcterms:description "_WIP - NOT READY FOR PRODUCTION_ The Vibration Spectroscopy Ontology (VIBSO) is used to represent information regarding the excution and analysis of vibrational spectroscopy assays." xsd:string
+property_value: dcterms:license https://creativecommons.org/licenses/by/4.0/
+property_value: dcterms:title "Vibrational Spectroscopy Ontology" xsd:string
+property_value: owl:versionInfo "2024-09-23" xsd:string
 
 [Term]
 id: VIBSO:0000000
 name: vibrational spectrometer configuration specification
 def: "A setting datum that specifies the needed settings of a spectrometer used in vibrational spectroscopy." []
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/39
 
 [Term]
@@ -46,16 +36,16 @@ id: VIBSO:0000001
 name: Raman spectrometer configuration
 def: "A device setting that represents the measured or set physical qualities which make up the configuration state of a Raman spectrometer at the time of a measurement (e.g. operating temperature, exitation wavelength, groove density, ...)." []
 is_a: OBI:0000654
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000112 "The set of meassured configuration characteristics of a Raman spectrometer, like the operating temperature of a Raman spectrometer." xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/47
 
 [Term]
 id: VIBSO:0000002
 name: integration time setting
-def: "A setting datum that specifies the length of time that a photo detector is allowed to collect photons before passing the accumulated charge to the A/D converter for processing. The minimum integration time is the shortest integration time the device supports and is dependent on how fast the detector can read out all of the pixel information. Integration time should not be confused with data transfer speed." [] {http://purl.org/dc/elements/1.1/source="i"}
+def: "A setting datum that specifies the length of time that a photo detector is allowed to collect photons before passing the accumulated charge to the A/D converter for processing. The minimum integration time is the shortest integration time the device supports and is dependent on how fast the detector can read out all of the pixel information. Integration time should not be confused with data transfer speed." [] {dce:source="i"}
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 property_value: IAO:0000118 "integration period setting" xsd:string
 property_value: IAO:0000118 "integration time" xsd:string
@@ -66,7 +56,7 @@ id: VIBSO:0000003
 name: preamplifier gain setting
 def: "A setting datum that specifies the preamplifier gain in CCD sensors." []
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology." xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/41
 
@@ -75,7 +65,7 @@ id: VIBSO:0000004
 name: horizontal shift speed setting
 def: "A setting datum that specifies the horizontal shift speed in CCD sensors." []
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/42
 
@@ -84,7 +74,7 @@ id: VIBSO:0000005
 name: vertical shift speed setting
 def: "A setting datum that specifies the vertical shift speed in CCD sensors." []
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/42
 
@@ -93,7 +83,7 @@ id: VIBSO:0000006
 name: device temperature setting
 def: "A setting datum that specifies the operating temperature of a device." []
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology." xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/43
 
@@ -102,7 +92,7 @@ id: VIBSO:0000007
 name: number of accumulations
 def: "A setting datum that specifies the desired number of measurements a spectrometer has to perform on the same location, without position change to produce an usable spectrum. This setting datum is relevant to improve the signal to noise ratio." []
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "This class might better be defined in a more general device ontology." xsd:string
 property_value: IAO:0000118 "number of acquisitions" xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/30
@@ -112,16 +102,16 @@ id: VIBSO:0000008
 name: CCD sensor binning read mode setting
 def: "A setting datum that specifies the binning read mode of a device with a CCD sensor." []
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/46
 
 [Term]
 id: VIBSO:0000009
 name: groove density
-def: "A physical quality inhering in a diffraction grating device by virtue of the device's function to diffract light. This quality specifically depends on the number of grooves per area of the grating device and is usually expressed in grooves per millimeter." [] {http://purl.org/dc/elements/1.1/source="Diffraction:grating", http://purl.org/dc/elements/1.1/source=":~:text=The%20groove%20density%20(or%20groove,of%20the%20operational%20wavelength%20range"}
+def: "A physical quality inhering in a diffraction grating device by virtue of the device's function to diffract light. This quality specifically depends on the number of grooves per area of the grating device and is usually expressed in grooves per millimeter." [] {dce:source="wikipedia:Diffraction_grating", dce:source=":~:text=The%20groove%20density%20(or%20groove,of%20the%20operational%20wavelength%20range"}
 is_a: PATO:0001018
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "temp class until NTR in PATO has been accepted and merged (https://github.com/pato-ontology/pato/issues/541)" xsd:string
 property_value: IAO:0000118 "groove frequency" xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/45
@@ -131,7 +121,7 @@ id: VIBSO:0000010
 name: groove density setting
 def: "A setting datum that specifies the number of grooves in a diffraction grating device." []
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 property_value: IAO:0000118 "grating" xsd:string
 property_value: IAO:0000118 "grating setting" xsd:string
@@ -140,9 +130,9 @@ property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOnto
 [Term]
 id: VIBSO:0000011
 name: diffraction grating
-def: "A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)" [] {http://purl.org/dc/elements/1.1/source="Diffraction:grating"}
+def: "A device that is an optical component with a periodic structure that diffracts light into several beams travelling in different directions (i.e. different diffraction angles)" [] {dce:source="wikipedia:Diffraction_grating"}
 is_a: OBI:0000968
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/49
 
@@ -150,7 +140,7 @@ property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOnto
 id: VIBSO:0000012
 name: deprecated_excitation wavelength
 def: "A physical quality of the light source that is used used to excite a system to a higher energy state." []
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "This class is not needed, as PATO:wavelength is sufficient, if this quality of a Raman device is really needed." xsd:string
 property_value: IAO:0000231 IAO:0000103
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/48
@@ -162,7 +152,7 @@ id: VIBSO:0000013
 name: excitation wavelength setting
 def: "A setting datum that specifies the wavelength of an electromagnetic radiation source (e.g. a laser) which has the function to excite the energy state of a target material." []
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000116 "This class should better be defined in a more general device ontology or a domain ontology with the scope of optical devices." xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/48
 
@@ -171,10 +161,10 @@ id: VIBSO:0000014
 name: objective magnification factor setting
 def: "A setting datum that specifies the magnification factor of the objective collecting the scattered light." []
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
-property_value: IAO:0000112 "example:RamanSpectrometerX rdf:type obo:CHMO_0001235 (Raman spectrometer) ;\n            obo:OBI_0000293 (has_specified_input) example:objective_magnification_factor_setting_for_RamanSpectrometerX .\nexample:objective_magnification_factor_setting_for_RamanSpectrometerX rdf:type obo:VIBSO_0000014 ;\n            obo:OBI_0002815 (has representation) '100 x' ." xsd:string
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: IAO:0000112 "100x" xsd:string
 property_value: IAO:0000118 "magnification" xsd:string
 property_value: IAO:0000118 "magnification setting" xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/24%20
@@ -182,11 +172,10 @@ property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOnto
 [Term]
 id: VIBSO:0000015
 name: spectral window range maximum
-def: "A data item that is the part of a Raman spectrum which represents the maximum wavenumber included in the spectrum and which is calculated from the windows size and window center." []
-is_a: IAO:0000027
-relationship: BFO:0000050 CHMO:0000823
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+def: "A setting datum that specifies the upper boundary of the spectral window range utilized during the acquisition of spectroscopic data." []
+is_a: IAO:0000140
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000112 "210 cm^-1" xsd:string
 property_value: IAO:0000116 "It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived." xsd:string
 property_value: IAO:0000118 "acquisition band maximum" xsd:string
@@ -195,11 +184,10 @@ property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOnto
 [Term]
 id: VIBSO:0000016
 name: spectral window range minimum
-def: "A data item that is the part of a Raman spectrum which represents the minimum wavenumber included in the spectrum and which is calculated from the windows size and window center." []
-is_a: IAO:0000027
-relationship: BFO:0000050 CHMO:0000823
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-1595-3213
+def: "A setting datum that specifies the lower boundary of the spectral window range utilized during the acquisition of spectroscopic data." []
+is_a: IAO:0000140
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-1595-3213
 property_value: IAO:0000112 "1960 cm^-1" xsd:string
 property_value: IAO:0000116 "It needs to be determined, if this is also part of another kind of spectrum, such as a vibrational spectrum in general. We also need to decide, if we need to also model the terms window size and window center, from which this term is derived." xsd:string
 property_value: IAO:0000118 "acquisition band minimum" xsd:string
@@ -211,7 +199,7 @@ name: incident light power datum
 def: "A scalar measurement datum that is the result of measuring the incoming light power before the sample holder and which depends on the laser power and on the dispersive behaviour of the filters and optical components." []
 comment: The incident power is an elementary measurement parameter allowing to compare among measurements conducted with the same setup. A thorough investigation of the effects of light irradiation onto the sample depends on the local irradiance (power per unit area) and requires deeper knowledge of the irradiation geometry, e.g. width, depth and shape of the focal spot.
 is_a: IAO:0000032
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0001-7694-5519
 property_value: IAO:0000112 "200 mW" xsd:string
 property_value: IAO:0000118 "excitation light power" xsd:string
 property_value: IAO:0000118 "light power on the sample" xsd:string
@@ -220,10 +208,10 @@ property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOnto
 [Term]
 id: VIBSO:0000018
 name: region of interest
-def: "A site that refers to a user-defined portion of the image area in which data will be acquired. The remainder of the image area will be discarded." [] {http://purl.org/dc/elements/1.1/source="https://wiki.charisma.ideaconsult.net/wiki/Item:Q57"}
+def: "A site that refers to a user-defined portion of the image area in which data will be acquired. The remainder of the image area will be discarded." [] {dce:source="https://wiki.charisma.ideaconsult.net/wiki/Item:Q57"}
 is_a: BFO:0000029
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-2239-3955
 property_value: IAO:0000116 "See also https://w3id.org/reproduceme#ROI & http://purl.obolibrary.org/obo/NCIT_C85402" xsd:string
 property_value: IAO:0000118 "imaging region of interest" xsd:string
 property_value: IAO:0000118 "ROI" xsd:string
@@ -235,8 +223,8 @@ name: region of interest width
 def: "A setting datum that specifies the width (length in the X direction) of the region of interest." []
 comment: region of interest width = (point distance X) * (number of measurements X)
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-2239-3955
 property_value: IAO:0000112 "1 mm" xsd:string
 property_value: IAO:0000118 "ROI horizontal length" xsd:string
 property_value: IAO:0000118 "ROI width" xsd:string
@@ -248,8 +236,8 @@ name: region of interest breadth
 def: "A setting datum that specifies the height (length in the Y direction) of the region of interest." []
 comment: region of interest breadth = (point distance Y) * (number of measurements Y)
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-2239-3955
 property_value: IAO:0000112 "0.5 mm" xsd:string
 property_value: IAO:0000118 "ROI breadth" xsd:string
 property_value: IAO:0000118 "ROI lateral length" xsd:string
@@ -261,8 +249,8 @@ name: region of interest depth
 def: "A setting datum that specifies the depth (length in the Z direction) of the region of interest." []
 comment: region of interest depth = (point distance Z) * (number of measurements Z)
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-2239-3955
 property_value: IAO:0000112 "0.1 mm" xsd:string
 property_value: IAO:0000118 "ROI depth" xsd:string
 property_value: IAO:0000118 "ROI vertical length" xsd:string
@@ -274,8 +262,8 @@ name: point distance X
 def: "A setting datum that specifies the equal distance which the incident light beam will be moved laterally in the X direction on a given sample within the region of interest after each measurement, when performing a spatially resolved spectroscopy." []
 comment: point distance X = (region of interest width) / (number of measurements X)
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-2239-3955
 property_value: IAO:0000112 "20 µm" xsd:string
 property_value: IAO:0000118 "sampling pace in the X direction" xsd:string
 property_value: IAO:0000118 "sampling step in the X direction" xsd:string
@@ -288,8 +276,8 @@ name: point distance Y
 def: "A setting datum that specifies the equal distance which the incident light beam will be moved laterally in the Y direction on a given sample within the region of interest after each measurement, when performing a spatially resolved spectroscopy." []
 comment: point distance Y = (region of interest breadth) / (number of measurements Y)
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-2239-3955
 property_value: IAO:0000112 "10 µm" xsd:string
 property_value: IAO:0000118 "sampling pace in the Y direction" xsd:string
 property_value: IAO:0000118 "sampling step in the Y direction" xsd:string
@@ -302,8 +290,8 @@ name: point distance Z
 def: "A setting datum that specifies the equal distance which the incident light beam will moved along the focal axis within the region of interest, when performing a spatially resolved spectroscopy." []
 comment: point distance Z = (region of interest depth) / (number of measurements Z)
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-2239-3955
 property_value: IAO:0000112 "10 µm" xsd:string
 property_value: IAO:0000118 "axial mapping distance" xsd:string
 property_value: IAO:0000118 "sampling pace in the Z direction" xsd:string
@@ -318,8 +306,8 @@ name: number of measurements X
 def: "A setting datum that specifies how many equally configured measurements of a sample are to be performed along the X-axis of a certain region of interest. Together with the point distance X, this setting defines the region of interest width." []
 comment: number of measurements X = (region of interest width) / (point distance X)
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-2239-3955
 property_value: IAO:0000112 "50" xsd:string
 property_value: IAO:0000118 "number of points in the X direction" xsd:string
 property_value: IAO:0000118 "number of points per line" xsd:string
@@ -331,8 +319,8 @@ name: number of measurements Y
 def: "A setting datum that specifies how many equally configured measurements of a sample are to be performed along the Y-axis of a certain region of interest. Together with the point distance Y, this setting defines the region of interest breadth." []
 comment: number of measurements = (region of interest breadth) / (point distance Y)
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-2239-3955
 property_value: IAO:0000112 "100" xsd:string
 property_value: IAO:0000118 "number of lines per layer" xsd:string
 property_value: IAO:0000118 "number of points in the Y direction" xsd:string
@@ -341,13 +329,215 @@ property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOnto
 [Term]
 id: VIBSO:0000027
 name: number of measurements Z
-def: "A setting datum that specifies how many equally configured measurements of a sample are to be performed in the vertical direction (on the Z-axis) of a certain region of interest.\nTogether with the focal point distance, this setting defines the region of interest depth." []
+def: "A setting datum that specifies how many equally configured measurements of a sample are to be performed in the vertical direction (on the Z-axis) of a certain region of interest. Together with the focal point distance, this setting defines the region of interest depth." []
 comment: number of measurements Z = (region of interest depth) / (point distance Z)
 is_a: IAO:0000140
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7694-5519
-property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0002-2239-3956
+property_value: dce:contributor ORCID:0000-0001-7694-5519
+property_value: dce:contributor ORCID:0000-0002-2239-3956
 property_value: IAO:0000112 "10" xsd:string
 property_value: IAO:0000118 "number of layers per acquisition" xsd:string
 property_value: IAO:0000118 "number of points in the Z direction" xsd:string
 property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/32
+
+[Term]
+id: VIBSO:0000028
+name: Raman raw data
+def: "A measurement datum that is obtained from a calibrated and ready Raman spectrometer and prior to be submitted to any mathematical modification. The only corrections on the data shall be the one associated with the spectrometer. The data will assign pixels readouts with nm as per calibration of the spectrometer and a.u. as intensity readout but will not be corrected in relationship of the incident monochromatic beam." [] {dce:source="https://wiki.charisma.ideaconsult.net/wiki/Item:Q64"}
+is_a: IAO:0000109
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: IAO:0000118 "raw Raman data" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/77
+
+[Term]
+id: VIBSO:0000029
+name: lens numerical aperture
+def: "A setting datum that, as a dimensionless number, represents the quality which characterizes the range of angles over which an optical system can accept or emit light [dc:source wikidata:Numerical_aperture]. It gets calculated by the sine of one half of the vertex angle of the largest cone of meridional rays that can enter or leave an optical system or element, multiplied by the refractive index of the medium in which the cone is located." [] {dce:source="wikipedia:Numerical_aperture", dce:source="https://wiki.charisma.ideaconsult.net/wiki/Item:Q385"}
+is_a: IAO:0000140
+property_value: dce:contributor ORCID:0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: IAO:0000112 "The light was focused onto the embedded sample using a 100× objective with a numerical aperture of 0.9, resulting in a diffraction-limited in-plane laser spot size of <1 μm." xsd:string
+property_value: IAO:0000116 "possible equivalents in other terminologies: http://purl.obolibrary.org/obo/NCIT_C181921 & https://w3id.org/reproduceme#LensNA" xsd:string
+property_value: IAO:0000118 "numerical aperture" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/76
+
+[Term]
+id: VIBSO:0000030
+name: primary Raman data
+def: "A data item that is obtained by processing raw Raman data." []
+is_a: IAO:0000027
+property_value: dce:contributor ORCID:0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/132
+
+[Term]
+id: VIBSO:0000031
+name: resolution
+def: "A physical quality of a measurement device that expresses (realizes) the device's capacity to distinguish between two distinct but closely related measurements of the same physical quality or type, often quantified as the smallest detectable difference (resolution interval) between measured values." []
+is_a: PATO:0001018
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000032
+name: resolution interval
+def: "A data item that quantifies a resolution, by representing the minimum measurable difference between two measurements of the same physical quality or type, such that the measurements can be distinguished as different." []
+is_a: IAO:0000027
+relationship: IAO:0000136 VIBSO:0000031 ! resolution
+relationship: OBI:0001938 OBI:0001933
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000033
+name: resolution power
+def: "A ratio that quantifies the ability of a measurement device to distinguish between small differences in measurement values, expressed as the ratio between a typical measurement datum and the corresponding resolution interval." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5"}
+is_a: STATO:0000184
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000034
+name: spatial resolution interval
+def: "A resolution interval that quantifies the minimum distance between two points such that they can be considered two separate points in a given microscope under specific experimental parameters." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5"}
+is_a: VIBSO:0000032 ! resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000035
+name: lateral resolution interval as angle
+def: "A spatial resolution interval that quantifies the minimum angular separation between two points on a plane orthogonal to the light ray, expressed as an angle centered in the lens (Formula: δθ = 1.22 * λ / D)." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5"}
+comment: $δθ = 1.22cdotλ/D$
+is_a: VIBSO:0000034 ! spatial resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000036
+name: lateral resolution interval as length
+def: "A spatial resolution interval that quantifies the minimum linear separation between two points on a plane orthogonal to the light ray, expressed as the distance from the center of the optical spot (Formula: δr = 0.61 * λ / NA)." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5"}
+comment: $δr = 0.61cdotλ/NA$ (Abbe formula, derived from the Rayleigh criterion with the Kirchhoff, Debye and paraxial approximation) $= 1.22 λcdot(f/sharp)$
+is_a: VIBSO:0000034 ! spatial resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000037
+name: axial resolution interval as length
+def: "A spatial resolution interval that quantifies the minimum measurable separation between two points along the axis of propagation of the light ray, expressed as a linear distance (Formula: δz = 2 ⋅ n ⋅ λ / NA²)." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5"}
+comment: $δz = 2cdot ncdotλ/NA²$
+is_a: VIBSO:0000034 ! spatial resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000038
+name: spectral resolution interval
+def: "A resolution interval that quantifies the minimum separation between two narrow peaks in a spectrum such that they can be distinguished as two separate peaks." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5"}
+is_a: VIBSO:0000032 ! resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000039
+name: spectral resolution interval as wavelength
+def: "A spectral resolution interval that quantifies the minimum separation between two wavelengths such that they can be distinguished as different (Formula: δλ = λ / (n * N))." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5", dce:source="https://wiki.charisma.ideaconsult.net/wiki/Item:Q22", dce:source="https://wiki.charisma.ideaconsult.net/wiki/Item:Q200"}
+comment: $δλ = λ / (ncdot N) = RFcdot Δλcdot WS / n$
+is_a: VIBSO:0000038 ! spectral resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000040
+name: spectral resolution interval as wavenumber
+def: "A spectral resolution interval that quantifies the minimum separation between two wavenumbers such that they can be distinguished as different (Formula: δν~ = δλ / λ²)." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5"}
+comment: $δbarν$
+is_a: VIBSO:0000038 ! spectral resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000041
+name: spectral resolution interval as frequency
+def: "A spectral resolution interval that quantifies the minimum separation between two frequencies such that they can be distinguished as different (Formula: δν = c * δν~ = c * δλ / λ²)." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5"}
+comment: $δν$
+is_a: VIBSO:0000038 ! spectral resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000042
+name: spectral resolution interval as energy
+def: "A spectral resolution interval that quantifies the minimum separation between two energy levels such that they can be distinguished as different (Formula: δE = h * δν = h * c * δν~ = h * c * δλ / λ²)." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5"}
+comment: $δE$
+is_a: VIBSO:0000038 ! spectral resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000043
+name: radiometric resolution interval
+def: "A resolution interval that quantifies the minimum difference in irradiated energy, often coded as gray level in a grayscale or look-up-table (LUT)." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5"}
+is_a: VIBSO:0000032 ! resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000044
+name: temporal resolution interval
+def: "A resolution interval that quantifies the temporal separation between two measurements or frames, often expressed as the inverse of the frame rate. In techniques where temporal resolution is not directly derived from frame rate, it quantifies the minimum temporal interval between two resolvable events." [] {dce:source="http://www.w3.org/2002/07/ISBN%20081946043-5"}
+comment: In techniques where the temporal resolution is not given directly from a temporal distance between subsequent measurements (e.g., pulsed time resolved pump-probe techniques), it can be used more properly as defined above
+is_a: VIBSO:0000032 ! resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0000045
+name: diffraction limit
+def: "A spatial resolution interval that quantifies the theoretical maximum spatial resolution achievable by an optical system, constrained by the diffraction of light." [] {dce:source="d25805417e256"}
+comment: The Abbe diffraction limit, is defined as λ/ (2 NA) in which λ is the wavelength of the illuminating light and NA is the numerical aperture.
+is_a: VIBSO:0000034 ! spatial resolution interval
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: dce:contributor ORCID:0000-0003-2673-366X
+property_value: IAO:0000116 "This class is actually to general for VIBSO's scope. It needs to be discussed with CHMO and OBI devs which of these is a better home, as there currently does not exist an optical device ontology within OBO Foundry. OBI contains most terms around optical devices so far." xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/125
+
+[Term]
+id: VIBSO:0003017
+name: spectral window center
+def: "A setting datum that specifies the middle wavelength/wavenumber of a spectrum, equal to the average of the maximum and minimum of the spectral window range utilized during the acquisition of spectroscopic data. It corresponds to the optimal alignment or centering of the spectrometer to ensure that the most relevant spectral features are captured effectively within the defined acquisition range." []
+is_a: IAO:0000140
+is_a: OBI:0000674
+property_value: dce:contributor ORCID:0000-0002-1595-3213
+property_value: dce:contributor ORCID:0000-0002-2239-3955
+property_value: IAO:0000112 "560 cm^-1" xsd:string
+property_value: seeAlso https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/88
 

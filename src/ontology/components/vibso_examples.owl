@@ -24,7 +24,7 @@ Prefix(Wikipedia:=<https://en.wikipedia.org/wiki/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/components/vibso_examples.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2024-09-16/components/vibso_examples.owl>
+<http://purl.obolibrary.org/obo/vibso/releases/2024-09-23/components/vibso_examples.owl>
 Annotation(rdfs:comment "This component is derived from the manually edited 'src/templates/vibso_examples.tsv' template.")
 
 Declaration(Class(obo:CHMO_0000656))
@@ -44,8 +44,8 @@ Declaration(ObjectProperty(obo:OBI_0000299))
 Declaration(ObjectProperty(obo:OBI_0000417))
 Declaration(ObjectProperty(obo:OBI_0001927))
 Declaration(ObjectProperty(obo:OBI_0001938))
+Declaration(ObjectProperty(obo:RO_0000058))
 Declaration(ObjectProperty(obo:RO_0000080))
-Declaration(ObjectProperty(obo:RO_0002566))
 Declaration(ObjectProperty(obo:STATO_0000102))
 Declaration(DataProperty(obo:OBI_0002135))
 Declaration(NamedIndividual(obo:UO_0000018))
@@ -128,7 +128,7 @@ AnnotationAssertion(dcterms:description ex:_Wavelength_Setting_Info_1 "The infor
 AnnotationAssertion(rdfs:label ex:_Wavelength_Setting_Info_1 "_Wavelength_Setting_Info_1"@en)
 ClassAssertion(obo:VIBSO_0000013 ex:_Wavelength_Setting_Info_1)
 ObjectPropertyAssertion(obo:OBI_0001938 ex:_Wavelength_Setting_Info_1 ex:_Wavelength_Value_Specification_1)
-ObjectPropertyAssertion(obo:RO_0002566 ex:_Wavelength_Setting_Info_1 ex:_Laser_Wavelength_1)
+ObjectPropertyAssertion(obo:RO_0000058 ex:_Wavelength_Setting_Info_1 ex:_Laser_Wavelength_1)
 
 # Individual: ex:_Wavelength_Value_Specification_1 (_Wavelength_Value_Specification_1)
 
