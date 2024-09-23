@@ -7,14 +7,15 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/vibso/imports/pato_import.owl>
-<http://purl.obolibrary.org/obo/vibso/releases/2023-12-20/imports/pato_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2023-05-18/pato.owl>)
-Annotation(owl:versionInfo "2023-12-20")
+<http://purl.obolibrary.org/obo/vibso/releases/2024-09-23/imports/pato_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2024-09-04/pato.owl>)
+Annotation(owl:versionInfo "2024-09-23")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000117>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000119>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000122>))
@@ -27,12 +28,14 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001242>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001555>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001595>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001708>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002182>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002497>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0005024>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0103000>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015012>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000231>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000700>))
@@ -49,6 +52,7 @@ Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#default-namespace>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
@@ -110,7 +114,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000033> <http://purl.obolibrary.org/obo/pato#relational_slim>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000033> <http://purl.obolibrary.org/obo/pato#scalar_slim>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000033> "concentration of")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000033> <http://purl.obolibrary.org/obo/PATO_0002182>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000033> <http://purl.obolibrary.org/obo/PATO_0000070>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000051> (morphology)
 
@@ -120,6 +124,26 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000051> "morphology")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0001241>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000070> (amount)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000070> "The number of entities of this type that are part of the whole organism.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000070> "PATO:0000053")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000070> "PATO:0000071")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000070> "PATO:0001169")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000070> "PATO:0001226")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000070> "presence or absence in organism")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000070> "quantitative")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000070> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000070> "count in organism")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000070> "number")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0000070> "presence")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000070> "PATO:0000070")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0000070> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0000070> "This term was originally named \"presence\". It has been renamed to reduce ambiguity. Consider annotating with the reciprocal relation,PATO:0001555, has_number_of. For example, rather than E=fin ray Q=count in organism C=10, say E=organism Q=has number of E2= fin ray C=10.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000070> "amount")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000070> <http://purl.obolibrary.org/obo/PATO_0103000>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015012> <http://purl.obolibrary.org/obo/PATO_0001555>))
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000117> (size)
 
@@ -272,6 +296,23 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001242> "wavelength")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001242> <http://purl.obolibrary.org/obo/PATO_0001018>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0001555> (has number of)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:CJM") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001555> "The number of parts of a particular type that the bearer entity has. This is a relational quality, and thus holds between two entities: the bearer of the quality, and the type of parts.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PATO_0001555> "OBO_REL:has_part")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001555> "extra or missing physical or functional parts")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001555> "has or lacks parts of type")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001555> "mereological quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001555> "number of")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0001555> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0001555> "cardinality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PATO_0001555> "number")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0001555> "PATO:0001555")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001555> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001555> <http://purl.obolibrary.org/obo/pato#relational_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001555> "has number of")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001555> <http://purl.obolibrary.org/obo/PATO_0000070>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001595> (depth)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WordNet:WordNet") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001595> "A 1-D extent quality inhering in a bearer by virtue of the bearer's downward or backward or inward dimension.")
@@ -291,18 +332,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001708> <http://purl.obolibrary.org/obo/pato#attribute_slim>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001708> "1-D extent")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001708> <http://purl.obolibrary.org/obo/PATO_0000117>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0002182> (molecular quality)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002182> "A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc.")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PATO_0002182> <https://orcid.org/0000-0002-2061-091X>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0002182> "2010-03-10T03:18:15Z")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0002182> "PATO:0002061")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0002182> "relational molecular quality")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0002182> "quality")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002182> "PATO:0002182")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002182> "molecular quality")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002182> <http://purl.obolibrary.org/obo/PATO_0001241>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002497> (lateral orientation)
 
@@ -326,6 +355,15 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0005024> <http://purl.obolibrary.org/obo/pato#value_slim>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0005024> "longitudinal orientation")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0005024> <http://purl.obolibrary.org/obo/PATO_0000133>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0103000> (quantitative)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://libguides.macalester.edu/c.php?g=527786&p=3608639") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://www.nnlm.gov/guides/data-glossary/quantitative-data") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0103000> "A quality of an entity that can be represented numerically, including anything that can be counted, measured, or given a numerical value.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/PATO_0103000> "https://orcid.org/0000-0001-8314-2140")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0103000> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0103000> "PATO:0103000")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0103000> "quantitative")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0103000> <http://purl.obolibrary.org/obo/PATO_0000001>)
 
 
 )
