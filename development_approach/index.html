@@ -1,0 +1,1077 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://NFDI4Chem.github.io/VibrationSpectroscopyOntology/development_approach/">
+      
+      
+        <link rel="prev" href="../competency_questions/">
+      
+      
+        <link rel="next" href="../design_patterns/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Development Approach - Vibrational Spectroscopy Ontology Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#development-approach" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Vibrational Spectroscopy Ontology Documentation" class="md-header__button md-logo" aria-label="Vibrational Spectroscopy Ontology Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Vibrational Spectroscopy Ontology Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Development Approach
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Vibrational Spectroscopy Ontology Documentation" class="md-nav__button md-logo" aria-label="Vibrational Spectroscopy Ontology Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Vibrational Spectroscopy Ontology Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/NFDI4Chem/VibrationSpectroscopyOntology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About VIBSO
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            About VIBSO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain_definition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Domain Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../competency_questions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Competency Questions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Development Approach
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Development Approach
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#template-based-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Template Based Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Template Based Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explanation-of-the-template-column-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of the template column headers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposed-contribution-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proposed contribution workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#are-you-an-expert-in-the-domain-of-vibrational-spectroscopy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Are you an expert in the domain of vibrational spectroscopy?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design_patterns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design Patterns & Decisions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contributing To VIBSO
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Contributing To VIBSO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Contribute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ntr_workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding New Terms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Default ODK Workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Components management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ODK Specific Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            ODK Specific Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#template-based-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Template Based Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Template Based Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explanation-of-the-template-column-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of the template column headers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposed-contribution-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proposed contribution workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#are-you-an-expert-in-the-domain-of-vibrational-spectroscopy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Are you an expert in the domain of vibrational spectroscopy?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="development-approach">Development Approach</h1>
+<p>The development of VIBSO is an iterative, version-controlled one that relies on continuous integration. This means that VIBSO uses the Ontology Development Kit (<a href="https://github.com/INCATools/ontology-development-kit">ODK</a>) and GitHub
+ for the technical implementation, making sure all changes are properly tracked and quality controlled. 
+With regard to the conceptual iterative development, VIBSO relies on the collaboration with domain experts from chemistry and related scientific fields in which vibrational spectroscopies are being used. They are the ones who know best what concepts are needed in the domain of VIBSO and how to properly label and define them.
+So far, the domain experts who contributed to VIBSO come from the institutions that are directly associated with the NFDI4Chem project. These domain experts provided an initial list of terms that was discussed with the VIBSO ontology curators in multiple online meetings and which was used to develop a first draft of a terminology box. (see <a href="../design_patterns/#vibrational-raman-spectroscopy">Vibrational Raman Spectroscopy</a>). Within these discussions it became apparent that the best way for allowing domain experts to directly contribute to VIBSO in a controlled way is to provide a tabular way to edit the ontology as well as to have a proper documentation as a binding development guideline.</p>
+<h2 id="template-based-development">Template Based Development</h2>
+<p>To enable an easier participation of domain experts, who often might have little to no background in the development of ontologies and the tools needed for this, we are using <a href="http://robot.obolibrary.org/template">ROBOT TSV templates</a> to define new classes (<a href="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/templates/vibso_classes.tsv">vibso_classes.tsv</a>) and relations (<a href="https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/blob/main/src/templates/vibso_object_properties.tsv">vibso_object_properties.tsv</a>), when there is no equivalent in other compatible OBO ontologies that we can reuse. The first row of these TSV table templates defines the human-readable header and the second row is the header needed by the ROBOT tool to properly convert the template into the OWL files that make up the <a href="../odk-workflows/RepositoryFileStructure/#components">components</a> of VIBSO.</p>
+<h3 id="explanation-of-the-template-column-headers">Explanation of the template column headers</h3>
+<p>In both TSV templates there are the following columns:</p>
+<ul>
+<li><strong>id</strong>: This column defines the identifier of a term in form of a CURIE (<a href="https://en.wikipedia.org/wiki/CURIE">compact URI</a>) which will be expanded into the full IRI of the term within the release artifacts. <strong><em>This unique id must always be in the syntax of <code>obo:VIBSO_[XXXXXXX]</code> whereas the seven <code>X</code> represented numerical digits.</em></strong> When the team of VIBSO curators grows and the need of editing in multiple TSV templates arises, we will probably set up workflows to ensure no mix-ups or duplicated IDs by assigning certain ID ranges to templates and/or contributors. For now, it should suffice to make sure there is no error or duplicate within these two TSVs.</li>
+<li><strong>label</strong>: This column must contain either the agreed upon technical term of the concept to be defined, or, in cases of a completely new concept, it should be a singular word or phrase in lowercase that expresses the ontological type of the concept as human-readable as possible (for more on naming conventions see <a href="https://obofoundry.org/principles/fp-012-naming-conventions.html">OBO principle #12</a>).</li>
+<li><em>NOTE</em>: When a term is to be deprecated, the prefix <code>deprecated_</code> should be added in front of the previous label to make this term status better visible to the users of the ontology.</li>
+<li><strong>link(s) to issue(s)</strong>: This column should be used to provide the link or links (separated with "|") to the issues in which this term is/was requested &amp; discussed (e.g. https://github.com/NFDI4Chem/VibrationalSpectroscopyOntology/issues/39).</li>
+<li><strong>definition</strong>: A textual definition provides a human-readable understanding about the defined concept (class or relation). Textual definitions are, optimally, in concordance with associated machine-readable logical definitions (the latter of which are OPTIONAL). For more about writing good textual definitions please see <a href="https://obofoundry.org/principles/fp-006-textual-definitions.html">OBO principle #6</a>.</li>
+<li><strong>definition source URI</strong>: It is common practice to provide a definition source whenever possible. In the best case this is the DOI of a publication in which the concept is explained and/or defined. URLs to encyclopedias like Wikipedia are also an option. Least preferred but still better than nothing would be the ORCID of the person who created the term.</li>
+<li><strong>type</strong>: This column defines the type of the defined concept according to the <a href="https://www.w3.org/TR/owl-ref/">Ontology Web Language (OWL) specification</a>. The allowed values are: <code>owl:Class</code>, <code>owl:ObjectProperty</code>,  <code>owl:DatatypeProperty</code> or <code>owl:NamedIndividual</code>. So in the <em>vibso_classes.tsv</em> this should always be <code>owl:Class</code> and in the <em>vibso_object_properties.tsv</em> it should always be <code>owl:ObjectProperty</code>.</li>
+<li><em>Note</em>: For OBO compliant ontologies, relations between classes (ObjectProperties) are meant to be defined mainly in RO and relations for data literals (DatatypeProperties) are only used very sparsely in order to not lose semantic depth.</li>
+<li><strong>contributor URI</strong>: This column should be used to provide the ORCID of the people (separated with "|") who contributed to the curation of the term, in order to properly credit this micro contribution (e.g. <code>ORCID:0000-0002-1595-3213|ORCID:0000-0001-7694-5519|ORCID:0000-0002-2239-3955</code>).</li>
+<li><strong>example of usage</strong>: This column should be used to provide a real world example of the term. This can either be done by providing exemplary triple statements or by elaborating how the term should be used in a concrete use case.  </li>
+<li><strong>editor note</strong>: This column can be used to provide additional information regarding the term, such as summarizing a discussion about its definition or obsolescence reason.</li>
+<li><strong>obsoleted</strong>: This column must only be used to provide the boolean value <code>true</code>, iff the term has been deprecated.</li>
+<li><strong>obsolescence reason</strong>: This column should be used to provide an obsolescence reason from the controlled list of the OBO Metadata Ontology (OMO). The current allowed values are: <code>failed exploratory term , placeholder removed , terms merged , term imported , term split , out of scope</code></li>
+<li><strong>term replaced by</strong>: This column should be used to provide the term that replaces a deprecated term. This is important to ensure backwards compatibility.</li>
+</ul>
+<p>In the <strong>vibso_classes.tsv</strong>, there is also the column:</p>
+<ul>
+<li><strong>super class</strong>: This column is to be used to provide the parent of the owl:Class that is being defined. It is fine to use the label of the parent class here instead of its IRI or CURIE, as long as the class is already an <a href="../ntr_workflow/#importing terms">imported term</a>.</li>
+</ul>
+<p>In the <strong>vibso_classes.tsv</strong>, there are also the columns:</p>
+<ul>
+<li><strong>super property</strong>: This column is to be used to provide the parent of the <code>owl:ObjectProperty</code> or <code>owl:DatatypeProperty</code> that is being defined, via its label.</li>
+<li><strong>inverse property</strong>: This column can be used to define the inverse of an <code>owl:ObjectProperty</code>, via its label. </li>
+<li><strong>domain</strong>: This column can be used to restrict an <code>owl:ObjectProperty</code> in terms of being allowed to be used only on a certain subject.</li>
+<li><strong>range</strong>: This column can be used to restrict an <code>owl:ObjectProperty</code> in terms of being allowed to be used only on a certain object.</li>
+</ul>
+<p>The TSV templates will most likely be expanded in the future to also include more annotation properties (e.g. term status, comment) that will help document the ontology in its source code.</p>
+<h2 id="proposed-contribution-workflow">Proposed contribution workflow</h2>
+<p><strong>VIBSO is an Open Science project from and for the scientific community!</strong> </p>
+<p>Thus, its development is aimed at allowing a broad range of contributions from stakeholders with different backgrounds. For this, the basic idea is to have everything needed within the GitHub repository and to use the ODK &amp; GitHub based workflows (e.g. issues &amp; pull requests) to propose and discuss any changes. This means that <a href="../design_patterns/">design patterns and decisions</a> will have to be documented here as early as possible.</p>
+<p>As VIBSO is still at a very early stage, we will need to establish a team of domain experts that are frequently contributing and of whom some can serve as reviewers of open pull requests to assure a high quality. We envision to have regular virtual meetings in which open issues, pull request or questions can be discussed alongside the overall organization of the VIBSO development. </p>
+<p>For a more detailed description on how to contribute please continue reading <a href="../contributing/">here</a>.</p>
+<h2 id="are-you-an-expert-in-the-domain-of-vibrational-spectroscopy">Are you an expert in the domain of vibrational spectroscopy?</h2>
+<ul>
+<li>You have first-hand experiences with doing vibrational spectroscopy assays, such as knowing the needed devices and their configuration parameters?</li>
+<li>You know how to write issues and do easy pull requests on file formats like .tsv, .md and .txt in GitHub or GitLab?</li>
+<li>You can imagine helping us to define the technical terms of vibrational spectroscopy (e.g. Raman &amp; IR) and collecting credits for such mirco-publications?</li>
+</ul>
+<p><strong>Then we, a friendly and inclusive open science team, would like to invite you to be part of the VIBSO team &amp; development!</strong>
+Please get in touch with us via GitHub or <code>mailto:helpdesk@nfdi4chem.de</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
